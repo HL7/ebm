@@ -20,5 +20,3 @@ This implementation guide will provide concrete guidance for different uses of t
 -	**RecommendationJustification** (to provide detailed expression of the strength of recommendation, rationale, supporting evidence, and judgments along the evidence-to-decision pathway for a single recommendation)
 -	**OutcomeImportanceRating** (to provide an assessment of an outcome, defined with an OutcomeDefinition Profile of EvidenceVariable, with respect to its relative importance as determined by an individual or group)
 The core resource (ArtifactAssessment) may have a value set with Example binding strength but it would be unwieldy to create one value set in the core resource for all these different profiles.
-
-
