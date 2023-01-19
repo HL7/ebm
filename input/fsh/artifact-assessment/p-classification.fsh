@@ -5,5 +5,8 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * identifier
   * ^definition = "A formal identifier that is used to identify this Classification when it is represented in other formats, or referenced in a specification, model, design or an instance." 
   * ^short = "Additional identifier for the Classification"
+* citeAs[x]
+  * ^definition = "Display of or reference to the bibliographic citation of the Classification." 
+  * ^short = "How to cite the Classification"
 * workflowStatus 0..0
 * disposition 0..0
