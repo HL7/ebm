@@ -26,6 +26,18 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
   * ^short = "A rating"
 * content.informationType
   * ^comment = "The code 'rating' will be the value in most instances. Other codes may be used for complex OutcomeImportance with content.component use."
+* content.quantity 0..1
+  * ^definition = "A quantitative rating of the relative importance of the outcome."
+  * ^short = "Percentage of importance of reference outcome"
+* content.quantity.value 1..1
+  * ^comment = "The value must be 0 (no importance) or a positive decimal. The value of 100 represents the importance of the reference outcome. A value greater than 100 represents exceptionally high importance that is higher than the importance of the reference outcome."
+* content.quantity.comparator 0..0
+* content.quantity.unit 1..1
+* content.quantity.unit = "%"
+* content.quantity.system 1..1
+* content.quantity.system = "http://unitsofmeasure.org"
+* content.quantity.code 1..1
+* content.quantity.code = "%"
 * content.freeToShare
   * ^definition = "Acceptable to publicly share the OutcomeImportance content, specific to the associated content instance"
   * ^short = "Acceptable to publicly share the OutcomeImportance content"
