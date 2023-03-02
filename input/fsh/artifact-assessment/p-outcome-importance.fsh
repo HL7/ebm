@@ -26,7 +26,7 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
   * ^short = "A rating"
 * content.informationType
   * ^comment = "The code 'rating' will be the value in most instances. Other codes may be used for complex OutcomeImportance with content.component use."
-* content.quantity 0..1
+* content.quantity 0..1 {Quantity}
   * ^definition = "A quantitative rating of the relative importance of the outcome."
   * ^short = "Percentage of importance of reference outcome"
 * content.quantity.value 1..1
