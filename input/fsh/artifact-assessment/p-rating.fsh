@@ -26,7 +26,10 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
   * ^short = "A rating"
 * content.informationType
   * ^comment = "The code 'rating' will be the value in most instances. Other codes may be used for complex Ratings with content.component use."
-* content.extension contains QuantitativeRating named quantity 0..1
+* content.quantity
+  * ^short = "Quantitative rating"
+  * ^definition = "A quantitative rating of the artifact."
+  * value 1..1
 * content.freeToShare
   * ^definition = "Acceptable to publicly share the rating content, specific to the associated content instance"
   * ^short = "Acceptable to publicly share the rating content"
