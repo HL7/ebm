@@ -26,6 +26,8 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
   * ^short = "A rating"
 * content.informationType
   * ^comment = "The code 'rating' will be the value in most instances. Other codes may be used for complex OutcomeImportance with content.component use."
+* content.extension contains ImportancePercentageRating named quantity 0..1
+/* Commented out until the extension is part of the core resource and then will profile directly
 * content.quantity 0..1
   * ^datatype = Quantity
   * ^short = "Percentage of importance of reference outcome" 
@@ -39,6 +41,7 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * content.quantity.system = "http://unitsofmeasure.org"
 * content.quantity.code 1..1
 * content.quantity.code = "%"
+*/
 * content.freeToShare
   * ^definition = "Acceptable to publicly share the OutcomeImportance content, specific to the associated content instance"
   * ^short = "Acceptable to publicly share the OutcomeImportance content"
