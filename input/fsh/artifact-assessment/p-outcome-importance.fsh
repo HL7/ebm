@@ -40,7 +40,7 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * content.quantity.system 1..1
 * content.quantity.system = "http://unitsofmeasure.org"
 * content.quantity.code 1..1
-* content.quantity.code = "%"
+* content.quantity.code = #%
 */
 * content.freeToShare
   * ^definition = "Acceptable to publicly share the OutcomeImportance content, specific to the associated content instance"

@@ -15,4 +15,4 @@ Description: "Provide a quantitative rating of an importance using a percentage 
 * valueQuantity.system 1..1
 * valueQuantity.system = "http://unitsofmeasure.org"
 * valueQuantity.code 1..1
-* valueQuantity.code = "%"
+* valueQuantity.code = #%
