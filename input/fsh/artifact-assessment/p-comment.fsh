@@ -21,7 +21,7 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * artifact[x]
   * ^definition = "A reference to a resource, canonical resource, or non-FHIR resource which the Comment is about."
   * ^short = "The artifact that is commented upon"
-* content
+* content 1..*
   * ^definition = "A comment about the artifact."
   * ^short = "A comment"
 * content.informationType
