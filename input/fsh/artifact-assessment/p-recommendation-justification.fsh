@@ -24,6 +24,8 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * content
   * ^definition = "A comment, rating, or classification of the recommendation."
   * ^short = "A comment, rating, or classification"
+* content.type from https://fevir.net/resources/ValueSet/107287 (extensible)
+* content.classifier from https://fevir.net/resources/ValueSet/107288 (extensible)
 * content.freeToShare
   * ^definition = "Acceptable to publicly share the content, specific to the associated content instance"
   * ^short = "Acceptable to publicly share the content"
