@@ -21,7 +21,7 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * artifact[x]
   * ^definition = "A reference to a resource, canonical resource, or non-FHIR resource which the CertaintyOfEvidence is about."
   * ^short = "The artifact that is rated"
-* content 1..*
+* content
   * ^definition = "A rating or classification of the artifact."
   * ^short = "A rating"
 * content.informationType
@@ -31,5 +31,3 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * content.freeToShare
   * ^definition = "Acceptable to publicly share the CertaintyOfEvidence content, specific to the associated content instance"
   * ^short = "Acceptable to publicly share the CertaintyOfEvidence content"
-* workflowStatus 0..0
-* disposition 0..0
