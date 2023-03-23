@@ -21,6 +21,7 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * artifact[x]
   * ^definition = "A reference to a resource, canonical resource, or non-FHIR resource which the RiskOfBias is about."
   * ^short = "The artifact that is rated"
+* artifactReference only Reference(Evidence or Composition or ResearchStudy or Citation)
 * content
   * ^definition = "A rating or classification of the artifact."
   * ^short = "A rating"
