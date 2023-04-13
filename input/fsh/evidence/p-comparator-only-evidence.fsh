@@ -4,7 +4,7 @@ Id: comparator-only-evidence
 Description: "Profile of Evidence for Evidence Based Medicine IG. The ComparatorOnlyEvidence Profile is used for evidence with a measured variable that is considered the outcome of an exposure or intervention, and an exposure that is the reference expsoure in a comparative evidence. The ComparatorOnlyEvidence descirbes the evidence for the comparator group." 
 * useContext 1..*
 * useContext ^slicing.discriminator.type = #pattern
-* useContext ^slicing.discriminator.path = "code"
+* useContext ^slicing.discriminator.path = "valueCodeableConcept"
 * useContext ^slicing.rules = #open
 * useContext contains comparator 1..1 MS
 * useContext[comparator].code.system = "http://terminology.hl7.org/CodeSystem/usage-context-type"
