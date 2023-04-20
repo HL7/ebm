@@ -11,6 +11,7 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The NetEffectE
 * variableDefinition[outcome].description = "Effect estimate (risk difference) for an outcome"
 * variableDefinition[importanceMultiplier].description 1..1
 * variableDefinition[importanceMultiplier].description = "Relative importance for an outcome"
+* variableDefinition[importanceMultiplier].variableRole = https://fevir.net/resources/CodeSystem/27270#TBD:RelativeImportance "Relative Importance"
 * statistic 1..*
 * statistic ^slicing.discriminator.type = #pattern
 * statistic ^slicing.discriminator.path = "statisticType"
