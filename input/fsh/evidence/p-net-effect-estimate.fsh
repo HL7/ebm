@@ -14,3 +14,10 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The NetEffectE
   * attributeEstimate ^slicing.rules = #open
   * attributeEstimate contains confidenceInterval 1..1 MS
   * attributeEstimate[confidenceInterval].type = https://fevir.net/resources/CodeSystem/27270#TBD:0000059 "Confidence interval"
+  * modelCharacteristic 1..*
+  * modelCharacteristic ^slicing.discriminator.type = #pattern
+  * modelCharacteristic ^slicing.discriminator.path = "code"
+  * modelCharacteristic ^slicing.rules = #open
+  * modelCharacteristic contains netEffectAnalysis 1..1 MS
+  * modelCharacteristic[netEffectAnalysis].code = https://fevir.net/resources/CodeSystem/27270#TBD:net-effect-analysis "Net effect analysis"
+  
