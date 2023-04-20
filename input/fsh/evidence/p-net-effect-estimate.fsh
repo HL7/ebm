@@ -2,6 +2,15 @@ Profile: NetEffectEstimate
 Parent: ComparativeEvidence
 Id: net-effect-estimate
 Description: "Profile of Evidence for Evidence Based Medicine IG. The NetEffectEstimate Profile is used for evidence in which the observed data is comparative evidence (effect estimates expressed as risk differences) and relative importance ratings of outcomes."
+* variableDefinition 4..*
+* variableDefinition ^slicing.discriminator.type = #pattern
+* variableDefinition ^slicing.discriminator.path = "variableRole"
+* variableDefinition ^slicing.rules = #open
+* variableDefinition contains importanceMultiplier 1..1 MS
+* variableDefinition[outcome].description 1..1
+* variableDefinition[outcome].description = "Effect estimate (risk difference) for an outcome"
+* variableDefinition[importanceMultiplier].description 1..1
+* variableDefinition[importanceMultiplier].description = "Relative importance for an outcome"
 * statistic 1..*
 * statistic ^slicing.discriminator.type = #pattern
 * statistic ^slicing.discriminator.path = "statisticType"
