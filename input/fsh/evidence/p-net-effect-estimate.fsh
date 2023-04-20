@@ -6,5 +6,11 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The NetEffectE
 * statistic ^slicing.discriminator.type = #pattern
 * statistic ^slicing.discriminator.path = "statisticType"
 * statistic ^slicing.rules = #open
-* statistic contains neteffect 1..1 MS
-* statistic[neteffect].statisticType = https://fevir.net/resources/CodeSystem/27270#STATO:0000424 "Risk Difference"
+* statistic contains netEffect 1..1 MS
+* statistic[netEffect].statisticType = https://fevir.net/resources/CodeSystem/27270#STATO:0000424 "Risk Difference"
+* statistic[netEffect]
+  * attributeEstimate ^slicing.discriminator.type = #pattern
+  * attributeEstimate ^slicing.discriminator.path = "type"
+  * attributeEstimate ^slicing.rules = #open
+  * attributeEstimate contains confidenceInterval 1..1 MS
+  * attributeEstimate[confidenceInterval].type = https://fevir.net/resources/CodeSystem/27270#TBD:0000059 "Confidence interval"
