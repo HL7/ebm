@@ -11,3 +11,4 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
 * extension contains ArtifactApprovalDate named approvalDate 0..1
 * extension contains ArtifactLastReviewDate named lastReviewDate 0..1
 * extension contains ArtifactEffectivePeriod named effectivePeriod 0..1
+//attester.mode should have a different value set binding which includes author | editor | reviewer | endorser
