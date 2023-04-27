@@ -7,6 +7,6 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Summary
 * category ^slicing.discriminator.path = "text"
 * category ^slicing.rules = #open
 * category contains summaryOfFindings 1..1 MS
-* category[summaryOfFindings]text = "Summary of Findings"
+* category[summaryOfFindings].text = "Summary of Findings"
 * subject 1..1
   * ^comment = "Reference a single EvidenceVariable Resource (EvidenceReportSubject Profile) to define the subject of this EvidenceReport."
