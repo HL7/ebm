@@ -14,3 +14,13 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Summary
 * section ^slicing.rules = #open
 * section contains columnHeaders 1..1 MS
 * section[columnHeaders].code = http://hl7.org/fhir/evidence-report-section#Column-Headers "Column Headers"
+* section[columnHeaders]
+  * section 2..*
+  * section ^slicing.discriminator.type = #pattern
+  * section ^slicing.discriminator.path = "code"
+  * section ^slicing.rules = #open
+  * section contains outcomeDefinition 1..1 MS and sampleSize 0..1 and resultWithoutTreatment 0..1 and resultWithTreatmentObserved 0..1
+  * section[outcomeDefinition].code = http://hl7.org/fhir/evidence-report-section#EvidenceVariable-outcome "Evidence Variable in variable role Outcome (MeasuredVariable)"
+  * section[sampleSize].code = http://hl7.org/fhir/evidence-report-section#SampleSize "Sample Size"
+  * section[resultWithoutTreatment].code = http://hl7.org/fhir/evidence-report-section#Control-group-alone-Evidence "Evidence Results for the control exposure only"
+  * section[resultWithTreatmentObserved].code = http://hl7.org/fhir/evidence-report-section#Intervention-group-alone-Evidence "Evidence Results for the intervention exposure only"
