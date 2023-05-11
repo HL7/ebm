@@ -8,3 +8,9 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Summary
 * category ^slicing.rules = #open
 * category contains summaryOfFindings 1..1 MS
 * category[summaryOfFindings].text = "Summary of Findings"
+* section 2..*
+* section ^slicing.discriminator.type = #pattern
+* section ^slicing.discriminator.path = "code"
+* section ^slicing.rules = #open
+* section contains columnHeaders 1..1 MS
+* section[columnHeaders].code = http://hl7.org/fhir/evidence-report-section#Column-Headers "Column Headers"
