@@ -39,13 +39,33 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Summary
   * section ^slicing.rules = #open
   * section contains outcomeDefinition 0..1 and sampleSize 0..1 and resultWithoutTreatment 0..1 and resultWithTreatmentObserved 0..1 and resultWithTreatmentDerived 0..1 and effectEstimate 0..1 and certaintyOfEvidence 0..1 and assertion 0..1
   * section[outcomeDefinition].code = http://hl7.org/fhir/evidence-report-section#EvidenceVariable-outcome "Evidence Variable in variable role Outcome (MeasuredVariable)"
+  * section[outcomeDefinition]
+    * entry 0..1 
+    * entry only Reference(OutcomeDefinition)
   * section[sampleSize].code = http://hl7.org/fhir/evidence-report-section#SampleSize "Sample Size"
   * section[resultWithoutTreatment].code = http://hl7.org/fhir/evidence-report-section#Control-group-alone-Evidence "Evidence Results for the control exposure only"
+  * section[resultWithoutTreatment]
+    * entry 0..1 
+    * entry only Reference(ComparatorOnlyEvidence)
   * section[resultWithTreatmentObserved].code = http://hl7.org/fhir/evidence-report-section#Intervention-group-alone-Evidence "Evidence Results for the intervention exposure only"
+  * section[resultWithTreatmentObserved]
+    * entry 0..1 
+    * entry only Reference(InterventionOnlyEvidence)
   * section[resultWithTreatmentDerived].code.text = "result with intervention with calculated value derived from the control group and effect estimate"
 //TODO - convert the code.text above to a coding term in the codesystem
+  * section[resultWithTreatmentDerived]
+    * entry 0..2 
+    * entry only Reference(ComparatorOnlyEvidence or ComparativeEvidence)
   * section[effectEstimate].code = http://hl7.org/fhir/evidence-report-section#Intervention-vs-Control-Evidence "Evidence Results for comparison of Intervention and Control"
+  * section[effectEstimate]
+    * entry 0..1 
+    * entry only Reference(ComparativeEvidence)
   * section[certaintyOfEvidence].code = http://hl7.org/fhir/evidence-report-section#Certainty-of-Evidence "Certainty of Evidence"
+  * section[certaintyOfEvidence]
+    * entry only Reference(ComparativeEvidence or CertaintyOfEvidence)
   * section[assertion].code = http://hl7.org/fhir/evidence-report-section#Assertion "Assertion"
+    * section[assertion]
+    * entry 0..1 
+    * entry only Reference(ComparativeEvidence)
 
  
