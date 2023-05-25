@@ -12,7 +12,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Summary
 * section ^slicing.discriminator.type = #pattern
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.rules = #open
-* section contains columnHeaders 1..1 MS
+* section contains columnHeaders 1..1 MS and outcomeEntry 1..* MS
 * section[columnHeaders].code = http://hl7.org/fhir/evidence-report-section#Column-Headers "Column Headers"
 * section[columnHeaders]
   * section 2..*
@@ -29,4 +29,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Summary
   * section[effectEstimate].code = http://hl7.org/fhir/evidence-report-section#Intervention-vs-Control-Evidence "Evidence Results for comparison of Intervention and Control"
   * section[certaintyOfEvidence].code = http://hl7.org/fhir/evidence-report-section#Certainty-of-Evidence "Certainty of Evidence"
   * section[assertion].code = http://hl7.org/fhir/evidence-report-section#Assertion "Assertion"
+* section[outcomeEntry].code.text = "Summary of findings entry for a single outcome"
+* section[outcomeEntry]
+  * focus only Reference(OutcomeDefinition)
  
