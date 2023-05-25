@@ -30,6 +30,22 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Summary
   * section[certaintyOfEvidence].code = http://hl7.org/fhir/evidence-report-section#Certainty-of-Evidence "Certainty of Evidence"
   * section[assertion].code = http://hl7.org/fhir/evidence-report-section#Assertion "Assertion"
 * section[outcomeEntry].code.text = "Summary of findings entry for a single outcome"
+//TODO - convert the code.text above to a coding term in the codesystem
 * section[outcomeEntry]
   * focus only Reference(OutcomeDefinition)
+  * section 1..*
+  * section ^slicing.discriminator.type = #pattern
+  * section ^slicing.discriminator.path = "code"
+  * section ^slicing.rules = #open
+  * section contains outcomeDefinition 0..1 and sampleSize 0..1 and resultWithoutTreatment 0..1 and resultWithTreatmentObserved 0..1 and resultWithTreatmentDerived 0..1 and effectEstimate 0..1 and certaintyOfEvidence 0..1 and assertion 0..1
+  * section[outcomeDefinition].code = http://hl7.org/fhir/evidence-report-section#EvidenceVariable-outcome "Evidence Variable in variable role Outcome (MeasuredVariable)"
+  * section[sampleSize].code = http://hl7.org/fhir/evidence-report-section#SampleSize "Sample Size"
+  * section[resultWithoutTreatment].code = http://hl7.org/fhir/evidence-report-section#Control-group-alone-Evidence "Evidence Results for the control exposure only"
+  * section[resultWithTreatmentObserved].code = http://hl7.org/fhir/evidence-report-section#Intervention-group-alone-Evidence "Evidence Results for the intervention exposure only"
+  * section[resultWithTreatmentDerived].code.text = "result with intervention with calculated value derived from the control group and effect estimate"
+//TODO - convert the code.text above to a coding term in the codesystem
+  * section[effectEstimate].code = http://hl7.org/fhir/evidence-report-section#Intervention-vs-Control-Evidence "Evidence Results for comparison of Intervention and Control"
+  * section[certaintyOfEvidence].code = http://hl7.org/fhir/evidence-report-section#Certainty-of-Evidence "Certainty of Evidence"
+  * section[assertion].code = http://hl7.org/fhir/evidence-report-section#Assertion "Assertion"
+
  
