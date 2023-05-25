@@ -64,7 +64,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Summary
   * section[certaintyOfEvidence]
     * entry only Reference(ComparativeEvidence or CertaintyOfEvidence)
   * section[assertion].code = http://hl7.org/fhir/evidence-report-section#Assertion "Assertion"
-    * section[assertion]
+  * section[assertion]
     * entry 0..1 
     * entry only Reference(ComparativeEvidence)
 
