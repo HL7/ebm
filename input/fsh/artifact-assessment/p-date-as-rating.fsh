@@ -1,5 +1,5 @@
 Profile: DateAsRating
-Parent: Comparison
+Parent: Classification
 Id: date-as-rating
 Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The DateAsRating Profile is used for representing a date or dateTime as a classifier value."
 * content
