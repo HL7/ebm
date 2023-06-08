@@ -12,7 +12,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
 * section ^slicing.discriminator.type = #pattern
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.rules = #open
-* section contains outcomeDefinition 0..1 and comparatorOnlyEvidence 0..1 and interventionOnlyEvidence 0..1 and comparativeEvidence 0..1 and certaintyOfEvidence 0..1
+* section contains outcomeDefinition 0..1 and comparatorOnlyEvidence 0..1 and interventionOnlyEvidence 0..1 and comparativeEvidence 0..1 and certaintyOfEvidence 0..1 and evidenceVariablePopulation 0..1 and interventionDefinition 0..1 and evidenceClassifier 0..1
 * section[outcomeDefinition].code = http://hl7.org/fhir/evidence-report-section#EvidenceVariable-outcome "Evidence Variable in variable role Outcome (MeasuredVariable)"
 * section[outcomeDefinition]
   * entry only Reference(OutcomeDefinition)
@@ -28,6 +28,16 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
 * section[certaintyOfEvidence].code = http://hl7.org/fhir/evidence-report-section#Certainty-of-Evidence "Certainty of Evidence"
 * section[certaintyOfEvidence]
   * entry only Reference(CertaintyOfEvidence)
+* section[evidenceVariablePopulation].code = http://hl7.org/fhir/evidence-report-section#EvidenceVariable-population "Evidence Variable in variable role Population"
+* section[evidenceVariablePopulation]
+  * entry only Reference(EvidenceVariable or Group or CohortDefinition)
+* section[interventionDefinition].code = http://hl7.org/fhir/evidence-report-section#EvidenceVariable-exposure "Evidence Variable in variable role Exposure"
+* section[interventionDefinition]
+  * entry only Reference(InterventionDefinition)
+* section[evidenceClassifier].code = http://hl7.org/fhir/evidence-report-section#Evidence-Classifier "Evidence Classifier section"
+* section[evidenceClassifier]
+  * entry only Reference(ArtifactAssessment)
+
 
 
  
