@@ -2,4 +2,32 @@ Profile: EvidenceMap
 Parent: EvidenceReport
 Id: evidence-map
 Description: "Profile of Composition for Evidence Based Medicine IG. The EvidenceMap Profile is used for an organized listing of Resources used to generate EvidenceReport instances." 
-* type.text = "EvidenceMap"
+* category 1..*
+* category ^slicing.discriminator.type = #pattern
+* category ^slicing.discriminator.path = "text"
+* category ^slicing.rules = #open
+* category contains evidenceMap 1..1 MS
+* category[evidenceMap].text = "EvidenceMap"
+* section 1..*
+* section ^slicing.discriminator.type = #pattern
+* section ^slicing.discriminator.path = "code"
+* section ^slicing.rules = #open
+* section contains outcomeDefinition 0..1 and comparatorOnlyEvidence 0..1 and interventionOnlyEvidence 0..1 and comparativeEvidence 0..1 and certaintyOfEvidence 0..1
+* section[outcomeDefinition].code = http://hl7.org/fhir/evidence-report-section#EvidenceVariable-outcome "Evidence Variable in variable role Outcome (MeasuredVariable)"
+* section[outcomeDefinition]
+  * entry only Reference(OutcomeDefinition)
+* section[comparatorOnlyEvidence].code = http://hl7.org/fhir/evidence-report-section#Control-group-alone-Evidence "Evidence Results for the control exposure only"
+* section[comparatorOnlyEvidence]
+  * entry only Reference(ComparatorOnlyEvidence)
+* section[interventionOnlyEvidence].code = http://hl7.org/fhir/evidence-report-section#Intervention-group-alone-Evidence "Evidence Results for the intervention exposure only"
+* section[interventionOnlyEvidence]
+  * entry only Reference(InterventionOnlyEvidence)
+* section[comparativeEvidence].code = http://hl7.org/fhir/evidence-report-section#Intervention-vs-Control-Evidence "Evidence Results for comparison of Intervention and Control"
+* section[comparativeEvidence]
+  * entry only Reference(ComparativeEvidence)
+* section[certaintyOfEvidence].code = http://hl7.org/fhir/evidence-report-section#Certainty-of-Evidence "Certainty of Evidence"
+* section[certaintyOfEvidence]
+  * entry only Reference(CertaintyOfEvidence)
+
+
+ 
