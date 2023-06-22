@@ -22,3 +22,14 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The TableCo
 * section[tableColumnDefinition].title = "Table Column Definition"
 * section[tableColumnDefinition].code.text = "Table Column Definition"
 * section[tableColumnDefinition].section 1..*
+  * code 1..1
+  * section 2..2
+  * section ^slicing.discriminator.type = #pattern
+  * section ^slicing.discriminator.path = "code"
+  * section ^slicing.rules = #closed
+  * section contains columnHeader 1..1 MS and contentGenerationRule 1..1 MS
+  * section[columnHeader].title = "Column Header"
+  * section[columnHeader].code.text = "column-header"
+  * section[columnHeader].text 1..1
+  * section[contentGenerationRule].title = "Content Generation Rule"
+  * section[contentGenerationRule].code.text = "content-generation-rule"
