@@ -12,7 +12,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
 * extension contains ArtifactLastReviewDate named lastReviewDate 0..1
 * extension contains ArtifactEffectivePeriod named effectivePeriod 0..1
 * type.text = "EvidenceReport"
-* subject only Reference(EvidenceReportSubject)
+* subject only Reference(Citation or EvidenceReportSubject or ResearchStudy)
 * subject 0..1
-  * ^comment = "Reference a single EvidenceVariable Resource (EvidenceReportSubject Profile) to define the subject of this EvidenceReport."
+  * ^comment = "Reference a single Citation Resource, EvidenceVariable Resource (EvidenceReportSubject Profile), or ReserchStudy Resource to define the subject of this EvidenceReport."
 * attester.mode from http://hl7.org/fhir/ValueSet/contributor-role (preferred)
