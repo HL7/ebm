@@ -16,4 +16,8 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The BookCitati
   * classifier ^slicing.rules = #open
   * classifier contains preprint 1..1 MS
   * classifier[preprint].coding = http://hl7.org/fhir/citation-artifact-classifier#D001877 "Book"
+* citedArtifact
+  * identifier
+    * ^definition = "A formal identifier that is used to identify the cited book when it is represented in other formats, or referenced in a specification, model, design or an instance." 
+    * ^short = "Unique identifier. May include ISBN, DOI, PMID, PMCID, etc"
   
