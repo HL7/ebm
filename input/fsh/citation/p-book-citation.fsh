@@ -19,5 +19,13 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The BookCitati
 * citedArtifact
   * identifier
     * ^definition = "A formal identifier that is used to identify the cited book when it is represented in other formats, or referenced in a specification, model, design or an instance." 
-    * ^short = "Unique identifier. May include ISBN, DOI, PMID, PMCID, etc"
+    * ^short = "Unique identifier. May include ISBN, Bookshelf ID, GTIN, DOI, PMID, etc"
+  * publicationForm
+    * publishedIn
+      * type
+        * ^short = "Not typically used when citing a book itself"
+      * identifier
+        * ^short = "Not typically used when citing a book itself"
+      * title
+        * ^short = "Not typically used when citing a book itself"
   
