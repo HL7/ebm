@@ -12,7 +12,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
 * section ^slicing.discriminator.type = #pattern
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.rules = #open
-* section contains protocolSynopsis 1..1 MS and trialSchema 1..* MS and scheduleOfActivities 1..* MS
+* section contains protocolSynopsis 1..1 MS and trialSchema 1..1 MS and scheduleOfActivities 1..1 MS
 * section[protocolSynopsis].code.text = "1.1 Protocol Synopsis"
   * section 6..*
   * section ^slicing.discriminator.type = #pattern
