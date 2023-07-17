@@ -31,6 +31,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
   * section ^slicing.rules = #open
   * section contains doseModification 0..1 MS
   * section[doseModification].code.text = "6.3.1 Trial Intervention Dose Modification"
+  * section[doseModification]
     * text 1..1
     * entry only Reference(ActivityDefinition)
 * section[treatmentOfOverdose].code.text = "6.4 Treatment of Overdose"
