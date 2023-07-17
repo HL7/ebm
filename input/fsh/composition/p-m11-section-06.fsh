@@ -7,7 +7,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
 * category ^slicing.discriminator.path = "text"
 * category ^slicing.rules = #open
 * category contains section06 1..1 MS
-* category[section05].text = "Section 6 Trial Intervention and Concomitant Therapy"
+* category[section06].text = "Section 6 Trial Intervention and Concomitant Therapy"
 * section 8..*
 * section ^slicing.discriminator.type = #pattern
 * section ^slicing.discriminator.path = "code"
