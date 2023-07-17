@@ -17,7 +17,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
 * section[description]
   * text 1..1
   * entry only Reference(InterventionDefinition)
-* section[rationale].code.text = "5.2 Rationale for Trial Intervention"
+* section[rationale].code.text = "6.2 Rationale for Trial Intervention"
 * section[rationale]
   * text 1..1
   * entry only Reference(InterventionDefinition)
