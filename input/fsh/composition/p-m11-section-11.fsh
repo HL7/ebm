@@ -1,7 +1,7 @@
 Profile: M11Section11
 Parent: EvidenceReport
 Id: m11-section-11
-Description: "Profile of Composition for Evidence Based Medicine IG. The M11Section11 Profile is used for summary of Section 11 General Considerations: Risk Management and Quality Assurance for the Interntaional Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification."
+Description: "Profile of Composition for Evidence Based Medicine IG. The M11Section11 Profile is used for summary of Section 11 General Considerations: Risk Management and Quality Assurance for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification."
 * category 1..*
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "text"

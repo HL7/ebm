@@ -1,7 +1,7 @@
 Profile: M11Section09
 Parent: EvidenceReport
 Id: m11-section-09
-Description: "Profile of Composition for Evidence Based Medicine IG. The M11Section09 Profile is used for summary of Section 9 Statistical Considerations for the Interntaional Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification."
+Description: "Profile of Composition for Evidence Based Medicine IG. The M11Section09 Profile is used for summary of Section 9 Statistical Considerations for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification."
 * category 1..*
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "text"
