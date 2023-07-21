@@ -41,6 +41,8 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
 * section[trialSchema].code.text = "1.2 Trial Schema"
 * section[trialSchema]
   * text 1..1
+  * entry only Reference(StudyProtocolSoa or StudyVisitSoa or PlannedStudyVisitSoa or StudyActivitySoa)
 * section[scheduleOfActivities].code.text = "1.3 Schedule of Activities"
 * section[scheduleOfActivities]
   * text 1..1
+  * entry only Reference(StudyProtocolSoa or StudyVisitSoa or PlannedStudyVisitSoa or StudyActivitySoa)
