@@ -41,8 +41,8 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
 * section[trialSchema].code.text = "1.2 Trial Schema"
 * section[trialSchema]
   * text 1..1
-  * entry only Reference(http://hl7.org/fhir/uv/vulcan-schedule/StructureDefinition-StudyProtocolSoa.html or http://hl7.org/fhir/uv/vulcan-schedule/StructureDefinition-StudyVisitSoa.html or http://hl7.org/fhir/uv/vulcan-schedule/StructureDefinition-PlannedStudyVisitSoa.html or http://hl7.org/fhir/uv/vulcan-schedule/StructureDefinition-StudyActivitySoa.html)
+  * entry only Reference(SoaPlanDefinition)
 * section[scheduleOfActivities].code.text = "1.3 Schedule of Activities"
 * section[scheduleOfActivities]
   * text 1..1
-  * entry only Reference(http://hl7.org/fhir/uv/vulcan-schedule/StructureDefinition-StudyProtocolSoa.html or http://hl7.org/fhir/uv/vulcan-schedule/StructureDefinition-StudyVisitSoa.html or http://hl7.org/fhir/uv/vulcan-schedule/StructureDefinition-PlannedStudyVisitSoa.html or http://hl7.org/fhir/uv/vulcan-schedule/StructureDefinition-StudyActivitySoa.html)
+  * entry only Reference(SoaPlanDefinition)
