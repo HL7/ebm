@@ -28,4 +28,6 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The BookPartCi
         * ^short = "Unique identifier. May include ISBN, Bookshelf ID, GTIN, DOI, PMID, etc"
       * title
         * ^short = "Title of the book"
+  * contributorship.entry.role
+    * ^comment = "Consider 'Book Editor' as an additional contributor role type."
   
