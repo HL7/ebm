@@ -19,13 +19,13 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The BookPartCi
 * citedArtifact
   * identifier
     * ^definition = "A formal identifier that is used to identify the cited book part when it is represented in other formats, or referenced in a specification, model, design or an instance." 
-    * ^short = "Unique identifier. May include DOI, PMID, etc"
+    * ^short = "Unique identifier. May include Bookshelf ID, DOI, etc"
   * publicationForm
     * publishedIn
-      * type
-        * ^short = "TO BE EDITED TO REFER TO BOOK"
+      * type = http://build.fhir.org/valueset-published-in-type.html#D001877 "Book"
       * identifier
-        * ^short = "TO BE EDITED TO REFER TO BOOK"
+        * ^definition = "A formal identifier that is used to identify the book when it is represented in other formats, or referenced in a specification, model, design or an instance." 
+        * ^short = "Unique identifier. May include ISBN, Bookshelf ID, GTIN, DOI, PMID, etc"
       * title
-        * ^short = "TO BE EDITED TO REFER TO BOOK"
+        * ^short = "Title of the book"
   
