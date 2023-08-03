@@ -7,9 +7,9 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The BookPartCi
 * classification ^slicing.discriminator.type = #pattern
 * classification ^slicing.discriminator.path = "type"
 * classification ^slicing.rules = #open
-* classification contains book 1..1 MS
-* classification[book].type = http://hl7.org/fhir/cited-artifact-classification-type#knowledge-artifact-type "Knowledge Artifact Type"
-* classification[book]
+* classification contains knowledgeArtifactType 1..1 MS
+* classification[knowledgeArtifactType].type = http://hl7.org/fhir/cited-artifact-classification-type#knowledge-artifact-type "Knowledge Artifact Type"
+* classification[knowledgeArtifactType]
   * classifier 1..*
   * classifier ^slicing.discriminator.type = #pattern
   * classifier ^slicing.discriminator.path = "coding"
