@@ -29,4 +29,4 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The DatasetCit
         * ^short = "Unique identifier."
       * title
         * ^short = "Title of the database"
-  
+//TODO - create support for how to handle the file type (e.g. .csv or .xls) for the dataset, e.g. citedArtifact.classification or specific extension
