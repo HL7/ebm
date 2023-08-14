@@ -107,10 +107,5 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Recomme
   * section[competingSummary].code.text = "competingSummary"
   * section[competingRelatedItems].code.text = "competingRelatedItems"
   * section[researchRatings].code.text = "researchRatings"
-  * section[acceptabilitySummary].code.text = "acceptabilitySummary"
-  * section[acceptabilityRelatedItems].code.text = "acceptabilityRelatedItems"
-  * section[feasibilityRatings].code.text = "feasibilityRatings"
   * section[researchSummary].code.text = "researchSummary"
   * section[researchRelatedItems].code.text = "researchRelatedItems"
-
-
