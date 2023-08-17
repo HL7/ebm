@@ -28,15 +28,15 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * content ^slicing.discriminator.path = "type"
 * content ^slicing.rules = #closed
 * content contains recommendationSpecification 1..1 MS and evidence 1..1 MS and netEffect 1..1 MS and judgments 1..1 MS and considerations 1..1 MS
-* content[recommendationSpecification].informationType = "container"
+//* content[recommendationSpecification].informationType = "container"
 * content[recommendationSpecification].type = https://fevir.net/resources/CodeSystem/27834#RJCS-content0 "Recommendation Specification"
-* content[evidence].informationType = "container"
+//* content[evidence].informationType = "container"
 * content[evidence].type = https://fevir.net/resources/CodeSystem/27834#RJCS-content1 "Evidence"
-* content[netEffect].informationType = "container"
+//* content[netEffect].informationType = "container"
 * content[netEffect].type = https://fevir.net/resources/CodeSystem/27834#RJCS-1007 "Net Effect"
-* content[judgments].informationType = "container"
+//* content[judgments].informationType = "container"
 * content[judgments].type = https://fevir.net/resources/CodeSystem/27834#RJCS-content2 "Judgments"
-* content[considerations].informationType = "container"
+//* content[considerations].informationType = "container"
 * content[considerations].type = https://fevir.net/resources/CodeSystem/27834#RJCS-content3 "Considerations"
 * content.classifier from https://fevir.net/resources/ValueSet/107288 (extensible)
 * content.freeToShare
