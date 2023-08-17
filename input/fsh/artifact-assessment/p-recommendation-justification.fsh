@@ -24,8 +24,27 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * content
   * ^definition = "A comment, rating, or classification of the recommendation."
   * ^short = "A comment, rating, or classification"
-* content.type from https://fevir.net/resources/ValueSet/107287 (extensible)
+* content ^slicing.discriminator.type = #pattern
+* content ^slicing.discriminator.path = "type"
+* content ^slicing.rules = #closed
+* content contains recommendationSpecification 1..1 MS and evidence 1..1 MS and netEffect 1..1 MS and judgments 1..1 MS and considerations 1..1 MS
+* content[recommendationSpecification].type = https://fevir.net/resources/CodeSystem/27834#RJCS-content0 "Recommendation Specification"
+* content[recommendationSpecification]
+  * informationType = "container"
+* content[evidence].type = https://fevir.net/resources/CodeSystem/27834#RJCS-content1 "Evidence"
+* content[evidence]
+  * informationType = "container"
+* content[netEffect].type = https://fevir.net/resources/CodeSystem/27834#RJCS-1007 "Net Effect"
+* content[netEffect]
+  * informationType = "container"
+* content[judgments].type = https://fevir.net/resources/CodeSystem/27834#RJCS-content2 "Judgments"
+* content[judgments]
+  * informationType = "container"
+* content[considerations].type = https://fevir.net/resources/CodeSystem/27834#RJCS-content3 "Considerations"
+* content[considerations]
+  * informationType = "container"
 * content.classifier from https://fevir.net/resources/ValueSet/107288 (extensible)
 * content.freeToShare
   * ^definition = "Acceptable to publicly share the content, specific to the associated content instance"
   * ^short = "Acceptable to publicly share the content"
+
