@@ -8,6 +8,13 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Recomme
 * category ^slicing.rules = #open
 * category contains recommendation 1..1 MS
 * category[recommendation].text = "Recommendation"
+* relatesTo 1..*
+* relatesTo ^slicing.discriminator.type = #pattern
+* relatesTo ^slicing.discriminator.path = "type"
+* relatesTo ^slicing.rules = #open
+* relatesTo contains derivedFrom 1..* MS
+* relatesTo[derivedFrom].type = "derived-from"
+* relatesTo[derivedFrom].resourceReference only Reference(RecommendationJustification or PlanDefinition)
 * section 5..5
 * section ^slicing.discriminator.type = #pattern
 * section ^slicing.discriminator.path = "code"
@@ -21,7 +28,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Recomme
   * section contains overallRatings 0..1 MS and overallSummary 0..1 and overallRelatedItems 0..1 and strengthOfRecommendationRating 0..1 and strengthOfRecommendationSummary 0..1 and directionOfRecommendation 0..1 and populationDisplay 0..1 and actionDisplay 0..1 and oppositeActionDisplay 0..1
   * section[overallRatings].code.text = "overallRatings"
   * section[overallSummary].code.text = "overallSummary"
-  * section[overallRelatedItems].code.text = "overallSummary"
+  * section[overallRelatedItems].code.text = "overallRelatedItems"
   * section[strengthOfRecommendationRating].code.text = "strengthOfRecommendationRating"
   * section[strengthOfRecommendationSummary].code.text = "strengthOfRecommendationSummary"
   * section[directionOfRecommendation].code.text = "directionOfRecommendation"
@@ -33,10 +40,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Recomme
   * section ^slicing.discriminator.type = #pattern
   * section ^slicing.discriminator.path = "code"
   * section ^slicing.rules = #open
-  * section contains overallRatings 0..1 MS and overallSummary 0..1 and overallRelatedItems 0..1 and summaryOfFindingsRatings 0..1 and summaryOfFindingsSummary 0..1 and summaryOfFindingsRelatedItems 0..1 and desirableRatings 0..1 and desirableSummary 0..1 and desirableRelatedItems 0..1 and undesirableRatings 0..1 and undesirableSummary 0..1 and undesirableRelatedItems 0..1
-  * section[overallRatings].code.text = "overallRatings"
-  * section[overallSummary].code.text = "overallSummary"
-  * section[overallRelatedItems].code.text = "overallSummary"
+  * section contains summaryOfFindingsRatings 0..1 and summaryOfFindingsSummary 0..1 and summaryOfFindingsRelatedItems 0..1 and desirableRatings 0..1 and desirableSummary 0..1 and desirableRelatedItems 0..1 and undesirableRatings 0..1 and undesirableSummary 0..1 and undesirableRelatedItems 0..1
   * section[summaryOfFindingsRatings].code.text = "summaryOfFindingsRatings"
   * section[summaryOfFindingsSummary].code.text = "summaryOfFindingsSummary"
   * section[summaryOfFindingsRelatedItems].code.text = "summaryOfFindingsRelatedItems"
@@ -63,10 +67,10 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Recomme
   * section ^slicing.discriminator.type = #pattern
   * section ^slicing.discriminator.path = "code"
   * section ^slicing.rules = #open
-  * section contains overallRatings 0..1 MS and overallSummary 0..1 and overallRelatedItems 0..1 and problemImportanceRatings 0..1 and problemImportanceSummary 0..1 and problemImportanceRelatedItems 0..1 and costsRatings 0..1 and costsSummary 0..1 and costsRelatedItems 0..1 and costEffectivenessRatings 0..1 and costEffectivenessSummary 0..1 and costEffectivenessRelatedItems 0..1 and equityRatings 0..1 and equitySummary 0..1 and equityRelatedItems 0..1 and acceptabilityRatings 0..1 and acceptabilitySummary 0..1 and acceptabilityRelatedItems 0..1 and feasibilityRatings 0..1 and feasibilitySummary 0..1 and feasibilityRelatedItems 0..1
-  * section[overallRatings].code.text = "overallRatings"
-  * section[overallSummary].code.text = "overallSummary"
-  * section[overallRelatedItems].code.text = "overallSummary"
+  * section contains overallJustificationRatings 0..1 MS and overallJustificationSummary 0..1 and overallJustificationRelatedItems 0..1 and problemImportanceRatings 0..1 and problemImportanceSummary 0..1 and problemImportanceRelatedItems 0..1 and costsRatings 0..1 and costsSummary 0..1 and costsRelatedItems 0..1 and costEffectivenessRatings 0..1 and costEffectivenessSummary 0..1 and costEffectivenessRelatedItems 0..1 and equityRatings 0..1 and equitySummary 0..1 and equityRelatedItems 0..1 and acceptabilityRatings 0..1 and acceptabilitySummary 0..1 and acceptabilityRelatedItems 0..1 and feasibilityRatings 0..1 and feasibilitySummary 0..1 and feasibilityRelatedItems 0..1
+  * section[overallJustificationRatings].code.text = "overallJustificationRatings"
+  * section[overallJustificationSummary].code.text = "overallJustificationSummary"
+  * section[overallJustificationRelatedItems].code.text = "overallJustificationRelatedItems"
   * section[problemImportanceRatings].code.text = "problemImportanceRatings"
   * section[problemImportanceSummary].code.text = "problemImportanceSummary"
   * section[problemImportanceRelatedItems].code.text = "problemImportanceRelatedItems"
@@ -90,10 +94,10 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Recomme
   * section ^slicing.discriminator.type = #pattern
   * section ^slicing.discriminator.path = "code"
   * section ^slicing.rules = #open
-  * section contains overallRatings 0..1 MS and overallSummary 0..1 and overallRelatedItems 0..1 and subgroupRatings 0..1 and subgroupSummary 0..1 and subgroupRelatedItems 0..1 and implementationRatings 0..1 and implementationSummary 0..1 and implementationRelatedItems 0..1 and monitoringRatings 0..1 and monitoringSummary 0..1 and monitoringRelatedItems 0..1 and competingRatings 0..1 and competingSummary 0..1 and competingRelatedItems 0..1 and researchRatings 0..1 and researchSummary 0..1 and researchRelatedItems 0..1
-  * section[overallRatings].code.text = "overallRatings"
-  * section[overallSummary].code.text = "overallSummary"
-  * section[overallRelatedItems].code.text = "overallSummary"
+  * section contains overallConsiderationsRatings 0..1 MS and overallConsiderationsSummary 0..1 and overallConsiderationsRelatedItems 0..1 and subgroupRatings 0..1 and subgroupSummary 0..1 and subgroupRelatedItems 0..1 and implementationRatings 0..1 and implementationSummary 0..1 and implementationRelatedItems 0..1 and monitoringRatings 0..1 and monitoringSummary 0..1 and monitoringRelatedItems 0..1 and competingRatings 0..1 and competingSummary 0..1 and competingRelatedItems 0..1 and researchRatings 0..1 and researchSummary 0..1 and researchRelatedItems 0..1
+  * section[overallConsiderationsRatings].code.text = "overallConsiderationsRatings"
+  * section[overallConsiderationsSummary].code.text = "overallConsiderationsSummary"
+  * section[overallConsiderationsRelatedItems].code.text = "overallConsiderationsRelatedItems"
   * section[subgroupRatings].code.text = "subgroupRatings"
   * section[subgroupSummary].code.text = "subgroupSummary"
   * section[subgroupRelatedItems].code.text = "subgroupRelatedItems"
