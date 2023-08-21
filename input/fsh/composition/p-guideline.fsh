@@ -20,4 +20,4 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Guideli
 * section[text].code.text = "Text"
 * section[methods].code.text = "Methods"
 * section[acknowledgements].code.text = "Acknowledgements"
-* section[appendices].code.text = "Aappendices"
+* section[appendices].code.text = "Appendices"
