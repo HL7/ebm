@@ -15,26 +15,25 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Recomme
 * relatesTo contains derivedFrom 1..* MS
 * relatesTo[derivedFrom].type = http://hl7.org/fhir/related-artifact-type#derived-from
 * relatesTo[derivedFrom].resourceReference only Reference(RecommendationJustification or PlanDefinition)
-* section 5..5
+* section 1..5
 * section ^slicing.discriminator.type = #pattern
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.rules = #closed
-* section contains recommendationSpecification 1..1 MS and evidence 1..1 MS and netEffect 1..1 MS and judgments 1..1 MS and considerations 1..1 MS
+* section contains recommendationSpecification 1..1 MS and evidence 0..1 MS and netEffect 0..1 MS and judgments 0..1 MS and considerations 0..1 MS
 * section[recommendationSpecification].code.text = "Recommendation Specification"
 * section[recommendationSpecification]
   * section ^slicing.discriminator.type = #pattern
   * section ^slicing.discriminator.path = "code"
   * section ^slicing.rules = #open
-  * section contains overallRatings 0..1 MS and overallSummary 0..1 and overallRelatedItems 0..1 and strengthOfRecommendationRating 0..1 and strengthOfRecommendationSummary 0..1 and directionOfRecommendation 0..1 and populationDisplay 0..1 and actionDisplay 0..1 and oppositeActionDisplay 0..1
+  * section contains overallRatings 0..1 MS and overallSummary 0..1 and overallRelatedItems 0..1 and strengthOfRecommendationRating 0..1 and directionOfRecommendation 0..1 and population 0..1 and action 0..1 and oppositeAction 0..1
   * section[overallRatings].code.text = "overallRatings"
   * section[overallSummary].code.text = "overallSummary"
   * section[overallRelatedItems].code.text = "overallRelatedItems"
   * section[strengthOfRecommendationRating].code.text = "strengthOfRecommendationRating"
-  * section[strengthOfRecommendationSummary].code.text = "strengthOfRecommendationSummary"
   * section[directionOfRecommendation].code.text = "directionOfRecommendation"
-  * section[populationDisplay].code.text = "populationDisplay"
-  * section[actionDisplay].code.text = "actionDisplay"
-  * section[oppositeActionDisplay].code.text = "oppositeActionDisplay"
+  * section[population].code.text = "population"
+  * section[action].code.text = "action"
+  * section[oppositeAction].code.text = "oppositeAction"
 * section[evidence].code.text = "Evidence"
 * section[evidence]
   * section ^slicing.discriminator.type = #pattern
@@ -55,10 +54,10 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Recomme
   * section ^slicing.discriminator.type = #pattern
   * section ^slicing.discriminator.path = "code"
   * section ^slicing.rules = #open
-  * section contains valuesRatings 0..1 MS and valuesSummary 0..1 and valuesRelatedItems 0..1 and netEffectRatings 0..1 and netEffectSummary 0..1 and netEffectRelatedItems 0..1
-  * section[valuesRatings].code.text = "valuesRatings"
-  * section[valuesSummary].code.text = "valuesSummary"
-  * section[valuesRelatedItems].code.text = "valuesRelatedItems"
+  * section contains preferencesRatings 0..1 MS and preferencesSummary 0..1 and preferencesRelatedItems 0..1 and netEffectRatings 0..1 and netEffectSummary 0..1 and netEffectRelatedItems 0..1
+  * section[preferencesRatings].code.text = "preferencesRatings"
+  * section[preferencesSummary].code.text = "preferencesSummary"
+  * section[preferencesRelatedItems].code.text = "preferencesRelatedItems"
   * section[netEffectRatings].code.text = "netEffectRatings"
   * section[netEffectSummary].code.text = "netEffectSummary"
   * section[netEffectRelatedItems].code.text = "netEffectRelatedItems"
@@ -98,18 +97,18 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Recomme
   * section[overallConsiderationsRatings].code.text = "overallConsiderationsRatings"
   * section[overallConsiderationsSummary].code.text = "overallConsiderationsSummary"
   * section[overallConsiderationsRelatedItems].code.text = "overallConsiderationsRelatedItems"
-  * section[subgroupRatings].code.text = "subgroupRatings"
-  * section[subgroupSummary].code.text = "subgroupSummary"
-  * section[subgroupRelatedItems].code.text = "subgroupRelatedItems"
-  * section[implementationRatings].code.text = "implementationRatings"
-  * section[implementationSummary].code.text = "implementationSummary"
-  * section[implementationRelatedItems].code.text = "implementationRelatedItems"
-  * section[monitoringRatings].code.text = "monitoringRatings"
-  * section[monitoringSummary].code.text = "monitoringSummary"
-  * section[monitoringRelatedItems].code.text = "monitoringRelatedItems"
-  * section[competingRatings].code.text = "competingRatings"
-  * section[competingSummary].code.text = "competingSummary"
-  * section[competingRelatedItems].code.text = "competingRelatedItems"
-  * section[researchRatings].code.text = "researchRatings"
-  * section[researchSummary].code.text = "researchSummary"
-  * section[researchRelatedItems].code.text = "researchRelatedItems"
+  * section[subgroupRatings].code.text = "subgroupConsiderationsRatings"
+  * section[subgroupSummary].code.text = "subgroupConsiderationsSummary"
+  * section[subgroupRelatedItems].code.text = "subgroupConsiderationsRelatedItems"
+  * section[implementationRatings].code.text = "implementationConsiderationsRatings"
+  * section[implementationSummary].code.text = "implementationConsiderationsSummary"
+  * section[implementationRelatedItems].code.text = "implementationConsiderationsRelatedItems"
+  * section[monitoringRatings].code.text = "monitoringConsiderationsRatings"
+  * section[monitoringSummary].code.text = "monitoringConsiderationsSummary"
+  * section[monitoringRelatedItems].code.text = "monitoringConsiderationsRelatedItems"
+  * section[competingRatings].code.text = "competingInterestsRatings"
+  * section[competingSummary].code.text = "competingInterestsSummary"
+  * section[competingRelatedItems].code.text = "competingInterestsRelatedItems"
+  * section[researchRatings].code.text = "researchConsiderationsRatings"
+  * section[researchSummary].code.text = "researchConsiderationsSummary"
+  * section[researchRelatedItems].code.text = "researchConsiderationsRelatedItems"
