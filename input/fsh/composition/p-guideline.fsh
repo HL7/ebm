@@ -8,11 +8,11 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Guideli
 * category ^slicing.rules = #open
 * category contains guideline 1..1 MS
 * category[guideline].text = "Guideline"
-* section 6..6
+* section 1..6
 * section ^slicing.discriminator.type = #pattern
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.rules = #closed
-* section contains introduction 1..1 MS and recommendations 1..1 MS and text 1..1 MS and methods 1..1 MS and acknowledgements 1..1 MS and appendices 1..1 MS
+* section contains introduction 0..1 MS and recommendations 0..1 MS and text 0..1 MS and methods 0..1 MS and acknowledgements 0..1 MS and appendices 0..1 MS
 * section[introduction].code.text = "Introduction"
 * section[recommendations].code.text = "Recommendations"
 * section[recommendations]
