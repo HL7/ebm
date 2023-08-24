@@ -42,4 +42,3 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * content.freeToShare
   * ^definition = "Acceptable to publicly share the content, specific to the associated content instance"
   * ^short = "Acceptable to publicly share the content"
-
