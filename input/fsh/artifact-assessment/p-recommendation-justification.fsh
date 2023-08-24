@@ -21,13 +21,13 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * artifact[x]
   * ^definition = "A reference to a resource, canonical resource, or non-FHIR resource which the Recommendation Justification is about."
   * ^short = "The recommendation that is justified"
-* content
+* content 1..5
   * ^definition = "A comment, rating, or classification of the recommendation."
   * ^short = "A comment, rating, or classification"
 * content ^slicing.discriminator.type = #pattern
 * content ^slicing.discriminator.path = "type"
 * content ^slicing.rules = #closed
-* content contains recommendationSpecification 1..1 MS and evidence 1..1 MS and netEffect 1..1 MS and judgments 1..1 MS and considerations 1..1 MS
+* content contains recommendationSpecification 1..1 MS and evidence 0..1 MS and netEffect 0..1 MS and judgments 0..1 MS and considerations 0..1 MS
 * content[recommendationSpecification].informationType = http://hl7.org/fhir/artifactassessment-information-type#container
 * content[recommendationSpecification].type = https://fevir.net/resources/CodeSystem/27834#RJCS-content0 "Recommendation Specification"
 * content[evidence].informationType = http://hl7.org/fhir/artifactassessment-information-type#container
