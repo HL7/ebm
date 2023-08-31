@@ -30,6 +30,24 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * content contains recommendationSpecification 1..1 MS and evidence 0..1 MS and netEffect 0..1 MS and judgments 0..1 MS and considerations 0..1 MS
 * content[recommendationSpecification].informationType = http://hl7.org/fhir/artifactassessment-information-type#container
 * content[recommendationSpecification].type = https://fevir.net/resources/CodeSystem/27834#RJCS-content0 "Recommendation Specification"
+* content[recommendationSpecification]
+  * component ^slicing.discriminator.type = #pattern
+  * component ^slicing.discriminator.path = "type"
+  * component ^slicing.rules = #closed
+  * component contains strengthOfRecommendation 0..1 MS and directionOfRecommendation 0..1 MS and population 0..1 MS and action 0..1 MS and oppositeAction 0..1 MS
+  * component[strengthOfRecommendation].informationType = http://hl7.org/fhir/artifactassessment-information-type#rating
+  * component[strengthOfRecommendation].type = https://fevir.net/resources/CodeSystem/27834#RJCS-1000 "Strength of Recommendation"
+  * component[directionOfRecommendation].informationType = http://hl7.org/fhir/artifactassessment-information-type#rating
+  * component[directionOfRecommendation].type = https://fevir.net/resources/CodeSystem/27834#RJCS-1014 "Direction of Recommendation"
+  * component[population].informationType = http://hl7.org/fhir/artifactassessment-information-type#container
+  * component[population].type = https://fevir.net/resources/CodeSystem/27834#RJCS-1015 "Population"
+  * component[population].relatedArtifact ^comment = "The population Resource SHALL be the same as that referenced by the Resource in the artifactReference element."
+  * component[action].informationType = http://hl7.org/fhir/artifactassessment-information-type#container
+  * component[action].type = https://fevir.net/resources/CodeSystem/27834#RJCS-1016 "Action"
+  * component[action].relatedArtifact ^comment = "The action Resource(s) SHALL be the same as that referenced by the Resource in the artifactReference element."
+  * component[oppositeAction].informationType = http://hl7.org/fhir/artifactassessment-information-type#container
+  * component[oppositeAction].type = https://fevir.net/resources/CodeSystem/27834#RJCS-1017 "Opposite Action"
+  * component[oppositeAction].relatedArtifact ^comment = "The opposited action Resource(s) SHALL be the same as that referenced by the Resource in the artifactReference element."
 * content[evidence].informationType = http://hl7.org/fhir/artifactassessment-information-type#container
 * content[evidence].type = https://fevir.net/resources/CodeSystem/27834#RJCS-content1 "Evidence"
 * content[netEffect].informationType = http://hl7.org/fhir/artifactassessment-information-type#container
