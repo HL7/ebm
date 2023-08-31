@@ -54,16 +54,38 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
   * component ^slicing.discriminator.path = "type"
   * component ^slicing.rules = #closed
   * component contains desirableEffects 0..1 MS and undesirableEffects 0..1 MS
-  * component[desirableEffects].informationType = http://hl7.org/fhir/artifactassessment-information-type#rating
   * component[desirableEffects].type = https://fevir.net/resources/CodeSystem/27834#RJCS-1004 "Desirable Effects"
-  * component[undesirableEffects].informationType = http://hl7.org/fhir/artifactassessment-information-type#rating
   * component[undesirableEffects].type = https://fevir.net/resources/CodeSystem/27834#RJCS-1005 "Undesirable Effects"
 * content[netEffect].informationType = http://hl7.org/fhir/artifactassessment-information-type#container
 * content[netEffect].type = https://fevir.net/resources/CodeSystem/27834#RJCS-1007 "Net Effect"
+  * component ^slicing.discriminator.type = #pattern
+  * component ^slicing.discriminator.path = "type"
+  * component ^slicing.rules = #closed
+  * component contains preferences 0..1 MS
+  * component[preferences].type = https://fevir.net/resources/CodeSystem/27834#RJCS-1006 "Values/Preferences"
 * content[judgments].informationType = http://hl7.org/fhir/artifactassessment-information-type#container
 * content[judgments].type = https://fevir.net/resources/CodeSystem/27834#RJCS-content2 "Judgments"
+  * component ^slicing.discriminator.type = #pattern
+  * component ^slicing.discriminator.path = "type"
+  * component ^slicing.rules = #closed
+  * component contains problemImportance 0..1 MS and costs 0..1 MS and costeffectiveness 0..1 MS and equity 0..1 MS and acceptability 0..1 MS and feasibility 0..1 MS
+  * component[problemImportance].type = https://fevir.net/resources/CodeSystem/27834#RJCS-1003 "Problem Importance"
+  * component[costs].type = https://fevir.net/resources/CodeSystem/27834#RJCS-1008 "Resources/Costs"
+  * component[costeffectiveness].type = https://fevir.net/resources/CodeSystem/27834#RJCS-1009 "Cost-effectiveness"
+  * component[equity].type = https://fevir.net/resources/CodeSystem/27834#RJCS-1010 "Equity"
+  * component[acceptability].type = https://fevir.net/resources/CodeSystem/27834#RJCS-1011 "Acceptability"
+  * component[feasibility].type = https://fevir.net/resources/CodeSystem/27834#RJCS-1012 "Feasibility"
 * content[considerations].informationType = http://hl7.org/fhir/artifactassessment-information-type#container
 * content[considerations].type = https://fevir.net/resources/CodeSystem/27834#RJCS-content3 "Considerations"
+  * component ^slicing.discriminator.type = #pattern
+  * component ^slicing.discriminator.path = "type"
+  * component ^slicing.rules = #closed
+  * component contains subgroupConsiderations 0..1 MS and implementationConsiderations 0..1 MS and monitoringConsiderations 0..1 MS and competingInterests 0..1 MS and researchPriorities 0..1 MS
+  * component[subgroupConsiderations].type = https://fevir.net/resources/CodeSystem/27834#RJCS-1019 "Subgroup Considerations"
+  * component[implementationConsiderations].type = https://fevir.net/resources/CodeSystem/27834#RJCS-1020 "Implementation Considerations"
+  * component[monitoringConsiderations].type = https://fevir.net/resources/CodeSystem/27834#RJCS-1021 "Monitoring Considerations"
+  * component[competingInterests].type = https://fevir.net/resources/CodeSystem/27834#RJCS-1002 "Competing Interests"
+  * component[researchPriorities].type = https://fevir.net/resources/CodeSystem/27834#RJCS-1022 "Research Priorities"
 * content.classifier from https://fevir.net/resources/ValueSet/107288 (extensible)
 * content.freeToShare
   * ^definition = "Acceptable to publicly share the content, specific to the associated content instance"
