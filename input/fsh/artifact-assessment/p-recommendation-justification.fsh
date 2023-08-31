@@ -50,6 +50,7 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
   * component[oppositeAction].relatedArtifact ^comment = "The opposited action Resource(s) SHALL be the same as that referenced by the Resource in the artifactReference element."
 * content[evidence].informationType = http://hl7.org/fhir/artifactassessment-information-type#container
 * content[evidence].type = https://fevir.net/resources/CodeSystem/27834#RJCS-content1 "Evidence"
+* content[evidence]
   * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "type"
   * component ^slicing.rules = #closed
@@ -58,6 +59,7 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
   * component[undesirableEffects].type = https://fevir.net/resources/CodeSystem/27834#RJCS-1005 "Undesirable Effects"
 * content[netEffect].informationType = http://hl7.org/fhir/artifactassessment-information-type#container
 * content[netEffect].type = https://fevir.net/resources/CodeSystem/27834#RJCS-1007 "Net Effect"
+* content[netEffect]
   * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "type"
   * component ^slicing.rules = #closed
@@ -65,6 +67,7 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
   * component[preferences].type = https://fevir.net/resources/CodeSystem/27834#RJCS-1006 "Values/Preferences"
 * content[judgments].informationType = http://hl7.org/fhir/artifactassessment-information-type#container
 * content[judgments].type = https://fevir.net/resources/CodeSystem/27834#RJCS-content2 "Judgments"
+* content[judgments]
   * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "type"
   * component ^slicing.rules = #closed
@@ -77,6 +80,7 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
   * component[feasibility].type = https://fevir.net/resources/CodeSystem/27834#RJCS-1012 "Feasibility"
 * content[considerations].informationType = http://hl7.org/fhir/artifactassessment-information-type#container
 * content[considerations].type = https://fevir.net/resources/CodeSystem/27834#RJCS-content3 "Considerations"
+* content[considerations]
   * component ^slicing.discriminator.type = #pattern
   * component ^slicing.discriminator.path = "type"
   * component ^slicing.rules = #closed
