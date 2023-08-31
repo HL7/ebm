@@ -50,6 +50,14 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
   * component[oppositeAction].relatedArtifact ^comment = "The opposited action Resource(s) SHALL be the same as that referenced by the Resource in the artifactReference element."
 * content[evidence].informationType = http://hl7.org/fhir/artifactassessment-information-type#container
 * content[evidence].type = https://fevir.net/resources/CodeSystem/27834#RJCS-content1 "Evidence"
+  * component ^slicing.discriminator.type = #pattern
+  * component ^slicing.discriminator.path = "type"
+  * component ^slicing.rules = #closed
+  * component contains desirableEffects 0..1 MS and undesirableEffects 0..1 MS
+  * component[desirableEffects].informationType = http://hl7.org/fhir/artifactassessment-information-type#rating
+  * component[desirableEffects].type = https://fevir.net/resources/CodeSystem/27834#RJCS-1004 "Desirable Effects"
+  * component[undesirableEffects].informationType = http://hl7.org/fhir/artifactassessment-information-type#rating
+  * component[undesirableEffects].type = https://fevir.net/resources/CodeSystem/27834#RJCS-1005 "Undesirable Effects"
 * content[netEffect].informationType = http://hl7.org/fhir/artifactassessment-information-type#container
 * content[netEffect].type = https://fevir.net/resources/CodeSystem/27834#RJCS-1007 "Net Effect"
 * content[judgments].informationType = http://hl7.org/fhir/artifactassessment-information-type#container
