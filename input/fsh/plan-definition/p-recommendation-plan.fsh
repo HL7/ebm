@@ -8,11 +8,6 @@ Description: "Profile of PlanDefinition for Evidence Based Medicine IG. The Reco
 * ^extension[=].valueCode = #cds
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
 * ^extension[=].valueCode = #trial-use
-* extension contains
-    $cqf-knowledgeCapability named knowledgeCapability 0..* MS and
-    $cqf-knowledgeRepresentationLevel named knowledgeRepresentationLevel 0..* MS and
-    $cpg-enabled named enabled 0..1 MS and
-    $cpg-partOf named partOf 0..1 MS
 * url 1..1 MS
 * version 1..1 MS
 * versionAlgorithm[x] MS
