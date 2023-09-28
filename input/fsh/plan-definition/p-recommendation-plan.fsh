@@ -2,7 +2,7 @@ Profile: RecommendationPlan
 Parent: PlanDefinition
 Id: recommendation-plan
 Description: "Profile of PlanDefinition for Evidence Based Medicine IG. The RecommendationPlan Profile is used for the implementable representation of a recommendation (such as that from a clinical practice guideline)."
-* ^extension[0].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* ^extension[1].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm" // fixme: using explicit index 1 now because sushi inserts the http://hl7.org/fhir/StructureDefinition/structuredefinition-implements extension at index 0 -- probably not intended
 * ^extension[=].valueInteger = 0
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg"
 * ^extension[=].valueCode = #cds
