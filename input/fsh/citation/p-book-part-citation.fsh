@@ -22,7 +22,7 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The BookPartCi
     * ^short = "Unique identifier. May include Bookshelf ID, DOI, etc"
   * publicationForm
     * publishedIn
-      * type = http://build.fhir.org/valueset-published-in-type.html#D001877 "Book"
+      * type = http://hl7.org/fhir/published-in-type#D001877 "Book"
       * identifier
         * ^definition = "A formal identifier that is used to identify the book when it is represented in other formats, or referenced in a specification, model, design or an instance." 
         * ^short = "Unique identifier. May include ISBN, Bookshelf ID, GTIN, DOI, PMID, etc"

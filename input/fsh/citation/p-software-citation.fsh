@@ -1,7 +1,7 @@
-Profile: DatabaseEntryCitation
+Profile: SoftwareCitation
 Parent: Citation
-Id: database-entry-citation
-Description: "Profile of Citation for Evidence Based Medicine IG. The DatabaseEntryCitation Profile is used for citations of a record within a database."
+Id: software-citation
+Description: "Profile of Citation for Evidence Based Medicine IG. The SoftwareCitation Profile is used for citations of executable code."
 * jurisdiction 0..0
 * classification 1..*
 * classification ^slicing.discriminator.type = #pattern
@@ -14,18 +14,19 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The DatabaseEn
   * classifier ^slicing.discriminator.type = #pattern
   * classifier ^slicing.discriminator.path = "coding"
   * classifier ^slicing.rules = #open
-  * classifier contains databaseEntry 1..1 MS
-  * classifier[databaseEntry].text = "Database Entry"
+  * classifier contains software 1..1 MS
+  * classifier[software].coding = http://hl7.org/fhir/citation-artifact-classifier#executable-app "Executable app"
 * citedArtifact
   * identifier
-    * ^definition = "A formal identifier that is used to identify the cited database record when it is represented in other formats, or referenced in a specification, model, design or an instance." 
+    * ^definition = "A formal identifier that is used to identify the cited software when it is represented in other formats, or referenced in a specification, model, design or an instance." 
     * ^short = "Unique identifier. May include DOI, FOI, Database Accession Number, etc"
   * publicationForm
     * publishedIn
-      * type = http://hl7.org/fhir/published-in-type#D019991 "Database"
+      * type
+        * ^comment = "often coded with system http://hl7.org/fhir/published-in-type, code D019991, and display Database"
       * identifier
         * ^definition = "A formal identifier that is used to identify the database when it is represented in other formats, or referenced in a specification, model, design or an instance." 
         * ^short = "Unique identifier."
       * title
         * ^short = "Title of the database"
-  
+//TODO - create support for how to handle the file type (e.g. .js or .py) for the software, e.g. citedArtifact.classification or specific extension

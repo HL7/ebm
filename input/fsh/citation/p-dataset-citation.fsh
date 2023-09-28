@@ -23,7 +23,7 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The DatasetCit
   * publicationForm
     * publishedIn
       * type
-        * ^comment = "often coded with system http://build.fhir.org/valueset-published-in-type.html, code D019991, and display Database"
+        * ^comment = "often coded with system http://hl7.org/fhir/published-in-type, code D019991, and display Database"
       * identifier
         * ^definition = "A formal identifier that is used to identify the database when it is represented in other formats, or referenced in a specification, model, design or an instance." 
         * ^short = "Unique identifier."
