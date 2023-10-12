@@ -7,3 +7,5 @@ Alias: $cpg-common-persona = http://hl7.org/fhir/uv/cpg/ValueSet/cpg-common-pers
 Alias: $ext-fmm = http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm
 Alias: $ext-wg = http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
 Alias: $ext-standards-status = http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
+
+Alias: $ext-characteristic-expression = http://hl7.org/fhir/StructureDefinition/characteristicExpression
