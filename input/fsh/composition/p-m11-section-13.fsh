@@ -21,19 +21,36 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
   * section ^slicing.discriminator.path = "code"
   * section ^slicing.rules = #open
   * section contains contraception 1..1 MS and clinicalLaboratoryTests 1..1 MS and regional 1..1 MS and priorAmendments 1..1 MS
-  * section[contraception].title = "13.1 Contraception"
-  * section[contraception].code.text = "13.1 Contraception"
+  * section[contraception].title = "Contraception"
+  * section[contraception].code.text = "section13.1-contraception"
   * section[contraception]
-    * text 1..1
-  * section[clinicalLaboratoryTests].title = "13.2 Clinical Laboratory Tests"
-  * section[clinicalLaboratoryTests].code.text = "13.2 Clinical Laboratory Tests"
+    * section 2..*
+    * section ^slicing.discriminator.type = #pattern
+    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.rules = #open
+    * section contains contraceptionDefinitions 1..1 MS and contraceptionDetails 1..1 MS
+      * section[contraceptionDefinitions].title = "Definitions Related to Childbearing Potential"
+      * section[contraceptionDefinitions].code.text = "section13.1.1-contraception-definitions"
+      * section[contraceptionDefinitions]
+        * text 1..1
+        * text ^comment = "Specify the definitions of Participant of childbearing potential and Participant of non-childbearing potential, or state Not Applicable."
+      * section[contraceptionDetails].title = "Contraception"
+      * section[contraceptionDetails].code.text = "section13.1.2-contraception-details"
+      * section[contraceptionDetails]
+        * text 1..1
+        * text ^comment = "Specify the contraceptive methods required and duration of use, or state Not Applicable."
+  * section[clinicalLaboratoryTests].title = "Clinical Laboratory Tests"
+  * section[clinicalLaboratoryTests].code.text = "section13.2-clinical-laboratory-tests"
   * section[clinicalLaboratoryTests]
     * text 1..1
-  * section[regional].title = "13.3 Country/Region-Specific Differences"
-  * section[regional].code.text = "13.3 Country/Region-Specific Differences"
+    * text ^comment = "Specify which laboratory parameters should be included in each clinical laboratory assessment panel (for example, for haematology, chemistry, urinalysis). A tabular presentation for such information is common. If applicable, include equations and references for locally calculated laboratory results. If not applicable, retain header and enter Not Applicable."
+  * section[regional].title = "Country/Region-Specific Differences"
+  * section[regional].code.text = "section13.3-country-specific-differences"
   * section[regional]
     * text 1..1
-  * section[priorAmendments].title = "13.4 Prior Protocol Amendment(s)"
-  * section[priorAmendments].code.text = "13.4 Prior Protocol Amendment(s)"
+    * text ^comment = "Although global clinical trial practices are increasingly harmonised, some country/ region-specific differences in requirements do exist (for example, document retention periods, contraception requirements).  Where differences in requirements cannot be reconciled, sponsors should explain how they will document and communicate country/region-specific differences (for example, by country/region-specific amendments or addenda). An alternative to country/region-specific amendments is to list the specific differences by country or countries in this section, including a reference to the relevant section of the protocol where the differing requirement applies. If not applicable, retain header and enter Not Applicable."
+  * section[priorAmendments].title = "Prior Protocol Amendment(s)"
+  * section[priorAmendments].code.text = "section13.4-prior-protocol-amendments"
   * section[priorAmendments]
     * text 1..1
+    * text ^comment = "Either enter value of {Not applicable. The protocol has not been amended.} or {Not applicable. This is the first protocol amendment.} or SEE TEMPLATE INSTRUCTIONS."
