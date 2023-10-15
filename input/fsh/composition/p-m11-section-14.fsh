@@ -13,8 +13,8 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.rules = #open
 * section contains glossary 1..1 MS
-* section[glossary].title = "14 APPENDIX: GLOSSARY OF TERMS AND ABBREVIATIONS"
-* section[glossary].code.text = "14 Glossary"
+* section[glossary].title = "Appendix: Glossary of Terms and Abbreviations"
+* section[glossary].code.text = "section14-glossary"
 * section[glossary]
   * text 1..1
   * text ^comment = "Define abbreviations and other terms used in the protocol. A tabular presentation is common and may serve as the definition at first use."
