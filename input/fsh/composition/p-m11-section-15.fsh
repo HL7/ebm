@@ -13,7 +13,9 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.rules = #open
 * section contains references 1..1 MS
+* section[references].title = "15 APPENDIX: REFERENCES"
 * section[references].code.text = "15 References"
 * section[references]
   * text 1..1
+  * text ^comment = "References should be listed in a common format that includes all relevant information to identify the source and date published.  If not published, this should be clearly indicated."
   * entry only Reference(Citation)
