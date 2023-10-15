@@ -8,13 +8,18 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
 * category ^slicing.rules = #open
 * category contains section13 1..1 MS
 * category[section13].text = "Section 13 Appendix: Definitions and Supporting Operational Details"
-* section 4..*
+* section 1..*
 * section ^slicing.discriminator.type = #pattern
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.rules = #open
 * section contains definitions 1..1 MS
 * section[definitions].title = "Appendix: Definitions and Supporting Operational Details"
 * section[definitions].code.text = "section13-definitions"
+* section[definitions]
+  * section 4..*
+  * section ^slicing.discriminator.type = #pattern
+  * section ^slicing.discriminator.path = "code"
+  * section ^slicing.rules = #open
   * section contains contraception 1..1 MS and clinicalLaboratoryTests 1..1 MS and regional 1..1 MS and priorAmendments 1..1 MS
   * section[contraception].title = "13.1 Contraception"
   * section[contraception].code.text = "13.1 Contraception"
