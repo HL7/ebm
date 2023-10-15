@@ -29,16 +29,16 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
     * section ^slicing.discriminator.path = "code"
     * section ^slicing.rules = #open
     * section contains contraceptionDefinitions 1..1 MS and contraceptionDetails 1..1 MS
-      * section[contraceptionDefinitions].title = "Definitions Related to Childbearing Potential"
-      * section[contraceptionDefinitions].code.text = "section13.1.1-contraception-definitions"
-      * section[contraceptionDefinitions]
-        * text 1..1
-        * text ^comment = "Specify the definitions of Participant of childbearing potential and Participant of non-childbearing potential, or state Not Applicable."
-      * section[contraceptionDetails].title = "Contraception"
-      * section[contraceptionDetails].code.text = "section13.1.2-contraception-details"
-      * section[contraceptionDetails]
-        * text 1..1
-        * text ^comment = "Specify the contraceptive methods required and duration of use, or state Not Applicable."
+    * section[contraceptionDefinitions].title = "Definitions Related to Childbearing Potential"
+    * section[contraceptionDefinitions].code.text = "section13.1.1-contraception-definitions"
+    * section[contraceptionDefinitions]
+      * text 1..1
+      * text ^comment = "Specify the definitions of Participant of childbearing potential and Participant of non-childbearing potential, or state Not Applicable."
+    * section[contraceptionDetails].title = "Contraception"
+    * section[contraceptionDetails].code.text = "section13.1.2-contraception-details"
+    * section[contraceptionDetails]
+      * text 1..1
+      * text ^comment = "Specify the contraceptive methods required and duration of use, or state Not Applicable."
   * section[clinicalLaboratoryTests].title = "Clinical Laboratory Tests"
   * section[clinicalLaboratoryTests].code.text = "section13.2-clinical-laboratory-tests"
   * section[clinicalLaboratoryTests]
