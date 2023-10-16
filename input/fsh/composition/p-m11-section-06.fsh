@@ -12,7 +12,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
 * section ^slicing.discriminator.type = #pattern
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.rules = #open
-* section contains dropout 1..1 MS
+* section contains intervention 1..1 MS
 * section[intervention].title = "Trial Intervention"
 * section[intervention].code.text = "section6-trial-intervention"
 * section[intervention]
