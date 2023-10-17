@@ -1,5 +1,5 @@
 Profile: EndpointAnalysisPlan
-Parent: StatisticalModel
+Parent: Evidence
 Id: endpoint-analysis-plan
 Description: "Profile of Evidence for Evidence Based Medicine IG. The EndpointAnalysisPlan Profile is used for specification of the statistical model for a single endpoint for a statistical analysis plan." 
 * extension contains $ext-characteristic-expression named modelExpression 0..1
