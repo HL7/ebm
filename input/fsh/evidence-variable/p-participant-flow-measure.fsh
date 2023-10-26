@@ -1,12 +1,14 @@
 Profile: ParticipantFlowMeasure
-Parent: EvidenceVariable
+Parent: VariableDefinition
 Id: participant-flow-measure
 Title: "Participant Flow Measure"
 Description: "Profile of EvidenceVariable for Evidence Based Medicine IG. The ParticipantFlowMeasure Profile is used to describe outcome measures for completion and reasons for non-completion of participation in a research study."
-* effectivePeriod 0..0
-* actual 0..0
-* characteristic.definitionReference 0..0
-* characteristic.definitionCanonical 0..0
-* characteristic.definitionExpression 0..0
-* characteristic.definitionId 0..0
-* characteristic.definitionByTypeAndValue 0..0
+* useContext 1..*
+* useContext ^slicing.discriminator.type = #pattern
+* useContext ^slicing.discriminator.path = "valueCodeableConcept"
+* useContext ^slicing.rules = #open
+* useContext contains participantFlowMeasure 1..1 MS
+* useContext[participantFlowMeasure].code.system = "http://terminology.hl7.org/CodeSystem/usage-context-type"
+* useContext[participantFlowMeasure].code.code = #program
+* useContext[participantFlowMeasure].code.display = "Program"
+* useContext[participantFlowMeasure].valueCodeableConcept.text = "participant-flow-measure"
