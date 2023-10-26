@@ -33,7 +33,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
   * entry only Reference(EvidenceVariable or Group or CohortDefinition)
 * section[interventionDefinition].code = http://hl7.org/fhir/evidence-report-section#EvidenceVariable-exposure "Evidence Variable in variable role Exposure"
 * section[interventionDefinition]
-  * entry only Reference(InterventionDefinition)
+  * entry only Reference(ExposureDefinition)
 * section[evidenceClassifier].code = http://hl7.org/fhir/evidence-report-section#Evidence-Classifier "Evidence Classifier section"
 * section[evidenceClassifier]
   * entry only Reference(ArtifactAssessment)
