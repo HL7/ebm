@@ -2,4 +2,4 @@ Profile: CohortDefinition
 Parent: Group
 Id: cohort-definition
 Title: "Cohort Definition"
-Description: "Profile of Group for Evidence Based Medicine IG. The CohortDefinition Profile is used to ..."
+Description: "Profile of Group for Evidence Based Medicine IG. The CohortDefinition Profile is used to ... (awaiting R6 base to build)"
