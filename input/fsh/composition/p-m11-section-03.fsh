@@ -25,7 +25,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
   * section[objectiveEndpoint].code.text = "section3.1-objective-endpoint-estimand"
   * section[objectiveEndpoint]
     * focus 1..1
-    * focus only Reference(OutcomeDefinition)
+    * focus only Reference(OutcomeVariable)
     * section 4..*
     * section ^slicing.discriminator.type = #pattern
     * section ^slicing.discriminator.path = "code"

@@ -1,7 +1,7 @@
 Profile: OutcomeImportance
 Parent: ArtifactAssessment
 Id: outcome-importance
-Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The OutcomeImportance Profile is used for expression of the relative importance of an outcome. The outcome is typically expressed with an EvidenceVariable Resource and may use the OutcomeDefinition Profile." 
+Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The OutcomeImportance Profile is used for expression of the relative importance of an outcome. The outcome is typically expressed with an EvidenceVariable Resource and may use the OutcomeVariable Profile of EvidenceVariable (or OutcomeDefinition Profile of Group)." 
 * identifier
   * ^definition = "A formal identifier that is used to identify this OutcomeImportance when it is represented in other formats, or referenced in a specification, model, design or an instance." 
   * ^short = "Additional identifier for the OutcomeImportance"

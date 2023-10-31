@@ -1,7 +1,7 @@
 Profile: SummaryOfNetEffect
 Parent: EvidenceReport
 Id: summary-of-net-effect
-Description: "Profile of Composition for Evidence Based Medicine IG. The SummaryOfNetEffect Profile is used for an evidence report combining ArtifactAssessment and Evidence and EvidenceVariable Resources, organized around OutcomeDefinition (Profile of EvidenceVariable), to represent the summary of net effect contributions of comparative evidence, adjusted for the relative importance of outcomes."
+Description: "Profile of Composition for Evidence Based Medicine IG. The SummaryOfNetEffect Profile is used for an evidence report combining ArtifactAssessment and Evidence and EvidenceVariable Resources, organized around OutcomeVariable (Profile of EvidenceVariable), to represent the summary of net effect contributions of comparative evidence, adjusted for the relative importance of outcomes."
 * category 1..*
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "text"
@@ -35,7 +35,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Summary
 * section[outcomeEntry].code.text = "Summary of net effect contributions entry for a single outcome"
 //TODO - convert the code.text above to a coding term in the codesystem
 * section[outcomeEntry]
-  * focus only Reference(OutcomeDefinition)
+  * focus only Reference(OutcomeVariable)
   * section 1..*
   * section ^slicing.discriminator.type = #pattern
   * section ^slicing.discriminator.path = "code"
@@ -44,7 +44,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Summary
   * section[outcomeDefinition].code = http://hl7.org/fhir/evidence-report-section#EvidenceVariable-outcome "Evidence Variable in variable role Outcome (MeasuredVariable)"
   * section[outcomeDefinition]
     * entry 0..1 
-    * entry only Reference(OutcomeDefinition)
+    * entry only Reference(OutcomeVariable)
   * section[outcomeDesirability].code.text = "Outcome Desirability"
 //TODO - convert the code.text above to a coding term in the codesystem
   * section[outcomeDesirability]

@@ -31,7 +31,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
   * section[analysisPrimaryObjective].title = "Analysis Supporting Primary Objective"
   * section[analysisPrimaryObjective].code.text = "section10.2-analysis-primary-objective"
   * section[analysisPrimaryObjective]
-    * focus only Reference(OutcomeDefinition)
+    * focus only Reference(OutcomeVariable)
     * text 1..1
     * text ^comment = "This section introduces the Statistical Analysis Plan, with the detail to be provided in the subsequent subsections. This includes describing the methods of estimation (analytic approach) in alignment with how the estimands are defined. Sensitivity analyses should be aligned with how the estimands and estimators are defined."
     * section 3..*
@@ -69,7 +69,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
   * section[secondaryAnalysis].title = "Analysis Supporting Secondary Objective"
   * section[secondaryAnalysis].code.text = "section10.3-analysis-secondary-objective"
   * section[secondaryAnalysis]
-    * focus only Reference(OutcomeDefinition)
+    * focus only Reference(OutcomeVariable)
     * text 1..1
     * text ^comment = "This section introduces the Statistical Analysis Plan, with the detail to be provided in the subsequent subsections. This includes describing the methods of estimation (analytic approach) in alignment with how the estimands are defined. Sensitivity analyses should be aligned with how the estimands and estimators are defined."
     * section 0..*
@@ -109,7 +109,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
   * section[exploratoryAnalysis].title = "Analysis of Exploratory Objective"
   * section[exploratoryAnalysis].code.text = "section10.4-analysis-exploratory-objective"
   * section[exploratoryAnalysis]
-    * focus only Reference(OutcomeDefinition)
+    * focus only Reference(OutcomeVariable)
     * text 1..1
     * text ^comment = "This section introduces the Statistical Analysis Plan, with the detail to be provided in the subsequent subsections. This includes describing the methods of estimation (analytic approach) in alignment with how the estimands are defined. Sensitivity analyses should be aligned with how the estimands and estimators are defined."
     * section 0..*

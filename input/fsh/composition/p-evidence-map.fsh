@@ -15,7 +15,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
 * section contains outcomeDefinition 0..1 and comparatorOnlyEvidence 0..1 and interventionOnlyEvidence 0..1 and comparativeEvidence 0..1 and certaintyOfEvidence 0..1 and evidenceVariablePopulation 0..1 and interventionDefinition 0..1 and evidenceClassifier 0..1
 * section[outcomeDefinition].code = http://hl7.org/fhir/evidence-report-section#EvidenceVariable-outcome "Evidence Variable in variable role Outcome (MeasuredVariable)"
 * section[outcomeDefinition]
-  * entry only Reference(OutcomeDefinition)
+  * entry only Reference(OutcomeVariable)
 * section[comparatorOnlyEvidence].code = http://hl7.org/fhir/evidence-report-section#Control-group-alone-Evidence "Evidence Results for the control exposure only"
 * section[comparatorOnlyEvidence]
   * entry only Reference(ComparatorOnlyEvidence)
