@@ -1,7 +1,7 @@
-Profile: ExposureDefinition
+Profile: ExposureVariable
 Parent: VariableDefinition
-Id: exposure-definition
-Description: "Profile of EvidenceVariable for Evidence Based Medicine IG. The ExposureDefinition Profile is used to classify an EvidenceVariable as an exposure (e.g. an intervention or factor identifying a comparator group) for use in implementations that manage expoures differently than outcomes." 
+Id: exposure-variable
+Description: "Profile of EvidenceVariable for Evidence Based Medicine IG. The ExposureVariable Profile is used to classify an EvidenceVariable as an exposure (e.g. an intervention or independent variable of primary interest) for use in implementations that manage expoures differently than outcomes." 
 * useContext 1..*
 * useContext ^slicing.discriminator.type = #pattern
 * useContext ^slicing.discriminator.path = "valueCodeableConcept"
