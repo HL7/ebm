@@ -1,7 +1,7 @@
 Profile: BaselineMeasureEvidence
 Parent: Evidence
 Id: baseline-measure-evidence
-Description: "Profile of Evidence for Evidence Based Medicine IG. The BaselineMeasureEvidence Profile is used for evidence with a measured variable that is considered an independent variable with respect to the outcome of an exposure or intervention." 
+Description: "Profile of Evidence for Evidence Based Medicine IG. The BaselineMeasureEvidence Profile is used for evidence with a measured variable (with the role of outcome for this Evidence) that is considered an independent variable with respect to the outcome of an exposure or intervention in a study." 
 * useContext 1..*
 * useContext ^slicing.discriminator.type = #pattern
 * useContext ^slicing.discriminator.path = "valueCodeableConcept"
