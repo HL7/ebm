@@ -6,7 +6,7 @@ Description: "Profile of EvidenceVariable for Evidence Based Medicine IG. The Ex
 * useContext ^slicing.discriminator.type = #pattern
 * useContext ^slicing.discriminator.path = "valueCodeableConcept"
 * useContext ^slicing.rules = #open
-* useContext contains exposure 1..1 MS
+* useContext contains exposure 1..* MS
 * useContext[exposure].code.system = "http://terminology.hl7.org/CodeSystem/usage-context-type"
 * useContext[exposure].code.code = #program
 * useContext[exposure].code.display = "Program"

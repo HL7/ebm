@@ -7,7 +7,7 @@ Description: "Profile of EvidenceVariable for Evidence Based Medicine IG. The Pa
 * useContext ^slicing.discriminator.type = #pattern
 * useContext ^slicing.discriminator.path = "valueCodeableConcept"
 * useContext ^slicing.rules = #open
-* useContext contains participantFlowMeasure 1..1 MS
+* useContext contains participantFlowMeasure 1..* MS
 * useContext[participantFlowMeasure].code.system = "http://terminology.hl7.org/CodeSystem/usage-context-type"
 * useContext[participantFlowMeasure].code.code = #program
 * useContext[participantFlowMeasure].code.display = "Program"
