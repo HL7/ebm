@@ -6,7 +6,7 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The Comparator
 * useContext ^slicing.discriminator.type = #pattern
 * useContext ^slicing.discriminator.path = "valueCodeableConcept"
 * useContext ^slicing.rules = #open
-* useContext contains comparator 1..1 MS
+* useContext contains comparator 1..* MS
 * useContext[comparator].code.system = "http://terminology.hl7.org/CodeSystem/usage-context-type"
 * useContext[comparator].code.code = #program
 * useContext[comparator].code.display = "Program"

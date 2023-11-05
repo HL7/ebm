@@ -6,7 +6,7 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The Interventi
 * useContext ^slicing.discriminator.type = #pattern
 * useContext ^slicing.discriminator.path = "valueCodeableConcept"
 * useContext ^slicing.rules = #open
-* useContext contains intervention 1..1 MS
+* useContext contains intervention 1..* MS
 * useContext[intervention].code.system = "http://terminology.hl7.org/CodeSystem/usage-context-type"
 * useContext[intervention].code.code = #program
 * useContext[intervention].code.display = "Program"

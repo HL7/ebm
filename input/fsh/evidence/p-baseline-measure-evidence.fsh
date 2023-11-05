@@ -6,7 +6,7 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The BaselineMe
 * useContext ^slicing.discriminator.type = #pattern
 * useContext ^slicing.discriminator.path = "valueCodeableConcept"
 * useContext ^slicing.rules = #open
-* useContext contains baseline 1..1 MS
+* useContext contains baseline 1..* MS
 * useContext[baseline].code.system = "http://terminology.hl7.org/CodeSystem/usage-context-type"
 * useContext[baseline].code.code = #program
 * useContext[baseline].code.display = "Program"

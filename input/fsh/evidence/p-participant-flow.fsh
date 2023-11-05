@@ -2,6 +2,15 @@ Profile: ParticipantFlow
 Parent: Evidence
 Id: participant-flow
 Description: "Profile of Evidence for Evidence Based Medicine IG. The ParticipantFlow Profile is used for counts of completion and reasons for non-completion of participation in a research study." 
+* useContext 1..*
+* useContext ^slicing.discriminator.type = #pattern
+* useContext ^slicing.discriminator.path = "valueCodeableConcept"
+* useContext ^slicing.rules = #open
+* useContext contains flow 1..* MS
+* useContext[flow].code.system = "http://terminology.hl7.org/CodeSystem/usage-context-type"
+* useContext[flow].code.code = #program
+* useContext[flow].code.display = "Program"
+* useContext[flow].valueCodeableConcept.text = "participant-flow"
 * variableDefinition 2..*
   * ^comment = "The ParticipantFlowMeasure has variableRole of measuredVariable."
 * variableDefinition ^slicing.discriminator.type = #pattern
