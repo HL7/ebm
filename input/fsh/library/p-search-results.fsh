@@ -8,7 +8,7 @@ Description: "Profile of Library for Evidence Based Medicine IG. The SearchResul
 * useContext ^slicing.discriminator.type = #pattern
 * useContext ^slicing.discriminator.path = "valueCodeableConcept"
 * useContext ^slicing.rules = #open
-* useContext contains searchResults 1..1 MS
+* useContext contains searchResults 1..* MS
 * useContext[searchResults].code.system = "http://terminology.hl7.org/CodeSystem/usage-context-type"
 * useContext[searchResults].code.code = #program
 * useContext[searchResults].code.display = "Program"
