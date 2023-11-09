@@ -18,7 +18,7 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The NonCompara
 * variableDefinition contains population 1..* MS and outcome 1..* MS
 * variableDefinition[population].variableRole = #population
 * variableDefinition[population]
-  * observed only Reference(StudyGroup or InterventionGroup or ExposureGroup or ComparatorGroup)
+  * observed only Reference(StudyGroup or InterventionGroup or ExposureGroup or ComparatorGroup or MetaanalysisStudyGroup)
   * intended only Reference(Group)
 * variableDefinition[outcome].variableRole = #outcome
 * variableDefinition[outcome]

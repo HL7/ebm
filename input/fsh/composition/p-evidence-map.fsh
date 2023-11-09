@@ -30,10 +30,10 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
   * entry only Reference(CertaintyOfEvidence)
 * section[evidenceVariablePopulation].code = http://hl7.org/fhir/evidence-report-section#EvidenceVariable-population "Evidence Variable in variable role Population"
 * section[evidenceVariablePopulation]
-  * entry only Reference(EvidenceVariable or Group or CohortDefinition)
+  * entry only Reference(EvidenceVariable or Group)
 * section[interventionDefinition].code = http://hl7.org/fhir/evidence-report-section#EvidenceVariable-exposure "Evidence Variable in variable role Exposure"
 * section[interventionDefinition]
-  * entry only Reference(ExposureVariable)
+  * entry only Reference(ExposureVariable or Group)
 * section[evidenceClassifier].code = http://hl7.org/fhir/evidence-report-section#Evidence-Classifier "Evidence Classifier section"
 * section[evidenceClassifier]
   * entry only Reference(ArtifactAssessment)
