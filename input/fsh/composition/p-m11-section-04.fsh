@@ -3,13 +3,13 @@ Parent: EvidenceReport
 Id: m11-section-04
 Description: "Profile of Composition for Evidence Based Medicine IG. The M11Section04 Profile is used for summary of Section 4 Trial Design for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification."
 * category 1..*
-* category ^slicing.discriminator.type = #pattern
+* category ^slicing.discriminator.type = #value
 * category ^slicing.discriminator.path = "text"
 * category ^slicing.rules = #open
 * category contains section04 1..1 MS
 * category[section04].text = "Section 4 Trial Design"
 * section 1..*
-* section ^slicing.discriminator.type = #pattern
+* section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.rules = #open
 * section contains design 1..1 MS
@@ -17,7 +17,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
 * section[design].code.text = "section4-trial-design"
 * section[design]
   * section 4..*
-  * section ^slicing.discriminator.type = #pattern
+  * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code"
   * section ^slicing.rules = #open
   * section contains description 1..1 MS and rationale 1..1 MS and trialStoppingRules 1..1 MS and startEnd 1..1 MS and access 0..1 MS
@@ -27,7 +27,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
     * text 1..1
     * text ^comment = "see Template instructions"
     * section 0..*
-    * section ^slicing.discriminator.type = #pattern
+    * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code"
     * section ^slicing.rules = #open
     * section contains stakeholderInput 0..1 MS
@@ -40,7 +40,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
   * section[rationale].code.text = "section4.2-rationale-for-trial-design"
   * section[rationale]
     * section 0..*
-    * section ^slicing.discriminator.type = #pattern
+    * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code"
     * section ^slicing.rules = #open
     * section contains model 0..1 MS and duration 0..1 MS and endpoints 0..1 MS and interim 0..1 MS and comparator 0..1 MS and adaptive 0..1 MS and otherAspects 0..1 MS
@@ -85,7 +85,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
     * text 1..1
     * text ^comment = "If applicable, describe any trial-specific stopping rules, including guidance on when the trial should be stopped for safety reasons, when a cohort or dose escalation should be terminated, and/or when a given treatment arm should be terminated."
     * section 0..*
-    * section ^slicing.discriminator.type = #pattern
+    * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code"
     * section ^slicing.rules = #open
     * section contains temporaryHalt 0..1 MS

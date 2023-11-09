@@ -3,26 +3,26 @@ Parent: EvidenceReport
 Id: recommendation
 Description: "Profile of Composition for Evidence Based Medicine IG. The Recommendation Profile is used for the composition of a recommendation (such as that from a clinical practice guideline) and may be tightly related to a RecommendationPlan Profile of PlanDefinition and a RecommendationJustification Profile of ArtifactAssessment."
 * category 1..*
-* category ^slicing.discriminator.type = #pattern
+* category ^slicing.discriminator.type = #value
 * category ^slicing.discriminator.path = "text"
 * category ^slicing.rules = #open
 * category contains recommendation 1..1 MS
 * category[recommendation].text = "Recommendation"
 * relatesTo 1..*
-* relatesTo ^slicing.discriminator.type = #pattern
+* relatesTo ^slicing.discriminator.type = #value
 * relatesTo ^slicing.discriminator.path = "type"
 * relatesTo ^slicing.rules = #open
 * relatesTo contains derivedFrom 1..* MS
 * relatesTo[derivedFrom].type = http://hl7.org/fhir/related-artifact-type#derived-from
 * relatesTo[derivedFrom].resourceReference only Reference(RecommendationJustification or PlanDefinition)
 * section 1..5
-* section ^slicing.discriminator.type = #pattern
+* section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.rules = #closed
 * section contains recommendationSpecification 1..1 MS and evidence 0..1 MS and netEffect 0..1 MS and judgments 0..1 MS and considerations 0..1 MS
 * section[recommendationSpecification].code.text = "Recommendation Specification"
 * section[recommendationSpecification]
-  * section ^slicing.discriminator.type = #pattern
+  * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code"
   * section ^slicing.rules = #open
   * section contains overallRatings 0..1 MS and overallSummary 0..1 and overallRelatedItems 0..1 and strengthOfRecommendationRating 0..1 and directionOfRecommendation 0..1 and population 0..1 and action 0..1 and oppositeAction 0..1
@@ -36,7 +36,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Recomme
   * section[oppositeAction].code.text = "oppositeAction"
 * section[evidence].code.text = "Evidence"
 * section[evidence]
-  * section ^slicing.discriminator.type = #pattern
+  * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code"
   * section ^slicing.rules = #open
   * section contains summaryOfFindingsRatings 0..1 and summaryOfFindingsSummary 0..1 and summaryOfFindingsRelatedItems 0..1 and desirableRatings 0..1 and desirableSummary 0..1 and desirableRelatedItems 0..1 and undesirableRatings 0..1 and undesirableSummary 0..1 and undesirableRelatedItems 0..1
@@ -51,7 +51,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Recomme
   * section[undesirableRelatedItems].code.text = "undesirableRelatedItems"
 * section[netEffect].code.text = "Net Effect"
 * section[netEffect]
-  * section ^slicing.discriminator.type = #pattern
+  * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code"
   * section ^slicing.rules = #open
   * section contains preferencesRatings 0..1 MS and preferencesSummary 0..1 and preferencesRelatedItems 0..1 and netEffectRatings 0..1 and netEffectSummary 0..1 and netEffectRelatedItems 0..1
@@ -63,7 +63,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Recomme
   * section[netEffectRelatedItems].code.text = "netEffectRelatedItems"
 * section[judgments].code.text = "Judgments"
 * section[judgments]
-  * section ^slicing.discriminator.type = #pattern
+  * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code"
   * section ^slicing.rules = #open
   * section contains overallJustificationRatings 0..1 MS and overallJustificationSummary 0..1 and overallJustificationRelatedItems 0..1 and problemImportanceRatings 0..1 and problemImportanceSummary 0..1 and problemImportanceRelatedItems 0..1 and costsRatings 0..1 and costsSummary 0..1 and costsRelatedItems 0..1 and costEffectivenessRatings 0..1 and costEffectivenessSummary 0..1 and costEffectivenessRelatedItems 0..1 and equityRatings 0..1 and equitySummary 0..1 and equityRelatedItems 0..1 and acceptabilityRatings 0..1 and acceptabilitySummary 0..1 and acceptabilityRelatedItems 0..1 and feasibilityRatings 0..1 and feasibilitySummary 0..1 and feasibilityRelatedItems 0..1
@@ -90,7 +90,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Recomme
   * section[feasibilityRelatedItems].code.text = "feasibilityRelatedItems"
 * section[considerations].code.text = "Considerations"
 * section[considerations]
-  * section ^slicing.discriminator.type = #pattern
+  * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code"
   * section ^slicing.rules = #open
   * section contains overallConsiderationsRatings 0..1 MS and overallConsiderationsSummary 0..1 and overallConsiderationsRelatedItems 0..1 and subgroupRatings 0..1 and subgroupSummary 0..1 and subgroupRelatedItems 0..1 and implementationRatings 0..1 and implementationSummary 0..1 and implementationRelatedItems 0..1 and monitoringRatings 0..1 and monitoringSummary 0..1 and monitoringRelatedItems 0..1 and competingRatings 0..1 and competingSummary 0..1 and competingRelatedItems 0..1 and researchRatings 0..1 and researchSummary 0..1 and researchRelatedItems 0..1

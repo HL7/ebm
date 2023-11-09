@@ -3,13 +3,13 @@ Parent: EvidenceReport
 Id: evidence-map
 Description: "Profile of Composition for Evidence Based Medicine IG. The EvidenceMap Profile is used for an organized listing of Resources used to generate EvidenceReport instances." 
 * category 1..*
-* category ^slicing.discriminator.type = #pattern
+* category ^slicing.discriminator.type = #value
 * category ^slicing.discriminator.path = "text"
 * category ^slicing.rules = #open
 * category contains evidenceMap 1..1 MS
 * category[evidenceMap].text = "EvidenceMap"
 * section 1..*
-* section ^slicing.discriminator.type = #pattern
+* section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.rules = #open
 * section contains outcomeDefinition 0..1 and comparatorOnlyEvidence 0..1 and interventionOnlyEvidence 0..1 and comparativeEvidence 0..1 and certaintyOfEvidence 0..1 and evidenceVariablePopulation 0..1 and interventionDefinition 0..1 and evidenceClassifier 0..1

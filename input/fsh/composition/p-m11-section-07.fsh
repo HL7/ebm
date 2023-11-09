@@ -3,13 +3,13 @@ Parent: EvidenceReport
 Id: m11-section-07
 Description: "Profile of Composition for Evidence Based Medicine IG. The M11Section07 Profile is used for summary of Section 7 Participant Discontinuation of Trial Intervention and Withdrawal from Trial for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification."
 * category 1..*
-* category ^slicing.discriminator.type = #pattern
+* category ^slicing.discriminator.type = #value
 * category ^slicing.discriminator.path = "text"
 * category ^slicing.rules = #open
 * category contains section07 1..1 MS
 * category[section07].text = "Section 7 Participant Discontinuation of Trial Intervention and Withdrawal from Trial"
 * section 1..*
-* section ^slicing.discriminator.type = #pattern
+* section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.rules = #open
 * section contains dropout 1..1 MS
@@ -17,7 +17,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
 * section[dropout].code.text = "section7-participant-discontinuation"
 * section[dropout]
   * section 4..*
-  * section ^slicing.discriminator.type = #pattern
+  * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code"
   * section ^slicing.rules = #open
   * section contains discontinuation 1..1 MS and withdrawal 1..1 MS and lostToFollowUp 1..1 MS and trialStoppingRules 1..1 MS
@@ -25,7 +25,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
   * section[discontinuation].code.text = "section7.1-discontinuation-of-trial-intervention"
   * section[discontinuation]
     * section 3..*
-    * section ^slicing.discriminator.type = #pattern
+    * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code"
     * section ^slicing.rules = #open
     * section contains permanent 1..1 MS and temporary 1..1 MS and rechallenge 1..1 MS

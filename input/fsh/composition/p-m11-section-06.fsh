@@ -3,13 +3,13 @@ Parent: EvidenceReport
 Id: m11-section-06
 Description: "Profile of Composition for Evidence Based Medicine IG. The M11Section06 Profile is used for summary of Section 6 Trial Intervention for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification."
 * category 1..*
-* category ^slicing.discriminator.type = #pattern
+* category ^slicing.discriminator.type = #value
 * category ^slicing.discriminator.path = "text"
 * category ^slicing.rules = #open
 * category contains section06 1..1 MS
 * category[section06].text = "Section 6 Trial Intervention"
 * section 1..*
-* section ^slicing.discriminator.type = #pattern
+* section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.rules = #open
 * section contains intervention 1..1 MS
@@ -17,7 +17,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
 * section[intervention].code.text = "section6-trial-intervention"
 * section[intervention]
   * section 8..*
-  * section ^slicing.discriminator.type = #pattern
+  * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code"
   * section ^slicing.rules = #open
   * section contains description 1..1 MS and rationale 1..1 MS and dosingAdministration 1..1 MS and treatmentOfOverdose 1..1 MS and preparation 1..1 MS and assignmentAndBlinding 1..1 MS and compliance 1..1 MS and noninvestigationalTherapy 0..1 MS and concomitantTherapy 1..1 MS
@@ -40,7 +40,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
     * text ^comment = "Describe the detailed procedures for administration of each participant's dose of investigational trial intervention. This may include the timing of dosing (for example, time of day, interval), the duration (for example, the length of time participants will be administered the investigational trial intervention), the planned route of administration (for example, oral, nasal, intramuscular), and the timing of dosing relative to meals. Include any specific instructions to trial participants about when or how to prepare and take the dose(s) and how delayed or missed doses should be handled. Dose escalation or cohort expansion as part of the overall design should be covered in Section 4.1 (Description of Trial Design)."
     * entry only Reference(ActivityDefinition)
     * section 0..*
-    * section ^slicing.discriminator.type = #pattern
+    * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code"
     * section ^slicing.rules = #open
     * section contains doseModification 0..1 MS
@@ -60,7 +60,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
   * section[preparation].code.text = "section6.5-preparation-storage-handling"
   * section[preparation]
     * section 3..*
-    * section ^slicing.discriminator.type = #pattern
+    * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code"
     * section ^slicing.rules = #open
     * section contains preparationIntervention 1..1 MS and storageHandling 1..1 MS and accountability 1..1 MS
@@ -83,7 +83,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
   * section[assignmentAndBlinding].code.text = "section6.6-assignment-randomisation-blinding"
   * section[assignmentAndBlinding]
     * section 4..*
-    * section ^slicing.discriminator.type = #pattern
+    * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code"
     * section ^slicing.rules = #open
     * section contains assignment 1..1 MS and randomisation 1..1 MS and blinding 1..1 MS and unblinding 1..1 MS
@@ -116,7 +116,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
   * section[noninvestigationalTherapy].code.text = "section6.8-noninvestigational-interventions"
   * section[noninvestigationalTherapy]
     * section 0..*
-    * section ^slicing.discriminator.type = #pattern
+    * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code"
     * section ^slicing.rules = #open
     * section contains background 0..1 MS and rescue 0..1 MS and other 0..1 MS
@@ -141,7 +141,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
     * text 1..1
     * text ^comment = "Describe the concomitant medications, supplements, complementary and alternative therapies, treatments, and/or procedures which are allowed or prohibited during the trial, and include details about when the information will be collected (for example, screening, all visits). This section should be consistent with the medication restrictions in the inclusion/exclusion criteria previously listed."
     * section 0..*
-    * section ^slicing.discriminator.type = #pattern
+    * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code"
     * section ^slicing.rules = #open
     * section contains prohibited 0..1 MS and permitted 0..1 MS

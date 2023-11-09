@@ -3,7 +3,7 @@ Parent: Evidence
 Id: statistical-calculator
 Description: "Profile of Evidence for Evidence Based Medicine IG. The StatisticalCalculator Profile is used for specification of the executable formula corresponding to an endpoint analysis plan or applied analysis." 
 * useContext 1..*
-* useContext ^slicing.discriminator.type = #pattern
+* useContext ^slicing.discriminator.type = #value
 * useContext ^slicing.discriminator.path = "valueCodeableConcept"
 * useContext ^slicing.rules = #open
 * useContext contains calculator 1..* MS

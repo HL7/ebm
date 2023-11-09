@@ -5,7 +5,7 @@ Description: "Profile of Library for Evidence Based Medicine IG. The SearchResul
 * type = http://terminology.hl7.org/CodeSystem/library-type#asset-collection "Asset Collection"
 * subjectReference only Reference(SearchStrategy)
 * useContext 1..*
-* useContext ^slicing.discriminator.type = #pattern
+* useContext ^slicing.discriminator.type = #value
 * useContext ^slicing.discriminator.path = "valueCodeableConcept"
 * useContext ^slicing.rules = #open
 * useContext contains searchResults 1..* MS

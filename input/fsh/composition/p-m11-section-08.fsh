@@ -3,13 +3,13 @@ Parent: EvidenceReport
 Id: m11-section-08
 Description: "Profile of Composition for Evidence Based Medicine IG. The M11Section08 Profile is used for summary of Section 8 Trial Assessments and Procedures for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification."
 * category 1..*
-* category ^slicing.discriminator.type = #pattern
+* category ^slicing.discriminator.type = #value
 * category ^slicing.discriminator.path = "text"
 * category ^slicing.rules = #open
 * category contains section08 1..1 MS
 * category[section08].text = "Section 8 Trial Assessments and Procedures"
 * section 1..*
-* section ^slicing.discriminator.type = #pattern
+* section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.rules = #open
 * section contains assessments 1..1 MS
@@ -19,7 +19,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
   * text 0..1
   * text ^comment = "• Describe the assessments and procedures required during each phase of the trial. Provide details that are not already presented in the SoA, taking care not to duplicate information. •	Describe methods, training, tools, instruments/questionnaires, calibration methods, etc. that will be used to record and assess data and ensure consistency across centres and participants. Include instructions on timing/conditions of assessments and if a specifically qualified person should be performing these assessments. Describe whether centralised readings and measurements will be utilised. •	Reference the literature for the validation of scales/instruments/questionnaires/assays. •	Instructions or protocols for specialised tests and scales/instruments/questionnaires/assays may be presented in an appendix or a separate document and cross-referenced. •	If the trial includes qualitative interviews, describe these evaluations. •	If COA measures are utilised, include instructions for the investigators per local guidance. All descriptions related to COA parameters should be fully integrated into the appropriate sections of the protocol; separate COA sections should not be created in the protocol. •	Include minimums and limits for procedures (for example, number of imaging procedures/biopsies, radiation exposure, etc.) if appropriate to the trial."
   * section 8..*
-  * section ^slicing.discriminator.type = #pattern
+  * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code"
   * section ^slicing.rules = #open
   * section contains screeningBaseline 1..1 MS and efficacy 1..1 MS and safety 1..1 MS and pharmacokinetics 1..1 MS and genetics 1..1 MS and biomarkers 1..1 MS and immunogenicity 1..1 MS and economics 0..1 MS
@@ -37,7 +37,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
   * section[safety].code.text = "section8.3-safety-assessments"
   * section[safety]
     * section 0..*
-    * section ^slicing.discriminator.type = #pattern
+    * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code"
     * section ^slicing.rules = #open
     * section contains physical 0..1 MS and vitals 0..1 MS and ecg 0..1 MS and laboratory 0..1 MS and pregnancy 0..1 MS and suicidal 0..1 MS

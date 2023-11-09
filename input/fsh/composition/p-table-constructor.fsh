@@ -3,13 +3,13 @@ Parent: Composition
 Id: table-constructor
 Description: "Profile of Composition for Evidence Based Medicine IG. The TableConstructor Profile is used for specifying column headers and instructions for generating content values for table rows and table cells. For the Evidence Based Medicine IG, the TableConstructor Profile is intended to facilitate processing the input of an EvidenceMap instance and generating the output of an EvidenceReport instance." 
 * category 1..*
-* category ^slicing.discriminator.type = #pattern
+* category ^slicing.discriminator.type = #value
 * category ^slicing.discriminator.path = "text"
 * category ^slicing.rules = #open
 * category contains tableConstructor 1..1 MS
 * category[tableConstructor].text = "Table Constructor"
 * section 3..3
-* section ^slicing.discriminator.type = #pattern
+* section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.rules = #closed
 * section contains contentSelection 1..1 MS and tableRowSelection 1..1 MS and tableColumnDefinition 1..1 MS
@@ -24,7 +24,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The TableCo
 * section[tableColumnDefinition].section 1..*
   * code 1..1
   * section 2..2
-  * section ^slicing.discriminator.type = #pattern
+  * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code"
   * section ^slicing.rules = #closed
   * section contains columnHeader 1..1 MS and contentGenerationRule 1..1 MS

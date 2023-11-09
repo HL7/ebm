@@ -3,13 +3,13 @@ Parent: EvidenceReport
 Id: m11-section-09
 Description: "Profile of Composition for Evidence Based Medicine IG. The M11Section09 Profile is used for summary of Section 9 Adverse Events, Serious Adverse Events, and Product Complaints for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification."
 * category 1..*
-* category ^slicing.discriminator.type = #pattern
+* category ^slicing.discriminator.type = #value
 * category ^slicing.discriminator.path = "text"
 * category ^slicing.rules = #open
 * category contains section09 1..1 MS
 * category[section09].text = "Section 9 Adverse Events, Serious Adverse Events, and Product Complaints"
 * section 1..*
-* section ^slicing.discriminator.type = #pattern
+* section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.rules = #open
 * section contains adverseEvents 1..1 MS
@@ -17,7 +17,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
 * section[adverseEvents].code.text = "section9-adverse-events"
 * section[adverseEvents]
   * section 5..*
-  * section ^slicing.discriminator.type = #pattern
+  * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code"
   * section ^slicing.rules = #open
   * section contains definitions 1..1 MS and collectionMethods 1..1 MS and recording 1..1 MS and reporting 1..1 MS and pregnancy 1..1 MS
@@ -25,7 +25,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
   * section[definitions].code.text = "section9.1-definitions"
   * section[definitions]
     * section 2..*
-    * section ^slicing.discriminator.type = #pattern
+    * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code"
     * section ^slicing.rules = #open
     * section contains adverseEventsDefinitions 1..1 MS and seriousAdverseEventsDefinitions 1..1 MS and productComplaintsDefinitions 0..1 MS
@@ -53,7 +53,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
   * section[recording].code.text = "section9.3-recording-and-follow-up"
   * section[recording]
     * section 5..*
-    * section ^slicing.discriminator.type = #pattern
+    * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code"
     * section ^slicing.rules = #open
     * section contains identifying 1..1 MS and intensity 1..1 MS and causality 1..1 MS and recordingEvents 1..1 MS and followup 1..1 MS
@@ -86,7 +86,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
   * section[reporting].code.text = "section9.4-reporting-events"
   * section[reporting]
     * section 4..*
-    * section ^slicing.discriminator.type = #pattern
+    * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code"
     * section ^slicing.rules = #open
     * section contains reportingSAEs 1..1 MS and regulatoryRequirements 1..1 MS and specialInterest 1..1 MS and diseaseRelatedEvents 1..1 MS
@@ -115,7 +115,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
   * section[pregnancy].code.text = "section9.5-collection-methods"
   * section[pregnancy]
     * section 0..*
-    * section ^slicing.discriminator.type = #pattern
+    * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code"
     * section ^slicing.rules = #open
     * section contains pregnant 0..1 MS and pregnantPartner 0..1 MS

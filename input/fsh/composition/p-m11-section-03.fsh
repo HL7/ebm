@@ -3,13 +3,13 @@ Parent: EvidenceReport
 Id: m11-section-03
 Description: "Profile of Composition for Evidence Based Medicine IG. The M11Section03 Profile is used for summary of Section 3 Trial Objectives, Endpoints and Estimands for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification."
 * category 1..*
-* category ^slicing.discriminator.type = #pattern
+* category ^slicing.discriminator.type = #value
 * category ^slicing.discriminator.path = "text"
 * category ^slicing.rules = #open
 * category contains section03 1..1 MS
 * category[section03].text = "Section 3 Trial Objectives, Endpoints and Estimands"
 * section 1..*
-* section ^slicing.discriminator.type = #pattern
+* section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.rules = #open
 * section contains endpoints 1..* MS
@@ -17,7 +17,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
 * section[endpoints].code.text = "section3-endpoints"
 * section[endpoints]
   * section 1..*
-  * section ^slicing.discriminator.type = #pattern
+  * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code"
   * section ^slicing.rules = #open
   * section contains objectiveEndpoint 1..* MS
@@ -27,7 +27,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
     * focus 1..1
     * focus only Reference(OutcomeVariable)
     * section 4..*
-    * section ^slicing.discriminator.type = #pattern
+    * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code"
     * section ^slicing.rules = #open
     * section contains primarySecondaryExploratory 1..1 MS and objective 1..1 MS and endpoint 1..1 MS and estimand 1..1 MS

@@ -3,13 +3,13 @@ Parent: EvidenceReport
 Id: m11-section-12
 Description: "Profile of Composition for Evidence Based Medicine IG. The M11Section12 Profile is used for summary of Section 12 General Considerations: Risk Management and Data Governance for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification."
 * category 1..*
-* category ^slicing.discriminator.type = #pattern
+* category ^slicing.discriminator.type = #value
 * category ^slicing.discriminator.path = "text"
 * category ^slicing.rules = #open
 * category contains section12 1..1 MS
 * category[section12].text = "Section 12 General Considerations: Risk Management and Data Governance"
 * section 1..*
-* section ^slicing.discriminator.type = #pattern
+* section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.rules = #open
 * section contains riskManagementAndData 1..1 MS
@@ -17,7 +17,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
 * section[riskManagementAndData].code.text = "section12-risk-management-and-data-governance"
 * section[riskManagementAndData]
   * section 3..*
-  * section ^slicing.discriminator.type = #pattern
+  * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code"
   * section ^slicing.rules = #open
   * section contains riskManagement 1..1 MS and dataGovernance 1..1 MS and sourceData 1..1 MS

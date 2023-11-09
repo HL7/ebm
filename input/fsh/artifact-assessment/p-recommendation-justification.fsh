@@ -24,14 +24,14 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * content 1..5
   * ^definition = "A comment, rating, or classification of the recommendation."
   * ^short = "A comment, rating, or classification"
-* content ^slicing.discriminator.type = #pattern
+* content ^slicing.discriminator.type = #value
 * content ^slicing.discriminator.path = "type"
 * content ^slicing.rules = #closed
 * content contains recommendationSpecification 1..1 MS and evidence 0..1 MS and netEffect 0..1 MS and judgments 0..1 MS and considerations 0..1 MS
 * content[recommendationSpecification].informationType = http://hl7.org/fhir/artifactassessment-information-type#container
 * content[recommendationSpecification].type = https://fevir.net/resources/CodeSystem/27834#RJCS-content0 "Recommendation Specification"
 * content[recommendationSpecification]
-  * component ^slicing.discriminator.type = #pattern
+  * component ^slicing.discriminator.type = #value
   * component ^slicing.discriminator.path = "type"
   * component ^slicing.rules = #closed
   * component contains strengthOfRecommendation 0..1 MS and directionOfRecommendation 0..1 MS and population 0..1 MS and action 0..1 MS and oppositeAction 0..1 MS
@@ -51,7 +51,7 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * content[evidence].informationType = http://hl7.org/fhir/artifactassessment-information-type#container
 * content[evidence].type = https://fevir.net/resources/CodeSystem/27834#RJCS-content1 "Evidence"
 * content[evidence]
-  * component ^slicing.discriminator.type = #pattern
+  * component ^slicing.discriminator.type = #value
   * component ^slicing.discriminator.path = "type"
   * component ^slicing.rules = #closed
   * component contains desirableEffects 0..1 MS and undesirableEffects 0..1 MS
@@ -60,7 +60,7 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * content[netEffect].informationType = http://hl7.org/fhir/artifactassessment-information-type#container
 * content[netEffect].type = https://fevir.net/resources/CodeSystem/27834#RJCS-1007 "Net Effect"
 * content[netEffect]
-  * component ^slicing.discriminator.type = #pattern
+  * component ^slicing.discriminator.type = #value
   * component ^slicing.discriminator.path = "type"
   * component ^slicing.rules = #closed
   * component contains preferences 0..1 MS
@@ -68,7 +68,7 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * content[judgments].informationType = http://hl7.org/fhir/artifactassessment-information-type#container
 * content[judgments].type = https://fevir.net/resources/CodeSystem/27834#RJCS-content2 "Judgments"
 * content[judgments]
-  * component ^slicing.discriminator.type = #pattern
+  * component ^slicing.discriminator.type = #value
   * component ^slicing.discriminator.path = "type"
   * component ^slicing.rules = #closed
   * component contains problemImportance 0..1 MS and costs 0..1 MS and costeffectiveness 0..1 MS and equity 0..1 MS and acceptability 0..1 MS and feasibility 0..1 MS
@@ -81,7 +81,7 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * content[considerations].informationType = http://hl7.org/fhir/artifactassessment-information-type#container
 * content[considerations].type = https://fevir.net/resources/CodeSystem/27834#RJCS-content3 "Considerations"
 * content[considerations]
-  * component ^slicing.discriminator.type = #pattern
+  * component ^slicing.discriminator.type = #value
   * component ^slicing.discriminator.path = "type"
   * component ^slicing.rules = #closed
   * component contains subgroupConsiderations 0..1 MS and implementationConsiderations 0..1 MS and monitoringConsiderations 0..1 MS and competingInterests 0..1 MS and researchPriorities 0..1 MS

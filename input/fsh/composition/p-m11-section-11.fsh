@@ -3,13 +3,13 @@ Parent: EvidenceReport
 Id: m11-section-11
 Description: "Profile of Composition for Evidence Based Medicine IG. The M11Section11 Profile is used for summary of Section 11 General Considerations: Regulatory, Ethical, and Trial Oversight for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification."
 * category 1..*
-* category ^slicing.discriminator.type = #pattern
+* category ^slicing.discriminator.type = #value
 * category ^slicing.discriminator.path = "text"
 * category ^slicing.rules = #open
 * category contains section11 1..1 MS
 * category[section11].text = "Section 11 General Considerations: Regulatory, Ethical, and Trial Oversight"
 * section 1..*
-* section ^slicing.discriminator.type = #pattern
+* section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.rules = #open
 * section contains oversight 1..1 MS
@@ -17,7 +17,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
 * section[oversight].code.text = "section11-oversight"
 * section[oversight]
   * section 6..*
-  * section ^slicing.discriminator.type = #pattern
+  * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code"
   * section ^slicing.rules = #open
   * section contains regulatory 1..1 MS and trialOversight 1..1 MS and committees 1..1 MS and informedConsent 1..1 MS and insurance 1..1 MS and earlySiteClosure 1..1 MS
@@ -32,7 +32,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
     * text 0..1
     * text ^comment = "Describe the trial oversight listing the investigator and sponsor responsibilities not covered in other sections of the protocol which are essential for the operations of the trial, specifying the ones related to quality assurance."
     * section 2..*
-    * section ^slicing.discriminator.type = #pattern
+    * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code"
     * section ^slicing.rules = #open
     * section contains investigatorResponsibilities 1..1 MS and sponsorResponsibilities 1..1 MS
@@ -56,7 +56,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
     * text 1..1
     * text ^comment = "Specify the key elements of the informed consent process, including any special needs and how these are addressed (for example, assent, capacity, legally acceptable representative, adolescents who may reach age of majority during the trial, pregnant participants and pregnant partners of participants)."
     * section 0..*
-    * section ^slicing.discriminator.type = #pattern
+    * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code"
     * section ^slicing.rules = #open
     * section contains assentProcess 0..1 MS and emergency 0..1 MS and rescreening 0..1 MS and remainingSamples 0..1 MS
@@ -88,7 +88,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
   * section[earlySiteClosure].code.text = "section11.6-early-site-closure"
   * section[earlySiteClosure]
     * section 3..*
-    * section ^slicing.discriminator.type = #pattern
+    * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code"
     * section ^slicing.rules = #open
     * section contains decisionRights 1..1 MS and criteria 1..1 MS and responsibilities 1..1 MS

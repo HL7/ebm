@@ -3,7 +3,7 @@ Parent: Evidence
 Id: outcome-measure-evidence
 Description: "Profile of Evidence for Evidence Based Medicine IG. The OutcomeMeasureEvidence Profile is used for evidence with a measured variable that is considered the outcome of an exposure or intervention." 
 * useContext 1..*
-* useContext ^slicing.discriminator.type = #pattern
+* useContext ^slicing.discriminator.type = #value
 * useContext ^slicing.discriminator.path = "valueCodeableConcept"
 * useContext ^slicing.rules = #open
 * useContext contains outcome 1..* MS
@@ -12,9 +12,14 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The OutcomeMea
 * useContext[outcome].code.display = "Program"
 * useContext[outcome].valueCodeableConcept.text = "outcome-measure-evidence"
 * variableDefinition 2..*
-  * ^comment = "The Outcome has variableRole of measuredVariable."
-* variableDefinition ^slicing.discriminator.type = #pattern
+  * ^comment = "The Outcome has variableRole of outcome."
+* variableDefinition ^slicing.discriminator.type = #value
 * variableDefinition ^slicing.discriminator.path = "variableRole"
 * variableDefinition ^slicing.rules = #open
-* variableDefinition contains outcome 1..1 MS
-* variableDefinition[outcome].variableRole = http://terminology.hl7.org/CodeSystem/variable-role#meauredVariable "measured variable"
+* variableDefinition contains population 1..* MS and outcome 1..* MS
+* variableDefinition[population].variableRole = #population
+* variableDefinition[population]
+  * observed only Reference(StudyGroup or InterventionGroup or ExposureGroup or ComparatorGroup)
+* variableDefinition[outcome].variableRole = #outcome
+* variableDefinition[outcome]
+  * observed only Reference(ExposureVariable or OutcomeVariable)

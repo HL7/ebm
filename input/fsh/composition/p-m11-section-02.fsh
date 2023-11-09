@@ -3,13 +3,13 @@ Parent: EvidenceReport
 Id: m11-section-02
 Description: "Profile of Composition for Evidence Based Medicine IG. The M11Section02 Profile is used for summary of Section 2 Introduction for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification."
 * category 1..*
-* category ^slicing.discriminator.type = #pattern
+* category ^slicing.discriminator.type = #value
 * category ^slicing.discriminator.path = "text"
 * category ^slicing.rules = #open
 * category contains section02 1..1 MS
 * category[section02].text = "Section 2 Introduction"
 * section 1..*
-* section ^slicing.discriminator.type = #pattern
+* section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.rules = #open
 * section contains introduction 1..1 MS
@@ -17,7 +17,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
 * section[introduction].code.text = "section2-introduction"
 * section[introduction]
   * section 2..*
-  * section ^slicing.discriminator.type = #pattern
+  * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code"
   * section ^slicing.rules = #open
   * section contains purposeOfTrial 1..1 MS and benefitsAndRisks 1..1 MS
@@ -30,7 +30,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
   * section[benefitsAndRisks].code.text = "section2.2-benefits-risks"
   * section[benefitsAndRisks]
     * section 3..*
-    * section ^slicing.discriminator.type = #pattern
+    * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code"
     * section ^slicing.rules = #open
     * section contains benefitSummary 1..1 MS and riskSummary 1..1 and overallBenefitRisk 1..1
@@ -43,7 +43,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
     * section[riskSummary].code.text = "section2.2.2-risk-summary"
     * section[riskSummary]
       * section 3..*
-      * section ^slicing.discriminator.type = #pattern
+      * section ^slicing.discriminator.type = #value
       * section ^slicing.discriminator.path = "code"
       * section ^slicing.rules = #open
       * section contains trialIntervention 1..1 MS and trialProcedures 1..1 and otherRisk 1..1
