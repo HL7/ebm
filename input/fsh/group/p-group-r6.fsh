@@ -29,6 +29,7 @@ Description: "Profile of Group for Evidence Based Medicine IG. The GroupR6 Profi
   * extension contains CharacteristicInstancesRange named instancesRange 0..1
   * extension contains CharacteristicDurationDuration named durationDuration 0..1
   * extension contains CharacteristicDurationRange named durationRange 0..1
+  * extension contains CharacteristicTiming named timing 0..*
 
   
   
