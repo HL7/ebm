@@ -17,3 +17,7 @@ $ext-copyright named copyright 0..1 and
 $ext-copyrightLabel named copyrightLabel 0..1 and
 CombinationMethod named combinationMethod 0..1 and
 CombinationThreshold named combinationThreshold 0..1
+* characteristic
+  * extension contains CharacteristicValueUri named valueUri 0..1 and
+    CharacteristicValueExpression named valueExpression 0..1 and
+    CharacteristicDescription named description 0..1
