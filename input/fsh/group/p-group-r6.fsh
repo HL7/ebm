@@ -14,4 +14,6 @@ $ext-contact named named contact 0..* and
 $ext-useContext named useContext 0..* and
 ext-purpose named purpose 0..1 and
 $ext-copyright named copyright 0..1 and
-$ext-copyrightLabel named copyrightLabel 0..1
+$ext-copyrightLabel named copyrightLabel 0..1 and
+CombinationMethod named combinationMethod 0..1 and
+CombinationThreshold named combinationThreshold 0..1
