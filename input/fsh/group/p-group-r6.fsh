@@ -6,7 +6,6 @@ Description: "Profile of Group for Evidence Based Medicine IG. The GroupR6 Profi
 $ext-version named version 0..1 and
 $ext-versionAlgorithm named versionAlgorithmString 0..1 and
 $ext-title named title 0..1 and
-$ext-status named status 0..1 and
 $ext-experimental named experimental 0..1 and
 $ext-date named date 0..1 and
 $ext-publisher named 0..1 and
@@ -17,6 +16,7 @@ $ext-copyright named copyright 0..1 and
 $ext-copyrightLabel named copyrightLabel 0..1 and
 CombinationMethod named combinationMethod 0..1 and
 CombinationThreshold named combinationThreshold 0..1
+modifierExtension contains $ext-status named status 0..1
 * characteristic
   * extension contains CharacteristicValueUri named valueUri 0..1 and
     CharacteristicValueExpression named valueExpression 0..1 and
