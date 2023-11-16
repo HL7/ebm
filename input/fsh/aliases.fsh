@@ -9,3 +9,17 @@ Alias: $ext-wg = http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
 Alias: $ext-standards-status = http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
 
 Alias: $ext-characteristic-expression = http://hl7.org/fhir/StructureDefinition/characteristicExpression
+
+Alias: $ext-url = http://hl7.org/fhir/StructureDefinition/artifact-url
+Alias: $ext-version = http://hl7.org/fhir/StructureDefinition/artifact-version
+Alias: $ext-versionAlgorithm = http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm
+Alias: $ext-title = http://hl7.org/fhir/StructureDefinition/artifact-title
+Alias: $ext-status = http://hl7.org/fhir/StructureDefinition/artifact-status
+Alias: $ext-experimental = http://hl7.org/fhir/StructureDefinition/artifact-experimental
+Alias: $ext-date = http://hl7.org/fhir/StructureDefinition/artifact-date
+Alias: $ext-publisher = http://hl7.org/fhir/StructureDefinition/artifact-publisher
+Alias: $ext-contact = http://hl7.org/fhir/StructureDefinition/artifact-contact
+Alias: $ext-useContext = http://hl7.org/fhir/StructureDefinition/artifact-useContext
+Alias: $ext-purpose = http://hl7.org/fhir/StructureDefinition/artifact-purpose
+Alias: $ext-copyright = http://hl7.org/fhir/StructureDefinition/artifact-copyright
+Alias: $ext-copyrightLabel = http://hl7.org/fhir/StructureDefinition/artifact-copyrightLabel
