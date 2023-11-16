@@ -10,7 +10,7 @@ Description: "Timing in which the characteristic is determined."
 * extension[contextReference].value[x] only Reference
   * ^short = "The specific event occurrence or resource context used as a base point (reference point) in time"
   * ^definition = "The specific event occurrence or resource context used as a base point (reference point) in time. This establishes the context in which the path is evaluated."
-* extension[attribute].contextDefinition[x] only canonical(ActivityDefinition or PlanDefinition or ObservationDefinition)
+* extension[contextDefinition].value[x] only canonical(ActivityDefinition or PlanDefinition or ObservationDefinition)
   * ^short = "The type of event used as a base point"
   * ^definition = "The type of event used as a base point. Instances of this definition will establish the context for evaluating the path to determine the base time for the offset."
 * extension[contextPath].value[x] only string
