@@ -8,7 +8,7 @@ Description: "Profile of Group for Evidence Based Medicine IG. The GroupR6 Profi
 * extension contains $ext-title named title 0..1
 * extension contains $ext-experimental named experimental 0..1
 * extension contains $ext-date named date 0..1
-* extension contains $ext-publisher named 0..1
+* extension contains $ext-publisher named publisher 0..1
 * extension contains $ext-contact named contact 0..*
 * extension contains $ext-useContext named useContext 0..*
 * extension contains $ext-purpose named purpose 0..1
