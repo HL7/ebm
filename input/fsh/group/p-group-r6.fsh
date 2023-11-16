@@ -20,4 +20,5 @@ CombinationThreshold named combinationThreshold 0..1
 * characteristic
   * extension contains CharacteristicValueUri named valueUri 0..1 and
     CharacteristicValueExpression named valueExpression 0..1 and
-    CharacteristicDescription named description 0..1
+    CharacteristicDescription named description 0..1 and
+    CharacteristicMethod named method 0..*

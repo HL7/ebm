@@ -1,6 +1,6 @@
 Extension: CharacteristicDescription
 Id: characteristic-description
-Description: "TNatural language description of the characteristic."
+Description: "Natural language description of the characteristic."
 * ^context.type = #element
 * ^context.expression = "Group.characteristic"
 * value[x] only markdown
