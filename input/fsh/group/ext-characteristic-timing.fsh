@@ -24,4 +24,4 @@ Description: "Timing in which the characteristic is determined."
   * ^definition = "An offset or offset range before (negative values) or after (positive values) the event. Range is limited to time-valued quantities (Durations)."
 * extension[text].value[x] only string
   * ^short = "aFree-text description"
-  * ^definition = "Free-text (human-readable) description."
+  * ^definition = "Free-text (human-readable) description." 
