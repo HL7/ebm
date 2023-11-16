@@ -13,3 +13,5 @@ Description: "Profile of Library for Evidence Based Medicine IG. The SearchResul
 * useContext[searchResults].code.code = #program
 * useContext[searchResults].code.display = "Program"
 * useContext[searchResults].valueCodeableConcept.text = "search-results"
+* jurisdiction 0..0
+* topic 0..0
