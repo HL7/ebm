@@ -1,7 +1,7 @@
 Profile: NetEffectEstimate
-Parent: ComparativeEvidence
+Parent: EvidenceR6
 Id: net-effect-estimate
-Description: "Profile of Evidence for Evidence Based Medicine IG. The NetEffectEstimate Profile is used for evidence in which the observed data is comparative evidence (effect estimates expressed as risk differences) and relative importance ratings of outcomes."
+Description: "Profile of Evidence for Evidence Based Medicine IG. The NetEffectEstimate Profile is used for evidence in which the observed data is net effect contributions (effect estimates expressed as risk differences, multiplied by relative importance ratings of outcomes)."
 * useContext 1..*
 * useContext ^slicing.discriminator.type = #value
 * useContext ^slicing.discriminator.path = "valueCodeableConcept"
@@ -11,9 +11,20 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The NetEffectE
 * useContext[netEffect].code.code = #program
 * useContext[netEffect].code.display = "Program"
 * useContext[netEffect].valueCodeableConcept.text = "net-effect-estimate"
-* variableDefinition 4..*
-* variableDefinition[outcome] //TODO add roleSubtype when available
-  // * roleSubtype 1..1 //TODO choices for roleSubtype to include "Effect estimate (risk difference) for an outcome" and "Relative importance for an outcome"
+* variableDefinition 2..*
+* variableDefinition ^slicing.discriminator.type = #value
+* variableDefinition ^slicing.discriminator.path = "extension(url : variableRole).valueCode"
+* variableDefinition ^slicing.rules = #open
+* variableDefinition contains population 1..1 and exposure 0..*
+* variableDefinition[population]
+  * ^extension[VariableDefinitionVariableRoleCode].valueCode = #population
+  * observed only Reference(NetEffectContributions)
+  * intended 0..0
+* variableDefinition[exposure]
+  * ^extension[VariableDefinitionVariableRoleCode].valueCode = #exposure
+  * extension[VariableDefinitionComparatorCategory] 1..1
+  * observed only Reference(GroupAssignment or ExposureVariable or OutcomeVariable)
+  * intended 0..0
 * statistic 1..*
 * statistic ^slicing.discriminator.type = #value
 * statistic ^slicing.discriminator.path = "statisticType"
