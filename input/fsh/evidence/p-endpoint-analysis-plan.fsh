@@ -14,8 +14,4 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The EndpointAn
 * useContext[eap].valueCodeableConcept.text = "endpoint-analysis-plan"
 * statistic.modelCharacteristic 1..*
   * ^comment = "After the Evidence StructureDefinition is revised, set intended 0..1 boolean to value of True."
-  * extension contains StatisticModelIntended named intended 1..1 and
-  StatisticModelIncludeIf named includeIf 0..1
   * extension[intended].valueBoolean = true
-* statistic.modelCharacteristic.variable
-  * extension contains StatisticModelIncludeIf named includeIf 0..1
