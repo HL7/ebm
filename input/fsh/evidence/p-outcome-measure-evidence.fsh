@@ -1,5 +1,5 @@
 Profile: OutcomeMeasureEvidence
-Parent: Evidence
+Parent: EvidenceR6
 Id: outcome-measure-evidence
 Description: "Profile of Evidence for Evidence Based Medicine IG. The OutcomeMeasureEvidence Profile is used for evidence with a measured variable that is considered the outcome of an exposure or intervention." 
 * useContext 1..*
@@ -14,12 +14,12 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The OutcomeMea
 * variableDefinition 2..*
   * ^comment = "The Outcome has variableRole of outcome."
 * variableDefinition ^slicing.discriminator.type = #value
-* variableDefinition ^slicing.discriminator.path = "variableRole"
+* variableDefinition ^slicing.discriminator.path = "extension(url : variableRole).valueCode"
 * variableDefinition ^slicing.rules = #open
 * variableDefinition contains population 1..* MS and outcome 1..* MS
-* variableDefinition[population].variableRole = #population
 * variableDefinition[population]
+  * ^extension[VariableDefinitionVariableRoleCode].valueCode = #population
   * observed only Reference(StudyGroup or InterventionGroup or ExposureGroup or ComparatorGroup or MetaanalysisStudyGroup)
-* variableDefinition[outcome].variableRole = #outcome
 * variableDefinition[outcome]
+  * ^extension[VariableDefinitionVariableRoleCode].valueCode = #outcome
   * observed only Reference(ExposureVariable or OutcomeVariable)

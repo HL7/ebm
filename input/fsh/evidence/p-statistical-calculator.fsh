@@ -1,5 +1,5 @@
 Profile: StatisticalCalculator
-Parent: Evidence
+Parent: EvidenceR6
 Id: statistical-calculator
 Description: "Profile of Evidence for Evidence Based Medicine IG. The StatisticalCalculator Profile is used for specification of the executable formula corresponding to an endpoint analysis plan or applied analysis." 
 * useContext 1..*
