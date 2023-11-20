@@ -13,7 +13,8 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The EvidenceR6
   StatisticModelValueCodeableConcept named valueCodeableConcept 0..1 and
   StatisticModelIntended named intended 0..1 and 
   StatisticModelApplied named applied 0..1 and 
-  StatisticModelIncludeIf named includeIf 0..1
+  StatisticModelIncludeIf named includeIf 0..1 and
+  StatisticModelModelCharacteristic named modelCharacteristic 0..*
   * value 0..0
 * statistic.modelCharacteristic.variable
   * extension contains StatisticModelIncludeIf named includeIf 0..1
