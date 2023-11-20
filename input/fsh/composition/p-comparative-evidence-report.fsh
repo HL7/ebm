@@ -8,8 +8,6 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Compara
 * category ^slicing.rules = #open
 * category contains comparativeEvidenceReport 1..1 MS
 * category[comparativeEvidenceReport].text = "Comparative Evidence Report"
-* subject 1..1
-* subject only Reference(ComparativeEvidenceReportSubject)
 * section 5..*
 * section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code"
