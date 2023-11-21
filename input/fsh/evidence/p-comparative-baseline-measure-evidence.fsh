@@ -7,9 +7,7 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The Comparativ
 * useContext ^slicing.discriminator.path = "valueCodeableConcept"
 * useContext ^slicing.rules = #open
 * useContext contains baseline 1..* MS
-* useContext[baseline].code.system = "http://terminology.hl7.org/CodeSystem/usage-context-type"
-* useContext[baseline].code.code = #program
-* useContext[baseline].code.display = "Program"
+* useContext[baseline].code = https://fevir.net/resources/CodeSystem/179423#evidence-communication "Evidence Communication"
 * useContext[baseline].valueCodeableConcept.coding = https://fevir.net/resources/CodeSystem/179423#ComparativeBaselineMeasureEvidence "ComparativeBaselineMeasureEvidence"
 * variableDefinition
   * ^comment = "The Baseline Measure (or independent variable) has variableRole of outcome."

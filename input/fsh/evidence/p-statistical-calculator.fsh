@@ -7,9 +7,7 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The Statistica
 * useContext ^slicing.discriminator.path = "valueCodeableConcept"
 * useContext ^slicing.rules = #open
 * useContext contains calculator 1..* MS
-* useContext[calculator].code.system = "http://terminology.hl7.org/CodeSystem/usage-context-type"
-* useContext[calculator].code.code = #program
-* useContext[calculator].code.display = "Program"
+* useContext[calculator].code = https://fevir.net/resources/CodeSystem/179423#evidence-communication "Evidence Communication"
 * useContext[calculator].valueCodeableConcept.coding = https://fevir.net/resources/CodeSystem/179423#StatisticalCalculator "StatisticalCalculator"
 * statistic.numberOfEvents 0..0
 * statistic.numberAffected 0..0

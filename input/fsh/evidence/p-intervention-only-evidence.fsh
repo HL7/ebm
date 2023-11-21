@@ -7,9 +7,7 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The Interventi
 * useContext ^slicing.discriminator.path = "valueCodeableConcept"
 * useContext ^slicing.rules = #open
 * useContext contains intervention 1..* MS
-* useContext[intervention].code.system = "http://terminology.hl7.org/CodeSystem/usage-context-type"
-* useContext[intervention].code.code = #program
-* useContext[intervention].code.display = "Program"
+* useContext[intervention].code = https://fevir.net/resources/CodeSystem/179423#evidence-communication "Evidence Communication"
 * useContext[intervention].valueCodeableConcept.coding = https://fevir.net/resources/CodeSystem/179423#InterventionOnlyEvidence "InterventionOnlyEvidence"
 * variableDefinition
   * ^comment = "To report intervention-only evidence for a research question defined by Population, Intervention, Comparator, and Outcome (PICO), one would use two variableDefinition instances. A group defined by a combination of Population and Intervention has the variableRole of population, the Comparator is not included in the InterventionOnlyEvidence, and the Outcome has variableRole of outcome."

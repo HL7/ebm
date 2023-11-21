@@ -8,9 +8,7 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The EndpointAn
 * useContext ^slicing.discriminator.path = "valueCodeableConcept"
 * useContext ^slicing.rules = #open
 * useContext contains eap 1..* MS
-* useContext[eap].code.system = "http://terminology.hl7.org/CodeSystem/usage-context-type"
-* useContext[eap].code.code = #program
-* useContext[eap].code.display = "Program"
+* useContext[eap].code = https://fevir.net/resources/CodeSystem/179423#evidence-communication "Evidence Communication"
 * useContext[eap].valueCodeableConcept.coding = https://fevir.net/resources/CodeSystem/179423#EndpointAnalysisPlan "EndpointAnalysisPlan"
 * statistic.modelCharacteristic 1..*
   * ^comment = "After the Evidence StructureDefinition is revised, set intended 0..1 boolean to value of True."

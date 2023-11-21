@@ -7,9 +7,7 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The Comparator
 * useContext ^slicing.discriminator.path = "valueCodeableConcept"
 * useContext ^slicing.rules = #open
 * useContext contains comparator 1..* MS
-* useContext[comparator].code.system = "http://terminology.hl7.org/CodeSystem/usage-context-type"
-* useContext[comparator].code.code = #program
-* useContext[comparator].code.display = "Program"
+* useContext[comparator].code = https://fevir.net/resources/CodeSystem/179423#evidence-communication "Evidence Communication"
 * useContext[comparator].valueCodeableConcept.coding = https://fevir.net/resources/CodeSystem/179423#ComparatorOnlyEvidence "ComparatorOnlyEvidence"
 * variableDefinition
   * ^comment = "To report comparator-only evidence for a research question defined by Population, Intervention, Comparator, and Outcome (PICO), one would use two variableDefinition instances. A group defined by a combination of Population and Comparator has the variableRole of population, the Intervention is not included in the ComparatorOnlyEvidence, and the Outcome has variableRole of outcome."

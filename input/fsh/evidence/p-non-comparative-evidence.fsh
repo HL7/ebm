@@ -7,9 +7,7 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The NonCompara
 * useContext ^slicing.discriminator.path = "valueCodeableConcept"
 * useContext ^slicing.rules = #open
 * useContext contains nonComparative 1..* MS
-* useContext[nonComparative].code.system = "http://terminology.hl7.org/CodeSystem/usage-context-type"
-* useContext[nonComparative].code.code = #program
-* useContext[nonComparative].code.display = "Program"
+* useContext[nonComparative].code = https://fevir.net/resources/CodeSystem/179423#evidence-communication "Evidence Communication"
 * useContext[nonComparative].valueCodeableConcept.coding = https://fevir.net/resources/CodeSystem/179423#NonComparativeEvidence "NonComparativeEvidence"
 * variableDefinition 2..*
 * variableDefinition ^slicing.discriminator.type = #value

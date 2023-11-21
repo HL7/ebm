@@ -7,9 +7,7 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The NetEffectE
 * useContext ^slicing.discriminator.path = "valueCodeableConcept"
 * useContext ^slicing.rules = #open
 * useContext contains netEffect 1..* MS
-* useContext[netEffect].code.system = "http://terminology.hl7.org/CodeSystem/usage-context-type"
-* useContext[netEffect].code.code = #program
-* useContext[netEffect].code.display = "Program"
+* useContext[netEffect].code = https://fevir.net/resources/CodeSystem/179423#evidence-communication "Evidence Communication"
 * useContext[netEffect].valueCodeableConcept.coding = https://fevir.net/resources/CodeSystem/179423#NetEffectEstimate "NetEffectEstimate"
 * variableDefinition 2..*
 * variableDefinition ^slicing.discriminator.type = #value

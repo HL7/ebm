@@ -4,6 +4,7 @@ Alias: $sevco = https://fevir.net/sevco
 Alias: $cs-ebm-ig = https://fevir.net/resources/CodeSystem/179423
 Alias: $cpg-common-persona = http://hl7.org/fhir/uv/cpg/ValueSet/cpg-common-persona
 Alias: $ebm-evidence-variable-role-subtype = https://fevir.net/resources/ValueSet/179424
+Alias: $ebm-evidence-report-section-code = https://fevir.net/resources/ValueSet/179431
 
  // Aliases for common structure definition extensions
 Alias: $ext-fmm = http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm

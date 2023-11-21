@@ -7,8 +7,6 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The EvidenceSy
 * useContext ^slicing.discriminator.path = "valueCodeableConcept"
 * useContext ^slicing.rules = #open
 * useContext contains synthesis 1..* MS
-* useContext[synthesis].code.system = "http://terminology.hl7.org/CodeSystem/usage-context-type"
-* useContext[synthesis].code.code = #program
-* useContext[synthesis].code.display = "Program"
+* useContext[synthesis].code = https://fevir.net/resources/CodeSystem/179423#evidence-communication "Evidence Communication"
 * useContext[synthesis].valueCodeableConcept.coding = https://fevir.net/resources/CodeSystem/179423#EvidenceSynthesisEvidence "EvidenceSynthesisEvidence"
 * synthesisType 1..1

@@ -6,9 +6,7 @@ Description: "Profile of EvidenceVariable for Evidence Based Medicine IG. The Gr
 * useContext ^slicing.discriminator.path = "valueCodeableConcept"
 * useContext ^slicing.rules = #open
 * useContext contains groupAssignment 1..* MS
-* useContext[groupAssignment].code.system = "http://terminology.hl7.org/CodeSystem/usage-context-type"
-* useContext[groupAssignment].code.code = #program
-* useContext[groupAssignment].code.display = "Program"
+* useContext[groupAssignment].code = https://fevir.net/resources/CodeSystem/179423#evidence-communication "Evidence Communication"
 * useContext[groupAssignment].valueCodeableConcept.coding = https://fevir.net/resources/CodeSystem/179423#GroupAssignment "GroupAssignment"
 * handling = #categorical
 * category 2..*

@@ -13,29 +13,35 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
 * section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.rules = #open
-* section contains outcomeDefinition 0..1 and comparatorOnlyEvidence 0..1 and interventionOnlyEvidence 0..1 and comparativeEvidence 0..1 and certaintyOfEvidence 0..1 and evidenceVariablePopulation 0..1 and interventionDefinition 0..1 and evidenceClassifier 0..1
-* section[outcomeDefinition].code = http://hl7.org/fhir/evidence-report-section#EvidenceVariable-outcome "Evidence Variable in variable role Outcome (MeasuredVariable)"
+* section contains outcomeDefinition 0..1 and comparatorOnlyEvidence 0..1 and interventionOnlyEvidence 0..1 and comparativeEvidence 0..1 and certaintyOfEvidence 0..1 and evidenceVariablePopulation 0..1 and intervention 0..1 and interventionDescription 0..1 and interventionGroup 0..1 and evidenceClassifier 0..1
+* section[outcomeDefinition].code = https://fevir.net/resources/CodeSystem/179423#outcome-measure "Outcome Measure"
 * section[outcomeDefinition]
   * entry only Reference(OutcomeVariable)
-* section[comparatorOnlyEvidence].code = http://hl7.org/fhir/evidence-report-section#Control-group-alone-Evidence "Evidence Results for the control exposure only"
+* section[comparatorOnlyEvidence].code = https://fevir.net/resources/CodeSystem/179423#evidence-with-comparator-alone "Evidence with comparator alone"
 * section[comparatorOnlyEvidence]
   * entry only Reference(ComparatorOnlyEvidence)
-* section[interventionOnlyEvidence].code = http://hl7.org/fhir/evidence-report-section#Intervention-group-alone-Evidence "Evidence Results for the intervention exposure only"
+* section[interventionOnlyEvidence].code = https://fevir.net/resources/CodeSystem/179423#evidence-with-intervention-alone "Evidence with intervention alone"
 * section[interventionOnlyEvidence]
   * entry only Reference(InterventionOnlyEvidence)
-* section[comparativeEvidence].code = http://hl7.org/fhir/evidence-report-section#Intervention-vs-Control-Evidence "Evidence Results for comparison of Intervention and Control"
+* section[comparativeEvidence].code = https://fevir.net/resources/CodeSystem/179423#evidence-with-intervention-vs-comparator "Evidence with intervention vs. comparator"
 * section[comparativeEvidence]
   * entry only Reference(ComparativeEvidence)
-* section[certaintyOfEvidence].code = http://hl7.org/fhir/evidence-report-section#Certainty-of-Evidence "Certainty of Evidence"
+* section[certaintyOfEvidence].code = https://fevir.net/resources/CodeSystem/179423#certainty-of-evidence "Certainty of Evidence"
 * section[certaintyOfEvidence]
   * entry only Reference(CertaintyOfEvidence)
-* section[evidenceVariablePopulation].code = http://hl7.org/fhir/evidence-report-section#EvidenceVariable-population "Evidence Variable in variable role Population"
+* section[evidenceVariablePopulation].code = https://fevir.net/resources/CodeSystem/179423#population "Population"
 * section[evidenceVariablePopulation]
-  * entry only Reference(EvidenceVariable or Group)
-* section[interventionDefinition].code = http://hl7.org/fhir/evidence-report-section#EvidenceVariable-exposure "Evidence Variable in variable role Exposure"
-* section[interventionDefinition]
-  * entry only Reference(ExposureVariable or Group)
-* section[evidenceClassifier].code = http://hl7.org/fhir/evidence-report-section#Evidence-Classifier "Evidence Classifier section"
+  * entry only Reference(Group)
+* section[intervention].code = https://fevir.net/resources/CodeSystem/179423#intervention "Intervention"
+* section[intervention]
+  * entry only Reference(ExposureVariable)
+* section[interventionDescription].code = https://fevir.net/resources/CodeSystem/179423#intervention-description "Intervention Description"
+* section[interventionDescription]
+  * entry only Reference(Group)
+* section[interventionGroup].code = https://fevir.net/resources/CodeSystem/179423#intervention-group "Intervention Group"
+* section[interventionGroup]
+  * entry only Reference(Group)
+* section[evidenceClassifier].code = https://fevir.net/resources/CodeSystem/179423#classifier "Classifier"
 * section[evidenceClassifier]
   * entry only Reference(ArtifactAssessment)
 

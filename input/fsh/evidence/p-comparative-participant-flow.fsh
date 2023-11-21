@@ -7,9 +7,7 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The Comparativ
 * useContext ^slicing.discriminator.path = "valueCodeableConcept"
 * useContext ^slicing.rules = #open
 * useContext contains flow 1..* MS
-* useContext[flow].code.system = "http://terminology.hl7.org/CodeSystem/usage-context-type"
-* useContext[flow].code.code = #program
-* useContext[flow].code.display = "Program"
+* useContext[flow].code = https://fevir.net/resources/CodeSystem/179423#evidence-communication "Evidence Communication"
 * useContext[flow].valueCodeableConcept.coding = https://fevir.net/resources/CodeSystem/179423#ComparativeParticipantFlow "ComparativeParticipantFlow"
 * variableDefinition 2..*
   * ^comment = "The ParticipantFlowMeasure has variableRole of outcome."
