@@ -12,6 +12,6 @@ Description: "Profile of Library for Evidence Based Medicine IG. The SystematicR
 * useContext[searchResults].code.system = "http://terminology.hl7.org/CodeSystem/usage-context-type"
 * useContext[searchResults].code.code = #program
 * useContext[searchResults].code.display = "Program"
-* useContext[searchResults].valueCodeableConcept.text = "systematic-review-included-studies"
+* useContext[searchResults].valueCodeableConcept.coding = https://fevir.net/resources/CodeSystem/179423#SystematicReviewIncludedStudies "SystematicReviewIncludedStudies"
 * jurisdiction 0..0
 * topic 0..0
