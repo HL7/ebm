@@ -1,7 +1,7 @@
 Profile: ComparativeParticipantFlow
 Parent: ComparativeEvidence
 Id: comparative-participant-flow
-Description: "Profile of Evidence for Evidence Based Medicine IG. The ParticipantFlow Profile is used for counts of completion and reasons for non-completion of participation in a research study." 
+Description: "Profile of Evidence for Evidence Based Medicine IG. The ComparativeParticipantFlow Profile is used for comparisons of counts of completion and reasons for non-completion of participation in a research study." 
 * useContext 1..*
 * useContext ^slicing.discriminator.type = #value
 * useContext ^slicing.discriminator.path = "valueCodeableConcept"
