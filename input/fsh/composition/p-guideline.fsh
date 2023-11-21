@@ -13,11 +13,11 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Guideli
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.rules = #closed
 * section contains introduction 0..1 MS and recommendations 0..1 MS and text 0..1 MS and methods 0..1 MS and acknowledgements 0..1 MS and appendices 0..1 MS
-* section[introduction].code.text = "Introduction"
-* section[recommendations].code.text = "Recommendations"
+* section[introduction].code = https://fevir.net/resources/CodeSystem/179423#introduction "Introduction"
+* section[recommendations].code = https://fevir.net/resources/CodeSystem/179423#recommendations "Recommendations"
 * section[recommendations]
   * entry only Reference(Recommendation)
-* section[text].code.text = "Text"
-* section[methods].code.text = "Methods"
-* section[acknowledgements].code.text = "Acknowledgements"
-* section[appendices].code.text = "Appendices"
+* section[text].code = https://fevir.net/resources/CodeSystem/179423#text "Text"
+* section[methods].code = https://fevir.net/resources/CodeSystem/179423#methods "Methods"
+* section[acknowledgements].code = https://fevir.net/resources/CodeSystem/179423#acknowledgements "Acknowledgements"
+* section[appendices].code = https://fevir.net/resources/CodeSystem/179423#appendices "Appendices"
