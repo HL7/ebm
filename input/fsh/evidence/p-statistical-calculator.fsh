@@ -10,7 +10,7 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The Statistica
 * useContext[calculator].code.system = "http://terminology.hl7.org/CodeSystem/usage-context-type"
 * useContext[calculator].code.code = #program
 * useContext[calculator].code.display = "Program"
-* useContext[calculator].valueCodeableConcept.text = "statistical-calculator"
+* useContext[calculator].valueCodeableConcept.coding = https://fevir.net/resources/CodeSystem/179423#StatisticalCalculator "StatisticalCalculator"
 * statistic.numberOfEvents 0..0
 * statistic.numberAffected 0..0
 * statistic.sampleSize 0..0

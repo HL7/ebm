@@ -10,4 +10,4 @@ Description: "Profile of EvidenceVariable for Evidence Based Medicine IG. The Ou
 * useContext[outcome].code.system = "http://terminology.hl7.org/CodeSystem/usage-context-type"
 * useContext[outcome].code.code = #program
 * useContext[outcome].code.display = "Program"
-* useContext[outcome].valueCodeableConcept.text = "outcome"
+* useContext[outcome].valueCodeableConcept.coding = https://fevir.net/resources/CodeSystem/179423#OutcomeVariable "OutcomeVariable"

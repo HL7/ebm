@@ -11,5 +11,5 @@ Description: "Profile of EvidenceVariable for Evidence Based Medicine IG. The Pa
 * useContext[participantFlowMeasure].code.system = "http://terminology.hl7.org/CodeSystem/usage-context-type"
 * useContext[participantFlowMeasure].code.code = #program
 * useContext[participantFlowMeasure].code.display = "Program"
-* useContext[participantFlowMeasure].valueCodeableConcept.text = "participant-flow-measure"
+* useContext[participantFlowMeasure].valueCodeableConcept.coding = https://fevir.net/resources/CodeSystem/179423#ParticipantFlowMeasure "ParticipantFlowMeasure"
 * handling = #dichotomous

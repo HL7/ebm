@@ -10,7 +10,7 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The Participan
 * useContext[flow].code.system = "http://terminology.hl7.org/CodeSystem/usage-context-type"
 * useContext[flow].code.code = #program
 * useContext[flow].code.display = "Program"
-* useContext[flow].valueCodeableConcept.text = "participant-flow"
+* useContext[flow].valueCodeableConcept.coding = https://fevir.net/resources/CodeSystem/179423#ParticipantFlow "ParticipantFlow"
 * variableDefinition 2..*
   * ^comment = "The ParticipantFlowMeasure has variableRole of outcome."
   * intended 0..0

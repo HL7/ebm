@@ -7,6 +7,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Compara
 * category ^slicing.discriminator.path = "text"
 * category ^slicing.rules = #open
 * category contains comparativeEvidenceReport 1..1 MS
+* category[comparativeEvidenceReport].coding = https://fevir.net/resources/CodeSystem/179423#ComparativeEvidenceReport "ComparativeEvidenceReport"
 * category[comparativeEvidenceReport].text = "Comparative Evidence Report"
 * section 5..*
 * section ^slicing.discriminator.type = #value

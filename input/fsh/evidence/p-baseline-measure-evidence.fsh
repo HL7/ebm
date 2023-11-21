@@ -10,7 +10,7 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The BaselineMe
 * useContext[baseline].code.system = "http://terminology.hl7.org/CodeSystem/usage-context-type"
 * useContext[baseline].code.code = #program
 * useContext[baseline].code.display = "Program"
-* useContext[baseline].valueCodeableConcept.text = "baseline-measure-evidence"
+* useContext[baseline].valueCodeableConcept.coding = https://fevir.net/resources/CodeSystem/179423#BaselineMeasureEvidence "BaselineMeasureEvidence"
 * variableDefinition
   * ^comment = "The Baseline Measure (or independent variable) has variableRole of outcome."
   * intended 0..0

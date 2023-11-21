@@ -11,7 +11,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
 * extension contains ArtifactApprovalDate named approvalDate 0..1
 * extension contains ArtifactLastReviewDate named lastReviewDate 0..1
 * extension contains ArtifactEffectivePeriod named effectivePeriod 0..1
-* type.text = "EvidenceReport"
+* type.coding = https://fevir.net/resources/CodeSystem/179423#EvidenceReport "EvidenceReport"
 * subject only Reference(Citation or Classification or EvidenceReportSubject or ResearchStudy)
 * subject 0..1
   * ^comment = "Reference a single Citation Resource, EvidenceVariable Resource (EvidenceReportSubject Profile), or ReserchStudy Resource to define the subject of this EvidenceReport."

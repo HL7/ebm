@@ -10,7 +10,7 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The NetEffectC
 * useContext[netEffectContribution].code.system = "http://terminology.hl7.org/CodeSystem/usage-context-type"
 * useContext[netEffectContribution].code.code = #program
 * useContext[netEffectContribution].code.display = "Program"
-* useContext[netEffectContribution].valueCodeableConcept.text = "net-effect-contribution"
+* useContext[netEffectContribution].valueCodeableConcept.coding = https://fevir.net/resources/CodeSystem/179423#NetEffectContribution "NetEffectContribution"
 * relatedArtifact 1..*
 * relatedArtifact ^slicing.discriminator.type = #value
 * relatedArtifact ^slicing.discriminator.path = "type"

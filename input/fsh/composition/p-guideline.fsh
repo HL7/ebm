@@ -7,7 +7,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Guideli
 * category ^slicing.discriminator.path = "text"
 * category ^slicing.rules = #open
 * category contains guideline 1..1 MS
-* category[guideline].text = "Guideline"
+* category[guideline].coding = https://fevir.net/resources/CodeSystem/179423#Guideline "Guideline"
 * section 1..6
 * section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code"

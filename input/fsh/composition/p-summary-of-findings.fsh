@@ -7,6 +7,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Summary
 * category ^slicing.discriminator.path = "text"
 * category ^slicing.rules = #open
 * category contains summaryOfFindings 1..1 MS
+* category[summaryOfFindings].coding = https://fevir.net/resources/CodeSystem/179423#SummaryOfFindings "SummaryOfFindings"
 * category[summaryOfFindings].text = "Summary of Findings"
 * section 2..*
 * section ^slicing.discriminator.type = #value

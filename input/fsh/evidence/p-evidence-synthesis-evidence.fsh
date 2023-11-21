@@ -10,5 +10,5 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The EvidenceSy
 * useContext[synthesis].code.system = "http://terminology.hl7.org/CodeSystem/usage-context-type"
 * useContext[synthesis].code.code = #program
 * useContext[synthesis].code.display = "Program"
-* useContext[synthesis].valueCodeableConcept.text = "evidence-synthesis-evidence"
+* useContext[synthesis].valueCodeableConcept.coding = https://fevir.net/resources/CodeSystem/179423#EvidenceSynthesisEvidence "EvidenceSynthesisEvidence"
 * synthesisType 1..1

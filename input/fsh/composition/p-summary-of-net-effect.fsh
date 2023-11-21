@@ -7,6 +7,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Summary
 * category ^slicing.discriminator.path = "text"
 * category ^slicing.rules = #open
 * category contains summaryOfNetEffect 1..1 MS
+* category[summaryOfNetEffect].coding = https://fevir.net/resources/CodeSystem/179423#SummaryOfNetEffect "SummaryOfNetEffect"
 * category[summaryOfNetEffect].text = "Summary of Net Effect Contributions"
 * section 2..*
 * section ^slicing.discriminator.type = #value

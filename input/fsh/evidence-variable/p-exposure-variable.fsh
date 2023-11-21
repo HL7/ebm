@@ -10,4 +10,4 @@ Description: "Profile of EvidenceVariable for Evidence Based Medicine IG. The Ex
 * useContext[exposure].code.system = "http://terminology.hl7.org/CodeSystem/usage-context-type"
 * useContext[exposure].code.code = #program
 * useContext[exposure].code.display = "Program"
-* useContext[exposure].valueCodeableConcept.text = "exposure"
+* useContext[exposure].valueCodeableConcept.coding = https://fevir.net/resources/CodeSystem/179423#ExposureVariable "ExposureVariable"

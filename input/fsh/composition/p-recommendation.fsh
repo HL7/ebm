@@ -7,7 +7,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Recomme
 * category ^slicing.discriminator.path = "text"
 * category ^slicing.rules = #open
 * category contains recommendation 1..1 MS
-* category[recommendation].text = "Recommendation"
+* category[recommendation].coding = https://fevir.net/resources/CodeSystem/179423#Recommendation "Recommendation"
 * relatesTo 1..*
 * relatesTo ^slicing.discriminator.type = #value
 * relatesTo ^slicing.discriminator.path = "type"

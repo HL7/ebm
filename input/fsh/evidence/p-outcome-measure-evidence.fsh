@@ -10,7 +10,7 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The OutcomeMea
 * useContext[outcome].code.system = "http://terminology.hl7.org/CodeSystem/usage-context-type"
 * useContext[outcome].code.code = #program
 * useContext[outcome].code.display = "Program"
-* useContext[outcome].valueCodeableConcept.text = "outcome-measure-evidence"
+* useContext[outcome].valueCodeableConcept.coding = https://fevir.net/resources/CodeSystem/179423#OutcomeMeasureEvidence "OutcomeMeasureEvidence"
 * variableDefinition 2..*
   * ^comment = "The Outcome has variableRole of outcome."
 * variableDefinition ^slicing.discriminator.type = #value

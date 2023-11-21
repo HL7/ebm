@@ -7,6 +7,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The TableCo
 * category ^slicing.discriminator.path = "text"
 * category ^slicing.rules = #open
 * category contains tableConstructor 1..1 MS
+* category[tableConstructor].coding = https://fevir.net/resources/CodeSystem/179423#TableConstructor "TableConstructor"
 * category[tableConstructor].text = "Table Constructor"
 * section 3..3
 * section ^slicing.discriminator.type = #value

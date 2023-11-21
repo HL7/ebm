@@ -9,7 +9,7 @@ Description: "Profile of EvidenceVariable for Evidence Based Medicine IG. The Gr
 * useContext[groupAssignment].code.system = "http://terminology.hl7.org/CodeSystem/usage-context-type"
 * useContext[groupAssignment].code.code = #program
 * useContext[groupAssignment].code.display = "Program"
-* useContext[groupAssignment].valueCodeableConcept.text = "group-assignment"
+* useContext[groupAssignment].valueCodeableConcept.coding = https://fevir.net/resources/CodeSystem/179423#GroupAssignment "GroupAssignment"
 * handling = #categorical
 * category 2..*
   * name 1..1

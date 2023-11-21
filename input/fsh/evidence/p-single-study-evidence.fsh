@@ -10,6 +10,6 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The SingleStud
 * useContext[singleStudy].code.system = "http://terminology.hl7.org/CodeSystem/usage-context-type"
 * useContext[singleStudy].code.code = #program
 * useContext[singleStudy].code.display = "Program"
-* useContext[singleStudy].valueCodeableConcept.text = "single-study-evidence"
+* useContext[singleStudy].valueCodeableConcept.coding = https://fevir.net/resources/CodeSystem/179423#SingleStudyEvidence "SingleStudyEvidence"
 * synthesisType 1..1
 * synthesisType = $cs-synthesis-type#NotApplicable "Not Applicable"
