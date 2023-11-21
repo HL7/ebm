@@ -6,4 +6,5 @@ Description: "Sub-classification of the role of the variable."
 * value[x] only CodeableConcept
 * . ^short = "subgroup | variable-A | variable-B | variable-AB | confounder | collider | mediator | effect-modifier"
 * . ^definition = "Sub-classification of the role of the variable."
-* valueCodeableConcept from evidence-variable-role-subtype (extensible)
+* valueCodeableConcept from $ebm-evidence-variable-role-subtype (extensible)
+
