@@ -88,33 +88,68 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Recomme
     * section[preferencesRelatedItems].code.coding = https://fevir.net/resources/CodeSystem/179423#related-items "Related Items"
   * section[discussion].code.coding = https://fevir.net/resources/CodeSystem/179423#discussion "Discussion"
   * section[dataSource].code.coding = https://fevir.net/resources/CodeSystem/179423#data-source "Data Source"
-* section[judgments].code.text = "Judgments"
+* section[judgments].code.coding = https://fevir.net/resources/CodeSystem/179423#judgments "Judgments"
 * section[judgments]
   * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code"
   * section ^slicing.rules = #open
-  * section contains overallJustificationRatings 0..1 MS and overallJustificationSummary 0..1 and overallJustificationRelatedItems 0..1 and problemImportanceRatings 0..1 and problemImportanceSummary 0..1 and problemImportanceRelatedItems 0..1 and costsRatings 0..1 and costsSummary 0..1 and costsRelatedItems 0..1 and costEffectivenessRatings 0..1 and costEffectivenessSummary 0..1 and costEffectivenessRelatedItems 0..1 and equityRatings 0..1 and equitySummary 0..1 and equityRelatedItems 0..1 and acceptabilityRatings 0..1 and acceptabilitySummary 0..1 and acceptabilityRelatedItems 0..1 and feasibilityRatings 0..1 and feasibilitySummary 0..1 and feasibilityRelatedItems 0..1
-  * section[overallJustificationRatings].code.text = "overallJustificationRatings"
-  * section[overallJustificationSummary].code.text = "overallJustificationSummary"
-  * section[overallJustificationRelatedItems].code.text = "overallJustificationRelatedItems"
-  * section[problemImportanceRatings].code.text = "problemImportanceRatings"
-  * section[problemImportanceSummary].code.text = "problemImportanceSummary"
-  * section[problemImportanceRelatedItems].code.text = "problemImportanceRelatedItems"
-  * section[costsRatings].code.text = "costsRatings"
-  * section[costsSummary].code.text = "costsSummary"
-  * section[costsRelatedItems].code.text = "costsRelatedItems"
-  * section[costEffectivenessRatings].code.text = "costEffectivenessRatings"
-  * section[costEffectivenessSummary].code.text = "costEffectivenessSummary"
-  * section[costEffectivenessRelatedItems].code.text = "costEffectivenessRelatedItems"
-  * section[equityRatings].code.text = "equityRatings"
-  * section[equitySummary].code.text = "equitySummary"
-  * section[equityRelatedItems].code.text = "equityRelatedItems"
-  * section[acceptabilityRatings].code.text = "acceptabilityRatings"
-  * section[acceptabilitySummary].code.text = "acceptabilitySummary"
-  * section[acceptabilityRelatedItems].code.text = "acceptabilityRelatedItems"
-  * section[feasibilityRatings].code.text = "feasibilityRatings"
-  * section[feasibilitySummary].code.text = "feasibilitySummary"
-  * section[feasibilityRelatedItems].code.text = "feasibilityRelatedItems"
+  * section contains overallJustificationSummary 0..1 and problemImportanceSummary 0..1 and costsSummary 0..1 and costEffectivenessSummary 0..1 and equitySummary 0..1 and acceptabilitySummary 0..1 and feasibilitySummary 0..1
+  * section[overallJustificationSummary].code.coding = https://fevir.net/resources/CodeSystem/179423#justification "Justification"
+  * section[overallJustificationSummary]
+    * section ^slicing.discriminator.type = #value
+    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.rules = #open
+    * section contains overallJustificationRatings 0..1 and overallJustificationRelatedItems 0..1
+    * section[overallJustificationRatings].code.coding = https://fevir.net/resources/CodeSystem/179423#ratings "Ratings"
+    * section[overallJustificationRelatedItems].code.coding = https://fevir.net/resources/CodeSystem/179423#related-items "Related Items"
+  * section[problemImportanceSummary].code.coding = https://fevir.net/resources/CodeSystem/179423#problem-importance "Problem Importance"
+  * section[problemImportanceSummary]
+    * section ^slicing.discriminator.type = #value
+    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.rules = #open
+    * section contains problemImportanceRatings 0..1 and problemImportanceRelatedItems 0..1
+    * section[problemImportanceRatings].code.coding = https://fevir.net/resources/CodeSystem/179423#ratings "Ratings"
+    * section[problemImportanceRelatedItems].code.coding = https://fevir.net/resources/CodeSystem/179423#related-items "Related Items"
+  * section[costsSummary].code.coding = https://fevir.net/resources/CodeSystem/179423#costs "Costs"
+  * section[costsSummary]
+    * section ^slicing.discriminator.type = #value
+    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.rules = #open
+    * section contains costsRatings 0..1 and costsRelatedItems 0..1
+    * section[costsRatings].code.coding = https://fevir.net/resources/CodeSystem/179423#ratings "Ratings"
+    * section[costsRelatedItems].code.coding = https://fevir.net/resources/CodeSystem/179423#related-items "Related Items"
+  * section[costEffectivenessSummary].code.coding = https://fevir.net/resources/CodeSystem/179423#cost-effectiveness "Cost-effectiveness"
+  * section[costEffectivenessSummary]
+    * section ^slicing.discriminator.type = #value
+    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.rules = #open
+    * section contains costEffectivenessRatings 0..1 and costEffectivenessRelatedItems 0..1
+    * section[costEffectivenessRatings].code.coding = https://fevir.net/resources/CodeSystem/179423#ratings "Ratings"
+    * section[costEffectivenessRelatedItems].code.coding = https://fevir.net/resources/CodeSystem/179423#related-items "Related Items"
+  * section[equitySummary].code.coding = https://fevir.net/resources/CodeSystem/179423#equity "Equity"
+  * section[equitySummary]
+    * section ^slicing.discriminator.type = #value
+    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.rules = #open
+    * section contains equityRatings 0..1 and equityRelatedItems 0..1
+    * section[equityRatings].code.coding = https://fevir.net/resources/CodeSystem/179423#ratings "Ratings"
+    * section[equityRelatedItems].code.coding = https://fevir.net/resources/CodeSystem/179423#related-items "Related Items"
+  * section[acceptabilitySummary].code.coding = https://fevir.net/resources/CodeSystem/179423#acceptability "Acceptability"
+  * section[acceptabilitySummary]
+    * section ^slicing.discriminator.type = #value
+    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.rules = #open
+    * section contains acceptabilityRatings 0..1 and acceptabilityRelatedItems 0..1
+    * section[acceptabilityRatings].code.coding = https://fevir.net/resources/CodeSystem/179423#ratings "Ratings"
+    * section[acceptabilityRelatedItems].code.coding = https://fevir.net/resources/CodeSystem/179423#related-items "Related Items"
+  * section[feasibilitySummary].code.coding = https://fevir.net/resources/CodeSystem/179423#feasibility "Feasibility"
+  * section[feasibilitySummary]
+    * section ^slicing.discriminator.type = #value
+    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.rules = #open
+    * section contains feasibilityRatings 0..1 and feasibilityRelatedItems 0..1
+    * section[feasibilityRatings].code.coding = https://fevir.net/resources/CodeSystem/179423#ratings "Ratings"
+    * section[feasibilityRelatedItems].code.coding = https://fevir.net/resources/CodeSystem/179423#related-items "Related Items"
 * section[considerations].code.text = "Considerations"
 * section[considerations]
   * section ^slicing.discriminator.type = #value
