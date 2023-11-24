@@ -150,27 +150,53 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Recomme
     * section contains feasibilityRatings 0..1 and feasibilityRelatedItems 0..1
     * section[feasibilityRatings].code.coding = https://fevir.net/resources/CodeSystem/179423#ratings "Ratings"
     * section[feasibilityRelatedItems].code.coding = https://fevir.net/resources/CodeSystem/179423#related-items "Related Items"
-* section[considerations].code.text = "Considerations"
+* section[considerations].code.coding = https://fevir.net/resources/CodeSystem/179423#considerations "Considerations"
 * section[considerations]
   * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code"
   * section ^slicing.rules = #open
-  * section contains overallConsiderationsRatings 0..1 MS and overallConsiderationsSummary 0..1 and overallConsiderationsRelatedItems 0..1 and subgroupRatings 0..1 and subgroupSummary 0..1 and subgroupRelatedItems 0..1 and implementationRatings 0..1 and implementationSummary 0..1 and implementationRelatedItems 0..1 and monitoringRatings 0..1 and monitoringSummary 0..1 and monitoringRelatedItems 0..1 and competingRatings 0..1 and competingSummary 0..1 and competingRelatedItems 0..1 and researchRatings 0..1 and researchSummary 0..1 and researchRelatedItems 0..1
-  * section[overallConsiderationsRatings].code.text = "overallConsiderationsRatings"
-  * section[overallConsiderationsSummary].code.text = "overallConsiderationsSummary"
-  * section[overallConsiderationsRelatedItems].code.text = "overallConsiderationsRelatedItems"
-  * section[subgroupRatings].code.text = "subgroupConsiderationsRatings"
-  * section[subgroupSummary].code.text = "subgroupConsiderationsSummary"
-  * section[subgroupRelatedItems].code.text = "subgroupConsiderationsRelatedItems"
-  * section[implementationRatings].code.text = "implementationConsiderationsRatings"
-  * section[implementationSummary].code.text = "implementationConsiderationsSummary"
-  * section[implementationRelatedItems].code.text = "implementationConsiderationsRelatedItems"
-  * section[monitoringRatings].code.text = "monitoringConsiderationsRatings"
-  * section[monitoringSummary].code.text = "monitoringConsiderationsSummary"
-  * section[monitoringRelatedItems].code.text = "monitoringConsiderationsRelatedItems"
-  * section[competingRatings].code.text = "competingInterestsRatings"
-  * section[competingSummary].code.text = "competingInterestsSummary"
-  * section[competingRelatedItems].code.text = "competingInterestsRelatedItems"
-  * section[researchRatings].code.text = "researchConsiderationsRatings"
-  * section[researchSummary].code.text = "researchConsiderationsSummary"
-  * section[researchRelatedItems].code.text = "researchConsiderationsRelatedItems"
+  * section contains overallConsiderationsSummary 0..1 and overallConsiderationsRatings 0..1 MS and overallConsiderationsRelatedItems 0..1 and subgroupSummary 0..1 and implementationSummary 0..1 and monitoringSummary 0..1 and competingSummary 0..1 and researchSummary 0..1
+  * section[overallConsiderationsSummary].code.coding = https://fevir.net/resources/CodeSystem/179423#summary "Summary"
+  * section[overallConsiderationsRatings].code.coding = https://fevir.net/resources/CodeSystem/179423#ratings "Ratings"
+  * section[overallConsiderationsRelatedItems].code.coding = https://fevir.net/resources/CodeSystem/179423#related-items "Related Items"
+  * section[subgroupSummary].code.coding = https://fevir.net/resources/CodeSystem/179423#subgroup-considerations "Subgroup Considerations"
+  * section[subgroupSummary]
+    * section ^slicing.discriminator.type = #value
+    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.rules = #open
+    * section contains subgroupRatings 0..1 and subgroupRelatedItems 0..1
+    * section[subgroupRatings].code.coding = https://fevir.net/resources/CodeSystem/179423#ratings "Ratings"
+    * section[subgroupRelatedItems].code.coding = https://fevir.net/resources/CodeSystem/179423#related-items "Related Items"
+  * section[implementationSummary].code.coding = https://fevir.net/resources/CodeSystem/179423#implementation-considerations "Implementation Considerations"
+  * section[implementationSummary]
+    * section ^slicing.discriminator.type = #value
+    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.rules = #open
+    * section contains implementationRatings 0..1 and implementationRelatedItems 0..1
+    * section[implementationRatings].code.coding = https://fevir.net/resources/CodeSystem/179423#ratings "Ratings"
+    * section[implementationRelatedItems].code.coding = https://fevir.net/resources/CodeSystem/179423#related-items "Related Items"
+  * section[monitoringSummary].code.coding = https://fevir.net/resources/CodeSystem/179423#monitoring-considerations "Monitoring Considerations"
+  * section[monitoringSummary]
+    * section ^slicing.discriminator.type = #value
+    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.rules = #open
+    * section contains monitoringRatings 0..1 and monitoringRelatedItems 0..1
+    * section[monitoringRatings].code.coding = https://fevir.net/resources/CodeSystem/179423#ratings "Ratings"
+    * section[monitoringRelatedItems].code.coding = https://fevir.net/resources/CodeSystem/179423#related-items "Related Items"
+  * section[competingSummary].code.coding = https://fevir.net/resources/CodeSystem/179423#competing-interests "Competing Interests"
+  * section[competingSummary]
+    * section ^slicing.discriminator.type = #value
+    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.rules = #open
+    * section contains competingRatings 0..1 and competingRelatedItems 0..1
+    * section[competingRatings].code.coding = https://fevir.net/resources/CodeSystem/179423#ratings "Ratings"
+    * section[competingRelatedItems].code.coding = https://fevir.net/resources/CodeSystem/179423#related-items "Related Items"
+  * section[researchSummary].code.coding = https://fevir.net/resources/CodeSystem/179423#research-considerations "Research Considerations"
+  * section[researchSummary]
+    * section ^slicing.discriminator.type = #value
+    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.rules = #open
+    * section contains researchRatings 0..1 and researchRelatedItems 0..1
+    * section[researchRatings].code.coding = https://fevir.net/resources/CodeSystem/179423#ratings "Ratings"
+    * section[researchRelatedItems].code.coding = https://fevir.net/resources/CodeSystem/179423#related-items "Related Items"
+
