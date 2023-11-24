@@ -42,7 +42,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Recomme
   * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code"
   * section ^slicing.rules = #open
-  * section contains summaryOfFindings 0..1 and desirableSummary 0..1 and desirableRelatedItems 0..1 and undesirableSummary 0..1 and discussion 0..1 and dataSource 0..1
+  * section contains summaryOfFindings 0..1 and desirableSummary 0..1 and undesirableSummary 0..1 and discussion 0..1 and dataSource 0..1
   * section[summaryOfFindings].code.coding = https://fevir.net/resources/CodeSystem/179423#summary-of-findings "Summary of Findings"  
   * section[summaryOfFindings]
     * section ^slicing.discriminator.type = #value
