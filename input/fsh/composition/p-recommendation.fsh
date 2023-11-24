@@ -26,7 +26,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Recomme
   * section ^slicing.discriminator.path = "code"
   * section ^slicing.rules = #open
   * section contains recommendationStatement 0..1 MS and ratingSystem 0..1 and strengthOfRecommendationRating 0..1 and directionOfRecommendation 0..1 and otherRating 0..1 and overallRelatedItems 0..1 and discussion 0..1 and population 0..1 and action 0..1 and oppositeAction 0..1 and dataSource 0..1
-  * section[recommendationStatement].code.coding = https://fevir.net/resources/CodeSystem/179423#recommendation-statement "Recommendation Statemen"
+  * section[recommendationStatement].code.coding = https://fevir.net/resources/CodeSystem/179423#recommendation-statement "Recommendation Statement"
   * section[ratingSystem].code.coding = https://fevir.net/resources/CodeSystem/179423#rating-system "Rating System"
   * section[strengthOfRecommendationRating].code.coding = https://fevir.net/resources/CodeSystem/179423#strength-of-recommendation "Strength of Recommendation"
   * section[directionOfRecommendation].code.coding = https://fevir.net/resources/CodeSystem/179423#direction-of-recommendation "Direction of Recommendation"
@@ -69,18 +69,25 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Recomme
     * section[undesirableRelatedItems].code.coding = https://fevir.net/resources/CodeSystem/179423#related-items "Related Items"
   * section[discussion].code.coding = https://fevir.net/resources/CodeSystem/179423#discussion "Discussion"
   * section[dataSource].code.coding = https://fevir.net/resources/CodeSystem/179423#data-source "Data Source"
-* section[netEffect].code.text = "Net Effect"
+* section[netEffect].code.coding = https://fevir.net/resources/CodeSystem/179423#net-effect "Net Effect"
 * section[netEffect]
   * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code"
   * section ^slicing.rules = #open
-  * section contains preferencesRatings 0..1 MS and preferencesSummary 0..1 and preferencesRelatedItems 0..1 and netEffectRatings 0..1 and netEffectSummary 0..1 and netEffectRelatedItems 0..1
-  * section[preferencesRatings].code.text = "preferencesRatings"
-  * section[preferencesSummary].code.text = "preferencesSummary"
-  * section[preferencesRelatedItems].code.text = "preferencesRelatedItems"
-  * section[netEffectRatings].code.text = "netEffectRatings"
-  * section[netEffectSummary].code.text = "netEffectSummary"
-  * section[netEffectRelatedItems].code.text = "netEffectRelatedItems"
+  * section contains netEffectSummary 0..1 and netEffectRatings 0..1 and netEffectRelatedItems 0..1 and preferencesSummary 0..1 and discussion 0..1 and dataSource 0..1
+  * section[netEffectSummary].code.coding = https://fevir.net/resources/CodeSystem/179423#summary "Summary"
+  * section[netEffectRatings].code.coding = https://fevir.net/resources/CodeSystem/179423#ratings "Ratings"
+  * section[netEffectRelatedItems].code.coding = https://fevir.net/resources/CodeSystem/179423#related-items "Related Items"
+  * section[preferencesSummary].code.coding = https://fevir.net/resources/CodeSystem/179423#preferences "Preferences"
+  * section[preferencesSummary]
+    * section ^slicing.discriminator.type = #value
+    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.rules = #open
+    * section contains preferencesRatings 0..1 and preferencesRelatedItems 0..1
+    * section[preferencesRatings].code.coding = https://fevir.net/resources/CodeSystem/179423#ratings "Ratings"
+    * section[preferencesRelatedItems].code.coding = https://fevir.net/resources/CodeSystem/179423#related-items "Related Items"
+  * section[discussion].code.coding = https://fevir.net/resources/CodeSystem/179423#discussion "Discussion"
+  * section[dataSource].code.coding = https://fevir.net/resources/CodeSystem/179423#data-source "Data Source"
 * section[judgments].code.text = "Judgments"
 * section[judgments]
   * section ^slicing.discriminator.type = #value
