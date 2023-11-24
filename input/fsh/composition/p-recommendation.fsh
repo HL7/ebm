@@ -37,21 +37,38 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Recomme
   * section[action].code.coding = https://fevir.net/resources/CodeSystem/179423#action "Action"
   * section[oppositeAction].code.coding = https://fevir.net/resources/CodeSystem/179423#opposite-action "Opposite Action"
   * section[dataSource].code.coding = https://fevir.net/resources/CodeSystem/179423#data-source "Data Source"
-* section[evidence].code.text = "Evidence"
+* section[evidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence "Evidence"
 * section[evidence]
   * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code"
   * section ^slicing.rules = #open
-  * section contains summaryOfFindingsRatings 0..1 and summaryOfFindingsSummary 0..1 and summaryOfFindingsRelatedItems 0..1 and desirableRatings 0..1 and desirableSummary 0..1 and desirableRelatedItems 0..1 and undesirableRatings 0..1 and undesirableSummary 0..1 and undesirableRelatedItems 0..1
-  * section[summaryOfFindingsRatings].code.text = "summaryOfFindingsRatings"
-  * section[summaryOfFindingsSummary].code.text = "summaryOfFindingsSummary"
-  * section[summaryOfFindingsRelatedItems].code.text = "summaryOfFindingsRelatedItems"
-  * section[desirableRatings].code.text = "desirableRatings"
-  * section[desirableSummary].code.text = "desirableSummary"
-  * section[desirableRelatedItems].code.text = "desirableRelatedItems"
-  * section[undesirableRatings].code.text = "undesirableRatings"
-  * section[undesirableSummary].code.text = "undesirableSummary"
-  * section[undesirableRelatedItems].code.text = "undesirableRelatedItems"
+  * section contains summaryOfFindings 0..1 and desirableSummary 0..1 and desirableRelatedItems 0..1 and undesirableSummary 0..1 and discussion 0..1 and dataSource 0..1
+  * section[summaryOfFindings].code.coding = https://fevir.net/resources/CodeSystem/179423#summary-of-findings "Summary of Findings"  
+  * section[summaryOfFindings]
+    * section ^slicing.discriminator.type = #value
+    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.rules = #open
+    * section contains summaryOfFindingsRatings 0..1 and summaryOfFindingsRelatedItems 0..1
+    * section[summaryOfFindingsRatings].code.coding = https://fevir.net/resources/CodeSystem/179423#ratings "Ratings"
+    * section[summaryOfFindingsRelatedItems].code.coding = https://fevir.net/resources/CodeSystem/179423#related-items "Related Items"
+  * section[desirableSummary].code.coding = https://fevir.net/resources/CodeSystem/179423#desirable-effects "Desirable Effects"
+  * section[desirableSummary]
+    * section ^slicing.discriminator.type = #value
+    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.rules = #open
+    * section contains desirableRatings 0..1 and desirableRelatedItems 0..1 
+    * section[desirableRatings].code.coding = https://fevir.net/resources/CodeSystem/179423#ratings "Ratings"
+    * section[desirableRelatedItems].code.coding = https://fevir.net/resources/CodeSystem/179423#related-items "Related Items"
+  * section[undesirableSummary].code.coding = https://fevir.net/resources/CodeSystem/179423#undesirable-effects "Undesirable Effects"
+  * section[undesirableSummary]
+    * section ^slicing.discriminator.type = #value
+    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.rules = #open
+    * section contains undesirableRatings 0..1 and undesirableRelatedItems 0..1
+    * section[undesirableRatings].code.coding = https://fevir.net/resources/CodeSystem/179423#ratings "Ratings"
+    * section[undesirableRelatedItems].code.coding = https://fevir.net/resources/CodeSystem/179423#related-items "Related Items"
+  * section[discussion].code.coding = https://fevir.net/resources/CodeSystem/179423#discussion "Discussion"
+  * section[dataSource].code.coding = https://fevir.net/resources/CodeSystem/179423#data-source "Data Source"
 * section[netEffect].code.text = "Net Effect"
 * section[netEffect]
   * section ^slicing.discriminator.type = #value
