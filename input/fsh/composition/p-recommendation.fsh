@@ -20,20 +20,23 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Recomme
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.rules = #closed
 * section contains recommendationSpecification 1..1 MS and evidence 0..1 MS and netEffect 0..1 MS and judgments 0..1 MS and considerations 0..1 MS
-* section[recommendationSpecification].code.text = "Recommendation Specification"
+* section[recommendationSpecification].code.coding = https://fevir.net/resources/CodeSystem/179423#recommendation-specification "Recommendation Specification"
 * section[recommendationSpecification]
   * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code"
   * section ^slicing.rules = #open
-  * section contains overallRatings 0..1 MS and overallSummary 0..1 and overallRelatedItems 0..1 and strengthOfRecommendationRating 0..1 and directionOfRecommendation 0..1 and population 0..1 and action 0..1 and oppositeAction 0..1
-  * section[overallRatings].code.text = "overallRatings"
-  * section[overallSummary].code.text = "overallSummary"
-  * section[overallRelatedItems].code.text = "overallRelatedItems"
-  * section[strengthOfRecommendationRating].code.text = "strengthOfRecommendationRating"
-  * section[directionOfRecommendation].code.text = "directionOfRecommendation"
-  * section[population].code.text = "population"
-  * section[action].code.text = "action"
-  * section[oppositeAction].code.text = "oppositeAction"
+  * section contains recommendationStatement 0..1 MS and ratingSystem 0..1 and strengthOfRecommendationRating 0..1 and directionOfRecommendation 0..1 and otherRating 0..1 and overallRelatedItems 0..1 and discussion 0..1 and population 0..1 and action 0..1 and oppositeAction 0..1 and dataSource 0..1
+  * section[recommendationStatement].code.coding = https://fevir.net/resources/CodeSystem/179423#recommendation-statement "Recommendation Statemen"
+  * section[ratingSystem].code.coding = https://fevir.net/resources/CodeSystem/179423#rating-system "Rating System"
+  * section[strengthOfRecommendationRating].code.coding = https://fevir.net/resources/CodeSystem/179423#strength-of-recommendation "Strength of Recommendation"
+  * section[directionOfRecommendation].code.coding = https://fevir.net/resources/CodeSystem/179423#direction-of-recommendation "Direction of Recommendation"
+  * section[otherRating].code.coding = https://fevir.net/resources/CodeSystem/179423#ratings "Ratings"
+  * section[overallRelatedItems].code.coding = https://fevir.net/resources/CodeSystem/179423#related-items "Related Items"
+  * section[discussion].code.coding = https://fevir.net/resources/CodeSystem/179423#discussion "Discussion"
+  * section[population].code.coding = https://fevir.net/resources/CodeSystem/179423#population "Population"
+  * section[action].code.coding = https://fevir.net/resources/CodeSystem/179423#action "Action"
+  * section[oppositeAction].code.coding = https://fevir.net/resources/CodeSystem/179423#opposite-action "Opposite Action"
+  * section[dataSource].code.coding = https://fevir.net/resources/CodeSystem/179423#data-source "Data Source"
 * section[evidence].code.text = "Evidence"
 * section[evidence]
   * section ^slicing.discriminator.type = #value
