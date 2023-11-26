@@ -14,27 +14,22 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Summary
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.rules = #open
 * section contains columnHeaders 1..1 MS and outcomeEntry 1..* MS and netEffectEstimate 0..1
-* section[columnHeaders].code = http://hl7.org/fhir/evidence-report-section#Column-Headers "Column Headers"
+* section[columnHeaders].code = https://fevir.net/resources/CodeSystem/179423#column-headers "Column Headers"
 * section[columnHeaders]
   * section 2..*
   * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code"
   * section ^slicing.rules = #open
   * section contains outcomeDefinition 1..1 MS and outcomeDesirability 0..1 and relativeImportance 0..1 and resultWithoutTreatment 0..1 and resultWithTreatmentObserved 0..1 and resultWithTreatmentDerived 0..1 and effectEstimate 0..1 and netEffectContribution 1..1 MS
-  * section[outcomeDefinition].code = http://hl7.org/fhir/evidence-report-section#EvidenceVariable-outcome "Evidence Variable in variable role Outcome (MeasuredVariable)"
-  * section[outcomeDesirability].code.text = "Outcome Desirability"
-//TODO - convert the code.text above to a coding term in the codesystem
-  * section[relativeImportance].code.text = "Relative Importance"
-//TODO - convert the code.text above to a coding term in the codesystem
-  * section[resultWithoutTreatment].code = http://hl7.org/fhir/evidence-report-section#Control-group-alone-Evidence "Evidence Results for the control exposure only"
+  * section[outcomeDefinition].code = https://fevir.net/resources/CodeSystem/179423#outcome-measure "Outcome Measure"
+  * section[outcomeDesirability].code = https://fevir.net/resources/CodeSystem/179423#outcome-desirability "Outcome Desirability"
+  * section[relativeImportance].code = https://fevir.net/resources/CodeSystem/179423#relative-importance "Relative Importance"
+  * section[resultWithoutTreatment].code = https://fevir.net/resources/CodeSystem/179423#result-with-comparator-alone "Result with comparator alone"
   * section[resultWithTreatmentObserved].code = http://hl7.org/fhir/evidence-report-section#Intervention-group-alone-Evidence "Evidence Results for the intervention exposure only"
-  * section[resultWithTreatmentDerived].code.text = "result with intervention with calculated value derived from the control group and effect estimate"
-//TODO - convert the code.text above to a coding term in the codesystem
-  * section[effectEstimate].code = http://hl7.org/fhir/evidence-report-section#Intervention-vs-Control-Evidence "Evidence Results for comparison of Intervention and Control"
-  * section[netEffectContribution].code.text = "Net Effect Contribution"
-//TODO - convert the code.text above to a coding term in the codesystem
-* section[outcomeEntry].code.text = "Summary of net effect contributions entry for a single outcome"
-//TODO - convert the code.text above to a coding term in the codesystem
+  * section[resultWithTreatmentDerived].code = https://fevir.net/resources/CodeSystem/179423#result-with-intervention-alone-calculated "Result with intervention alone (calculated)"
+  * section[effectEstimate].code = https://fevir.net/resources/CodeSystem/179423#result-with-intervention-vs-comparator "Result with intervention vs. comparator"
+  * section[netEffectContribution].code = https://fevir.net/resources/CodeSystem/179423#net-effect-contribution "Net Effect Contribution"
+* section[outcomeEntry].code = https://fevir.net/resources/CodeSystem/179423#summary-of-net-effect-contributions-entry-for-a-single-outcome "Summary of net effect contributions entry for a single outcome"
 * section[outcomeEntry]
   * focus only Reference(OutcomeVariable)
   * section 1..*
@@ -42,21 +37,19 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Summary
   * section ^slicing.discriminator.path = "code"
   * section ^slicing.rules = #open
   * section contains outcomeDefinition 0..1 and outcomeDesirability 0..1 and relativeImportance 0..1 and resultWithoutTreatment 0..1 and resultWithTreatmentObserved 0..1 and resultWithTreatmentDerived 0..1 and effectEstimate 0..1 and netEffectContribution 1..1 MS
-  * section[outcomeDefinition].code = http://hl7.org/fhir/evidence-report-section#EvidenceVariable-outcome "Evidence Variable in variable role Outcome (MeasuredVariable)"
+  * section[outcomeDefinition].code = https://fevir.net/resources/CodeSystem/179423#outcome-measure "Outcome Measure"
   * section[outcomeDefinition]
     * entry 0..1 
     * entry only Reference(OutcomeVariable)
-  * section[outcomeDesirability].code.text = "Outcome Desirability"
-//TODO - convert the code.text above to a coding term in the codesystem
+  * section[outcomeDesirability].code = https://fevir.net/resources/CodeSystem/179423#outcome-desirability "Outcome Desirability"
   * section[outcomeDesirability]
     * entry 0..1 
     * entry only Reference(OutcomeImportance)
-  * section[relativeImportance].code.text = "Relative Importance"
-//TODO - convert the code.text above to a coding term in the codesystem
+  * section[relativeImportance].code = https://fevir.net/resources/CodeSystem/179423#relative-importance "Relative Importance"
   * section[relativeImportance]
     * entry 0..1 
     * entry only Reference(OutcomeImportance)
-  * section[resultWithoutTreatment].code = http://hl7.org/fhir/evidence-report-section#Control-group-alone-Evidence "Evidence Results for the control exposure only"
+  * section[resultWithoutTreatment].code = https://fevir.net/resources/CodeSystem/179423#result-with-comparator-alone "Result with comparator alone"
   * section[resultWithoutTreatment]
     * entry 0..1 
     * entry only Reference(ComparatorOnlyEvidence)
@@ -64,17 +57,14 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Summary
   * section[resultWithTreatmentObserved]
     * entry 0..1 
     * entry only Reference(InterventionOnlyEvidence)
-  * section[resultWithTreatmentDerived].code.text = "result with intervention with calculated value derived from the control group and effect estimate"
-//TODO - convert the code.text above to a coding term in the codesystem
+  * section[resultWithTreatmentDerived].code = https://fevir.net/resources/CodeSystem/179423#result-with-intervention-alone-calculated "Result with intervention alone (calculated)"
   * section[resultWithTreatmentDerived]
     * entry 0..2 
     * entry only Reference(ComparatorOnlyEvidence or ComparativeEvidence)
-  * section[effectEstimate].code = http://hl7.org/fhir/evidence-report-section#Intervention-vs-Control-Evidence "Evidence Results for comparison of Intervention and Control"
+  * section[effectEstimate].code = https://fevir.net/resources/CodeSystem/179423#result-with-intervention-vs-comparator "Result with intervention vs. comparator"
   * section[effectEstimate]
     * entry 0..1 
     * entry only Reference(ComparativeEvidence)
-  * section[netEffectContribution].code.text = "Net Effect Contribution"
-//TODO - convert the code.text above to a coding term in the codesystem
-* section[netEffectEstimate].code.text = "Net Effect Estimate"
-//TODO - convert the code.text above to a coding term in the codesystem
+  * section[netEffectContribution].code = https://fevir.net/resources/CodeSystem/179423#net-effect-contribution "Net Effect Contribution"
+* section[netEffectEstimate].code = https://fevir.net/resources/CodeSystem/179423#net-effect-point-estimate "Net Effect Estimate"
  
