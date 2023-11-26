@@ -13,10 +13,10 @@ Description: "Profile of Group for Evidence Based Medicine IG. The EvidenceRepor
 * characteristic[population].valueReference only Reference(Group)
 * characteristic[population].exclude = false
 * characteristic[intervention].code.text = "Intervention or Exposure"
-* characteristic[intervention].valueReference only Reference(EvidenceVariable)
+* characteristic[intervention].valueReference only Reference(EvidenceVariable or Group)
 * characteristic[intervention].exclude = false
 * characteristic[comparator].code.text = "Comparator"
-* characteristic[comparator].valueReference only Reference(EvidenceVariable)
+* characteristic[comparator].valueReference only Reference(EvidenceVariable or Group)
 * characteristic[comparator].exclude = false
 * characteristic[outcomes].code.text = "Outcomes"
 * characteristic[outcomes].valueReference only Reference(OutcomeList)
