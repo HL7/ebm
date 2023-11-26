@@ -66,5 +66,11 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Summary
     * entry 0..1 
     * entry only Reference(ComparativeEvidence)
   * section[netEffectContribution].code = https://fevir.net/resources/CodeSystem/179423#net-effect-contribution "Net Effect Contribution"
+  * section[netEffectContribution]
+    * entry 0..1 
+    * entry only Reference(NetEffectContribution)
 * section[netEffectEstimate].code = https://fevir.net/resources/CodeSystem/179423#net-effect-estimate "Net Effect Estimate"
+* section[netEffectEstimate]
+  * entry 0..1 
+  * entry only Reference(NetEffectEstimate)
  
