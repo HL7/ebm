@@ -8,7 +8,6 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
 * category ^slicing.rules = #open
 * category contains evidenceMap 1..1 MS
 * category[evidenceMap].coding = https://fevir.net/resources/CodeSystem/179423#EvidenceMap "EvidenceMap"
-* category[evidenceMap].text = "Evidence Map"
 * section 1..*
 * section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code"
