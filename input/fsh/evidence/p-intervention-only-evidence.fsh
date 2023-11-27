@@ -12,4 +12,4 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The Interventi
 * variableDefinition
   * ^comment = "To report intervention-only evidence for a research question defined by Population, Intervention, Comparator, and Outcome (PICO), one would use two variableDefinition instances. A group defined by a combination of Population and Intervention has the variableRole of population, the Comparator is not included in the InterventionOnlyEvidence, and the Outcome has variableRole of outcome."
 * variableDefinition[population]
-  * observed only Reference(InterventionGroup or ExposureGroup or MetaanalysisStudyGroup)
+  * observed only Reference(ExposureGroup or MetaanalysisStudyGroup)

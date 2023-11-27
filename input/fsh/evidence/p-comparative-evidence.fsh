@@ -17,7 +17,7 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The Comparativ
 * variableDefinition contains population 1..* and exposure 0..* and outcome 1..* MS
 * variableDefinition[population]
   * ^extension[VariableDefinitionVariableRoleCode].valueCode = #population
-  * observed only Reference(StudyGroup or InterventionGroup or ExposureGroup or ComparatorGroup or MetaanalysisStudyGroup)
+  * observed only Reference(StudyGroup or ExposureGroup or ComparatorGroup or MetaanalysisStudyGroup)
   * intended only Reference(Group)
 * variableDefinition[exposure]
   * ^extension[VariableDefinitionVariableRoleCode].valueCode = #exposure
