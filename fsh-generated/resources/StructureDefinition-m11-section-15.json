@@ -1,0 +1,123 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "m11-section-15",
+  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/m11-section-15",
+  "name": "M11Section15",
+  "status": "draft",
+  "description": "Profile of Composition for Evidence Based Medicine IG. The M11Section15 Profile is used for summary of Section 15 Appendix: References for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification.",
+  "fhirVersion": "5.0.0",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    },
+    {
+      "identity": "fhirdocumentreference",
+      "uri": "http://hl7.org/fhir/documentreference",
+      "name": "FHIR DocumentReference"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Composition",
+  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Composition.category",
+        "path": "Composition.category",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "text"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Composition.category:section15",
+        "path": "Composition.category",
+        "sliceName": "section15",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.category:section15.text",
+        "path": "Composition.category.text",
+        "min": 1,
+        "patternString": "Section 15 Appendix: References"
+      },
+      {
+        "id": "Composition.section",
+        "path": "Composition.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Composition.section:references",
+        "path": "Composition.section",
+        "sliceName": "references",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:references.title",
+        "path": "Composition.section.title",
+        "patternString": "Appendix: References"
+      },
+      {
+        "id": "Composition.section:references.code.text",
+        "path": "Composition.section.code.text",
+        "patternString": "section15-references"
+      },
+      {
+        "id": "Composition.section:references.text",
+        "path": "Composition.section.text",
+        "comment": "References should be listed in a common format that includes all relevant information to identify the source and date published.  If not published, this should be clearly indicated.",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:references.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Citation"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

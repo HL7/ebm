@@ -1,0 +1,230 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "non-comparative-evidence",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-implements",
+      "valueUri": "http://hl7.org/fhir/StructureDefinition/MetadataResource"
+    }
+  ],
+  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/non-comparative-evidence",
+  "name": "NonComparativeEvidence",
+  "status": "draft",
+  "description": "Profile of Evidence for Evidence Based Medicine IG. The NonComparativeEvidence Profile is used for evidence about a single group with no comparisons between groups.",
+  "fhirVersion": "5.0.0",
+  "mapping": [
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "objimpl",
+      "uri": "http://hl7.org/fhir/object-implementation",
+      "name": "Object Implementation Information"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Evidence",
+  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-r6",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Evidence.useContext",
+        "path": "Evidence.useContext",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "valueCodeableConcept"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Evidence.useContext:nonComparative",
+        "path": "Evidence.useContext",
+        "sliceName": "nonComparative",
+        "min": 1,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Evidence.useContext:nonComparative.code",
+        "path": "Evidence.useContext.code",
+        "patternCoding": {
+          "code": "evidence-communication",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Evidence Communication"
+        }
+      },
+      {
+        "id": "Evidence.useContext:nonComparative.value[x]",
+        "path": "Evidence.useContext.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Evidence.useContext:nonComparative.value[x]:valueCodeableConcept",
+        "path": "Evidence.useContext.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Evidence.useContext:nonComparative.value[x]:valueCodeableConcept.coding",
+        "path": "Evidence.useContext.value[x].coding",
+        "patternCoding": {
+          "code": "NonComparativeEvidence",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "NonComparativeEvidence"
+        }
+      },
+      {
+        "id": "Evidence.variableDefinition",
+        "path": "Evidence.variableDefinition",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "extension(url : variableRoleCode).valueCode"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 2
+      },
+      {
+        "id": "Evidence.variableDefinition:population",
+        "path": "Evidence.variableDefinition",
+        "sliceName": "population",
+        "min": 1,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Evidence.variableDefinition:population.extension:variableRoleCode",
+        "path": "Evidence.variableDefinition.extension",
+        "sliceName": "variableRoleCode"
+      },
+      {
+        "id": "Evidence.variableDefinition:population.extension:variableRoleCode.value[x]",
+        "path": "Evidence.variableDefinition.extension.value[x]",
+        "patternCode": "population"
+      },
+      {
+        "id": "Evidence.variableDefinition:population.extension:roleSubtype",
+        "path": "Evidence.variableDefinition.extension",
+        "sliceName": "roleSubtype"
+      },
+      {
+        "id": "Evidence.variableDefinition:population.extension:comparatorCategory",
+        "path": "Evidence.variableDefinition.extension",
+        "sliceName": "comparatorCategory"
+      },
+      {
+        "id": "Evidence.variableDefinition:population.observed",
+        "path": "Evidence.variableDefinition.observed",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/study-group",
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group",
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group",
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Evidence.variableDefinition:population.intended",
+        "path": "Evidence.variableDefinition.intended",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Group"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Evidence.variableDefinition:outcome",
+        "path": "Evidence.variableDefinition",
+        "sliceName": "outcome",
+        "min": 1,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Evidence.variableDefinition:outcome.extension:variableRoleCode",
+        "path": "Evidence.variableDefinition.extension",
+        "sliceName": "variableRoleCode"
+      },
+      {
+        "id": "Evidence.variableDefinition:outcome.extension:variableRoleCode.value[x]",
+        "path": "Evidence.variableDefinition.extension.value[x]",
+        "patternCode": "outcome"
+      },
+      {
+        "id": "Evidence.variableDefinition:outcome.extension:roleSubtype",
+        "path": "Evidence.variableDefinition.extension",
+        "sliceName": "roleSubtype"
+      },
+      {
+        "id": "Evidence.variableDefinition:outcome.extension:comparatorCategory",
+        "path": "Evidence.variableDefinition.extension",
+        "sliceName": "comparatorCategory"
+      },
+      {
+        "id": "Evidence.variableDefinition:outcome.observed",
+        "path": "Evidence.variableDefinition.observed",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-variable",
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-variable",
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow-measure"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Evidence.variableDefinition:outcome.intended",
+        "path": "Evidence.variableDefinition.intended",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/EvidenceVariable"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

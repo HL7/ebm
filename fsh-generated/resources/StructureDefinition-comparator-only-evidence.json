@@ -1,0 +1,122 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "comparator-only-evidence",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-implements",
+      "valueUri": "http://hl7.org/fhir/StructureDefinition/MetadataResource"
+    }
+  ],
+  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence",
+  "name": "ComparatorOnlyEvidence",
+  "status": "draft",
+  "description": "Profile of Evidence for Evidence Based Medicine IG. The ComparatorOnlyEvidence Profile is used for evidence with a measured variable that is considered the outcome of an exposure or intervention, and a population that has an exposure with a categorical value that is the reference category for the exposure in a ComparativeEvidence Profile. The ComparatorOnlyEvidence describes the evidence for the comparator group.",
+  "fhirVersion": "5.0.0",
+  "mapping": [
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "objimpl",
+      "uri": "http://hl7.org/fhir/object-implementation",
+      "name": "Object Implementation Information"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Evidence",
+  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/non-comparative-evidence",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Evidence.useContext",
+        "path": "Evidence.useContext",
+        "min": 2
+      },
+      {
+        "id": "Evidence.useContext:comparator",
+        "path": "Evidence.useContext",
+        "sliceName": "comparator",
+        "min": 1,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Evidence.useContext:comparator.code",
+        "path": "Evidence.useContext.code",
+        "patternCoding": {
+          "code": "evidence-communication",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Evidence Communication"
+        }
+      },
+      {
+        "id": "Evidence.useContext:comparator.value[x]",
+        "path": "Evidence.useContext.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Evidence.useContext:comparator.value[x]:valueCodeableConcept",
+        "path": "Evidence.useContext.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Evidence.useContext:comparator.value[x]:valueCodeableConcept.coding",
+        "path": "Evidence.useContext.value[x].coding",
+        "patternCoding": {
+          "code": "ComparatorOnlyEvidence",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "ComparatorOnlyEvidence"
+        }
+      },
+      {
+        "id": "Evidence.variableDefinition",
+        "path": "Evidence.variableDefinition",
+        "comment": "To report comparator-only evidence for a research question defined by Population, Intervention, Comparator, and Outcome (PICO), one would use two variableDefinition instances. A group defined by a combination of Population and Comparator has the variableRole of population, the Intervention is not included in the ComparatorOnlyEvidence, and the Outcome has variableRole of outcome."
+      },
+      {
+        "id": "Evidence.variableDefinition:population",
+        "path": "Evidence.variableDefinition",
+        "sliceName": "population"
+      },
+      {
+        "id": "Evidence.variableDefinition:population.observed",
+        "path": "Evidence.variableDefinition.observed",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group",
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group",
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "endpoint-analysis-plan",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-implements",
+      "valueUri": "http://hl7.org/fhir/StructureDefinition/MetadataResource"
+    }
+  ],
+  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/endpoint-analysis-plan",
+  "name": "EndpointAnalysisPlan",
+  "status": "draft",
+  "description": "Profile of Evidence for Evidence Based Medicine IG. The EndpointAnalysisPlan Profile is used for specification of the statistical model for analysis of a single endpoint.",
+  "fhirVersion": "5.0.0",
+  "mapping": [
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "objimpl",
+      "uri": "http://hl7.org/fhir/object-implementation",
+      "name": "Object Implementation Information"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Evidence",
+  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-r6",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Evidence.extension",
+        "path": "Evidence.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Evidence.extension:modelExpression",
+        "path": "Evidence.extension",
+        "sliceName": "modelExpression",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/characteristicExpression"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Evidence.useContext",
+        "path": "Evidence.useContext",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "valueCodeableConcept"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Evidence.useContext:eap",
+        "path": "Evidence.useContext",
+        "sliceName": "eap",
+        "min": 1,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Evidence.useContext:eap.code",
+        "path": "Evidence.useContext.code",
+        "patternCoding": {
+          "code": "evidence-communication",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Evidence Communication"
+        }
+      },
+      {
+        "id": "Evidence.useContext:eap.value[x]",
+        "path": "Evidence.useContext.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Evidence.useContext:eap.value[x]:valueCodeableConcept",
+        "path": "Evidence.useContext.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Evidence.useContext:eap.value[x]:valueCodeableConcept.coding",
+        "path": "Evidence.useContext.value[x].coding",
+        "patternCoding": {
+          "code": "EndpointAnalysisPlan",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "EndpointAnalysisPlan"
+        }
+      },
+      {
+        "id": "Evidence.statistic.modelCharacteristic",
+        "path": "Evidence.statistic.modelCharacteristic",
+        "comment": "After the Evidence StructureDefinition is revised, set intended 0..1 boolean to value of True.",
+        "min": 1
+      },
+      {
+        "id": "Evidence.statistic.modelCharacteristic.extension:intended",
+        "path": "Evidence.statistic.modelCharacteristic.extension",
+        "sliceName": "intended"
+      },
+      {
+        "id": "Evidence.statistic.modelCharacteristic.extension:intended.value[x]",
+        "path": "Evidence.statistic.modelCharacteristic.extension.value[x]",
+        "patternBoolean": true
+      }
+    ]
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "statistic-model-model-characteristic",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics",
+      "valueCode": "can-bind"
+    }
+  ],
+  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-model-characteristic",
+  "name": "StatisticModelModelCharacteristic",
+  "status": "draft",
+  "description": "Model component as a nested model characteristic.",
+  "fhirVersion": "5.0.0",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Evidence.statistic.modelCharacteristic"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Model component",
+        "definition": "Model component as a nested model characteristic."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "min": 1
+      },
+      {
+        "id": "Extension.extension:code",
+        "path": "Extension.extension",
+        "sliceName": "code",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:code.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:code.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "code"
+      },
+      {
+        "id": "Extension.extension:code.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Model specification",
+        "definition": "Description of a component of the method to generate the statistic.",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:value",
+        "path": "Extension.extension",
+        "sliceName": "value",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Extension.extension:value.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:value.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "value"
+      },
+      {
+        "id": "Extension.extension:value.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "The specific value (when paired with code)",
+        "definition": "Further specification of the value of the component of the method to generate the statistic.",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          },
+          {
+            "code": "Quantity",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/SimpleQuantity"
+            ]
+          },
+          {
+            "code": "Range"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:attributeEstimateExpression",
+        "path": "Extension.extension",
+        "sliceName": "attributeEstimateExpression",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:attributeEstimateExpression.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:attributeEstimateExpression.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "attributeEstimateExpression"
+      },
+      {
+        "id": "Extension.extension:attributeEstimateExpression.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "An attribute of the statistic used as a model characteristic",
+        "definition": "An attribute of the statistic used as a model characteristic.",
+        "type": [
+          {
+            "code": "Expression"
+          }
+        ]
+      },
+      {
+        "id": "Extension.extension:modelCharacteristicExpression",
+        "path": "Extension.extension",
+        "sliceName": "modelCharacteristicExpression",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristicExpression.extension",
+        "path": "Extension.extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristicExpression.url",
+        "path": "Extension.extension.url",
+        "fixedUri": "modelCharacteristicExpression"
+      },
+      {
+        "id": "Extension.extension:modelCharacteristicExpression.value[x]",
+        "path": "Extension.extension.value[x]",
+        "short": "Model component",
+        "definition": "A nested model characteristic.",
+        "type": [
+          {
+            "code": "Expression"
+          }
+        ]
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-model-characteristic"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "max": "0"
+      }
+    ]
+  }
+}

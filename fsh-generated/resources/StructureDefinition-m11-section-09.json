@@ -1,0 +1,701 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "m11-section-09",
+  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/m11-section-09",
+  "name": "M11Section09",
+  "status": "draft",
+  "description": "Profile of Composition for Evidence Based Medicine IG. The M11Section09 Profile is used for summary of Section 9 Adverse Events, Serious Adverse Events, and Product Complaints for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification.",
+  "fhirVersion": "5.0.0",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    },
+    {
+      "identity": "fhirdocumentreference",
+      "uri": "http://hl7.org/fhir/documentreference",
+      "name": "FHIR DocumentReference"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Composition",
+  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Composition.category",
+        "path": "Composition.category",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "text"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Composition.category:section09",
+        "path": "Composition.category",
+        "sliceName": "section09",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.category:section09.text",
+        "path": "Composition.category.text",
+        "min": 1,
+        "patternString": "Section 9 Adverse Events, Serious Adverse Events, and Product Complaints"
+      },
+      {
+        "id": "Composition.section",
+        "path": "Composition.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Composition.section:adverseEvents",
+        "path": "Composition.section",
+        "sliceName": "adverseEvents",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:adverseEvents.title",
+        "path": "Composition.section.title",
+        "patternString": "Adverse Events, Serious Adverse Events, and Product Complaints"
+      },
+      {
+        "id": "Composition.section:adverseEvents.code.text",
+        "path": "Composition.section.code.text",
+        "patternString": "section9-adverse-events"
+      },
+      {
+        "id": "Composition.section:adverseEvents.section",
+        "path": "Composition.section.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 5
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:definitions",
+        "path": "Composition.section.section",
+        "sliceName": "definitions",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:definitions.title",
+        "path": "Composition.section.section.title",
+        "patternString": "Definitions"
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:definitions.code.text",
+        "path": "Composition.section.section.code.text",
+        "patternString": "section9.1-definitions"
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:definitions.section",
+        "path": "Composition.section.section.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 2
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:definitions.section:adverseEventsDefinitions",
+        "path": "Composition.section.section.section",
+        "sliceName": "adverseEventsDefinitions",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:definitions.section:adverseEventsDefinitions.title",
+        "path": "Composition.section.section.section.title",
+        "patternString": "Definitions of Adverse Events"
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:definitions.section:adverseEventsDefinitions.code.text",
+        "path": "Composition.section.section.section.code.text",
+        "patternString": "section9.1.1-definitions-adverse-events"
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:definitions.section:adverseEventsDefinitions.text",
+        "path": "Composition.section.section.section.text",
+        "comment": "Specify the AE definitions, including: •\tAny relevant regional AE requirements. •\tAny events that meet and do not meet the AE definition. •\tAny trial-specific AE clarifications. •\tThe trial-specific definition for an overdose. •\tIf applicable, any clarifications on the AE and SAE definitions for efficacy trials (for example, lack of efficacy or failure of pharmacological actions reporting).",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:definitions.section:seriousAdverseEventsDefinitions",
+        "path": "Composition.section.section.section",
+        "sliceName": "seriousAdverseEventsDefinitions",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:definitions.section:seriousAdverseEventsDefinitions.title",
+        "path": "Composition.section.section.section.title",
+        "patternString": "Definitions of Serious Adverse Events"
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:definitions.section:seriousAdverseEventsDefinitions.code.text",
+        "path": "Composition.section.section.section.code.text",
+        "patternString": "section9.1.2-definitions-serious-adverse-events"
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:definitions.section:seriousAdverseEventsDefinitions.text",
+        "path": "Composition.section.section.section.text",
+        "comment": "Specify the SAE definitions, including: •\tAny relevant regional SAE requirements. •\tAny events that meet and do not meet the SAE definition. •\tAny trial-specific SAE clarifications.",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:definitions.section:productComplaintsDefinitions",
+        "path": "Composition.section.section.section",
+        "sliceName": "productComplaintsDefinitions",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:definitions.section:productComplaintsDefinitions.title",
+        "path": "Composition.section.section.section.title",
+        "patternString": "Definitions of Medical Device Product Complaints"
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:definitions.section:productComplaintsDefinitions.code.text",
+        "path": "Composition.section.section.section.code.text",
+        "patternString": "section9.1.3-definitions-product-complaints"
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:definitions.section:productComplaintsDefinitions.text",
+        "path": "Composition.section.section.section.text",
+        "comment": "Specify the definitions of medical device product complaints.",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:collectionMethods",
+        "path": "Composition.section.section",
+        "sliceName": "collectionMethods",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:collectionMethods.title",
+        "path": "Composition.section.section.title",
+        "patternString": "Timing and Mechanism for Collection and Reporting of AEs, SAEs, Pregnancy, and Product Complaints"
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:collectionMethods.code.text",
+        "path": "Composition.section.section.code.text",
+        "patternString": "section9.2-collection-methods"
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:collectionMethods.text",
+        "path": "Composition.section.section.text",
+        "comment": "Specify the starting and ending time periods for and frequency of collecting AEs and SAEs. Cross refer to the Schedule of Assessments as appropriate.",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:recording",
+        "path": "Composition.section.section",
+        "sliceName": "recording",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:recording.title",
+        "path": "Composition.section.section.title",
+        "patternString": "Recording and Follow-Up of AEs, SAEs, Pregnancy, and Product Complaints"
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:recording.code.text",
+        "path": "Composition.section.section.code.text",
+        "patternString": "section9.3-recording-and-follow-up"
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:recording.section",
+        "path": "Composition.section.section.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 5
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:recording.section:identifying",
+        "path": "Composition.section.section.section",
+        "sliceName": "identifying",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:recording.section:identifying.title",
+        "path": "Composition.section.section.section.title",
+        "patternString": "Identifying AEs, SAEs and Product Complaints"
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:recording.section:identifying.code.text",
+        "path": "Composition.section.section.section.code.text",
+        "patternString": "section9.3.1-identifying-events"
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:recording.section:identifying.text",
+        "path": "Composition.section.section.section.text",
+        "comment": "Specify how AEs and SAEs will be identified (for example, spontaneous reporting, solicited questions).",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:recording.section:intensity",
+        "path": "Composition.section.section.section",
+        "sliceName": "intensity",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:recording.section:intensity.title",
+        "path": "Composition.section.section.section.title",
+        "patternString": "Intensity"
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:recording.section:intensity.code.text",
+        "path": "Composition.section.section.section.code.text",
+        "patternString": "section9.3.2-intensity"
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:recording.section:intensity.text",
+        "path": "Composition.section.section.section.text",
+        "comment": "Specify the intensity rating categories/scale.",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:recording.section:causality",
+        "path": "Composition.section.section.section",
+        "sliceName": "causality",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:recording.section:causality.title",
+        "path": "Composition.section.section.section.title",
+        "patternString": "Causality"
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:recording.section:causality.code.text",
+        "path": "Composition.section.section.section.code.text",
+        "patternString": "section9.3.3-causality"
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:recording.section:causality.text",
+        "path": "Composition.section.section.section.text",
+        "comment": "Specify: •\tThe causality categories/scale. •\tProcedures for assessing causality.",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:recording.section:recordingEvents",
+        "path": "Composition.section.section.section",
+        "sliceName": "recordingEvents",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:recording.section:recordingEvents.title",
+        "path": "Composition.section.section.section.title",
+        "patternString": "Recording of AEs, SAEs, Pregnancy and Product Complaints"
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:recording.section:recordingEvents.code.text",
+        "path": "Composition.section.section.section.code.text",
+        "patternString": "section9.3.4-recording-events"
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:recording.section:recordingEvents.text",
+        "path": "Composition.section.section.section.text",
+        "comment": "Specify the Investigator's actions for recording AEs and SAEs, including severity, causality, and the final outcome.",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:recording.section:followup",
+        "path": "Composition.section.section.section",
+        "sliceName": "followup",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:recording.section:followup.title",
+        "path": "Composition.section.section.section.title",
+        "patternString": "Follow-up"
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:recording.section:followup.code.text",
+        "path": "Composition.section.section.section.code.text",
+        "patternString": "section9.3.5-followup"
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:recording.section:followup.text",
+        "path": "Composition.section.section.section.text",
+        "comment": "Specify the procedures for follow-up of AEs, SAEs, pregnancy and product complaints.  Include the assessment tools that will be used to monitor the events and the duration of follow-up after appearance of the events.  Specify any procedures to be used for trials in which death is not an endpoint.",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:reporting",
+        "path": "Composition.section.section",
+        "sliceName": "reporting",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:reporting.title",
+        "path": "Composition.section.section.title",
+        "patternString": "Reporting of AEs, SAEs, Pregnancy, and Product Complaints"
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:reporting.code.text",
+        "path": "Composition.section.section.code.text",
+        "patternString": "section9.4-reporting-events"
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:reporting.section",
+        "path": "Composition.section.section.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 4
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:reporting.section:reportingSAEs",
+        "path": "Composition.section.section.section",
+        "sliceName": "reportingSAEs",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:reporting.section:reportingSAEs.title",
+        "path": "Composition.section.section.section.title",
+        "patternString": "Reporting of SAEs"
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:reporting.section:reportingSAEs.code.text",
+        "path": "Composition.section.section.section.code.text",
+        "patternString": "section9.4.1-reporting-serious-events"
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:reporting.section:reportingSAEs.text",
+        "path": "Composition.section.section.section.text",
+        "comment": "Specify the SAE reporting method (for example, an electronic data collection tool or a paper CRF) and reporting timeline to the Sponsor.",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:reporting.section:regulatoryRequirements",
+        "path": "Composition.section.section.section",
+        "sliceName": "regulatoryRequirements",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:reporting.section:regulatoryRequirements.title",
+        "path": "Composition.section.section.section.title",
+        "patternString": "Regulatory Reporting Requirements for SAEs and Product Complaints"
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:reporting.section:regulatoryRequirements.code.text",
+        "path": "Composition.section.section.section.code.text",
+        "patternString": "section9.4.2-regulatory-requirements"
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:reporting.section:regulatoryRequirements.text",
+        "path": "Composition.section.section.section.text",
+        "comment": "Specify: •\tThe investigators’ responsibilities for reporting SAEs and Medical Device Product Complaints to the Sponsor (and to Ethics Committees, where required), specifying timing of reporting to allow the Sponsor to meet their responsibilities •\tThe Sponsor’s legal/regulatory responsibilities to report SAEs to regulatory authorities, ethics committees, and investigators •\tSerious and unexpected adverse reaction reporting",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:reporting.section:specialInterest",
+        "path": "Composition.section.section.section",
+        "sliceName": "specialInterest",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:reporting.section:specialInterest.title",
+        "path": "Composition.section.section.section.title",
+        "patternString": "Adverse Events of Special Interest"
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:reporting.section:specialInterest.code.text",
+        "path": "Composition.section.section.section.code.text",
+        "patternString": "section9.4.3-special-interest"
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:reporting.section:specialInterest.text",
+        "path": "Composition.section.section.section.text",
+        "comment": "Specify any Adverse Events of Special Interest (AESI): •\tOther events that merit reporting to the Sponsor, trial leadership, IRB, and regulatory agencies (for example, secondary malignancies in oncology trials). •\tOther reportable events not already included in the previous sections, such as cardiovascular events, medical device incidents (including malfunctions), laboratory test abnormalities, and trial intervention overdose.   Include the following for each AESI: •\tThe definition of the event. Specify the MedDRA preferred terms to use to report the AESI. •\tIf it is a measurable quantity, specify how will the measurement be done. •\tIf it is a clinical event, specify how will it be confirmed.",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:reporting.section:diseaseRelatedEvents",
+        "path": "Composition.section.section.section",
+        "sliceName": "diseaseRelatedEvents",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:reporting.section:diseaseRelatedEvents.title",
+        "path": "Composition.section.section.section.title",
+        "patternString": "Disease-related Events or Outcomes Not Qualifying as AEs or SAEs"
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:reporting.section:diseaseRelatedEvents.code.text",
+        "path": "Composition.section.section.section.code.text",
+        "patternString": "section9.4.4-disease-related-events"
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:reporting.section:diseaseRelatedEvents.text",
+        "path": "Composition.section.section.section.text",
+        "comment": "Specify any Disease-Related Events (DREs), disease-related outcomes (DROs), or both that will not be reported as AEs or SAEs (for example, seizures in anticonvulsant trials) or state not applicable.",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:pregnancy",
+        "path": "Composition.section.section",
+        "sliceName": "pregnancy",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:pregnancy.title",
+        "path": "Composition.section.section.title",
+        "patternString": "Timing and Mechanism for Collection and Reporting of AEs, SAEs, Pregnancy, and Product Complaints"
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:pregnancy.code.text",
+        "path": "Composition.section.section.code.text",
+        "patternString": "section9.5-collection-methods"
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:pregnancy.section",
+        "path": "Composition.section.section.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:pregnancy.section:pregnant",
+        "path": "Composition.section.section.section",
+        "sliceName": "pregnant",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:pregnancy.section:pregnant.title",
+        "path": "Composition.section.section.section.title",
+        "patternString": "Participants Who Become Pregnant During the Trial"
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:pregnancy.section:pregnant.code.text",
+        "path": "Composition.section.section.section.code.text",
+        "patternString": "section9.5.1-pregnant"
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:pregnancy.section:pregnant.text",
+        "path": "Composition.section.section.section.text",
+        "comment": "See Template for instructions.",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:pregnancy.section:pregnantPartner",
+        "path": "Composition.section.section.section",
+        "sliceName": "pregnantPartner",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:pregnancy.section:pregnantPartner.title",
+        "path": "Composition.section.section.section.title",
+        "patternString": "Participants Whose Partners Become Pregnant"
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:pregnancy.section:pregnantPartner.code.text",
+        "path": "Composition.section.section.section.code.text",
+        "patternString": "section9.5.2-pregnant-partner"
+      },
+      {
+        "id": "Composition.section:adverseEvents.section:pregnancy.section:pregnantPartner.text",
+        "path": "Composition.section.section.section.text",
+        "comment": "See Template for instructions.",
+        "min": 1
+      }
+    ]
+  }
+}

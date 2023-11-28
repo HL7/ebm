@@ -1,0 +1,56 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "data-dictionary",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-implements",
+      "valueUri": "http://hl7.org/fhir/StructureDefinition/MetadataResource"
+    }
+  ],
+  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/data-dictionary",
+  "name": "DataDictionary",
+  "status": "draft",
+  "description": "Profile of CodeSystem for Evidence Based Medicine IG. The DataDictionary Profile is used for a code key for variable names in a dataset.",
+  "fhirVersion": "5.0.0",
+  "mapping": [
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "objimpl",
+      "uri": "http://hl7.org/fhir/object-implementation",
+      "name": "Object Implementation Information"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "CodeSystem",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/CodeSystem",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "CodeSystem.url",
+        "path": "CodeSystem.url",
+        "min": 1
+      },
+      {
+        "id": "CodeSystem.jurisdiction",
+        "path": "CodeSystem.jurisdiction",
+        "max": "0"
+      },
+      {
+        "id": "CodeSystem.topic",
+        "path": "CodeSystem.topic",
+        "max": "0"
+      }
+    ]
+  }
+}

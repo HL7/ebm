@@ -1,0 +1,558 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "m11-section-04",
+  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/m11-section-04",
+  "name": "M11Section04",
+  "status": "draft",
+  "description": "Profile of Composition for Evidence Based Medicine IG. The M11Section04 Profile is used for summary of Section 4 Trial Design for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification.",
+  "fhirVersion": "5.0.0",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    },
+    {
+      "identity": "fhirdocumentreference",
+      "uri": "http://hl7.org/fhir/documentreference",
+      "name": "FHIR DocumentReference"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Composition",
+  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Composition.category",
+        "path": "Composition.category",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "text"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Composition.category:section04",
+        "path": "Composition.category",
+        "sliceName": "section04",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.category:section04.text",
+        "path": "Composition.category.text",
+        "min": 1,
+        "patternString": "Section 4 Trial Design"
+      },
+      {
+        "id": "Composition.section",
+        "path": "Composition.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Composition.section:design",
+        "path": "Composition.section",
+        "sliceName": "design",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:design.title",
+        "path": "Composition.section.title",
+        "patternString": "Trial Design"
+      },
+      {
+        "id": "Composition.section:design.code.text",
+        "path": "Composition.section.code.text",
+        "patternString": "section4-trial-design"
+      },
+      {
+        "id": "Composition.section:design.section",
+        "path": "Composition.section.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 4
+      },
+      {
+        "id": "Composition.section:design.section:description",
+        "path": "Composition.section.section",
+        "sliceName": "description",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:design.section:description.title",
+        "path": "Composition.section.section.title",
+        "patternString": "Description of Trial Design"
+      },
+      {
+        "id": "Composition.section:design.section:description.code.text",
+        "path": "Composition.section.section.code.text",
+        "patternString": "section4.1-description-of-trial-design"
+      },
+      {
+        "id": "Composition.section:design.section:description.text",
+        "path": "Composition.section.section.text",
+        "comment": "see Template instructions",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:design.section:description.section",
+        "path": "Composition.section.section.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Composition.section:design.section:description.section:stakeholderInput",
+        "path": "Composition.section.section.section",
+        "sliceName": "stakeholderInput",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:design.section:description.section:stakeholderInput.title",
+        "path": "Composition.section.section.section.title",
+        "patternString": "Stakeholder Input into Design"
+      },
+      {
+        "id": "Composition.section:design.section:description.section:stakeholderInput.code.text",
+        "path": "Composition.section.section.section.code.text",
+        "patternString": "section4.1.1-stakeholder-input-into-design"
+      },
+      {
+        "id": "Composition.section:design.section:description.section:stakeholderInput.text",
+        "path": "Composition.section.section.section.text",
+        "comment": "If applicable, describe any stakeholder (for example, patient, healthcare professional and patient advocacy groups) involvement in the design of the trial and any suggestions implemented.",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:design.section:rationale",
+        "path": "Composition.section.section",
+        "sliceName": "rationale",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:design.section:rationale.title",
+        "path": "Composition.section.section.title",
+        "patternString": "Rationale for Trial Design"
+      },
+      {
+        "id": "Composition.section:design.section:rationale.code.text",
+        "path": "Composition.section.section.code.text",
+        "patternString": "section4.2-rationale-for-trial-design"
+      },
+      {
+        "id": "Composition.section:design.section:rationale.section",
+        "path": "Composition.section.section.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Composition.section:design.section:rationale.section:model",
+        "path": "Composition.section.section.section",
+        "sliceName": "model",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:design.section:rationale.section:model.title",
+        "path": "Composition.section.section.section.title",
+        "patternString": "Rationale for Intervention Model"
+      },
+      {
+        "id": "Composition.section:design.section:rationale.section:model.code.text",
+        "path": "Composition.section.section.section.code.text",
+        "patternString": "section4.2.1-rationale-intervention-model"
+      },
+      {
+        "id": "Composition.section:design.section:rationale.section:model.text",
+        "path": "Composition.section.section.section.text",
+        "comment": "Provide a rationale for the trial intervention model selected in Section 4.1, Description of Trial Design with a cross-reference to Section 6.2, Rationale for Investigational Intervention(s). Rationale for choice of comparator, if applicable, should be described separately in Section 4.2.5, Rationale for Comparator. A rationale for the choice of trial population should be described separately in Section 5.1, Description of Trial Population and Rationale.",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:design.section:rationale.section:duration",
+        "path": "Composition.section.section.section",
+        "sliceName": "duration",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:design.section:rationale.section:duration.title",
+        "path": "Composition.section.section.section.title",
+        "patternString": "Rationale for Duration"
+      },
+      {
+        "id": "Composition.section:design.section:rationale.section:duration.code.text",
+        "path": "Composition.section.section.section.code.text",
+        "patternString": "section4.2.2-rationale-duration"
+      },
+      {
+        "id": "Composition.section:design.section:rationale.section:duration.text",
+        "path": "Composition.section.section.section.text",
+        "comment": "Provide a rationale that the trial duration is appropriate for a reliable and relevant evaluation of the trial intervention per the trial objective(s).",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:design.section:rationale.section:endpoints",
+        "path": "Composition.section.section.section",
+        "sliceName": "endpoints",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:design.section:rationale.section:endpoints.title",
+        "path": "Composition.section.section.section.title",
+        "patternString": "Rationale for Endpoints"
+      },
+      {
+        "id": "Composition.section:design.section:rationale.section:endpoints.code.text",
+        "path": "Composition.section.section.section.code.text",
+        "patternString": "section4.2.3-rationale-endpoints"
+      },
+      {
+        "id": "Composition.section:design.section:rationale.section:endpoints.text",
+        "path": "Composition.section.section.section.text",
+        "comment": "Provide a rationale that the trial endpoint(s) described in Section 3, Trial Objectives, Endpoints, and Estimands, are clinically relevant and provide a reliable and valid measurement of the intended intervention effect.",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:design.section:rationale.section:interim",
+        "path": "Composition.section.section.section",
+        "sliceName": "interim",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:design.section:rationale.section:interim.title",
+        "path": "Composition.section.section.section.title",
+        "patternString": "Rationale for Interim Analysis"
+      },
+      {
+        "id": "Composition.section:design.section:rationale.section:interim.code.text",
+        "path": "Composition.section.section.section.code.text",
+        "patternString": "section4.2.4-rationale-interim-analysis"
+      },
+      {
+        "id": "Composition.section:design.section:rationale.section:interim.text",
+        "path": "Composition.section.section.section.text",
+        "comment": "If applicable, provide a rationale for any interim analysis planned with respect to its purpose (for example, stopping the trial early for efficacy or futility) and timing.",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:design.section:rationale.section:comparator",
+        "path": "Composition.section.section.section",
+        "sliceName": "comparator",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:design.section:rationale.section:comparator.title",
+        "path": "Composition.section.section.section.title",
+        "patternString": "Rationale for Comparator"
+      },
+      {
+        "id": "Composition.section:design.section:rationale.section:comparator.code.text",
+        "path": "Composition.section.section.section.code.text",
+        "patternString": "section4.2.5-rationale-comparator"
+      },
+      {
+        "id": "Composition.section:design.section:rationale.section:comparator.text",
+        "path": "Composition.section.section.section.text",
+        "comment": "If applicable, provide a rationale for the type of control selected for the trial (for example, placebo, active drug, combination, historical). Describe any known or potential problems associated with the control group selected in light of the specific disease and intervention(s) being studied.  If comparators will differ by region, describe.",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:design.section:rationale.section:adaptive",
+        "path": "Composition.section.section.section",
+        "sliceName": "adaptive",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:design.section:rationale.section:adaptive.title",
+        "path": "Composition.section.section.section.title",
+        "patternString": "Rationale for Adaptive or Novel Trial Design"
+      },
+      {
+        "id": "Composition.section:design.section:rationale.section:adaptive.code.text",
+        "path": "Composition.section.section.section.code.text",
+        "patternString": "section4.2.6-rationale-adaptive"
+      },
+      {
+        "id": "Composition.section:design.section:rationale.section:adaptive.text",
+        "path": "Composition.section.section.section.text",
+        "comment": "If applicable, provide a rationale for the use of an adaptive or novel design.",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:design.section:rationale.section:otherAspects",
+        "path": "Composition.section.section.section",
+        "sliceName": "otherAspects",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:design.section:rationale.section:otherAspects.title",
+        "path": "Composition.section.section.section.title",
+        "patternString": "Rationale for Other Trial Design Aspects"
+      },
+      {
+        "id": "Composition.section:design.section:rationale.section:otherAspects.code.text",
+        "path": "Composition.section.section.section.code.text",
+        "patternString": "section4.2.7-rationale-other-aspects"
+      },
+      {
+        "id": "Composition.section:design.section:rationale.section:otherAspects.text",
+        "path": "Composition.section.section.section.text",
+        "comment": "Discuss rationale for any additional aspects of the design not addressed above.",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:design.section:trialStoppingRules",
+        "path": "Composition.section.section",
+        "sliceName": "trialStoppingRules",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:design.section:trialStoppingRules.title",
+        "path": "Composition.section.section.title",
+        "patternString": "Trial Stopping Rules"
+      },
+      {
+        "id": "Composition.section:design.section:trialStoppingRules.code.text",
+        "path": "Composition.section.section.code.text",
+        "patternString": "section4.3-trial-stopping-rules"
+      },
+      {
+        "id": "Composition.section:design.section:trialStoppingRules.text",
+        "path": "Composition.section.section.text",
+        "comment": "If applicable, describe any trial-specific stopping rules, including guidance on when the trial should be stopped for safety reasons, when a cohort or dose escalation should be terminated, and/or when a given treatment arm should be terminated.",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:design.section:trialStoppingRules.section",
+        "path": "Composition.section.section.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Composition.section:design.section:trialStoppingRules.section:temporaryHalt",
+        "path": "Composition.section.section.section",
+        "sliceName": "temporaryHalt",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:design.section:trialStoppingRules.section:temporaryHalt.title",
+        "path": "Composition.section.section.section.title",
+        "patternString": "Temporary Trial Halt"
+      },
+      {
+        "id": "Composition.section:design.section:trialStoppingRules.section:temporaryHalt.code.text",
+        "path": "Composition.section.section.section.code.text",
+        "patternString": "section4.3.1-temporary-trial-halt"
+      },
+      {
+        "id": "Composition.section:design.section:trialStoppingRules.section:temporaryHalt.text",
+        "path": "Composition.section.section.section.text",
+        "comment": "If applicable, describe when any of the stopping rules may result in a temporary halt of enrollment into the trial and criteria for restarting enrollment.",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:design.section:startEnd",
+        "path": "Composition.section.section",
+        "sliceName": "startEnd",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:design.section:startEnd.title",
+        "path": "Composition.section.section.title",
+        "patternString": "Start of Trial and End of Trial"
+      },
+      {
+        "id": "Composition.section:design.section:startEnd.code.text",
+        "path": "Composition.section.section.code.text",
+        "patternString": "section4.4-start-and-end"
+      },
+      {
+        "id": "Composition.section:design.section:startEnd.text",
+        "path": "Composition.section.section.text",
+        "comment": "Define key timepoints in the trial, including trial start and end dates. For example, a key timepoint definition for start of trial might be when the informed consent is signed by the first participant and a key timepoint definition for end of trial might be when participants are no longer being examined or the last participant’s last study assessment has occurred.   If applicable, consider local regulatory requirements for these and other definitions (for example, the first act of recruitment). If appropriate, provide a cross-reference to Section 11.6",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:design.section:access",
+        "path": "Composition.section.section",
+        "sliceName": "access",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:design.section:access.title",
+        "path": "Composition.section.section.title",
+        "patternString": "Access to Trial Intervention After End of Trial"
+      },
+      {
+        "id": "Composition.section:design.section:access.code.text",
+        "path": "Composition.section.section.code.text",
+        "patternString": "section4.5-access-after-trial"
+      },
+      {
+        "id": "Composition.section:design.section:access.text",
+        "path": "Composition.section.section.text",
+        "comment": "If applicable, describe any possibilities for access to trial intervention, if any, beyond completion of the trial.  Planned extension trials, if described above in Section 4.1 do not need to be repeated.",
+        "min": 1
+      }
+    ]
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "adaptation",
+  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/adaptation",
+  "name": "Adaptation",
+  "status": "draft",
+  "description": "Profile of ArtifactAssessment for Evidence Based Medicine IG. The Adaptation Profile is used for assessments of a knowledge artifact that are used to create a new knowledge artifact through acceptance, rejection or modification of the assessed artifact.",
+  "fhirVersion": "5.0.0",
+  "mapping": [
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "objimpl",
+      "uri": "http://hl7.org/fhir/object-implementation",
+      "name": "Object Implementation Information"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "ArtifactAssessment",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ArtifactAssessment",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ArtifactAssessment.identifier",
+        "path": "ArtifactAssessment.identifier",
+        "short": "Additional identifier for the Adaptation",
+        "definition": "A formal identifier that is used to identify this Adaptation when it is represented in other formats, or referenced in a specification, model, design or an instance.",
+        "comment": "Typically, this is used for identifiers that can be used in systems outside of FHIR, where it is not sufficient to use the logical URI.",
+        "requirements": "Allows externally provided and/or usable business identifiers to be easily associated with the Adaptation."
+      },
+      {
+        "id": "ArtifactAssessment.citeAs[x]",
+        "path": "ArtifactAssessment.citeAs[x]",
+        "short": "How to cite the Adaptation",
+        "definition": "Display of or reference to the bibliographic citation of the Adaptation."
+      },
+      {
+        "id": "ArtifactAssessment.date",
+        "path": "ArtifactAssessment.date",
+        "definition": "The date (and optionally time) when the Adaptation was published. The date should change when the substantive content of the Adaptation changes.",
+        "comment": ""
+      },
+      {
+        "id": "ArtifactAssessment.copyright",
+        "path": "ArtifactAssessment.copyright",
+        "definition": "A copyright statement relating to the Adaptation and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the Adaptation.",
+        "requirements": "Consumers must be able to determine any legal restrictions on the use of the Adaptation and/or its content."
+      },
+      {
+        "id": "ArtifactAssessment.approvalDate",
+        "path": "ArtifactAssessment.approvalDate",
+        "short": "When the Adaptation was approved by publisher"
+      },
+      {
+        "id": "ArtifactAssessment.lastReviewDate",
+        "path": "ArtifactAssessment.lastReviewDate",
+        "short": "When the Adaptation was last reviewed"
+      },
+      {
+        "id": "ArtifactAssessment.artifact[x]",
+        "path": "ArtifactAssessment.artifact[x]",
+        "short": "The artifact that is being adapted",
+        "definition": "A reference to a resource, canonical resource, or non-FHIR resource which the Adaptation is about."
+      },
+      {
+        "id": "ArtifactAssessment.content",
+        "path": "ArtifactAssessment.content",
+        "short": "A comment, rating or classification",
+        "definition": "A comment, rating or classification of the artifact."
+      },
+      {
+        "id": "ArtifactAssessment.content.freeToShare",
+        "path": "ArtifactAssessment.content.freeToShare",
+        "short": "Acceptable to publicly share the content",
+        "definition": "Acceptable to publicly share the Adaptation content, specific to the associated content instance"
+      },
+      {
+        "id": "ArtifactAssessment.workflowStatus",
+        "path": "ArtifactAssessment.workflowStatus",
+        "short": "The workflow status of the adaptation process",
+        "definition": "Indicates the workflow status of the adaptation process."
+      },
+      {
+        "id": "ArtifactAssessment.disposition",
+        "path": "ArtifactAssessment.disposition",
+        "short": "The disposition of the proposed adaptation",
+        "definition": "Indicates the disposition of the responsible party for approval of the adaptation."
+      }
+    ]
+  }
+}

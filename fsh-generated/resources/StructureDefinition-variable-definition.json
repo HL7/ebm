@@ -1,0 +1,110 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "variable-definition",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-implements",
+      "valueUri": "http://hl7.org/fhir/StructureDefinition/MetadataResource"
+    }
+  ],
+  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition",
+  "name": "VariableDefinition",
+  "status": "draft",
+  "description": "Profile of EvidenceVariable for Evidence Based Medicine IG. The VariableDefinition Profile uses a CodeableReference Datatype to provide a concept (e.g. coding in a code system) and/or a reference to a Group Resource for structured data to define the variable.",
+  "fhirVersion": "5.0.0",
+  "mapping": [
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "objimpl",
+      "uri": "http://hl7.org/fhir/object-implementation",
+      "name": "Object Implementation Information"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "EvidenceVariable",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/EvidenceVariable",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "EvidenceVariable.extension",
+        "path": "EvidenceVariable.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "EvidenceVariable.extension:definition",
+        "path": "EvidenceVariable.extension",
+        "sliceName": "definition",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-variable-definition"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "EvidenceVariable.characteristic",
+        "path": "EvidenceVariable.characteristic",
+        "max": "0"
+      },
+      {
+        "id": "EvidenceVariable.handling",
+        "path": "EvidenceVariable.handling",
+        "min": 1
+      },
+      {
+        "id": "EvidenceVariable.category.extension",
+        "path": "EvidenceVariable.category.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "EvidenceVariable.category.extension:valueReference",
+        "path": "EvidenceVariable.category.extension",
+        "sliceName": "valueReference",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-variable-category-value-reference"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,867 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "m11-section-06",
+  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/m11-section-06",
+  "name": "M11Section06",
+  "status": "draft",
+  "description": "Profile of Composition for Evidence Based Medicine IG. The M11Section06 Profile is used for summary of Section 6 Trial Intervention for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification.",
+  "fhirVersion": "5.0.0",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    },
+    {
+      "identity": "fhirdocumentreference",
+      "uri": "http://hl7.org/fhir/documentreference",
+      "name": "FHIR DocumentReference"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Composition",
+  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Composition.category",
+        "path": "Composition.category",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "text"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Composition.category:section06",
+        "path": "Composition.category",
+        "sliceName": "section06",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.category:section06.text",
+        "path": "Composition.category.text",
+        "min": 1,
+        "patternString": "Section 6 Trial Intervention"
+      },
+      {
+        "id": "Composition.section",
+        "path": "Composition.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Composition.section:intervention",
+        "path": "Composition.section",
+        "sliceName": "intervention",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:intervention.title",
+        "path": "Composition.section.title",
+        "patternString": "Trial Intervention"
+      },
+      {
+        "id": "Composition.section:intervention.code.text",
+        "path": "Composition.section.code.text",
+        "patternString": "section6-trial-intervention"
+      },
+      {
+        "id": "Composition.section:intervention.section",
+        "path": "Composition.section.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 8
+      },
+      {
+        "id": "Composition.section:intervention.section:description",
+        "path": "Composition.section.section",
+        "sliceName": "description",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:intervention.section:description.title",
+        "path": "Composition.section.section.title",
+        "patternString": "Description of Investigational Trial Intervention"
+      },
+      {
+        "id": "Composition.section:intervention.section:description.code.text",
+        "path": "Composition.section.section.code.text",
+        "patternString": "section6.1-description-of-trial-intervention"
+      },
+      {
+        "id": "Composition.section:intervention.section:description.text",
+        "path": "Composition.section.section.text",
+        "comment": "The investigational trial intervention(s) should be described concisely in a table. Describe the investigational trial intervention to be administered in each arm of the trial and for each period of the trial including route and mode of administration, dose, dosage regimen, duration of intervention, use, packaging and labelling. Refer to approved regional labelling, as appropriate. For drug/device combination products, include details on the configuration and use of the device and device manufacturer. A device user manual may be referenced in this section.",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:intervention.section:description.entry",
+        "path": "Composition.section.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-variable"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:intervention.section:rationale",
+        "path": "Composition.section.section",
+        "sliceName": "rationale",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:intervention.section:rationale.title",
+        "path": "Composition.section.section.title",
+        "patternString": "Rationale for Investigational Trial Intervention Dose and Regimen"
+      },
+      {
+        "id": "Composition.section:intervention.section:rationale.code.text",
+        "path": "Composition.section.section.code.text",
+        "patternString": "section6.2-rationale-for-trial-intervention-regimen"
+      },
+      {
+        "id": "Composition.section:intervention.section:rationale.text",
+        "path": "Composition.section.section.text",
+        "comment": "Provide a rationale for the selection of the dose(s) or dose range, the route of administration, and dosing regimen of the investigational trial intervention. This rationale should include relevant results from previous preclinical studies and clinical trials that support selection of the dose and regimen.  Discuss impact of differences in study population characteristics (for example, age, sex and/or race) which could lead to differences in pharmacokinetics and pharmacodynamics in this study as compared to previous studies. If applicable, justify any differences in dose regimen or therapeutic use relative to approved labelling. Describe prior trials and other information that support the dose and/or dose regimen of the investigational intervention. Include a rationale for prospective dose adjustments incorporated in the trial, if any.",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:intervention.section:rationale.entry",
+        "path": "Composition.section.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-variable"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:intervention.section:dosingAdministration",
+        "path": "Composition.section.section",
+        "sliceName": "dosingAdministration",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:intervention.section:dosingAdministration.title",
+        "path": "Composition.section.section.title",
+        "patternString": "Investigational Trial Intervention Administration"
+      },
+      {
+        "id": "Composition.section:intervention.section:dosingAdministration.code.text",
+        "path": "Composition.section.section.code.text",
+        "patternString": "section6.3-dosing-and-administration"
+      },
+      {
+        "id": "Composition.section:intervention.section:dosingAdministration.text",
+        "path": "Composition.section.section.text",
+        "comment": "Describe the detailed procedures for administration of each participant's dose of investigational trial intervention. This may include the timing of dosing (for example, time of day, interval), the duration (for example, the length of time participants will be administered the investigational trial intervention), the planned route of administration (for example, oral, nasal, intramuscular), and the timing of dosing relative to meals. Include any specific instructions to trial participants about when or how to prepare and take the dose(s) and how delayed or missed doses should be handled. Dose escalation or cohort expansion as part of the overall design should be covered in Section 4.1 (Description of Trial Design).",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:intervention.section:dosingAdministration.entry",
+        "path": "Composition.section.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/ActivityDefinition"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:intervention.section:dosingAdministration.section",
+        "path": "Composition.section.section.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Composition.section:intervention.section:dosingAdministration.section:doseModification",
+        "path": "Composition.section.section.section",
+        "sliceName": "doseModification",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:intervention.section:dosingAdministration.section:doseModification.title",
+        "path": "Composition.section.section.section.title",
+        "patternString": "Investigational Trial Intervention Dose Modification"
+      },
+      {
+        "id": "Composition.section:intervention.section:dosingAdministration.section:doseModification.code.text",
+        "path": "Composition.section.section.section.code.text",
+        "patternString": "section6.3.1-dose-modification"
+      },
+      {
+        "id": "Composition.section:intervention.section:dosingAdministration.section:doseModification.text",
+        "path": "Composition.section.section.section.text",
+        "comment": "For each participant, describe any dose modifications allowed, including conditions for such dose modifications, particularly regarding failure to respond or safety concerns. State any minimum period required before a participant’s dose might be raised to the next higher dose or dose range. Include whether it is permissible to start and stop treatment and how dose reductions (if permitted) are to be managed. Information on stopping investigational trial intervention for an individua participant due to safety/other reasons should be detailed in Section 7, Participant Discontinuation of Trial Intervention and Withdrawal from Trial.",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:intervention.section:dosingAdministration.section:doseModification.entry",
+        "path": "Composition.section.section.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/ActivityDefinition"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:intervention.section:treatmentOfOverdose",
+        "path": "Composition.section.section",
+        "sliceName": "treatmentOfOverdose",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:intervention.section:treatmentOfOverdose.title",
+        "path": "Composition.section.section.title",
+        "patternString": "Management of Investigational Trial Intervention Overdose"
+      },
+      {
+        "id": "Composition.section:intervention.section:treatmentOfOverdose.code.text",
+        "path": "Composition.section.section.code.text",
+        "patternString": "section6.4-management-of-overdose"
+      },
+      {
+        "id": "Composition.section:intervention.section:treatmentOfOverdose.text",
+        "path": "Composition.section.section.text",
+        "comment": "Describe what is meant by investigational trial intervention overdose. Provide any available information on managing the overdose and ensure it is consistent with the Investigator’s Brochure or product labelling, cross-references these documents as applicable.",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:intervention.section:treatmentOfOverdose.entry",
+        "path": "Composition.section.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/ActivityDefinition",
+              "http://hl7.org/fhir/StructureDefinition/PlanDefinition"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:intervention.section:preparation",
+        "path": "Composition.section.section",
+        "sliceName": "preparation",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:intervention.section:preparation.title",
+        "path": "Composition.section.section.title",
+        "patternString": "Preparation, Storage, Handling and Accountability of Investigational Trial Intervention(s)"
+      },
+      {
+        "id": "Composition.section:intervention.section:preparation.code.text",
+        "path": "Composition.section.section.code.text",
+        "patternString": "section6.5-preparation-storage-handling"
+      },
+      {
+        "id": "Composition.section:intervention.section:preparation.section",
+        "path": "Composition.section.section.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 3
+      },
+      {
+        "id": "Composition.section:intervention.section:preparation.section:preparationIntervention",
+        "path": "Composition.section.section.section",
+        "sliceName": "preparationIntervention",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:intervention.section:preparation.section:preparationIntervention.title",
+        "path": "Composition.section.section.section.title",
+        "patternString": "Preparation of Investigational Trial Intervention(s)"
+      },
+      {
+        "id": "Composition.section:intervention.section:preparation.section:preparationIntervention.code.text",
+        "path": "Composition.section.section.section.code.text",
+        "patternString": "section6.5.1-preparation"
+      },
+      {
+        "id": "Composition.section:intervention.section:preparation.section:preparationIntervention.text",
+        "path": "Composition.section.section.section.text",
+        "comment": "Describe any preparation of the investigational trial intervention, and when necessary, by whom. When applicable, describe the maximum hold time once thawed/mixed before administration. Include thawing, diluting, mixing, and reconstitution/preparation instructions in this section. For drug/device combination products, include any relevant assembly or use instructions and reference the package insert that is provided separately. If the instructions are lengthy or complicated, it is acceptable to reference the package insert (if applicable) or include instructions in a separate document(s) provided to the site (for example, a pharmacy manual). If the latter, reference the separate documents.",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:intervention.section:preparation.section:storageHandling",
+        "path": "Composition.section.section.section",
+        "sliceName": "storageHandling",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:intervention.section:preparation.section:storageHandling.title",
+        "path": "Composition.section.section.section.title",
+        "patternString": "Storage and Handling of Investigational Trial Intervention"
+      },
+      {
+        "id": "Composition.section:intervention.section:preparation.section:storageHandling.code.text",
+        "path": "Composition.section.section.section.code.text",
+        "patternString": "section6.5.2-storage-handling"
+      },
+      {
+        "id": "Composition.section:intervention.section:preparation.section:storageHandling.text",
+        "path": "Composition.section.section.section.text",
+        "comment": "Describe storage and handling requirements (for example, protection from light, temperature, humidity) for the investigational trial intervention(s).  For trials in which multi-dose vials are utilised, provide additional information regarding stability and expiration time after initial use (for example, the seal is broken). State how the investigational trial intervention(s) will be provided to the Investigator. If applicable, describe the kits, packaging, or other material of the investigational trial intervention for blinding purposes. If the instructions are lengthy or complicated, it is acceptable to reference the package insert (if applicable) or include instructions in a separate document(s) provided to the site (for example, a pharmacy manual). If the latter, reference the separate documents.",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:intervention.section:preparation.section:accountability",
+        "path": "Composition.section.section.section",
+        "sliceName": "accountability",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:intervention.section:preparation.section:accountability.title",
+        "path": "Composition.section.section.section.title",
+        "patternString": "Accountability of Investigational Trial Intervention"
+      },
+      {
+        "id": "Composition.section:intervention.section:preparation.section:accountability.code.text",
+        "path": "Composition.section.section.section.code.text",
+        "patternString": "section6.5.3-accountability"
+      },
+      {
+        "id": "Composition.section:intervention.section:preparation.section:accountability.text",
+        "path": "Composition.section.section.section.text",
+        "comment": "Describe the accountability method, including how the investigational trial intervention will be distributed and related details, including: •\thow and by whom the investigational trial intervention will be distributed •\tparticipation of a drug storage repository or pharmacy, if applicable, •\tplans for disposal or return of unused product, •\tif applicable, plans for reconciliation of investigational trial intervention.",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:intervention.section:assignmentAndBlinding",
+        "path": "Composition.section.section",
+        "sliceName": "assignmentAndBlinding",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:intervention.section:assignmentAndBlinding.title",
+        "path": "Composition.section.section.title",
+        "patternString": "Investigational Trial Intervention Assignment, Randomisation and Blinding"
+      },
+      {
+        "id": "Composition.section:intervention.section:assignmentAndBlinding.code.text",
+        "path": "Composition.section.section.code.text",
+        "patternString": "section6.6-assignment-randomisation-blinding"
+      },
+      {
+        "id": "Composition.section:intervention.section:assignmentAndBlinding.section",
+        "path": "Composition.section.section.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 4
+      },
+      {
+        "id": "Composition.section:intervention.section:assignmentAndBlinding.section:assignment",
+        "path": "Composition.section.section.section",
+        "sliceName": "assignment",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:intervention.section:assignmentAndBlinding.section:assignment.title",
+        "path": "Composition.section.section.section.title",
+        "patternString": "Participant Assignment to Investigational Trial Intervention"
+      },
+      {
+        "id": "Composition.section:intervention.section:assignmentAndBlinding.section:assignment.code.text",
+        "path": "Composition.section.section.section.code.text",
+        "patternString": "section6.6.1-assignment"
+      },
+      {
+        "id": "Composition.section:intervention.section:assignmentAndBlinding.section:assignment.text",
+        "path": "Composition.section.section.section.text",
+        "comment": "Describe the method of assigning participants to investigational trial intervention without being so specific that blinding or randomisation might be compromised. If assignment to investigational trial intervention is by randomisation, describe when randomisation occurs relative to screening. State that at enrollment, participant identification codes should be assigned. If adaptive randomisation or other methods of covariate balancing/minimisation are employed, include a cross-reference to the methods of analysis in Section 10, Statistical Considerations. As applicable, details regarding the implementation of procedures to minimise bias should be described.",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:intervention.section:assignmentAndBlinding.section:randomisation",
+        "path": "Composition.section.section.section",
+        "sliceName": "randomisation",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:intervention.section:assignmentAndBlinding.section:randomisation.title",
+        "path": "Composition.section.section.section.title",
+        "patternString": "Randomisation"
+      },
+      {
+        "id": "Composition.section:intervention.section:assignmentAndBlinding.section:randomisation.code.text",
+        "path": "Composition.section.section.section.code.text",
+        "patternString": "section6.6.2-randomisation"
+      },
+      {
+        "id": "Composition.section:intervention.section:assignmentAndBlinding.section:randomisation.text",
+        "path": "Composition.section.section.section.text",
+        "comment": "Describe the randomisation procedures (for example, central randomisation procedures), the method used to generate the randomisation schedule (for example, computer generated), the source of the randomisation schedule (for example, sponsor, investigator, or other), and whether or not IxRS will be used. To maintain the integrity of the blinding, do not include the block size. Describe the use and validation of any computer systems and programmes used for randomisation.",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:intervention.section:assignmentAndBlinding.section:blinding",
+        "path": "Composition.section.section.section",
+        "sliceName": "blinding",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:intervention.section:assignmentAndBlinding.section:blinding.title",
+        "path": "Composition.section.section.section.title",
+        "patternString": "Blinding"
+      },
+      {
+        "id": "Composition.section:intervention.section:assignmentAndBlinding.section:blinding.code.text",
+        "path": "Composition.section.section.section.code.text",
+        "patternString": "section6.6.3-blinding"
+      },
+      {
+        "id": "Composition.section:intervention.section:assignmentAndBlinding.section:blinding.text",
+        "path": "Composition.section.section.section.text",
+        "comment": "Describe efforts to ensure that the investigational trial intervention(s) are as indistinguishable as possible. Plans for the maintenance of randomisation codes and appropriate blinding for the trial should be described. Procedures for planned and unplanned (for example, safety events) breaking of randomisation codes should be provided. If the trial allows for some investigators or other designated staff to remain unblinded (for example, to allow them to adjust investigational trial intervention), the means of maintaining the blinding for other investigators or staff should be explained. Measures to prevent unblinding by laboratory measurements or while performing study assessments, if used, should be described.",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:intervention.section:assignmentAndBlinding.section:unblinding",
+        "path": "Composition.section.section.section",
+        "sliceName": "unblinding",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:intervention.section:assignmentAndBlinding.section:unblinding.title",
+        "path": "Composition.section.section.section.title",
+        "patternString": "Emergency Unblinding at the Site"
+      },
+      {
+        "id": "Composition.section:intervention.section:assignmentAndBlinding.section:unblinding.code.text",
+        "path": "Composition.section.section.section.code.text",
+        "patternString": "section6.6.4-unblinding"
+      },
+      {
+        "id": "Composition.section:intervention.section:assignmentAndBlinding.section:unblinding.text",
+        "path": "Composition.section.section.section.text",
+        "comment": "Describe the criteria for breaking the trial blind or participant code. Describe the circumstances in which the blinding would be broken for an individual or for all participants and who has responsibility. Include the procedure for emergency unblinding such as via IxRS or code envelopes as well as documentation of unblinding. Indicate to whom the intentional and unintentional unblinding should be reported.",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:intervention.section:compliance",
+        "path": "Composition.section.section",
+        "sliceName": "compliance",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:intervention.section:compliance.title",
+        "path": "Composition.section.section.title",
+        "patternString": "Investigational Trial Intervention Compliance"
+      },
+      {
+        "id": "Composition.section:intervention.section:compliance.code.text",
+        "path": "Composition.section.section.code.text",
+        "patternString": "section6.7-intervention-compliance"
+      },
+      {
+        "id": "Composition.section:intervention.section:compliance.text",
+        "path": "Composition.section.section.text",
+        "comment": "Describe measures employed to ensure and document dosing information and investigational trial intervention compliance (for example, accountability records, diary cards, or concentration measurements). Include a description of what documents are mandatory to complete (for example, participant drug log) and what source data/records will be used to document investigational trial intervention compliance.",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:intervention.section:noninvestigationalTherapy",
+        "path": "Composition.section.section",
+        "sliceName": "noninvestigationalTherapy",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:intervention.section:noninvestigationalTherapy.title",
+        "path": "Composition.section.section.title",
+        "patternString": "Non-Investigational Trial Intervention(s)"
+      },
+      {
+        "id": "Composition.section:intervention.section:noninvestigationalTherapy.code.text",
+        "path": "Composition.section.section.code.text",
+        "patternString": "section6.8-noninvestigational-interventions"
+      },
+      {
+        "id": "Composition.section:intervention.section:noninvestigationalTherapy.section",
+        "path": "Composition.section.section.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Composition.section:intervention.section:noninvestigationalTherapy.section:background",
+        "path": "Composition.section.section.section",
+        "sliceName": "background",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:intervention.section:noninvestigationalTherapy.section:background.title",
+        "path": "Composition.section.section.section.title",
+        "patternString": "Background Intervention"
+      },
+      {
+        "id": "Composition.section:intervention.section:noninvestigationalTherapy.section:background.code.text",
+        "path": "Composition.section.section.section.code.text",
+        "patternString": "section6.8.1-background-intervention"
+      },
+      {
+        "id": "Composition.section:intervention.section:noninvestigationalTherapy.section:background.text",
+        "path": "Composition.section.section.section.text",
+        "comment": "Non-investigational interventions are products used in the context of the trial but are not part of trial objectives and are not investigational trial intervention. Describe background interventions, including administration and any conditions for use.",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:intervention.section:noninvestigationalTherapy.section:rescue",
+        "path": "Composition.section.section.section",
+        "sliceName": "rescue",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:intervention.section:noninvestigationalTherapy.section:rescue.title",
+        "path": "Composition.section.section.section.title",
+        "patternString": "Rescue Therapy"
+      },
+      {
+        "id": "Composition.section:intervention.section:noninvestigationalTherapy.section:rescue.code.text",
+        "path": "Composition.section.section.section.code.text",
+        "patternString": "section6.8.2-rescue-therapy"
+      },
+      {
+        "id": "Composition.section:intervention.section:noninvestigationalTherapy.section:rescue.text",
+        "path": "Composition.section.section.section.text",
+        "comment": "List all rescue medications, treatments, and/or procedures, including any relevant instructions about their administration and any conditions for their use. If administration of rescue therapy leads to the temporary discontinuation of trial intervention or a participant’s withdrawal from the trial, refer to Section 7, Participant Discontinuation of Trial Intervention and Withdrawal from Trial.",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:intervention.section:noninvestigationalTherapy.section:other",
+        "path": "Composition.section.section.section",
+        "sliceName": "other",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:intervention.section:noninvestigationalTherapy.section:other.title",
+        "path": "Composition.section.section.section.title",
+        "patternString": "Other Therapy"
+      },
+      {
+        "id": "Composition.section:intervention.section:noninvestigationalTherapy.section:other.code.text",
+        "path": "Composition.section.section.section.code.text",
+        "patternString": "section6.8.3-other-therapy"
+      },
+      {
+        "id": "Composition.section:intervention.section:noninvestigationalTherapy.section:other.text",
+        "path": "Composition.section.section.section.text",
+        "comment": "If applicable, describe the use of other non-investigational or auxiliary therapy, for example, challenge agents or diagnostics.",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:intervention.section:concomitantTherapy",
+        "path": "Composition.section.section",
+        "sliceName": "concomitantTherapy",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:intervention.section:concomitantTherapy.title",
+        "path": "Composition.section.section.title",
+        "patternString": "Concomitant Therapy"
+      },
+      {
+        "id": "Composition.section:intervention.section:concomitantTherapy.code.text",
+        "path": "Composition.section.section.code.text",
+        "patternString": "section6.9-concomitant-therapy"
+      },
+      {
+        "id": "Composition.section:intervention.section:concomitantTherapy.text",
+        "path": "Composition.section.section.text",
+        "comment": "Describe the concomitant medications, supplements, complementary and alternative therapies, treatments, and/or procedures which are allowed or prohibited during the trial, and include details about when the information will be collected (for example, screening, all visits). This section should be consistent with the medication restrictions in the inclusion/exclusion criteria previously listed.",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:intervention.section:concomitantTherapy.section",
+        "path": "Composition.section.section.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Composition.section:intervention.section:concomitantTherapy.section:prohibited",
+        "path": "Composition.section.section.section",
+        "sliceName": "prohibited",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:intervention.section:concomitantTherapy.section:prohibited.title",
+        "path": "Composition.section.section.section.title",
+        "patternString": "Prohibited Concomitant Therapy"
+      },
+      {
+        "id": "Composition.section:intervention.section:concomitantTherapy.section:prohibited.code.text",
+        "path": "Composition.section.section.section.code.text",
+        "patternString": "section6.9.1-prohibited-concomitant-therapy"
+      },
+      {
+        "id": "Composition.section:intervention.section:concomitantTherapy.section:prohibited.text",
+        "path": "Composition.section.section.section.text",
+        "comment": "If applicable, describe any prohibited concomitant therapy.",
+        "min": 1
+      },
+      {
+        "id": "Composition.section:intervention.section:concomitantTherapy.section:permitted",
+        "path": "Composition.section.section.section",
+        "sliceName": "permitted",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:intervention.section:concomitantTherapy.section:permitted.title",
+        "path": "Composition.section.section.section.title",
+        "patternString": "Permitted Concomitant Therapy"
+      },
+      {
+        "id": "Composition.section:intervention.section:concomitantTherapy.section:permitted.code.text",
+        "path": "Composition.section.section.section.code.text",
+        "patternString": "section6.9.2-permitted-concomitant-therapy"
+      },
+      {
+        "id": "Composition.section:intervention.section:concomitantTherapy.section:permitted.text",
+        "path": "Composition.section.section.section.text",
+        "comment": "If applicable, describe any permitted concomitant therapy.",
+        "min": 1
+      }
+    ]
+  }
+}

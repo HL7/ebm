@@ -1,0 +1,259 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "evidence-r6",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-implements",
+      "valueUri": "http://hl7.org/fhir/StructureDefinition/MetadataResource"
+    }
+  ],
+  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-r6",
+  "name": "EvidenceR6",
+  "status": "draft",
+  "description": "Profile of Evidence for Evidence Based Medicine IG. The EvidenceR6 Profile is used to adjust the R5 Evidence base to match the structures in R6.",
+  "fhirVersion": "5.0.0",
+  "mapping": [
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "objimpl",
+      "uri": "http://hl7.org/fhir/object-implementation",
+      "name": "Object Implementation Information"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Evidence",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Evidence",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Evidence.variableDefinition.extension",
+        "path": "Evidence.variableDefinition.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Evidence.variableDefinition.extension:variableRoleCode",
+        "path": "Evidence.variableDefinition.extension",
+        "sliceName": "variableRoleCode",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition-variable-role-code"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Evidence.variableDefinition.extension:roleSubtype",
+        "path": "Evidence.variableDefinition.extension",
+        "sliceName": "roleSubtype",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition-role-subtype"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Evidence.variableDefinition.extension:comparatorCategory",
+        "path": "Evidence.variableDefinition.extension",
+        "sliceName": "comparatorCategory",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition-comparator-category"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Evidence.variableDefinition.variableRole.text",
+        "path": "Evidence.variableDefinition.variableRole.text",
+        "patternString": "Use extension:variableRoleCode instead."
+      },
+      {
+        "id": "Evidence.statistic.modelCharacteristic.extension",
+        "path": "Evidence.statistic.modelCharacteristic.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Evidence.statistic.modelCharacteristic.extension:valueQuantity",
+        "path": "Evidence.statistic.modelCharacteristic.extension",
+        "sliceName": "valueQuantity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-value-quantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Evidence.statistic.modelCharacteristic.extension:valueRange",
+        "path": "Evidence.statistic.modelCharacteristic.extension",
+        "sliceName": "valueRange",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-value-range"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Evidence.statistic.modelCharacteristic.extension:valueCodeableConcept",
+        "path": "Evidence.statistic.modelCharacteristic.extension",
+        "sliceName": "valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-value-codeableconcept"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Evidence.statistic.modelCharacteristic.extension:intended",
+        "path": "Evidence.statistic.modelCharacteristic.extension",
+        "sliceName": "intended",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-intended"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Evidence.statistic.modelCharacteristic.extension:applied",
+        "path": "Evidence.statistic.modelCharacteristic.extension",
+        "sliceName": "applied",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-applied"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Evidence.statistic.modelCharacteristic.extension:includeIf",
+        "path": "Evidence.statistic.modelCharacteristic.extension",
+        "sliceName": "includeIf",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-include-if"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Evidence.statistic.modelCharacteristic.extension:modelCharacteristic",
+        "path": "Evidence.statistic.modelCharacteristic.extension",
+        "sliceName": "modelCharacteristic",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-model-characteristic"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Evidence.statistic.modelCharacteristic.value",
+        "path": "Evidence.statistic.modelCharacteristic.value",
+        "max": "0"
+      },
+      {
+        "id": "Evidence.statistic.modelCharacteristic.variable.extension",
+        "path": "Evidence.statistic.modelCharacteristic.variable.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Evidence.statistic.modelCharacteristic.variable.extension:includeIf",
+        "path": "Evidence.statistic.modelCharacteristic.variable.extension",
+        "sliceName": "includeIf",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-include-if"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

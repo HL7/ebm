@@ -1,0 +1,113 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "participant-flow-measure",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-implements",
+      "valueUri": "http://hl7.org/fhir/StructureDefinition/MetadataResource"
+    }
+  ],
+  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow-measure",
+  "name": "ParticipantFlowMeasure",
+  "title": "Participant Flow Measure",
+  "status": "draft",
+  "description": "Profile of EvidenceVariable for Evidence Based Medicine IG. The ParticipantFlowMeasure Profile is used to describe outcome measures for completion and reasons for non-completion of participation in a research study.",
+  "fhirVersion": "5.0.0",
+  "mapping": [
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "objimpl",
+      "uri": "http://hl7.org/fhir/object-implementation",
+      "name": "Object Implementation Information"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "EvidenceVariable",
+  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "EvidenceVariable.useContext",
+        "path": "EvidenceVariable.useContext",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "valueCodeableConcept"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "EvidenceVariable.useContext:participantFlowMeasure",
+        "path": "EvidenceVariable.useContext",
+        "sliceName": "participantFlowMeasure",
+        "min": 1,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "EvidenceVariable.useContext:participantFlowMeasure.code",
+        "path": "EvidenceVariable.useContext.code",
+        "patternCoding": {
+          "code": "evidence-communication",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Evidence Communication"
+        }
+      },
+      {
+        "id": "EvidenceVariable.useContext:participantFlowMeasure.value[x]",
+        "path": "EvidenceVariable.useContext.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "EvidenceVariable.useContext:participantFlowMeasure.value[x]:valueCodeableConcept",
+        "path": "EvidenceVariable.useContext.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "EvidenceVariable.useContext:participantFlowMeasure.value[x]:valueCodeableConcept.coding",
+        "path": "EvidenceVariable.useContext.value[x].coding",
+        "patternCoding": {
+          "code": "ParticipantFlowMeasure",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "ParticipantFlowMeasure"
+        }
+      },
+      {
+        "id": "EvidenceVariable.handling",
+        "path": "EvidenceVariable.handling",
+        "patternCode": "dichotomous"
+      }
+    ]
+  }
+}

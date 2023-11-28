@@ -1,0 +1,106 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "comparative-evidence-report-subject",
+  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence-report-subject",
+  "name": "ComparativeEvidenceReportSubject",
+  "status": "draft",
+  "description": "Profile of Group for Evidence Based Medicine IG. The EvidenceReportSubject Profile is used to define the subject of an EvidenceReport.",
+  "fhirVersion": "5.0.0",
+  "mapping": [
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "interface",
+      "uri": "http://hl7.org/fhir/interface",
+      "name": "Interface Pattern"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Group",
+  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report-subject",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Group.characteristic",
+        "path": "Group.characteristic",
+        "min": 4
+      },
+      {
+        "id": "Group.characteristic:population",
+        "path": "Group.characteristic",
+        "sliceName": "population",
+        "min": 1
+      },
+      {
+        "id": "Group.characteristic:population.value[x]:valueReference",
+        "path": "Group.characteristic.value[x]",
+        "sliceName": "valueReference",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/study-group"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.characteristic:intervention",
+        "path": "Group.characteristic",
+        "sliceName": "intervention",
+        "min": 1
+      },
+      {
+        "id": "Group.characteristic:intervention.value[x]:valueReference",
+        "path": "Group.characteristic.value[x]",
+        "sliceName": "valueReference",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-variable",
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-definition"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.characteristic:comparator",
+        "path": "Group.characteristic",
+        "sliceName": "comparator",
+        "min": 1
+      },
+      {
+        "id": "Group.characteristic:comparator.value[x]:valueReference",
+        "path": "Group.characteristic.value[x]",
+        "sliceName": "valueReference",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-variable",
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-definition",
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-definition"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.characteristic:outcomes",
+        "path": "Group.characteristic",
+        "sliceName": "outcomes",
+        "min": 1
+      }
+    ]
+  }
+}

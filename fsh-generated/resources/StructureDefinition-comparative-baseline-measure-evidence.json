@@ -1,0 +1,158 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "comparative-baseline-measure-evidence",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-implements",
+      "valueUri": "http://hl7.org/fhir/StructureDefinition/MetadataResource"
+    }
+  ],
+  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-baseline-measure-evidence",
+  "name": "ComparativeBaselineMeasureEvidence",
+  "status": "draft",
+  "description": "Profile of Evidence for Evidence Based Medicine IG. The ComparativeBaselineMeasureEvidence Profile is used for comparative evidence with a measured variable (with the role of outcome for this Evidence) that is considered an independent variable with respect to the outcome of an exposure or intervention in a study.",
+  "fhirVersion": "5.0.0",
+  "mapping": [
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "objimpl",
+      "uri": "http://hl7.org/fhir/object-implementation",
+      "name": "Object Implementation Information"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Evidence",
+  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Evidence.useContext",
+        "path": "Evidence.useContext",
+        "min": 2
+      },
+      {
+        "id": "Evidence.useContext:baseline",
+        "path": "Evidence.useContext",
+        "sliceName": "baseline",
+        "min": 1,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Evidence.useContext:baseline.code",
+        "path": "Evidence.useContext.code",
+        "patternCoding": {
+          "code": "evidence-communication",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Evidence Communication"
+        }
+      },
+      {
+        "id": "Evidence.useContext:baseline.value[x]",
+        "path": "Evidence.useContext.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Evidence.useContext:baseline.value[x]:valueCodeableConcept",
+        "path": "Evidence.useContext.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Evidence.useContext:baseline.value[x]:valueCodeableConcept.coding",
+        "path": "Evidence.useContext.value[x].coding",
+        "patternCoding": {
+          "code": "ComparativeBaselineMeasureEvidence",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "ComparativeBaselineMeasureEvidence"
+        }
+      },
+      {
+        "id": "Evidence.variableDefinition",
+        "path": "Evidence.variableDefinition",
+        "comment": "The Baseline Measure (or independent variable) has variableRole of outcome."
+      },
+      {
+        "id": "Evidence.variableDefinition.intended",
+        "path": "Evidence.variableDefinition.intended",
+        "max": "0"
+      },
+      {
+        "id": "Evidence.variableDefinition.directnessMatch",
+        "path": "Evidence.variableDefinition.directnessMatch",
+        "max": "0"
+      },
+      {
+        "id": "Evidence.variableDefinition:population",
+        "path": "Evidence.variableDefinition",
+        "sliceName": "population"
+      },
+      {
+        "id": "Evidence.variableDefinition:population.intended",
+        "path": "Evidence.variableDefinition.intended",
+        "max": "0"
+      },
+      {
+        "id": "Evidence.variableDefinition:population.directnessMatch",
+        "path": "Evidence.variableDefinition.directnessMatch",
+        "max": "0"
+      },
+      {
+        "id": "Evidence.variableDefinition:exposure",
+        "path": "Evidence.variableDefinition",
+        "sliceName": "exposure"
+      },
+      {
+        "id": "Evidence.variableDefinition:exposure.intended",
+        "path": "Evidence.variableDefinition.intended",
+        "max": "0"
+      },
+      {
+        "id": "Evidence.variableDefinition:exposure.directnessMatch",
+        "path": "Evidence.variableDefinition.directnessMatch",
+        "max": "0"
+      },
+      {
+        "id": "Evidence.variableDefinition:outcome",
+        "path": "Evidence.variableDefinition",
+        "sliceName": "outcome"
+      },
+      {
+        "id": "Evidence.variableDefinition:outcome.intended",
+        "path": "Evidence.variableDefinition.intended",
+        "max": "0"
+      },
+      {
+        "id": "Evidence.variableDefinition:outcome.directnessMatch",
+        "path": "Evidence.variableDefinition.directnessMatch",
+        "max": "0"
+      }
+    ]
+  }
+}

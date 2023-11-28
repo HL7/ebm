@@ -1,0 +1,493 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "evidence-report-subject",
+  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report-subject",
+  "name": "EvidenceReportSubject",
+  "status": "draft",
+  "description": "Profile of Group for Evidence Based Medicine IG. The EvidenceReportSubject Profile is used to define the subject of an EvidenceReport.",
+  "fhirVersion": "5.0.0",
+  "mapping": [
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "interface",
+      "uri": "http://hl7.org/fhir/interface",
+      "name": "Interface Pattern"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Group",
+  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Group.extension:combinationMethod",
+        "path": "Group.extension",
+        "sliceName": "combinationMethod"
+      },
+      {
+        "id": "Group.extension:combinationMethod.value[x]",
+        "path": "Group.extension.value[x]",
+        "patternCode": "all-of"
+      },
+      {
+        "id": "Group.membership",
+        "path": "Group.membership",
+        "patternCode": "conceptual"
+      },
+      {
+        "id": "Group.characteristic",
+        "path": "Group.characteristic",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Group.characteristic:population",
+        "path": "Group.characteristic",
+        "sliceName": "population",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Group.characteristic:population.extension:valueUri",
+        "path": "Group.characteristic.extension",
+        "sliceName": "valueUri"
+      },
+      {
+        "id": "Group.characteristic:population.extension:valueExpression",
+        "path": "Group.characteristic.extension",
+        "sliceName": "valueExpression"
+      },
+      {
+        "id": "Group.characteristic:population.extension:description",
+        "path": "Group.characteristic.extension",
+        "sliceName": "description"
+      },
+      {
+        "id": "Group.characteristic:population.extension:method",
+        "path": "Group.characteristic.extension",
+        "sliceName": "method"
+      },
+      {
+        "id": "Group.characteristic:population.extension:determinedByReference",
+        "path": "Group.characteristic.extension",
+        "sliceName": "determinedByReference"
+      },
+      {
+        "id": "Group.characteristic:population.extension:determinedByExpression",
+        "path": "Group.characteristic.extension",
+        "sliceName": "determinedByExpression"
+      },
+      {
+        "id": "Group.characteristic:population.extension:offset",
+        "path": "Group.characteristic.extension",
+        "sliceName": "offset"
+      },
+      {
+        "id": "Group.characteristic:population.extension:instancesQuantity",
+        "path": "Group.characteristic.extension",
+        "sliceName": "instancesQuantity"
+      },
+      {
+        "id": "Group.characteristic:population.extension:instancesRange",
+        "path": "Group.characteristic.extension",
+        "sliceName": "instancesRange"
+      },
+      {
+        "id": "Group.characteristic:population.extension:durationDuration",
+        "path": "Group.characteristic.extension",
+        "sliceName": "durationDuration"
+      },
+      {
+        "id": "Group.characteristic:population.extension:durationRange",
+        "path": "Group.characteristic.extension",
+        "sliceName": "durationRange"
+      },
+      {
+        "id": "Group.characteristic:population.extension:timing",
+        "path": "Group.characteristic.extension",
+        "sliceName": "timing"
+      },
+      {
+        "id": "Group.characteristic:population.code.text",
+        "path": "Group.characteristic.code.text",
+        "patternString": "Population"
+      },
+      {
+        "id": "Group.characteristic:population.value[x]",
+        "path": "Group.characteristic.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Group.characteristic:population.value[x]:valueReference",
+        "path": "Group.characteristic.value[x]",
+        "sliceName": "valueReference",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Group"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.characteristic:population.exclude",
+        "path": "Group.characteristic.exclude",
+        "patternBoolean": false
+      },
+      {
+        "id": "Group.characteristic:intervention",
+        "path": "Group.characteristic",
+        "sliceName": "intervention",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Group.characteristic:intervention.extension:valueUri",
+        "path": "Group.characteristic.extension",
+        "sliceName": "valueUri"
+      },
+      {
+        "id": "Group.characteristic:intervention.extension:valueExpression",
+        "path": "Group.characteristic.extension",
+        "sliceName": "valueExpression"
+      },
+      {
+        "id": "Group.characteristic:intervention.extension:description",
+        "path": "Group.characteristic.extension",
+        "sliceName": "description"
+      },
+      {
+        "id": "Group.characteristic:intervention.extension:method",
+        "path": "Group.characteristic.extension",
+        "sliceName": "method"
+      },
+      {
+        "id": "Group.characteristic:intervention.extension:determinedByReference",
+        "path": "Group.characteristic.extension",
+        "sliceName": "determinedByReference"
+      },
+      {
+        "id": "Group.characteristic:intervention.extension:determinedByExpression",
+        "path": "Group.characteristic.extension",
+        "sliceName": "determinedByExpression"
+      },
+      {
+        "id": "Group.characteristic:intervention.extension:offset",
+        "path": "Group.characteristic.extension",
+        "sliceName": "offset"
+      },
+      {
+        "id": "Group.characteristic:intervention.extension:instancesQuantity",
+        "path": "Group.characteristic.extension",
+        "sliceName": "instancesQuantity"
+      },
+      {
+        "id": "Group.characteristic:intervention.extension:instancesRange",
+        "path": "Group.characteristic.extension",
+        "sliceName": "instancesRange"
+      },
+      {
+        "id": "Group.characteristic:intervention.extension:durationDuration",
+        "path": "Group.characteristic.extension",
+        "sliceName": "durationDuration"
+      },
+      {
+        "id": "Group.characteristic:intervention.extension:durationRange",
+        "path": "Group.characteristic.extension",
+        "sliceName": "durationRange"
+      },
+      {
+        "id": "Group.characteristic:intervention.extension:timing",
+        "path": "Group.characteristic.extension",
+        "sliceName": "timing"
+      },
+      {
+        "id": "Group.characteristic:intervention.code.text",
+        "path": "Group.characteristic.code.text",
+        "patternString": "Intervention or Exposure"
+      },
+      {
+        "id": "Group.characteristic:intervention.value[x]",
+        "path": "Group.characteristic.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Group.characteristic:intervention.value[x]:valueReference",
+        "path": "Group.characteristic.value[x]",
+        "sliceName": "valueReference",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/EvidenceVariable",
+              "http://hl7.org/fhir/StructureDefinition/Group"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.characteristic:intervention.exclude",
+        "path": "Group.characteristic.exclude",
+        "patternBoolean": false
+      },
+      {
+        "id": "Group.characteristic:comparator",
+        "path": "Group.characteristic",
+        "sliceName": "comparator",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Group.characteristic:comparator.extension:valueUri",
+        "path": "Group.characteristic.extension",
+        "sliceName": "valueUri"
+      },
+      {
+        "id": "Group.characteristic:comparator.extension:valueExpression",
+        "path": "Group.characteristic.extension",
+        "sliceName": "valueExpression"
+      },
+      {
+        "id": "Group.characteristic:comparator.extension:description",
+        "path": "Group.characteristic.extension",
+        "sliceName": "description"
+      },
+      {
+        "id": "Group.characteristic:comparator.extension:method",
+        "path": "Group.characteristic.extension",
+        "sliceName": "method"
+      },
+      {
+        "id": "Group.characteristic:comparator.extension:determinedByReference",
+        "path": "Group.characteristic.extension",
+        "sliceName": "determinedByReference"
+      },
+      {
+        "id": "Group.characteristic:comparator.extension:determinedByExpression",
+        "path": "Group.characteristic.extension",
+        "sliceName": "determinedByExpression"
+      },
+      {
+        "id": "Group.characteristic:comparator.extension:offset",
+        "path": "Group.characteristic.extension",
+        "sliceName": "offset"
+      },
+      {
+        "id": "Group.characteristic:comparator.extension:instancesQuantity",
+        "path": "Group.characteristic.extension",
+        "sliceName": "instancesQuantity"
+      },
+      {
+        "id": "Group.characteristic:comparator.extension:instancesRange",
+        "path": "Group.characteristic.extension",
+        "sliceName": "instancesRange"
+      },
+      {
+        "id": "Group.characteristic:comparator.extension:durationDuration",
+        "path": "Group.characteristic.extension",
+        "sliceName": "durationDuration"
+      },
+      {
+        "id": "Group.characteristic:comparator.extension:durationRange",
+        "path": "Group.characteristic.extension",
+        "sliceName": "durationRange"
+      },
+      {
+        "id": "Group.characteristic:comparator.extension:timing",
+        "path": "Group.characteristic.extension",
+        "sliceName": "timing"
+      },
+      {
+        "id": "Group.characteristic:comparator.code.text",
+        "path": "Group.characteristic.code.text",
+        "patternString": "Comparator"
+      },
+      {
+        "id": "Group.characteristic:comparator.value[x]",
+        "path": "Group.characteristic.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Group.characteristic:comparator.value[x]:valueReference",
+        "path": "Group.characteristic.value[x]",
+        "sliceName": "valueReference",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/EvidenceVariable",
+              "http://hl7.org/fhir/StructureDefinition/Group"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.characteristic:comparator.exclude",
+        "path": "Group.characteristic.exclude",
+        "patternBoolean": false
+      },
+      {
+        "id": "Group.characteristic:outcomes",
+        "path": "Group.characteristic",
+        "sliceName": "outcomes",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Group.characteristic:outcomes.extension:valueUri",
+        "path": "Group.characteristic.extension",
+        "sliceName": "valueUri"
+      },
+      {
+        "id": "Group.characteristic:outcomes.extension:valueExpression",
+        "path": "Group.characteristic.extension",
+        "sliceName": "valueExpression"
+      },
+      {
+        "id": "Group.characteristic:outcomes.extension:description",
+        "path": "Group.characteristic.extension",
+        "sliceName": "description"
+      },
+      {
+        "id": "Group.characteristic:outcomes.extension:method",
+        "path": "Group.characteristic.extension",
+        "sliceName": "method"
+      },
+      {
+        "id": "Group.characteristic:outcomes.extension:determinedByReference",
+        "path": "Group.characteristic.extension",
+        "sliceName": "determinedByReference"
+      },
+      {
+        "id": "Group.characteristic:outcomes.extension:determinedByExpression",
+        "path": "Group.characteristic.extension",
+        "sliceName": "determinedByExpression"
+      },
+      {
+        "id": "Group.characteristic:outcomes.extension:offset",
+        "path": "Group.characteristic.extension",
+        "sliceName": "offset"
+      },
+      {
+        "id": "Group.characteristic:outcomes.extension:instancesQuantity",
+        "path": "Group.characteristic.extension",
+        "sliceName": "instancesQuantity"
+      },
+      {
+        "id": "Group.characteristic:outcomes.extension:instancesRange",
+        "path": "Group.characteristic.extension",
+        "sliceName": "instancesRange"
+      },
+      {
+        "id": "Group.characteristic:outcomes.extension:durationDuration",
+        "path": "Group.characteristic.extension",
+        "sliceName": "durationDuration"
+      },
+      {
+        "id": "Group.characteristic:outcomes.extension:durationRange",
+        "path": "Group.characteristic.extension",
+        "sliceName": "durationRange"
+      },
+      {
+        "id": "Group.characteristic:outcomes.extension:timing",
+        "path": "Group.characteristic.extension",
+        "sliceName": "timing"
+      },
+      {
+        "id": "Group.characteristic:outcomes.code.text",
+        "path": "Group.characteristic.code.text",
+        "patternString": "Outcomes"
+      },
+      {
+        "id": "Group.characteristic:outcomes.value[x]",
+        "path": "Group.characteristic.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Group.characteristic:outcomes.value[x]:valueReference",
+        "path": "Group.characteristic.value[x]",
+        "sliceName": "valueReference",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-list"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.characteristic:outcomes.exclude",
+        "path": "Group.characteristic.exclude",
+        "patternBoolean": false
+      }
+    ]
+  }
+}

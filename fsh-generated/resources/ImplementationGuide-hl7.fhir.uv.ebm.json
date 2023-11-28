@@ -1,0 +1,1068 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "hl7.fhir.uv.ebm",
+  "url": "https://hl7.org/fhir/uv/ebm/ImplementationGuide/hl7.fhir.uv.ebm",
+  "version": "0.1.0",
+  "name": "EBMIG",
+  "status": "draft",
+  "publisher": "HL7 International - Clinical Decision Support WG",
+  "contact": [
+    {
+      "name": "HL7 International - Clinical Decision Support WG",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "http://www.hl7.org/Special/committees/dss"
+        }
+      ]
+    }
+  ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "001",
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "display": "World"
+        }
+      ]
+    }
+  ],
+  "packageId": "hl7.fhir.uv.ebm",
+  "fhirVersion": [
+    "5.0.0"
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/adaptation"
+        },
+        "name": "Adaptation",
+        "description": "Profile of ArtifactAssessment for Evidence Based Medicine IG. The Adaptation Profile is used for assessments of a knowledge artifact that are used to create a new knowledge artifact through acceptance, rejection or modification of the assessed artifact.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/artifact-approvalDate"
+        },
+        "name": "ArtifactApprovalDate",
+        "description": "When the resource was approved by publisher.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/artifact-assessment-compared"
+        },
+        "name": "ArtifactAssessmentCompared",
+        "description": "The artifact being compared to the referenced artifact.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/artifact-assessment-date-as-rating"
+        },
+        "name": "ArtifactAssessmentDateAsRating",
+        "description": "A date or dateTime value as the classifier or rating value.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/artifact-effectivePeriod"
+        },
+        "name": "ArtifactEffectivePeriod",
+        "description": "The period during which the resource content was or is planned to be in active use.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/artifact-lastReviewDate"
+        },
+        "name": "ArtifactLastReviewDate",
+        "description": "When the resource was approved by publisher.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/baseline-measure-evidence"
+        },
+        "name": "BaselineMeasureEvidence",
+        "description": "Profile of Evidence for Evidence Based Medicine IG. The BaselineMeasureEvidence Profile is used for evidence with a measured variable (with the role of outcome for this Evidence) that is considered an independent variable with respect to the outcome of an exposure or intervention in a study.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/book-citation"
+        },
+        "name": "BookCitation",
+        "description": "Profile of Citation for Evidence Based Medicine IG. The BookCitation Profile is used for citations of a book.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/book-part-citation"
+        },
+        "name": "BookPartCitation",
+        "description": "Profile of Citation for Evidence Based Medicine IG. The BookPartCitation Profile is used for citations of a part of a book.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/certainty-of-evidence"
+        },
+        "name": "CertaintyOfEvidence",
+        "description": "Profile of ArtifactAssessment for Evidence Based Medicine IG. The CertaintyOfEvidence Profile is used for expression of the certainty (also called quality or confidence in the estimates) of an Evidence artifact.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/characteristic-description"
+        },
+        "name": "CharacteristicDescription",
+        "description": "Natural language description of the characteristic.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/characteristic-determined-by-expression"
+        },
+        "name": "CharacteristicDeterminedByExpression",
+        "description": "Method for how the characteristic value was determined.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/characteristic-determined-by-reference"
+        },
+        "name": "CharacteristicDeterminedByReference",
+        "description": "Method for how the characteristic value was determined.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/characteristic-duration-duration"
+        },
+        "name": "CharacteristicDurationDuration",
+        "description": "Length of time in which the characteristic is met.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/characteristic-duration-range"
+        },
+        "name": "CharacteristicDurationRange",
+        "description": "Length of time in which the characteristic is met.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/characteristic-instances-quantity"
+        },
+        "name": "CharacteristicInstancesQuantity",
+        "description": "Number of occurrences meeting the characteristic.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/characteristic-instances-range"
+        },
+        "name": "CharacteristicInstancesRange",
+        "description": "Number of occurrences meeting the characteristic.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/characteristic-method"
+        },
+        "name": "CharacteristicMethod",
+        "description": "Method for how the characteristic value was determined.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/characteristic-offset"
+        },
+        "name": "CharacteristicOffset",
+        "description": "Defines the reference point for comparison when other than 0.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/characteristic-timing"
+        },
+        "name": "CharacteristicTiming",
+        "description": "Timing in which the characteristic is determined.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/characteristic-value-expression"
+        },
+        "name": "CharacteristicValueExpression",
+        "description": "The value of the trait that holds for members of the group, held by Expression.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/characteristic-value-uri"
+        },
+        "name": "CharacteristicValueUri",
+        "description": "The value of the trait that holds for members of the group, held by uri.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/classification"
+        },
+        "name": "Classification",
+        "description": "Profile of ArtifactAssessment for Evidence Based Medicine IG. The Classification Profile is used for classifier tags that may be created independently from Resource creators and may be used for search indexes.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/cohort-definition"
+        },
+        "name": "Cohort Definition",
+        "description": "Profile of Group for Evidence Based Medicine IG. The CohortDefinition Profile is used to provide a conceptual or definitional representation of a Group.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/combination-method"
+        },
+        "name": "CombinationMethod",
+        "description": "Used to specify how two or more characteristics are combined.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/combination-threshold"
+        },
+        "name": "CombinationThreshold",
+        "description": "Provides the value of n when at-least or at-most codes are used for combinationMethod.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/comment"
+        },
+        "name": "Comment",
+        "description": "Profile of ArtifactAssessment for Evidence Based Medicine IG. The Comment Profile is used for comments about a Resource that may be created independently from Resource creators.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/comparative-baseline-measure-evidence"
+        },
+        "name": "ComparativeBaselineMeasureEvidence",
+        "description": "Profile of Evidence for Evidence Based Medicine IG. The ComparativeBaselineMeasureEvidence Profile is used for comparative evidence with a measured variable (with the role of outcome for this Evidence) that is considered an independent variable with respect to the outcome of an exposure or intervention in a study.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/comparative-evidence"
+        },
+        "name": "ComparativeEvidence",
+        "description": "Profile of Evidence for Evidence Based Medicine IG. The ComparativeEvidence Profile is used for evidence with a measured variable that is considered the outcome of an exposure or intervention, and an exposure variable with two or more categories that are being compared.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/comparative-evidence-report"
+        },
+        "name": "ComparativeEvidenceReport",
+        "description": "Profile of Composition for Evidence Based Medicine IG. The ComparativeEvidenceReport Profile is used for an evidence report including the study group, exposure, comparator, and findings for any number of outcomes comparing the exposure to the comparator in the study group.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/comparative-evidence-report-subject"
+        },
+        "name": "ComparativeEvidenceReportSubject",
+        "description": "Profile of Group for Evidence Based Medicine IG. The EvidenceReportSubject Profile is used to define the subject of an EvidenceReport.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/comparative-participant-flow"
+        },
+        "name": "ComparativeParticipantFlow",
+        "description": "Profile of Evidence for Evidence Based Medicine IG. The ComparativeParticipantFlow Profile is used for comparisons of counts of completion and reasons for non-completion of participation in a research study.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/comparator-definition"
+        },
+        "name": "ComparatorDefinition",
+        "description": "Profile of Group for Evidence Based Medicine IG. The ComparatorDefinition Profile is used to express the criteria defining a reference group for comparison.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/comparator-group"
+        },
+        "name": "ComparatorGroup",
+        "description": "Profile of Group for Evidence Based Medicine IG. The ComparatorGroup Profile is used to represent a group (definitional or enumerated) used as a comparator in a ComparativeEvidence.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/comparator-only-evidence"
+        },
+        "name": "ComparatorOnlyEvidence",
+        "description": "Profile of Evidence for Evidence Based Medicine IG. The ComparatorOnlyEvidence Profile is used for evidence with a measured variable that is considered the outcome of an exposure or intervention, and a population that has an exposure with a categorical value that is the reference category for the exposure in a ComparativeEvidence Profile. The ComparatorOnlyEvidence describes the evidence for the comparator group.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/comparison"
+        },
+        "name": "Comparison",
+        "description": "Profile of ArtifactAssessment for Evidence Based Medicine IG. The Comparison Profile is used for assessments of similarities and differences between knowledge artifacts.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/composite-rating"
+        },
+        "name": "CompositeRating",
+        "description": "Profile of ArtifactAssessment for Evidence Based Medicine IG. The CompositeRating Profile is used for a composite rating or classification of a Resource that may be created following ratings or classifications by two or more parties.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/database-citation"
+        },
+        "name": "DatabaseCitation",
+        "description": "Profile of Citation for Evidence Based Medicine IG. The DatabaseCitation Profile is used for citations of a database.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/database-entry-citation"
+        },
+        "name": "DatabaseEntryCitation",
+        "description": "Profile of Citation for Evidence Based Medicine IG. The DatabaseEntryCitation Profile is used for citations of a record within a database.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/data-dictionary"
+        },
+        "name": "DataDictionary",
+        "description": "Profile of CodeSystem for Evidence Based Medicine IG. The DataDictionary Profile is used for a code key for variable names in a dataset.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/dataset-citation"
+        },
+        "name": "DatasetCitation",
+        "description": "Profile of Citation for Evidence Based Medicine IG. The DatasetCitation Profile is used for citations of a dataset.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/date-as-rating"
+        },
+        "name": "DateAsRating",
+        "description": "Profile of ArtifactAssessment for Evidence Based Medicine IG. The DateAsRating Profile is used for representing a date or dateTime as a classifier value.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/endpoint-analysis-plan"
+        },
+        "name": "EndpointAnalysisPlan",
+        "description": "Profile of Evidence for Evidence Based Medicine IG. The EndpointAnalysisPlan Profile is used for specification of the statistical model for analysis of a single endpoint.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/evidence-variable-role-subtype"
+        },
+        "name": "Evidence Variable Role Subtype Value Set",
+        "description": "The sub-role that the variable plays.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/evidence-list"
+        },
+        "name": "EvidenceList",
+        "description": "Profile of List for Evidence Based Medicine IG. The EvidenceList Profile is used to provide a list of Evidence Resources. The EvidenceList Profile is used to represent a Group of Evidence for the population for an EvidenceSynthesisEvidence using a summary data meta-analysis approach and is referenced from a MetaanalysisStudyGroup.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/evidence-map"
+        },
+        "name": "EvidenceMap",
+        "description": "Profile of Composition for Evidence Based Medicine IG. The EvidenceMap Profile is used for an organized listing of Resources used to generate EvidenceReport instances.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/evidence-r6"
+        },
+        "name": "EvidenceR6",
+        "description": "Profile of Evidence for Evidence Based Medicine IG. The EvidenceR6 Profile is used to adjust the R5 Evidence base to match the structures in R6.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/evidence-report"
+        },
+        "name": "EvidenceReport",
+        "description": "Profile of Composition for Evidence Based Medicine IG. The EvidenceReport Profile is used for a base structure (canonical resource management) for a report combining any number of Citation, Evidence, EvidenceVariable, EvidenceReport, and related Resources.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/evidence-report-subject"
+        },
+        "name": "EvidenceReportSubject",
+        "description": "Profile of Group for Evidence Based Medicine IG. The EvidenceReportSubject Profile is used to define the subject of an EvidenceReport.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/evidence-synthesis-evidence"
+        },
+        "name": "EvidenceSynthesisEvidence",
+        "description": "Profile of Evidence for Evidence Based Medicine IG. The EvidenceSynthesisEvidence Profile is used for evidence that is combined from two or more studies, explicitly expressing the method by which evidence was synthesized.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/evidence-variable-category-value-reference"
+        },
+        "name": "EvidenceVariableCategoryValueReference",
+        "description": "Reference to a Group Resource to express a definition for a categorical value.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/evidence-variable-definition"
+        },
+        "name": "EvidenceVariableDefinition",
+        "description": "Reference to a CodeableConcept and/or a Group Resource to express a definition for an EvidenceVariable.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/exposure-definition"
+        },
+        "name": "ExposureDefinition",
+        "description": "Profile of Group for Evidence Based Medicine IG. The ExposureDefinition Profile is used to express the criteria defining an evidence variable (or categorical value for a variable) in the role of exposure.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/exposure-group"
+        },
+        "name": "ExposureGroup",
+        "description": "Profile of Group for Evidence Based Medicine IG. The ExposureGroup Profile is used to represent a group (definitional or enumerated) used in a ComparativeEvidence.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/exposure-variable"
+        },
+        "name": "ExposureVariable",
+        "description": "Profile of EvidenceVariable for Evidence Based Medicine IG. The ExposureVariable Profile is used to classify an EvidenceVariable as an exposure (e.g. an intervention or independent variable of primary interest) for use in implementations that manage exposures differently than outcomes.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/group-assignment"
+        },
+        "name": "GroupAssignment",
+        "description": "Profile of EvidenceVariable for Evidence Based Medicine IG. The GroupAssignment Profile is used to classify an EvidenceVariable as an exposure managed as a categorical variable. The variable definitions are found in the category element instead of the definition element.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/group-r6"
+        },
+        "name": "GroupR6",
+        "description": "Profile of Group for Evidence Based Medicine IG. The GroupR6 Profile is used to adjust the R5 Group base to match the structures in R6.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/guideline"
+        },
+        "name": "Guideline",
+        "description": "Profile of Composition for Evidence Based Medicine IG. The Guideline Profile is used for the composition of a clinical practice guideline and may be tightly related to use of Recommendation Profile of Composition for related content.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/intervention-only-evidence"
+        },
+        "name": "InterventionOnlyEvidence",
+        "description": "Profile of Evidence for Evidence Based Medicine IG. The InterventionOnlyEvidence Profile is used for evidence with a measured variable that is considered the outcome of an exposure or intervention. The InterventionOnlyEvidence describes the evidence for the intervention group.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/journal-article-citation"
+        },
+        "name": "JournalArticleCitation",
+        "description": "Profile of Citation for Evidence Based Medicine IG. The JournalArticleCitation Profile is used for citations of an article published in a periodical venue classified as a journal.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/m11-section-01"
+        },
+        "name": "M11Section01",
+        "description": "Profile of Composition for Evidence Based Medicine IG. The M11Section01 Profile is used for summary of Section 1 Protocol Summary for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/m11-section-02"
+        },
+        "name": "M11Section02",
+        "description": "Profile of Composition for Evidence Based Medicine IG. The M11Section02 Profile is used for summary of Section 2 Introduction for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/m11-section-03"
+        },
+        "name": "M11Section03",
+        "description": "Profile of Composition for Evidence Based Medicine IG. The M11Section03 Profile is used for summary of Section 3 Trial Objectives, Endpoints and Estimands for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/m11-section-04"
+        },
+        "name": "M11Section04",
+        "description": "Profile of Composition for Evidence Based Medicine IG. The M11Section04 Profile is used for summary of Section 4 Trial Design for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/m11-section-05"
+        },
+        "name": "M11Section05",
+        "description": "Profile of Composition for Evidence Based Medicine IG. The M11Section05 Profile is used for summary of Section 5 Trial Population for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/m11-section-06"
+        },
+        "name": "M11Section06",
+        "description": "Profile of Composition for Evidence Based Medicine IG. The M11Section06 Profile is used for summary of Section 6 Trial Intervention for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/m11-section-07"
+        },
+        "name": "M11Section07",
+        "description": "Profile of Composition for Evidence Based Medicine IG. The M11Section07 Profile is used for summary of Section 7 Participant Discontinuation of Trial Intervention and Withdrawal from Trial for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/m11-section-08"
+        },
+        "name": "M11Section08",
+        "description": "Profile of Composition for Evidence Based Medicine IG. The M11Section08 Profile is used for summary of Section 8 Trial Assessments and Procedures for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/m11-section-09"
+        },
+        "name": "M11Section09",
+        "description": "Profile of Composition for Evidence Based Medicine IG. The M11Section09 Profile is used for summary of Section 9 Adverse Events, Serious Adverse Events, and Product Complaints for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/m11-section-10"
+        },
+        "name": "M11Section10",
+        "description": "Profile of Composition for Evidence Based Medicine IG. The M11Section10 Profile is used for summary of Section 10 Statistical Considerations for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/m11-section-11"
+        },
+        "name": "M11Section11",
+        "description": "Profile of Composition for Evidence Based Medicine IG. The M11Section11 Profile is used for summary of Section 11 General Considerations: Regulatory, Ethical, and Trial Oversight for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/m11-section-12"
+        },
+        "name": "M11Section12",
+        "description": "Profile of Composition for Evidence Based Medicine IG. The M11Section12 Profile is used for summary of Section 12 General Considerations: Risk Management and Data Governance for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/m11-section-13"
+        },
+        "name": "M11Section13",
+        "description": "Profile of Composition for Evidence Based Medicine IG. The M11Section13 Profile is used for summary of Section 13 Appendix: Definitions and Supporting Operational Details for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/m11-section-14"
+        },
+        "name": "M11Section14",
+        "description": "Profile of Composition for Evidence Based Medicine IG. The M11Section14 Profile is used for summary of Section 14 Appendix: Glossary of Terms for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/m11-section-15"
+        },
+        "name": "M11Section15",
+        "description": "Profile of Composition for Evidence Based Medicine IG. The M11Section15 Profile is used for summary of Section 15 Appendix: References for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/metaanalysis-eligibility-criteria"
+        },
+        "name": "MetaanalysisEligibilityCriteria",
+        "description": "Profile of Group for Evidence Based Medicine IG. The MetaanalysisEligibilityCriteria Profile is used to describe inclusion and exclusion criteria for a meta-analysis.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/metaanalysis-outcome-definition"
+        },
+        "name": "MetaanalysisOutcomeDefinition",
+        "description": "Profile of Group for Evidence Based Medicine IG. The MetaanalysisOutcomeDefinition Profile is used to express the criteria defining an evidence variable in the role of outcome where the population (dataset) is a set of Evidence Resources. Characteristics define the characteristics of the Evidence Resource to be eligible to be used for this outcome.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/metaanalysis-study-group"
+        },
+        "name": "MetaanalysisStudyGroup",
+        "description": "Profile of Group for Evidence Based Medicine IG. The MetaanalysisStudyGroup Profile is used to represent an enumerated group of participants in a meta-analysis where the participants are Evidence Resources and the Group membership is conceptual.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/net-effect-contribution"
+        },
+        "name": "NetEffectContribution",
+        "description": "Profile of Evidence for Evidence Based Medicine IG. The NetEffectContribution Profile is used for evidence in which the effect estimates, expressed as risk differences, is multiplied by a relative importance rating of the outcomes.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/net-effect-contribution-list"
+        },
+        "name": "NetEffectContributionList",
+        "description": "Profile of List for Evidence Based Medicine IG. The NetEffectContributionList Profile is used to provide a list of Evidence Resources (NetEffectContribution Profile). The NetEffectContributionList Profile is used to represent a Group of Evidence for the population for a NetEffectEstimate (Profile of Evidence) using a net effect analysis approach and is referenced from a NetEffectContributions (Profile of Group).",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/net-effect-contributions"
+        },
+        "name": "NetEffectContributions",
+        "description": "Profile of Group for Evidence Based Medicine IG. The NetEffectContributions Profile is used to represent an enumerated group of participants in a net effect analysis where the participants are Evidence Resources (NetEffectContribution Profile) and the Group membership is conceptual.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/net-effect-estimate"
+        },
+        "name": "NetEffectEstimate",
+        "description": "Profile of Evidence for Evidence Based Medicine IG. The NetEffectEstimate Profile is used for evidence in which the observed data is net effect contributions (effect estimates expressed as risk differences, multiplied by relative importance ratings of outcomes).",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/non-comparative-evidence"
+        },
+        "name": "NonComparativeEvidence",
+        "description": "Profile of Evidence for Evidence Based Medicine IG. The NonComparativeEvidence Profile is used for evidence about a single group with no comparisons between groups.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/outcome-definition"
+        },
+        "name": "OutcomeDefinition",
+        "description": "Profile of Group for Evidence Based Medicine IG. The OutcomeDefinition Profile is used to express the criteria defining an evidence variable (or categorical value for a variable) in the role of outcome.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/outcome-importance"
+        },
+        "name": "OutcomeImportance",
+        "description": "Profile of ArtifactAssessment for Evidence Based Medicine IG. The OutcomeImportance Profile is used for expression of the relative importance of an outcome. The outcome is typically expressed with an EvidenceVariable Resource and may use the OutcomeVariable Profile of EvidenceVariable (or OutcomeDefinition Profile of Group).",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/outcome-list"
+        },
+        "name": "OutcomeList",
+        "description": "Profile of List for Evidence Based Medicine IG. The OutcomeList Profile is used to provide a list of outcomes. The OutcomeList Profile is referenced in the EvidenceReportSubject Profile as a way to define the set of outcomes that an EvidenceReport is about.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/outcome-measure-evidence"
+        },
+        "name": "OutcomeMeasureEvidence",
+        "description": "Profile of Evidence for Evidence Based Medicine IG. The OutcomeMeasureEvidence Profile is used for evidence with a measured variable that is considered the outcome of an exposure or intervention.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/outcome-variable"
+        },
+        "name": "OutcomeVariable",
+        "description": "Profile of EvidenceVariable for Evidence Based Medicine IG. The OutcomeVariable Profile is used to classify an EvidenceVariable as an outcome or dependent variable for use in implementations that manage exposures differently than outcomes.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/participant-flow-measure"
+        },
+        "name": "Participant Flow Measure",
+        "description": "Profile of EvidenceVariable for Evidence Based Medicine IG. The ParticipantFlowMeasure Profile is used to describe outcome measures for completion and reasons for non-completion of participation in a research study.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/participant-flow"
+        },
+        "name": "ParticipantFlow",
+        "description": "Profile of Evidence for Evidence Based Medicine IG. The ParticipantFlow Profile is used for counts of completion and reasons for non-completion of participation in a research study.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/preprint-citation"
+        },
+        "name": "PreprintCitation",
+        "description": "Profile of Citation for Evidence Based Medicine IG. The PreprintCitation Profile is used for citations of an article published in a form prior to peer-reviewed publication in a journal, book, or other permanent record.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/rating"
+        },
+        "name": "Rating",
+        "description": "Profile of ArtifactAssessment for Evidence Based Medicine IG. The Rating Profile is used for classifier tags that may include quantitative ratings and may be created independently from Resource creators.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/recommendation"
+        },
+        "name": "Recommendation",
+        "description": "Profile of Composition for Evidence Based Medicine IG. The Recommendation Profile is used for the composition of a recommendation (such as that from a clinical practice guideline) and may be tightly related to a RecommendationPlan Profile of PlanDefinition and a RecommendationJustification Profile of ArtifactAssessment.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/recommendation-action"
+        },
+        "name": "RecommendationAction",
+        "description": "Profile of ActivityDefinition for Evidence Based Medicine IG. The RecommendationAction Profile is used for a recommendation from a clinical practice guideline.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/recommendation-eligibility-criteria"
+        },
+        "name": "RecommendationEligibilityCriteria",
+        "description": "Profile of Group for Evidence Based Medicine IG. The RecommendationEligibilityCriteria Profile is used to express the criteria defining a group for whom a recommendation applies.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/recommendation-justification"
+        },
+        "name": "RecommendationJustification",
+        "description": "Profile of ArtifactAssessment for Evidence Based Medicine IG. The RecommendationJustification Profile is used for expressing the rationale, evidence, and judgments supporting a recommendation, such as from a clinical practice guideline.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/recommendation-plan"
+        },
+        "name": "RecommendationPlan",
+        "description": "Profile of PlanDefinition for Evidence Based Medicine IG. The RecommendationPlan Profile is used for the implementable representation of a recommendation (such as that from a clinical practice guideline).",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/risk-of-bias-type"
+        },
+        "name": "Risk Of Bias Type Value Set",
+        "description": "Types of bias for used with risk of bias assessment.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/risk-of-bias"
+        },
+        "name": "RiskOfBias",
+        "description": "Profile of ArtifactAssessment for Evidence Based Medicine IG. The RiskOfBias Profile is used for expression of the assessment of the threats to validity (or risk of bias) of an Evidence artifact or an artifact consisting of Evidence or the plan to create Evidence.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/search-results"
+        },
+        "name": "SearchResults",
+        "description": "Profile of Library for Evidence Based Medicine IG. The SearchResults Profile is used to represent search results, such as for a systematic review.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/search-strategy"
+        },
+        "name": "SearchStrategy",
+        "description": "Profile of Group for Evidence Based Medicine IG. The SearchStrategy Profile is used to express the criteria defining a search strategy, such as for a systematic review.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/single-study-evidence"
+        },
+        "name": "SingleStudyEvidence",
+        "description": "Profile of Evidence for Evidence Based Medicine IG. The SingleStudyEvidence Profile is used for evidence from single studies, explicitly expressing that no studies were synthesized.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/soa-plandefinition"
+        },
+        "name": "SoaPlanDefinition",
+        "description": "Profile of PlanDefinition for temporary testing to coordination with M11 use.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/software-citation"
+        },
+        "name": "SoftwareCitation",
+        "description": "Profile of Citation for Evidence Based Medicine IG. The SoftwareCitation Profile is used for citations of executable code.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/statistic-model-applied"
+        },
+        "name": "StatisticModelApplied",
+        "description": "The analysis that was applied.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/statistic-model-attribute-estimate"
+        },
+        "name": "StatisticModelAttributeEstimate",
+        "description": "An attribute of the statistic used as a model characteristic.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/statistic-model-include-if"
+        },
+        "name": "StatisticModelIncludeIf",
+        "description": "The condition under which the variable (or modelCharacteristic) will be included.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/statistic-model-intended"
+        },
+        "name": "StatisticModelIntended",
+        "description": "The plan for analysis.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/statistic-model-model-characteristic"
+        },
+        "name": "StatisticModelModelCharacteristic",
+        "description": "Model component as a nested model characteristic.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/statistic-model-value-codeableconcept"
+        },
+        "name": "StatisticModelValueCodeableConcept",
+        "description": "The specific value (when paired with code) as a CodeableConcept",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/statistic-model-value-quantity"
+        },
+        "name": "StatisticModelValueQuantity",
+        "description": "The specific value (when paired with code) as a Quantity",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/statistic-model-value-range"
+        },
+        "name": "StatisticModelValueRange",
+        "description": "The specific value (when paired with code) as a Quantity",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/study-eligibility-criteria"
+        },
+        "name": "StudyEligibilityCriteria",
+        "description": "Profile of Group for Evidence Based Medicine IG. The StudyEligibilityCriteria Profile is used to describe inclusion and exclusion criteria for a clinical trial or other research study.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/study-group"
+        },
+        "name": "StudyGroup",
+        "description": "Profile of Group for Evidence Based Medicine IG. The StudyGroup Profile is used to represent an enumerated group of participants in a research study.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/summary-of-findings"
+        },
+        "name": "SummaryOfFindings",
+        "description": "Profile of Composition for Evidence Based Medicine IG. The SummaryOfFindings Profile is used for an evidence report combining Evidence and EvidenceVariable Resources, organized around OutcomeVariable (Profile of EvidenceVariable), to represent the summary of findings of comparative evidence.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/summary-of-net-effect"
+        },
+        "name": "SummaryOfNetEffect",
+        "description": "Profile of Composition for Evidence Based Medicine IG. The SummaryOfNetEffect Profile is used for an evidence report combining ArtifactAssessment and Evidence and EvidenceVariable Resources, organized around OutcomeVariable (Profile of EvidenceVariable), to represent the summary of net effect contributions of comparative evidence, adjusted for the relative importance of outcomes.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/systematic-review-eligibility-criteria"
+        },
+        "name": "SystematicReviewEligibilityCriteria",
+        "description": "Profile of Group for Evidence Based Medicine IG. The SystematicReviewEligibilityCriteria Profile is used to describe inclusion and exclusion criteria for a systematic review.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/systematic-review-excluded-studies"
+        },
+        "name": "SystematicReviewExcludedStudies",
+        "description": "Profile of Library for Evidence Based Medicine IG. The SystematicReviewExcludedStudies Profile is used to represent the subset of search results of a systematic review which did not meet the inclusion criteria.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/systematic-review-included-studies"
+        },
+        "name": "SystematicReviewIncludedStudies",
+        "description": "Profile of Library for Evidence Based Medicine IG. The SystematicReviewIncludedStudies Profile is used to represent the subset of search results of a systematic review which meet the inclusion criteria.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/variable-definition"
+        },
+        "name": "VariableDefinition",
+        "description": "Profile of EvidenceVariable for Evidence Based Medicine IG. The VariableDefinition Profile uses a CodeableReference Datatype to provide a concept (e.g. coding in a code system) and/or a reference to a Group Resource for structured data to define the variable.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/variable-definition-comparator-category"
+        },
+        "name": "VariableDefinitionComparatorCategory",
+        "description": "The reference value used for comparison.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/variable-definition-role-subtype"
+        },
+        "name": "VariableDefinitionRoleSubtype",
+        "description": "Sub-classification of the role of the variable.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/variable-definition-variable-role-code"
+        },
+        "name": "VariableDefinitionVariableRoleCode",
+        "description": "Classification of the role of the variable.",
+        "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/web-page-citation"
+        },
+        "name": "WebPageCitation",
+        "description": "Profile of Citation for Evidence Based Medicine IG. The WebPageCitation Profile is used for citations of a web page or website, typically when there is not another type being used to classify the cited artifact.",
+        "isExample": false
+      }
+    ],
+    "page": {
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "title": "Home",
+          "generation": "markdown",
+          "name": "index.html",
+          "sourceUrl": "index.html"
+        }
+      ],
+      "name": "toc.html",
+      "sourceUrl": "toc.html"
+    },
+    "parameter": [
+      {
+        "code": {
+          "code": "copyrightyear",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "2022+"
+      },
+      {
+        "code": {
+          "code": "releaselabel",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "ci-build"
+      },
+      {
+        "code": {
+          "code": "path-history",
+          "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
+        },
+        "value": "https://hl7.org/fhir/uv/ebm/history.html"
+      }
+    ]
+  }
+}
