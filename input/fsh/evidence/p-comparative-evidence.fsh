@@ -16,16 +16,16 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The Comparativ
 * variableDefinition ^slicing.rules = #open
 * variableDefinition contains population 1..* and exposure 0..* and outcome 1..* MS
 * variableDefinition[population]
-  * ^extension[VariableDefinitionVariableRoleCode].valueCode = #population
+  * extension[VariableDefinitionVariableRoleCode].valueCode = #population
   * observed only Reference(StudyGroup or ExposureGroup or ComparatorGroup or MetaanalysisStudyGroup)
   * intended only Reference(Group)
 * variableDefinition[exposure]
-  * ^extension[VariableDefinitionVariableRoleCode].valueCode = #exposure
+  * extension[VariableDefinitionVariableRoleCode].valueCode = #exposure
   * extension[VariableDefinitionComparatorCategory] 1..1
   * observed only Reference(GroupAssignment or ExposureVariable or OutcomeVariable)
   * intended only Reference(VariableDefinition)
 * variableDefinition[outcome]
-  * ^extension[VariableDefinitionVariableRoleCode].valueCode = #outcome
+  * extension[VariableDefinitionVariableRoleCode].valueCode = #outcome
   * extension[VariableDefinitionComparatorCategory] 0..0
   * observed only Reference(OutcomeVariable or ExposureVariable or ParticipantFlowMeasure)
   * intended only Reference(EvidenceVariable)

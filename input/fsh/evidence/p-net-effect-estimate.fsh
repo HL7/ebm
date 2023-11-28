@@ -15,11 +15,11 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The NetEffectE
 * variableDefinition ^slicing.rules = #open
 * variableDefinition contains population 1..1 and exposure 0..*
 * variableDefinition[population]
-  * ^extension[VariableDefinitionVariableRoleCode].valueCode = #population
+  * extension[VariableDefinitionVariableRoleCode].valueCode = #population
   * observed only Reference(NetEffectContributions)
   * intended 0..0
 * variableDefinition[exposure]
-  * ^extension[VariableDefinitionVariableRoleCode].valueCode = #exposure
+  * extension[VariableDefinitionVariableRoleCode].valueCode = #exposure
   * extension[VariableDefinitionComparatorCategory] 1..1
   * observed only Reference(GroupAssignment or ExposureVariable or OutcomeVariable)
   * intended 0..0

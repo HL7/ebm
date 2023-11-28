@@ -16,8 +16,8 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The OutcomeMea
 * variableDefinition ^slicing.rules = #open
 * variableDefinition contains population 1..* MS and outcome 1..* MS
 * variableDefinition[population]
-  * ^extension[VariableDefinitionVariableRoleCode].valueCode = #population
+  * extension[VariableDefinitionVariableRoleCode].valueCode = #population
   * observed only Reference(StudyGroup or ExposureGroup or ComparatorGroup or MetaanalysisStudyGroup)
 * variableDefinition[outcome]
-  * ^extension[VariableDefinitionVariableRoleCode].valueCode = #outcome
+  * extension[VariableDefinitionVariableRoleCode].valueCode = #outcome
   * observed only Reference(ExposureVariable or OutcomeVariable)

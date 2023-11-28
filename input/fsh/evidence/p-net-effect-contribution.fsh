@@ -22,8 +22,8 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The NetEffectC
 * variableDefinition ^slicing.rules = #open
 * variableDefinition contains covariate 1..*
 * variableDefinition[covariate]
-  * ^extension[VariableDefinitionVariableRoleCode].valueCode = #covariate
-  * ^extension[VariableDefinitionRoleSubtype].valueCodeableConcept.text = "Relative Value Multiplier"
+  * extension[VariableDefinitionVariableRoleCode].valueCode = #covariate
+  * extension[VariableDefinitionRoleSubtype].valueCodeableConcept.text = "Relative Value Multiplier"
   * observed.display = "Relative Importance Multiplier"
   * intended 0..0
 * statistic 1..*
