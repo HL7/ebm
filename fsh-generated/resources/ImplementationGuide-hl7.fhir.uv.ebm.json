@@ -44,6 +44,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/adaptation-example"
+        },
+        "name": "Adaptation Example",
+        "description": "Joanne Dehnbostel's Adaptation Report of Recommendation: ADA Obesity Management Recommendation 8.16",
+        "isExample": true
+      },
+    {
+        "reference": {
           "reference": "StructureDefinition/artifact-approvalDate"
         },
         "name": "ArtifactApprovalDate",
