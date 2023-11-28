@@ -11,7 +11,7 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The NonCompara
 * useContext[nonComparative].valueCodeableConcept.coding = https://fevir.net/resources/CodeSystem/179423#NonComparativeEvidence "NonComparativeEvidence"
 * variableDefinition 2..*
 * variableDefinition ^slicing.discriminator.type = #value
-* variableDefinition ^slicing.discriminator.path = "extension(url : variableRole).valueCode"
+* variableDefinition ^slicing.discriminator.path = "extension(url : variableRoleCode).valueCode"
 * variableDefinition ^slicing.rules = #open
 * variableDefinition contains population 1..* MS and outcome 1..* MS
 * variableDefinition[population]

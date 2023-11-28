@@ -11,7 +11,7 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The NetEffectE
 * useContext[netEffect].valueCodeableConcept.coding = https://fevir.net/resources/CodeSystem/179423#NetEffectEstimate "NetEffectEstimate"
 * variableDefinition 2..*
 * variableDefinition ^slicing.discriminator.type = #value
-* variableDefinition ^slicing.discriminator.path = "extension(url : variableRole).valueCode"
+* variableDefinition ^slicing.discriminator.path = "extension(url : variableRoleCode).valueCode"
 * variableDefinition ^slicing.rules = #open
 * variableDefinition contains population 1..1 and exposure 0..*
 * variableDefinition[population]
