@@ -26,13 +26,13 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
   * section[description]
     * text 1..1
     * text ^comment = "The investigational trial intervention(s) should be described concisely in a table. Describe the investigational trial intervention to be administered in each arm of the trial and for each period of the trial including route and mode of administration, dose, dosage regimen, duration of intervention, use, packaging and labelling. Refer to approved regional labelling, as appropriate. For drug/device combination products, include details on the configuration and use of the device and device manufacturer. A device user manual may be referenced in this section."
-    * entry only Reference(ExposureVariable)
+    * entry only Reference(ExposureDefinition)
   * section[rationale].title = "Rationale for Investigational Trial Intervention Dose and Regimen"
   * section[rationale].code.text = "section6.2-rationale-for-trial-intervention-regimen"
   * section[rationale]
     * text 1..1
     * text ^comment = "Provide a rationale for the selection of the dose(s) or dose range, the route of administration, and dosing regimen of the investigational trial intervention. This rationale should include relevant results from previous preclinical studies and clinical trials that support selection of the dose and regimen.  Discuss impact of differences in study population characteristics (for example, age, sex and/or race) which could lead to differences in pharmacokinetics and pharmacodynamics in this study as compared to previous studies. If applicable, justify any differences in dose regimen or therapeutic use relative to approved labelling. Describe prior trials and other information that support the dose and/or dose regimen of the investigational intervention. Include a rationale for prospective dose adjustments incorporated in the trial, if any."
-    * entry only Reference(ExposureVariable)
+    * entry only Reference(ExposureDefinition)
   * section[dosingAdministration].title = "Investigational Trial Intervention Administration"
   * section[dosingAdministration].code.text = "section6.3-dosing-and-administration"
   * section[dosingAdministration]
