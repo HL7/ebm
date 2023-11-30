@@ -11,5 +11,4 @@ Description: "Profile of Library for Evidence Based Medicine IG. The SystematicR
 * useContext contains searchResults 1..* MS
 * useContext[searchResults].code = https://fevir.net/resources/CodeSystem/179423#evidence-communication "Evidence Communication"
 * useContext[searchResults].valueCodeableConcept.coding = https://fevir.net/resources/CodeSystem/179423#SystematicReviewIncludedStudies "SystematicReviewIncludedStudies"
-* jurisdiction 0..0
 * topic 0..0

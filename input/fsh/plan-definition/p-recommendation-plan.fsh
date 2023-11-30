@@ -17,7 +17,6 @@ Description: "Profile of PlanDefinition for Evidence Based Medicine IG. The Reco
 * type only CodeableConcept
 * type = http://terminology.hl7.org/CodeSystem/plan-definition-type#eca-rule
 * subject[x] MS
-* jurisdiction 0..0
 * topic 0..0
 * library 0..1 MS
 * action 1..* MS

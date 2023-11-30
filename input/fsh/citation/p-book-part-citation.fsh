@@ -2,7 +2,6 @@ Profile: BookPartCitation
 Parent: Citation
 Id: book-part-citation
 Description: "Profile of Citation for Evidence Based Medicine IG. The BookPartCitation Profile is used for citations of a part of a book." 
-* jurisdiction 0..0
 * citedArtifact
   * identifier
     * ^definition = "A formal identifier that is used to identify the cited book part when it is represented in other formats, or referenced in a specification, model, design or an instance." 

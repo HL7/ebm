@@ -2,7 +2,6 @@ Profile: SoftwareCitation
 Parent: Citation
 Id: software-citation
 Description: "Profile of Citation for Evidence Based Medicine IG. The SoftwareCitation Profile is used for citations of executable code."
-* jurisdiction 0..0
 * citedArtifact
   * identifier
     * ^definition = "A formal identifier that is used to identify the cited software when it is represented in other formats, or referenced in a specification, model, design or an instance." 

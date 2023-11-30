@@ -2,7 +2,6 @@ Profile: DatasetCitation
 Parent: Citation
 Id: dataset-citation
 Description: "Profile of Citation for Evidence Based Medicine IG. The DatasetCitation Profile is used for citations of a dataset."
-* jurisdiction 0..0
 * citedArtifact
   * identifier
     * ^definition = "A formal identifier that is used to identify the cited dataset when it is represented in other formats, or referenced in a specification, model, design or an instance." 

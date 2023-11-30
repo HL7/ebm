@@ -2,7 +2,6 @@ Profile: DatabaseEntryCitation
 Parent: Citation
 Id: database-entry-citation
 Description: "Profile of Citation for Evidence Based Medicine IG. The DatabaseEntryCitation Profile is used for citations of a record within a database."
-* jurisdiction 0..0
 * citedArtifact
   * identifier
     * ^definition = "A formal identifier that is used to identify the cited database record when it is represented in other formats, or referenced in a specification, model, design or an instance." 
