@@ -466,7 +466,7 @@
       {
         "id": "Composition.section:assessments.section:biomarkers.code.text",
         "path": "Composition.section.section.code.text",
-        "patternString": "section8.8-biomarkers"
+        "patternString": "section8.6-biomarkers"
       },
       {
         "id": "Composition.section:assessments.section:biomarkers.text",

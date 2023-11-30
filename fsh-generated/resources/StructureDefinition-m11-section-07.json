@@ -288,7 +288,7 @@
       {
         "id": "Composition.section:dropout.section:lostToFollowUp.code.text",
         "path": "Composition.section.section.code.text",
-        "patternString": "section7.3-lost-to-follow-Up"
+        "patternString": "section7.3-lost-to-follow-up"
       },
       {
         "id": "Composition.section:dropout.section:lostToFollowUp.text",

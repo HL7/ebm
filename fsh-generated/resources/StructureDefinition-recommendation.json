@@ -106,7 +106,8 @@
             "code": "Reference",
             "targetProfile": [
               "https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-justification",
-              "http://hl7.org/fhir/StructureDefinition/PlanDefinition"
+              "http://hl7.org/fhir/StructureDefinition/PlanDefinition",
+              "http://hl7.org/fhir/StructureDefinition/Composition"
             ]
           }
         ]
