@@ -82,7 +82,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
     * text 1..1
     * text ^comment = "Include any specific instructions for the collection and assay of samples for genetic analysis. If genetic testing is not included in the study, state Not Applicable. •	Describe the biological samples that will be collected (for example, tissue, serum, plasma, etc.), handling of samples, and the assay method. o	Specific sample collection and processing instructions can be described in an appendix or a separate document and cross-referenced. •	Describe the retention time for the samples (ensuring alignment with the ICF). •	Indicate the types of analyses that may be studied for each sample."
   * section[biomarkers].title = "Biomarkers"
-  * section[biomarkers].code.text = "section8.8-biomarkers"
+  * section[biomarkers].code.text = "section8.6-biomarkers"
   * section[biomarkers]
     * text 1..1
     * text ^comment = "Include any specific instructions for the collection of samples and assessment of biomarkers, including pharmacodynamics. If biomarker or pharmacodynamic testing is not included in the study, state Not Applicable. •	Describe the biological samples that will be collected (for example, tissue, serum, plasma, etc.). o	Specific sample collection and processing instructions can be described in an appendix or a separate document and cross-referenced. •	Describe the retention time for the samples (ensuring alignment with the ICF). •	Indicate the types of biomarkers that will be studied for each sample. •	Specify whether each sample is optional or required. Required samples must be based on a protocol objective."
