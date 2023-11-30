@@ -397,6 +397,28 @@
       },
       {
         "reference": {
+          "reference": "Group/179785"
+        },
+        "description": "Description: usual-care pharmacologic thromboprophylaxis\nNote: Thromboprophylaxis was provided at a dose and duration determined by the treating clinician according to local practice.\nNote: Usual-care pharmacological thromboprophylaxis included both intermediate-intensity (in 27%) and prophylactic-intensity dosing (in 72%). Subgroup analyses may be informative to determine if there is a difference related to the intensity used in the control arm of the trial.",
+        "name": "179785",
+        "isExample": true,
+        "profile": [
+          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-definition"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Group/179786"
+        },
+        "description": "Description: therapeutic-dose anticoagulation with heparin\nNote: Therapeutic-dose anticoagulation with unfractionated or low-molecular-weight heparin was administered according to local protocols for the treatment of acute venous thromboembolism for up to 14 days or until recovery; the latter was defined as hospital discharge or a discontinuation of supplemental oxygen for at least 24 hours.",
+        "name": "179786",
+        "isExample": true,
+        "profile": [
+          "https://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-definition"
+        ]
+      },
+      {
+        "reference": {
           "reference": "Citation/179602"
         },
         "name": "18160893 Wonder woman. Like my childhood heroine, Mrs. Betty also had amazing powers.",
@@ -1964,6 +1986,17 @@
           "reference": "EvidenceVariable/172478"
         },
         "name": "GroupAssignment: Roux-en-Y gastric bypass vs. medical treatment",
+        "isExample": true,
+        "profile": [
+          "https://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "EvidenceVariable/179784"
+        },
+        "description": "Therapeutic-dose anticoagulation with heparin vs. Usual-care pharmacologic thromboprophylaxis in multi-platform RCT of anticoagulation for non-critically ill patients with COVID-19",
+        "name": "GroupAssignment: Therapeutic-dose anticoagulation with heparin vs. Usual-care pharmacologic thromboprophylaxis",
         "isExample": true,
         "profile": [
           "https://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment"

@@ -32,6 +32,8 @@
 [179619]: Group-179619.html
 [179633]: Group-179633.html
 [179783]: Group-179783.html
+[179785]: Group-179785.html
+[179786]: Group-179786.html
 [179602]: Citation-179602.html
 [179637]: Citation-179637.html
 [179631]: Citation-179631.html
@@ -206,6 +208,7 @@
 [172479]: EvidenceVariable-172479.html
 [172481]: EvidenceVariable-172481.html
 [172478]: EvidenceVariable-172478.html
+[179784]: EvidenceVariable-179784.html
 [GroupR6]: StructureDefinition-group-r6.html
 [Guideline]: StructureDefinition-guideline.html
 [179465]: Composition-179465.html
