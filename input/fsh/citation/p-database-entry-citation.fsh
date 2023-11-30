@@ -23,7 +23,7 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The DatabaseEn
   * classification[knowledgeArtifactType]
     * classifier 1..*
     * classifier ^slicing.discriminator.type = #value
-    * classifier ^slicing.discriminator.path = "coding"
+    * classifier ^slicing.discriminator.path = "text"
     * classifier ^slicing.rules = #open
     * classifier contains databaseEntry 1..1 MS
     * classifier[databaseEntry].text = "Database Entry"
