@@ -37,11 +37,6 @@
   "differential": {
     "element": [
       {
-        "id": "Citation.jurisdiction",
-        "path": "Citation.jurisdiction",
-        "max": "0"
-      },
-      {
         "id": "Citation.citedArtifact.identifier",
         "path": "Citation.citedArtifact.identifier",
         "short": "Unique identifier. Typically the URL.",

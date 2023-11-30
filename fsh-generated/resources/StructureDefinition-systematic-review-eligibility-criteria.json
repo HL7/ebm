@@ -31,9 +31,8 @@
   "differential": {
     "element": [
       {
-        "id": "Group.membership",
-        "path": "Group.membership",
-        "patternCode": "conceptual"
+        "id": "Group",
+        "path": "Group"
       }
     ]
   }

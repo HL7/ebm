@@ -117,11 +117,6 @@
         "mustSupport": true
       },
       {
-        "id": "PlanDefinition.jurisdiction",
-        "path": "PlanDefinition.jurisdiction",
-        "max": "0"
-      },
-      {
         "id": "PlanDefinition.topic",
         "path": "PlanDefinition.topic",
         "max": "0"

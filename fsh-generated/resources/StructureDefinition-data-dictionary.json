@@ -42,11 +42,6 @@
         "min": 1
       },
       {
-        "id": "CodeSystem.jurisdiction",
-        "path": "CodeSystem.jurisdiction",
-        "max": "0"
-      },
-      {
         "id": "CodeSystem.topic",
         "path": "CodeSystem.topic",
         "max": "0"

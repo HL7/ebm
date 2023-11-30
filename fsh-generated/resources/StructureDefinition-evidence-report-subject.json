@@ -41,11 +41,6 @@
         "patternCode": "all-of"
       },
       {
-        "id": "Group.membership",
-        "path": "Group.membership",
-        "patternCode": "conceptual"
-      },
-      {
         "id": "Group.characteristic",
         "path": "Group.characteristic",
         "slicing": {

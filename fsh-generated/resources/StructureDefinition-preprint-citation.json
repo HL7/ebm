@@ -37,11 +37,6 @@
   "differential": {
     "element": [
       {
-        "id": "Citation.jurisdiction",
-        "path": "Citation.jurisdiction",
-        "max": "0"
-      },
-      {
         "id": "Citation.citedArtifact.classification",
         "path": "Citation.citedArtifact.classification",
         "slicing": {

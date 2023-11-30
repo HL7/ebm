@@ -37,63 +37,6 @@
   "differential": {
     "element": [
       {
-        "id": "Evidence.useContext",
-        "path": "Evidence.useContext",
-        "min": 2
-      },
-      {
-        "id": "Evidence.useContext:flow",
-        "path": "Evidence.useContext",
-        "sliceName": "flow",
-        "min": 1,
-        "max": "*",
-        "mustSupport": true
-      },
-      {
-        "id": "Evidence.useContext:flow.code",
-        "path": "Evidence.useContext.code",
-        "patternCoding": {
-          "code": "evidence-communication",
-          "system": "https://fevir.net/resources/CodeSystem/179423",
-          "display": "Evidence Communication"
-        }
-      },
-      {
-        "id": "Evidence.useContext:flow.value[x]",
-        "path": "Evidence.useContext.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
-        "id": "Evidence.useContext:flow.value[x]:valueCodeableConcept",
-        "path": "Evidence.useContext.value[x]",
-        "sliceName": "valueCodeableConcept",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ]
-      },
-      {
-        "id": "Evidence.useContext:flow.value[x]:valueCodeableConcept.coding",
-        "path": "Evidence.useContext.value[x].coding",
-        "patternCoding": {
-          "code": "ParticipantFlow",
-          "system": "https://fevir.net/resources/CodeSystem/179423",
-          "display": "ParticipantFlow"
-        }
-      },
-      {
         "id": "Evidence.variableDefinition",
         "path": "Evidence.variableDefinition",
         "comment": "The ParticipantFlowMeasure has variableRole of outcome."

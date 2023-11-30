@@ -37,63 +37,6 @@
   "differential": {
     "element": [
       {
-        "id": "Evidence.useContext",
-        "path": "Evidence.useContext",
-        "min": 2
-      },
-      {
-        "id": "Evidence.useContext:comparator",
-        "path": "Evidence.useContext",
-        "sliceName": "comparator",
-        "min": 1,
-        "max": "*",
-        "mustSupport": true
-      },
-      {
-        "id": "Evidence.useContext:comparator.code",
-        "path": "Evidence.useContext.code",
-        "patternCoding": {
-          "code": "evidence-communication",
-          "system": "https://fevir.net/resources/CodeSystem/179423",
-          "display": "Evidence Communication"
-        }
-      },
-      {
-        "id": "Evidence.useContext:comparator.value[x]",
-        "path": "Evidence.useContext.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
-        "id": "Evidence.useContext:comparator.value[x]:valueCodeableConcept",
-        "path": "Evidence.useContext.value[x]",
-        "sliceName": "valueCodeableConcept",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ]
-      },
-      {
-        "id": "Evidence.useContext:comparator.value[x]:valueCodeableConcept.coding",
-        "path": "Evidence.useContext.value[x].coding",
-        "patternCoding": {
-          "code": "ComparatorOnlyEvidence",
-          "system": "https://fevir.net/resources/CodeSystem/179423",
-          "display": "ComparatorOnlyEvidence"
-        }
-      },
-      {
         "id": "Evidence.variableDefinition",
         "path": "Evidence.variableDefinition",
         "comment": "To report comparator-only evidence for a research question defined by Population, Intervention, Comparator, and Outcome (PICO), one would use two variableDefinition instances. A group defined by a combination of Population and Comparator has the variableRole of population, the Intervention is not included in the ComparatorOnlyEvidence, and the Outcome has variableRole of outcome."

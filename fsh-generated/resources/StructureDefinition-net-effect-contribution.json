@@ -37,63 +37,6 @@
   "differential": {
     "element": [
       {
-        "id": "Evidence.useContext",
-        "path": "Evidence.useContext",
-        "min": 2
-      },
-      {
-        "id": "Evidence.useContext:netEffectContribution",
-        "path": "Evidence.useContext",
-        "sliceName": "netEffectContribution",
-        "min": 1,
-        "max": "*",
-        "mustSupport": true
-      },
-      {
-        "id": "Evidence.useContext:netEffectContribution.code",
-        "path": "Evidence.useContext.code",
-        "patternCoding": {
-          "code": "evidence-communication",
-          "system": "https://fevir.net/resources/CodeSystem/179423",
-          "display": "Evidence Communication"
-        }
-      },
-      {
-        "id": "Evidence.useContext:netEffectContribution.value[x]",
-        "path": "Evidence.useContext.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
-        "id": "Evidence.useContext:netEffectContribution.value[x]:valueCodeableConcept",
-        "path": "Evidence.useContext.value[x]",
-        "sliceName": "valueCodeableConcept",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ]
-      },
-      {
-        "id": "Evidence.useContext:netEffectContribution.value[x]:valueCodeableConcept.coding",
-        "path": "Evidence.useContext.value[x].coding",
-        "patternCoding": {
-          "code": "NetEffectContribution",
-          "system": "https://fevir.net/resources/CodeSystem/179423",
-          "display": "NetEffectContribution"
-        }
-      },
-      {
         "id": "Evidence.relatedArtifact",
         "path": "Evidence.relatedArtifact",
         "slicing": {

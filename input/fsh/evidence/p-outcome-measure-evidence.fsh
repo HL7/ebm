@@ -2,13 +2,6 @@ Profile: OutcomeMeasureEvidence
 Parent: EvidenceR6
 Id: outcome-measure-evidence
 Description: "Profile of Evidence for Evidence Based Medicine IG. The OutcomeMeasureEvidence Profile is used for evidence with a measured variable that is considered the outcome of an exposure or intervention." 
-* useContext 1..*
-* useContext ^slicing.discriminator.type = #value
-* useContext ^slicing.discriminator.path = "valueCodeableConcept"
-* useContext ^slicing.rules = #open
-* useContext contains outcome 1..* MS
-* useContext[outcome].code = https://fevir.net/resources/CodeSystem/179423#evidence-communication "Evidence Communication"
-* useContext[outcome].valueCodeableConcept.coding = https://fevir.net/resources/CodeSystem/179423#OutcomeMeasureEvidence "OutcomeMeasureEvidence"
 * variableDefinition 2..*
   * ^comment = "The Outcome has variableRole of outcome."
 * variableDefinition ^slicing.discriminator.type = #value

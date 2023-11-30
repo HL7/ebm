@@ -42,11 +42,6 @@
   "differential": {
     "element": [
       {
-        "id": "ActivityDefinition.jurisdiction",
-        "path": "ActivityDefinition.jurisdiction",
-        "max": "0"
-      },
-      {
         "id": "ActivityDefinition.topic",
         "path": "ActivityDefinition.topic",
         "max": "0"

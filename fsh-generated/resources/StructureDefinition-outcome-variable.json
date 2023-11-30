@@ -37,70 +37,8 @@
   "differential": {
     "element": [
       {
-        "id": "EvidenceVariable.useContext",
-        "path": "EvidenceVariable.useContext",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "valueCodeableConcept"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 1
-      },
-      {
-        "id": "EvidenceVariable.useContext:outcome",
-        "path": "EvidenceVariable.useContext",
-        "sliceName": "outcome",
-        "min": 1,
-        "max": "*",
-        "mustSupport": true
-      },
-      {
-        "id": "EvidenceVariable.useContext:outcome.code",
-        "path": "EvidenceVariable.useContext.code",
-        "patternCoding": {
-          "code": "evidence-communication",
-          "system": "https://fevir.net/resources/CodeSystem/179423",
-          "display": "Evidence Communication"
-        }
-      },
-      {
-        "id": "EvidenceVariable.useContext:outcome.value[x]",
-        "path": "EvidenceVariable.useContext.value[x]",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "type",
-              "path": "$this"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
-        "id": "EvidenceVariable.useContext:outcome.value[x]:valueCodeableConcept",
-        "path": "EvidenceVariable.useContext.value[x]",
-        "sliceName": "valueCodeableConcept",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "CodeableConcept"
-          }
-        ]
-      },
-      {
-        "id": "EvidenceVariable.useContext:outcome.value[x]:valueCodeableConcept.coding",
-        "path": "EvidenceVariable.useContext.value[x].coding",
-        "patternCoding": {
-          "code": "OutcomeVariable",
-          "system": "https://fevir.net/resources/CodeSystem/179423",
-          "display": "OutcomeVariable"
-        }
+        "id": "EvidenceVariable",
+        "path": "EvidenceVariable"
       }
     ]
   }

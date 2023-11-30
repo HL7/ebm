@@ -4,7 +4,7 @@
   "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group",
   "name": "MetaanalysisStudyGroup",
   "status": "draft",
-  "description": "Profile of Group for Evidence Based Medicine IG. The MetaanalysisStudyGroup Profile is used to represent an enumerated group of participants in a meta-analysis where the participants are Evidence Resources and the Group membership is conceptual.",
+  "description": "Profile of Group for Evidence Based Medicine IG. The MetaanalysisStudyGroup Profile is used to represent an enumerated group of participants in a meta-analysis where the participants are Evidence Resources.",
   "fhirVersion": "5.0.0",
   "mapping": [
     {
@@ -33,7 +33,7 @@
       {
         "id": "Group.membership",
         "path": "Group.membership",
-        "patternCode": "conceptual"
+        "patternCode": "enumerated"
       },
       {
         "id": "Group.code.text",

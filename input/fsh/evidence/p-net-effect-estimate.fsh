@@ -2,13 +2,6 @@ Profile: NetEffectEstimate
 Parent: EvidenceR6
 Id: net-effect-estimate
 Description: "Profile of Evidence for Evidence Based Medicine IG. The NetEffectEstimate Profile is used for evidence in which the observed data is net effect contributions (effect estimates expressed as risk differences, multiplied by relative importance ratings of outcomes)."
-* useContext 1..*
-* useContext ^slicing.discriminator.type = #value
-* useContext ^slicing.discriminator.path = "valueCodeableConcept"
-* useContext ^slicing.rules = #open
-* useContext contains netEffect 1..* MS
-* useContext[netEffect].code = https://fevir.net/resources/CodeSystem/179423#evidence-communication "Evidence Communication"
-* useContext[netEffect].valueCodeableConcept.coding = https://fevir.net/resources/CodeSystem/179423#NetEffectEstimate "NetEffectEstimate"
 * variableDefinition 2..*
 * variableDefinition ^slicing.discriminator.type = #value
 * variableDefinition ^slicing.discriminator.path = "extension(url : variableRoleCode).valueCode"

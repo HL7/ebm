@@ -4,7 +4,7 @@
   "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contributions",
   "name": "NetEffectContributions",
   "status": "draft",
-  "description": "Profile of Group for Evidence Based Medicine IG. The NetEffectContributions Profile is used to represent an enumerated group of participants in a net effect analysis where the participants are Evidence Resources (NetEffectContribution Profile) and the Group membership is conceptual.",
+  "description": "Profile of Group for Evidence Based Medicine IG. The NetEffectContributions Profile is used to represent an enumerated group of participants in a net effect analysis where the participants are Evidence Resources (NetEffectContribution Profile).",
   "fhirVersion": "5.0.0",
   "mapping": [
     {
@@ -33,7 +33,7 @@
       {
         "id": "Group.membership",
         "path": "Group.membership",
-        "patternCode": "conceptual"
+        "patternCode": "enumerated"
       },
       {
         "id": "Group.code.text",

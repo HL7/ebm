@@ -2,13 +2,6 @@ Profile: NetEffectContribution
 Parent: ComparativeEvidence
 Id: net-effect-contribution
 Description: "Profile of Evidence for Evidence Based Medicine IG. The NetEffectContribution Profile is used for evidence in which the effect estimates, expressed as risk differences, is multiplied by a relative importance rating of the outcomes."
-* useContext 1..*
-* useContext ^slicing.discriminator.type = #value
-* useContext ^slicing.discriminator.path = "valueCodeableConcept"
-* useContext ^slicing.rules = #open
-* useContext contains netEffectContribution 1..* MS
-* useContext[netEffectContribution].code = https://fevir.net/resources/CodeSystem/179423#evidence-communication "Evidence Communication"
-* useContext[netEffectContribution].valueCodeableConcept.coding = https://fevir.net/resources/CodeSystem/179423#NetEffectContribution "NetEffectContribution"
 * relatedArtifact 1..*
 * relatedArtifact ^slicing.discriminator.type = #value
 * relatedArtifact ^slicing.discriminator.path = "type"
