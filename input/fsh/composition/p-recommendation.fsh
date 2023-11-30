@@ -14,7 +14,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Recomme
 * relatesTo ^slicing.rules = #open
 * relatesTo contains derivedFrom 1..* MS
 * relatesTo[derivedFrom].type = http://hl7.org/fhir/related-artifact-type#derived-from
-* relatesTo[derivedFrom].resourceReference only Reference(RecommendationJustification or PlanDefinition)
+* relatesTo[derivedFrom].resourceReference only Reference(RecommendationJustification or PlanDefinition or Composition)
 * section 1..5
 * section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code"
