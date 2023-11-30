@@ -50,7 +50,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
     * text 1..1
     * text ^comment = "Describe the criteria for participant withdrawal from the trial. Describe the reason for withdrawal and the type and data to be collected for the final assessments with reference to the schedule of activities for the participant end of study visit unless provided in another section."
   * section[lostToFollowUp].title = "Lost to Follow-Up"
-  * section[lostToFollowUp].code.text = "section7.3-lost-to-follow-Up"
+  * section[lostToFollowUp].code.text = "section7.3-lost-to-follow-up"
   * section[lostToFollowUp]
     * text 1..1
     * text ^comment = "Describe the measures to be taken to reduce the frequency of participants lost to follow up. Describe how the trial will define and address participants who are lost to follow-up to help limit the amount and impact of missing data. Describe the nature and duration of follow-up, as appropriate."
