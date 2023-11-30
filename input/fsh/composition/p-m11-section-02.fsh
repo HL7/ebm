@@ -63,7 +63,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
         * text 1..1
         * text ^comment = "Other - Consider risks associated with other items (for example, comparators, challenge agents, imaging agents, medical devices).  Insert a line for each, as needed."
     * section[overallBenefitRisk].title = "Overall Benefit:Risk Conclusion"
-    * section[overallBenefitRisk].code.text = "section2.23-overall-benefit-risk-conclusion"
+    * section[overallBenefitRisk].code.text = "section2.2.3-overall-benefit-risk-conclusion"
     * section[overallBenefitRisk]
       * text 1..1
       * text ^comment = "Provide a succinct, concluding statement on the perceived balance between risks that have been identified from cumulative safety data, protocol procedures, and anticipated efficacy/benefits within the context of the proposed trial. Risks need to be assessed against the benefits for the individual participant at least once a year."
