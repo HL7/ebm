@@ -350,7 +350,7 @@
       {
         "id": "Composition.section:introduction.section:benefitsAndRisks.section:overallBenefitRisk.code.text",
         "path": "Composition.section.section.section.code.text",
-        "patternString": "section2.23-overall-benefit-risk-conclusion"
+        "patternString": "section2.2.3-overall-benefit-risk-conclusion"
       },
       {
         "id": "Composition.section:introduction.section:benefitsAndRisks.section:overallBenefitRisk.text",

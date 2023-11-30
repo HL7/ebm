@@ -109,7 +109,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "coding"
+              "path": "text"
             }
           ],
           "rules": "open"
@@ -127,6 +127,7 @@
       {
         "id": "Citation.citedArtifact.classification:knowledgeArtifactType.classifier:bookPart.text",
         "path": "Citation.citedArtifact.classification.classifier.text",
+        "min": 1,
         "patternString": "Book Part"
       },
       {
