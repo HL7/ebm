@@ -2,7 +2,6 @@ Profile: NonComparativeEvidence
 Parent: EvidenceR6
 Id: non-comparative-evidence
 Description: "Profile of Evidence for Evidence Based Medicine IG. The NonComparativeEvidence Profile is used for evidence about a single group with no comparisons between groups." 
-/*
 * variableDefinition 2..*
 * variableDefinition ^slicing.discriminator.type = #value
 * variableDefinition ^slicing.discriminator.path = "extension[url : variableRoleCode].valueCode"
@@ -16,4 +15,3 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The NonCompara
   * extension[VariableDefinitionVariableRoleCode].valueCode = #outcome
   * observed only Reference(OutcomeVariable or ExposureVariable or ParticipantFlowMeasure)
   * intended only Reference(EvidenceVariable)
-*/

@@ -10,7 +10,6 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The NetEffectC
 * relatedArtifact[amendedWith].type = #amended-with
 * relatedArtifact[amendedWith]
   * resourceReference only Reference(OutcomeImportance)
-  /*
 * variableDefinition ^slicing.discriminator.type = #value
 * variableDefinition ^slicing.discriminator.path = "extension[url : variableRoleCode].valueCode"
 * variableDefinition ^slicing.rules = #open
@@ -20,7 +19,6 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The NetEffectC
   * extension[VariableDefinitionRoleSubtype].valueCodeableConcept.text = "Relative Value Multiplier"
   * observed.display = "Relative Importance Multiplier"
   * intended 0..0
-  */
 * statistic 1..*
 * statistic ^slicing.discriminator.type = #value
 * statistic ^slicing.discriminator.path = "statisticType"
