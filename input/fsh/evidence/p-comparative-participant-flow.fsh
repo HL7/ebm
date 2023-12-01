@@ -8,5 +8,4 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The Comparativ
   * directnessMatch 0..0
 * variableDefinition[outcome]
   * observed only Reference(ParticipantFlowMeasure)
-* statistic.numberAffected 0..0
-* statistic.modelCharacteristic 0..0
+
