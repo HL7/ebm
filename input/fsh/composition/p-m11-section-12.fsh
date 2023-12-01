@@ -27,12 +27,12 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
     * text 1..1
     * text ^comment = "Describe how the critical to quality factors will be mitigated. It is important to determine the risks that threaten their integrity and decide whether they can be accepted or should be mitigated, based on their probability, detectability and impact. Where it is decided that risks should be mitigated, the necessary control processes should be put in place and communicated, and the necessary actions taken to mitigate the risks."
   * section[dataGovernance].title = "Data Governance"
-  * section[dataGovernance].code.text = "section11.2-data-governance"
+  * section[dataGovernance].code.text = "section12.2-data-governance"
   * section[dataGovernance]
     * text 1..1
     * text ^comment = "Describe the key processes for critical trial integrity, traceability and security enabling accurate collection, reporting, monitoring, transfer, retention, access and publication if not addressed in separate agreement(s). Describe the measures to protect the privacy and confidentiality of personal information of trial participants in accordance with applicable regulatory requirements on personal data protection and any measures that should be taken in case of a data security breach."
   * section[sourceData].title = "Source Data"
-  * section[sourceData].code.text = "section11.3-source-data"
+  * section[sourceData].code.text = "section12.3-source-data"
   * section[sourceData]
     * text 1..1
     * text ^comment = "Establish the importance of source data and expectation for traceability of transcribed information back to source.  Delineate expectations for investigators (for example, maintain source data at the site, ensure availability of current records) and trial monitors (for example, verify CRF data relative to source, safety of participants is being protected, conduct is in accordance with GCP).  Define what constitutes source data and its origin or provide a reference to the location of these definitions, if contained in a separate document, such as a monitoring guideline or source data acknowledgement). Describe the provision for direct access to source data and documents enabling clinical trial-related monitoring, audits and regulatory inspections, if not included in separate agreement(s)."
