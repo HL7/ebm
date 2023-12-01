@@ -31,8 +31,6 @@ Description: "Profile of PlanDefinition for Evidence Based Medicine IG. The Reco
 * action.timing[x] MS
 * action.participant MS
 * action.participant.role MS
-* action.participant.role from $cpg-common-persona (preferred)
-* action.participant.role ^binding.description = "Personas used in identifying participants and their roles in computable content"
 * action.type MS
 * action.input ^short = "Pertinent positives and negatives relevant to determining applicability"
 * action.input ^definition = "For recommendation definitions, the input information for an action identifies pertinent positive and negative information relevant to determining the applicability of the recommendation."
