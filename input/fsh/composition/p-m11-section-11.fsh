@@ -74,7 +74,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
     * section[rescreening]
       * text 1..1
       * text ^comment = "If participants can be rescreened, add the text to state whether the participant needs to complete a new consent.  Screen failure and rescreening should be clearly defined in the protocol, with cross-reference to those definitions."
-    * section[remainingSamples].title = "Informed Consent for Rescreening"
+    * section[remainingSamples].title = "Informed Consent for Remaining Samples"
     * section[remainingSamples].code.text = "section11.4.2-remaining-samples"
     * section[remainingSamples]
       * text 1..1
