@@ -5,7 +5,7 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The OutcomeMea
 * variableDefinition 2..*
   * ^comment = "The Outcome has variableRole of outcome."
 * variableDefinition ^slicing.discriminator.type = #value
-* variableDefinition ^slicing.discriminator.path = "extension:variableRoleCode.valueCode"
+* variableDefinition ^slicing.discriminator.path = "extension.valueCode"
 * variableDefinition ^slicing.rules = #open
 * variableDefinition contains population 1..* MS and outcome 1..* MS
 * variableDefinition[population]
