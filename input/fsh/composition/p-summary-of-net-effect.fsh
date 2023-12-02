@@ -4,7 +4,7 @@ Id: summary-of-net-effect
 Description: "Profile of Composition for Evidence Based Medicine IG. The SummaryOfNetEffect Profile is used for an evidence report combining ArtifactAssessment and Evidence and EvidenceVariable Resources, organized around OutcomeVariable (Profile of EvidenceVariable), to represent the summary of net effect contributions of comparative evidence, adjusted for the relative importance of outcomes."
 * category 1..*
 * category ^slicing.discriminator.type = #value
-* category ^slicing.discriminator.path = "text"
+* category ^slicing.discriminator.path = "coding"
 * category ^slicing.rules = #open
 * category contains summaryOfNetEffect 1..1 MS
 * category[summaryOfNetEffect].coding = https://fevir.net/resources/CodeSystem/179423#SummaryOfNetEffect "SummaryOfNetEffect"

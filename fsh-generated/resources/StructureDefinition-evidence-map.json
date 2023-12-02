@@ -47,7 +47,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "text"
+              "path": "coding"
             }
           ],
           "rules": "open"
@@ -65,6 +65,7 @@
       {
         "id": "Composition.category:evidenceMap.coding",
         "path": "Composition.category.coding",
+        "min": 1,
         "patternCoding": {
           "code": "EvidenceMap",
           "system": "https://fevir.net/resources/CodeSystem/179423",

@@ -2162,7 +2162,7 @@
         "name": "InterventionOnlyEvidence: Treatment with opioids with bariatric surgery (Intervention Group) in JAMA 2018 Norwegian cohort study",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/intervention-only-evidence"
+          "https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-measure-evidence"
         ]
       },
       {
