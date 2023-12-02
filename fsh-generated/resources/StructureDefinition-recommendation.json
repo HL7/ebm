@@ -120,7 +120,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "code"
+              "path": "code.coding"
             }
           ],
           "rules": "closed"
@@ -137,17 +137,13 @@
         "mustSupport": true
       },
       {
-        "id": "Composition.section:recommendationSpecification.code",
-        "path": "Composition.section.code",
+        "id": "Composition.section:recommendationSpecification.code.coding",
+        "path": "Composition.section.code.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "recommendation-specification",
-              "system": "https://fevir.net/resources/CodeSystem/179423",
-              "display": "Recommendation Specification"
-            }
-          ]
+        "patternCoding": {
+          "code": "recommendation-specification",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Recommendation Specification"
         }
       },
       {
@@ -157,7 +153,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "code"
+              "path": "code.coding"
             }
           ],
           "rules": "open"
@@ -179,6 +175,7 @@
       {
         "id": "Composition.section:recommendationSpecification.section:recommendationStatement.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "recommendation-statement",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -200,6 +197,7 @@
       {
         "id": "Composition.section:recommendationSpecification.section:ratingSystem.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "rating-system",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -221,6 +219,7 @@
       {
         "id": "Composition.section:recommendationSpecification.section:strengthOfRecommendationRating.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "strength-of-recommendation",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -242,6 +241,7 @@
       {
         "id": "Composition.section:recommendationSpecification.section:directionOfRecommendation.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "direction-of-recommendation",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -263,6 +263,7 @@
       {
         "id": "Composition.section:recommendationSpecification.section:otherRating.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "ratings",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -284,6 +285,7 @@
       {
         "id": "Composition.section:recommendationSpecification.section:overallRelatedItems.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "related-items",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -305,6 +307,7 @@
       {
         "id": "Composition.section:recommendationSpecification.section:discussion.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "discussion",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -326,6 +329,7 @@
       {
         "id": "Composition.section:recommendationSpecification.section:population.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "population",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -347,6 +351,7 @@
       {
         "id": "Composition.section:recommendationSpecification.section:action.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "action",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -368,6 +373,7 @@
       {
         "id": "Composition.section:recommendationSpecification.section:oppositeAction.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "opposite-action",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -389,6 +395,7 @@
       {
         "id": "Composition.section:recommendationSpecification.section:dataSource.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "data-source",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -404,17 +411,13 @@
         "mustSupport": true
       },
       {
-        "id": "Composition.section:evidence.code",
-        "path": "Composition.section.code",
+        "id": "Composition.section:evidence.code.coding",
+        "path": "Composition.section.code.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "evidence",
-              "system": "https://fevir.net/resources/CodeSystem/179423",
-              "display": "Evidence"
-            }
-          ]
+        "patternCoding": {
+          "code": "evidence",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Evidence"
         }
       },
       {
@@ -424,7 +427,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "code"
+              "path": "code.coding"
             }
           ],
           "rules": "open"
@@ -445,6 +448,7 @@
       {
         "id": "Composition.section:evidence.section:summaryOfFindings.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "summary-of-findings",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -458,7 +462,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "code"
+              "path": "code.coding"
             }
           ],
           "rules": "open"
@@ -479,6 +483,7 @@
       {
         "id": "Composition.section:evidence.section:summaryOfFindings.section:summaryOfFindingsRatings.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "ratings",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -500,6 +505,7 @@
       {
         "id": "Composition.section:evidence.section:summaryOfFindings.section:summaryOfFindingsRelatedItems.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "related-items",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -521,6 +527,7 @@
       {
         "id": "Composition.section:evidence.section:desirableSummary.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "desirable-effects",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -534,7 +541,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "code"
+              "path": "code.coding"
             }
           ],
           "rules": "open"
@@ -555,6 +562,7 @@
       {
         "id": "Composition.section:evidence.section:desirableSummary.section:desirableRatings.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "ratings",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -576,6 +584,7 @@
       {
         "id": "Composition.section:evidence.section:desirableSummary.section:desirableRelatedItems.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "related-items",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -597,6 +606,7 @@
       {
         "id": "Composition.section:evidence.section:undesirableSummary.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "undesirable-effects",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -610,7 +620,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "code"
+              "path": "code.coding"
             }
           ],
           "rules": "open"
@@ -631,6 +641,7 @@
       {
         "id": "Composition.section:evidence.section:undesirableSummary.section:undesirableRatings.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "ratings",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -652,6 +663,7 @@
       {
         "id": "Composition.section:evidence.section:undesirableSummary.section:undesirableRelatedItems.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "related-items",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -673,6 +685,7 @@
       {
         "id": "Composition.section:evidence.section:discussion.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "discussion",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -694,6 +707,7 @@
       {
         "id": "Composition.section:evidence.section:dataSource.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "data-source",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -709,17 +723,13 @@
         "mustSupport": true
       },
       {
-        "id": "Composition.section:netEffect.code",
-        "path": "Composition.section.code",
+        "id": "Composition.section:netEffect.code.coding",
+        "path": "Composition.section.code.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "net-effect",
-              "system": "https://fevir.net/resources/CodeSystem/179423",
-              "display": "Net Effect"
-            }
-          ]
+        "patternCoding": {
+          "code": "net-effect",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Net Effect"
         }
       },
       {
@@ -729,7 +739,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "code"
+              "path": "code.coding"
             }
           ],
           "rules": "open"
@@ -750,6 +760,7 @@
       {
         "id": "Composition.section:netEffect.section:netEffectSummary.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "summary",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -771,6 +782,7 @@
       {
         "id": "Composition.section:netEffect.section:netEffectRatings.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "ratings",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -792,6 +804,7 @@
       {
         "id": "Composition.section:netEffect.section:netEffectRelatedItems.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "related-items",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -813,6 +826,7 @@
       {
         "id": "Composition.section:netEffect.section:preferencesSummary.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "preferences",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -826,7 +840,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "code"
+              "path": "code.coding"
             }
           ],
           "rules": "open"
@@ -847,6 +861,7 @@
       {
         "id": "Composition.section:netEffect.section:preferencesSummary.section:preferencesRatings.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "ratings",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -868,6 +883,7 @@
       {
         "id": "Composition.section:netEffect.section:preferencesSummary.section:preferencesRelatedItems.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "related-items",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -889,6 +905,7 @@
       {
         "id": "Composition.section:netEffect.section:discussion.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "discussion",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -910,6 +927,7 @@
       {
         "id": "Composition.section:netEffect.section:dataSource.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "data-source",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -927,6 +945,7 @@
       {
         "id": "Composition.section:judgments.code.coding",
         "path": "Composition.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "judgments",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -940,7 +959,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "code"
+              "path": "code.coding"
             }
           ],
           "rules": "open"
@@ -961,6 +980,7 @@
       {
         "id": "Composition.section:judgments.section:overallJustificationSummary.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "justification",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -974,7 +994,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "code"
+              "path": "code.coding"
             }
           ],
           "rules": "open"
@@ -995,6 +1015,7 @@
       {
         "id": "Composition.section:judgments.section:overallJustificationSummary.section:overallJustificationRatings.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "ratings",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -1016,6 +1037,7 @@
       {
         "id": "Composition.section:judgments.section:overallJustificationSummary.section:overallJustificationRelatedItems.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "related-items",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -1037,6 +1059,7 @@
       {
         "id": "Composition.section:judgments.section:problemImportanceSummary.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "problem-importance",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -1050,7 +1073,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "code"
+              "path": "code.coding"
             }
           ],
           "rules": "open"
@@ -1071,6 +1094,7 @@
       {
         "id": "Composition.section:judgments.section:problemImportanceSummary.section:problemImportanceRatings.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "ratings",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -1092,6 +1116,7 @@
       {
         "id": "Composition.section:judgments.section:problemImportanceSummary.section:problemImportanceRelatedItems.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "related-items",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -1113,6 +1138,7 @@
       {
         "id": "Composition.section:judgments.section:costsSummary.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "costs",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -1126,7 +1152,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "code"
+              "path": "code.coding"
             }
           ],
           "rules": "open"
@@ -1147,6 +1173,7 @@
       {
         "id": "Composition.section:judgments.section:costsSummary.section:costsRatings.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "ratings",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -1168,6 +1195,7 @@
       {
         "id": "Composition.section:judgments.section:costsSummary.section:costsRelatedItems.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "related-items",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -1189,6 +1217,7 @@
       {
         "id": "Composition.section:judgments.section:costEffectivenessSummary.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "cost-effectiveness",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -1202,7 +1231,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "code"
+              "path": "code.coding"
             }
           ],
           "rules": "open"
@@ -1223,6 +1252,7 @@
       {
         "id": "Composition.section:judgments.section:costEffectivenessSummary.section:costEffectivenessRatings.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "ratings",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -1244,6 +1274,7 @@
       {
         "id": "Composition.section:judgments.section:costEffectivenessSummary.section:costEffectivenessRelatedItems.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "related-items",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -1265,6 +1296,7 @@
       {
         "id": "Composition.section:judgments.section:equitySummary.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "equity",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -1278,7 +1310,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "code"
+              "path": "code.coding"
             }
           ],
           "rules": "open"
@@ -1299,6 +1331,7 @@
       {
         "id": "Composition.section:judgments.section:equitySummary.section:equityRatings.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "ratings",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -1320,6 +1353,7 @@
       {
         "id": "Composition.section:judgments.section:equitySummary.section:equityRelatedItems.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "related-items",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -1341,6 +1375,7 @@
       {
         "id": "Composition.section:judgments.section:acceptabilitySummary.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "acceptability",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -1354,7 +1389,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "code"
+              "path": "code.coding"
             }
           ],
           "rules": "open"
@@ -1375,6 +1410,7 @@
       {
         "id": "Composition.section:judgments.section:acceptabilitySummary.section:acceptabilityRatings.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "ratings",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -1396,6 +1432,7 @@
       {
         "id": "Composition.section:judgments.section:acceptabilitySummary.section:acceptabilityRelatedItems.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "related-items",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -1417,6 +1454,7 @@
       {
         "id": "Composition.section:judgments.section:feasibilitySummary.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "feasibility",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -1430,7 +1468,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "code"
+              "path": "code.coding"
             }
           ],
           "rules": "open"
@@ -1451,6 +1489,7 @@
       {
         "id": "Composition.section:judgments.section:feasibilitySummary.section:feasibilityRatings.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "ratings",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -1472,6 +1511,7 @@
       {
         "id": "Composition.section:judgments.section:feasibilitySummary.section:feasibilityRelatedItems.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "related-items",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -1489,6 +1529,7 @@
       {
         "id": "Composition.section:considerations.code.coding",
         "path": "Composition.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "considerations",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -1502,7 +1543,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "code"
+              "path": "code.coding"
             }
           ],
           "rules": "open"
@@ -1523,6 +1564,7 @@
       {
         "id": "Composition.section:considerations.section:overallConsiderationsSummary.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "summary",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -1545,6 +1587,7 @@
       {
         "id": "Composition.section:considerations.section:overallConsiderationsRatings.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "ratings",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -1566,6 +1609,7 @@
       {
         "id": "Composition.section:considerations.section:overallConsiderationsRelatedItems.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "related-items",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -1587,6 +1631,7 @@
       {
         "id": "Composition.section:considerations.section:subgroupSummary.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "subgroup-considerations",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -1600,7 +1645,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "code"
+              "path": "code.coding"
             }
           ],
           "rules": "open"
@@ -1621,6 +1666,7 @@
       {
         "id": "Composition.section:considerations.section:subgroupSummary.section:subgroupRatings.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "ratings",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -1642,6 +1688,7 @@
       {
         "id": "Composition.section:considerations.section:subgroupSummary.section:subgroupRelatedItems.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "related-items",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -1663,6 +1710,7 @@
       {
         "id": "Composition.section:considerations.section:implementationSummary.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "implementation-considerations",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -1676,7 +1724,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "code"
+              "path": "code.coding"
             }
           ],
           "rules": "open"
@@ -1697,6 +1745,7 @@
       {
         "id": "Composition.section:considerations.section:implementationSummary.section:implementationRatings.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "ratings",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -1718,6 +1767,7 @@
       {
         "id": "Composition.section:considerations.section:implementationSummary.section:implementationRelatedItems.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "related-items",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -1739,6 +1789,7 @@
       {
         "id": "Composition.section:considerations.section:monitoringSummary.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "monitoring-considerations",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -1752,7 +1803,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "code"
+              "path": "code.coding"
             }
           ],
           "rules": "open"
@@ -1773,6 +1824,7 @@
       {
         "id": "Composition.section:considerations.section:monitoringSummary.section:monitoringRatings.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "ratings",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -1794,6 +1846,7 @@
       {
         "id": "Composition.section:considerations.section:monitoringSummary.section:monitoringRelatedItems.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "related-items",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -1815,6 +1868,7 @@
       {
         "id": "Composition.section:considerations.section:competingSummary.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "competing-interests",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -1828,7 +1882,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "code"
+              "path": "code.coding"
             }
           ],
           "rules": "open"
@@ -1849,6 +1903,7 @@
       {
         "id": "Composition.section:considerations.section:competingSummary.section:competingRatings.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "ratings",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -1870,6 +1925,7 @@
       {
         "id": "Composition.section:considerations.section:competingSummary.section:competingRelatedItems.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "related-items",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -1891,6 +1947,7 @@
       {
         "id": "Composition.section:considerations.section:researchSummary.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "research-considerations",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -1904,7 +1961,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "code"
+              "path": "code.coding"
             }
           ],
           "rules": "open"
@@ -1925,6 +1982,7 @@
       {
         "id": "Composition.section:considerations.section:researchSummary.section:researchRatings.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "ratings",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -1946,6 +2004,7 @@
       {
         "id": "Composition.section:considerations.section:researchSummary.section:researchRelatedItems.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "related-items",
           "system": "https://fevir.net/resources/CodeSystem/179423",

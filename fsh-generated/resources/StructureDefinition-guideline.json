@@ -78,7 +78,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "code"
+              "path": "code.coding"
             }
           ],
           "rules": "closed"
@@ -95,17 +95,13 @@
         "mustSupport": true
       },
       {
-        "id": "Composition.section:introduction.code",
-        "path": "Composition.section.code",
+        "id": "Composition.section:introduction.code.coding",
+        "path": "Composition.section.code.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "introduction",
-              "system": "https://fevir.net/resources/CodeSystem/179423",
-              "display": "Introduction"
-            }
-          ]
+        "patternCoding": {
+          "code": "introduction",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Introduction"
         }
       },
       {
@@ -117,17 +113,13 @@
         "mustSupport": true
       },
       {
-        "id": "Composition.section:recommendations.code",
-        "path": "Composition.section.code",
+        "id": "Composition.section:recommendations.code.coding",
+        "path": "Composition.section.code.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "recommendations",
-              "system": "https://fevir.net/resources/CodeSystem/179423",
-              "display": "Recommendations"
-            }
-          ]
+        "patternCoding": {
+          "code": "recommendations",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Recommendations"
         }
       },
       {
@@ -151,17 +143,13 @@
         "mustSupport": true
       },
       {
-        "id": "Composition.section:text.code",
-        "path": "Composition.section.code",
+        "id": "Composition.section:text.code.coding",
+        "path": "Composition.section.code.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "text",
-              "system": "https://fevir.net/resources/CodeSystem/179423",
-              "display": "Text"
-            }
-          ]
+        "patternCoding": {
+          "code": "text",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Text"
         }
       },
       {
@@ -173,17 +161,13 @@
         "mustSupport": true
       },
       {
-        "id": "Composition.section:methods.code",
-        "path": "Composition.section.code",
+        "id": "Composition.section:methods.code.coding",
+        "path": "Composition.section.code.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "methods",
-              "system": "https://fevir.net/resources/CodeSystem/179423",
-              "display": "Methods"
-            }
-          ]
+        "patternCoding": {
+          "code": "methods",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Methods"
         }
       },
       {
@@ -195,17 +179,13 @@
         "mustSupport": true
       },
       {
-        "id": "Composition.section:acknowledgements.code",
-        "path": "Composition.section.code",
+        "id": "Composition.section:acknowledgements.code.coding",
+        "path": "Composition.section.code.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "acknowledgements",
-              "system": "https://fevir.net/resources/CodeSystem/179423",
-              "display": "Acknowledgements"
-            }
-          ]
+        "patternCoding": {
+          "code": "acknowledgements",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Acknowledgements"
         }
       },
       {
@@ -217,17 +197,13 @@
         "mustSupport": true
       },
       {
-        "id": "Composition.section:appendices.code",
-        "path": "Composition.section.code",
+        "id": "Composition.section:appendices.code.coding",
+        "path": "Composition.section.code.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "appendices",
-              "system": "https://fevir.net/resources/CodeSystem/179423",
-              "display": "Appendices"
-            }
-          ]
+        "patternCoding": {
+          "code": "appendices",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Appendices"
         }
       }
     ]

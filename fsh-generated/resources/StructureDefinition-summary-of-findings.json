@@ -84,7 +84,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "code"
+              "path": "code.coding"
             }
           ],
           "rules": "open"
@@ -100,17 +100,13 @@
         "mustSupport": true
       },
       {
-        "id": "Composition.section:columnHeaders.code",
-        "path": "Composition.section.code",
+        "id": "Composition.section:columnHeaders.code.coding",
+        "path": "Composition.section.code.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "column-headers",
-              "system": "https://fevir.net/resources/CodeSystem/179423",
-              "display": "Column Headers"
-            }
-          ]
+        "patternCoding": {
+          "code": "column-headers",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Column Headers"
         }
       },
       {
@@ -120,7 +116,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "code"
+              "path": "code.coding"
             }
           ],
           "rules": "open"
@@ -141,17 +137,13 @@
         "mustSupport": true
       },
       {
-        "id": "Composition.section:columnHeaders.section:outcomeDefinition.code",
-        "path": "Composition.section.section.code",
+        "id": "Composition.section:columnHeaders.section:outcomeDefinition.code.coding",
+        "path": "Composition.section.section.code.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "outcome-measure",
-              "system": "https://fevir.net/resources/CodeSystem/179423",
-              "display": "Outcome Measure"
-            }
-          ]
+        "patternCoding": {
+          "code": "outcome-measure",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Outcome Measure"
         }
       },
       {
@@ -167,17 +159,13 @@
         ]
       },
       {
-        "id": "Composition.section:columnHeaders.section:sampleSize.code",
-        "path": "Composition.section.section.code",
+        "id": "Composition.section:columnHeaders.section:sampleSize.code.coding",
+        "path": "Composition.section.section.code.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "sample-size",
-              "system": "https://fevir.net/resources/CodeSystem/179423",
-              "display": "Sample Size"
-            }
-          ]
+        "patternCoding": {
+          "code": "sample-size",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Sample Size"
         }
       },
       {
@@ -193,17 +181,13 @@
         ]
       },
       {
-        "id": "Composition.section:columnHeaders.section:resultWithoutTreatment.code",
-        "path": "Composition.section.section.code",
+        "id": "Composition.section:columnHeaders.section:resultWithoutTreatment.code.coding",
+        "path": "Composition.section.section.code.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "result-with-comparator-alone",
-              "system": "https://fevir.net/resources/CodeSystem/179423",
-              "display": "Result with comparator alone"
-            }
-          ]
+        "patternCoding": {
+          "code": "result-with-comparator-alone",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Result with comparator alone"
         }
       },
       {
@@ -219,17 +203,13 @@
         ]
       },
       {
-        "id": "Composition.section:columnHeaders.section:resultWithTreatmentObserved.code",
-        "path": "Composition.section.section.code",
+        "id": "Composition.section:columnHeaders.section:resultWithTreatmentObserved.code.coding",
+        "path": "Composition.section.section.code.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "result-with-intervention-alone",
-              "system": "https://fevir.net/resources/CodeSystem/179423",
-              "display": "Result with intervention alone"
-            }
-          ]
+        "patternCoding": {
+          "code": "result-with-intervention-alone",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Result with intervention alone"
         }
       },
       {
@@ -245,17 +225,13 @@
         ]
       },
       {
-        "id": "Composition.section:columnHeaders.section:resultWithTreatmentDerived.code",
-        "path": "Composition.section.section.code",
+        "id": "Composition.section:columnHeaders.section:resultWithTreatmentDerived.code.coding",
+        "path": "Composition.section.section.code.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "result-with-intervention-alone-calculated",
-              "system": "https://fevir.net/resources/CodeSystem/179423",
-              "display": "Result with intervention alone (calculated)"
-            }
-          ]
+        "patternCoding": {
+          "code": "result-with-intervention-alone-calculated",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Result with intervention alone (calculated)"
         }
       },
       {
@@ -271,17 +247,13 @@
         ]
       },
       {
-        "id": "Composition.section:columnHeaders.section:effectEstimate.code",
-        "path": "Composition.section.section.code",
+        "id": "Composition.section:columnHeaders.section:effectEstimate.code.coding",
+        "path": "Composition.section.section.code.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "result-with-intervention-vs-comparator",
-              "system": "https://fevir.net/resources/CodeSystem/179423",
-              "display": "Result with intervention vs. comparator"
-            }
-          ]
+        "patternCoding": {
+          "code": "result-with-intervention-vs-comparator",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Result with intervention vs. comparator"
         }
       },
       {
@@ -297,17 +269,13 @@
         ]
       },
       {
-        "id": "Composition.section:columnHeaders.section:certaintyOfEvidence.code",
-        "path": "Composition.section.section.code",
+        "id": "Composition.section:columnHeaders.section:certaintyOfEvidence.code.coding",
+        "path": "Composition.section.section.code.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "certainty-of-evidence",
-              "system": "https://fevir.net/resources/CodeSystem/179423",
-              "display": "Certainty of Evidence"
-            }
-          ]
+        "patternCoding": {
+          "code": "certainty-of-evidence",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Certainty of Evidence"
         }
       },
       {
@@ -323,17 +291,13 @@
         ]
       },
       {
-        "id": "Composition.section:columnHeaders.section:assertion.code",
-        "path": "Composition.section.section.code",
+        "id": "Composition.section:columnHeaders.section:assertion.code.coding",
+        "path": "Composition.section.section.code.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "assertion",
-              "system": "https://fevir.net/resources/CodeSystem/179423",
-              "display": "Assertion"
-            }
-          ]
+        "patternCoding": {
+          "code": "assertion",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Assertion"
         }
       },
       {
@@ -345,17 +309,13 @@
         "mustSupport": true
       },
       {
-        "id": "Composition.section:outcomeEntry.code",
-        "path": "Composition.section.code",
+        "id": "Composition.section:outcomeEntry.code.coding",
+        "path": "Composition.section.code.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "summary-of-findings-entry-for-a-single-outcome",
-              "system": "https://fevir.net/resources/CodeSystem/179423",
-              "display": "Summary of findings entry for a single outcome"
-            }
-          ]
+        "patternCoding": {
+          "code": "summary-of-findings-entry-for-a-single-outcome",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Summary of findings entry for a single outcome"
         }
       },
       {
@@ -377,7 +337,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "code"
+              "path": "code.coding"
             }
           ],
           "rules": "open"
@@ -397,17 +357,13 @@
         ]
       },
       {
-        "id": "Composition.section:outcomeEntry.section:outcomeDefinition.code",
-        "path": "Composition.section.section.code",
+        "id": "Composition.section:outcomeEntry.section:outcomeDefinition.code.coding",
+        "path": "Composition.section.section.code.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "outcome-measure",
-              "system": "https://fevir.net/resources/CodeSystem/179423",
-              "display": "Outcome Measure"
-            }
-          ]
+        "patternCoding": {
+          "code": "outcome-measure",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Outcome Measure"
         }
       },
       {
@@ -436,17 +392,13 @@
         ]
       },
       {
-        "id": "Composition.section:outcomeEntry.section:sampleSize.code",
-        "path": "Composition.section.section.code",
+        "id": "Composition.section:outcomeEntry.section:sampleSize.code.coding",
+        "path": "Composition.section.section.code.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "sample-size",
-              "system": "https://fevir.net/resources/CodeSystem/179423",
-              "display": "Sample Size"
-            }
-          ]
+        "patternCoding": {
+          "code": "sample-size",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Sample Size"
         }
       },
       {
@@ -462,17 +414,13 @@
         ]
       },
       {
-        "id": "Composition.section:outcomeEntry.section:resultWithoutTreatment.code",
-        "path": "Composition.section.section.code",
+        "id": "Composition.section:outcomeEntry.section:resultWithoutTreatment.code.coding",
+        "path": "Composition.section.section.code.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "result-with-comparator-alone",
-              "system": "https://fevir.net/resources/CodeSystem/179423",
-              "display": "Result with comparator alone"
-            }
-          ]
+        "patternCoding": {
+          "code": "result-with-comparator-alone",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Result with comparator alone"
         }
       },
       {
@@ -501,17 +449,13 @@
         ]
       },
       {
-        "id": "Composition.section:outcomeEntry.section:resultWithTreatmentObserved.code",
-        "path": "Composition.section.section.code",
+        "id": "Composition.section:outcomeEntry.section:resultWithTreatmentObserved.code.coding",
+        "path": "Composition.section.section.code.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "result-with-intervention-alone",
-              "system": "https://fevir.net/resources/CodeSystem/179423",
-              "display": "Result with intervention alone"
-            }
-          ]
+        "patternCoding": {
+          "code": "result-with-intervention-alone",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Result with intervention alone"
         }
       },
       {
@@ -540,17 +484,13 @@
         ]
       },
       {
-        "id": "Composition.section:outcomeEntry.section:resultWithTreatmentDerived.code",
-        "path": "Composition.section.section.code",
+        "id": "Composition.section:outcomeEntry.section:resultWithTreatmentDerived.code.coding",
+        "path": "Composition.section.section.code.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "result-with-intervention-alone-calculated",
-              "system": "https://fevir.net/resources/CodeSystem/179423",
-              "display": "Result with intervention alone (calculated)"
-            }
-          ]
+        "patternCoding": {
+          "code": "result-with-intervention-alone-calculated",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Result with intervention alone (calculated)"
         }
       },
       {
@@ -580,17 +520,13 @@
         ]
       },
       {
-        "id": "Composition.section:outcomeEntry.section:effectEstimate.code",
-        "path": "Composition.section.section.code",
+        "id": "Composition.section:outcomeEntry.section:effectEstimate.code.coding",
+        "path": "Composition.section.section.code.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "result-with-intervention-vs-comparator",
-              "system": "https://fevir.net/resources/CodeSystem/179423",
-              "display": "Result with intervention vs. comparator"
-            }
-          ]
+        "patternCoding": {
+          "code": "result-with-intervention-vs-comparator",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Result with intervention vs. comparator"
         }
       },
       {
@@ -619,17 +555,13 @@
         ]
       },
       {
-        "id": "Composition.section:outcomeEntry.section:certaintyOfEvidence.code",
-        "path": "Composition.section.section.code",
+        "id": "Composition.section:outcomeEntry.section:certaintyOfEvidence.code.coding",
+        "path": "Composition.section.section.code.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "certainty-of-evidence",
-              "system": "https://fevir.net/resources/CodeSystem/179423",
-              "display": "Certainty of Evidence"
-            }
-          ]
+        "patternCoding": {
+          "code": "certainty-of-evidence",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Certainty of Evidence"
         }
       },
       {
@@ -658,17 +590,13 @@
         ]
       },
       {
-        "id": "Composition.section:outcomeEntry.section:assertion.code",
-        "path": "Composition.section.section.code",
+        "id": "Composition.section:outcomeEntry.section:assertion.code.coding",
+        "path": "Composition.section.section.code.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "assertion",
-              "system": "https://fevir.net/resources/CodeSystem/179423",
-              "display": "Assertion"
-            }
-          ]
+        "patternCoding": {
+          "code": "assertion",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Assertion"
         }
       },
       {

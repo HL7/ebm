@@ -47,7 +47,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "code"
+              "path": "code.text"
             }
           ],
           "rules": "open"
@@ -124,6 +124,7 @@
       {
         "id": "Group.characteristic:population.code.text",
         "path": "Group.characteristic.code.text",
+        "min": 1,
         "patternString": "Population"
       },
       {
@@ -231,6 +232,7 @@
       {
         "id": "Group.characteristic:intervention.code.text",
         "path": "Group.characteristic.code.text",
+        "min": 1,
         "patternString": "Intervention or Exposure"
       },
       {
@@ -339,6 +341,7 @@
       {
         "id": "Group.characteristic:comparator.code.text",
         "path": "Group.characteristic.code.text",
+        "min": 1,
         "patternString": "Comparator"
       },
       {
@@ -447,6 +450,7 @@
       {
         "id": "Group.characteristic:outcomes.code.text",
         "path": "Group.characteristic.code.text",
+        "min": 1,
         "patternString": "Outcomes"
       },
       {

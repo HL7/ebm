@@ -43,7 +43,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "extension[url : variableRoleCode].valueCode"
+              "path": "extension.valueCode"
             }
           ],
           "rules": "open"

@@ -47,7 +47,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "text"
+              "path": "coding"
             }
           ],
           "rules": "open"
@@ -65,6 +65,7 @@
       {
         "id": "Composition.category:comparativeEvidenceReport.coding",
         "path": "Composition.category.coding",
+        "min": 1,
         "patternCoding": {
           "code": "ComparativeEvidenceReport",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -74,7 +75,6 @@
       {
         "id": "Composition.category:comparativeEvidenceReport.text",
         "path": "Composition.category.text",
-        "min": 1,
         "patternString": "Comparative Evidence Report"
       },
       {
@@ -84,7 +84,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "code"
+              "path": "code.coding"
             }
           ],
           "rules": "open"
@@ -102,6 +102,7 @@
       {
         "id": "Composition.section:population.code.coding",
         "path": "Composition.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "population",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -131,6 +132,7 @@
       {
         "id": "Composition.section:intervention.code.coding",
         "path": "Composition.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "intervention",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -144,7 +146,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "code"
+              "path": "code.coding"
             }
           ],
           "rules": "open"
@@ -168,6 +170,7 @@
       {
         "id": "Composition.section:intervention.section:description.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "intervention-description",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -203,6 +206,7 @@
       {
         "id": "Composition.section:intervention.section:group.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "intervention-group",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -233,6 +237,7 @@
       {
         "id": "Composition.section:comparator.code.coding",
         "path": "Composition.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "comparator",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -246,7 +251,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "code"
+              "path": "code.coding"
             }
           ],
           "rules": "open"
@@ -270,6 +275,7 @@
       {
         "id": "Composition.section:comparator.section:description.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "comparator-description",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -306,6 +312,7 @@
       {
         "id": "Composition.section:comparator.section:group.code.coding",
         "path": "Composition.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "comparator-group",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -337,6 +344,7 @@
       {
         "id": "Composition.section:studyDesign.code.coding",
         "path": "Composition.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "study-design",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -367,6 +375,7 @@
       {
         "id": "Composition.section:baseline.code.coding",
         "path": "Composition.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "baseline-measures",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -402,7 +411,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "code"
+              "path": "code.coding"
             }
           ],
           "rules": "open"
@@ -425,6 +434,7 @@
       {
         "id": "Composition.section:baseline.section.section:comparatorEvidence.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "evidence-with-comparator-alone",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -460,6 +470,7 @@
       {
         "id": "Composition.section:baseline.section.section:interventionEvidence.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "evidence-with-intervention-alone",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -495,6 +506,7 @@
       {
         "id": "Composition.section:baseline.section.section:totalGroup.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "evidence-with-total-group",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -530,6 +542,7 @@
       {
         "id": "Composition.section:baseline.section.section:comparativeEvidence.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "evidence-with-intervention-vs-comparator",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -560,6 +573,7 @@
       {
         "id": "Composition.section:flow.code.coding",
         "path": "Composition.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "participant-flow",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -595,7 +609,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "code"
+              "path": "code.coding"
             }
           ],
           "rules": "open"
@@ -618,6 +632,7 @@
       {
         "id": "Composition.section:flow.section.section:comparatorEvidence.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "evidence-with-comparator-alone",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -653,6 +668,7 @@
       {
         "id": "Composition.section:flow.section.section:interventionEvidence.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "evidence-with-intervention-alone",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -688,6 +704,7 @@
       {
         "id": "Composition.section:flow.section.section:totalGroup.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "evidence-with-total-group",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -723,6 +740,7 @@
       {
         "id": "Composition.section:flow.section.section:comparativeEvidence.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "evidence-with-intervention-vs-comparator",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -753,6 +771,7 @@
       {
         "id": "Composition.section:outcomes.code.coding",
         "path": "Composition.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "outcome-measures",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -788,7 +807,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "code"
+              "path": "code.coding"
             }
           ],
           "rules": "open"
@@ -811,6 +830,7 @@
       {
         "id": "Composition.section:outcomes.section.section:comparatorEvidence.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "evidence-with-comparator-alone",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -846,6 +866,7 @@
       {
         "id": "Composition.section:outcomes.section.section:interventionEvidence.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "evidence-with-intervention-alone",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -881,6 +902,7 @@
       {
         "id": "Composition.section:outcomes.section.section:comparativeEvidence.code.coding",
         "path": "Composition.section.section.section.code.coding",
+        "min": 1,
         "patternCoding": {
           "code": "evidence-with-intervention-vs-comparator",
           "system": "https://fevir.net/resources/CodeSystem/179423",

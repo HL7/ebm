@@ -78,15 +78,6 @@
       {
         "id": "Evidence.variableDefinition",
         "path": "Evidence.variableDefinition",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "extension[url : variableRoleCode].valueCode"
-            }
-          ],
-          "rules": "open"
-        },
         "min": 3
       },
       {
@@ -210,7 +201,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "code"
+              "path": "code.coding"
             }
           ],
           "rules": "open"
@@ -301,16 +292,13 @@
         "sliceName": "modelCharacteristic"
       },
       {
-        "id": "Evidence.statistic:netEffect.modelCharacteristic:netEffectContributionAnalysis.code",
-        "path": "Evidence.statistic.modelCharacteristic.code",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "TBD:net-effect-contribution-analysis",
-              "system": "https://fevir.net/resources/CodeSystem/27270",
-              "display": "Net effect contribution analysis"
-            }
-          ]
+        "id": "Evidence.statistic:netEffect.modelCharacteristic:netEffectContributionAnalysis.code.coding",
+        "path": "Evidence.statistic.modelCharacteristic.code.coding",
+        "min": 1,
+        "patternCoding": {
+          "code": "TBD:net-effect-contribution-analysis",
+          "system": "https://fevir.net/resources/CodeSystem/27270",
+          "display": "Net effect contribution analysis"
         }
       },
       {

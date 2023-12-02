@@ -78,7 +78,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "code"
+              "path": "code.coding"
             }
           ],
           "rules": "open"
@@ -93,17 +93,13 @@
         "max": "1"
       },
       {
-        "id": "Composition.section:outcomeDefinition.code",
-        "path": "Composition.section.code",
+        "id": "Composition.section:outcomeDefinition.code.coding",
+        "path": "Composition.section.code.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "outcome-measure",
-              "system": "https://fevir.net/resources/CodeSystem/179423",
-              "display": "Outcome Measure"
-            }
-          ]
+        "patternCoding": {
+          "code": "outcome-measure",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Outcome Measure"
         }
       },
       {
@@ -126,17 +122,13 @@
         "max": "1"
       },
       {
-        "id": "Composition.section:comparatorOnlyEvidence.code",
-        "path": "Composition.section.code",
+        "id": "Composition.section:comparatorOnlyEvidence.code.coding",
+        "path": "Composition.section.code.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "evidence-with-comparator-alone",
-              "system": "https://fevir.net/resources/CodeSystem/179423",
-              "display": "Evidence with comparator alone"
-            }
-          ]
+        "patternCoding": {
+          "code": "evidence-with-comparator-alone",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Evidence with comparator alone"
         }
       },
       {
@@ -159,17 +151,13 @@
         "max": "1"
       },
       {
-        "id": "Composition.section:interventionOnlyEvidence.code",
-        "path": "Composition.section.code",
+        "id": "Composition.section:interventionOnlyEvidence.code.coding",
+        "path": "Composition.section.code.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "evidence-with-intervention-alone",
-              "system": "https://fevir.net/resources/CodeSystem/179423",
-              "display": "Evidence with intervention alone"
-            }
-          ]
+        "patternCoding": {
+          "code": "evidence-with-intervention-alone",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Evidence with intervention alone"
         }
       },
       {
@@ -192,17 +180,13 @@
         "max": "1"
       },
       {
-        "id": "Composition.section:comparativeEvidence.code",
-        "path": "Composition.section.code",
+        "id": "Composition.section:comparativeEvidence.code.coding",
+        "path": "Composition.section.code.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "evidence-with-intervention-vs-comparator",
-              "system": "https://fevir.net/resources/CodeSystem/179423",
-              "display": "Evidence with intervention vs. comparator"
-            }
-          ]
+        "patternCoding": {
+          "code": "evidence-with-intervention-vs-comparator",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Evidence with intervention vs. comparator"
         }
       },
       {
@@ -225,17 +209,13 @@
         "max": "1"
       },
       {
-        "id": "Composition.section:certaintyOfEvidence.code",
-        "path": "Composition.section.code",
+        "id": "Composition.section:certaintyOfEvidence.code.coding",
+        "path": "Composition.section.code.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "certainty-of-evidence",
-              "system": "https://fevir.net/resources/CodeSystem/179423",
-              "display": "Certainty of Evidence"
-            }
-          ]
+        "patternCoding": {
+          "code": "certainty-of-evidence",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Certainty of Evidence"
         }
       },
       {
@@ -258,17 +238,13 @@
         "max": "1"
       },
       {
-        "id": "Composition.section:evidenceVariablePopulation.code",
-        "path": "Composition.section.code",
+        "id": "Composition.section:evidenceVariablePopulation.code.coding",
+        "path": "Composition.section.code.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "population",
-              "system": "https://fevir.net/resources/CodeSystem/179423",
-              "display": "Population"
-            }
-          ]
+        "patternCoding": {
+          "code": "population",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Population"
         }
       },
       {
@@ -291,17 +267,13 @@
         "max": "1"
       },
       {
-        "id": "Composition.section:intervention.code",
-        "path": "Composition.section.code",
+        "id": "Composition.section:intervention.code.coding",
+        "path": "Composition.section.code.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "intervention",
-              "system": "https://fevir.net/resources/CodeSystem/179423",
-              "display": "Intervention"
-            }
-          ]
+        "patternCoding": {
+          "code": "intervention",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Intervention"
         }
       },
       {
@@ -324,17 +296,13 @@
         "max": "1"
       },
       {
-        "id": "Composition.section:interventionDescription.code",
-        "path": "Composition.section.code",
+        "id": "Composition.section:interventionDescription.code.coding",
+        "path": "Composition.section.code.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "intervention-description",
-              "system": "https://fevir.net/resources/CodeSystem/179423",
-              "display": "Intervention Description"
-            }
-          ]
+        "patternCoding": {
+          "code": "intervention-description",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Intervention Description"
         }
       },
       {
@@ -357,17 +325,13 @@
         "max": "1"
       },
       {
-        "id": "Composition.section:interventionGroup.code",
-        "path": "Composition.section.code",
+        "id": "Composition.section:interventionGroup.code.coding",
+        "path": "Composition.section.code.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "intervention-group",
-              "system": "https://fevir.net/resources/CodeSystem/179423",
-              "display": "Intervention Group"
-            }
-          ]
+        "patternCoding": {
+          "code": "intervention-group",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Intervention Group"
         }
       },
       {
@@ -390,17 +354,13 @@
         "max": "1"
       },
       {
-        "id": "Composition.section:evidenceClassifier.code",
-        "path": "Composition.section.code",
+        "id": "Composition.section:evidenceClassifier.code.coding",
+        "path": "Composition.section.code.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "classifier",
-              "system": "https://fevir.net/resources/CodeSystem/179423",
-              "display": "Classifier"
-            }
-          ]
+        "patternCoding": {
+          "code": "classifier",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Classifier"
         }
       },
       {
