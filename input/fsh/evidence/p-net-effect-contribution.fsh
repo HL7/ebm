@@ -11,7 +11,7 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The NetEffectC
 * relatedArtifact[amendedWith]
   * resourceReference only Reference(OutcomeImportance)
 * variableDefinition ^slicing.discriminator.type = #value
-* variableDefinition ^slicing.discriminator.path = "extension:variableRoleCode.valueCode"
+* variableDefinition ^slicing.discriminator.path = "extension[0].valueCode"
 * variableDefinition ^slicing.rules = #open
 * variableDefinition contains covariate 1..*
 * variableDefinition[covariate]

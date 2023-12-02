@@ -43,7 +43,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "extension.valueCode"
+              "path": "extension:variableRoleCode.valueCode"
             }
           ],
           "rules": "open"
