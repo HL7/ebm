@@ -5,7 +5,7 @@ Description: "Profile of Group for Evidence Based Medicine IG. The EvidenceRepor
 * extension[CombinationMethod]
   * valueCode = #all-of
 * characteristic ^slicing.discriminator.type = #value
-* characteristic ^slicing.discriminator.path = "code"
+* characteristic ^slicing.discriminator.path = "code.text"
 * characteristic ^slicing.rules = #open
 * characteristic contains population 0..1 MS and intervention 0..1 MS and comparator 0..1 MS and outcomes 0..1 MS
 * characteristic[population].code.text = "Population"

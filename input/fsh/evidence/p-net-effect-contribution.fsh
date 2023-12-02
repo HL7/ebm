@@ -33,8 +33,8 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The NetEffectC
   * attributeEstimate[confidenceInterval].type = https://fevir.net/resources/CodeSystem/27270#TBD:0000059 "Confidence interval"
   * modelCharacteristic 1..*
   * modelCharacteristic ^slicing.discriminator.type = #value
-  * modelCharacteristic ^slicing.discriminator.path = "code"
+  * modelCharacteristic ^slicing.discriminator.path = "code.coding"
   * modelCharacteristic ^slicing.rules = #open
   * modelCharacteristic contains netEffectContributionAnalysis 1..1 MS
-  * modelCharacteristic[netEffectContributionAnalysis].code = https://fevir.net/resources/CodeSystem/27270#TBD:net-effect-contribution-analysis "Net effect contribution analysis"
+  * modelCharacteristic[netEffectContributionAnalysis].code.coding = https://fevir.net/resources/CodeSystem/27270#TBD:net-effect-contribution-analysis "Net effect contribution analysis"
   
