@@ -4,7 +4,7 @@ Id: recommendation
 Description: "Profile of Composition for Evidence Based Medicine IG. The Recommendation Profile is used for the composition of a recommendation (such as that from a clinical practice guideline) and may be tightly related to a RecommendationPlan Profile of PlanDefinition and a RecommendationJustification Profile of ArtifactAssessment."
 * category 1..*
 * category ^slicing.discriminator.type = #value
-* category ^slicing.discriminator.path = "text"
+* category ^slicing.discriminator.path = "coding"
 * category ^slicing.rules = #open
 * category contains recommendation 1..1 MS
 * category[recommendation].coding = https://fevir.net/resources/CodeSystem/179423#Recommendation "Recommendation"
@@ -20,7 +20,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Recomme
 * section ^slicing.discriminator.path = "code"
 * section ^slicing.rules = #closed
 * section contains recommendationSpecification 1..1 MS and evidence 0..1 MS and netEffect 0..1 MS and judgments 0..1 MS and considerations 0..1 MS
-* section[recommendationSpecification].code.coding = https://fevir.net/resources/CodeSystem/179423#recommendation-specification "Recommendation Specification"
+* section[recommendationSpecification].code = https://fevir.net/resources/CodeSystem/179423#recommendation-specification "Recommendation Specification"
 * section[recommendationSpecification]
   * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code"
@@ -37,7 +37,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Recomme
   * section[action].code.coding = https://fevir.net/resources/CodeSystem/179423#action "Action"
   * section[oppositeAction].code.coding = https://fevir.net/resources/CodeSystem/179423#opposite-action "Opposite Action"
   * section[dataSource].code.coding = https://fevir.net/resources/CodeSystem/179423#data-source "Data Source"
-* section[evidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence "Evidence"
+* section[evidence].code = https://fevir.net/resources/CodeSystem/179423#evidence "Evidence"
 * section[evidence]
   * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code"
@@ -69,7 +69,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Recomme
     * section[undesirableRelatedItems].code.coding = https://fevir.net/resources/CodeSystem/179423#related-items "Related Items"
   * section[discussion].code.coding = https://fevir.net/resources/CodeSystem/179423#discussion "Discussion"
   * section[dataSource].code.coding = https://fevir.net/resources/CodeSystem/179423#data-source "Data Source"
-* section[netEffect].code.coding = https://fevir.net/resources/CodeSystem/179423#net-effect "Net Effect"
+* section[netEffect].code = https://fevir.net/resources/CodeSystem/179423#net-effect "Net Effect"
 * section[netEffect]
   * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code"
