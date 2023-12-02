@@ -415,7 +415,7 @@
       {
         "id": "Composition.section:oversight.section:informedConsent.section:remainingSamples.title",
         "path": "Composition.section.section.section.title",
-        "patternString": "Informed Consent for Rescreening"
+        "patternString": "Informed Consent for Remaining Samples"
       },
       {
         "id": "Composition.section:oversight.section:informedConsent.section:remainingSamples.code.text",

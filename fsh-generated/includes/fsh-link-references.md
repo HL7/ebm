@@ -6,10 +6,12 @@
 [172461]: Group-172461.html
 [172476]: Group-172476.html
 [172477]: Group-172477.html
+[172480]: Group-172480.html
 [172484]: Group-172484.html
 [172934]: Group-172934.html
 [172939]: Group-172939.html
 [173245]: Group-173245.html
+[173248]: Group-173248.html
 [173251]: Group-173251.html
 [173252]: Group-173252.html
 [175762]: Group-175762.html
@@ -34,6 +36,7 @@
 [179783]: Group-179783.html
 [179785]: Group-179785.html
 [179786]: Group-179786.html
+[179799]: Group-179799.html
 [179602]: Citation-179602.html
 [179637]: Citation-179637.html
 [179631]: Citation-179631.html
@@ -115,6 +118,7 @@
 [179456]: Evidence-179456.html
 [ComparativeEvidence]: StructureDefinition-comparative-evidence.html
 [49328]: Evidence-49328.html
+[32144]: Evidence-32144.html
 [104157]: Evidence-104157.html
 [104098]: Evidence-104098.html
 [104155]: Evidence-104155.html
@@ -169,11 +173,11 @@
 [155969]: ArtifactAssessment-155969.html
 [153881]: Citation-153881.html
 [179430]: ValueSet-179430.html
-[12715]: EvidenceVariable-12715.html
 [EndpointAnalysisPlan]: StructureDefinition-endpoint-analysis-plan.html
 [179423]: CodeSystem-179423.html
 [EvidenceVariableRoleSubtype]: ValueSet-evidence-variable-role-subtype.html
 [EvidenceList]: StructureDefinition-evidence-list.html
+[179800]: List-179800.html
 [179470]: List-179470.html
 [EvidenceMap]: StructureDefinition-evidence-map.html
 [104213]: Composition-104213.html
@@ -276,6 +280,7 @@
 [OutcomeVariable]: StructureDefinition-outcome-variable.html
 [104120]: EvidenceVariable-104120.html
 [49217]: EvidenceVariable-49217.html
+[32143]: EvidenceVariable-32143.html
 [173243]: EvidenceVariable-173243.html
 [173246]: EvidenceVariable-173246.html
 [173244]: EvidenceVariable-173244.html
@@ -292,10 +297,10 @@
 [179462]: Evidence-179462.html
 [179464]: Evidence-179464.html
 [179463]: Evidence-179463.html
+[179636]: EvidenceVariable-179636.html
 [179459]: EvidenceVariable-179459.html
 [179461]: EvidenceVariable-179461.html
 [7750]: Group-7750.html
-[179636]: EvidenceVariable-179636.html
 [7749]: Group-7749.html
 [12718]: EvidenceVariable-12718.html
 [179468]: PlanDefinition-179468.html
@@ -336,6 +341,7 @@
 [StudyEligibilityCriteria]: StructureDefinition-study-eligibility-criteria.html
 [170443]: Group-170443.html
 [StudyGroup]: StructureDefinition-study-group.html
+[32145]: Group-32145.html
 [46117]: Group-46117.html
 [SummaryOfFindings]: StructureDefinition-summary-of-findings.html
 [104215]: Composition-104215.html

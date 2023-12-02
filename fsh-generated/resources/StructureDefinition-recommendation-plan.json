@@ -200,12 +200,7 @@
       {
         "id": "PlanDefinition.action.participant.role",
         "path": "PlanDefinition.action.participant.role",
-        "mustSupport": true,
-        "binding": {
-          "strength": "preferred",
-          "valueSet": "http://hl7.org/fhir/uv/cpg/ValueSet/cpg-common-persona",
-          "description": "Personas used in identifying participants and their roles in computable content"
-        }
+        "mustSupport": true
       },
       {
         "id": "PlanDefinition.action.type",

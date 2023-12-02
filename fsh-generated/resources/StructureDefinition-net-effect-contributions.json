@@ -31,11 +31,6 @@
   "differential": {
     "element": [
       {
-        "id": "Group.membership",
-        "path": "Group.membership",
-        "patternCode": "enumerated"
-      },
-      {
         "id": "Group.code.text",
         "path": "Group.code.text",
         "patternString": "Net Effect Contribution"

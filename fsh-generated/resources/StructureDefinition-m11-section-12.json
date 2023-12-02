@@ -164,7 +164,7 @@
       {
         "id": "Composition.section:riskManagementAndData.section:dataGovernance.code.text",
         "path": "Composition.section.section.code.text",
-        "patternString": "section11.2-data-governance"
+        "patternString": "section12.2-data-governance"
       },
       {
         "id": "Composition.section:riskManagementAndData.section:dataGovernance.text",
@@ -193,7 +193,7 @@
       {
         "id": "Composition.section:riskManagementAndData.section:sourceData.code.text",
         "path": "Composition.section.section.code.text",
-        "patternString": "section11.3-source-data"
+        "patternString": "section12.3-source-data"
       },
       {
         "id": "Composition.section:riskManagementAndData.section:sourceData.text",

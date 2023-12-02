@@ -107,16 +107,6 @@
         "id": "Evidence.variableDefinition:outcome.directnessMatch",
         "path": "Evidence.variableDefinition.directnessMatch",
         "max": "0"
-      },
-      {
-        "id": "Evidence.statistic.numberAffected",
-        "path": "Evidence.statistic.numberAffected",
-        "max": "0"
-      },
-      {
-        "id": "Evidence.statistic.modelCharacteristic",
-        "path": "Evidence.statistic.modelCharacteristic",
-        "max": "0"
       }
     ]
   }

@@ -17,17 +17,6 @@
       ]
     }
   ],
-  "jurisdiction": [
-    {
-      "coding": [
-        {
-          "code": "001",
-          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
-          "display": "World"
-        }
-      ]
-    }
-  ],
   "packageId": "hl7.fhir.uv.ebm",
   "fhirVersion": [
     "5.0.0"
@@ -116,6 +105,17 @@
       },
       {
         "reference": {
+          "reference": "Group/172480"
+        },
+        "description": "The American Diabetes Association composite triple end point of hemoglobin A1c less than 7.0%, low-density lipoprotein cholesterol less than 100 mg/dL, and systolic blood pressure less than 130 mm Hg at 5 years",
+        "name": "172480",
+        "isExample": true,
+        "profile": [
+          "https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition"
+        ]
+      },
+      {
+        "reference": {
           "reference": "Group/172484"
         },
         "description": "HbA1c at 12 months",
@@ -153,6 +153,17 @@
         },
         "description": "HbA1c at 36 months",
         "name": "173245",
+        "isExample": true,
+        "profile": [
+          "https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Group/173248"
+        },
+        "description": "Nonfatal myocardial infarction or stroke",
+        "name": "173248",
         "isExample": true,
         "profile": [
           "https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition"
@@ -415,6 +426,17 @@
         "isExample": true,
         "profile": [
           "https://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-definition"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Group/179799"
+        },
+        "description": "Effect Estimates for Mortality at 14 days from COVID19 Remdesivir vs. Placebo RCTs (Biegel 2020 data 35/541 vs. 61/521) (Wang 2020 data 15/153 vs. 7/78) (SOLIDARITY data 219/2743 vs. 219/2708)",
+        "name": "179799",
+        "isExample": true,
+        "profile": [
+          "https://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group"
         ]
       },
       {
@@ -1097,6 +1119,17 @@
       },
       {
         "reference": {
+          "reference": "Evidence/32144"
+        },
+        "description": "Of 120 participants who were initially randomized, 98 (82%) completed 5 years of follow-up. At 5 years, 13 participants (23%) in the gastric bypass group and 2 (4%) in the lifestyle-intensive medical management group had achieved the composite triple end point (difference, 19%; 95% CI, 4%-34%; P = .01).",
+        "name": "ComparativeEvidence: Bariatric Surgery effect for ADA triple outcome at 5 years (Diabetes Surgery Study)",
+        "isExample": true,
+        "profile": [
+          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
+        ]
+      },
+      {
+        "reference": {
           "reference": "Evidence/104157"
         },
         "description": "Surgical patients had a greater risk for undergoing at least 1 additional gastrointestinal surgical procedure (AR, 31.3% vs 15.5%; RD, 15.8% [95% CI, 13.1%-18.5%]; RR, 2.0 [95% CI, 1.7-2.4]).",
@@ -1569,6 +1602,7 @@
         "reference": {
           "reference": "CodeSystem/179650"
         },
+        "description": "This is an example of a DataDictionary Profile for the EBMonFHIR Implementation Guide.",
         "name": "DataDictionary: phs003190",
         "isExample": true,
         "profile": [
@@ -1628,14 +1662,6 @@
       },
       {
         "reference": {
-          "reference": "EvidenceVariable/12715"
-        },
-        "description": "Effect Estimates for Mortality at 14 days from COVID19 Remdesivir vs. Placebo RCTs (Biegel 2020 data 35/541 vs. 61/521) (Wang 2020 data 15/153 vs. 7/78) (SOLIDARITY data 219/2743 vs. 219/2708)",
-        "name": "Effect Estimates for Mortality at 14 days from COVID19 Remdesivir vs. Placebo RCTs (ACTT-1, Wang et al, WHO SOLIDARITY)",
-        "isExample": true
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/endpoint-analysis-plan"
         },
         "name": "EndpointAnalysisPlan",
@@ -1665,6 +1691,16 @@
         "name": "EvidenceList",
         "description": "Profile of List for Evidence Based Medicine IG. The EvidenceList Profile is used to provide a list of Evidence Resources. The EvidenceList Profile is used to represent a Group of Evidence for the population for an EvidenceSynthesisEvidence using a summary data meta-analysis approach and is referenced from a MetaanalysisStudyGroup.",
         "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "List/179800"
+        },
+        "name": "EvidenceList: Effect estimates for meta-analysis (Biegel 2020, Wang 2020, SOLIDARITY)",
+        "isExample": true,
+        "profile": [
+          "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-list"
+        ]
       },
       {
         "reference": {
@@ -2605,6 +2641,17 @@
       },
       {
         "reference": {
+          "reference": "EvidenceVariable/32143"
+        },
+        "description": "The American Diabetes Association composite triple end point of hemoglobin A1c less than 7.0%, low-density lipoprotein cholesterol less than 100 mg/dL, and systolic blood pressure less than 130 mm Hg at 5 years",
+        "name": "OutcomeVariable: American Diabetes Association composite triple end point for metabolic control at 5 years",
+        "isExample": true,
+        "profile": [
+          "https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-variable"
+        ]
+      },
+      {
+        "reference": {
           "reference": "EvidenceVariable/173243"
         },
         "description": "HbA1c at 12 months",
@@ -2773,6 +2820,17 @@
       },
       {
         "reference": {
+          "reference": "EvidenceVariable/179636"
+        },
+        "description": "Dropout due to stopping intervention",
+        "name": "ParticipantFlowMeasure: Dropout due to stopping intervention",
+        "isExample": true,
+        "profile": [
+          "https://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow-measure"
+        ]
+      },
+      {
+        "reference": {
           "reference": "EvidenceVariable/179459"
         },
         "description": "Excluded from analysis",
@@ -2799,17 +2857,6 @@
         },
         "name": "Participants in Anticoagulation for COVID-19 Combined (ATTACC, ACTIV-4a, and REMAP-CAP) RCT (hospitalized, not critically ill)",
         "isExample": true
-      },
-      {
-        "reference": {
-          "reference": "EvidenceVariable/179636"
-        },
-        "description": "Dropout due to stopping intervention",
-        "name": "PartiicipantFlowMeasure: Dropout due to stopping intervention",
-        "isExample": true,
-        "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow-measure"
-        ]
       },
       {
         "reference": {
@@ -3156,6 +3203,16 @@
         "name": "StudyGroup",
         "description": "Profile of Group for Evidence Based Medicine IG. The StudyGroup Profile is used to represent an enumerated group of participants in a research study.",
         "isExample": false
+      },
+      {
+        "reference": {
+          "reference": "Group/32145"
+        },
+        "name": "StudyGroup: Bariatric Surgery Trial Enrollment Group",
+        "isExample": true,
+        "profile": [
+          "https://hl7.org/fhir/uv/ebm/StructureDefinition/study-group"
+        ]
       },
       {
         "reference": {

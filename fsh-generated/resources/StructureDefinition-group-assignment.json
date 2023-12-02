@@ -37,11 +37,6 @@
   "differential": {
     "element": [
       {
-        "id": "EvidenceVariable.handling",
-        "path": "EvidenceVariable.handling",
-        "patternCode": "categorical"
-      },
-      {
         "id": "EvidenceVariable.category",
         "path": "EvidenceVariable.category",
         "min": 2
