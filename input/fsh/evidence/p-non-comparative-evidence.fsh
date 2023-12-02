@@ -4,7 +4,7 @@ Id: non-comparative-evidence
 Description: "Profile of Evidence for Evidence Based Medicine IG. The NonComparativeEvidence Profile is used for evidence about a single group with no comparisons between groups." 
 * variableDefinition 2..*
 * variableDefinition ^slicing.discriminator.type = #value
-* variableDefinition ^slicing.discriminator.path = "extension[url=='https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition-variable-role-code'].valueCode"
+* variableDefinition ^slicing.discriminator.path = "extension(url,'https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition-variable-role-code').valueCode"
 * variableDefinition ^slicing.rules = #open
 * variableDefinition contains population 1..* MS and outcome 1..* MS
 * variableDefinition[population]

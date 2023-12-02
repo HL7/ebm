@@ -43,7 +43,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "extension(url:'https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition-variable-role-code').valueCode"
+              "path": "extension(url,'https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition-variable-role-code').valueCode"
             }
           ],
           "rules": "open"

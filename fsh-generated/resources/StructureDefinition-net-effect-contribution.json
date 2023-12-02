@@ -78,15 +78,6 @@
       {
         "id": "Evidence.variableDefinition",
         "path": "Evidence.variableDefinition",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "extension[variableRoleCode].valueCode"
-            }
-          ],
-          "rules": "open"
-        },
         "min": 3
       },
       {

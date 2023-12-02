@@ -751,7 +751,7 @@
           "reference": "Group/32139"
         },
         "description": "Inclusion Criteria: [[1]] Adults. [[2]] Diagnosed with type 2 diabetes. [[3]] Body Mass Index (BMI) ≥ 40.0 kg/m2 (BMI ≥ 37.5 kg/m2 in Asian Americans), or BMI ≥ 35.0 kg/m2 and ≤ 39.9 kg/m2 (BMI 32.5-37.4 kg/m2 in Asian Americans) who do not achieve durable weight loss and improvement in comorbidities (including hyperglycemia) with nonsurgical methods. [[4]] Screened surgical candidates.",
-        "name": "Bariatric_Surgery_Eligibility_Group_ADA_Recommendation_8_16_",
+        "name": "Bariatric_Surgery_Eligibility_Group_ADA_Recommendation_8_16",
         "isExample": true,
         "profile": [
           "https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-eligibility-criteria"
@@ -762,7 +762,7 @@
           "reference": "Group/179511"
         },
         "description": "Inclusion Criteria: [[1]] Adults. [[2]] Diagnosed with type 2 diabetes. [[3]] Body Mass Index (BMI) ≥ 30.0 kg/m2 and ≤ 34.9 kg/m2 (BMI 27.5-32.4 kg/m2 in Asian Americans) who do not achieve durable weight loss and improvement in comorbidities (including hyperglycemia) with nonsurgical methods. [[4]] Screened surgical candidates.",
-        "name": "Bariatric_Surgery_Eligibility_Group_ADA_Recommendation_8_17_",
+        "name": "Bariatric_Surgery_Eligibility_Group_ADA_Recommendation_8_17",
         "isExample": true,
         "profile": [
           "https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-eligibility-criteria"
@@ -773,7 +773,7 @@
           "reference": "Group/172423"
         },
         "description": "Any of 4 bariatric surgery procedures (Roux-en-Y Gastric Bypass, Vertical Sleeve Gastrectomy, Laparoscopic Adjustable Gastric banding, Biliopancreatic Diversion)",
-        "name": "Bariatric_Surgery_RYGB_VSG_LAGB_BPD_",
+        "name": "Bariatric_Surgery_RYGB_VSG_LAGB_BPD",
         "isExample": true,
         "profile": [
           "https://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-definition"
@@ -2888,7 +2888,7 @@
         "reference": {
           "reference": "Group/7750"
         },
-        "name": "Participants_in_Anticoagulation_for_COVID_19_Combined_ATTACC_ACTIV_4a_and_REMAP_CAP_RCT_hospitalized_not_critically_ill_",
+        "name": "Participants_in_Anticoagulation_for_COVID_19_Combined_ATTACC_ACTIV_4a_and_REMAP_CAP_RCT_hospitalized_not_critically_ill",
         "isExample": true
       },
       {
@@ -3223,7 +3223,7 @@
           "reference": "Group/170443"
         },
         "description": "Inclusion Criteria:    Age 30 to 67 years at eligibility visit.    Diagnosed with T2DM at least 6 months prior to enrollment, under the active care of a doctor for at least the six months prior to enrollment, and HbA1c ≥ 8.0%.    Body Mass Index (BMI) ≥ 30.0 kg/m2 and ≤ 39.9 kg/m2 at eligibility visit.    Willingness to accept random assignment to either treatment group.    Expect to live or work within approximately one hour's traveling time from the study clinic for the duration of the two-year trial.    Willingness to comply with the follow-up protocol and successful completion of the run-in.    Written informed consent. ///// Exclusion Criteria:   Cardiovascular event (myocardial infarction, acute coronary syndrome, coronary artery angioplasty or bypass, stroke) in the past six months.    Current evidence of congestive heart failure, angina pectoris, or symptomatic peripheral vascular disease.    Cardiac stress test indicating that surgery or IMM would not be safe.    Pulmonary embolus or thrombophlebitis in the past six months.    Cancer of any kind (except basal cell skin cancer or cancer in situ) unless documented to be disease-free for five years.    Significant anemia (hemoglobin 1.0 g or more below normal range) or history of coagulopathy.    Serum creatinine ≥ 1.5 mg/dl.    HbA1c > 14.0%.",
-        "name": "StudyEligibilityCriteria_Eligibility_Criteria_for_Bariatric_Surgery_Randomized_Trial_Diabetes_Surgery_Study_",
+        "name": "StudyEligibilityCriteria_Eligibility_Criteria_for_Bariatric_Surgery_Randomized_Trial_Diabetes_Surgery_Study",
         "isExample": true,
         "profile": [
           "https://hl7.org/fhir/uv/ebm/StructureDefinition/study-eligibility-criteria"
