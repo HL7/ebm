@@ -4,14 +4,14 @@ Id: comparative-evidence-report
 Description: "Profile of Composition for Evidence Based Medicine IG. The ComparativeEvidenceReport Profile is used for an evidence report including the study group, exposure, comparator, and findings for any number of outcomes comparing the exposure to the comparator in the study group."
 * category 1..*
 * category ^slicing.discriminator.type = #value
-* category ^slicing.discriminator.path = "text"
+* category ^slicing.discriminator.path = "coding"
 * category ^slicing.rules = #open
 * category contains comparativeEvidenceReport 1..1 MS
 * category[comparativeEvidenceReport].coding = https://fevir.net/resources/CodeSystem/179423#ComparativeEvidenceReport "ComparativeEvidenceReport"
 * category[comparativeEvidenceReport].text = "Comparative Evidence Report"
 * section 5..*
 * section ^slicing.discriminator.type = #value
-* section ^slicing.discriminator.path = "code"
+* section ^slicing.discriminator.path = "code.coding"
 * section ^slicing.rules = #open
 * section contains population 1..1 MS and intervention 1..* MS and comparator 1..1 MS and studyDesign 1..1 MS and baseline 0..1 MS and flow 0..1 MS and outcomes 1..1 MS
 * section[population].code.coding = https://fevir.net/resources/CodeSystem/179423#population "Population"
@@ -21,7 +21,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Compara
 * section[intervention]
   * section 2..2
   * section ^slicing.discriminator.type = #value
-  * section ^slicing.discriminator.path = "code"
+  * section ^slicing.discriminator.path = "code.coding"
   * section ^slicing.rules = #open
   * section contains description 1..1 MS and group 1..1 MS
   * section[description].code.coding = https://fevir.net/resources/CodeSystem/179423#intervention-description "Intervention Description"
@@ -36,7 +36,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Compara
 * section[comparator]
   * section 2..2
   * section ^slicing.discriminator.type = #value
-  * section ^slicing.discriminator.path = "code"
+  * section ^slicing.discriminator.path = "code.coding"
   * section ^slicing.rules = #open
   * section contains description 1..1 MS and group 1..1 MS
   * section[description].code.coding = https://fevir.net/resources/CodeSystem/179423#comparator-description "Comparator Description"
@@ -56,7 +56,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Compara
     * focus only Reference(ExposureVariable)
     * section 1..*
     * section ^slicing.discriminator.type = #value
-    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.discriminator.path = "code.coding"
     * section ^slicing.rules = #open
     * section contains comparatorEvidence 1..1 MS and interventionEvidence 1..1 MS and totalGroup 0..1 MS and comparativeEvidence 0..1 MS
     * section[comparatorEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-comparator-alone "Evidence with comparator alone"
@@ -81,7 +81,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Compara
     * focus only Reference(ParticipantFlowMeasure)
     * section 1..*
     * section ^slicing.discriminator.type = #value
-    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.discriminator.path = "code.coding"
     * section ^slicing.rules = #open
     * section contains comparatorEvidence 0..1 MS and interventionEvidence 0..1 MS and totalGroup 0..1 MS and comparativeEvidence 0..1 MS
     * section[comparatorEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-comparator-alone "Evidence with comparator alone"
@@ -106,7 +106,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Compara
     * focus only Reference(OutcomeVariable)
     * section 1..*
     * section ^slicing.discriminator.type = #value
-    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.discriminator.path = "code.coding"
     * section ^slicing.rules = #open
     * section contains comparatorEvidence 0..1 MS and interventionEvidence 0..1 MS and comparativeEvidence 1..1 MS
     * section[comparatorEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-comparator-alone "Evidence with comparator alone"
