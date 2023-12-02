@@ -52,7 +52,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Sect
     * section[numberOfParticipants].code.text = "Number of Participants"
     * section[numberOfParticipants]
       * text 1..1
-      * text ^comment = "State the expected number of participants to be assigned to trial intervention/enrolled.  Indicate whether the number provided is the target or maximum number of individuals to be randomly assigned to trial intervention/enrolled. A [Target/ Maximum] of <Enter Number of Participants> participants will be [randomly assigned to trial intervention/ enrolled]."
+      * text ^comment = "State the expected number of participants to be assigned to trial intervention/enrolled.  Indicate whether the number provided is the target or maximum number of individuals to be randomly assigned to trial intervention/enrolled. A [Target/ Maximum] of [[Enter Number of Participants]] participants will be [randomly assigned to trial intervention/ enrolled]."
     * section[duration].code.text = "Arms and Duration"
     * section[duration]
       * text 1..1
