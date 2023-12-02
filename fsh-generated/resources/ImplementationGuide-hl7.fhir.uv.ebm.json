@@ -17,6 +17,17 @@
       ]
     }
   ],
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "001",
+          "system": "http://unstats.un.org/unsd/methods/m49/m49.htm",
+          "display": "World"
+        }
+      ]
+    }
+  ],
   "packageId": "hl7.fhir.uv.ebm",
   "fhirVersion": [
     "5.0.0"
@@ -167,6 +178,28 @@
         "isExample": true,
         "profile": [
           "https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Group/173249"
+        },
+        "description": "Nonfatal myocardial infarction",
+        "name": "173249",
+        "isExample": true,
+        "profile": [
+          "https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Group/173250"
+        },
+        "description": "Nonfatal myocardial infarction",
+        "name": "173250",
+        "isExample": true,
+        "profile": [
+          "https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
         ]
       },
       {

@@ -12,6 +12,8 @@
 [172939]: Group-172939.html
 [173245]: Group-173245.html
 [173248]: Group-173248.html
+[173249]: Group-173249.html
+[173250]: Group-173250.html
 [173251]: Group-173251.html
 [173252]: Group-173252.html
 [175762]: Group-175762.html

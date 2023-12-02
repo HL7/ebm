@@ -24,7 +24,11 @@
   "context": [
     {
       "type": "element",
-      "expression": "Evidence.statistic.modelCharacteristic or Evidence.statistic.modelCharacteristic.variable"
+      "expression": "Evidence.statistic.modelCharacteristic"
+    },
+    {
+      "type": "element",
+      "expression": "Evidence.statistic.modelCharacteristic.variable"
     }
   ],
   "type": "Extension",

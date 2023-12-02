@@ -1,8 +1,10 @@
 Extension: StatisticModelIncludeIf
 Id: statistic-model-include-if
 Description: "The condition under which the variable (or modelCharacteristic) will be included."
-* ^context.type = #element
-* ^context.expression = "Evidence.statistic.modelCharacteristic or Evidence.statistic.modelCharacteristic.variable"
+* ^context[0].type = #element
+* ^context[0].expression = "Evidence.statistic.modelCharacteristic"
+* ^context[1].type = #element
+* ^context[1].expression = "Evidence.statistic.modelCharacteristic.variable"
 * value[x] 0..0
 * . ^short = "Condition upon which to include the variable or model characteristic in the analysis"
 * . ^definition = "The condition upon which to include the variable or model characteristic in the analysis."
