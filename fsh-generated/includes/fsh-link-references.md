@@ -76,9 +76,9 @@
 [ArtifactAssessmentDateAsRating]: StructureDefinition-artifact-assessment-date-as-rating.html
 [ArtifactEffectivePeriod]: StructureDefinition-artifact-effectivePeriod.html
 [ArtifactLastReviewDate]: StructureDefinition-artifact-lastReviewDate.html
-[172423]: Group-172423.html
 [32139]: Group-32139.html
 [179511]: Group-179511.html
+[172423]: Group-172423.html
 [BaselineMeasureEvidence]: StructureDefinition-baseline-measure-evidence.html
 [179451]: Evidence-179451.html
 [179452]: Evidence-179452.html
@@ -280,8 +280,6 @@
 [179579]: List-179579.html
 [OutcomeMeasureEvidence]: StructureDefinition-outcome-measure-evidence.html
 [OutcomeVariable]: StructureDefinition-outcome-variable.html
-[104120]: EvidenceVariable-104120.html
-[49217]: EvidenceVariable-49217.html
 [32143]: EvidenceVariable-32143.html
 [173243]: EvidenceVariable-173243.html
 [173246]: EvidenceVariable-173246.html
@@ -292,6 +290,8 @@
 [104118]: EvidenceVariable-104118.html
 [104097]: EvidenceVariable-104097.html
 [104117]: EvidenceVariable-104117.html
+[104120]: EvidenceVariable-104120.html
+[49217]: EvidenceVariable-49217.html
 [104119]: EvidenceVariable-104119.html
 [ParticipantFlowMeasure]: StructureDefinition-participant-flow-measure.html
 [ParticipantFlow]: StructureDefinition-participant-flow.html
@@ -356,7 +356,6 @@
 [179618]: Library-179618.html
 [7751]: EvidenceVariable-7751.html
 [33398]: Group-33398.html
-[7752]: EvidenceVariable-7752.html
 [VariableDefinition]: StructureDefinition-variable-definition.html
 [VariableDefinitionComparatorCategory]: StructureDefinition-variable-definition-comparator-category.html
 [VariableDefinitionRoleSubtype]: StructureDefinition-variable-definition-role-subtype.html

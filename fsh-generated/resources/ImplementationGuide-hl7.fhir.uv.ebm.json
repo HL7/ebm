@@ -691,7 +691,7 @@
         "reference": {
           "reference": "Evidence/179683"
         },
-        "description": "Approximately 100 patients will be randomized to each of the 3 treatment groups (high dose, low dose, and placebo). Previous experience with the oral formulation of xanomeline suggests that this sample size has 90% power to detect a 3.0 mean treatment difference in ADAS-Cog (p<.05, twosided), based on a standard deviation of 6.5. \n<br>\nGroup mean changes from baseline in the primary efficacy parameters will serve as efficacy criteria.\n<br>\nThe primary analysis of efficacy will include only the data obtained up to and including the visit of discontinuation of study drug. Furthermore, the primary analysis will not include efficacy data obtained at any visit where the study drug was not administered in the preceding three days. Analyses that include the retrieved dropouts are considered secondary. In general, all patients will be included in all analyses of efficacy if they have a baseline measurement and at least one postrandomization measurement.\n<br>\nThe primary analysis of ADAS-Cog (11) and CIBIC+ will be the 24-week endpoint, which is defined for each patient and variable as the last measurement obtained postrandomization (prior to protocol defined reduction in dose). a last-observation-carried-forward (LOCF). Note that the LOCF analysis at 24 weeks is the same as the endpoint analysis described previously. \n<br>\nThe primary method to be used for the primary efficacy variables will be analysis of covariance (ANCOVA). Effects in the ANCOVA model will be the corresponding baseline score, investigator, and treatment. Investigator-by-treatment interaction will be tested in a full model prior to conducting the primary ANCOVA (see description below). Because 3 treatment groups are involved, the primary analysis will be the test for linear dose response in the ANCOVA model described in the preceding paragraph. The result is then a single p-value for ADAS-Cog. \n<br>\nInvestigator-by-treatment interaction will be tested in a full ANCOVA or ANOVA model, which takes the models described above, and adds the interaction term to the model. Interaction will be tested at α = .10 level. When the interaction is significant at this level, the data will be examined for each individual investigator to attempt to identify the source of the significant interaction. When the interaction is not significant, this term will be dropped from the model as described above, to test for investigator and treatment main effects. By doing so, all ANCOVA and ANOVA models will be able to validly test for treatment differences without weighting each investigator equally, which is what occurs when using Type III sums of squares (cell means model) with the interaction term present in the model. This equal weighting of investigators can become a serious problem when sample sizes are dramatically different between investigators. \n<br>\nFor all ANOVA and ANCOVA models, data collected from investigators who enrolled fewer than 3 patients in any one treatment group will be combined prior to analysis. If this combination still results in a treatment group having fewer than 3 patients in any one treatment group, then this group of patients will be combined with the next fewestenrolling investigator. In the event that there is a tie for fewest-enrolling investigator, one of these will be chosen at random by a random-number generator.\n<br>\nThe inherent assumption of normally distributed data will be evaluated by generating output for the residuals from the full ANCOVA and ANOVA models, which include the interaction term, and by testing for normality using the Shapiro-Wilk test from PROC UNIVARIATE. In the event that the data are predominantly nonnormally distributed, analyses will also be conducted on the ranked data. This rank transformation will be applied by ranking all the data for a particular variable, across all investigators and treatments, from lowest to highest. Integer ranks will be assigned starting at 1; mean ranks will be assigned when ties occur. \n<br>\nAll comparisons between xanomeline and placebo with respect to efficacy variables should be one-sided. The null hypothesis is that the drug is equal or worse than placebo. The alternative\nhypothesis is that the drug has greater efficacy than placebo. \n<br>\nDifferent regulatory agencies require different type I error rates. Treatment differences that are significant at the .025 α-level will be declared to be “statistically significant.” When a computed p-value falls between .025 and .05, the differences will be described as “marginally statistically significant.” This approach satisfies regulatory agencies who have accepted a one-sided test at the .05 level, and other regulatory agencies who have requested a two-sided test at the .05 level, or equivalently, a one-sided test at the .025 level. In order to facilitate the review of the final study report, two-sided p-values will be presented in addition to the one-sided p-values. \n<br>",
+        "description": "Approximately 100 patients will be randomized to each of the 3 treatment groups (high dose, low dose, and placebo). Previous experience with the oral formulation of xanomeline suggests that this sample size has 90% power to detect a 3.0 mean treatment difference in ADAS-Cog (p<.05, twosided), based on a standard deviation of 6.5. \n\nGroup mean changes from baseline in the primary efficacy parameters will serve as efficacy criteria.\n\nThe primary analysis of efficacy will include only the data obtained up to and including the visit of discontinuation of study drug. Furthermore, the primary analysis will not include efficacy data obtained at any visit where the study drug was not administered in the preceding three days. Analyses that include the retrieved dropouts are considered secondary. In general, all patients will be included in all analyses of efficacy if they have a baseline measurement and at least one postrandomization measurement.\n\nThe primary analysis of ADAS-Cog (11) and CIBIC+ will be the 24-week endpoint, which is defined for each patient and variable as the last measurement obtained postrandomization (prior to protocol defined reduction in dose). a last-observation-carried-forward (LOCF). Note that the LOCF analysis at 24 weeks is the same as the endpoint analysis described previously. \n\nThe primary method to be used for the primary efficacy variables will be analysis of covariance (ANCOVA). Effects in the ANCOVA model will be the corresponding baseline score, investigator, and treatment. Investigator-by-treatment interaction will be tested in a full model prior to conducting the primary ANCOVA (see description below). Because 3 treatment groups are involved, the primary analysis will be the test for linear dose response in the ANCOVA model described in the preceding paragraph. The result is then a single p-value for ADAS-Cog. \n\nInvestigator-by-treatment interaction will be tested in a full ANCOVA or ANOVA model, which takes the models described above, and adds the interaction term to the model. Interaction will be tested at α = .10 level. When the interaction is significant at this level, the data will be examined for each individual investigator to attempt to identify the source of the significant interaction. When the interaction is not significant, this term will be dropped from the model as described above, to test for investigator and treatment main effects. By doing so, all ANCOVA and ANOVA models will be able to validly test for treatment differences without weighting each investigator equally, which is what occurs when using Type III sums of squares (cell means model) with the interaction term present in the model. This equal weighting of investigators can become a serious problem when sample sizes are dramatically different between investigators. \n\nFor all ANOVA and ANCOVA models, data collected from investigators who enrolled fewer than 3 patients in any one treatment group will be combined prior to analysis. If this combination still results in a treatment group having fewer than 3 patients in any one treatment group, then this group of patients will be combined with the next fewestenrolling investigator. In the event that there is a tie for fewest-enrolling investigator, one of these will be chosen at random by a random-number generator.\n\nThe inherent assumption of normally distributed data will be evaluated by generating output for the residuals from the full ANCOVA and ANOVA models, which include the interaction term, and by testing for normality using the Shapiro-Wilk test from PROC UNIVARIATE. In the event that the data are predominantly nonnormally distributed, analyses will also be conducted on the ranked data. This rank transformation will be applied by ranking all the data for a particular variable, across all investigators and treatments, from lowest to highest. Integer ranks will be assigned starting at 1; mean ranks will be assigned when ties occur. \n\nAll comparisons between xanomeline and placebo with respect to efficacy variables should be one-sided. The null hypothesis is that the drug is equal or worse than placebo. The alternative\nhypothesis is that the drug has greater efficacy than placebo. \n\nDifferent regulatory agencies require different type I error rates. Treatment differences that are significant at the .025 α-level will be declared to be “statistically significant.” When a computed p-value falls between .025 and .05, the differences will be described as “marginally statistically significant.” This approach satisfies regulatory agencies who have accepted a one-sided test at the .05 level, and other regulatory agencies who have requested a two-sided test at the .05 level, or equivalently, a one-sided test at the .025 level. In order to facilitate the review of the final study report, two-sided p-values will be presented in addition to the one-sided p-values.",
         "name": "ADAS-Cog(11) EndpointAnalysisPlan from PHUSE Lilly Redacted Protocol - EBMonFHIR IG Version",
         "isExample": true,
         "profile": [
@@ -748,21 +748,10 @@
       },
       {
         "reference": {
-          "reference": "Group/172423"
-        },
-        "description": "Any of 4 bariatric surgery procedures (Roux-en-Y Gastric Bypass, Vertical Sleeve Gastrectomy, Laparoscopic Adjustable Gastric banding, Biliopancreatic Diversion)",
-        "name": "Bariatric Surgery (RYGB, VSG, LAGB, BPD)",
-        "isExample": true,
-        "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-definition"
-        ]
-      },
-      {
-        "reference": {
           "reference": "Group/32139"
         },
         "description": "Inclusion Criteria: [[1]] Adults. [[2]] Diagnosed with type 2 diabetes. [[3]] Body Mass Index (BMI) ≥ 40.0 kg/m2 (BMI ≥ 37.5 kg/m2 in Asian Americans), or BMI ≥ 35.0 kg/m2 and ≤ 39.9 kg/m2 (BMI 32.5-37.4 kg/m2 in Asian Americans) who do not achieve durable weight loss and improvement in comorbidities (including hyperglycemia) with nonsurgical methods. [[4]] Screened surgical candidates.",
-        "name": "Bariatric Surgery Eligibility Group (ADA Recommendation 8.16)",
+        "name": "Bariatric_Surgery_Eligibility_Group_ADA_Recommendation_8_16_",
         "isExample": true,
         "profile": [
           "https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-eligibility-criteria"
@@ -773,10 +762,21 @@
           "reference": "Group/179511"
         },
         "description": "Inclusion Criteria: [[1]] Adults. [[2]] Diagnosed with type 2 diabetes. [[3]] Body Mass Index (BMI) ≥ 30.0 kg/m2 and ≤ 34.9 kg/m2 (BMI 27.5-32.4 kg/m2 in Asian Americans) who do not achieve durable weight loss and improvement in comorbidities (including hyperglycemia) with nonsurgical methods. [[4]] Screened surgical candidates.",
-        "name": "Bariatric Surgery Eligibility Group (ADA Recommendation 8.17)",
+        "name": "Bariatric_Surgery_Eligibility_Group_ADA_Recommendation_8_17_",
         "isExample": true,
         "profile": [
           "https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-eligibility-criteria"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "Group/172423"
+        },
+        "description": "Any of 4 bariatric surgery procedures (Roux-en-Y Gastric Bypass, Vertical Sleeve Gastrectomy, Laparoscopic Adjustable Gastric banding, Biliopancreatic Diversion)",
+        "name": "Bariatric_Surgery_RYGB_VSG_LAGB_BPD_",
+        "isExample": true,
+        "profile": [
+          "https://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-definition"
         ]
       },
       {
@@ -997,7 +997,7 @@
         "reference": {
           "reference": "Evidence/179690"
         },
-        "description": "Approximately 100 patients will be randomized to each of the 3 treatment groups (high dose, low dose, and placebo). Previous experience with the oral formulation of xanomeline suggests that this sample size has 90% power to detect a 3.0 mean treatment difference in ADAS-Cog (p<.05, twosided), based on a standard deviation of 6.5. Furthermore, this sample size has 80% power to detect a 0.36 mean treatment difference in CIBIC+ (p<.05, two-sided), based on a standard deviation of 0.9\n<br>\nGroup mean changes from baseline in the primary efficacy parameters will serve as efficacy criteria.\n<br>\nThe primary analysis of efficacy will include only the data obtained up to and including the visit of discontinuation of study drug. Furthermore, the primary analysis will not include efficacy data obtained at any visit where the study drug was not administered in the preceding three days. Analyses that include the retrieved dropouts are considered secondary. In general, all patients will be included in all analyses of efficacy if they have a baseline measurement and at least one postrandomization measurement.\n<br>\nThe primary analysis of ADAS-Cog (11) and CIBIC+ will be the 24-week endpoint, which is defined for each patient and variable as the last measurement obtained postrandomization (prior to protocol defined reduction in dose). a last-observation-carried-forward (LOCF). Note that the LOCF analysis at 24 weeks is the same as the endpoint analysis described previously. \n<br>\nCIBIC+ will be analyzed by analysis of variance (ANOVA), with effects in the model being investigator and treatment. Investigator-by-treatment interaction will be tested in a full model prior to conducting the primary ANOVA (see description below). Because 3 treatment groups are involved, the primary analysis will be the test for linear dose response in the ANCOVA model described in the preceding paragraph. The result is then a single p-value for CIBIC+. \n<br>\nInvestigator-by-treatment interaction will be tested in a full ANOVA model, which takes the models described above, and adds the interaction term to the model. Interaction will be tested at α = .10 level. When the interaction is significant at this level, the data will be examined for each individual investigator to attempt to identify the source of the significant interaction. When the interaction is not significant, this term will be dropped from the model as described above, to test for investigator and treatment main effects. By doing so, all ANCOVA and ANOVA models will be able to validly test for treatment differences without weighting each investigator equally, which is what occurs when using Type III sums of squares (cell means model) with the interaction term present in the model. This equal weighting of investigators can become a serious problem when sample sizes are dramatically different between investigators. \n<br>\nFor all ANOVA and ANCOVA models, data collected from investigators who enrolled fewer than 3 patients in any one treatment group will be combined prior to analysis. If this combination still results in a treatment group having fewer than 3 patients in any one treatment group, then this group of patients will be combined with the next fewestenrolling investigator. In the event that there is a tie for fewest-enrolling investigator, one of these will be chosen at random by a random-number generator.\n<br>\nThe inherent assumption of normally distributed data will be evaluated by generating output for the residuals from the full ANCOVA and ANOVA models, which include the interaction term, and by testing for normality using the Shapiro-Wilk test from PROC UNIVARIATE. In the event that the data are predominantly nonnormally distributed, analyses will also be conducted on the ranked data. This rank transformation will be applied by ranking all the data for a particular variable, across all investigators and treatments, from lowest to highest. Integer ranks will be assigned starting at 1; mean ranks will be assigned when ties occur. \n<br>\nAll comparisons between xanomeline and placebo with respect to efficacy variables should be one-sided. The null hypothesis is that the drug is equal or worse than placebo. The alternative\nhypothesis is that the drug has greater efficacy than placebo. \n<br>\nDifferent regulatory agencies require different type I error rates. Treatment differences that are significant at the .025 α-level will be declared to be “statistically significant.” When a computed p-value falls between .025 and .05, the differences will be described as “marginally statistically significant.” This approach satisfies regulatory agencies who have accepted a one-sided test at the .05 level, and other regulatory agencies who have requested a two-sided test at the .05 level, or equivalently, a one-sided test at the .025 level. In order to facilitate the review of the final study report, two-sided p-values will be presented in addition to the one-sided p-values. \n<br>",
+        "description": "Approximately 100 patients will be randomized to each of the 3 treatment groups (high dose, low dose, and placebo). Previous experience with the oral formulation of xanomeline suggests that this sample size has 90% power to detect a 3.0 mean treatment difference in ADAS-Cog (p<.05, twosided), based on a standard deviation of 6.5. Furthermore, this sample size has 80% power to detect a 0.36 mean treatment difference in CIBIC+ (p<.05, two-sided), based on a standard deviation of 0.9\n\nGroup mean changes from baseline in the primary efficacy parameters will serve as efficacy criteria.\n\nThe primary analysis of efficacy will include only the data obtained up to and including the visit of discontinuation of study drug. Furthermore, the primary analysis will not include efficacy data obtained at any visit where the study drug was not administered in the preceding three days. Analyses that include the retrieved dropouts are considered secondary. In general, all patients will be included in all analyses of efficacy if they have a baseline measurement and at least one postrandomization measurement.\n\nThe primary analysis of ADAS-Cog (11) and CIBIC+ will be the 24-week endpoint, which is defined for each patient and variable as the last measurement obtained postrandomization (prior to protocol defined reduction in dose). a last-observation-carried-forward (LOCF). Note that the LOCF analysis at 24 weeks is the same as the endpoint analysis described previously. \n\nCIBIC+ will be analyzed by analysis of variance (ANOVA), with effects in the model being investigator and treatment. Investigator-by-treatment interaction will be tested in a full model prior to conducting the primary ANOVA (see description below). Because 3 treatment groups are involved, the primary analysis will be the test for linear dose response in the ANCOVA model described in the preceding paragraph. The result is then a single p-value for CIBIC+. \n\nInvestigator-by-treatment interaction will be tested in a full ANOVA model, which takes the models described above, and adds the interaction term to the model. Interaction will be tested at α = .10 level. When the interaction is significant at this level, the data will be examined for each individual investigator to attempt to identify the source of the significant interaction. When the interaction is not significant, this term will be dropped from the model as described above, to test for investigator and treatment main effects. By doing so, all ANCOVA and ANOVA models will be able to validly test for treatment differences without weighting each investigator equally, which is what occurs when using Type III sums of squares (cell means model) with the interaction term present in the model. This equal weighting of investigators can become a serious problem when sample sizes are dramatically different between investigators. \n\nFor all ANOVA and ANCOVA models, data collected from investigators who enrolled fewer than 3 patients in any one treatment group will be combined prior to analysis. If this combination still results in a treatment group having fewer than 3 patients in any one treatment group, then this group of patients will be combined with the next fewestenrolling investigator. In the event that there is a tie for fewest-enrolling investigator, one of these will be chosen at random by a random-number generator.\n\nThe inherent assumption of normally distributed data will be evaluated by generating output for the residuals from the full ANCOVA and ANOVA models, which include the interaction term, and by testing for normality using the Shapiro-Wilk test from PROC UNIVARIATE. In the event that the data are predominantly nonnormally distributed, analyses will also be conducted on the ranked data. This rank transformation will be applied by ranking all the data for a particular variable, across all investigators and treatments, from lowest to highest. Integer ranks will be assigned starting at 1; mean ranks will be assigned when ties occur. \n\nAll comparisons between xanomeline and placebo with respect to efficacy variables should be one-sided. The null hypothesis is that the drug is equal or worse than placebo. The alternative\nhypothesis is that the drug has greater efficacy than placebo. \n\nDifferent regulatory agencies require different type I error rates. Treatment differences that are significant at the .025 α-level will be declared to be “statistically significant.” When a computed p-value falls between .025 and .05, the differences will be described as “marginally statistically significant.” This approach satisfies regulatory agencies who have accepted a one-sided test at the .05 level, and other regulatory agencies who have requested a two-sided test at the .05 level, or equivalently, a one-sided test at the .025 level. In order to facilitate the review of the final study report, two-sided p-values will be presented in addition to the one-sided p-values.",
         "name": "CIBIC+ EndpointAnalysisPlan from PHUSE Lilly Redacted Protocol - EBMonFHIR IG Version",
         "isExample": true,
         "profile": [
@@ -1050,7 +1050,7 @@
           "reference": "Group/170441"
         },
         "description": "Cancer of any kind (except basal cell skin cancer or cancer in situ) unless documented to be disease-free for five years",
-        "name": "CohortDefinition: Cancer of any kind (except basal cell skin cancer or cancer in situ) unless documented to be disease-free for five years",
+        "name": "CohortDefinition_Cancer_of_any_kind_except_basal_cell_skin_cancer_or_cancer_in_situ_unless_documented_to_be_disease_free_for_five_years",
         "isExample": true,
         "profile": [
           "https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
@@ -1061,7 +1061,7 @@
           "reference": "Group/170442"
         },
         "description": "Cardiovascular event (myocardial infarction, acute coronary syndrome, coronary artery angioplasty or bypass, stroke)",
-        "name": "CohortDefinition: Cardiovascular event",
+        "name": "CohortDefinition_Cardiovascular_event",
         "isExample": true,
         "profile": [
           "https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
@@ -1568,14 +1568,14 @@
           "reference": "Organization/118079"
         },
         "description": "Computable Publishing® augments digital publishing with machine-interpretable forms. Computable Publishing® offers publishers of any type (commercial, nonprofit, academic, government) the ability to extend their published works with computable (machine-interpretable) forms of expression, and users of any type support in using computable data to enhance, improve and achieve desired outcomes.",
-        "name": "Computable Publishing LLC",
+        "name": "Computable_Publishing_LLC",
         "isExample": true
       },
       {
         "reference": {
           "reference": "Group/12714"
         },
-        "name": "COVID-19PneumoniaHospitalizedAdult",
+        "name": "COVID_19PneumoniaHospitalizedAdult",
         "isExample": true
       },
       {
@@ -1831,7 +1831,7 @@
         "reference": {
           "reference": "Evidence/120067"
         },
-        "description": "The statistic element will show an example of an endpoint analysis plan.\n<br>\nTo determine if there is a statistically significant relationship (overall Type 1 error rate, α=.05) between the change in both ADAS-Cog (see Attachment LZZT.2) and CIBIC+ (see Attachment LZZT.3) scores, and drug dose (0, 50 cm2 [54 mg], and 75 cm2 [81 mg]). \n<br>\n4.3.1. Efficacy Variables to be Analyzed\n<br>\nEfficacy measures are described in Section 3.9.1.1. As stated in Section 3.9.1.2, the primary outcome measures are the ADAS-Cog (11) and CIBIC+ instruments. Because both of these variables must reach statistical significance, an adjustment to the nominal p-values is necessary in order to maintain a .05 Type I error rate for this study. This adjustment is described in detail in Section 4.3.5.\n<br>\n4.3.5. Nominal P-value Adjustments\n<br>\nWhen there are multiple outcomes, and the study drug is declared to be effective when at least one of these outcomes achieves statistical significance in comparison with a placebo control, a downward adjustment to the nominal α-level is necessary. A well-known simple method is the Bonferroni method, that divides the overall Type I error rate, usually .05, by the number of multiple outcomes. So, for example, if there are two multiple outcomes, the study drug is declared to be effective if at least one of the two outcomes is significant at the .05/2 or .025 level. \nHowever, when one has the situation that is present in this study, where there are 2 (or 3 for Europe) outcome variables, each of which must be statistically significant, then the adjustment of the nominal levels is in the opposite direction, that is upwards, in order to maintain an overall Type 1 error rate of .05. \nIn the case of two outcomes, ADAS-Cog (11) and CIBIC+, if the two variables were completely independent, then each variable should be tested at the nominal α-level of .051/2 = .2236 level. So if both variables resulted in a nominal p-value less than or equal to .2236, then we would declare the study drug to be effective at the overall Type 1 error rate of .05.\nWe expect these two outcome measures to be correlated. From the first large-scale efficacy study of oral xanomeline, Study MC-H2Q-LZZA, the correlation between CIBIC+ and the change in ADAS-Cog(11) from baseline was .252. Consequently, we plan to conduct a randomization test to combine these two dependent dose-response p values into a single test, which will then be at the .05 Type I error level. Because there will be roughly 300!/(3 * 100!) possible permutations of the data, random data permutations will be sampled (10,000 random permutations). Designate the dose response p-values as p1 and p2 (computed as one-sided p-values), for ADAS-Cog(11) and CIBIC+, respectively. The rejection region is defined as\n [ {p1 ≤ α and p2 ≤ α} ].\nThe critical value, α, will be determined from the 10,000 random permutations by choosing the value of α to be such that 2.5% of the 10,000 computed pairs of dose response p-values fall in the rejection region. This will correspond to a one-sided test at the .025 level, or equivalently a two-sided test at the .05 level. In addition, by determining the percentage of permuted samples that are more extreme than the observed data, a single p-value is obtained. \n<br>\n<br>\nDo 10,000 random permutations of 'treatment group' assigned to the observed values for all other variables.\nAlpha level for this single p-value is 0.025, 'marginally statistically significant' threshold for this single p-value is 0.05",
+        "description": "The statistic element will show an example of an endpoint analysis plan.\n\nTo determine if there is a statistically significant relationship (overall Type 1 error rate, α=.05) between the change in both ADAS-Cog (see Attachment LZZT.2) and CIBIC+ (see Attachment LZZT.3) scores, and drug dose (0, 50 cm2 [54 mg], and 75 cm2 [81 mg]). \n\n4.3.1. Efficacy Variables to be Analyzed\n\nEfficacy measures are described in Section 3.9.1.1. As stated in Section 3.9.1.2, the primary outcome measures are the ADAS-Cog (11) and CIBIC+ instruments. Because both of these variables must reach statistical significance, an adjustment to the nominal p-values is necessary in order to maintain a .05 Type I error rate for this study. This adjustment is described in detail in Section 4.3.5.\n\n4.3.5. Nominal P-value Adjustments\n\nWhen there are multiple outcomes, and the study drug is declared to be effective when at least one of these outcomes achieves statistical significance in comparison with a placebo control, a downward adjustment to the nominal α-level is necessary. A well-known simple method is the Bonferroni method, that divides the overall Type I error rate, usually .05, by the number of multiple outcomes. So, for example, if there are two multiple outcomes, the study drug is declared to be effective if at least one of the two outcomes is significant at the .05/2 or .025 level. \nHowever, when one has the situation that is present in this study, where there are 2 (or 3 for Europe) outcome variables, each of which must be statistically significant, then the adjustment of the nominal levels is in the opposite direction, that is upwards, in order to maintain an overall Type 1 error rate of .05. \nIn the case of two outcomes, ADAS-Cog (11) and CIBIC+, if the two variables were completely independent, then each variable should be tested at the nominal α-level of .051/2 = .2236 level. So if both variables resulted in a nominal p-value less than or equal to .2236, then we would declare the study drug to be effective at the overall Type 1 error rate of .05.\nWe expect these two outcome measures to be correlated. From the first large-scale efficacy study of oral xanomeline, Study MC-H2Q-LZZA, the correlation between CIBIC+ and the change in ADAS-Cog(11) from baseline was .252. Consequently, we plan to conduct a randomization test to combine these two dependent dose-response p values into a single test, which will then be at the .05 Type I error level. Because there will be roughly 300!/(3 * 100!) possible permutations of the data, random data permutations will be sampled (10,000 random permutations). Designate the dose response p-values as p1 and p2 (computed as one-sided p-values), for ADAS-Cog(11) and CIBIC+, respectively. The rejection region is defined as\n [ {p1 ≤ α and p2 ≤ α} ].\nThe critical value, α, will be determined from the 10,000 random permutations by choosing the value of α to be such that 2.5% of the 10,000 computed pairs of dose response p-values fall in the rejection region. This will correspond to a one-sided test at the .025 level, or equivalently a two-sided test at the .05 level. In addition, by determining the percentage of permuted samples that are more extreme than the observed data, a single p-value is obtained. \n\nDo 10,000 random permutations of 'treatment group' assigned to the observed values for all other variables.\nAlpha level for this single p-value is 0.025, 'marginally statistically significant' threshold for this single p-value is 0.05",
         "name": "Example EndpointAnalysisPlan from PHUSE Lilly Redacted Protocol",
         "isExample": true
       },
@@ -1839,7 +1839,7 @@
         "reference": {
           "reference": "Evidence/179691"
         },
-        "description": "The statistic element will show an example of an endpoint analysis plan.\n<br>\nTo determine if there is a statistically significant relationship (overall Type 1 error rate, α=.05) between the change in both ADAS-Cog (see Attachment LZZT.2) and CIBIC+ (see Attachment LZZT.3) scores, and drug dose (0, 50 cm2 [54 mg], and 75 cm2 [81 mg]). \n<br>\n4.3.1. Efficacy Variables to be Analyzed\n<br>\nEfficacy measures are described in Section 3.9.1.1. As stated in Section 3.9.1.2, the primary outcome measures are the ADAS-Cog (11) and CIBIC+ instruments. Because both of these variables must reach statistical significance, an adjustment to the nominal p-values is necessary in order to maintain a .05 Type I error rate for this study. This adjustment is described in detail in Section 4.3.5.\n<br>\n4.3.5. Nominal P-value Adjustments\n<br>\nWhen there are multiple outcomes, and the study drug is declared to be effective when at least one of these outcomes achieves statistical significance in comparison with a placebo control, a downward adjustment to the nominal α-level is necessary. A well-known simple method is the Bonferroni method, that divides the overall Type I error rate, usually .05, by the number of multiple outcomes. So, for example, if there are two multiple outcomes, the study drug is declared to be effective if at least one of the two outcomes is significant at the .05/2 or .025 level. \nHowever, when one has the situation that is present in this study, where there are 2 (or 3 for Europe) outcome variables, each of which must be statistically significant, then the adjustment of the nominal levels is in the opposite direction, that is upwards, in order to maintain an overall Type 1 error rate of .05. \nIn the case of two outcomes, ADAS-Cog (11) and CIBIC+, if the two variables were completely independent, then each variable should be tested at the nominal α-level of .051/2 = .2236 level. So if both variables resulted in a nominal p-value less than or equal to .2236, then we would declare the study drug to be effective at the overall Type 1 error rate of .05.\nWe expect these two outcome measures to be correlated. From the first large-scale efficacy study of oral xanomeline, Study MC-H2Q-LZZA, the correlation between CIBIC+ and the change in ADAS-Cog(11) from baseline was .252. Consequently, we plan to conduct a randomization test to combine these two dependent dose-response p values into a single test, which will then be at the .05 Type I error level. Because there will be roughly 300!/(3 * 100!) possible permutations of the data, random data permutations will be sampled (10,000 random permutations). Designate the dose response p-values as p1 and p2 (computed as one-sided p-values), for ADAS-Cog(11) and CIBIC+, respectively. The rejection region is defined as\n [ {p1 ≤ α and p2 ≤ α} ].\nThe critical value, α, will be determined from the 10,000 random permutations by choosing the value of α to be such that 2.5% of the 10,000 computed pairs of dose response p-values fall in the rejection region. This will correspond to a one-sided test at the .025 level, or equivalently a two-sided test at the .05 level. In addition, by determining the percentage of permuted samples that are more extreme than the observed data, a single p-value is obtained. \n<br>\n<br>\nDo 10,000 random permutations of 'treatment group' assigned to the observed values for all other variables.\nAlpha level for this single p-value is 0.025, 'marginally statistically significant' threshold for this single p-value is 0.05",
+        "description": "The statistic element will show an example of an endpoint analysis plan.\n\nTo determine if there is a statistically significant relationship (overall Type 1 error rate, α=.05) between the change in both ADAS-Cog (see Attachment LZZT.2) and CIBIC+ (see Attachment LZZT.3) scores, and drug dose (0, 50 cm2 [54 mg], and 75 cm2 [81 mg]). \n\n4.3.1. Efficacy Variables to be Analyzed\n\nEfficacy measures are described in Section 3.9.1.1. As stated in Section 3.9.1.2, the primary outcome measures are the ADAS-Cog (11) and CIBIC+ instruments. Because both of these variables must reach statistical significance, an adjustment to the nominal p-values is necessary in order to maintain a .05 Type I error rate for this study. This adjustment is described in detail in Section 4.3.5.\n\n4.3.5. Nominal P-value Adjustments\n\nWhen there are multiple outcomes, and the study drug is declared to be effective when at least one of these outcomes achieves statistical significance in comparison with a placebo control, a downward adjustment to the nominal α-level is necessary. A well-known simple method is the Bonferroni method, that divides the overall Type I error rate, usually .05, by the number of multiple outcomes. So, for example, if there are two multiple outcomes, the study drug is declared to be effective if at least one of the two outcomes is significant at the .05/2 or .025 level. \nHowever, when one has the situation that is present in this study, where there are 2 (or 3 for Europe) outcome variables, each of which must be statistically significant, then the adjustment of the nominal levels is in the opposite direction, that is upwards, in order to maintain an overall Type 1 error rate of .05. \nIn the case of two outcomes, ADAS-Cog (11) and CIBIC+, if the two variables were completely independent, then each variable should be tested at the nominal α-level of .051/2 = .2236 level. So if both variables resulted in a nominal p-value less than or equal to .2236, then we would declare the study drug to be effective at the overall Type 1 error rate of .05.\nWe expect these two outcome measures to be correlated. From the first large-scale efficacy study of oral xanomeline, Study MC-H2Q-LZZA, the correlation between CIBIC+ and the change in ADAS-Cog(11) from baseline was .252. Consequently, we plan to conduct a randomization test to combine these two dependent dose-response p values into a single test, which will then be at the .05 Type I error level. Because there will be roughly 300!/(3 * 100!) possible permutations of the data, random data permutations will be sampled (10,000 random permutations). Designate the dose response p-values as p1 and p2 (computed as one-sided p-values), for ADAS-Cog(11) and CIBIC+, respectively. The rejection region is defined as\n [ {p1 ≤ α and p2 ≤ α} ].\nThe critical value, α, will be determined from the 10,000 random permutations by choosing the value of α to be such that 2.5% of the 10,000 computed pairs of dose response p-values fall in the rejection region. This will correspond to a one-sided test at the .025 level, or equivalently a two-sided test at the .05 level. In addition, by determining the percentage of permuted samples that are more extreme than the observed data, a single p-value is obtained. \n\nDo 10,000 random permutations of 'treatment group' assigned to the observed values for all other variables.\nAlpha level for this single p-value is 0.025, 'marginally statistically significant' threshold for this single p-value is 0.05",
         "name": "Example EndpointAnalysisPlan from PHUSE Lilly Redacted Protocol - EBMonFHIR IG Versionr",
         "isExample": true,
         "profile": [
@@ -2654,26 +2654,6 @@
       },
       {
         "reference": {
-          "reference": "EvidenceVariable/104120"
-        },
-        "name": "OutcomeVariable: Additional GI surgical procedure",
-        "isExample": true,
-        "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-variable"
-        ]
-      },
-      {
-        "reference": {
-          "reference": "EvidenceVariable/49217"
-        },
-        "name": "OutcomeVariable: All-cause mortality",
-        "isExample": true,
-        "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-variable"
-        ]
-      },
-      {
-        "reference": {
           "reference": "EvidenceVariable/32143"
         },
         "description": "The American Diabetes Association composite triple end point of hemoglobin A1c less than 7.0%, low-density lipoprotein cholesterol less than 100 mg/dL, and systolic blood pressure less than 130 mm Hg at 5 years",
@@ -2783,9 +2763,29 @@
       },
       {
         "reference": {
+          "reference": "EvidenceVariable/104120"
+        },
+        "name": "OutcomeVariable_Additional_GI_surgical_procedure",
+        "isExample": true,
+        "profile": [
+          "https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-variable"
+        ]
+      },
+      {
+        "reference": {
+          "reference": "EvidenceVariable/49217"
+        },
+        "name": "OutcomeVariable_All_cause_mortality",
+        "isExample": true,
+        "profile": [
+          "https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-variable"
+        ]
+      },
+      {
+        "reference": {
           "reference": "EvidenceVariable/104119"
         },
-        "name": "OutcomeVariable: Treatment with opioids",
+        "name": "OutcomeVariable_Treatment_with_opioids",
         "isExample": true,
         "profile": [
           "https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-variable"
@@ -2888,14 +2888,14 @@
         "reference": {
           "reference": "Group/7750"
         },
-        "name": "Participants in Anticoagulation for COVID-19 Combined (ATTACC, ACTIV-4a, and REMAP-CAP) RCT (hospitalized, not critically ill)",
+        "name": "Participants_in_Anticoagulation_for_COVID_19_Combined_ATTACC_ACTIV_4a_and_REMAP_CAP_RCT_hospitalized_not_critically_ill_",
         "isExample": true
       },
       {
         "reference": {
           "reference": "Group/7749"
         },
-        "name": "Patients who are hospitalized for COVID-19 and who are not critically ill",
+        "name": "Patients_who_are_hospitalized_for_COVID_19_and_who_are_not_critically_ill",
         "isExample": true
       },
       {
@@ -3099,7 +3099,7 @@
           "reference": "Group/178427"
         },
         "description": "Cohort study with baseline data of exposures from November 2005 through July 2010 and follow-up data from 2006 until death or through December 2015 at a tertiary care outpatient center, Vestfold Hospital Trust, Norway. Consecutive treatment-seeking adult patients (n = 2109) with severe obesity assessed (221 patients excluded and 1888 patients included).",
-        "name": "Severely Obese Adults 2018 Norwegian Cohort",
+        "name": "Severely_Obese_Adults_2018_Norwegian_Cohort",
         "isExample": true,
         "profile": [
           "https://hl7.org/fhir/uv/ebm/StructureDefinition/study-group"
@@ -3223,7 +3223,7 @@
           "reference": "Group/170443"
         },
         "description": "Inclusion Criteria:    Age 30 to 67 years at eligibility visit.    Diagnosed with T2DM at least 6 months prior to enrollment, under the active care of a doctor for at least the six months prior to enrollment, and HbA1c ≥ 8.0%.    Body Mass Index (BMI) ≥ 30.0 kg/m2 and ≤ 39.9 kg/m2 at eligibility visit.    Willingness to accept random assignment to either treatment group.    Expect to live or work within approximately one hour's traveling time from the study clinic for the duration of the two-year trial.    Willingness to comply with the follow-up protocol and successful completion of the run-in.    Written informed consent. ///// Exclusion Criteria:   Cardiovascular event (myocardial infarction, acute coronary syndrome, coronary artery angioplasty or bypass, stroke) in the past six months.    Current evidence of congestive heart failure, angina pectoris, or symptomatic peripheral vascular disease.    Cardiac stress test indicating that surgery or IMM would not be safe.    Pulmonary embolus or thrombophlebitis in the past six months.    Cancer of any kind (except basal cell skin cancer or cancer in situ) unless documented to be disease-free for five years.    Significant anemia (hemoglobin 1.0 g or more below normal range) or history of coagulopathy.    Serum creatinine ≥ 1.5 mg/dl.    HbA1c > 14.0%.",
-        "name": "StudyEligibilityCriteria: Eligibility Criteria for Bariatric Surgery Randomized Trial (Diabetes Surgery Study)",
+        "name": "StudyEligibilityCriteria_Eligibility_Criteria_for_Bariatric_Surgery_Randomized_Trial_Diabetes_Surgery_Study_",
         "isExample": true,
         "profile": [
           "https://hl7.org/fhir/uv/ebm/StructureDefinition/study-eligibility-criteria"
@@ -3241,7 +3241,7 @@
         "reference": {
           "reference": "Group/32145"
         },
-        "name": "StudyGroup: Bariatric Surgery Trial Enrollment Group",
+        "name": "StudyGroup_Bariatric_Surgery_Trial_Enrollment_Group",
         "isExample": true,
         "profile": [
           "https://hl7.org/fhir/uv/ebm/StructureDefinition/study-group"
@@ -3251,7 +3251,7 @@
         "reference": {
           "reference": "Group/46117"
         },
-        "name": "StudyGroup: DIBASY Trial Enrollment Group",
+        "name": "StudyGroup_DIBASY_Trial_Enrollment_Group",
         "isExample": true,
         "profile": [
           "https://hl7.org/fhir/uv/ebm/StructureDefinition/study-group"
@@ -3351,19 +3351,11 @@
         "reference": {
           "reference": "Group/33398"
         },
-        "name": "Type 2 diabetes and elevated BMI in 2016 meta-analysis",
+        "name": "Type_2_diabetes_and_elevated_BMI_in_2016_meta_analysis",
         "isExample": true,
         "profile": [
           "https://hl7.org/fhir/uv/ebm/StructureDefinition/study-eligibility-criteria"
         ]
-      },
-      {
-        "reference": {
-          "reference": "EvidenceVariable/7752"
-        },
-        "description": "Thromboprophylaxis was provided at a dose and duration determined by the treating clinician according to local practice.",
-        "name": "Usual-care pharmacologic thromboprophylaxis",
-        "isExample": true
       },
       {
         "reference": {
