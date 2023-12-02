@@ -300,7 +300,7 @@
       {
         "id": "Composition.section:summary.section:protocolSynopsis.section:numberOfParticipants.text",
         "path": "Composition.section.section.section.text",
-        "comment": "State the expected number of participants to be assigned to trial intervention/enrolled.  Indicate whether the number provided is the target or maximum number of individuals to be randomly assigned to trial intervention/enrolled. A [Target/ Maximum] of <Enter Number of Participants> participants will be [randomly assigned to trial intervention/ enrolled].",
+        "comment": "State the expected number of participants to be assigned to trial intervention/enrolled.  Indicate whether the number provided is the target or maximum number of individuals to be randomly assigned to trial intervention/enrolled. A [Target/ Maximum] of [[Enter Number of Participants]] participants will be [randomly assigned to trial intervention/ enrolled].",
         "min": 1
       },
       {

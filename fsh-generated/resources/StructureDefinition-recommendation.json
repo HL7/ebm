@@ -47,7 +47,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "text"
+              "path": "coding"
             }
           ],
           "rules": "open"
@@ -65,6 +65,7 @@
       {
         "id": "Composition.category:recommendation.coding",
         "path": "Composition.category.coding",
+        "min": 1,
         "patternCoding": {
           "code": "Recommendation",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -136,12 +137,17 @@
         "mustSupport": true
       },
       {
-        "id": "Composition.section:recommendationSpecification.code.coding",
-        "path": "Composition.section.code.coding",
-        "patternCoding": {
-          "code": "recommendation-specification",
-          "system": "https://fevir.net/resources/CodeSystem/179423",
-          "display": "Recommendation Specification"
+        "id": "Composition.section:recommendationSpecification.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "recommendation-specification",
+              "system": "https://fevir.net/resources/CodeSystem/179423",
+              "display": "Recommendation Specification"
+            }
+          ]
         }
       },
       {
@@ -398,12 +404,17 @@
         "mustSupport": true
       },
       {
-        "id": "Composition.section:evidence.code.coding",
-        "path": "Composition.section.code.coding",
-        "patternCoding": {
-          "code": "evidence",
-          "system": "https://fevir.net/resources/CodeSystem/179423",
-          "display": "Evidence"
+        "id": "Composition.section:evidence.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "evidence",
+              "system": "https://fevir.net/resources/CodeSystem/179423",
+              "display": "Evidence"
+            }
+          ]
         }
       },
       {
@@ -698,12 +709,17 @@
         "mustSupport": true
       },
       {
-        "id": "Composition.section:netEffect.code.coding",
-        "path": "Composition.section.code.coding",
-        "patternCoding": {
-          "code": "net-effect",
-          "system": "https://fevir.net/resources/CodeSystem/179423",
-          "display": "Net Effect"
+        "id": "Composition.section:netEffect.code",
+        "path": "Composition.section.code",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "net-effect",
+              "system": "https://fevir.net/resources/CodeSystem/179423",
+              "display": "Net Effect"
+            }
+          ]
         }
       },
       {
