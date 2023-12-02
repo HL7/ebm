@@ -4,7 +4,7 @@ Id: guideline
 Description: "Profile of Composition for Evidence Based Medicine IG. The Guideline Profile is used for the composition of a clinical practice guideline and may be tightly related to use of Recommendation Profile of Composition for related content."
 * category 1..*
 * category ^slicing.discriminator.type = #value
-* category ^slicing.discriminator.path = "text"
+* category ^slicing.discriminator.path = "coding"
 * category ^slicing.rules = #open
 * category contains guideline 1..1 MS
 * category[guideline].coding = https://fevir.net/resources/CodeSystem/179423#Guideline "Guideline"

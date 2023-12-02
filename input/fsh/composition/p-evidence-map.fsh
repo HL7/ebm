@@ -4,7 +4,7 @@ Id: evidence-map
 Description: "Profile of Composition for Evidence Based Medicine IG. The EvidenceMap Profile is used for an organized listing of Resources used to generate EvidenceReport instances." 
 * category 1..*
 * category ^slicing.discriminator.type = #value
-* category ^slicing.discriminator.path = "text"
+* category ^slicing.discriminator.path = "coding"
 * category ^slicing.rules = #open
 * category contains evidenceMap 1..1 MS
 * category[evidenceMap].coding = https://fevir.net/resources/CodeSystem/179423#EvidenceMap "EvidenceMap"
