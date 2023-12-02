@@ -4,7 +4,7 @@ Id: net-effect-estimate
 Description: "Profile of Evidence for Evidence Based Medicine IG. The NetEffectEstimate Profile is used for evidence in which the observed data is net effect contributions (effect estimates expressed as risk differences, multiplied by relative importance ratings of outcomes)."
 * variableDefinition 2..*
 * variableDefinition ^slicing.discriminator.type = #value
-* variableDefinition ^slicing.discriminator.path = "extension[0].valueCode"
+* variableDefinition ^slicing.discriminator.path = "extension[variableRoleCode].valueCode"
 * variableDefinition ^slicing.rules = #open
 * variableDefinition contains population 1..1 and exposure 0..*
 * variableDefinition[population]
