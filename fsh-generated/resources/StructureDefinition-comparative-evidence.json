@@ -43,7 +43,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "extension.valueCode"
+              "path": "note.text"
             }
           ],
           "rules": "open"
@@ -77,6 +77,11 @@
         "id": "Evidence.variableDefinition:population.extension:comparatorCategory",
         "path": "Evidence.variableDefinition.extension",
         "sliceName": "comparatorCategory"
+      },
+      {
+        "id": "Evidence.variableDefinition:population.note.text",
+        "path": "Evidence.variableDefinition.note.text",
+        "patternMarkdown": "population"
       },
       {
         "id": "Evidence.variableDefinition:population.observed",
@@ -139,6 +144,11 @@
         "min": 1
       },
       {
+        "id": "Evidence.variableDefinition:exposure.note.text",
+        "path": "Evidence.variableDefinition.note.text",
+        "patternMarkdown": "exposure"
+      },
+      {
         "id": "Evidence.variableDefinition:exposure.observed",
         "path": "Evidence.variableDefinition.observed",
         "type": [
@@ -192,6 +202,11 @@
         "path": "Evidence.variableDefinition.extension",
         "sliceName": "comparatorCategory",
         "max": "0"
+      },
+      {
+        "id": "Evidence.variableDefinition:outcome.note.text",
+        "path": "Evidence.variableDefinition.note.text",
+        "patternMarkdown": "outcome"
       },
       {
         "id": "Evidence.variableDefinition:outcome.observed",

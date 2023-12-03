@@ -113,6 +113,11 @@
         "sliceName": "comparatorCategory"
       },
       {
+        "id": "Evidence.variableDefinition:covariate.note.text",
+        "path": "Evidence.variableDefinition.note.text",
+        "patternMarkdown": "covariate"
+      },
+      {
         "id": "Evidence.variableDefinition:covariate.observed.display",
         "path": "Evidence.variableDefinition.observed.display",
         "patternString": "Relative Importance Multiplier"
