@@ -11,11 +11,12 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The NetEffectC
 * relatedArtifact[amendedWith]
   * resourceReference only Reference(OutcomeImportance)
 * variableDefinition ^slicing.discriminator.type = #value
-* variableDefinition ^slicing.discriminator.path = "extension.valueCode"
+* variableDefinition ^slicing.discriminator.path = "note.text"
 * variableDefinition ^slicing.rules = #open
 * variableDefinition contains covariate 1..*
 * variableDefinition[covariate]
   * extension[VariableDefinitionVariableRoleCode].valueCode = #covariate
+  * note.text = "covariate"
   * extension[VariableDefinitionRoleSubtype].valueCodeableConcept.text = "Relative Value Multiplier"
   * observed.display = "Relative Importance Multiplier"
   * intended 0..0
