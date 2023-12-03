@@ -43,7 +43,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "extension:variableRoleCode.valueCode"
+              "path": "note.text"
             }
           ],
           "rules": "open"
@@ -78,6 +78,11 @@
         "id": "Evidence.variableDefinition:population.extension:comparatorCategory",
         "path": "Evidence.variableDefinition.extension",
         "sliceName": "comparatorCategory"
+      },
+      {
+        "id": "Evidence.variableDefinition:population.note.text",
+        "path": "Evidence.variableDefinition.note.text",
+        "patternMarkdown": "population"
       },
       {
         "id": "Evidence.variableDefinition:population.observed",
@@ -121,6 +126,11 @@
         "id": "Evidence.variableDefinition:outcome.extension:comparatorCategory",
         "path": "Evidence.variableDefinition.extension",
         "sliceName": "comparatorCategory"
+      },
+      {
+        "id": "Evidence.variableDefinition:outcome.note.text",
+        "path": "Evidence.variableDefinition.note.text",
+        "patternMarkdown": "outcome"
       },
       {
         "id": "Evidence.variableDefinition:outcome.observed",
