@@ -39,6 +39,10 @@
 [179785]: Group-179785.html
 [179786]: Group-179786.html
 [179799]: Group-179799.html
+[179898]: Group-179898.html
+[179900]: Group-179900.html
+[179901]: Group-179901.html
+[179902]: Group-179902.html
 [179602]: Citation-179602.html
 [179637]: Citation-179637.html
 [179631]: Citation-179631.html
@@ -89,6 +93,7 @@
 [BookPartCitation]: StructureDefinition-book-part-citation.html
 [139859]: Citation-139859.html
 [139860]: Citation-139860.html
+[179899]: DeviceDefinition-179899.html
 [179693]: ArtifactAssessment-179693.html
 [CertaintyOfEvidence]: StructureDefinition-certainty-of-evidence.html
 [CharacteristicDescription]: StructureDefinition-characteristic-description.html
@@ -175,6 +180,7 @@
 [155969]: ArtifactAssessment-155969.html
 [153881]: Citation-153881.html
 [179430]: ValueSet-179430.html
+[179897]: Group-179897.html
 [EndpointAnalysisPlan]: StructureDefinition-endpoint-analysis-plan.html
 [179423]: CodeSystem-179423.html
 [EvidenceVariableRoleSubtype]: ValueSet-evidence-variable-role-subtype.html
@@ -297,7 +303,9 @@
 [5296]: Citation-5296.html
 [Rating]: StructureDefinition-rating.html
 [Recommendation]: StructureDefinition-recommendation.html
+[RecommendationJustificationClassifier]: ValueSet-recommendation-justification-classifier.html
 [107288]: ValueSet-107288.html
+[27834]: CodeSystem-27834.html
 [179466]: Composition-179466.html
 [179699]: Composition-179699.html
 [179467]: Composition-179467.html
@@ -309,6 +317,7 @@
 [179692]: ArtifactAssessment-179692.html
 [RiskOfBiasType]: ValueSet-risk-of-bias-type.html
 [RiskOfBias]: StructureDefinition-risk-of-bias.html
+[103845]: CodeSystem-103845.html
 [SearchResults]: StructureDefinition-search-results.html
 [179606]: Library-179606.html
 [SearchStrategy]: StructureDefinition-search-strategy.html

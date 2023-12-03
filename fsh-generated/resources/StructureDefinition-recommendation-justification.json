@@ -94,7 +94,7 @@
         "path": "ArtifactAssessment.content.classifier",
         "binding": {
           "strength": "extensible",
-          "valueSet": "https://fevir.net/resources/ValueSet/107288"
+          "valueSet": "https://hl7.org/fhir/uv/ebm/ValueSet/recommendation-justification-classifier"
         }
       },
       {

@@ -102,7 +102,7 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
   * component[monitoringConsiderations].type = https://fevir.net/resources/CodeSystem/179423#monitoring-considerations "Monitoring Considerations"
   * component[competingInterests].type = https://fevir.net/resources/CodeSystem/179423#competing-interests "Competing Interests"
   * component[researchPriorities].type = https://fevir.net/resources/CodeSystem/179423#research-considerations "Research Considerations"
-* content.classifier from https://fevir.net/resources/ValueSet/107288 (extensible)
+* content.classifier from recommendation-justification-classifier (extensible)
 * content.freeToShare
   * ^definition = "Acceptable to publicly share the content, specific to the associated content instance"
   * ^short = "Acceptable to publicly share the content"
