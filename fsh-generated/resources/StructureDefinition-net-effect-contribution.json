@@ -244,11 +244,6 @@
         "sliceName": "includeIf"
       },
       {
-        "id": "Evidence.statistic:netEffect.modelCharacteristic.extension:modelCharacteristic",
-        "path": "Evidence.statistic.modelCharacteristic.extension",
-        "sliceName": "modelCharacteristic"
-      },
-      {
         "id": "Evidence.statistic:netEffect.modelCharacteristic.variable.extension:includeIf",
         "path": "Evidence.statistic.modelCharacteristic.variable.extension",
         "sliceName": "includeIf"
@@ -290,11 +285,6 @@
         "id": "Evidence.statistic:netEffect.modelCharacteristic:netEffectContributionAnalysis.extension:includeIf",
         "path": "Evidence.statistic.modelCharacteristic.extension",
         "sliceName": "includeIf"
-      },
-      {
-        "id": "Evidence.statistic:netEffect.modelCharacteristic:netEffectContributionAnalysis.extension:modelCharacteristic",
-        "path": "Evidence.statistic.modelCharacteristic.extension",
-        "sliceName": "modelCharacteristic"
       },
       {
         "id": "Evidence.statistic:netEffect.modelCharacteristic:netEffectContributionAnalysis.code.coding",

@@ -46,6 +46,7 @@
         "reference": {
           "reference": "Citation/179628"
         },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
         "name": "14706014 Chemohormonal therapy as primary treatment for metastatic prostate cancer: a randomized study of estramustine phosphate plus luteinizing hormone-releasing hormone agonist versus flutamide plus luteinizing hormone-releasing hormone agonist.",
         "isExample": true
       },
@@ -485,6 +486,14 @@
       },
       {
         "reference": {
+          "reference": "DeviceDefinition/179899"
+        },
+        "description": "This is an example describing the Boots Finger Pulse Oximeter for use in an example of Group.characteristic.determinedByReference and does not contain substantial detail as the focus is not the expression of device definition details.",
+        "name": "179899",
+        "isExample": true
+      },
+      {
+        "reference": {
           "reference": "Group/179900"
         },
         "description": "A characteristic of oxygen saturation < 96% on Boots Finger Pulse Oximeter is shown here, specifically 2-4 episodes lasting 10-15 minutes. LOINC Code for oxygen saturation does not specify the device used. If defining a Group characteristic by the device used, for example, in research comparing devices, one needs to reference the DeviceDefinition, Device, or DeviceMetric Resources. This example uses Group.characteristic.determinedByReference to show where the device may be reported, Group.characteristic.instancesRange to express 2-4 episodes, and Group.characteristic.durationRange to express 10-15 minutes.",
@@ -520,6 +529,7 @@
         "reference": {
           "reference": "Citation/179602"
         },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
         "name": "18160893 Wonder woman. Like my childhood heroine, Mrs. Betty also had amazing powers.",
         "isExample": true
       },
@@ -527,6 +537,7 @@
         "reference": {
           "reference": "Citation/179637"
         },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
         "name": "18508207 A Phase 3 placebo-controlled, double-blind, multi-site trial of the alpha-2-adrenergic agonist, lofexidine, for opioid withdrawal.",
         "isExample": true
       },
@@ -534,6 +545,7 @@
         "reference": {
           "reference": "Citation/179631"
         },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
         "name": "19029421 Phase III trial of androgen ablation with or without three cycles of systemic chemotherapy for advanced prostate cancer.",
         "isExample": true
       },
@@ -541,6 +553,7 @@
         "reference": {
           "reference": "Citation/179627"
         },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
         "name": "19091394 Endocrine treatment, with or without radiotherapy, in locally advanced prostate cancer (SPCG-7/SFUO-3): an open randomised phase III trial.",
         "isExample": true
       },
@@ -548,6 +561,7 @@
         "reference": {
           "reference": "Citation/179603"
         },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
         "name": "19967827 Wonder woman was Argentine and her real name was Evita.",
         "isExample": true
       },
@@ -555,6 +569,7 @@
         "reference": {
           "reference": "Citation/179626"
         },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
         "name": "22056152 Combined androgen deprivation therapy and radiation therapy for locally advanced prostate cancer: a randomised, phase 3 trial.",
         "isExample": true
       },
@@ -562,6 +577,7 @@
         "reference": {
           "reference": "Citation/179625"
         },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
         "name": "22502942 Addition of radiotherapy to long-term androgen deprivation in locally advanced prostate cancer: an open randomised phase 3 trial.",
         "isExample": true
       },
@@ -569,6 +585,7 @@
         "reference": {
           "reference": "Citation/179615"
         },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
         "name": "23306100 Androgen-deprivation therapy alone or with docetaxel in non-castrate metastatic prostate cancer (GETUG-AFU 15): a randomised, open-label, phase 3 trial.",
         "isExample": true
       },
@@ -576,6 +593,7 @@
         "reference": {
           "reference": "Citation/179623"
         },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
         "name": "23452809 Long-term follow-up of a phase II trial of chemotherapy plus hormone therapy for biochemical relapse after definitive local therapy for prostate cancer.",
         "isExample": true
       },
@@ -583,6 +601,7 @@
         "reference": {
           "reference": "Citation/179629"
         },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
         "name": "23604530 A phase II trial of androgen deprivation therapy (ADT) plus chemotherapy as initial treatment for local failures or advanced prostate cancer.",
         "isExample": true
       },
@@ -590,6 +609,7 @@
         "reference": {
           "reference": "Citation/179624"
         },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
         "name": "24598155 Long-term results of a phase II study with neoadjuvant docetaxel chemotherapy and complete androgen blockade in locally advanced and high-risk prostate cancer.",
         "isExample": true
       },
@@ -597,6 +617,7 @@
         "reference": {
           "reference": "Citation/179617"
         },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
         "name": "25301760 Survival with Newly Diagnosed Metastatic Prostate Cancer in the \"Docetaxel Era\": Data from 917 Patients in the Control Arm of the STAMPEDE Trial (MRC PR08, CRUK/06/019).",
         "isExample": true
       },
@@ -604,6 +625,7 @@
         "reference": {
           "reference": "Citation/179622"
         },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
         "name": "26002607 Should docetaxel be standard of care for patients with metastatic hormone-sensitive prostate cancer? Pro and contra.",
         "isExample": true
       },
@@ -611,6 +633,7 @@
         "reference": {
           "reference": "Citation/179621"
         },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
         "name": "26028518 Androgen deprivation therapy plus docetaxel and estramustine versus androgen deprivation therapy alone for high-risk localised prostate cancer (GETUG 12): a phase 3 randomised controlled trial.",
         "isExample": true
       },
@@ -618,6 +641,7 @@
         "reference": {
           "reference": "Citation/179630"
         },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
         "name": "26092557 Feasibility study of a randomized controlled trial comparing docetaxel chemotherapy and androgen deprivation therapy with sequential prostatic biopsies from patients with advanced non-castration-resistant prostate cancer.",
         "isExample": true
       },
@@ -625,6 +649,7 @@
         "reference": {
           "reference": "Citation/179616"
         },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
         "name": "26244877 Chemohormonal Therapy in Metastatic Hormone-Sensitive Prostate Cancer.",
         "isExample": true
       },
@@ -632,6 +657,7 @@
         "reference": {
           "reference": "Citation/179613"
         },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
         "name": "27308831 Efficacy and Safety of Combined Androgen Deprivation Therapy (ADT) and Docetaxel Compared with ADT Alone for Metastatic Hormone-Naive Prostate Cancer: A Systematic Review and Meta-Analysis.",
         "isExample": true
       },
@@ -639,6 +665,7 @@
         "reference": {
           "reference": "Citation/179601"
         },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
         "name": "29114761 Web Exclusives. Annals Story Slam - How Wonder Woman Became My Alter Ego.",
         "isExample": true
       },
@@ -646,6 +673,7 @@
         "reference": {
           "reference": "Citation/179600"
         },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
         "name": "29114762 Web Exclusives. Annals Story Slam - Wonder Woman Is a Cartoon Character.",
         "isExample": true
       },
@@ -653,6 +681,7 @@
         "reference": {
           "reference": "Citation/179599"
         },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
         "name": "29202628 \"I Kinda Feel Like Wonder Woman\": An Interpretative Phenomenological Analysis of Pole Fitness and Positive Body Image.",
         "isExample": true
       },
@@ -660,6 +689,7 @@
         "reference": {
           "reference": "Citation/179598"
         },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
         "name": "29357271 Using Hawkeye from the Avengers to communicate on the eye.",
         "isExample": true
       },
@@ -667,6 +697,7 @@
         "reference": {
           "reference": "Citation/179597"
         },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
         "name": "29694275 A regressive formula of perversity: Wertham and the women of comics.",
         "isExample": true
       },
@@ -674,6 +705,7 @@
         "reference": {
           "reference": "Citation/179596"
         },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
         "name": "29694302 Introduction: \"Suffering Sappho!\": Lesbian content and queer female characters in comics.",
         "isExample": true
       },
@@ -681,6 +713,7 @@
         "reference": {
           "reference": "Citation/179595"
         },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
         "name": "30467172 Finding my inner Wonder Woman.",
         "isExample": true
       },
@@ -699,6 +732,7 @@
         "reference": {
           "reference": "Citation/179594"
         },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
         "name": "34871555 What Can Wonder Woman Teach Radiologists?",
         "isExample": true
       },
@@ -706,6 +740,7 @@
         "reference": {
           "reference": "Citation/33399"
         },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
         "name": "35243488 Bariatric surgery and cardiovascular disease: a systematic review and meta-analysis.",
         "isExample": true
       },
@@ -713,6 +748,7 @@
         "reference": {
           "reference": "Citation/179605"
         },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
         "name": "36491989 Another Georgia Wonder Woman: She Does More Astounding Tricks Than Did Lula Hurst.",
         "isExample": true
       },
@@ -720,6 +756,7 @@
         "reference": {
           "reference": "Citation/179604"
         },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
         "name": "6907780 Career guide: to change what needs changing...doesn't take Wonder Woman.",
         "isExample": true
       },
@@ -906,6 +943,7 @@
         "reference": {
           "reference": "Citation/139859"
         },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
         "name": "BookPartCitation: Chapter 3 of Crossing the Quality Chasm: A New Health System for the 21st Century",
         "isExample": true,
         "profile": [
@@ -922,14 +960,6 @@
         "profile": [
           "https://hl7.org/fhir/uv/ebm/StructureDefinition/book-part-citation"
         ]
-      },
-      {
-        "reference": {
-          "reference": "DeviceDefinition/179899"
-        },
-        "description": "This is an example describing the Boots Finger Pulse Oximeter for use in an example of Group.characteristic.determinedByReference and does not contain substantial detail as the focus is not the expression of device definition details.",
-        "name": "Boots Finger Pulse Oximeter",
-        "isExample": true
       },
       {
         "reference": {
@@ -1060,6 +1090,7 @@
         "reference": {
           "reference": "Citation/58"
         },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
         "name": "Citation for FEvIR Evidence 55: 14-day mortality remdesivir vs placebo meta-analysis (ACTT-1, Wang et al, WHO SOLIDARITY)",
         "isExample": true
       },
@@ -1650,6 +1681,7 @@
         "reference": {
           "reference": "Citation/29812"
         },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
         "name": "DatabaseCitation: Citation for FEvIR Platform",
         "isExample": true,
         "profile": [
@@ -1706,6 +1738,7 @@
         "reference": {
           "reference": "Citation/179559"
         },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
         "name": "DatasetCitation: Extrachromosomal DNA Amplification Contributes to Small Cell Lung Cancer Heterogeneity and is Associated with Worse Outcomes",
         "isExample": true,
         "profile": [
@@ -1734,6 +1767,7 @@
         "reference": {
           "reference": "Citation/153881"
         },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
         "name": "Delany-Moretlwe 2022 clinical trial",
         "isExample": true
       },
@@ -2275,6 +2309,7 @@
         "reference": {
           "reference": "Citation/32137"
         },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
         "name": "JournalArticleCitation: ADA 2021 Standards of Medical Care 8. Obesity Management for the Treatment of Type 2 Diabetes",
         "isExample": true,
         "profile": [
@@ -2285,6 +2320,7 @@
         "reference": {
           "reference": "Citation/104116"
         },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
         "name": "JournalArticleCitation: Association of Bariatric Surgery with Complications and Comorbidities JAMA 2018 Norwegian Cohort",
         "isExample": true,
         "profile": [
@@ -2295,6 +2331,7 @@
         "reference": {
           "reference": "Citation/33090"
         },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
         "name": "JournalArticleCitation: Metabolic Surgery in the Treatment Algorithm for Type 2 Diabetes: A Joint Statement by International Diabetes Organizations",
         "isExample": true,
         "profile": [
@@ -2927,14 +2964,6 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/107288"
-        },
-        "description": "Codes for use with the Classifier drop-down menu for Recommendation Justification Builder",
-        "name": "Recommendation Justification Classifier Codes ValueSet",
-        "isExample": true
-      },
-      {
-        "reference": {
           "reference": "CodeSystem/27834"
         },
         "description": "This resource (this entire set of content) is being used for active development of a code system to support a RecommendationJustification Profile of ArtifactAssessment Resource. This code system is not yet released for expected use and may not be stable. This resource may be used for the continuous development of the code system, and published versions of the code system (when ready) may be published as separate resources with stable identifiers.",
@@ -3039,14 +3068,6 @@
       },
       {
         "reference": {
-          "reference": "CodeSystem/103845"
-        },
-        "description": "The Scientific Evidence Code System (SEVCO) includes terms for describing scientific research, including study design and risk of bias concepts.  For additional derivation details for any term, see https://fevir.net/resources/CodeSystem/27270\n<br>\nFor SEVCO Release 1.1:\n<br>\nAuthors/Editors: Brian S. Alper, Harold Lehmann, Joanne Dehnbostel, Janice Tufte, Mario Tristan, Paul Whaley, Kenneth Wilkins, Khalid Shahin, Erfan Shamsoddin, Michael Panzer, Asiyah Lin, Ellen Jepson, Ilkka Kunnamo, Neeraj Ojha, Olga Vovk\n<br>\nAdditional Endorsers: Jesús López-Alcalde, Eric Harvey, Paola Rosati, Robin Ann Yurk, Bhagvan Kommadi, Philippe Rocca-Serra, Alejandro Piscoya, Cauê Monaco, Cheow Peng Ooi, Nisha Mathew, Leo Orozco, Nelle Stocquart, Muhammad Afzal, Sorana D. Bolboaca, KM Saif-Ur-Rahman, A.G. Radhika, Andrew Beck, Louis Leff, Tatyana Shamliyan, Sunu Alice Cherian, Yasser Sami Amer, Sebastien Bailly, Eric Au, Paul Harris, Ahmad Sofi-Mahmudi\n<br>\nAdditional Reviewers: Sumalatha A, Rebecca Baker",
-        "name": "Scientific Evidence Code System (SEVCO) -- Release 1.1",
-        "isExample": true
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/search-results"
         },
         "name": "SearchResults",
@@ -3111,6 +3132,7 @@
         "reference": {
           "reference": "Citation/179560"
         },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
         "name": "SoftwareCitation: Computable Publishing®: ClinicalTrials.gov-to-FEvIR Converter",
         "isExample": true,
         "profile": [
@@ -3151,14 +3173,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/statistic-model-model-characteristic"
-        },
-        "name": "StatisticModelModelCharacteristic",
-        "description": "Model component as a nested model characteristic.",
-        "isExample": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/statistic-model-value-codeableconcept"
         },
         "name": "StatisticModelValueCodeableConcept",
@@ -3185,6 +3199,7 @@
         "reference": {
           "reference": "Citation/33400"
         },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
         "name": "StudyCitation: 2022 Systematic Review of bariatric surgery mortality effect 35243488",
         "isExample": true
       },
@@ -3379,6 +3394,7 @@
         "reference": {
           "reference": "Citation/179561"
         },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
         "name": "WebPageCitation: A HEvKA Update Summary",
         "isExample": true,
         "profile": [

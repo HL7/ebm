@@ -10,7 +10,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://fevir.net/sevco",
+        "system": "https://fevir.net/resources/CodeSystem/27270",
         "filter": [
           {
             "property": "concept",
