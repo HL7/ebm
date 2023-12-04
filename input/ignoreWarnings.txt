@@ -1,5 +1,8 @@
 == Suppressed Messages ==
 
+# Suppressing the warning about adding jurisdiction element to Resources because jurisdiction element is deprecated.
+WARNING: The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.ebm, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World') (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
