@@ -206,21 +206,6 @@
         ]
       },
       {
-        "id": "Evidence.statistic.modelCharacteristic.extension:modelCharacteristic",
-        "path": "Evidence.statistic.modelCharacteristic.extension",
-        "sliceName": "modelCharacteristic",
-        "min": 0,
-        "max": "*",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-model-characteristic"
-            ]
-          }
-        ]
-      },
-      {
         "id": "Evidence.statistic.modelCharacteristic.value",
         "path": "Evidence.statistic.modelCharacteristic.value",
         "max": "0"

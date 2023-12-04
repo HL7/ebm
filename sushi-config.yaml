@@ -75,6 +75,8 @@ menu:
   Home: index.html
   Artifacts: artifacts.html
 
+parameters:
+  apply-jurisdiction: 'true'
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
 # │  resource. These properties are less commonly needed than those above.                         │

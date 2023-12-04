@@ -40,6 +40,7 @@
 [179786]: Group-179786.html
 [179799]: Group-179799.html
 [179898]: Group-179898.html
+[179899]: DeviceDefinition-179899.html
 [179900]: Group-179900.html
 [179901]: Group-179901.html
 [179902]: Group-179902.html
@@ -93,7 +94,6 @@
 [BookPartCitation]: StructureDefinition-book-part-citation.html
 [139859]: Citation-139859.html
 [139860]: Citation-139860.html
-[179899]: DeviceDefinition-179899.html
 [179693]: ArtifactAssessment-179693.html
 [CertaintyOfEvidence]: StructureDefinition-certainty-of-evidence.html
 [CharacteristicDescription]: StructureDefinition-characteristic-description.html
@@ -304,7 +304,6 @@
 [Rating]: StructureDefinition-rating.html
 [Recommendation]: StructureDefinition-recommendation.html
 [RecommendationJustificationClassifier]: ValueSet-recommendation-justification-classifier.html
-[107288]: ValueSet-107288.html
 [27834]: CodeSystem-27834.html
 [179466]: Composition-179466.html
 [179699]: Composition-179699.html
@@ -317,7 +316,6 @@
 [179692]: ArtifactAssessment-179692.html
 [RiskOfBiasType]: ValueSet-risk-of-bias-type.html
 [RiskOfBias]: StructureDefinition-risk-of-bias.html
-[103845]: CodeSystem-103845.html
 [SearchResults]: StructureDefinition-search-results.html
 [179606]: Library-179606.html
 [SearchStrategy]: StructureDefinition-search-strategy.html
@@ -330,7 +328,6 @@
 [StatisticModelAttributeEstimate]: StructureDefinition-statistic-model-attribute-estimate.html
 [StatisticModelIncludeIf]: StructureDefinition-statistic-model-include-if.html
 [StatisticModelIntended]: StructureDefinition-statistic-model-intended.html
-[StatisticModelModelCharacteristic]: StructureDefinition-statistic-model-model-characteristic.html
 [StatisticModelValueCodeableConcept]: StructureDefinition-statistic-model-value-codeableconcept.html
 [StatisticModelValueQuantity]: StructureDefinition-statistic-model-value-quantity.html
 [StatisticModelValueRange]: StructureDefinition-statistic-model-value-range.html
