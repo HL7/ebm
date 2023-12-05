@@ -27,5 +27,6 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The DatasetCit
     * classifier ^slicing.discriminator.path = "coding"
     * classifier ^slicing.rules = #open
     * classifier contains dataset 1..1 MS
+    * classifier[dataset].coding 1..1
     * classifier[dataset].coding = http://hl7.org/fhir/citation-artifact-classifier#D064886 "Dataset"
 //TODO - create support for how to handle the file type (e.g. .csv or .xls) for the dataset, e.g. citedArtifact.classification or specific extension

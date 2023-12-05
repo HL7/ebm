@@ -27,4 +27,5 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The WebPageCit
     * classifier ^slicing.discriminator.path = "coding"
     * classifier ^slicing.rules = #open
     * classifier contains webpage 1..1 MS
+    * classifier[webpage].coding 1..1
     * classifier[webpage].coding = http://hl7.org/fhir/citation-artifact-classifier#webpage "Webpage"

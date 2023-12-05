@@ -27,5 +27,6 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The SoftwareCi
     * classifier ^slicing.discriminator.path = "coding"
     * classifier ^slicing.rules = #open
     * classifier contains software 1..1 MS
+    * classifier[software].coding 1..1
     * classifier[software].coding = http://hl7.org/fhir/citation-artifact-classifier#executable-app "Executable app"
 //TODO - create support for how to handle the file type (e.g. .js or .py) for the software, e.g. citedArtifact.classification or specific extension

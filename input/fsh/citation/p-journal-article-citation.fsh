@@ -16,5 +16,6 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The JournalArt
     * classifier ^slicing.discriminator.path = "coding"
     * classifier ^slicing.rules = #open
     * classifier contains journalArticle 1..1 MS
+    * classifier[journalArticle].coding 1..1
     * classifier[journalArticle].coding = http://hl7.org/fhir/citation-artifact-classifier#D016428 "Journal Article"
     

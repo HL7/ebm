@@ -26,5 +26,6 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The DatabaseCi
     * classifier ^slicing.discriminator.path = "coding"
     * classifier ^slicing.rules = #open
     * classifier contains database 1..1 MS
+    * classifier[database].coding 1..1
     * classifier[database].coding = http://hl7.org/fhir/citation-artifact-classifier#D019991 "Database"
 

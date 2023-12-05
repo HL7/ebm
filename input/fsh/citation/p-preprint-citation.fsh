@@ -15,5 +15,6 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The PreprintCi
     * classifier ^slicing.discriminator.path = "coding"
     * classifier ^slicing.rules = #open
     * classifier contains preprint 1..1 MS
+    * classifier[preprint].coding 1..1
     * classifier[preprint].coding = http://hl7.org/fhir/citation-artifact-classifier#D000076942 "Preprint"
     
