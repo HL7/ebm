@@ -56,7 +56,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * section[duration].code.text = "Arms and Duration"
     * section[duration]
       * text 1..1
-      * text ^comment = "see Template instructions"
+      * text ^comment = "See Template instructions."
     * section[committees].code.text = "Committees"
     * section[committees]
       * text 1..1
