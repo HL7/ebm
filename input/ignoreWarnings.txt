@@ -3,6 +3,12 @@
 # Suppressing the warning about adding jurisdiction element to Resources because jurisdiction element is deprecated.
 The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.ebm, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World') (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
 
+# Suppressing the warnings about non-HL7 CodeSystem and ValueSet Resources. The IG includes instructions to download the Resources from https://fevir.net
+Error from http://tx.fhir.org/r4: Unable to provide support for code system https://fevir.net/resources/CodeSystem/27270
+Code System URI 'https://fevir.net/resources/CodeSystem/27270' could not be found so the code cannot be validated
+Unable to check whether the code is in the value set https://hl7.org/fhir/uv/ebm/ValueSet/risk-of-bias-type|0.1.0
+Code System URI 'https://fevir.net/resources/CodeSystem/27270' could not be found so the code cannot be validated; Unable to check whether the code is in the value set https://hl7.org/fhir/uv/ebm/ValueSet/risk-of-bias-type|0.1.0
+
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
