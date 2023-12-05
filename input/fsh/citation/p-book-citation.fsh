@@ -26,5 +26,6 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The BookCitati
     * classifier ^slicing.discriminator.path = "coding"
     * classifier ^slicing.rules = #open
     * classifier contains book 1..1 MS
+    * classifier[book].coding 1..1
     * classifier[book].coding = http://hl7.org/fhir/citation-artifact-classifier#D001877 "Book"
   
