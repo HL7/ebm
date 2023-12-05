@@ -1,8 +1,12 @@
 Extension: CharacteristicTiming
 Id: characteristic-timing
 Description: "Timing in which the characteristic is determined."
-* ^context.type = #element
-* ^context.expression = "Group.characteristic"
+* ^context[0].type = #element
+* ^context[0].expression = "Group.characteristic"
+* ^context[1].type = #element
+* ^context[1].expression = "PlanDefinition.action"
+* ^context[2].type = #element
+* ^context[2].expression = "ActivityDefinition"
 * value[x] 0..0
 * . ^short = "Timing in which the characteristic is determined"
 * . ^definition = "Timing in which the characteristic is determined."
