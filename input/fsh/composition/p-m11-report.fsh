@@ -267,7 +267,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * section ^slicing.discriminator.path = "code.text"
   * section ^slicing.rules = #open
   * section contains description 1..1 MS and inclusionCriteria 1..1 MS and exclusionCriteria 1..1 MS and lifestyle 0..1 MS and screenFailures 0..1 MS
-  * section[description].title = "5.1	Description of Trial Population and Rationale"
+  * section[description].title = "Description of Trial Population and Rationale"
   * section[description].code.text = "section5.1-population-description"
   * section[description]
     * text 1..1
@@ -937,7 +937,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * section[rescreening]
       * text 1..1
       * text ^comment = "If participants can be rescreened, add the text to state whether the participant needs to complete a new consent.  Screen failure and rescreening should be clearly defined in the protocol, with cross-reference to those definitions."
-    * section[remainingSamples].title = "Informed Consent for Remaining Samples"
+    * section[remainingSamples].title = "Informed Consent for Remaining Samples in Exploratory Research"
     * section[remainingSamples].code.text = "section11.4.2-remaining-samples"
     * section[remainingSamples]
       * text 1..1
