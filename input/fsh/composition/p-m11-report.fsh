@@ -10,7 +10,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
 * category[m11report].text = "CeSHarP Report"
 * section 15..*
 * section ^slicing.discriminator.type = #value
-* section ^slicing.discriminator.path = "code"
+* section ^slicing.discriminator.path = "code.text"
 * section ^slicing.rules = #open
 * section contains summary 1..1 MS and introduction 1..1 MS and endpoints 1..* MS and design 1..1 MS and population 1..1 MS and intervention 1..1 MS and dropout 1..1 MS and assessments 1..1 MS and adverseEvents 1..1 MS and statistics 1..1 MS and oversight 1..1 MS and riskManagementAndData 1..1 MS and definitions 1..1 MS and glossary 1..1 MS and references 1..1 MS
 * section[summary].title = "Protocol Summary"
@@ -18,7 +18,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
 * section[summary]
   * section 3..*
   * section ^slicing.discriminator.type = #value
-  * section ^slicing.discriminator.path = "code"
+  * section ^slicing.discriminator.path = "code.text"
   * section ^slicing.rules = #open
   * section contains protocolSynopsis 1..1 MS and trialSchema 1..1 MS and scheduleOfActivities 1..1 MS
   * section[protocolSynopsis].title = "Protocol Synopsis"
@@ -26,7 +26,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * section[protocolSynopsis]
     * section 6..*
     * section ^slicing.discriminator.type = #value
-    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
     * section contains objectivesEndpoints 1..1 MS and overallDesign 1..1 and numberOfArms 1..1 and blinding 1..1 and numberOfParticipants 1..1 and duration 0..1 and committees 1..1
     * section[objectivesEndpoints].title = "Primary and Secondary Objectives and Endpoints"
@@ -78,7 +78,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
 * section[introduction]
   * section 2..*
   * section ^slicing.discriminator.type = #value
-  * section ^slicing.discriminator.path = "code"
+  * section ^slicing.discriminator.path = "code.text"
   * section ^slicing.rules = #open
   * section contains purposeOfTrial 1..1 MS and benefitsAndRisks 1..1 MS
   * section[purposeOfTrial].title = "Purpose of Trial"
@@ -91,7 +91,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * section[benefitsAndRisks]
     * section 3..*
     * section ^slicing.discriminator.type = #value
-    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
     * section contains benefitSummary 1..1 MS and riskSummary 1..1 and overallBenefitRisk 1..1
     * section[benefitSummary].title = "Benefit Summary"
@@ -104,7 +104,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * section[riskSummary]
       * section 3..*
       * section ^slicing.discriminator.type = #value
-      * section ^slicing.discriminator.path = "code"
+      * section ^slicing.discriminator.path = "code.text"
       * section ^slicing.rules = #open
       * section contains trialIntervention 1..1 MS and trialProcedures 1..1 and otherRisk 1..1
       * section[trialIntervention].title = "Trial-specific Intervention Risks and Mitigations"
@@ -132,7 +132,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
 * section[endpoints]
   * section 1..*
   * section ^slicing.discriminator.type = #value
-  * section ^slicing.discriminator.path = "code"
+  * section ^slicing.discriminator.path = "code.text"
   * section ^slicing.rules = #open
   * section contains objectiveEndpoint 1..* MS
   * section[objectiveEndpoint].title = "Objective + Associated Endpoint (and Estimand)"
@@ -142,7 +142,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * focus only Reference(OutcomeVariable)
     * section 4..*
     * section ^slicing.discriminator.type = #value
-    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
     * section contains primarySecondaryExploratory 1..1 MS and objective 1..1 MS and endpoint 1..1 MS and estimand 1..1 MS
     * section[primarySecondaryExploratory].title = "Primary/Secondary/Exploratory Classification"
@@ -171,7 +171,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
 * section[design]
   * section 4..*
   * section ^slicing.discriminator.type = #value
-  * section ^slicing.discriminator.path = "code"
+  * section ^slicing.discriminator.path = "code.text"
   * section ^slicing.rules = #open
   * section contains description 1..1 MS and rationale 1..1 MS and trialStoppingRules 1..1 MS and startEnd 1..1 MS and access 0..1 MS
   * section[description].title = "Description of Trial Design"
@@ -181,7 +181,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * text ^comment = "see Template instructions"
     * section 0..*
     * section ^slicing.discriminator.type = #value
-    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
     * section contains stakeholderInput 0..1 MS
     * section[stakeholderInput].title = "Stakeholder Input into Design"
@@ -194,7 +194,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * section[rationale]
     * section 0..*
     * section ^slicing.discriminator.type = #value
-    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
     * section contains model 0..1 MS and duration 0..1 MS and endpoints 0..1 MS and interim 0..1 MS and comparator 0..1 MS and adaptive 0..1 MS and otherAspects 0..1 MS
     * section[model].title = "Rationale for Intervention Model"
@@ -239,7 +239,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * text ^comment = "If applicable, describe any trial-specific stopping rules, including guidance on when the trial should be stopped for safety reasons, when a cohort or dose escalation should be terminated, and/or when a given treatment arm should be terminated."
     * section 0..*
     * section ^slicing.discriminator.type = #value
-    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
     * section contains temporaryHalt 0..1 MS
     * section[temporaryHalt].title = "Temporary Trial Halt"
@@ -264,7 +264,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
 * section[population]
   * section 5..*
   * section ^slicing.discriminator.type = #value
-  * section ^slicing.discriminator.path = "code"
+  * section ^slicing.discriminator.path = "code.text"
   * section ^slicing.rules = #open
   * section contains description 1..1 MS and inclusionCriteria 1..1 MS and exclusionCriteria 1..1 MS and lifestyle 0..1 MS and screenFailures 0..1 MS
   * section[description].title = "5.1	Description of Trial Population and Rationale"
@@ -292,7 +292,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * text ^comment = "In the following subsections, describe any restrictions during the trial pertaining to lifestyle and/or diet, intake of caffeine, alcohol, or tobacco, or physical and other activities. If not applicable, include a statement that no restrictions are required."
     * section 0..*
     * section ^slicing.discriminator.type = #value
-    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
     * section contains dietary 0..1 MS and substances 0..1 MS and activity 0..1 MS and other 0..1 MS
     * section[dietary].title = "Meals and Dietary Restrictions"
@@ -327,7 +327,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
 * section[intervention]
   * section 8..*
   * section ^slicing.discriminator.type = #value
-  * section ^slicing.discriminator.path = "code"
+  * section ^slicing.discriminator.path = "code.text"
   * section ^slicing.rules = #open
   * section contains description 1..1 MS and rationale 1..1 MS and dosingAdministration 1..1 MS and treatmentOfOverdose 1..1 MS and preparation 1..1 MS and assignmentAndBlinding 1..1 MS and compliance 1..1 MS and noninvestigationalTherapy 0..1 MS and concomitantTherapy 1..1 MS
   * section[description].title = "Description of Investigational Trial Intervention"
@@ -350,7 +350,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * entry only Reference(ActivityDefinition)
     * section 0..*
     * section ^slicing.discriminator.type = #value
-    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
     * section contains doseModification 0..1 MS
     * section[doseModification].title = "Investigational Trial Intervention Dose Modification"
@@ -370,7 +370,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * section[preparation]
     * section 3..*
     * section ^slicing.discriminator.type = #value
-    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
     * section contains preparationIntervention 1..1 MS and storageHandling 1..1 MS and accountability 1..1 MS
     * section[preparationIntervention].title = "Preparation of Investigational Trial Intervention(s)"
@@ -393,7 +393,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * section[assignmentAndBlinding]
     * section 4..*
     * section ^slicing.discriminator.type = #value
-    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
     * section contains assignment 1..1 MS and randomisation 1..1 MS and blinding 1..1 MS and unblinding 1..1 MS
     * section[assignment].title = "Participant Assignment to Investigational Trial Intervention"
@@ -426,7 +426,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * section[noninvestigationalTherapy]
     * section 0..*
     * section ^slicing.discriminator.type = #value
-    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
     * section contains background 0..1 MS and rescue 0..1 MS and other 0..1 MS
     * section[background].title = "Background Intervention"
@@ -451,7 +451,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * text ^comment = "Describe the concomitant medications, supplements, complementary and alternative therapies, treatments, and/or procedures which are allowed or prohibited during the trial, and include details about when the information will be collected (for example, screening, all visits). This section should be consistent with the medication restrictions in the inclusion/exclusion criteria previously listed."
     * section 0..*
     * section ^slicing.discriminator.type = #value
-    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
     * section contains prohibited 0..1 MS and permitted 0..1 MS
     * section[prohibited].title = "Prohibited Concomitant Therapy"
@@ -471,7 +471,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
 * section[dropout]
   * section 4..*
   * section ^slicing.discriminator.type = #value
-  * section ^slicing.discriminator.path = "code"
+  * section ^slicing.discriminator.path = "code.text"
   * section ^slicing.rules = #open
   * section contains discontinuation 1..1 MS and withdrawal 1..1 MS and lostToFollowUp 1..1 MS and trialStoppingRules 1..1 MS
   * section[discontinuation].title = "Discontinuation of Trial Intervention for Individual Participants"
@@ -479,7 +479,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * section[discontinuation]
     * section 3..*
     * section ^slicing.discriminator.type = #value
-    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
     * section contains permanent 1..1 MS and temporary 1..1 MS and rechallenge 1..1 MS
     * section[permanent].title = "Permanent Discontinuation of Trial Intervention"
@@ -521,7 +521,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * text ^comment = "• Describe the assessments and procedures required during each phase of the trial. Provide details that are not already presented in the SoA, taking care not to duplicate information. •	Describe methods, training, tools, instruments/questionnaires, calibration methods, etc. that will be used to record and assess data and ensure consistency across centres and participants. Include instructions on timing/conditions of assessments and if a specifically qualified person should be performing these assessments. Describe whether centralised readings and measurements will be utilised. •	Reference the literature for the validation of scales/instruments/questionnaires/assays. •	Instructions or protocols for specialised tests and scales/instruments/questionnaires/assays may be presented in an appendix or a separate document and cross-referenced. •	If the trial includes qualitative interviews, describe these evaluations. •	If COA measures are utilised, include instructions for the investigators per local guidance. All descriptions related to COA parameters should be fully integrated into the appropriate sections of the protocol; separate COA sections should not be created in the protocol. •	Include minimums and limits for procedures (for example, number of imaging procedures/biopsies, radiation exposure, etc.) if appropriate to the trial."
   * section 8..*
   * section ^slicing.discriminator.type = #value
-  * section ^slicing.discriminator.path = "code"
+  * section ^slicing.discriminator.path = "code.text"
   * section ^slicing.rules = #open
   * section contains screeningBaseline 1..1 MS and efficacy 1..1 MS and safety 1..1 MS and pharmacokinetics 1..1 MS and genetics 1..1 MS and biomarkers 1..1 MS and immunogenicity 1..1 MS and economics 0..1 MS
   * section[screeningBaseline].title = "Screening/Baseline Assessments and Procedures"
@@ -539,7 +539,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * section[safety]
     * section 0..*
     * section ^slicing.discriminator.type = #value
-    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
     * section contains physical 0..1 MS and vitals 0..1 MS and ecg 0..1 MS and laboratory 0..1 MS and pregnancy 0..1 MS and suicidal 0..1 MS
     * section[physical].title = "Physical Examination"
@@ -604,7 +604,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
 * section[adverseEvents]
   * section 5..*
   * section ^slicing.discriminator.type = #value
-  * section ^slicing.discriminator.path = "code"
+  * section ^slicing.discriminator.path = "code.text"
   * section ^slicing.rules = #open
   * section contains definitions 1..1 MS and collectionMethods 1..1 MS and recording 1..1 MS and reporting 1..1 MS and pregnancy 1..1 MS
   * section[definitions].title = "Definitions"
@@ -612,7 +612,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * section[definitions]
     * section 2..*
     * section ^slicing.discriminator.type = #value
-    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
     * section contains adverseEventsDefinitions 1..1 MS and seriousAdverseEventsDefinitions 1..1 MS and productComplaintsDefinitions 0..1 MS
     * section[adverseEventsDefinitions].title = "Definitions of Adverse Events"
@@ -640,7 +640,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * section[recording]
     * section 5..*
     * section ^slicing.discriminator.type = #value
-    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
     * section contains identifying 1..1 MS and intensity 1..1 MS and causality 1..1 MS and recordingEvents 1..1 MS and followup 1..1 MS
     * section[identifying].title = "Identifying AEs, SAEs and Product Complaints"
@@ -673,7 +673,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * section[reporting]
     * section 4..*
     * section ^slicing.discriminator.type = #value
-    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
     * section contains reportingSAEs 1..1 MS and regulatoryRequirements 1..1 MS and specialInterest 1..1 MS and diseaseRelatedEvents 1..1 MS
     * section[reportingSAEs].title = "Reporting of SAEs"
@@ -702,7 +702,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * section[pregnancy]
     * section 0..*
     * section ^slicing.discriminator.type = #value
-    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
     * section contains pregnant 0..1 MS and pregnantPartner 0..1 MS
     * section[pregnant].title = "Participants Who Become Pregnant During the Trial"
@@ -724,7 +724,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * text ^comment = "Ensure that the data analysis complies with ICH E9 Guideline and ICH E9(R1) Guideline. In general, all relevant data collected in the trial should be considered in this statistical considerations section. Provide a statement with regard to when the primary analyses will be conducted. For example: The analysis will be conducted on all participant data at the time the trial ends."
   * section 4..*
   * section ^slicing.discriminator.type = #value
-  * section ^slicing.discriminator.path = "code"
+  * section ^slicing.discriminator.path = "code.text"
   * section ^slicing.rules = #open
   * section contains analysisSets 1..1 MS and analysisPrimaryObjective 1..* MS and secondaryAnalysis 0..* MS and exploratoryAnalysis 0..* MS and safetyAnalyses 0..1 MS and otherAnalyses 0..1 MS and interimAnalyses 0..1 MS and sampleSize 1..1 MS and protocolDeviations 1..1 MS
   * section[analysisSets].title = "Analysis Sets"
@@ -740,7 +740,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * text ^comment = "This section introduces the Statistical Analysis Plan, with the detail to be provided in the subsequent subsections. This includes describing the methods of estimation (analytic approach) in alignment with how the estimands are defined. Sensitivity analyses should be aligned with how the estimands and estimators are defined."
     * section 3..*
     * section ^slicing.discriminator.type = #value
-    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
     * section contains statisticalModel 1..1 MS and intercurrentEventHandling 0..1 MS and missingData 1..1 MS and sensitvityAnalysis 1..1 MS and supplementaryAnalysis 0..1 MS
     * section[statisticalModel].title = "Statistical Model, Hypothesis, and Method of Analysis"
@@ -778,7 +778,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * text ^comment = "This section introduces the Statistical Analysis Plan, with the detail to be provided in the subsequent subsections. This includes describing the methods of estimation (analytic approach) in alignment with how the estimands are defined. Sensitivity analyses should be aligned with how the estimands and estimators are defined."
     * section 0..*
     * section ^slicing.discriminator.type = #value
-    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
     * section contains statisticalModel 0..1 MS and intercurrentEventHandling 0..1 MS and missingData 0..1 MS and sensitvityAnalysis 0..1 MS and supplementaryAnalysis 0..1 MS
     * section[statisticalModel].title = "Statistical Model, Hypothesis, and Method of Analysis"
@@ -818,7 +818,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * text ^comment = "This section introduces the Statistical Analysis Plan, with the detail to be provided in the subsequent subsections. This includes describing the methods of estimation (analytic approach) in alignment with how the estimands are defined. Sensitivity analyses should be aligned with how the estimands and estimators are defined."
     * section 0..*
     * section ^slicing.discriminator.type = #value
-    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
     * section contains statisticalModel 0..1 MS and intercurrentEventHandling 0..1 MS and missingData 0..1 MS and sensitvityAnalysis 0..1 MS and supplementaryAnalysis 0..1 MS
     * section[statisticalModel].title = "Statistical Model, Hypothesis, and Method of Analysis"
@@ -881,7 +881,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
 * section[oversight]
   * section 6..*
   * section ^slicing.discriminator.type = #value
-  * section ^slicing.discriminator.path = "code"
+  * section ^slicing.discriminator.path = "code.text"
   * section ^slicing.rules = #open
   * section contains regulatory 1..1 MS and trialOversight 1..1 MS and committees 1..1 MS and informedConsent 1..1 MS and insurance 1..1 MS and earlySiteClosure 1..1 MS
   * section[regulatory].title = "Regulatory and Ethical Considerations"
@@ -896,7 +896,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * text ^comment = "Describe the trial oversight listing the investigator and sponsor responsibilities not covered in other sections of the protocol which are essential for the operations of the trial, specifying the ones related to quality assurance."
     * section 2..*
     * section ^slicing.discriminator.type = #value
-    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
     * section contains investigatorResponsibilities 1..1 MS and sponsorResponsibilities 1..1 MS
     * section[investigatorResponsibilities].title = "Investigator Responsibilities"
@@ -920,7 +920,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * text ^comment = "Specify the key elements of the informed consent process, including any special needs and how these are addressed (for example, assent, capacity, legally acceptable representative, adolescents who may reach age of majority during the trial, pregnant participants and pregnant partners of participants)."
     * section 0..*
     * section ^slicing.discriminator.type = #value
-    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
     * section contains assentProcess 0..1 MS and emergency 0..1 MS and rescreening 0..1 MS and remainingSamples 0..1 MS
     * section[assentProcess].title = "Assent Process"
@@ -952,7 +952,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * section[earlySiteClosure]
     * section 3..*
     * section ^slicing.discriminator.type = #value
-    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
     * section contains decisionRights 1..1 MS and criteria 1..1 MS and responsibilities 1..1 MS
     * section[decisionRights].title = "Decision Rights for Site Closure"
@@ -977,7 +977,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
 * section[riskManagementAndData]
   * section 3..*
   * section ^slicing.discriminator.type = #value
-  * section ^slicing.discriminator.path = "code"
+  * section ^slicing.discriminator.path = "code.text"
   * section ^slicing.rules = #open
   * section contains riskManagement 1..1 MS and dataGovernance 1..1 MS and sourceData 1..1 MS
   * section[riskManagement].title = "Risk Management"
@@ -1002,7 +1002,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
 * section[definitions]
   * section 4..*
   * section ^slicing.discriminator.type = #value
-  * section ^slicing.discriminator.path = "code"
+  * section ^slicing.discriminator.path = "code.text"
   * section ^slicing.rules = #open
   * section contains contraception 1..1 MS and clinicalLaboratoryTests 1..1 MS and regional 1..1 MS and priorAmendments 1..1 MS
   * section[contraception].title = "Contraception"
@@ -1010,7 +1010,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * section[contraception]
     * section 2..*
     * section ^slicing.discriminator.type = #value
-    * section ^slicing.discriminator.path = "code"
+    * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
     * section contains contraceptionDefinitions 1..1 MS and contraceptionDetails 1..1 MS
     * section[contraceptionDefinitions].title = "Definitions Related to Childbearing Potential"
