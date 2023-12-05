@@ -9,6 +9,10 @@ Code System URI 'https://fevir.net/resources/CodeSystem/27270' could not be foun
 Unable to check whether the code is in the value set https://hl7.org/fhir/uv/ebm/ValueSet/risk-of-bias-type|0.1.0
 Code System URI 'https://fevir.net/resources/CodeSystem/27270' could not be found so the code cannot be validated; Unable to check whether the code is in the value set https://hl7.org/fhir/uv/ebm/ValueSet/risk-of-bias-type|0.1.0
 
+# Suppressing the warnings about reference to jurisdiction elements (now deprecated) becuase errors in IG Publisher if jurisdiction elements are not present.
+Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+
+
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples

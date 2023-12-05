@@ -6,8 +6,47 @@ The FHIR Resources for Evidence Based Medicine Knowledge Assets ('EBMonFHIR') Im
 
 This implementation guide covers the broad scope of representation of scientific knowledge, including (1) citations to represent identification, location, classification, and attribution for knowledge artifacts; (2) research results including the statistic findings, definition of variables for which those findings apply, and the certainty of these findings; (3) assessments of research results; (4) aggregation and synthesis of research results; (5) judgments regarding evidence syntheses and contextual factors related to recommendations; (6) recommendations; and (7) compositions of combinations of these types of knowledge. The types of interoperability covered include syntactic (Resource StructureDefinitions) and semantic (value sets).
 
+# To Learn About FHIR
+
+This implementation guide is based on the HL7 [FHIR](https://hl7.org/fhir/R5/index.html) standard. It uses terminology, notations and design principles that are specific to FHIR. Before reading this implementation guide, it's important to be familiar with some of the basic principles of FHIR as well as general guidance on how to read FHIR specifications. Readers who are unfamiliar with FHIR are encouraged to review the following prior to reading the rest of this implementation guide.
+
+[FHIR overview](http://hl7.org/fhir/R5/overview.html)
+[Developer's introduction](http://hl7.org/fhir/R5/overview-dev.html)
+(or [Clinical introduction](http://hl7.org/fhir/R5/overview-clinical.html))
+[FHIR data types](http://hl7.org/fhir/R5/datatypes.html)
+[Using codes](http://hl7.org/fhir/R5/terminologies.html)
+[References between resources](http://hl7.org/fhir/R5/references.html)
+[How to read resource & profile definitions](http://hl7.org/fhir/R5/formats.html)
+[Base resource](http://hl7.org/fhir/R5/resource.html)
+[FHIR Validation](http://hl7.org/fhir/R5/validation.html)
+
 # Terminologies
 
 To download related CodeSystem and ValueSet Resources:
 
-Copy the JSON content from https://fevir.net/resources/CodeSystem/27270#json, https://fevir.net/resources/CodeSystem/27834#json, https://fevir.net/resources/CodeSystem/179423#json, https://fevir.net/resources/ValueSet/179424#json, and https://fevir.net/resources/ValueSet/179431#json, or use the FEvIR API described at https://fevir.net/apidoc 
+Copy the JSON content from https://fevir.net/resources/CodeSystem/27270#json, https://fevir.net/resources/CodeSystem/27834#json, https://fevir.net/resources/CodeSystem/179423#json, https://fevir.net/resources/ValueSet/179424#json, and https://fevir.net/resources/ValueSet/179431#json, or use the [FEvIR API](https://fevir.net/apidoc).
+
+# Understanding the Evidence Resource
+
+Replace with content.
+
+# Understanding the EvidenceVariable Resource
+
+Replace with content.
+
+# Understanding the Group Resource
+
+Replace with content.
+
+# Understanding the Citation Resource
+
+Replace with content.
+
+# Understanding the ArtifactAssessment Resource
+
+Replace with content.
+
+# Understanding the Composition Resource
+
+Replace with content.
+
