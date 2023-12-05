@@ -12,6 +12,15 @@ Code System URI 'https://fevir.net/resources/CodeSystem/27270' could not be foun
 # Suppressing the warnings about reference to jurisdiction elements (now deprecated) becuase errors in IG Publisher if jurisdiction elements are not present.
 Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
 
+# Suppressing warnings about unknown Code System URIs where these are commented in the Understanding the Citation Resource section
+Code System URI 'https://meshb.nlm.nih.gov/' could not be found so the code cannot be validated
+Code System URI 'https://www.nlm.nih.gov/bsd/licensee/elements_descriptions.html#citationsubset'
+Code System URI 'https://www.nlm.nih.gov/bsd/licensee/elements_descriptions.html#owner_value' could not be found so the code cannot be validated
+Code System URI 'https://www.nlm.nih.gov/bsd/licensee/elements_descriptions.html#issn' could not be found so the code cannot be validated
+Code System URI 'https://ncithesaurus.nci.nih.gov/ncitbrowser' could not be found so the code cannot be validated
+
+#Suppressing a hint where the proper use of a Code System URI does not resolve to be able to validate the CodeSystem
+he definition for the Code System with URI 'urn:oid:2.16.840.1.113883.6.238' doesnt provide any codes so the code cannot be validated
 
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 # (And include comments like this justifying why)

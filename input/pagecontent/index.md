@@ -41,6 +41,7 @@ Replace with content.
 # Understanding the Citation Resource
 
 Replace with content.
+In many examples derived from the structured data in PubMed MEDLINE, the 'code system' referred to is an external URL that is not structured like a FHIR CodeSystem.  These examples include 'https://meshb.nlm.nih.gov/', 'https://www.nlm.nih.gov/bsd/licensee/elements_descriptions.html#citationsubset', 'https://www.nlm.nih.gov/bsd/licensee/elements_descriptions.html#owner_value', 'https://www.nlm.nih.gov/bsd/licensee/elements_descriptions.html#issn', and 'https://ncithesaurus.nci.nih.gov/ncitbrowser'. 
 
 # Understanding the ArtifactAssessment Resource
 

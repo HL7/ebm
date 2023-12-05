@@ -23,7 +23,7 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The BookCitati
   * classification[knowledgeArtifactType]
     * classifier 1..*
     * classifier ^slicing.discriminator.type = #value
-    * classifier ^slicing.discriminator.path = "classifier"
+    * classifier ^slicing.discriminator.path = "coding"
     * classifier ^slicing.rules = #open
     * classifier contains book 1..1 MS
     * classifier[book].coding = http://hl7.org/fhir/citation-artifact-classifier#D001877 "Book"
