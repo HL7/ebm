@@ -9,7 +9,7 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The NetEffectE
 * variableDefinition ^slicing.discriminator.type = #value
 * variableDefinition ^slicing.discriminator.path = "note.text"
 * variableDefinition ^slicing.rules = #open
-* variableDefinition contains population 1..1 and exposure 0..*
+* variableDefinition contains population 1..1 and exposure 1..1
 * variableDefinition[population]
   * extension[VariableDefinitionVariableRoleCode].valueCode = #population
   * note.text = "population"
@@ -19,7 +19,7 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The NetEffectE
   * extension[VariableDefinitionVariableRoleCode].valueCode = #exposure
   * note.text = "exposure"
   * extension[VariableDefinitionComparatorCategory] 1..1
-  * observed only Reference(GroupAssignment or ExposureVariable or OutcomeVariable)
+  * observed only Reference(GroupAssignment)
   * intended 0..0
 * statistic 1..*
 * statistic ^slicing.discriminator.type = #value
