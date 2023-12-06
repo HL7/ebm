@@ -10,7 +10,7 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The PreprintCi
   * classification ^slicing.discriminator.type = #value
   * classification ^slicing.discriminator.path = "type"
   * classification ^slicing.rules = #open
-  * classification contains knowledgeArtifactType 1..1 MS
+  * classification contains knowledgeArtifactType 1..1 MS and studyDesign 0..1
   * classification[knowledgeArtifactType].type = http://hl7.org/fhir/cited-artifact-classification-type#knowledge-artifact-type "Knowledge Artifact Type"
   * classification[knowledgeArtifactType]
     * classifier 1..*
@@ -20,4 +20,5 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The PreprintCi
     * classifier contains preprint 1..1 MS
     * classifier[preprint].coding 1..1
     * classifier[preprint].coding = http://hl7.org/fhir/citation-artifact-classifier#D000076942 "Preprint"
-    
+  * classification[studyDesign].type = https://fevir.net/resources/CodeSystem/179423#study-design "Study Design"
+  

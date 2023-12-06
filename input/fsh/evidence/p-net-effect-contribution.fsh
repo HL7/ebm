@@ -9,10 +9,11 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The NetEffectC
 * relatedArtifact ^slicing.discriminator.type = #value
 * relatedArtifact ^slicing.discriminator.path = "type"
 * relatedArtifact ^slicing.rules = #open
-* relatedArtifact contains amendedWith 1..* MS
+* relatedArtifact contains amendedWith 1..* MS and citeAs 0..1
 * relatedArtifact[amendedWith].type = #amended-with
 * relatedArtifact[amendedWith]
   * resourceReference only Reference(OutcomeImportance)
+* relatedArtifact[citeAs].type = #cite-as
 * variableDefinition ^slicing.discriminator.type = #value
 * variableDefinition ^slicing.discriminator.path = "note.text"
 * variableDefinition ^slicing.rules = #open
