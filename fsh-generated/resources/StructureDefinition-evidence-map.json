@@ -400,6 +400,36 @@
             ]
           }
         ]
+      },
+      {
+        "id": "Composition.section:relativeImportance",
+        "path": "Composition.section",
+        "sliceName": "relativeImportance",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:relativeImportance.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "relative-importance",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Relative Importance"
+        }
+      },
+      {
+        "id": "Composition.section:relativeImportance.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/ArtifactAssessment"
+            ]
+          }
+        ]
       }
     ]
   }

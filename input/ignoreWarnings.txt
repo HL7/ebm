@@ -23,6 +23,9 @@ Code System URI 'https://www.cas.org/support/documentation/chemical-substances' 
 # Suppressing a hint where the proper use of a Code System URI does not resolve to be able to validate the CodeSystem
 The definition for the Code System with URI 'urn:oid:2.16.840.1.113883.6.238' doesnt provide any codes so the code cannot be validated
 
+# Suppressing warning about using a retired code 'pooled' - this is the appropriate code and we will consider bringing it out of retirement
+The code 'pooled' is valid but is retired
+
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples

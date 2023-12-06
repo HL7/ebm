@@ -82,7 +82,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "type"
+              "path": "type.coding"
             }
           ],
           "rules": "open"
@@ -98,17 +98,13 @@
         "mustSupport": true
       },
       {
-        "id": "Citation.citedArtifact.classification:knowledgeArtifactType.type",
-        "path": "Citation.citedArtifact.classification.type",
+        "id": "Citation.citedArtifact.classification:knowledgeArtifactType.type.coding",
+        "path": "Citation.citedArtifact.classification.type.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "knowledge-artifact-type",
-              "system": "http://hl7.org/fhir/cited-artifact-classification-type",
-              "display": "Knowledge Artifact Type"
-            }
-          ]
+        "patternCoding": {
+          "code": "knowledge-artifact-type",
+          "system": "http://hl7.org/fhir/cited-artifact-classification-type",
+          "display": "Knowledge Artifact Type"
         }
       },
       {
@@ -142,6 +138,23 @@
           "code": "webpage",
           "system": "http://hl7.org/fhir/citation-artifact-classifier",
           "display": "Webpage"
+        }
+      },
+      {
+        "id": "Citation.citedArtifact.classification:definedInText",
+        "path": "Citation.citedArtifact.classification",
+        "sliceName": "definedInText",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Citation.citedArtifact.classification:definedInText.type.coding",
+        "path": "Citation.citedArtifact.classification.type.coding",
+        "min": 1,
+        "patternCoding": {
+          "code": "defined-in-text",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Defined in text"
         }
       }
     ]
