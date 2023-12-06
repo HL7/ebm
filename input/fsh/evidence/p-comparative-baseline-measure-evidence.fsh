@@ -7,5 +7,4 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The Comparativ
 * ^extension[$ext-standards-status].valueCode = #draft
 * variableDefinition
   * ^comment = "The Baseline Measure (or independent variable) has variableRole of outcome."
-  * intended 0..0
-  * directnessMatch 0..0
+

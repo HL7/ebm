@@ -66,6 +66,9 @@ The NonComparativeEvidence Profile requires at least 1 variableDefinition with t
 
 The ComparativeEvidence Profile requires the same structures as noted above for the NonComparativeEvidence Profile and also requires a single variableDefinition with the role of 'exposure'. For this variableDefinition with the role of 'exposure' the observed element may only reference Resources following the GroupAssignment Profile (which specifies the categories for the EvidenceVariable handling) and the comparatorCategory element (extension) must be used to specify the category used as reference point for the comparison.
 
+The BaselineMeasureEvidence Profile is a Profile of NonComparativeEvidence which has the baseline measure in the variableDefinition with the role of 'outcome'.
+
+The ComparativeBaselineMeasureEvidence Profile is a Profile of ComparativeEvidence which has the baseline measure in the variableDefinition with the role of 'outcome'.
 
 
 ### Understanding the EvidenceVariable Resource
