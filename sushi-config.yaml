@@ -8,7 +8,7 @@ canonical: https://hl7.org/fhir/uv/ebm
 name: EBM-IG
 # title: Example Title
 # description: Example Implementation Guide for getting started with SUSHI
-status: draft # draft | active | retired | unknown
+status: active # draft | active | retired | unknown
 version: 0.1.0
 fhirVersion: 5.0.0 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2022+
