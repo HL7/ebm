@@ -27,10 +27,10 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The BookPartCi
   * classification[knowledgeArtifactType]
     * classifier 1..*
     * classifier ^slicing.discriminator.type = #value
-    * classifier ^slicing.discriminator.path = "text"
+    * classifier ^slicing.discriminator.path = "coding"
     * classifier ^slicing.rules = #open
     * classifier contains bookPart 1..1 MS
-    * classifier[bookPart].text = "Book Part"
+    * classifier[bookPart].coding = https://fevir.net/resources/CodeSystem/179423#classified-as-book-part "Book Part"
   * classification[publishingModel].type.coding 1..1
   * classification[publishingModel].type.coding = http://hl7.org/fhir/cited-artifact-classification-type#publishing-model "Publishing Model"
   * classification[publicationType].type.coding 1..1
