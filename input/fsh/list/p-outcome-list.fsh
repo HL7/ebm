@@ -5,6 +5,7 @@ Description: "Profile of List for Evidence Based Medicine IG. The OutcomeList Pr
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
+* code.coding 1..1
 * code.coding = https://fevir.net/resources/CodeSystem/179423#OutcomeList "OutcomeList"
 * code.text = "Outcome List"
 * encounter 0..0
