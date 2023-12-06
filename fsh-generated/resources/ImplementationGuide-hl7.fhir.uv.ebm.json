@@ -188,6 +188,14 @@
       },
       {
         "reference": {
+          "reference": "Citation/33089"
+        },
+        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
+        "name": "27222544 Metabolic Surgery in the Treatment Algorithm for Type 2 Diabetes: A Joint Statement by International Diabetes Organizations.",
+        "isExample": true
+      },
+      {
+        "reference": {
           "reference": "Citation/179613"
         },
         "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
@@ -1482,6 +1490,17 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/181451"
+        },
+        "description": "A data dictionary (variable names) for research studies designed to measure the rate of scientific knowledge transfer.",
+        "name": "DataDictionary: Measuring the Rate of Scientific Knowledge Transfer",
+        "isExample": true,
+        "profile": [
+          "https://hl7.org/fhir/uv/ebm/StructureDefinition/data-dictionary"
+        ]
+      },
+      {
+        "reference": {
           "reference": "CodeSystem/179650"
         },
         "description": "This is an example of a DataDictionary Profile for the EBMonFHIR Implementation Guide.",
@@ -1520,7 +1539,7 @@
       },
       {
         "reference": {
-          "reference": "ArtifactAssessment/155969"
+          "reference": "ArtifactAssessment/181452"
         },
         "name": "DateOfFirstPublication Classification of FOI 153881 by Rachel Couban",
         "isExample": true,
@@ -2126,17 +2145,6 @@
       },
       {
         "reference": {
-          "reference": "Citation/33090"
-        },
-        "description": "This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.",
-        "name": "JournalArticleCitation: Metabolic Surgery in the Treatment Algorithm for Type 2 Diabetes: A Joint Statement by International Diabetes Organizations",
-        "isExample": true,
-        "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/journal-article-citation"
-        ]
-      },
-      {
-        "reference": {
           "reference": "ArtifactAssessment/179469"
         },
         "name": "Justification for Recommendation: ADA Obesity Management Recommendation 8.16",
@@ -2294,7 +2302,7 @@
         "reference": {
           "reference": "Evidence/179588"
         },
-        "description": "2.15 (1.33 to 3.26)",
+        "description": "2.15 (1.33 to 3.26) - example showing statistic.extension:modelExpression",
         "name": "NetEffectContribution: Remission of diabetes for Example for GIN 2022",
         "isExample": true,
         "profile": [

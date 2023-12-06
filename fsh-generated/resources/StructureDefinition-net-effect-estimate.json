@@ -175,7 +175,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "statisticType"
+              "path": "statisticType.coding"
             }
           ],
           "rules": "open"
@@ -196,17 +196,14 @@
         "sliceName": "modelExpression"
       },
       {
-        "id": "Evidence.statistic:netEffect.statisticType",
-        "path": "Evidence.statistic.statisticType",
+        "id": "Evidence.statistic:netEffect.statisticType.coding",
+        "path": "Evidence.statistic.statisticType.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "STATO:0000424",
-              "system": "https://fevir.net/resources/CodeSystem/27270",
-              "display": "Risk Difference"
-            }
-          ]
+        "max": "1",
+        "patternCoding": {
+          "code": "STATO:0000424",
+          "system": "https://fevir.net/resources/CodeSystem/27270",
+          "display": "Risk Difference"
         }
       },
       {
@@ -216,7 +213,7 @@
           "discriminator": [
             {
               "type": "value",
-              "path": "type"
+              "path": "type.coding"
             }
           ],
           "rules": "open"
@@ -232,17 +229,14 @@
         "mustSupport": true
       },
       {
-        "id": "Evidence.statistic:netEffect.attributeEstimate:confidenceInterval.type",
-        "path": "Evidence.statistic.attributeEstimate.type",
+        "id": "Evidence.statistic:netEffect.attributeEstimate:confidenceInterval.type.coding",
+        "path": "Evidence.statistic.attributeEstimate.type.coding",
         "min": 1,
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "TBD:0000059",
-              "system": "https://fevir.net/resources/CodeSystem/27270",
-              "display": "Confidence interval"
-            }
-          ]
+        "max": "1",
+        "patternCoding": {
+          "code": "TBD:0000059",
+          "system": "https://fevir.net/resources/CodeSystem/27270",
+          "display": "Confidence interval"
         }
       },
       {
@@ -336,6 +330,7 @@
         "id": "Evidence.statistic:netEffect.modelCharacteristic:netEffectAnalysis.code.coding",
         "path": "Evidence.statistic.modelCharacteristic.code.coding",
         "min": 1,
+        "max": "1",
         "patternCoding": {
           "code": "TBD:net-effect-analysis",
           "system": "https://fevir.net/resources/CodeSystem/27270",

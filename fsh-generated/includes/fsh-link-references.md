@@ -17,6 +17,7 @@
 [179621]: Citation-179621.html
 [179630]: Citation-179630.html
 [179616]: Citation-179616.html
+[33089]: Citation-33089.html
 [179613]: Citation-179613.html
 [179601]: Citation-179601.html
 [179600]: Citation-179600.html
@@ -151,11 +152,12 @@
 [DatabaseEntryCitation]: StructureDefinition-database-entry-citation.html
 [179558]: Citation-179558.html
 [DataDictionary]: StructureDefinition-data-dictionary.html
+[181451]: CodeSystem-181451.html
 [179650]: CodeSystem-179650.html
 [DatasetCitation]: StructureDefinition-dataset-citation.html
 [179559]: Citation-179559.html
 [DateAsRating]: StructureDefinition-date-as-rating.html
-[155969]: ArtifactAssessment-155969.html
+[181452]: ArtifactAssessment-181452.html
 [153881]: Citation-153881.html
 [179430]: ValueSet-179430.html
 [179897]: Group-179897.html
@@ -218,7 +220,6 @@
 [JournalArticleCitation]: StructureDefinition-journal-article-citation.html
 [32137]: Citation-32137.html
 [104116]: Citation-104116.html
-[33090]: Citation-33090.html
 [179469]: ArtifactAssessment-179469.html
 [179515]: ArtifactAssessment-179515.html
 [181448]: Composition-181448.html

@@ -60,8 +60,8 @@
           ],
           "rules": "open"
         },
-        "comment": "To report comparative evidence for a research question defined by Population, Intervention, Comparator, and Outcome (PICO), one would use three variableDefinition instances: the Population has variableRole of population, the Intervention and Comparator will be expressed as category values for a GroupAssignment EvidenceVariable with the variableRole of exposure, and the Outcome has variableRole of outcome. In some types of Comparative Evidence, where the groups being compared are not from the same Population (and thus not a PICO-style research question), the GroupAssignment EvidenceVariable may have the variableRole of exposure instead of population. This approach may be used for example to compare cats and dogs.",
-        "min": 2
+        "comment": "To report comparative evidence for a research question defined by Population, Intervention, Comparator, and Outcome (PICO), one would use three variableDefinition instances: the Population has variableRole of population, the Intervention and Comparator will be expressed as category values for a GroupAssignment EvidenceVariable with the variableRole of exposure, and the Outcome has variableRole of outcome. In some types of Comparative Evidence, where the groups being compared are not from the same Population (and thus not a PICO-style research question), the GroupAssignment EvidenceVariable may have the variableRole of exposure and express the populations being compared as categories, and a combination of these categories can be described in the variableDefinition with variableRole of population. This approach may be used for example to compare cats and dogs.",
+        "min": 3
       },
       {
         "id": "Evidence.variableDefinition:population",
@@ -126,8 +126,8 @@
         "id": "Evidence.variableDefinition:exposure",
         "path": "Evidence.variableDefinition",
         "sliceName": "exposure",
-        "min": 0,
-        "max": "*"
+        "min": 1,
+        "max": "1"
       },
       {
         "id": "Evidence.variableDefinition:exposure.extension",
@@ -167,9 +167,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment",
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-variable",
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-variable"
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment"
             ]
           }
         ]

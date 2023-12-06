@@ -19,10 +19,10 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The DatabaseEn
         * ^short = "Title of the database"
   * classification 1..*
   * classification ^slicing.discriminator.type = #value
-  * classification ^slicing.discriminator.path = "type"
+  * classification ^slicing.discriminator.path = "type.coding"
   * classification ^slicing.rules = #open
-  * classification contains knowledgeArtifactType 1..1 MS
-  * classification[knowledgeArtifactType].type = http://hl7.org/fhir/cited-artifact-classification-type#knowledge-artifact-type "Knowledge Artifact Type"
+  * classification contains knowledgeArtifactType 1..1 MS and definedInText 0..*
+  * classification[knowledgeArtifactType].type.coding = http://hl7.org/fhir/cited-artifact-classification-type#knowledge-artifact-type "Knowledge Artifact Type"
   * classification[knowledgeArtifactType]
     * classifier 1..*
     * classifier ^slicing.discriminator.type = #value
@@ -30,4 +30,5 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The DatabaseEn
     * classifier ^slicing.rules = #open
     * classifier contains databaseEntry 1..1 MS
     * classifier[databaseEntry].text = "Database Entry"
+  * classification[definedInText].type.coding = https://fevir.net/resources/CodeSystem/179423#defined-in-text "Defined in text"
   

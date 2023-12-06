@@ -123,6 +123,69 @@
         }
       },
       {
+        "id": "Citation.citedArtifact.classification:publishingModel",
+        "path": "Citation.citedArtifact.classification",
+        "sliceName": "publishingModel",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Citation.citedArtifact.classification:publishingModel.type",
+        "path": "Citation.citedArtifact.classification.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "publishing-model",
+              "system": "http://hl7.org/fhir/cited-artifact-classification-type",
+              "display": "Publishing Model"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Citation.citedArtifact.classification:publicationType",
+        "path": "Citation.citedArtifact.classification",
+        "sliceName": "publicationType",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Citation.citedArtifact.classification:publicationType.type",
+        "path": "Citation.citedArtifact.classification.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "publication-type",
+              "system": "http://hl7.org/fhir/cited-artifact-classification-type",
+              "display": "Publication type"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Citation.citedArtifact.classification:citationSubset",
+        "path": "Citation.citedArtifact.classification",
+        "sliceName": "citationSubset",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Citation.citedArtifact.classification:citationSubset.type",
+        "path": "Citation.citedArtifact.classification.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "citation-subset",
+              "system": "http://hl7.org/fhir/cited-artifact-classification-type",
+              "display": "Citation subset"
+            }
+          ]
+        }
+      },
+      {
         "id": "Citation.citedArtifact.classification:studyDesign",
         "path": "Citation.citedArtifact.classification",
         "sliceName": "studyDesign",
