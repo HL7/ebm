@@ -15,6 +15,7 @@ Alias: $ext-standards-status = http://hl7.org/fhir/StructureDefinition/structure
 Alias: $ext-characteristic-expression = http://hl7.org/fhir/StructureDefinition/characteristicExpression
 
 Alias: $ext-url = http://hl7.org/fhir/StructureDefinition/artifact-url
+Alias: $ext-description = http://hl7.org/fhir/StructureDefinition/artifact-description
 Alias: $ext-version = http://hl7.org/fhir/StructureDefinition/artifact-version
 Alias: $ext-versionAlgorithm = http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm
 Alias: $ext-title = http://hl7.org/fhir/StructureDefinition/artifact-title

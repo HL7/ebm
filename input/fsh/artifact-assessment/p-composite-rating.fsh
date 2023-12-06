@@ -5,6 +5,8 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
+* extension contains $ext-url named url 0..1
+* extension contains $ext-description named description 0..1
 * identifier
   * ^definition = "A formal identifier that is used to identify this CompositeRating when it is represented in other formats, or referenced in a specification, model, design or an instance." 
   * ^short = "Additional identifier for the CompositeRating"
