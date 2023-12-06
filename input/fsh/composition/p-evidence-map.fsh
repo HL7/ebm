@@ -16,7 +16,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
 * section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code.coding"
 * section ^slicing.rules = #open
-* section contains outcomeDefinition 0..1 and comparatorOnlyEvidence 0..1 and interventionOnlyEvidence 0..1 and comparativeEvidence 0..1 and certaintyOfEvidence 0..1 and evidenceVariablePopulation 0..1 and intervention 0..1 and interventionDescription 0..1 and interventionGroup 0..1 and evidenceClassifier 0..1
+* section contains outcomeDefinition 0..1 and comparatorOnlyEvidence 0..1 and interventionOnlyEvidence 0..1 and comparativeEvidence 0..1 and certaintyOfEvidence 0..1 and evidenceVariablePopulation 0..1 and intervention 0..1 and interventionDescription 0..1 and interventionGroup 0..1 and evidenceClassifier 0..1 and relativeImportance 0..1
 * section[outcomeDefinition].code.coding 1..1
 * section[outcomeDefinition].code.coding = https://fevir.net/resources/CodeSystem/179423#outcome-measure "Outcome Measure"
 * section[outcomeDefinition]
@@ -57,6 +57,12 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
 * section[evidenceClassifier].code.coding = https://fevir.net/resources/CodeSystem/179423#classifier "Classifier"
 * section[evidenceClassifier]
   * entry only Reference(ArtifactAssessment)
+* section[relativeImportance].code.coding 1..1
+* section[relativeImportance].code.coding = https://fevir.net/resources/CodeSystem/179423#relative-importance "Relative Importance"
+* section[relativeImportance]
+  * entry only Reference(ArtifactAssessment)
+
+  
 
 
 
