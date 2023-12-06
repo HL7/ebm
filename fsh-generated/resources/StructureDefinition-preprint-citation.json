@@ -5,6 +5,18 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-implements",
       "valueUri": "http://hl7.org/fhir/StructureDefinition/MetadataResource"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cds"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
     }
   ],
   "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/preprint-citation",
@@ -103,6 +115,27 @@
           "code": "D000076942",
           "system": "http://hl7.org/fhir/citation-artifact-classifier",
           "display": "Preprint"
+        }
+      },
+      {
+        "id": "Citation.citedArtifact.classification:studyDesign",
+        "path": "Citation.citedArtifact.classification",
+        "sliceName": "studyDesign",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Citation.citedArtifact.classification:studyDesign.type",
+        "path": "Citation.citedArtifact.classification.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "study-design",
+              "system": "https://fevir.net/resources/CodeSystem/179423",
+              "display": "Study Design"
+            }
+          ]
         }
       }
     ]

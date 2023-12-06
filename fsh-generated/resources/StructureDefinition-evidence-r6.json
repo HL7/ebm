@@ -5,6 +5,18 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-implements",
       "valueUri": "http://hl7.org/fhir/StructureDefinition/MetadataResource"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cds"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
     }
   ],
   "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-r6",
@@ -100,6 +112,35 @@
         "id": "Evidence.variableDefinition.variableRole.text",
         "path": "Evidence.variableDefinition.variableRole.text",
         "patternString": "Use extension:variableRoleCode instead."
+      },
+      {
+        "id": "Evidence.statistic.extension",
+        "path": "Evidence.statistic.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Evidence.statistic.extension:modelExpression",
+        "path": "Evidence.statistic.extension",
+        "sliceName": "modelExpression",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-expression"
+            ]
+          }
+        ]
       },
       {
         "id": "Evidence.statistic.modelCharacteristic.extension",

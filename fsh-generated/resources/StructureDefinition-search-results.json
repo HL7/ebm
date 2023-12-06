@@ -5,6 +5,18 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-implements",
       "valueUri": "http://hl7.org/fhir/StructureDefinition/MetadataResource"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cds"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
     }
   ],
   "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/search-results",

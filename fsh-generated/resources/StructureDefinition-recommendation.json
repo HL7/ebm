@@ -1,6 +1,20 @@
 {
   "resourceType": "StructureDefinition",
   "id": "recommendation",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cds"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    }
+  ],
   "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation",
   "name": "Recommendation",
   "status": "draft",
@@ -113,6 +127,18 @@
             ]
           }
         ]
+      },
+      {
+        "id": "Composition.relatesTo:citeAs",
+        "path": "Composition.relatesTo",
+        "sliceName": "citeAs",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Composition.relatesTo:citeAs.type",
+        "path": "Composition.relatesTo.type",
+        "patternCode": "cite-as"
       },
       {
         "id": "Composition.section",

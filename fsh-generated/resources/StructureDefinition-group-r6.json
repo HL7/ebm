@@ -1,6 +1,20 @@
 {
   "resourceType": "StructureDefinition",
   "id": "group-r6",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cds"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    }
+  ],
   "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/group-r6",
   "name": "GroupR6",
   "status": "draft",
@@ -220,6 +234,51 @@
             "code": "Extension",
             "profile": [
               "http://hl7.org/fhir/StructureDefinition/artifact-copyrightLabel"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.extension:author",
+        "path": "Group.extension",
+        "sliceName": "author",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/artifact-author"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.extension:relatedArtifact",
+        "path": "Group.extension",
+        "sliceName": "relatedArtifact",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.extension:characteristicExpression",
+        "path": "Group.extension",
+        "sliceName": "characteristicExpression",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/characteristicExpression"
             ]
           }
         ]

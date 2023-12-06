@@ -1,6 +1,20 @@
 {
   "resourceType": "StructureDefinition",
   "id": "net-effect-contribution-list",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cds"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    }
+  ],
   "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution-list",
   "name": "NetEffectContributionList",
   "status": "draft",

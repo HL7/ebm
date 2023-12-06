@@ -1,6 +1,20 @@
 {
   "resourceType": "StructureDefinition",
   "id": "summary-of-findings",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cds"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    }
+  ],
   "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/summary-of-findings",
   "name": "SummaryOfFindings",
   "status": "draft",
@@ -142,6 +156,7 @@
         "id": "Composition.section:columnHeaders.section:outcomeDefinition.code.coding",
         "path": "Composition.section.section.code.coding",
         "min": 1,
+        "max": "1",
         "patternCoding": {
           "code": "outcome-measure",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -164,6 +179,7 @@
         "id": "Composition.section:columnHeaders.section:sampleSize.code.coding",
         "path": "Composition.section.section.code.coding",
         "min": 1,
+        "max": "1",
         "patternCoding": {
           "code": "sample-size",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -186,6 +202,7 @@
         "id": "Composition.section:columnHeaders.section:resultWithoutTreatment.code.coding",
         "path": "Composition.section.section.code.coding",
         "min": 1,
+        "max": "1",
         "patternCoding": {
           "code": "result-with-comparator-alone",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -208,6 +225,7 @@
         "id": "Composition.section:columnHeaders.section:resultWithTreatmentObserved.code.coding",
         "path": "Composition.section.section.code.coding",
         "min": 1,
+        "max": "1",
         "patternCoding": {
           "code": "result-with-intervention-alone",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -230,6 +248,7 @@
         "id": "Composition.section:columnHeaders.section:resultWithTreatmentDerived.code.coding",
         "path": "Composition.section.section.code.coding",
         "min": 1,
+        "max": "1",
         "patternCoding": {
           "code": "result-with-intervention-alone-calculated",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -252,6 +271,7 @@
         "id": "Composition.section:columnHeaders.section:effectEstimate.code.coding",
         "path": "Composition.section.section.code.coding",
         "min": 1,
+        "max": "1",
         "patternCoding": {
           "code": "result-with-intervention-vs-comparator",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -274,6 +294,7 @@
         "id": "Composition.section:columnHeaders.section:certaintyOfEvidence.code.coding",
         "path": "Composition.section.section.code.coding",
         "min": 1,
+        "max": "1",
         "patternCoding": {
           "code": "certainty-of-evidence",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -296,6 +317,7 @@
         "id": "Composition.section:columnHeaders.section:assertion.code.coding",
         "path": "Composition.section.section.code.coding",
         "min": 1,
+        "max": "1",
         "patternCoding": {
           "code": "assertion",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -314,6 +336,7 @@
         "id": "Composition.section:outcomeEntry.code.coding",
         "path": "Composition.section.code.coding",
         "min": 1,
+        "max": "1",
         "patternCoding": {
           "code": "summary-of-findings-entry-for-a-single-outcome",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -362,6 +385,7 @@
         "id": "Composition.section:outcomeEntry.section:outcomeDefinition.code.coding",
         "path": "Composition.section.section.code.coding",
         "min": 1,
+        "max": "1",
         "patternCoding": {
           "code": "outcome-measure",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -397,6 +421,7 @@
         "id": "Composition.section:outcomeEntry.section:sampleSize.code.coding",
         "path": "Composition.section.section.code.coding",
         "min": 1,
+        "max": "1",
         "patternCoding": {
           "code": "sample-size",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -419,6 +444,7 @@
         "id": "Composition.section:outcomeEntry.section:resultWithoutTreatment.code.coding",
         "path": "Composition.section.section.code.coding",
         "min": 1,
+        "max": "1",
         "patternCoding": {
           "code": "result-with-comparator-alone",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -454,6 +480,7 @@
         "id": "Composition.section:outcomeEntry.section:resultWithTreatmentObserved.code.coding",
         "path": "Composition.section.section.code.coding",
         "min": 1,
+        "max": "1",
         "patternCoding": {
           "code": "result-with-intervention-alone",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -489,6 +516,7 @@
         "id": "Composition.section:outcomeEntry.section:resultWithTreatmentDerived.code.coding",
         "path": "Composition.section.section.code.coding",
         "min": 1,
+        "max": "1",
         "patternCoding": {
           "code": "result-with-intervention-alone-calculated",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -525,6 +553,7 @@
         "id": "Composition.section:outcomeEntry.section:effectEstimate.code.coding",
         "path": "Composition.section.section.code.coding",
         "min": 1,
+        "max": "1",
         "patternCoding": {
           "code": "result-with-intervention-vs-comparator",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -560,6 +589,7 @@
         "id": "Composition.section:outcomeEntry.section:certaintyOfEvidence.code.coding",
         "path": "Composition.section.section.code.coding",
         "min": 1,
+        "max": "1",
         "patternCoding": {
           "code": "certainty-of-evidence",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -595,6 +625,7 @@
         "id": "Composition.section:outcomeEntry.section:assertion.code.coding",
         "path": "Composition.section.section.code.coding",
         "min": 1,
+        "max": "1",
         "patternCoding": {
           "code": "assertion",
           "system": "https://fevir.net/resources/CodeSystem/179423",

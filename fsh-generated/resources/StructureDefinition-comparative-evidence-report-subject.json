@@ -1,6 +1,20 @@
 {
   "resourceType": "StructureDefinition",
   "id": "comparative-evidence-report-subject",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cds"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    }
+  ],
   "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence-report-subject",
   "name": "ComparativeEvidenceReportSubject",
   "status": "draft",

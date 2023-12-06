@@ -323,6 +323,7 @@
 [SoftwareCitation]: StructureDefinition-software-citation.html
 [179560]: Citation-179560.html
 [StatisticModelApplied]: StructureDefinition-statistic-model-applied.html
+[StatisticModelExpression]: StructureDefinition-statistic-model-expression.html
 [StatisticModelIncludeIf]: StructureDefinition-statistic-model-include-if.html
 [StatisticModelIntended]: StructureDefinition-statistic-model-intended.html
 [StatisticModelValueCodeableConcept]: StructureDefinition-statistic-model-value-codeableconcept.html

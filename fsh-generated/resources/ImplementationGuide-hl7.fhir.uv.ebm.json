@@ -3146,6 +3146,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/statistic-model-expression"
+        },
+        "name": "StatisticModelExpression",
+        "description": "An expression that defines the statistical analysis.",
+        "isExample": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/statistic-model-include-if"
         },
         "name": "StatisticModelIncludeIf",

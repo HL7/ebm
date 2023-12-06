@@ -329,6 +329,7 @@
 <artifact id="StructureDefinition/software-citation" key="StructureDefinition-software-citation" name="SoftwareCitation"/>
 <artifact id="Citation/179560" key="Citation-179560" name="SoftwareCitation: Computable Publishing®: ClinicalTrials.gov-to-FEvIR Converter"/>
 <artifact id="StructureDefinition/statistic-model-applied" key="StructureDefinition-statistic-model-applied" name="StatisticModelApplied"/>
+<artifact id="StructureDefinition/statistic-model-expression" key="StructureDefinition-statistic-model-expression" name="StatisticModelExpression"/>
 <artifact id="StructureDefinition/statistic-model-include-if" key="StructureDefinition-statistic-model-include-if" name="StatisticModelIncludeIf"/>
 <artifact id="StructureDefinition/statistic-model-intended" key="StructureDefinition-statistic-model-intended" name="StatisticModelIntended"/>
 <artifact id="StructureDefinition/statistic-model-value-codeableconcept" key="StructureDefinition-statistic-model-value-codeableconcept" name="StatisticModelValueCodeableConcept"/>

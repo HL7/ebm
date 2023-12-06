@@ -8,7 +8,7 @@
     },
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
-      "valueInteger": 0
+      "valueInteger": 1
     },
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
@@ -16,7 +16,7 @@
     },
     {
       "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
-      "valueCode": "trial-use"
+      "valueCode": "draft"
     }
   ],
   "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-plan",
@@ -132,6 +132,35 @@
         "path": "PlanDefinition.action",
         "min": 1,
         "mustSupport": true
+      },
+      {
+        "id": "PlanDefinition.action.extension",
+        "path": "PlanDefinition.action.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "PlanDefinition.action.extension:timingRelativeTime",
+        "path": "PlanDefinition.action.extension",
+        "sliceName": "timingRelativeTime",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-timing"
+            ]
+          }
+        ]
       },
       {
         "id": "PlanDefinition.action.prefix",
