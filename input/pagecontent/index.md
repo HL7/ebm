@@ -28,7 +28,7 @@ Copy the JSON content from https://fevir.net/resources/CodeSystem/27270#json, ht
 
 ### Understanding the Evidence Resource
 
-The Evidence Resource provides a machine-interpretable expression of an evidence concept including the evidence variables (e.g., population, exposures, outcomes, covariates), the statistics, and the certainty of this evidence.
+The Evidence Resource is the central atomic component for the Evidence-related Resources. The Evidence Resource provides a machine-interpretable expression of an evidence concept including the evidence variables (e.g., population, exposures, outcomes, covariates), the statistics, and the certainty of this evidence.
 
 The Evidence Resource enables the expression of the most granular form of scientific evidence, such as the actual quantitative results of a study or statistical analysis.
 
@@ -42,20 +42,22 @@ For example, a description that includes a relative risk 0.8 and 95% confidence 
 
 The note element may be used for any number of explanatory, variant, or related comments.
 
-The variableDefinition element is used to describe what the evidence is about. 
+The variableDefinition BackboneElement is used to describe what the evidence is about. 
 
 Each variable defined must be assigned a variable role which signals how that variable is used in the statistics within the Evidence Resource. In FHIR version R6, the variableDefinition.variableRole uses a code datatype and the options are population, exposure, outcome, or covariate. This limitation to 4 roles supports extensive combinations for different types of evidence. If subtyping of role is needed, in FHIR version R6 there isa variableDefinition.roleSubtype element with a CodeableConcept datatype. This EBMonFHIR IG uses the FHIR version R5 base, so in an EvidenceR6 Profile the variableDefinition.variableRole element is set to a CodeableConcept specifying use of extensions and extensions on variableDefinition are provided for variableRoleCode and roleSubtype. For comparative evidence, an extension on variableDefinition for comparatorCategory is used to express the categorical value serving as the reference value for the comparison.
 
 The variable definition may be expressed in human-readable form (with a description element) and/or expressed in computable form by referencing Group or EvidenceVariable Resources. In general, Group Resources are used to define populations and EvidenceVariable Resources are used to define exposures, outcomes, and covariates. The variableDefinition elements allow expression of the observed variable and the intended variable. In many forms of expression the Evidence is interpreted for a specific context and recognition of both observed and intended variables is important for understanding the applicability and certainty of the evidence. A directnessMatch element may be used to express the similarity between the observed and intended variable.
 
+Because a statistic can rarely be interpreted without knowing how it was obtained, the Evidence Resource enables expression of the study design. The studyDesign element uses a CodeableConcept datatype to describe any study design features. For evidence derived from synthesis of evidence, the Evidence Resource enables expression of the approach to combining the data. The synthesisType element uses a CodeableConcept datatype to describe the method for combining data from two or more studies.
+
 The heart of the evidence is the statistic. The statistic BackboneElement provides a machine-interpretable expression of a statistic, including the quantity; unit of measure; classification of statistic type; sample size; attributes such as confidence intervals, p values, and heterogeneity estimates; and statistic model characteristics. An Evidence Resource may contain more than one statistic, in which case each statistic matches the same combination of variable definitions.
 
-Because a statistic can rarely be interpreted without knowing how it was obtained, the Evidence Resource enables expression of the studyType. For evidence derived from synthesis of evidence, the Evidence Resource enables expression of the synthesisType.
+The certainty BackboneElement provides a machine-interpretable expression of certainty, confidence or quality of the evidence. The certainty BackboneElement can express overall certainty and certainty of any subcomponent concepts using codeable concepts from structured rating systems.
 
-The certainty Element provides a machine-interpretable expression of certainty, confidence or quality of the resource in which it is included. The certainty Element can express overall certainty and certainty of any subcomponent concepts using codeable concepts from structured rating systems. The certainty Element enables machine-to-machine communication of the certainty of evidence.
+### Profiles of Evidence Resource
 
-14.13.2 Boundaries and Relationships 
-The Evidence Resource is the central atomic component for the Evidence-related Resources. The Evidence Resource may reference multiple Group and EvidenceVariable Resources; in these cases, the Group and EvidenceVariable Resources to which an Evidence Resource points does not refer back to the Evidence. In the context of evidence synthesis, an EvidenceVariable Resource may reference Evidence Resources where the EvidenceVariable Resource is used to define the set of evidence being synthesized.
+The EvidenceR6 Profile is a base for all other Evidence Profiles. The EvidenceR6 Profile adds 3 extensions to variableDefinition (variableRoleCode 1..1, roleSubtype 0..1, and comparatorCategory 0..1), 1 extension to statistic (modelExpression 0..1), 6 extensions to statistic.modelCharacteristic, and 1 extension to statistic.modelCharacteristic.variable
+
 
 ### Understanding the EvidenceVariable Resource
 
