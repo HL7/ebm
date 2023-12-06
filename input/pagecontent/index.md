@@ -116,7 +116,26 @@ The ParticipantFlowMeasure Profile is a Profile of VariableDefinition used to de
 
 ### Understanding the Group Resource
 
-Replace with content.
+The Group Resource represents a defined collection of entities. The group may be enumerated, meaning that there is a known quantity of group members with or without a listing of the group members. The group may be definitional, meaning there is a structured representation of the characteristics (criteria) that define membership eligiblity, or who or what matches the criteria to be considered a member of the group.
+
+The Group.type element is used to classify the type of group member in terms of FHIR types with options limited to person, animal, practitioner, device, careteam, healthcareservice, location, organization, relatedperson, and specimen. Group.type is a required element in the use of Group Resource for health data exchange.
+
+The Group.membership element is used to classify the Group Resource as either definitional or enumerated, and is a required element.
+
+In FHIR version R6, a third code (conceptual) is allowed for the Group.membership element value, and Group.type is not required when Group.membership = 'conceptual'. This allows greater flexibility as needed for science data exchange.
+
+In the EBMonFHIR Implementation Guide, which is built on FHIR version R5 so must respect the Group.type and Group.membership requirements, there is no constraints or extensions to change the type or membership element values to concepts not fitting the base requirements. When a Group would be considered 'conceptual' the examples will use 'definitional' and when a Group would not use the type element the example will use 'animal' (as the least likely value to be confused for a real value in the examples used in the EBMonFHIR Implementation Guide).
+
+The base Group Resource in FHIR version R5 uses a repeatable characteristic element to define inclusion and exclusion criteria. This characteristic element includes 4 elements:
+
+.. code which is a required CodeableConcept to represent the type of characterstic
+.. value[x] with is a required element, with datatype of CodeableConcept, boolean, Quantity, Range, or Reference, to represent the matching value for the type of characteristic
+.. exclude which is a required boolean to determine if this is an inclusion or exclusion criterion
+.. period which is an optional Period for when in calendar time the characteristic applies
+
+### Profiles of Group Resource
+
+The GroupR6 Profile is a base for all other Group Profiles. ...to be continued...
 
 ### Understanding the Citation Resource
 

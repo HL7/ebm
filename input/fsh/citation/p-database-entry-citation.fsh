@@ -29,8 +29,11 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The DatabaseEn
     * classifier ^slicing.discriminator.type = #value
     * classifier ^slicing.discriminator.path = "coding"
     * classifier ^slicing.rules = #open
-    * classifier contains databaseEntry 1..1 MS
+    * classifier contains databaseEntry 1..1 MS and fhirResource 0..1
+    * classifier[databaseEntry].coding 1..1
     * classifier[databaseEntry].coding = https://fevir.net/resources/CodeSystem/179423#classified-as-database-entry "Database Entry"
+    * classifier[fhirResource].coding 1..1
+    * classifier[fhirResource].coding = http://hl7.org/fhir/citation-artifact-classifier#fhir-resource "FHIR Resource"
   * classification[definedInText].type.coding 1..1
   * classification[definedInText].type.coding = https://fevir.net/resources/CodeSystem/179423#defined-in-text "Defined in text"
   
