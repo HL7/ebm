@@ -2,6 +2,9 @@ Profile: M11Report
 Parent: EvidenceReport
 Id: m11-report
 Description: "Profile of Composition for Evidence Based Medicine IG. The M11Report Profile is used for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification."
+* ^extension[$ext-fmm].valueInteger = 1
+* ^extension[$ext-wg].valueCode = #cds
+* ^extension[$ext-standards-status].valueCode = #draft
 * category 1..*
 * category ^slicing.discriminator.type = #value
 * category ^slicing.discriminator.path = "text"

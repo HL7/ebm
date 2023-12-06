@@ -2,6 +2,9 @@ Profile: PreprintCitation
 Parent: Citation
 Id: preprint-citation
 Description: "Profile of Citation for Evidence Based Medicine IG. The PreprintCitation Profile is used for citations of an article published in a form prior to peer-reviewed publication in a journal, book, or other permanent record."
+* ^extension[$ext-fmm].valueInteger = 1
+* ^extension[$ext-wg].valueCode = #cds
+* ^extension[$ext-standards-status].valueCode = #draft
 * citedArtifact
   * classification 1..*
   * classification ^slicing.discriminator.type = #value

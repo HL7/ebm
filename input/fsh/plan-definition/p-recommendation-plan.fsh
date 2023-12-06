@@ -2,9 +2,9 @@ Profile: RecommendationPlan
 Parent: PlanDefinition
 Id: recommendation-plan
 Description: "Profile of PlanDefinition for Evidence Based Medicine IG. The RecommendationPlan Profile is used for the implementable representation of a recommendation (such as that from a clinical practice guideline)."
-* ^extension[$ext-fmm].valueInteger = 0
+* ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
-* ^extension[$ext-standards-status].valueCode = #trial-use
+* ^extension[$ext-standards-status].valueCode = #draft
 * url 1..1 MS
 * version 1..1 MS
 * versionAlgorithm[x] MS
@@ -20,6 +20,8 @@ Description: "Profile of PlanDefinition for Evidence Based Medicine IG. The Reco
 * topic 0..0
 * library 0..1 MS
 * action 1..* MS
+* action
+  * extension contains CharacteristicTiming named timingRelativeTime 0..1
 * action.prefix MS
 * action.title MS
 * action.description MS

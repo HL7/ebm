@@ -2,6 +2,9 @@ Profile: Adaptation
 Parent: ArtifactAssessment
 Id: adaptation
 Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The Adaptation Profile is used for assessments of a knowledge artifact that are used to create a new knowledge artifact through acceptance, rejection or modification of the assessed artifact."
+* ^extension[$ext-fmm].valueInteger = 1
+* ^extension[$ext-wg].valueCode = #cds
+* ^extension[$ext-standards-status].valueCode = #draft
 * identifier
   * ^definition = "A formal identifier that is used to identify this Adaptation when it is represented in other formats, or referenced in a specification, model, design or an instance." 
   * ^short = "Additional identifier for the Adaptation"

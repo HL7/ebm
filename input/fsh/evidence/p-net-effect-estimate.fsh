@@ -2,6 +2,9 @@ Profile: NetEffectEstimate
 Parent: EvidenceR6
 Id: net-effect-estimate
 Description: "Profile of Evidence for Evidence Based Medicine IG. The NetEffectEstimate Profile is used for evidence in which the observed data is net effect contributions (effect estimates expressed as risk differences, multiplied by relative importance ratings of outcomes)."
+* ^extension[$ext-fmm].valueInteger = 1
+* ^extension[$ext-wg].valueCode = #cds
+* ^extension[$ext-standards-status].valueCode = #draft
 * variableDefinition 2..*
 * variableDefinition ^slicing.discriminator.type = #value
 * variableDefinition ^slicing.discriminator.path = "note.text"

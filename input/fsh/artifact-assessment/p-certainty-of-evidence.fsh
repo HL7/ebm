@@ -2,6 +2,9 @@ Profile: CertaintyOfEvidence
 Parent: ArtifactAssessment
 Id: certainty-of-evidence
 Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The CertaintyOfEvidence Profile is used for expression of the certainty (also called quality or confidence in the estimates) of an Evidence artifact." 
+* ^extension[$ext-fmm].valueInteger = 1
+* ^extension[$ext-wg].valueCode = #cds
+* ^extension[$ext-standards-status].valueCode = #draft
 * identifier
   * ^definition = "A formal identifier that is used to identify this CertaintyOfEvidence when it is represented in other formats, or referenced in a specification, model, design or an instance." 
   * ^short = "Additional identifier for the CertaintyOfEvidence"

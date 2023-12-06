@@ -2,6 +2,9 @@ Profile: Comment
 Parent: ArtifactAssessment
 Id: comment
 Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The Comment Profile is used for comments about a Resource that may be created independently from Resource creators."
+* ^extension[$ext-fmm].valueInteger = 1
+* ^extension[$ext-wg].valueCode = #cds
+* ^extension[$ext-standards-status].valueCode = #draft
 * identifier
   * ^definition = "A formal identifier that is used to identify this Comment when it is represented in other formats, or referenced in a specification, model, design or an instance." 
   * ^short = "Additional identifier for the Comment"

@@ -2,6 +2,9 @@ Profile: EvidenceReport
 Parent: Composition
 Id: evidence-report
 Description: "Profile of Composition for Evidence Based Medicine IG. The EvidenceReport Profile is used for a base structure (canonical resource management) for a report combining any number of Citation, Evidence, EvidenceVariable, EvidenceReport, and related Resources."
+* ^extension[$ext-fmm].valueInteger = 1
+* ^extension[$ext-wg].valueCode = #cds
+* ^extension[$ext-standards-status].valueCode = #draft
 * extension contains http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm named versionAlgorithm 0..1
 * extension contains http://hl7.org/fhir/StructureDefinition/artifact-experimental named experimental 0..1
 * extension contains http://hl7.org/fhir/StructureDefinition/artifact-description named description 0..1

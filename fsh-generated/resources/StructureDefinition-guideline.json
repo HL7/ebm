@@ -66,6 +66,7 @@
         "id": "Composition.category:guideline.coding",
         "path": "Composition.category.coding",
         "min": 1,
+        "max": "1",
         "patternCoding": {
           "code": "Guideline",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -99,6 +100,7 @@
         "id": "Composition.section:introduction.code.coding",
         "path": "Composition.section.code.coding",
         "min": 1,
+        "max": "1",
         "patternCoding": {
           "code": "introduction",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -117,6 +119,7 @@
         "id": "Composition.section:recommendations.code.coding",
         "path": "Composition.section.code.coding",
         "min": 1,
+        "max": "1",
         "patternCoding": {
           "code": "recommendations",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -147,6 +150,7 @@
         "id": "Composition.section:text.code.coding",
         "path": "Composition.section.code.coding",
         "min": 1,
+        "max": "1",
         "patternCoding": {
           "code": "text",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -165,6 +169,7 @@
         "id": "Composition.section:methods.code.coding",
         "path": "Composition.section.code.coding",
         "min": 1,
+        "max": "1",
         "patternCoding": {
           "code": "methods",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -183,6 +188,7 @@
         "id": "Composition.section:acknowledgements.code.coding",
         "path": "Composition.section.code.coding",
         "min": 1,
+        "max": "1",
         "patternCoding": {
           "code": "acknowledgements",
           "system": "https://fevir.net/resources/CodeSystem/179423",
@@ -201,6 +207,7 @@
         "id": "Composition.section:appendices.code.coding",
         "path": "Composition.section.code.coding",
         "min": 1,
+        "max": "1",
         "patternCoding": {
           "code": "appendices",
           "system": "https://fevir.net/resources/CodeSystem/179423",

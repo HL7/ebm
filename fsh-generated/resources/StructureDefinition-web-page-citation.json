@@ -1,0 +1,137 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "web-page-citation",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-implements",
+      "valueUri": "http://hl7.org/fhir/StructureDefinition/MetadataResource"
+    }
+  ],
+  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/web-page-citation",
+  "name": "WebPageCitation",
+  "status": "draft",
+  "description": "Profile of Citation for Evidence Based Medicine IG. The WebPageCitation Profile is used for citations of a web page or website, typically when there is not another type being used to classify the cited artifact.",
+  "fhirVersion": "5.0.0",
+  "mapping": [
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "objimpl",
+      "uri": "http://hl7.org/fhir/object-implementation",
+      "name": "Object Implementation Information"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Citation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Citation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Citation.citedArtifact.identifier",
+        "path": "Citation.citedArtifact.identifier",
+        "short": "Unique identifier. Typically the URL.",
+        "definition": "A formal identifier that is used to identify the cited web page when it is represented in other formats, or referenced in a specification, model, design or an instance."
+      },
+      {
+        "id": "Citation.citedArtifact.publicationForm.publishedIn.type.text",
+        "path": "Citation.citedArtifact.publicationForm.publishedIn.type.text",
+        "patternString": "Website"
+      },
+      {
+        "id": "Citation.citedArtifact.publicationForm.publishedIn.identifier",
+        "path": "Citation.citedArtifact.publicationForm.publishedIn.identifier",
+        "short": "Unique identifier.",
+        "definition": "A formal identifier that is used to identify the website when it is represented in other formats, or referenced in a specification, model, design or an instance."
+      },
+      {
+        "id": "Citation.citedArtifact.publicationForm.publishedIn.title",
+        "path": "Citation.citedArtifact.publicationForm.publishedIn.title",
+        "short": "Title of the website"
+      },
+      {
+        "id": "Citation.citedArtifact.webLocation",
+        "path": "Citation.citedArtifact.webLocation",
+        "min": 1
+      },
+      {
+        "id": "Citation.citedArtifact.classification",
+        "path": "Citation.citedArtifact.classification",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "type"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Citation.citedArtifact.classification:knowledgeArtifactType",
+        "path": "Citation.citedArtifact.classification",
+        "sliceName": "knowledgeArtifactType",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Citation.citedArtifact.classification:knowledgeArtifactType.type",
+        "path": "Citation.citedArtifact.classification.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "knowledge-artifact-type",
+              "system": "http://hl7.org/fhir/cited-artifact-classification-type",
+              "display": "Knowledge Artifact Type"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Citation.citedArtifact.classification:knowledgeArtifactType.classifier",
+        "path": "Citation.citedArtifact.classification.classifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "coding"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Citation.citedArtifact.classification:knowledgeArtifactType.classifier:webpage",
+        "path": "Citation.citedArtifact.classification.classifier",
+        "sliceName": "webpage",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Citation.citedArtifact.classification:knowledgeArtifactType.classifier:webpage.coding",
+        "path": "Citation.citedArtifact.classification.classifier.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "webpage",
+          "system": "http://hl7.org/fhir/citation-artifact-classifier",
+          "display": "Webpage"
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "preprint-citation",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-implements",
+      "valueUri": "http://hl7.org/fhir/StructureDefinition/MetadataResource"
+    }
+  ],
+  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/preprint-citation",
+  "name": "PreprintCitation",
+  "status": "draft",
+  "description": "Profile of Citation for Evidence Based Medicine IG. The PreprintCitation Profile is used for citations of an article published in a form prior to peer-reviewed publication in a journal, book, or other permanent record.",
+  "fhirVersion": "5.0.0",
+  "mapping": [
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "objimpl",
+      "uri": "http://hl7.org/fhir/object-implementation",
+      "name": "Object Implementation Information"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Citation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Citation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Citation.citedArtifact.classification",
+        "path": "Citation.citedArtifact.classification",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "type"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Citation.citedArtifact.classification:knowledgeArtifactType",
+        "path": "Citation.citedArtifact.classification",
+        "sliceName": "knowledgeArtifactType",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Citation.citedArtifact.classification:knowledgeArtifactType.type",
+        "path": "Citation.citedArtifact.classification.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "knowledge-artifact-type",
+              "system": "http://hl7.org/fhir/cited-artifact-classification-type",
+              "display": "Knowledge Artifact Type"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Citation.citedArtifact.classification:knowledgeArtifactType.classifier",
+        "path": "Citation.citedArtifact.classification.classifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "coding"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Citation.citedArtifact.classification:knowledgeArtifactType.classifier:preprint",
+        "path": "Citation.citedArtifact.classification.classifier",
+        "sliceName": "preprint",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Citation.citedArtifact.classification:knowledgeArtifactType.classifier:preprint.coding",
+        "path": "Citation.citedArtifact.classification.classifier.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "D000076942",
+          "system": "http://hl7.org/fhir/citation-artifact-classifier",
+          "display": "Preprint"
+        }
+      }
+    ]
+  }
+}

@@ -2,6 +2,9 @@ Profile: Guideline
 Parent: EvidenceReport
 Id: guideline
 Description: "Profile of Composition for Evidence Based Medicine IG. The Guideline Profile is used for the composition of a clinical practice guideline and may be tightly related to use of Recommendation Profile of Composition for related content."
+* ^extension[$ext-fmm].valueInteger = 1
+* ^extension[$ext-wg].valueCode = #cds
+* ^extension[$ext-standards-status].valueCode = #draft
 * category 1..*
 * category ^slicing.discriminator.type = #value
 * category ^slicing.discriminator.path = "coding"

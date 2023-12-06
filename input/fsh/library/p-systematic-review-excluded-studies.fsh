@@ -2,6 +2,9 @@ Profile: SystematicReviewExcludedStudies
 Parent: Library
 Id: systematic-review-excluded-studies
 Description: "Profile of Library for Evidence Based Medicine IG. The SystematicReviewExcludedStudies Profile is used to represent the subset of search results of a systematic review which did not meet the inclusion criteria."
+* ^extension[$ext-fmm].valueInteger = 1
+* ^extension[$ext-wg].valueCode = #cds
+* ^extension[$ext-standards-status].valueCode = #draft
 * type = http://terminology.hl7.org/CodeSystem/library-type#asset-collection "Asset Collection"
 * subjectReference only Reference(SystematicReviewEligibilityCriteria)
 * topic 0..0

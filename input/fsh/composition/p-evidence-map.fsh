@@ -2,6 +2,9 @@ Profile: EvidenceMap
 Parent: EvidenceReport
 Id: evidence-map
 Description: "Profile of Composition for Evidence Based Medicine IG. The EvidenceMap Profile is used for an organized listing of Resources used to generate EvidenceReport instances." 
+* ^extension[$ext-fmm].valueInteger = 1
+* ^extension[$ext-wg].valueCode = #cds
+* ^extension[$ext-standards-status].valueCode = #draft
 * category 1..*
 * category ^slicing.discriminator.type = #value
 * category ^slicing.discriminator.path = "coding"

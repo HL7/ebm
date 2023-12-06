@@ -2,6 +2,9 @@ Profile: RiskOfBias
 Parent: ArtifactAssessment
 Id: risk-of-bias
 Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The RiskOfBias Profile is used for expression of the assessment of the threats to validity (or risk of bias) of an Evidence artifact or an artifact consisting of Evidence or the plan to create Evidence." 
+* ^extension[$ext-fmm].valueInteger = 1
+* ^extension[$ext-wg].valueCode = #cds
+* ^extension[$ext-standards-status].valueCode = #draft
 * identifier
   * ^definition = "A formal identifier that is used to identify this RiskOfBias when it is represented in other formats, or referenced in a specification, model, design or an instance." 
   * ^short = "Additional identifier for the RiskOfBias"

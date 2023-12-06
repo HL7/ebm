@@ -2,6 +2,9 @@ Profile: CompositeRating
 Parent: ArtifactAssessment
 Id: composite-rating
 Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The CompositeRating Profile is used for a composite rating or classification of a Resource that may be created following ratings or classifications by two or more parties."
+* ^extension[$ext-fmm].valueInteger = 1
+* ^extension[$ext-wg].valueCode = #cds
+* ^extension[$ext-standards-status].valueCode = #draft
 * identifier
   * ^definition = "A formal identifier that is used to identify this CompositeRating when it is represented in other formats, or referenced in a specification, model, design or an instance." 
   * ^short = "Additional identifier for the CompositeRating"

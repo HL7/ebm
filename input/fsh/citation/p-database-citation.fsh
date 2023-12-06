@@ -2,6 +2,9 @@ Profile: DatabaseCitation
 Parent: Citation
 Id: database-citation
 Description: "Profile of Citation for Evidence Based Medicine IG. The DatabaseCitation Profile is used for citations of a database." 
+* ^extension[$ext-fmm].valueInteger = 1
+* ^extension[$ext-wg].valueCode = #cds
+* ^extension[$ext-standards-status].valueCode = #draft
 * citedArtifact
   * identifier
     * ^definition = "A formal identifier that is used to identify the cited database when it is represented in other formats, or referenced in a specification, model, design or an instance." 

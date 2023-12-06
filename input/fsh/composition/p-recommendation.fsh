@@ -2,6 +2,9 @@ Profile: Recommendation
 Parent: EvidenceReport
 Id: recommendation
 Description: "Profile of Composition for Evidence Based Medicine IG. The Recommendation Profile is used for the composition of a recommendation (such as that from a clinical practice guideline) and may be tightly related to a RecommendationPlan Profile of PlanDefinition and a RecommendationJustification Profile of ArtifactAssessment."
+* ^extension[$ext-fmm].valueInteger = 1
+* ^extension[$ext-wg].valueCode = #cds
+* ^extension[$ext-standards-status].valueCode = #draft
 * category 1..*
 * category ^slicing.discriminator.type = #value
 * category ^slicing.discriminator.path = "coding"
@@ -230,36 +233,48 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Recomme
     * section[subgroupRatings].code.coding = https://fevir.net/resources/CodeSystem/179423#ratings "Ratings"
     * section[subgroupRelatedItems].code.coding 1..1
     * section[subgroupRelatedItems].code.coding = https://fevir.net/resources/CodeSystem/179423#related-items "Related Items"
+  * section[implementationSummary].code.coding 1..1
   * section[implementationSummary].code.coding = https://fevir.net/resources/CodeSystem/179423#implementation-considerations "Implementation Considerations"
   * section[implementationSummary]
     * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code.coding"
     * section ^slicing.rules = #open
     * section contains implementationRatings 0..1 and implementationRelatedItems 0..1
+    * section[implementationRatings].code.coding 1..1
     * section[implementationRatings].code.coding = https://fevir.net/resources/CodeSystem/179423#ratings "Ratings"
+    * section[implementationRelatedItems].code.coding 1..1
     * section[implementationRelatedItems].code.coding = https://fevir.net/resources/CodeSystem/179423#related-items "Related Items"
+  * section[monitoringSummary].code.coding 1..1
   * section[monitoringSummary].code.coding = https://fevir.net/resources/CodeSystem/179423#monitoring-considerations "Monitoring Considerations"
   * section[monitoringSummary]
     * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code.coding"
     * section ^slicing.rules = #open
     * section contains monitoringRatings 0..1 and monitoringRelatedItems 0..1
+    * section[monitoringRatings].code.coding 1..1
     * section[monitoringRatings].code.coding = https://fevir.net/resources/CodeSystem/179423#ratings "Ratings"
+    * section[monitoringRelatedItems].code.coding 1..1
     * section[monitoringRelatedItems].code.coding = https://fevir.net/resources/CodeSystem/179423#related-items "Related Items"
+  * section[competingSummary].code.coding 1..1
   * section[competingSummary].code.coding = https://fevir.net/resources/CodeSystem/179423#competing-interests "Competing Interests"
   * section[competingSummary]
     * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code.coding"
     * section ^slicing.rules = #open
     * section contains competingRatings 0..1 and competingRelatedItems 0..1
+    * section[competingRatings].code.coding 1..1
     * section[competingRatings].code.coding = https://fevir.net/resources/CodeSystem/179423#ratings "Ratings"
+    * section[competingRelatedItems].code.coding 1..1
     * section[competingRelatedItems].code.coding = https://fevir.net/resources/CodeSystem/179423#related-items "Related Items"
+  * section[researchSummary].code.coding 1..1
   * section[researchSummary].code.coding = https://fevir.net/resources/CodeSystem/179423#research-considerations "Research Considerations"
   * section[researchSummary]
     * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code.coding"
     * section ^slicing.rules = #open
     * section contains researchRatings 0..1 and researchRelatedItems 0..1
+    * section[researchRatings].code.coding 1..1
     * section[researchRatings].code.coding = https://fevir.net/resources/CodeSystem/179423#ratings "Ratings"
+    * section[researchRelatedItems].code.coding 1..1
     * section[researchRelatedItems].code.coding = https://fevir.net/resources/CodeSystem/179423#related-items "Related Items"
 

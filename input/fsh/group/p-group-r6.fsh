@@ -2,6 +2,9 @@ Profile: GroupR6
 Parent: Group
 Id: group-r6
 Description: "Profile of Group for Evidence Based Medicine IG. The GroupR6 Profile is used to adjust the R5 Group base to match the structures in R6." 
+* ^extension[$ext-fmm].valueInteger = 1
+* ^extension[$ext-wg].valueCode = #cds
+* ^extension[$ext-standards-status].valueCode = #draft
 * extension contains $ext-url named url 0..1
 * extension contains $ext-version named version 0..1
 * extension contains $ext-versionAlgorithm named versionAlgorithmString 0..1

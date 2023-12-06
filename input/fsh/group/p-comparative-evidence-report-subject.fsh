@@ -2,6 +2,9 @@ Profile: ComparativeEvidenceReportSubject
 Parent: EvidenceReportSubject
 Id: comparative-evidence-report-subject
 Description: "Profile of Group for Evidence Based Medicine IG. The EvidenceReportSubject Profile is used to define the subject of an EvidenceReport."
+* ^extension[$ext-fmm].valueInteger = 1
+* ^extension[$ext-wg].valueCode = #cds
+* ^extension[$ext-standards-status].valueCode = #draft
 * characteristic[population] 1..1
 * characteristic[population].code.text = "Population"
 * characteristic[population].valueReference only Reference(StudyGroup)

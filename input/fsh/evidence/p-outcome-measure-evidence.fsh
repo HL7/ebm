@@ -2,6 +2,9 @@ Profile: OutcomeMeasureEvidence
 Parent: EvidenceR6
 Id: outcome-measure-evidence
 Description: "Profile of Evidence for Evidence Based Medicine IG. The OutcomeMeasureEvidence Profile is used for evidence with a measured variable that is considered the outcome of an exposure or intervention." 
+* ^extension[$ext-fmm].valueInteger = 1
+* ^extension[$ext-wg].valueCode = #cds
+* ^extension[$ext-standards-status].valueCode = #draft
 * variableDefinition 2..*
   * ^comment = "The Outcome has variableRole of outcome."
 * variableDefinition ^slicing.discriminator.type = #value
