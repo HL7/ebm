@@ -58,6 +58,15 @@ The certainty BackboneElement provides a machine-interpretable expression of cer
 
 The EvidenceR6 Profile is a base for all other Evidence Profiles. The EvidenceR6 Profile adds 3 extensions to variableDefinition (variableRoleCode 1..1, roleSubtype 0..1, and comparatorCategory 0..1), 1 extension to statistic (modelExpression 0..1), 6 extensions to statistic.modelCharacteristic, and 1 extension to statistic.modelCharacteristic.variable
 
+The SingleStudyEvidence Profile simply provide a "not applicable" value for the synthesisType element.
+
+The EvidenceSynthesisEvidence Profile is used for evidence that is combined from two or more studies, and requires use of the synthesisType element to express the method by which evidence was synthesized.
+
+The NonComparativeEvidence Profile requires at least 1 variableDefinition with the role of 'population' and at lease 1 variableDefinition with the role of 'outcome'. Because the variableRoleCode element is an extension in the EBMonFHIR IG and discriminating instances by extension is problematic, the Profile use the note element to identify the variableDefinition in the assigned role. If note are desired at the level of the variableDefinition, the desired content of the note should be added to the description element.
+
+The ComparativeEvidence Profile requires the same structures as noted above for the NonComparativeEvidence Profile and also requires a single variableDefinition with the role of 'exposure'. For this variableDefinition with the role of 'exposure' the observed element may only reference Resources following the GroupAssignment Profile (which specifies the categories for the EvidenceVariable handling) and the comparatorCategory element (extension) must be used to specify the category used as reference point for the comparison.
+
+
 
 ### Understanding the EvidenceVariable Resource
 
