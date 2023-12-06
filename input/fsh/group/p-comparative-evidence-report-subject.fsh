@@ -11,11 +11,11 @@ Description: "Profile of Group for Evidence Based Medicine IG. The EvidenceRepor
 * characteristic[population].exclude = false
 * characteristic[intervention] 1..1
 * characteristic[intervention].code.text = "Intervention or Exposure"
-* characteristic[intervention].valueReference only Reference(ExposureVariable or ExposureDefinition)
+* characteristic[intervention].valueReference only Reference(VariableDefinition or ExposureDefinition)
 * characteristic[intervention].exclude = false
 * characteristic[comparator] 1..1
 * characteristic[comparator].code.text = "Comparator"
-* characteristic[comparator].valueReference only Reference(ExposureVariable or ExposureDefinition or ComparatorDefinition)
+* characteristic[comparator].valueReference only Reference(VariableDefinition or ExposureDefinition or ComparatorDefinition)
 * characteristic[comparator].exclude = false
 * characteristic[outcomes] 1..1
 * characteristic[outcomes].code.text = "Outcomes"

@@ -26,5 +26,5 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The Comparativ
   * extension[variableRoleCode].valueCode = #outcome
   * note.text = "outcome"
   * extension[VariableDefinitionComparatorCategory] 0..0
-  * observed only Reference(OutcomeVariable or ExposureVariable or ParticipantFlowMeasure)
+  * observed only Reference(VariableDefinition)
   * intended only Reference(EvidenceVariable)

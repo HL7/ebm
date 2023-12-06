@@ -10,4 +10,4 @@ Description: "Profile of List for Evidence Based Medicine IG. The OutcomeList Pr
 * code.text = "Outcome List"
 * encounter 0..0
 * entry
-  * item only Reference(OutcomeDefinition or OutcomeVariable)
+  * item only Reference(OutcomeDefinition or VariableDefinition)

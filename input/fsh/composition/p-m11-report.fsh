@@ -142,7 +142,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * section[objectiveEndpoint].code.text = "section3.1-objective-endpoint-estimand"
   * section[objectiveEndpoint]
     * focus 1..1
-    * focus only Reference(OutcomeVariable)
+    * focus only Reference(VariableDefinition)
     * section 4..*
     * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code.text"
@@ -738,7 +738,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * section[analysisPrimaryObjective].title = "Analysis Supporting Primary Objective"
   * section[analysisPrimaryObjective].code.text = "section10.2-analysis-primary-objective"
   * section[analysisPrimaryObjective]
-    * focus only Reference(OutcomeVariable)
+    * focus only Reference(VariableDefinition)
     * text 1..1
     * text ^comment = "This section introduces the Statistical Analysis Plan, with the detail to be provided in the subsequent subsections. This includes describing the methods of estimation (analytic approach) in alignment with how the estimands are defined. Sensitivity analyses should be aligned with how the estimands and estimators are defined."
     * section 3..*
@@ -776,7 +776,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * section[secondaryAnalysis].title = "Analysis Supporting Secondary Objective"
   * section[secondaryAnalysis].code.text = "section10.3-analysis-secondary-objective"
   * section[secondaryAnalysis]
-    * focus only Reference(OutcomeVariable)
+    * focus only Reference(VariableDefinition)
     * text 1..1
     * text ^comment = "This section introduces the Statistical Analysis Plan, with the detail to be provided in the subsequent subsections. This includes describing the methods of estimation (analytic approach) in alignment with how the estimands are defined. Sensitivity analyses should be aligned with how the estimands and estimators are defined."
     * section 0..*
@@ -816,7 +816,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * section[exploratoryAnalysis].title = "Analysis of Exploratory Objective"
   * section[exploratoryAnalysis].code.text = "section10.4-analysis-exploratory-objective"
   * section[exploratoryAnalysis]
-    * focus only Reference(OutcomeVariable)
+    * focus only Reference(VariableDefinition)
     * text 1..1
     * text ^comment = "This section introduces the Statistical Analysis Plan, with the detail to be provided in the subsequent subsections. This includes describing the methods of estimation (analytic approach) in alignment with how the estimands are defined. Sensitivity analyses should be aligned with how the estimands and estimators are defined."
     * section 0..*

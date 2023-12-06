@@ -1,7 +1,7 @@
 Profile: SummaryOfFindings
 Parent: EvidenceReport
 Id: summary-of-findings
-Description: "Profile of Composition for Evidence Based Medicine IG. The SummaryOfFindings Profile is used for an evidence report combining Evidence and EvidenceVariable Resources, organized around OutcomeVariable (Profile of EvidenceVariable), to represent the summary of findings of comparative evidence."
+Description: "Profile of Composition for Evidence Based Medicine IG. The SummaryOfFindings Profile is used for an evidence report combining Evidence and EvidenceVariable Resources, organized around VariableDefinition (Profile of EvidenceVariable), to represent the summary of findings of comparative evidence."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
@@ -45,7 +45,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Summary
 * section[outcomeEntry].code.coding 1..1
 * section[outcomeEntry].code.coding = https://fevir.net/resources/CodeSystem/179423#summary-of-findings-entry-for-a-single-outcome "Summary of findings entry for a single outcome"
 * section[outcomeEntry]
-  * focus only Reference(OutcomeVariable)
+  * focus only Reference(VariableDefinition)
   * section 1..*
   * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code.coding"
@@ -55,7 +55,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Summary
   * section[outcomeDefinition].code.coding = https://fevir.net/resources/CodeSystem/179423#outcome-measure "Outcome Measure"
   * section[outcomeDefinition]
     * entry 0..1 
-    * entry only Reference(OutcomeVariable)
+    * entry only Reference(VariableDefinition)
   * section[sampleSize].code.coding 1..1
   * section[sampleSize].code.coding = https://fevir.net/resources/CodeSystem/179423#sample-size "Sample Size"
   * section[resultWithoutTreatment].code.coding 1..1

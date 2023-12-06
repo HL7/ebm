@@ -1,7 +1,7 @@
 Profile: SummaryOfNetEffect
 Parent: EvidenceReport
 Id: summary-of-net-effect
-Description: "Profile of Composition for Evidence Based Medicine IG. The SummaryOfNetEffect Profile is used for an evidence report combining ArtifactAssessment and Evidence and EvidenceVariable Resources, organized around OutcomeVariable (Profile of EvidenceVariable), to represent the summary of net effect contributions of comparative evidence, adjusted for the relative importance of outcomes."
+Description: "Profile of Composition for Evidence Based Medicine IG. The SummaryOfNetEffect Profile is used for an evidence report combining ArtifactAssessment and Evidence and EvidenceVariable Resources, organized around VariableDefinition (Profile of EvidenceVariable), to represent the summary of net effect contributions of comparative evidence, adjusted for the relative importance of outcomes."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
@@ -45,7 +45,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Summary
 * section[outcomeEntry].code.coding 1..1
 * section[outcomeEntry].code.coding = https://fevir.net/resources/CodeSystem/179423#summary-of-net-effect-contributions-entry-for-a-single-outcome "Summary of net effect contributions entry for a single outcome"
 * section[outcomeEntry]
-  * focus only Reference(OutcomeVariable)
+  * focus only Reference(VariableDefinition)
   * section 1..*
   * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code.coding"
@@ -55,7 +55,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Summary
   * section[outcomeDefinition].code.coding = https://fevir.net/resources/CodeSystem/179423#outcome-measure "Outcome Measure"
   * section[outcomeDefinition]
     * entry 0..1 
-    * entry only Reference(OutcomeVariable)
+    * entry only Reference(VariableDefinition)
   * section[outcomeDesirability].code.coding 1..1
   * section[outcomeDesirability].code.coding = https://fevir.net/resources/CodeSystem/179423#outcome-desirability "Outcome Desirability"
   * section[outcomeDesirability]

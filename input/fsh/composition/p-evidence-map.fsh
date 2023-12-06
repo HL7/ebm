@@ -20,7 +20,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
 * section[outcomeDefinition].code.coding 1..1
 * section[outcomeDefinition].code.coding = https://fevir.net/resources/CodeSystem/179423#outcome-measure "Outcome Measure"
 * section[outcomeDefinition]
-  * entry only Reference(OutcomeVariable)
+  * entry only Reference(VariableDefinition)
 * section[comparatorOnlyEvidence].code.coding 1..1
 * section[comparatorOnlyEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-comparator-alone "Evidence with comparator alone"
 * section[comparatorOnlyEvidence]
@@ -44,7 +44,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
 * section[intervention].code.coding 1..1
 * section[intervention].code.coding = https://fevir.net/resources/CodeSystem/179423#intervention "Intervention"
 * section[intervention]
-  * entry only Reference(ExposureVariable)
+  * entry only Reference(VariableDefinition)
 * section[interventionDescription].code.coding 1..1
 * section[interventionDescription].code.coding = https://fevir.net/resources/CodeSystem/179423#intervention-description "Intervention Description"
 * section[interventionDescription]

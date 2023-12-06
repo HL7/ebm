@@ -66,7 +66,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Compara
 * section[baseline].code.coding = https://fevir.net/resources/CodeSystem/179423#baseline-measures "Baseline Measures"
 * section[baseline]
   * section 1..*
-    * focus only Reference(ExposureVariable)
+    * focus only Reference(VariableDefinition)
     * section 1..*
     * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code.coding"
@@ -126,7 +126,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Compara
 * section[outcomes].code.coding = https://fevir.net/resources/CodeSystem/179423#outcome-measures "Outcome Measures"
 * section[outcomes]
   * section 1..*
-    * focus only Reference(OutcomeVariable)
+    * focus only Reference(VariableDefinition)
     * section 1..*
     * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code.coding"

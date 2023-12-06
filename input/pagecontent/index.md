@@ -110,6 +110,9 @@ For categorical handling (dichotomous, ordinal, or polychotomous), the EvidenceV
 
 The VariableDefinition Profile is a base for all other EvidenceVariable Profiles. The VariableDefinition Profile adds an extension for the definition as a CodeableReference datatype (consistent with FHIR version R6) and removes the characteristic element used in FHIR version R5 (and replaced with reference to Group Resource from the definition.reference element). The VariableDefinition Profile requires the use of the handling element and adds an extension to the category element (valueReference) to enable reference to a Group Resource for structured definitions of categories that are not able to be expressed adequately with CodeableConcept, Quantity or Range datatypes.
 
+The GroupAssignment Profile is a Profile of VariableDefinition used for ComparativeEvidence (for the variableDefinition in the role of 'exposure'). The GroupAssignment Profile is used to classify an EvidenceVariable as an exposure managed as a categorical variable. The variable definition is 'Defined by handling and category elements' and there must be at least 2 category element instances. The category element instances must have a name, and the name of one of these category element instances will be used in the ComparativeEvidence (in variableDefinition.comparatorCategory) to express the reference value for comparison.
+
+The ParticipantFlowMeasure Profile is a Profile of VariableDefinition used to describe outcome measures for completion and reasons for non-completion of participation in a research study. For simplicity the handling element always has a value of 'dichotomous'.
 
 ### Understanding the Group Resource
 

@@ -18,5 +18,5 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The NonCompara
 * variableDefinition[outcome]
   * extension[VariableDefinitionVariableRoleCode].valueCode = #outcome
   * note.text = "outcome"
-  * observed only Reference(OutcomeVariable or ExposureVariable or ParticipantFlowMeasure)
+  * observed only Reference(VariableDefinition)
   * intended only Reference(EvidenceVariable)
