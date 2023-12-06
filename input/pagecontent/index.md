@@ -28,9 +28,7 @@ Copy the JSON content from https://fevir.net/resources/CodeSystem/27270#json, ht
 
 ### Understanding the Evidence Resource
 
-The Evidence Resource is the central atomic component for the Evidence-related Resources. The Evidence Resource provides a machine-interpretable expression of an evidence concept including the evidence variables (e.g., population, exposures, outcomes, covariates), the statistics, and the certainty of this evidence.
-
-The Evidence Resource enables the expression of the most granular form of scientific evidence, such as the actual quantitative results of a study or statistical analysis.
+The Evidence Resource is the central atomic component for the Evidence-related Resources. The Evidence Resource provides a machine-interpretable expression of an evidence concept including the evidence variables (e.g., population, exposures, outcomes, covariates), the statistics (the quantitative results of a study or statistical analysis), and the certainty of this evidence.
 
 Human-readable summaries of the Evidence Resource may be expressed in description, assertion, and note elements. 
 
@@ -86,7 +84,32 @@ The NetEffectContribution Profile is a Profile of ComparativeEvidence which is s
 
 ### Understanding the EvidenceVariable Resource
 
-Replace with content.
+The EvidenceVariable Resource describes a single variable used in a statistical analysis.
+
+Evidence may be reported for different types of knowledge. One commonly used format for expression of what evidence is about is the "PICO" format. PICO stands for:
+
+Population - the population within which exposures and outcomes are being considered
+
+Intervention - the conditional state or exposure state being described for which one is expressing the risk of or effect on an outcome
+
+Comparator - the alternative conditional state or alternative exposure state when one is comparing states for the effect on an outcome
+
+Outcome - the result or effect of an intervention or exposure in a population
+
+Sometimes PECO is used instead of PICO to emphasize evaluation of exposures that may not be interventions. Sometimes PICOT is used to express timing of the outcome assessment.
+
+PICO (and its variants like PECO or PICOT) is a universal acronym used in evidence-based medicine communities to clearly express research questions and evidence findings.
+
+The EvidenceVariable Resource allows expression of the components of a PICO question in codeable and reusable formats. The EvidenceVariable.definition element has a CodeableReference datatype which can define the PICO component as a concept and/or reference to a Group Resource for a structured definition.
+
+The EvidenceVariable Resource has a handling element to express the statistical handling as continuous, dichotomous, ordinal, or polychotomous.
+
+For categorical handling (dichotomous, ordinal, or polychotomous), the EvidenceVariable.category element can be used to name each category and express the value that defines the category.
+
+### Profiles of EvidenceVariable Resource
+
+The VariableDefinition Profile is a base for all other EvidenceVariable Profiles. The VariableDefinition Profile adds an extension for the definition as a CodeableReference datatype (consistent with FHIR version R6) and removes the characteristic element used in FHIR version R5 (and replaced with reference to Group Resource from the definition.reference element). The VariableDefinition Profile requires the use of the handling element and adds an extension to the category element (valueReference) to enable reference to a Group Resource for structured definitions of categories that are not able to be expressed adequately with CodeableConcept, Quantity or Range datatypes.
+
 
 ### Understanding the Group Resource
 
