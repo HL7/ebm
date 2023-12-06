@@ -10,6 +10,8 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The EvidenceR6
   * extension contains VariableDefinitionRoleSubtype named roleSubtype 0..1
   * extension contains VariableDefinitionComparatorCategory named comparatorCategory 0..1
   * variableRole.text = "Use extension:variableRoleCode instead."
+* statistic
+  * extension contains StatisticModelExpression named modelExpression 0..1
 * statistic.modelCharacteristic
   * extension contains StatisticModelValueQuantity named valueQuantity 0..1 and
   StatisticModelValueRange named valueRange 0..1 and
