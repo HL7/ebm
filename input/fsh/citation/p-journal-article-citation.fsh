@@ -11,7 +11,7 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The JournalArt
   * classification ^slicing.discriminator.type = #value
   * classification ^slicing.discriminator.path = "type"
   * classification ^slicing.rules = #open
-  * classification contains knowledgeArtifactType 1..1 MS and publishingModel 0..1 and publicationType 0..1 and citationSubset 0..1 and studyDesign 0..1 and studyDesign 0..1
+  * classification contains knowledgeArtifactType 1..1 MS and publishingModel 0..1 and publicationType 0..1 and citationSubset 0..1 and studyDesign 0..1
   * classification[knowledgeArtifactType].type = http://hl7.org/fhir/cited-artifact-classification-type#knowledge-artifact-type "Knowledge Artifact Type"
   * classification[knowledgeArtifactType]
     * classifier 1..*
