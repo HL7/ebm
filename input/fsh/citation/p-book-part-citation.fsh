@@ -22,6 +22,7 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The BookPartCi
   * classification ^slicing.discriminator.path = "type.coding"
   * classification ^slicing.rules = #open
   * classification contains knowledgeArtifactType 1..1 MS and publishingModel 0..1 and publicationType 0..1 and definedInText 0..*
+  * classification[knowledgeArtifactType].type.coding 1..1
   * classification[knowledgeArtifactType].type.coding = http://hl7.org/fhir/cited-artifact-classification-type#knowledge-artifact-type "Knowledge Artifact Type"
   * classification[knowledgeArtifactType]
     * classifier 1..*
@@ -30,8 +31,11 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The BookPartCi
     * classifier ^slicing.rules = #open
     * classifier contains bookPart 1..1 MS
     * classifier[bookPart].text = "Book Part"
+  * classification[publishingModel].type.coding 1..1
   * classification[publishingModel].type.coding = http://hl7.org/fhir/cited-artifact-classification-type#publishing-model "Publishing Model"
+  * classification[publicationType].type.coding 1..1
   * classification[publicationType].type.coding = http://hl7.org/fhir/cited-artifact-classification-type#publication-type "Publication type"
+  * classification[definedInText].type.coding 1..1
   * classification[definedInText].type.coding = https://fevir.net/resources/CodeSystem/179423#defined-in-text "Defined in text"
   * contributorship.entry.role
     * ^comment = "Consider 'Book Editor' as an additional contributor role type."

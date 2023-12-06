@@ -23,6 +23,7 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The SoftwareCi
   * classification ^slicing.discriminator.path = "type.coding"
   * classification ^slicing.rules = #open
   * classification contains knowledgeArtifactType 1..1 MS and definedInText 0..*
+  * classification[knowledgeArtifactType].type.coding 1..1
   * classification[knowledgeArtifactType].type.coding = http://hl7.org/fhir/cited-artifact-classification-type#knowledge-artifact-type "Knowledge Artifact Type"
   * classification[knowledgeArtifactType]
     * classifier 1..*
@@ -32,5 +33,6 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The SoftwareCi
     * classifier contains software 1..1 MS
     * classifier[software].coding 1..1
     * classifier[software].coding = http://hl7.org/fhir/citation-artifact-classifier#executable-app "Executable app"
+  * classification[definedInText].type.coding 1..1
   * classification[definedInText].type.coding = https://fevir.net/resources/CodeSystem/179423#defined-in-text "Defined in text"
 //TODO - create support for how to handle the file type (e.g. .js or .py) for the software, e.g. citedArtifact.classification or specific extension

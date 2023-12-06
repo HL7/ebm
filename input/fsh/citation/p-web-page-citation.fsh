@@ -23,6 +23,7 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The WebPageCit
   * classification ^slicing.discriminator.path = "type.coding"
   * classification ^slicing.rules = #open
   * classification contains knowledgeArtifactType 1..1 MS and definedInText 0..*
+  * classification[knowledgeArtifactType].type.coding 1..1
   * classification[knowledgeArtifactType].type.coding = http://hl7.org/fhir/cited-artifact-classification-type#knowledge-artifact-type "Knowledge Artifact Type"
   * classification[knowledgeArtifactType]
     * classifier 1..*
@@ -32,4 +33,5 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The WebPageCit
     * classifier contains webpage 1..1 MS
     * classifier[webpage].coding 1..1
     * classifier[webpage].coding = http://hl7.org/fhir/citation-artifact-classifier#webpage "Webpage"
+  * classification[definedInText].type.coding 1..1
   * classification[definedInText].type.coding = https://fevir.net/resources/CodeSystem/179423#defined-in-text "Defined in text"

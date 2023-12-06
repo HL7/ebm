@@ -23,6 +23,7 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The DatasetCit
   * classification ^slicing.discriminator.path = "type.coding"
   * classification ^slicing.rules = #open
   * classification contains knowledgeArtifactType 1..1 MS and studyDesign 0..1 and definedInText 0..*
+  * classification[knowledgeArtifactType].type.coding 1..1
   * classification[knowledgeArtifactType].type.coding = http://hl7.org/fhir/cited-artifact-classification-type#knowledge-artifact-type "Knowledge Artifact Type"
   * classification[knowledgeArtifactType]
     * classifier 1..*
@@ -32,6 +33,8 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The DatasetCit
     * classifier contains dataset 1..1 MS
     * classifier[dataset].coding 1..1
     * classifier[dataset].coding = http://hl7.org/fhir/citation-artifact-classifier#D064886 "Dataset"
+  * classification[studyDesign].type.coding 1..1
   * classification[studyDesign].type.coding = https://fevir.net/resources/CodeSystem/179423#study-design "Study Design"
+  * classification[definedInText].type.coding 1..1
   * classification[definedInText].type.coding = https://fevir.net/resources/CodeSystem/179423#defined-in-text "Defined in text"
 //TODO - create support for how to handle the file type (e.g. .csv or .xls) for the dataset, e.g. citedArtifact.classification or specific extension
