@@ -17,6 +17,9 @@ Description: "Profile of Group for Evidence Based Medicine IG. The GroupR6 Profi
 * extension contains $ext-purpose named purpose 0..1
 * extension contains $ext-copyright named copyright 0..1
 * extension contains $ext-copyrightLabel named copyrightLabel 0..1
+* extension contains $ext-author named author 0..*
+* extension contains $ext-relatedArtifact named relatedArtifact 0..*
+* extension contains $ext-characteristic-expression named characteristicExpression 0..1
 * extension contains CombinationMethod named combinationMethod 0..1
 * extension contains CombinationThreshold named combinationThreshold 0..1
 * modifierExtension contains $ext-status named status 0..1

@@ -5,7 +5,8 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The EndpointAn
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
-* extension contains $ext-characteristic-expression named modelExpression 0..1
+* statistic
+  * extension contains StatisticModelExpression named modelExpression 0..1
 * statistic.modelCharacteristic 1..*
   * ^comment = "After the Evidence StructureDefinition is revised, set intended 0..1 boolean to value of True."
   * extension[intended].valueBoolean = true

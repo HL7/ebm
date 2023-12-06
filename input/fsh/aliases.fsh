@@ -27,3 +27,5 @@ Alias: $ext-useContext = http://hl7.org/fhir/StructureDefinition/artifact-useCon
 Alias: $ext-purpose = http://hl7.org/fhir/StructureDefinition/artifact-purpose
 Alias: $ext-copyright = http://hl7.org/fhir/StructureDefinition/artifact-copyright
 Alias: $ext-copyrightLabel = http://hl7.org/fhir/StructureDefinition/artifact-copyrightLabel
+Alias: $ext-author = http://hl7.org/fhir/StructureDefinition/artifact-author
+Alias: $ext-relatedArtifact = http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact
