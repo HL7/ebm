@@ -88,6 +88,21 @@ Profiles of <b>Citation Resource</b> include:
 - <b>SoftwareCitation</b>
 - <b>WebPageCitation</b>
 
+The <b>[ArtifactAssessment Resource](/artifactassessment.html)</b> provides one or more comments, classifiers or ratings about a Resource and supports attribution and rights management metadata for the added content.
+
+Profiles of <b>ArtifactAssessment Resource</b> include:
+- <b>Comment</b>
+- <b>Classification</b>
+  - <b>DateAsRating Profile</b> is a Profile of <b>Classification</b>
+- <b>Rating</b>
+- <b>CertaintyOfEvidence</b>
+- <b>RiskOfBias</b>
+- <b>RecommendationJustification</b>
+- <b>OutcomeImportance</b>
+- <b>CompositeRating</b>
+- <b>Adaptation</b>
+  - <b>Comparison Profile</b> is a Profile of <b>Adaptation</b>
+
 
 ### Dependencies
 
