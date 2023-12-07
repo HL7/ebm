@@ -129,8 +129,11 @@ In the EBMonFHIR Implementation Guide, which is built on FHIR version R5 so must
 The base Group Resource in FHIR version R5 uses a repeatable characteristic element to define inclusion and exclusion criteria. This characteristic element includes 4 elements:
 
 .. code which is a required CodeableConcept to represent the type of characterstic
+
 .. value[x] with is a required element, with datatype of CodeableConcept, boolean, Quantity, Range, or Reference, to represent the matching value for the type of characteristic
+
 .. exclude which is a required boolean to determine if this is an inclusion or exclusion criterion
+
 .. period which is an optional Period for when in calendar time the characteristic applies
 
 ### Profiles of Group Resource
@@ -140,14 +143,23 @@ The GroupR6 Profile is a base for all other Group Profiles. Extensions for metad
 Extensions for combinationMethod (valueCode choices of all-of, any-of, at-least, at-most, except-subset) and combinationThreshold (valuePositiveInt for use with at-least or at-most) express how 2 or more characteristic instances are combined.
 
 The characteristic element has multiple extensions to support more ways of defining eligibility criteria.
+
 .. valueUri and valueExpression provide additional datatypes for the value of the characteristic
+
 .. description uses a markdown datatype and supports a human-readable description of the characteristic
+
 .. method uses a CodeableConcept datatype and supports specification of how the value of the characteristic is determined
+
 .. determinedByReference uses a Reference datatype to specify a Device, DeviceMetric, or DeviceDefinition used to determine the value of the characteristic
+
 .. determinedByExpression uses an Expression datatype to specify the formula or calculation used to determine the value of the characteristic
+
 .. offset uses a CodeableConcept datatype and supports specification of a reference point from which the value is measured, e.g., 2 units above the upper normal limit would be expressed with a valueQuantity of 2 units and an offset with a coding for Upper Normal Limit
+
 .. instancesQuantity and instancesRange are used to express the number of times the characteristic is met
+
 .. durationDuration and durationRange are used to express how long the characteristic is met
+
 .. timing uses a complex expression (matching the RelativeTime datatype in FHIR version R6) to express timing relative to an event or context other than calendar time
 
 The CohortDefinition is a Profile of GroupR6 that is used to provide a conceptual or definitional representation of a Group. In FHIR version R6, membership = conceptual allows avoiding the required use of type. In this IG for FHIR version R5, membership is definitional and the type value can be ignored for resource content processing. The quantity and member elements are not used in the CohortDefinition Profile.
