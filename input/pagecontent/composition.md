@@ -175,8 +175,11 @@ The <b>EvidenceMap Profile</b> provides 11 optional sections with a suggested se
 10. Classifier, limited to reference <b>ArtifactAssessment Resource</b>.
 11. Relative Importance, limited to reference <b>ArtifactAssessment Resource</b>.
 
-  
+### M11Report Profile of Composition Resource
 
+The <b>M11Report Profile</b> is a Profile of <b>EvidenceReport</b> and is used for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification.
 
+A category element instance expresses that the composition is a "CeSHarP Report" and additional category element instances may be used.
 
- 
+The <b>M11Report Profile</b> contains 15 sections with highly detailed instructions and is shared in the EBMonFHIR Implementation Guide for initial development and coordination with the base structures in the EBMonFHIR Implementation Guide. There will likely be a future 'M11 Report' Implementation Guide developed by a different but coordinated group.
+
