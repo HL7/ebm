@@ -97,3 +97,51 @@ The <b>Recommendation Profile</b> will have 1 to 5 section element instances wit
 ..The Judgments section contains sections with section.code concepts for Justification, Problem Importance, Costs, Cost-effectiveness, Equity, Acceptability, and Feasibility.  Each of these sections contain sections with section.code concepts for Ratings and Related Items.
 
 ..The Considerations section contains sections with section.code concepts for Summary, Ratings, Related Items, Subgroup Considerations, Implementation Considerations, Monitoring Considerations, Competing Interests, and Research Considerations. The Subgroup Considerations, Implementation Considerations, Monitoring Considerations, Competing Interests, and Research Considerations sections contain sections with section.code concepts for Ratings and Related Items.
+
+### SummaryOfFindings Profile of Composition Resource
+
+The <b>SummaryOfFindings Profile</b> is a Profile of <b>EvidenceReport</b> and is used for an evidence report combining <b>Evidence</b> and <b>EvidenceVariable Resources</b>, organized around <b>VariableDefinition</b> (Profile of EvidenceVariable), to represent the summary of findings of comparative evidence. A category element instance expresses that the composition is a "Summary of Findings" and additional category element instances may be used.
+
+The <b>SummaryOfFindings Profile</b> has 1 'Column Headers' section and 1 or more 'Summary of findings entry for a single outcome' sections.  Each 'Summary of findings entry for a single outcome' section has a focus element (section.focus) which references a <b>VariableDefinition Profile</b>. Each of these sections has the same set of section.section.code patterns to provide the following contained sections:
+
+1. An 'Outcome Measure' section is required for the 'Column Headers' section and optional for the 'Summary of findings entry for a single outcome' sections. If used in the 'Summary of findings entry for a single outcome' section, entries are limited to reference a single <b>VariableDefinition Profile</b>.
+
+2. A 'Sample Size' section is optional.
+
+3. A 'Result with comparator alone' section is optional. If used in the 'Summary of findings entry for a single outcome' section, entries are limited to reference a single <b>ComparatorOnlyEvidence Profile</b>.
+
+4. A 'Result with intervention alone' section is optional. If used in the 'Summary of findings entry for a single outcome' section, entries are limited to reference a single <b>InterventionOnlyEvidence Profile</b>.
+
+5. A 'Result with intervention alone (calculated)' section is optional. If used in the 'Summary of findings entry for a single outcome' section, entries are limited to reference up to 2 Resources using <b>ComparatorOnlyEvidence Profile</b> or <b>ComparativeEvidence Profile</b>.
+
+6. A 'Result with intervention vs. comparator' section is optional. If used in the 'Summary of findings entry for a single outcome' section, entries are limited to reference a single <b>ComparativeEvidence Profile</b>.
+
+7. A 'Certainty of Evidence' section is optional. If used in the 'Summary of findings entry for a single outcome' section, entries may reference <b>ComparativeEvidence Profile</b> or <b>CertaintyOfEvidence Profile</b>.
+
+8. An 'Assertion' section is optional. If used in the 'Summary of findings entry for a single outcome' section, entries are limited to reference a single <b>ComparativeEvidence Profile</b>.
+
+### SummaryOfNetEffect Profile of Composition Resource
+
+The <b>SummaryOfNetEffect Profile</b> is a Profile of <b>EvidenceReport</b> and is used for an evidence report combining <b>ArtifactAssessment</b>, <b>Evidence</b>, and <b>EvidenceVariable Resources</b>, organized around <b>VariableDefinition</b> (Profile of EvidenceVariable), to represent the summary of net effect contributions of comparative evidence, adjusted for the relative importance of outcomes. A category element instance expresses that the composition is a "Summary of Net Effect Contributions" and additional category element instances may be used.
+
+The <b>SummaryOfNetEffect Profile</b> has 1 'Column Headers' section, 1 or more 'Summary of net effect contributions entry for a single outcome' sections, and may have a 'Net Effect Estimate' section.  Each 'Summary of net effect contributions entry for a single outcome' section has a focus element (section.focus) which references a <b>VariableDefinition Profile</b>. Each of these sections and the 'Column Headers' section has the same set of section.section.code patterns to provide the following contained sections:
+
+1. An 'Outcome Measure' section is required for the 'Column Headers' section and optional for the 'Summary of net effect contributions entry for a single outcome' sections. If used in the 'Summary of net effect contributions entry for a single outcome' section, entries are limited to reference a single <b>VariableDefinition Profile</b>.
+
+2. An 'Outcome Desirability' section is optional. If used in the 'Summary of net effect contributions entry for a single outcome' section, entries are limited to reference a single <b>OutcomeImportance Profile</b>.
+
+3. A 'Relative Importance' section is optional. If used in the 'Summary of net effect contributions entry for a single outcome' section, entries are limited to reference a single <b>OutcomeImportance Profile</b>.
+
+4. A 'Result with comparator alone' section is optional. If used in the 'Summary of net effect contributions entry for a single outcome' section, entries are limited to reference a single <b>ComparatorOnlyEvidence Profile</b>.
+
+5. A 'Evidence Results for the intervention exposure only' section is optional. If used in the 'Summary of net effect contributions entry for a single outcome' section, entries are limited to reference a single <b>InterventionOnlyEvidence Profile</b>.
+
+6. A 'Result with intervention alone (calculated)' section is optional. If used in the 'Summary of net effect contributions entry for a single outcome' section, entries are limited to reference up to 2 Resources using <b>ComparatorOnlyEvidence Profile</b> or <b>ComparativeEvidence Profile</b>.
+
+7. A 'Result with intervention vs. comparator' section is optional. If used in the 'Summary of net effect contributions entry for a single outcome' section, entries are limited to reference a single <b>ComparativeEvidence Profile</b>.
+
+8. A 'Net Effect Contribution' section is required. In the 'Summary of net effect contributions entry for a single outcome' section, entries are limited to reference a single <b>NetEffectContribution Profile</b>.
+
+The 'Net Effect Estimate' section, if used, is limited to a single entry which references a <b>NetEffectEstimate Profile</b>.
+
+ 
