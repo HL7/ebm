@@ -1,0 +1,247 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "comparative-evidence",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-implements",
+      "valueUri": "http://hl7.org/fhir/StructureDefinition/MetadataResource"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cds"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    }
+  ],
+  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence",
+  "name": "ComparativeEvidence",
+  "status": "draft",
+  "description": "Profile of Evidence for Evidence Based Medicine IG. The ComparativeEvidence Profile is used for evidence with a measured variable that is considered the outcome of an exposure or intervention, and an exposure variable with two or more categories that are being compared.",
+  "fhirVersion": "5.0.0",
+  "mapping": [
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "objimpl",
+      "uri": "http://hl7.org/fhir/object-implementation",
+      "name": "Object Implementation Information"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Evidence",
+  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-r6",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Evidence.variableDefinition",
+        "path": "Evidence.variableDefinition",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "note.text"
+            }
+          ],
+          "rules": "open"
+        },
+        "comment": "To report comparative evidence for a research question defined by Population, Intervention, Comparator, and Outcome (PICO), one would use three variableDefinition instances: the Population has variableRole of population, the Intervention and Comparator will be expressed as category values for a GroupAssignment EvidenceVariable with the variableRole of exposure, and the Outcome has variableRole of outcome. In some types of Comparative Evidence, where the groups being compared are not from the same Population (and thus not a PICO-style research question), the GroupAssignment EvidenceVariable may have the variableRole of exposure and express the populations being compared as categories, and a combination of these categories can be described in the variableDefinition with variableRole of population. This approach may be used for example to compare cats and dogs.",
+        "min": 3
+      },
+      {
+        "id": "Evidence.variableDefinition:population",
+        "path": "Evidence.variableDefinition",
+        "sliceName": "population",
+        "min": 1,
+        "max": "*"
+      },
+      {
+        "id": "Evidence.variableDefinition:population.extension:variableRoleCode",
+        "path": "Evidence.variableDefinition.extension",
+        "sliceName": "variableRoleCode"
+      },
+      {
+        "id": "Evidence.variableDefinition:population.extension:variableRoleCode.value[x]",
+        "path": "Evidence.variableDefinition.extension.value[x]",
+        "patternCode": "population"
+      },
+      {
+        "id": "Evidence.variableDefinition:population.extension:roleSubtype",
+        "path": "Evidence.variableDefinition.extension",
+        "sliceName": "roleSubtype"
+      },
+      {
+        "id": "Evidence.variableDefinition:population.extension:comparatorCategory",
+        "path": "Evidence.variableDefinition.extension",
+        "sliceName": "comparatorCategory"
+      },
+      {
+        "id": "Evidence.variableDefinition:population.note.text",
+        "path": "Evidence.variableDefinition.note.text",
+        "patternMarkdown": "population"
+      },
+      {
+        "id": "Evidence.variableDefinition:population.observed",
+        "path": "Evidence.variableDefinition.observed",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/study-group",
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group",
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group",
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Evidence.variableDefinition:population.intended",
+        "path": "Evidence.variableDefinition.intended",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Group"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Evidence.variableDefinition:exposure",
+        "path": "Evidence.variableDefinition",
+        "sliceName": "exposure",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Evidence.variableDefinition:exposure.extension",
+        "path": "Evidence.variableDefinition.extension",
+        "min": 2
+      },
+      {
+        "id": "Evidence.variableDefinition:exposure.extension:variableRoleCode",
+        "path": "Evidence.variableDefinition.extension",
+        "sliceName": "variableRoleCode"
+      },
+      {
+        "id": "Evidence.variableDefinition:exposure.extension:variableRoleCode.value[x]",
+        "path": "Evidence.variableDefinition.extension.value[x]",
+        "patternCode": "exposure"
+      },
+      {
+        "id": "Evidence.variableDefinition:exposure.extension:roleSubtype",
+        "path": "Evidence.variableDefinition.extension",
+        "sliceName": "roleSubtype"
+      },
+      {
+        "id": "Evidence.variableDefinition:exposure.extension:comparatorCategory",
+        "path": "Evidence.variableDefinition.extension",
+        "sliceName": "comparatorCategory",
+        "min": 1
+      },
+      {
+        "id": "Evidence.variableDefinition:exposure.note.text",
+        "path": "Evidence.variableDefinition.note.text",
+        "patternMarkdown": "exposure"
+      },
+      {
+        "id": "Evidence.variableDefinition:exposure.observed",
+        "path": "Evidence.variableDefinition.observed",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Evidence.variableDefinition:exposure.intended",
+        "path": "Evidence.variableDefinition.intended",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Evidence.variableDefinition:outcome",
+        "path": "Evidence.variableDefinition",
+        "sliceName": "outcome",
+        "min": 1,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Evidence.variableDefinition:outcome.extension:variableRoleCode",
+        "path": "Evidence.variableDefinition.extension",
+        "sliceName": "variableRoleCode"
+      },
+      {
+        "id": "Evidence.variableDefinition:outcome.extension:variableRoleCode.value[x]",
+        "path": "Evidence.variableDefinition.extension.value[x]",
+        "patternCode": "outcome"
+      },
+      {
+        "id": "Evidence.variableDefinition:outcome.extension:roleSubtype",
+        "path": "Evidence.variableDefinition.extension",
+        "sliceName": "roleSubtype"
+      },
+      {
+        "id": "Evidence.variableDefinition:outcome.extension:comparatorCategory",
+        "path": "Evidence.variableDefinition.extension",
+        "sliceName": "comparatorCategory",
+        "max": "0"
+      },
+      {
+        "id": "Evidence.variableDefinition:outcome.note.text",
+        "path": "Evidence.variableDefinition.note.text",
+        "patternMarkdown": "outcome"
+      },
+      {
+        "id": "Evidence.variableDefinition:outcome.observed",
+        "path": "Evidence.variableDefinition.observed",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Evidence.variableDefinition:outcome.intended",
+        "path": "Evidence.variableDefinition.intended",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/EvidenceVariable"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

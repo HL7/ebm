@@ -1,0 +1,696 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "summary-of-net-effect",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cds"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    }
+  ],
+  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/summary-of-net-effect",
+  "name": "SummaryOfNetEffect",
+  "status": "draft",
+  "description": "Profile of Composition for Evidence Based Medicine IG. The SummaryOfNetEffect Profile is used for an evidence report combining ArtifactAssessment and Evidence and EvidenceVariable Resources, organized around VariableDefinition (Profile of EvidenceVariable), to represent the summary of net effect contributions of comparative evidence, adjusted for the relative importance of outcomes.",
+  "fhirVersion": "5.0.0",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    },
+    {
+      "identity": "fhirdocumentreference",
+      "uri": "http://hl7.org/fhir/documentreference",
+      "name": "FHIR DocumentReference"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Composition",
+  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Composition.category",
+        "path": "Composition.category",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "coding"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Composition.category:summaryOfNetEffect",
+        "path": "Composition.category",
+        "sliceName": "summaryOfNetEffect",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.category:summaryOfNetEffect.coding",
+        "path": "Composition.category.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "SummaryOfNetEffect",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "SummaryOfNetEffect"
+        }
+      },
+      {
+        "id": "Composition.category:summaryOfNetEffect.text",
+        "path": "Composition.category.text",
+        "patternString": "Summary of Net Effect Contributions"
+      },
+      {
+        "id": "Composition.section",
+        "path": "Composition.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code.coding"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 2
+      },
+      {
+        "id": "Composition.section:columnHeaders",
+        "path": "Composition.section",
+        "sliceName": "columnHeaders",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:columnHeaders.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "column-headers",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Column Headers"
+        }
+      },
+      {
+        "id": "Composition.section:columnHeaders.section",
+        "path": "Composition.section.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code.coding"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 2
+      },
+      {
+        "id": "Composition.section:columnHeaders.section:outcomeDefinition",
+        "path": "Composition.section.section",
+        "sliceName": "outcomeDefinition",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:columnHeaders.section:outcomeDefinition.code.coding",
+        "path": "Composition.section.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "outcome-measure",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Outcome Measure"
+        }
+      },
+      {
+        "id": "Composition.section:columnHeaders.section:outcomeDesirability",
+        "path": "Composition.section.section",
+        "sliceName": "outcomeDesirability",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:columnHeaders.section:outcomeDesirability.code.coding",
+        "path": "Composition.section.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "outcome-desirability",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Outcome Desirability"
+        }
+      },
+      {
+        "id": "Composition.section:columnHeaders.section:relativeImportance",
+        "path": "Composition.section.section",
+        "sliceName": "relativeImportance",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:columnHeaders.section:relativeImportance.code.coding",
+        "path": "Composition.section.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "relative-importance",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Relative Importance"
+        }
+      },
+      {
+        "id": "Composition.section:columnHeaders.section:resultWithoutTreatment",
+        "path": "Composition.section.section",
+        "sliceName": "resultWithoutTreatment",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:columnHeaders.section:resultWithoutTreatment.code.coding",
+        "path": "Composition.section.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "result-with-comparator-alone",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Result with comparator alone"
+        }
+      },
+      {
+        "id": "Composition.section:columnHeaders.section:resultWithTreatmentObserved",
+        "path": "Composition.section.section",
+        "sliceName": "resultWithTreatmentObserved",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:columnHeaders.section:resultWithTreatmentObserved.code.coding",
+        "path": "Composition.section.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "Intervention-group-alone-Evidence",
+          "system": "http://hl7.org/fhir/evidence-report-section",
+          "display": "Evidence Results for the intervention exposure only"
+        }
+      },
+      {
+        "id": "Composition.section:columnHeaders.section:resultWithTreatmentDerived",
+        "path": "Composition.section.section",
+        "sliceName": "resultWithTreatmentDerived",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:columnHeaders.section:resultWithTreatmentDerived.code.coding",
+        "path": "Composition.section.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "result-with-intervention-alone-calculated",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Result with intervention alone (calculated)"
+        }
+      },
+      {
+        "id": "Composition.section:columnHeaders.section:effectEstimate",
+        "path": "Composition.section.section",
+        "sliceName": "effectEstimate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:columnHeaders.section:effectEstimate.code.coding",
+        "path": "Composition.section.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "result-with-intervention-vs-comparator",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Result with intervention vs. comparator"
+        }
+      },
+      {
+        "id": "Composition.section:columnHeaders.section:netEffectContribution",
+        "path": "Composition.section.section",
+        "sliceName": "netEffectContribution",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:columnHeaders.section:netEffectContribution.code.coding",
+        "path": "Composition.section.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "net-effect-contribution",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Net Effect Contribution"
+        }
+      },
+      {
+        "id": "Composition.section:outcomeEntry",
+        "path": "Composition.section",
+        "sliceName": "outcomeEntry",
+        "min": 1,
+        "max": "*",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:outcomeEntry.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "summary-of-net-effect-contributions-entry-for-a-single-outcome",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Summary of net effect contributions entry for a single outcome"
+        }
+      },
+      {
+        "id": "Composition.section:outcomeEntry.focus",
+        "path": "Composition.section.focus",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:outcomeEntry.section",
+        "path": "Composition.section.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code.coding"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Composition.section:outcomeEntry.section:outcomeDefinition",
+        "path": "Composition.section.section",
+        "sliceName": "outcomeDefinition",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:outcomeEntry.section:outcomeDefinition.code.coding",
+        "path": "Composition.section.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "outcome-measure",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Outcome Measure"
+        }
+      },
+      {
+        "id": "Composition.section:outcomeEntry.section:outcomeDefinition.entry",
+        "path": "Composition.section.section.entry",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:outcomeEntry.section:outcomeDesirability",
+        "path": "Composition.section.section",
+        "sliceName": "outcomeDesirability",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:outcomeEntry.section:outcomeDesirability.code.coding",
+        "path": "Composition.section.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "outcome-desirability",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Outcome Desirability"
+        }
+      },
+      {
+        "id": "Composition.section:outcomeEntry.section:outcomeDesirability.entry",
+        "path": "Composition.section.section.entry",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-importance"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:outcomeEntry.section:relativeImportance",
+        "path": "Composition.section.section",
+        "sliceName": "relativeImportance",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:outcomeEntry.section:relativeImportance.code.coding",
+        "path": "Composition.section.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "relative-importance",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Relative Importance"
+        }
+      },
+      {
+        "id": "Composition.section:outcomeEntry.section:relativeImportance.entry",
+        "path": "Composition.section.section.entry",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-importance"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:outcomeEntry.section:resultWithoutTreatment",
+        "path": "Composition.section.section",
+        "sliceName": "resultWithoutTreatment",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:outcomeEntry.section:resultWithoutTreatment.code.coding",
+        "path": "Composition.section.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "result-with-comparator-alone",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Result with comparator alone"
+        }
+      },
+      {
+        "id": "Composition.section:outcomeEntry.section:resultWithoutTreatment.entry",
+        "path": "Composition.section.section.entry",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:outcomeEntry.section:resultWithTreatmentObserved",
+        "path": "Composition.section.section",
+        "sliceName": "resultWithTreatmentObserved",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:outcomeEntry.section:resultWithTreatmentObserved.code.coding",
+        "path": "Composition.section.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "Intervention-group-alone-Evidence",
+          "system": "http://hl7.org/fhir/evidence-report-section",
+          "display": "Evidence Results for the intervention exposure only"
+        }
+      },
+      {
+        "id": "Composition.section:outcomeEntry.section:resultWithTreatmentObserved.entry",
+        "path": "Composition.section.section.entry",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/intervention-only-evidence"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:outcomeEntry.section:resultWithTreatmentDerived",
+        "path": "Composition.section.section",
+        "sliceName": "resultWithTreatmentDerived",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:outcomeEntry.section:resultWithTreatmentDerived.code.coding",
+        "path": "Composition.section.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "result-with-intervention-alone-calculated",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Result with intervention alone (calculated)"
+        }
+      },
+      {
+        "id": "Composition.section:outcomeEntry.section:resultWithTreatmentDerived.entry",
+        "path": "Composition.section.section.entry",
+        "max": "2",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence",
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:outcomeEntry.section:effectEstimate",
+        "path": "Composition.section.section",
+        "sliceName": "effectEstimate",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:outcomeEntry.section:effectEstimate.code.coding",
+        "path": "Composition.section.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "result-with-intervention-vs-comparator",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Result with intervention vs. comparator"
+        }
+      },
+      {
+        "id": "Composition.section:outcomeEntry.section:effectEstimate.entry",
+        "path": "Composition.section.section.entry",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:outcomeEntry.section:netEffectContribution",
+        "path": "Composition.section.section",
+        "sliceName": "netEffectContribution",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:outcomeEntry.section:netEffectContribution.code.coding",
+        "path": "Composition.section.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "net-effect-contribution",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Net Effect Contribution"
+        }
+      },
+      {
+        "id": "Composition.section:outcomeEntry.section:netEffectContribution.entry",
+        "path": "Composition.section.section.entry",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:netEffectEstimate",
+        "path": "Composition.section",
+        "sliceName": "netEffectEstimate",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Composition.section:netEffectEstimate.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "net-effect-estimate",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Net Effect Estimate"
+        }
+      },
+      {
+        "id": "Composition.section:netEffectEstimate.entry",
+        "path": "Composition.section.entry",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-estimate"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

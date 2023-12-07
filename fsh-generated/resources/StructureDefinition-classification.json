@@ -1,0 +1,168 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "classification",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cds"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    }
+  ],
+  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/classification",
+  "name": "Classification",
+  "status": "draft",
+  "description": "Profile of ArtifactAssessment for Evidence Based Medicine IG. The Classification Profile is used for classifier tags that may be created independently from Resource creators and may be used for search indexes.",
+  "fhirVersion": "5.0.0",
+  "mapping": [
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "objimpl",
+      "uri": "http://hl7.org/fhir/object-implementation",
+      "name": "Object Implementation Information"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "ArtifactAssessment",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ArtifactAssessment",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ArtifactAssessment.extension",
+        "path": "ArtifactAssessment.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "ArtifactAssessment.extension:url",
+        "path": "ArtifactAssessment.extension",
+        "sliceName": "url",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/artifact-url"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ArtifactAssessment.extension:description",
+        "path": "ArtifactAssessment.extension",
+        "sliceName": "description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/artifact-description"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ArtifactAssessment.extension:author",
+        "path": "ArtifactAssessment.extension",
+        "sliceName": "author",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/artifact-author"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ArtifactAssessment.identifier",
+        "path": "ArtifactAssessment.identifier",
+        "short": "Additional identifier for the Classification",
+        "definition": "A formal identifier that is used to identify this Classification when it is represented in other formats, or referenced in a specification, model, design or an instance.",
+        "comment": "Typically, this is used for identifiers that can be used in systems outside of FHIR, where it is not sufficient to use the logical URI.",
+        "requirements": "Allows externally provided and/or usable business identifiers to be easily associated with the Classification."
+      },
+      {
+        "id": "ArtifactAssessment.citeAs[x]",
+        "path": "ArtifactAssessment.citeAs[x]",
+        "short": "How to cite the Classification",
+        "definition": "Display of or reference to the bibliographic citation of the Classification."
+      },
+      {
+        "id": "ArtifactAssessment.date",
+        "path": "ArtifactAssessment.date",
+        "definition": "The date (and optionally time) when the Classification was published. The date should change when the substantive content of the Classification changes.",
+        "comment": ""
+      },
+      {
+        "id": "ArtifactAssessment.copyright",
+        "path": "ArtifactAssessment.copyright",
+        "definition": "A copyright statement relating to the Classification and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the Classification.",
+        "requirements": "Consumers must be able to determine any legal restrictions on the use of the Classification and/or its content."
+      },
+      {
+        "id": "ArtifactAssessment.approvalDate",
+        "path": "ArtifactAssessment.approvalDate",
+        "short": "When the Classification was approved by publisher"
+      },
+      {
+        "id": "ArtifactAssessment.lastReviewDate",
+        "path": "ArtifactAssessment.lastReviewDate",
+        "short": "When the Classification was last reviewed"
+      },
+      {
+        "id": "ArtifactAssessment.artifact[x]",
+        "path": "ArtifactAssessment.artifact[x]",
+        "short": "The artifact that is classified",
+        "definition": "A reference to a resource, canonical resource, or non-FHIR resource which the Classification is about."
+      },
+      {
+        "id": "ArtifactAssessment.content",
+        "path": "ArtifactAssessment.content",
+        "short": "A classification",
+        "definition": "A classification of the artifact.",
+        "min": 1
+      },
+      {
+        "id": "ArtifactAssessment.content.informationType",
+        "path": "ArtifactAssessment.content.informationType",
+        "comment": "The code 'classifier' will be the value in most instances. Other codes may be used for complex Classifications with content.component use."
+      },
+      {
+        "id": "ArtifactAssessment.content.freeToShare",
+        "path": "ArtifactAssessment.content.freeToShare",
+        "short": "Acceptable to publicly share the classification content",
+        "definition": "Acceptable to publicly share the classification content, specific to the associated content instance"
+      }
+    ]
+  }
+}

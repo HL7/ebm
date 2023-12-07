@@ -1,0 +1,541 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "group-r6",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cds"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    }
+  ],
+  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/group-r6",
+  "name": "GroupR6",
+  "status": "draft",
+  "description": "Profile of Group for Evidence Based Medicine IG. The GroupR6 Profile is used to adjust the R5 Group base to match the structures in R6.",
+  "fhirVersion": "5.0.0",
+  "mapping": [
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "interface",
+      "uri": "http://hl7.org/fhir/interface",
+      "name": "Interface Pattern"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Group",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Group",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Group.extension",
+        "path": "Group.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Group.extension:url",
+        "path": "Group.extension",
+        "sliceName": "url",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/artifact-url"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.extension:version",
+        "path": "Group.extension",
+        "sliceName": "version",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/artifact-version"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.extension:versionAlgorithmString",
+        "path": "Group.extension",
+        "sliceName": "versionAlgorithmString",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.extension:title",
+        "path": "Group.extension",
+        "sliceName": "title",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/artifact-title"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.extension:experimental",
+        "path": "Group.extension",
+        "sliceName": "experimental",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/artifact-experimental"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.extension:date",
+        "path": "Group.extension",
+        "sliceName": "date",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/artifact-date"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.extension:publisher",
+        "path": "Group.extension",
+        "sliceName": "publisher",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/artifact-publisher"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.extension:contact",
+        "path": "Group.extension",
+        "sliceName": "contact",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/artifact-contact"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.extension:useContext",
+        "path": "Group.extension",
+        "sliceName": "useContext",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/artifact-useContext"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.extension:purpose",
+        "path": "Group.extension",
+        "sliceName": "purpose",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/artifact-purpose"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.extension:copyright",
+        "path": "Group.extension",
+        "sliceName": "copyright",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/artifact-copyright"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.extension:copyrightLabel",
+        "path": "Group.extension",
+        "sliceName": "copyrightLabel",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/artifact-copyrightLabel"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.extension:author",
+        "path": "Group.extension",
+        "sliceName": "author",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/artifact-author"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.extension:relatedArtifact",
+        "path": "Group.extension",
+        "sliceName": "relatedArtifact",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.extension:characteristicExpression",
+        "path": "Group.extension",
+        "sliceName": "characteristicExpression",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/characteristicExpression"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.extension:combinationMethod",
+        "path": "Group.extension",
+        "sliceName": "combinationMethod",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/combination-method"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.extension:combinationThreshold",
+        "path": "Group.extension",
+        "sliceName": "combinationThreshold",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/combination-threshold"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.modifierExtension",
+        "path": "Group.modifierExtension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Group.modifierExtension:status",
+        "path": "Group.modifierExtension",
+        "sliceName": "status",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/artifact-status"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.characteristic.extension",
+        "path": "Group.characteristic.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Group.characteristic.extension:valueUri",
+        "path": "Group.characteristic.extension",
+        "sliceName": "valueUri",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-value-uri"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.characteristic.extension:valueExpression",
+        "path": "Group.characteristic.extension",
+        "sliceName": "valueExpression",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-value-expression"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.characteristic.extension:description",
+        "path": "Group.characteristic.extension",
+        "sliceName": "description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-description"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.characteristic.extension:method",
+        "path": "Group.characteristic.extension",
+        "sliceName": "method",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-method"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.characteristic.extension:determinedByReference",
+        "path": "Group.characteristic.extension",
+        "sliceName": "determinedByReference",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-determined-by-reference"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.characteristic.extension:determinedByExpression",
+        "path": "Group.characteristic.extension",
+        "sliceName": "determinedByExpression",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-determined-by-expression"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.characteristic.extension:offset",
+        "path": "Group.characteristic.extension",
+        "sliceName": "offset",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-offset"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.characteristic.extension:instancesQuantity",
+        "path": "Group.characteristic.extension",
+        "sliceName": "instancesQuantity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-instances-quantity"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.characteristic.extension:instancesRange",
+        "path": "Group.characteristic.extension",
+        "sliceName": "instancesRange",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-instances-range"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.characteristic.extension:durationDuration",
+        "path": "Group.characteristic.extension",
+        "sliceName": "durationDuration",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-duration-duration"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.characteristic.extension:durationRange",
+        "path": "Group.characteristic.extension",
+        "sliceName": "durationRange",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-duration-range"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Group.characteristic.extension:timing",
+        "path": "Group.characteristic.extension",
+        "sliceName": "timing",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-timing"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

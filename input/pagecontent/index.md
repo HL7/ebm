@@ -135,7 +135,42 @@ The base Group Resource in FHIR version R5 uses a repeatable characteristic elem
 
 ### Profiles of Group Resource
 
-The GroupR6 Profile is a base for all other Group Profiles. ...to be continued...
+The GroupR6 Profile is a base for all other Group Profiles. Extensions for metadata about the Group Resource include url, version, versionAlgorithmString, title, experimental, date, publisher, contact, useContext, purpose, copyright, copyrightLabel, author, and relatedArtifact. A modifierExtension for status allows specifying whether the Resource is active, draft, or retired. An extension for characteristicExpression allows use of an Expression datatype to represent the Group definition instead of using the characteristic element.
+
+Extensions for combinationMethod (valueCode choices of all-of, any-of, at-least, at-most, except-subset) and combinationThreshold (valuePositiveInt for use with at-least or at-most) express how 2 or more characteristic instances are combined.
+
+The characteristic element has multiple extensions to support more ways of defining eligibility criteria.
+.. valueUri and valueExpression provide additional datatypes for the value of the characteristic
+.. description uses a markdown datatype and supports a human-readable description of the characteristic
+.. method uses a CodeableConcept datatype and supports specification of how the value of the characteristic is determined
+.. determinedByReference uses a Reference datatype to specify a Device, DeviceMetric, or DeviceDefinition used to determine the value of the characteristic
+.. determinedByExpression uses an Expression datatype to specify the formula or calculation used to determine the value of the characteristic
+.. offset uses a CodeableConcept datatype and supports specification of a reference point from which the value is measured, e.g., 2 units above the upper normal limit would be expressed with a valueQuantity of 2 units and an offset with a coding for Upper Normal Limit
+.. instancesQuantity and instancesRange are used to express the number of times the characteristic is met
+.. durationDuration and durationRange are used to express how long the characteristic is met
+.. timing uses a complex expression (matching the RelativeTime datatype in FHIR version R6) to express timing relative to an event or context other than calendar time
+
+The CohortDefinition is a Profile of GroupR6 that is used to provide a conceptual or definitional representation of a Group. In FHIR version R6, membership = conceptual allows avoiding the required use of type. In this IG for FHIR version R5, membership is definitional and the type value can be ignored for resource content processing. The quantity and member elements are not used in the CohortDefinition Profile.
+The CohortDefinition is used to support characteristics that are combinations of two or more characteristics. 
+
+For example, a group defined by females who are are > 20 years old or have red hair would be defined with combinationMethod = 'all-of' and 2 characteristic instances: {code sex, valueCodeableConcept female} and {code Defined by Reference, valueReference CohortDefinition: > 20y or red hair}. 
+The CohortDefinition: > 20y or red hair would be defined with combinationMethod = 'any-of' and 2 characteristic instances: {code age, valueQuantity > 20 years} and {code hair color, valueCodeableConcept red}.
+
+Profiles of CohortDefinition used for the inclusion and exclusion criteria of specific conceptual types of groups include the StudyEligibilityCriteria Profile (for a research study), the RecommendationEligibilityCriteria Profile (for a clinical practice guideline recommendation), the SystematicReviewEligibilityCriteria Profile (for a systematic review), the MetaanalysisEligibilityCriteria Profile (for a statistical meta-analysis), and the SearchStrategy Profile (for a literature search). These Profiles are not currently structurally different than CohortDefinition but are separated for future development in case of specialized developments for eligibility criteria.
+
+The ExposureDefinition, ComparatorDefinition, OutcomeDefinition, and MetaanalysisOutcomeDefinition Profiles are Profiles of CohortDefinition used for the definition of evidence variables. These Profiles are not currently structurally different than CohortDefinition but are separated for future development in case of specialized developments for variable definitions.
+
+The ExposureGroup and ComparatorGroup Profiles are Profiles of GroupR6 used to support 'enumerated' groups. When the evidence is about groups that can be typed to FHIR types, the type element can be used and the membership element can be set to 'enumerated'  In FHIR version R6, when the evidence is not about groups that can be typed to FHIR types, the membership element can be set to 'conceptual' to signal non-use of the type element. These Profiles are provided for future development and to maintain consistency between R5 and R6 versions.
+
+The NetEffectContributions Profile is a Profile of GroupR6 used to represent an enumerated group of participants in a net effect analysis where the participants are Evidence Resources (NetEffectContribution Profile). Because Evidence Resources are not among the allowed values in Group.type and not among the allowed values in Group.member.entity, the type of Group member is expressed as "Net Effect Contribution" in Group.code.text and the method of listing group members is to use a single characteristic with a code.text value of "Member of" and a valueReference which references a NetEffectContributionList Profile of List Resource.
+
+The StudyGroup Profile is a Profile of GroupR6 used to represent an enumerated group of participants in a research study. The membership value is set to 'enumerated'.
+
+The MetaanalysisStudyGroup Profile is a Profile of GroupR6 used to represent an enumerated group of participants in a meta-analysis where the participants are Evidence Resources. Because Evidence Resources are not among the allowed values in Group.type and not among the allowed values in Group.member.entity, the type of Group member is expressed as "Evidence" in Group.code.text and the method of listing group members is to use a single characteristic with a code.text value of "Member of" and a valueReference which references an EvidenceList Profile of List Resource.
+
+The EvidenceReportSubject Profile is a Profile of CohortDefinition used to define the subject of an EvidenceReport. The report subject is defined conceptually as a combination ('all-of') of characteristics. Any characteristic is optional (as there are many types of evidence reports) but common types of characteristics suggested in the Implementation Guide include Population (referencing Group), Intervention or Exposure (referencing EvidenceVariable or Group), Comparator (referencing EvidenceVariable or Group), and Outcomes (referencing OutcomeList).
+
+The ComparativeEvidenceReportSubject Profile is a Profile of EvidenceReportSubject which requires the use of Population (constrained to reference StudyGroup), Intervention or Exposure (constrained to reference VariableDefinition or ExposureDefinition), Comparator (constrained to reference VariableDefinition or ExposureDefinition or ComparatorDefinition), and Outcomes (constrained to reference OutcomeList).
 
 ### Understanding the Citation Resource
 

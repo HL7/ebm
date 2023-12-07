@@ -1,0 +1,1166 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "recommendation-justification",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cds"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    }
+  ],
+  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-justification",
+  "name": "RecommendationJustification",
+  "status": "draft",
+  "description": "Profile of ArtifactAssessment for Evidence Based Medicine IG. The RecommendationJustification Profile is used for expressing the rationale, evidence, and judgments supporting a recommendation, such as from a clinical practice guideline.",
+  "fhirVersion": "5.0.0",
+  "mapping": [
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "objimpl",
+      "uri": "http://hl7.org/fhir/object-implementation",
+      "name": "Object Implementation Information"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "ArtifactAssessment",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ArtifactAssessment",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ArtifactAssessment.extension",
+        "path": "ArtifactAssessment.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "ArtifactAssessment.extension:url",
+        "path": "ArtifactAssessment.extension",
+        "sliceName": "url",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/artifact-url"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ArtifactAssessment.extension:description",
+        "path": "ArtifactAssessment.extension",
+        "sliceName": "description",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/artifact-description"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ArtifactAssessment.extension:author",
+        "path": "ArtifactAssessment.extension",
+        "sliceName": "author",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://hl7.org/fhir/StructureDefinition/artifact-author"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "ArtifactAssessment.identifier",
+        "path": "ArtifactAssessment.identifier",
+        "short": "Additional identifier for the Recommendation Justification",
+        "definition": "A formal identifier that is used to identify this Recommendation Justification when it is represented in other formats, or referenced in a specification, model, design or an instance.",
+        "comment": "Typically, this is used for identifiers that can be used in systems outside of FHIR, where it is not sufficient to use the logical URI.",
+        "requirements": "Allows externally provided and/or usable business identifiers to be easily associated with the Recommendation Justification."
+      },
+      {
+        "id": "ArtifactAssessment.citeAs[x]",
+        "path": "ArtifactAssessment.citeAs[x]",
+        "short": "How to cite the Recommendation Justification",
+        "definition": "Display of or reference to the bibliographic citation of the Recommendation Justification."
+      },
+      {
+        "id": "ArtifactAssessment.date",
+        "path": "ArtifactAssessment.date",
+        "definition": "The date (and optionally time) when the Recommendation Justification was published. The date should change when the substantive content of the Rating changes.",
+        "comment": ""
+      },
+      {
+        "id": "ArtifactAssessment.copyright",
+        "path": "ArtifactAssessment.copyright",
+        "definition": "A copyright statement relating to the Recommendation Justification and/or its contents. Copyright statements are generally legal restrictions on the use and publishing of the Recommendation Justification.",
+        "requirements": "Consumers must be able to determine any legal restrictions on the use of the Recommendation Justification and/or its content."
+      },
+      {
+        "id": "ArtifactAssessment.approvalDate",
+        "path": "ArtifactAssessment.approvalDate",
+        "short": "When the Recommendation Justification was approved by publisher"
+      },
+      {
+        "id": "ArtifactAssessment.lastReviewDate",
+        "path": "ArtifactAssessment.lastReviewDate",
+        "short": "When the Recommendation Justification was last reviewed"
+      },
+      {
+        "id": "ArtifactAssessment.artifact[x]",
+        "path": "ArtifactAssessment.artifact[x]",
+        "short": "The recommendation that is justified",
+        "definition": "A reference to a resource, canonical resource, or non-FHIR resource which the Recommendation Justification is about."
+      },
+      {
+        "id": "ArtifactAssessment.content",
+        "path": "ArtifactAssessment.content",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "type"
+            }
+          ],
+          "rules": "closed"
+        },
+        "short": "A comment, rating, or classification",
+        "definition": "A comment, rating, or classification of the recommendation.",
+        "min": 1,
+        "max": "5"
+      },
+      {
+        "id": "ArtifactAssessment.content.classifier",
+        "path": "ArtifactAssessment.content.classifier",
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://hl7.org/fhir/uv/ebm/ValueSet/recommendation-justification-classifier"
+        }
+      },
+      {
+        "id": "ArtifactAssessment.content.freeToShare",
+        "path": "ArtifactAssessment.content.freeToShare",
+        "short": "Acceptable to publicly share the content",
+        "definition": "Acceptable to publicly share the content, specific to the associated content instance"
+      },
+      {
+        "id": "ArtifactAssessment.content:recommendationSpecification",
+        "path": "ArtifactAssessment.content",
+        "sliceName": "recommendationSpecification",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "ArtifactAssessment.content:recommendationSpecification.informationType",
+        "path": "ArtifactAssessment.content.informationType",
+        "patternCode": "container"
+      },
+      {
+        "id": "ArtifactAssessment.content:recommendationSpecification.type",
+        "path": "ArtifactAssessment.content.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "recommendation-specification",
+              "system": "https://fevir.net/resources/CodeSystem/179423",
+              "display": "Recommendation Specification"
+            }
+          ]
+        }
+      },
+      {
+        "id": "ArtifactAssessment.content:recommendationSpecification.component",
+        "path": "ArtifactAssessment.content.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "type"
+            }
+          ],
+          "rules": "closed"
+        }
+      },
+      {
+        "id": "ArtifactAssessment.content:recommendationSpecification.component:recommendationStatement",
+        "path": "ArtifactAssessment.content.component",
+        "sliceName": "recommendationStatement",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ArtifactAssessment.content:recommendationSpecification.component:recommendationStatement.informationType",
+        "path": "ArtifactAssessment.content.component.informationType",
+        "patternCode": "comment"
+      },
+      {
+        "id": "ArtifactAssessment.content:recommendationSpecification.component:recommendationStatement.type",
+        "path": "ArtifactAssessment.content.component.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "recommendation-statement",
+              "system": "https://fevir.net/resources/CodeSystem/179423",
+              "display": "Recommendation Statement"
+            }
+          ]
+        }
+      },
+      {
+        "id": "ArtifactAssessment.content:recommendationSpecification.component:ratingSystem",
+        "path": "ArtifactAssessment.content.component",
+        "sliceName": "ratingSystem",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ArtifactAssessment.content:recommendationSpecification.component:ratingSystem.informationType",
+        "path": "ArtifactAssessment.content.component.informationType",
+        "patternCode": "classifier"
+      },
+      {
+        "id": "ArtifactAssessment.content:recommendationSpecification.component:ratingSystem.type",
+        "path": "ArtifactAssessment.content.component.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "rating-system",
+              "system": "https://fevir.net/resources/CodeSystem/179423",
+              "display": "Rating System"
+            }
+          ]
+        }
+      },
+      {
+        "id": "ArtifactAssessment.content:recommendationSpecification.component:strengthOfRecommendation",
+        "path": "ArtifactAssessment.content.component",
+        "sliceName": "strengthOfRecommendation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ArtifactAssessment.content:recommendationSpecification.component:strengthOfRecommendation.informationType",
+        "path": "ArtifactAssessment.content.component.informationType",
+        "patternCode": "rating"
+      },
+      {
+        "id": "ArtifactAssessment.content:recommendationSpecification.component:strengthOfRecommendation.type",
+        "path": "ArtifactAssessment.content.component.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "strength-of-recommendation",
+              "system": "https://fevir.net/resources/CodeSystem/179423",
+              "display": "Strength of Recommendation"
+            }
+          ]
+        }
+      },
+      {
+        "id": "ArtifactAssessment.content:recommendationSpecification.component:directionOfRecommendation",
+        "path": "ArtifactAssessment.content.component",
+        "sliceName": "directionOfRecommendation",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ArtifactAssessment.content:recommendationSpecification.component:directionOfRecommendation.informationType",
+        "path": "ArtifactAssessment.content.component.informationType",
+        "patternCode": "classifier"
+      },
+      {
+        "id": "ArtifactAssessment.content:recommendationSpecification.component:directionOfRecommendation.type",
+        "path": "ArtifactAssessment.content.component.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "direction-of-recommendation",
+              "system": "https://fevir.net/resources/CodeSystem/179423",
+              "display": "Direction of Recommendation"
+            }
+          ]
+        }
+      },
+      {
+        "id": "ArtifactAssessment.content:recommendationSpecification.component:otherRatings",
+        "path": "ArtifactAssessment.content.component",
+        "sliceName": "otherRatings",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ArtifactAssessment.content:recommendationSpecification.component:otherRatings.informationType",
+        "path": "ArtifactAssessment.content.component.informationType",
+        "patternCode": "rating"
+      },
+      {
+        "id": "ArtifactAssessment.content:recommendationSpecification.component:otherRatings.type",
+        "path": "ArtifactAssessment.content.component.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "ratings",
+              "system": "https://fevir.net/resources/CodeSystem/179423",
+              "display": "Ratings"
+            }
+          ]
+        }
+      },
+      {
+        "id": "ArtifactAssessment.content:recommendationSpecification.component:discussion",
+        "path": "ArtifactAssessment.content.component",
+        "sliceName": "discussion",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ArtifactAssessment.content:recommendationSpecification.component:discussion.informationType",
+        "path": "ArtifactAssessment.content.component.informationType",
+        "patternCode": "comment"
+      },
+      {
+        "id": "ArtifactAssessment.content:recommendationSpecification.component:discussion.type",
+        "path": "ArtifactAssessment.content.component.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "discussion",
+              "system": "https://fevir.net/resources/CodeSystem/179423",
+              "display": "Discussion"
+            }
+          ]
+        }
+      },
+      {
+        "id": "ArtifactAssessment.content:recommendationSpecification.component:population",
+        "path": "ArtifactAssessment.content.component",
+        "sliceName": "population",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ArtifactAssessment.content:recommendationSpecification.component:population.informationType",
+        "path": "ArtifactAssessment.content.component.informationType",
+        "patternCode": "container"
+      },
+      {
+        "id": "ArtifactAssessment.content:recommendationSpecification.component:population.type",
+        "path": "ArtifactAssessment.content.component.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "population",
+              "system": "https://fevir.net/resources/CodeSystem/179423",
+              "display": "Population"
+            }
+          ]
+        }
+      },
+      {
+        "id": "ArtifactAssessment.content:recommendationSpecification.component:population.relatedArtifact",
+        "path": "ArtifactAssessment.content.component.relatedArtifact",
+        "comment": "The population Resource SHALL be the same as that referenced by the Resource in the artifactReference element."
+      },
+      {
+        "id": "ArtifactAssessment.content:recommendationSpecification.component:action",
+        "path": "ArtifactAssessment.content.component",
+        "sliceName": "action",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ArtifactAssessment.content:recommendationSpecification.component:action.informationType",
+        "path": "ArtifactAssessment.content.component.informationType",
+        "patternCode": "container"
+      },
+      {
+        "id": "ArtifactAssessment.content:recommendationSpecification.component:action.type",
+        "path": "ArtifactAssessment.content.component.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "action",
+              "system": "https://fevir.net/resources/CodeSystem/179423",
+              "display": "Action"
+            }
+          ]
+        }
+      },
+      {
+        "id": "ArtifactAssessment.content:recommendationSpecification.component:action.relatedArtifact",
+        "path": "ArtifactAssessment.content.component.relatedArtifact",
+        "comment": "The action Resource(s) SHALL be the same as that referenced by the Resource in the artifactReference element."
+      },
+      {
+        "id": "ArtifactAssessment.content:recommendationSpecification.component:oppositeAction",
+        "path": "ArtifactAssessment.content.component",
+        "sliceName": "oppositeAction",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ArtifactAssessment.content:recommendationSpecification.component:oppositeAction.informationType",
+        "path": "ArtifactAssessment.content.component.informationType",
+        "patternCode": "container"
+      },
+      {
+        "id": "ArtifactAssessment.content:recommendationSpecification.component:oppositeAction.type",
+        "path": "ArtifactAssessment.content.component.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "opposite-action",
+              "system": "https://fevir.net/resources/CodeSystem/179423",
+              "display": "Opposite Action"
+            }
+          ]
+        }
+      },
+      {
+        "id": "ArtifactAssessment.content:recommendationSpecification.component:oppositeAction.relatedArtifact",
+        "path": "ArtifactAssessment.content.component.relatedArtifact",
+        "comment": "The opposited action Resource(s) SHALL be the same as that referenced by the Resource in the artifactReference element."
+      },
+      {
+        "id": "ArtifactAssessment.content:evidence",
+        "path": "ArtifactAssessment.content",
+        "sliceName": "evidence",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "ArtifactAssessment.content:evidence.informationType",
+        "path": "ArtifactAssessment.content.informationType",
+        "patternCode": "container"
+      },
+      {
+        "id": "ArtifactAssessment.content:evidence.type",
+        "path": "ArtifactAssessment.content.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "evidence",
+              "system": "https://fevir.net/resources/CodeSystem/179423",
+              "display": "Evidence"
+            }
+          ]
+        }
+      },
+      {
+        "id": "ArtifactAssessment.content:evidence.component",
+        "path": "ArtifactAssessment.content.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "type"
+            }
+          ],
+          "rules": "closed"
+        }
+      },
+      {
+        "id": "ArtifactAssessment.content:evidence.component:summaryOfFindings",
+        "path": "ArtifactAssessment.content.component",
+        "sliceName": "summaryOfFindings",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ArtifactAssessment.content:evidence.component:summaryOfFindings.type",
+        "path": "ArtifactAssessment.content.component.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "summary-of-findings",
+              "system": "https://fevir.net/resources/CodeSystem/179423",
+              "display": "Summary of Findings"
+            }
+          ]
+        }
+      },
+      {
+        "id": "ArtifactAssessment.content:evidence.component:desirableEffects",
+        "path": "ArtifactAssessment.content.component",
+        "sliceName": "desirableEffects",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ArtifactAssessment.content:evidence.component:desirableEffects.type",
+        "path": "ArtifactAssessment.content.component.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "desirable-effects",
+              "system": "https://fevir.net/resources/CodeSystem/179423",
+              "display": "Desirable Effects"
+            }
+          ]
+        }
+      },
+      {
+        "id": "ArtifactAssessment.content:evidence.component:undesirableEffects",
+        "path": "ArtifactAssessment.content.component",
+        "sliceName": "undesirableEffects",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ArtifactAssessment.content:evidence.component:undesirableEffects.type",
+        "path": "ArtifactAssessment.content.component.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "undesirable-effects",
+              "system": "https://fevir.net/resources/CodeSystem/179423",
+              "display": "Undesirable Effects"
+            }
+          ]
+        }
+      },
+      {
+        "id": "ArtifactAssessment.content:evidence.component:discussion",
+        "path": "ArtifactAssessment.content.component",
+        "sliceName": "discussion",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ArtifactAssessment.content:evidence.component:discussion.type",
+        "path": "ArtifactAssessment.content.component.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "discussion",
+              "system": "https://fevir.net/resources/CodeSystem/179423",
+              "display": "Discussion"
+            }
+          ]
+        }
+      },
+      {
+        "id": "ArtifactAssessment.content:netEffect",
+        "path": "ArtifactAssessment.content",
+        "sliceName": "netEffect",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "ArtifactAssessment.content:netEffect.informationType",
+        "path": "ArtifactAssessment.content.informationType",
+        "patternCode": "container"
+      },
+      {
+        "id": "ArtifactAssessment.content:netEffect.type",
+        "path": "ArtifactAssessment.content.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "net-effect",
+              "system": "https://fevir.net/resources/CodeSystem/179423",
+              "display": "Net Effect"
+            }
+          ]
+        }
+      },
+      {
+        "id": "ArtifactAssessment.content:netEffect.component",
+        "path": "ArtifactAssessment.content.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "type"
+            }
+          ],
+          "rules": "closed"
+        }
+      },
+      {
+        "id": "ArtifactAssessment.content:netEffect.component:preferences",
+        "path": "ArtifactAssessment.content.component",
+        "sliceName": "preferences",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ArtifactAssessment.content:netEffect.component:preferences.type",
+        "path": "ArtifactAssessment.content.component.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "preferences",
+              "system": "https://fevir.net/resources/CodeSystem/179423",
+              "display": "Preferences"
+            }
+          ]
+        }
+      },
+      {
+        "id": "ArtifactAssessment.content:netEffect.component:discussion",
+        "path": "ArtifactAssessment.content.component",
+        "sliceName": "discussion",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ]
+      },
+      {
+        "id": "ArtifactAssessment.content:netEffect.component:discussion.type",
+        "path": "ArtifactAssessment.content.component.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "discussion",
+              "system": "https://fevir.net/resources/CodeSystem/179423",
+              "display": "Discussion"
+            }
+          ]
+        }
+      },
+      {
+        "id": "ArtifactAssessment.content:judgments",
+        "path": "ArtifactAssessment.content",
+        "sliceName": "judgments",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "ArtifactAssessment.content:judgments.informationType",
+        "path": "ArtifactAssessment.content.informationType",
+        "patternCode": "container"
+      },
+      {
+        "id": "ArtifactAssessment.content:judgments.type",
+        "path": "ArtifactAssessment.content.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "judgments",
+              "system": "https://fevir.net/resources/CodeSystem/179423",
+              "display": "Judgments"
+            }
+          ]
+        }
+      },
+      {
+        "id": "ArtifactAssessment.content:judgments.component",
+        "path": "ArtifactAssessment.content.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "type"
+            }
+          ],
+          "rules": "closed"
+        }
+      },
+      {
+        "id": "ArtifactAssessment.content:judgments.component:justification",
+        "path": "ArtifactAssessment.content.component",
+        "sliceName": "justification",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ArtifactAssessment.content:judgments.component:justification.type",
+        "path": "ArtifactAssessment.content.component.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "justification",
+              "system": "https://fevir.net/resources/CodeSystem/179423",
+              "display": "Justification"
+            }
+          ]
+        }
+      },
+      {
+        "id": "ArtifactAssessment.content:judgments.component:problemImportance",
+        "path": "ArtifactAssessment.content.component",
+        "sliceName": "problemImportance",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ArtifactAssessment.content:judgments.component:problemImportance.type",
+        "path": "ArtifactAssessment.content.component.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "problem-importance",
+              "system": "https://fevir.net/resources/CodeSystem/179423",
+              "display": "Problem Importance"
+            }
+          ]
+        }
+      },
+      {
+        "id": "ArtifactAssessment.content:judgments.component:costs",
+        "path": "ArtifactAssessment.content.component",
+        "sliceName": "costs",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ArtifactAssessment.content:judgments.component:costs.type",
+        "path": "ArtifactAssessment.content.component.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "costs",
+              "system": "https://fevir.net/resources/CodeSystem/179423",
+              "display": "Costs"
+            }
+          ]
+        }
+      },
+      {
+        "id": "ArtifactAssessment.content:judgments.component:costeffectiveness",
+        "path": "ArtifactAssessment.content.component",
+        "sliceName": "costeffectiveness",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ArtifactAssessment.content:judgments.component:costeffectiveness.type",
+        "path": "ArtifactAssessment.content.component.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "cost-effectiveness",
+              "system": "https://fevir.net/resources/CodeSystem/179423",
+              "display": "Cost-effectiveness"
+            }
+          ]
+        }
+      },
+      {
+        "id": "ArtifactAssessment.content:judgments.component:equity",
+        "path": "ArtifactAssessment.content.component",
+        "sliceName": "equity",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ArtifactAssessment.content:judgments.component:equity.type",
+        "path": "ArtifactAssessment.content.component.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "equity",
+              "system": "https://fevir.net/resources/CodeSystem/179423",
+              "display": "Equity"
+            }
+          ]
+        }
+      },
+      {
+        "id": "ArtifactAssessment.content:judgments.component:acceptability",
+        "path": "ArtifactAssessment.content.component",
+        "sliceName": "acceptability",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ArtifactAssessment.content:judgments.component:acceptability.type",
+        "path": "ArtifactAssessment.content.component.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "acceptability",
+              "system": "https://fevir.net/resources/CodeSystem/179423",
+              "display": "Acceptability"
+            }
+          ]
+        }
+      },
+      {
+        "id": "ArtifactAssessment.content:judgments.component:feasibility",
+        "path": "ArtifactAssessment.content.component",
+        "sliceName": "feasibility",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ArtifactAssessment.content:judgments.component:feasibility.type",
+        "path": "ArtifactAssessment.content.component.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "feasibility",
+              "system": "https://fevir.net/resources/CodeSystem/179423",
+              "display": "Feasibility"
+            }
+          ]
+        }
+      },
+      {
+        "id": "ArtifactAssessment.content:considerations",
+        "path": "ArtifactAssessment.content",
+        "sliceName": "considerations",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "ArtifactAssessment.content:considerations.informationType",
+        "path": "ArtifactAssessment.content.informationType",
+        "patternCode": "container"
+      },
+      {
+        "id": "ArtifactAssessment.content:considerations.type",
+        "path": "ArtifactAssessment.content.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "considerations",
+              "system": "https://fevir.net/resources/CodeSystem/179423",
+              "display": "Considerations"
+            }
+          ]
+        }
+      },
+      {
+        "id": "ArtifactAssessment.content:considerations.component",
+        "path": "ArtifactAssessment.content.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "type"
+            }
+          ],
+          "rules": "closed"
+        }
+      },
+      {
+        "id": "ArtifactAssessment.content:considerations.component:subgroupConsiderations",
+        "path": "ArtifactAssessment.content.component",
+        "sliceName": "subgroupConsiderations",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ArtifactAssessment.content:considerations.component:subgroupConsiderations.type",
+        "path": "ArtifactAssessment.content.component.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "subgroup-considerations",
+              "system": "https://fevir.net/resources/CodeSystem/179423",
+              "display": "Subgroup Considerations"
+            }
+          ]
+        }
+      },
+      {
+        "id": "ArtifactAssessment.content:considerations.component:implementationConsiderations",
+        "path": "ArtifactAssessment.content.component",
+        "sliceName": "implementationConsiderations",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ArtifactAssessment.content:considerations.component:implementationConsiderations.type",
+        "path": "ArtifactAssessment.content.component.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "implementation-considerations",
+              "system": "https://fevir.net/resources/CodeSystem/179423",
+              "display": "Implementation Considerations"
+            }
+          ]
+        }
+      },
+      {
+        "id": "ArtifactAssessment.content:considerations.component:monitoringConsiderations",
+        "path": "ArtifactAssessment.content.component",
+        "sliceName": "monitoringConsiderations",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ArtifactAssessment.content:considerations.component:monitoringConsiderations.type",
+        "path": "ArtifactAssessment.content.component.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "monitoring-considerations",
+              "system": "https://fevir.net/resources/CodeSystem/179423",
+              "display": "Monitoring Considerations"
+            }
+          ]
+        }
+      },
+      {
+        "id": "ArtifactAssessment.content:considerations.component:competingInterests",
+        "path": "ArtifactAssessment.content.component",
+        "sliceName": "competingInterests",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ArtifactAssessment.content:considerations.component:competingInterests.type",
+        "path": "ArtifactAssessment.content.component.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "competing-interests",
+              "system": "https://fevir.net/resources/CodeSystem/179423",
+              "display": "Competing Interests"
+            }
+          ]
+        }
+      },
+      {
+        "id": "ArtifactAssessment.content:considerations.component:researchPriorities",
+        "path": "ArtifactAssessment.content.component",
+        "sliceName": "researchPriorities",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "BackboneElement"
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "ArtifactAssessment.content:considerations.component:researchPriorities.type",
+        "path": "ArtifactAssessment.content.component.type",
+        "min": 1,
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "research-considerations",
+              "system": "https://fevir.net/resources/CodeSystem/179423",
+              "display": "Research Considerations"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

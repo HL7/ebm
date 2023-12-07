@@ -1,0 +1,54 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "study-group",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cds"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    }
+  ],
+  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/study-group",
+  "name": "StudyGroup",
+  "status": "draft",
+  "description": "Profile of Group for Evidence Based Medicine IG. The StudyGroup Profile is used to represent an enumerated group of participants in a research study.",
+  "fhirVersion": "5.0.0",
+  "mapping": [
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "interface",
+      "uri": "http://hl7.org/fhir/interface",
+      "name": "Interface Pattern"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Group",
+  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/group-r6",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Group.membership",
+        "path": "Group.membership",
+        "patternCode": "enumerated"
+      }
+    ]
+  }
+}

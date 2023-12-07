@@ -1,0 +1,233 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "guideline",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cds"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    }
+  ],
+  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/guideline",
+  "name": "Guideline",
+  "status": "draft",
+  "description": "Profile of Composition for Evidence Based Medicine IG. The Guideline Profile is used for the composition of a clinical practice guideline and may be tightly related to use of Recommendation Profile of Composition for related content.",
+  "fhirVersion": "5.0.0",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "cda",
+      "uri": "http://hl7.org/v3/cda",
+      "name": "CDA (R2)"
+    },
+    {
+      "identity": "fhirdocumentreference",
+      "uri": "http://hl7.org/fhir/documentreference",
+      "name": "FHIR DocumentReference"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Composition",
+  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Composition.category",
+        "path": "Composition.category",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "coding"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Composition.category:guideline",
+        "path": "Composition.category",
+        "sliceName": "guideline",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.category:guideline.coding",
+        "path": "Composition.category.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "Guideline",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Guideline"
+        }
+      },
+      {
+        "id": "Composition.section",
+        "path": "Composition.section",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "code.coding"
+            }
+          ],
+          "rules": "closed"
+        },
+        "min": 1,
+        "max": "6"
+      },
+      {
+        "id": "Composition.section:introduction",
+        "path": "Composition.section",
+        "sliceName": "introduction",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:introduction.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "introduction",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Introduction"
+        }
+      },
+      {
+        "id": "Composition.section:recommendations",
+        "path": "Composition.section",
+        "sliceName": "recommendations",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:recommendations.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "recommendations",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Recommendations"
+        }
+      },
+      {
+        "id": "Composition.section:recommendations.entry",
+        "path": "Composition.section.entry",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Composition.section:text",
+        "path": "Composition.section",
+        "sliceName": "text",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:text.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "text",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Text"
+        }
+      },
+      {
+        "id": "Composition.section:methods",
+        "path": "Composition.section",
+        "sliceName": "methods",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:methods.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "methods",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Methods"
+        }
+      },
+      {
+        "id": "Composition.section:acknowledgements",
+        "path": "Composition.section",
+        "sliceName": "acknowledgements",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:acknowledgements.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "acknowledgements",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Acknowledgements"
+        }
+      },
+      {
+        "id": "Composition.section:appendices",
+        "path": "Composition.section",
+        "sliceName": "appendices",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Composition.section:appendices.code.coding",
+        "path": "Composition.section.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "appendices",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Appendices"
+        }
+      }
+    ]
+  }
+}

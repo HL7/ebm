@@ -1,0 +1,250 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "journal-article-citation",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-implements",
+      "valueUri": "http://hl7.org/fhir/StructureDefinition/MetadataResource"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cds"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    }
+  ],
+  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/journal-article-citation",
+  "name": "JournalArticleCitation",
+  "status": "draft",
+  "description": "Profile of Citation for Evidence Based Medicine IG. The JournalArticleCitation Profile is used for citations of an article published in a periodical venue classified as a journal.",
+  "fhirVersion": "5.0.0",
+  "mapping": [
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "objimpl",
+      "uri": "http://hl7.org/fhir/object-implementation",
+      "name": "Object Implementation Information"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Citation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Citation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Citation.effectivePeriod",
+        "path": "Citation.effectivePeriod",
+        "max": "0"
+      },
+      {
+        "id": "Citation.citedArtifact.classification",
+        "path": "Citation.citedArtifact.classification",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "type.coding"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Citation.citedArtifact.classification:knowledgeArtifactType",
+        "path": "Citation.citedArtifact.classification",
+        "sliceName": "knowledgeArtifactType",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Citation.citedArtifact.classification:knowledgeArtifactType.type.coding",
+        "path": "Citation.citedArtifact.classification.type.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "knowledge-artifact-type",
+          "system": "http://hl7.org/fhir/cited-artifact-classification-type",
+          "display": "Knowledge Artifact Type"
+        }
+      },
+      {
+        "id": "Citation.citedArtifact.classification:knowledgeArtifactType.classifier",
+        "path": "Citation.citedArtifact.classification.classifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "coding"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Citation.citedArtifact.classification:knowledgeArtifactType.classifier:journalArticle",
+        "path": "Citation.citedArtifact.classification.classifier",
+        "sliceName": "journalArticle",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Citation.citedArtifact.classification:knowledgeArtifactType.classifier:journalArticle.coding",
+        "path": "Citation.citedArtifact.classification.classifier.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "D016428",
+          "system": "http://hl7.org/fhir/citation-artifact-classifier",
+          "display": "Journal Article"
+        }
+      },
+      {
+        "id": "Citation.citedArtifact.classification:publishingModel",
+        "path": "Citation.citedArtifact.classification",
+        "sliceName": "publishingModel",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Citation.citedArtifact.classification:publishingModel.type.coding",
+        "path": "Citation.citedArtifact.classification.type.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "publishing-model",
+          "system": "http://hl7.org/fhir/cited-artifact-classification-type",
+          "display": "Publishing Model"
+        }
+      },
+      {
+        "id": "Citation.citedArtifact.classification:publicationType",
+        "path": "Citation.citedArtifact.classification",
+        "sliceName": "publicationType",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Citation.citedArtifact.classification:publicationType.type.coding",
+        "path": "Citation.citedArtifact.classification.type.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "publication-type",
+          "system": "http://hl7.org/fhir/cited-artifact-classification-type",
+          "display": "Publication type"
+        }
+      },
+      {
+        "id": "Citation.citedArtifact.classification:citationSubset",
+        "path": "Citation.citedArtifact.classification",
+        "sliceName": "citationSubset",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Citation.citedArtifact.classification:citationSubset.type.coding",
+        "path": "Citation.citedArtifact.classification.type.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "citation-subset",
+          "system": "http://hl7.org/fhir/cited-artifact-classification-type",
+          "display": "Citation subset"
+        }
+      },
+      {
+        "id": "Citation.citedArtifact.classification:studyDesign",
+        "path": "Citation.citedArtifact.classification",
+        "sliceName": "studyDesign",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Citation.citedArtifact.classification:studyDesign.type.coding",
+        "path": "Citation.citedArtifact.classification.type.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "study-design",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Study Design"
+        }
+      },
+      {
+        "id": "Citation.citedArtifact.classification:definedInText",
+        "path": "Citation.citedArtifact.classification",
+        "sliceName": "definedInText",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Citation.citedArtifact.classification:definedInText.type.coding",
+        "path": "Citation.citedArtifact.classification.type.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "defined-in-text",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "Defined in text"
+        }
+      },
+      {
+        "id": "Citation.citedArtifact.classification:meshHeading",
+        "path": "Citation.citedArtifact.classification",
+        "sliceName": "meshHeading",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Citation.citedArtifact.classification:meshHeading.type.coding",
+        "path": "Citation.citedArtifact.classification.type.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "mesh-heading",
+          "system": "http://hl7.org/fhir/cited-artifact-classification-type",
+          "display": "MeSH Heading"
+        }
+      },
+      {
+        "id": "Citation.citedArtifact.classification:chemical",
+        "path": "Citation.citedArtifact.classification",
+        "sliceName": "chemical",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Citation.citedArtifact.classification:chemical.type.coding",
+        "path": "Citation.citedArtifact.classification.type.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "chemical",
+          "system": "http://hl7.org/fhir/cited-artifact-classification-type",
+          "display": "Chemical"
+        }
+      }
+    ]
+  }
+}

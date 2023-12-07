@@ -1,0 +1,83 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "outcome-list",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger": 1
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode": "cds"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode": "draft"
+    }
+  ],
+  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-list",
+  "name": "OutcomeList",
+  "status": "draft",
+  "description": "Profile of List for Evidence Based Medicine IG. The OutcomeList Profile is used to provide a list of outcomes. The OutcomeList Profile is referenced in the EvidenceReportSubject Profile as a way to define the set of outcomes that an EvidenceReport is about.",
+  "fhirVersion": "5.0.0",
+  "mapping": [
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "xds",
+      "uri": "http://ihe.net/xds",
+      "name": "XDS metadata equivalent"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "List",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/List",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "List.code.coding",
+        "path": "List.code.coding",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "code": "OutcomeList",
+          "system": "https://fevir.net/resources/CodeSystem/179423",
+          "display": "OutcomeList"
+        }
+      },
+      {
+        "id": "List.code.text",
+        "path": "List.code.text",
+        "patternString": "Outcome List"
+      },
+      {
+        "id": "List.encounter",
+        "path": "List.encounter",
+        "max": "0"
+      },
+      {
+        "id": "List.entry.item",
+        "path": "List.entry.item",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition",
+              "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
