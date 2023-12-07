@@ -32,11 +32,11 @@ The <b>JournalArticleCitation Profile</b> includes a citedArtifact.classificatio
 
 The <b>BookCitation Profile</b> includes a citedArtifact.classification with a type value of "Knowledge Artifact Type" and a classifier value of "Book".
 
-The <b>BookPartCitation</b> includes a citedArtifact.publicationForm.publishedIn.type value of "Book" and a citedArtifact.classification with a type value of "Knowledge Artifact Type" and a classifier value of "Book Part".
+The <b>BookPartCitation Profile</b> includes a citedArtifact.publicationForm.publishedIn.type value of "Book" and a citedArtifact.classification with a type value of "Knowledge Artifact Type" and a classifier value of "Book Part".
 
 The <b>DatabaseCitation Profile</b> includes a citedArtifact.classification with a type value of "Knowledge Artifact Type" and a classifier value of "Database".
   
-The <b>DatabaseEntryCitation</b> includes a citedArtifact.publicationForm.publishedIn.type value of "Database" and a citedArtifact.classification with a type value of "Knowledge Artifact Type" and a classifier value of "Database Entry".
+The <b>DatabaseEntryCitation Profile</b> includes a citedArtifact.publicationForm.publishedIn.type value of "Database" and a citedArtifact.classification with a type value of "Knowledge Artifact Type" and a classifier value of "Database Entry".
 
 The <b>DatasetCitation Profile</b> includes a citedArtifact.classification with a type value of "Knowledge Artifact Type" and a classifier value of "Dataset".
 

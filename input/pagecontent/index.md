@@ -75,6 +75,18 @@ Profiles of <b>Group Resource</b> include:
     - <b>EvidenceReportSubject</b> is used to define the subject of an <b>EvidenceReport</b>. A Profile of <b>EvidenceReportSubject</b> is:
       - <b>ComparativeEvidenceReportSubject</b>
 
+The <b>[Citation Resource](/citation.html)</b> enables reference to any knowledge artifact for purposes of identification and attribution. The <b>Citation Resource</b> supports existing reference structures and developing publication practices such as versioning, expressing complex contributorship roles, and referencing computable resources.
+
+Profiles of <b>Citation Resource</b> include:
+- <b>JournalArticleCitation</b>
+- <b>BookCitation</b>
+- <b>BookPartCitation</b>
+- <b>DatabaseCitation</b>
+- <b>DatabaseEntryCitation</b>
+- <b>DatasetCitation</b>
+- <b>PreprintCitation</b>
+- <b>SoftwareCitation</b>
+- <b>WebPageCitation</b>
 
 
 ### Dependencies
