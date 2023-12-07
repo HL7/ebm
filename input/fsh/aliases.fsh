@@ -1,6 +1,6 @@
 Alias: $cs-synthesis-type = http://terminology.hl7.org/CodeSystem/synthesis-type
 Alias: $cs-variable-role = http://terminology.hl7.org/CodeSystem/variable-role
-Alias: $sevco = https://fevir.net/resources/CodeSystem/27270
+Alias: $sevco = https://fevir.net/resources/CodeSystem/181513
 Alias: $recommendation-justification-classifiers = https://fevir.net/resources/CodeSystem/27834
 Alias: $cs-ebm-ig = https://fevir.net/resources/CodeSystem/179423
 Alias: $cpg-common-persona = http://hl7.org/fhir/uv/cpg/ValueSet/cpg-common-persona
