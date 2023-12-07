@@ -310,6 +310,40 @@ section.section is a repeatable BackboneElement and section.orderedBy is a Codea
 
 section.text is a Narrative datatype used for a text summary of the section. A Narrative datatype contains 2 required elements: section.text.status coded as generated, extensions, additional, or empty and section.text.div with xhtml content.
 
+### Profiles of Composition Resource
+
+The EvidenceReport Profile is used for a base structure (canonical resource management) for a report combining any number of Citation, Evidence, EvidenceVariable, EvidenceReport, and related Resources. The EvidenceReport Profile adds a number of extensions for metadata (versionAlgorithm, experimental, description, purpose,  copyrightLabel, approvalDate, lastReviewDate, and effectivePeriod). The EvidenceReport Profile sets the Composition.type.coding value to an "EvidenceReport" coding. The EvidenceReport Profile limits the number of subject elements to 1 and limits the resource types that can be referenced as the subject to Citation, Classification, EvidenceReportSubject, or ResearchStudy. The Composition.attester.mode element uses a CodeableConcept datatype and a Contributor Role Value Set is provided with preferred binding to include concepts for reviewer, editor, endorser, informant, and funder. An EvidenceReport Section Code Value Set is provided with extensible binding for the section.code elements.
+
+The ComparativeEvidenceReport Profile is a Profile of EvidenceReport and is used for an evidence report including the study group, exposure, comparator, and findings for any number of outcomes comparing the exposure to the comparator in the study group. A category element instance expresses that the composition is a "Comparative Evidence Report" and additional category element instances may be used.
+
+..A 'Population' section is required with entries limited to reference StudyGroup Profile.
+
+..An 'Intervention' section is required with 2 contained sections. The 'Intervention' section may be repeated. An 'Intervention Description' section is required with entries limited to reference ExposureDefinition Profile. An 'Intervention Group' section is required with entries limited to reference ExposureGroup Profile.
+
+..A 'Comparator' section is required with 2 contained sections. A 'Comparator Description' section is required with entries limited to reference ComparatorDefinition Profile or ExposureDefinition Profile. A 'Comparator Group' section is required with entries limited to reference ComparatorGroup Profile or ExposureGroup Profile.
+
+..A 'Study Design' section is required with entries limited to reference ResearchStudy Resource or Classification Profile.
+
+..A 'Baseline Measures' section is optional. The 'Baseline Measures' section contains one or more sections with each of these sections identified by focus (Composition.section[baseline].section.focus) which references a VariableDefinition Profile. Each of these focused sections contain one or more of the following sections:
+
+....Composition.section[baseline].section.section[comparatorEvidence] has a section.code value for 'Evidence with comparator alone' and entries limited to a single reference of a BaselineMeasureEvidence Profile.
+....Composition.section[baseline].section.section[interventionEvidence] has a section.code value for 'Evidence with intervention alone' and entries limited to a single reference of a BaselineMeasureEvidence Profile.
+....Composition.section[baseline].section.section[totalGroup] has a section.code value for 'Evidence with total group' and entries limited to a single reference of a BaselineMeasureEvidence Profile.
+....Composition.section[baseline].section.section[comparativeEvidence] has a section.code value for 'Evidence with intervention vs. comparator' and entries limited to a single reference of a ComparativeBaselineMeasureEvidence Profile.
+
+..A 'Participant Flow' section is optional. The 'Participant Flow' section contains one or more sections with each of these sections identified by focus (Composition.section[flow].section.focus) which references a ParticipantFlowMeasure Profile. Each of these focused sections contain one or more of the following sections:
+
+....Composition.section[flow].section.section[comparatorEvidence] has a section.code value for 'Evidence with comparator alone' and entries limited to a single reference of a ParticipantFlow Profile.
+....Composition.section[flow].section.section[interventionEvidence] has a section.code value for 'Evidence with intervention alone' and entries limited to a single reference of a ParticipantFlow Profile.
+....Composition.section[flow].section.section[totalGroup] has a section.code value for 'Evidence with total group' and entries limited to a single reference of a ParticipantFlow Profile.
+....Composition.section[flow].section.section[comparativeEvidence] has a section.code value for 'Evidence with intervention vs. comparator' and entries limited to a single reference of a ComparativeParticipantFlow Profile.
+
+..An 'Outcome Measures' section is required. The 'Outcome Measures' section contains one or more sections with each of these sections identified by focus (Composition.section[outcomes].section.focus) which references a VariableDefinition Profile. Each of these focused sections contain one or more of the following sections:
+
+....Composition.section[outcomes].section.section[comparatorEvidence] has a section.code value for 'Evidence with comparator alone' and entries limited to a single reference of a ComparatorOnlyEvidence Profile.
+....Composition.section[outcomes].section.section[interventionEvidence] has a section.code value for 'Evidence with intervention alone' and entries limited to a single reference of a InterventionOnlyEvidence Profile.
+....Composition.section[outcomes].section.section[comparativeEvidence] has a section.code value for 'Evidence with intervention vs. comparator' and entries limited to a single reference of a ComparativeEvidence Profile.
+
 
 ### Dependencies
 
