@@ -240,6 +240,10 @@ The ArtifactAssessment Resource represents one or more assessments of another re
 
 The ArtifactAssessment Resource provides a structure to communicate judgments or qualitative data about a record (a resource or other set of data with a known identity or URL by which it can be accessed), including comments, corrections, classifications, and ratings. The ArtifactAssessment Resource is used when the content attribution and management rights differ from the record being commented upon, or the commenter desires to separate the comments from the target record. The scope is intended to cover assessments (added information) regarding clinical records about individual human subjects, assessments (added information) regarding healthcare provision for individual persons (such as care plans), and assessments (added information) regarding records related to community knowledge such as scientific evidence and group-oriented guidance.
 
+The artifact[x] element is required and uses a Reference, canonical, or uri datatype to express the single artifact that the assessment is about.
+
+The content element is a BackboneElement and repeatable recursively with a component element. Each content element may contain any of informationType (a code to classify the content unit), summary (a markdown comment), type (a CodeableConcept to classify the type of content), classifier (an array of CodeableConcept for the classifier values), quantity (a Quantity for the classifier value), author (a Reference to the creator of the content), path (an array of uri values if the content is about a part of the artifact[x]), relatedArtifact (an array of RelatedArtifact), freeToShare (a boolean), and component (an array of BackBoneElement using the content structure).
+
 ArtifactAssessment is about the content of a Resource and not about the provenance of the Resource so should not be confused with Provenance.
 
 ArtifactAssessment is not used for communications that are not about a Resource so should not be confused with Communication or Composition (or profiles of Composition) which may be used for the primary communication about the subject matter.
@@ -276,7 +280,36 @@ The Comparison Profile is a Profile of Adaptation that is used for assessments o
 
 ### Understanding the Composition Resource
 
-Replace with content.
+The Composition Resource is a structure for grouping information for purposes of persistence and attestability. The Composition Resource provides the basic structure for a FHIR document. The full content of the document is expressed using a Bundle Resource containing the Composition and its entries (which are references to other FHIR Resources).
+
+Metadata elements in the Composition Resource that are similar to other Resources include url, identifier, version, status (which has different codes than the status used in other Resources), date, useContext, author (which uses a Reference datatype), name, title, and note.
+
+Composition.type is required and uses a CodeableConcept datatype. Composition.category is optional and uses an array of CodeableConcept datatype.
+
+Composition.subject is optional and uses an array of Reference to express what the composition is about. Composition.encounter is optional and uses a single Reference to an Encounter Resource (this is common in health data exchange and uncommon in science data exchange).
+
+Composition.attester is a repeatable BackboneElement that is similar conceptually to reviewer, editor, and endorser elements used in other Resources.
+
+Composition.custodian is optional and references an Organization Resource to represent the 'publisher' of the composition.
+
+Composition.relatesTo is similar to Resource.relatedArtifact used in other Resources.
+
+Composition.event is a repeatable BackboneElement to represent the clinical service(s) being documented and is not expected to be used commonly in the EBMonFHIR Implementation Guide.
+
+Composition.section is a repeatable and recursive BackboneElement that contains all the content of the composition.
+
+Identifiers of a composition section include section.title (string datatype), section.code (CodeableConcept datatype), and section.focus (Reference datatype).
+
+Metadata about the composition section include section.author (repeatable Reference datatype) and emptyReason (CodeableConcept datatype).
+
+The content of a section may be found in text, entry, and/or section elements.
+
+section.entry is a repeatable Reference.
+
+section.section is a repeatable BackboneElement and section.orderedBy is a CodeableConcept to specify the order of section entries.
+
+section.text is a Narrative datatype used for a text summary of the section. A Narrative datatype contains 2 required elements: section.text.status coded as generated, extensions, additional, or empty and section.text.div with xhtml content.
+
 
 ### Dependencies
 
