@@ -53,6 +53,27 @@ Profiles of <b>Evidence Resource</b> include:
   - <b>EndpointAnalysisPlan</b>
   - <b>NetEffectEstimate</b> 
 
+The <b>[EvidenceVariable Resource](/evidencevariable.html)</b> describes a single variable used in a statistical analysis.
+
+Profiles of <b>EvidenceVariable Resource</b> include:
+- <b>VariableDefinition</b> is a base for all other EvidenceVariable Profiles. Profiles of <b>VariableDefinition</b> include:
+  - <b>GroupAssignment</b>
+  - <b>ParticipantFlowMeasure</b>
+
+The <b>[Group Resource](/group.html)</b> represents a defined collection of entities. The group may be enumerated, meaning that there is a known quantity of group members with or without a listing of the group members. The group may be definitional, meaning there is a structured representation of the characteristics (criteria) that define membership eligiblity, or who or what matches the criteria to be considered a member of the group.
+
+Profiles of <b>Group Resource</b> include:
+- <b>GroupR6</b> is a base for all other Group Profiles. Profiles of <b>GroupR6</b> include:
+  - <b>StudyGroup</b>
+  - <b>ExposureGroup</b>
+  - <b>ComparatorGroup</b>
+  - <b>MetaanalysisStudyGroup</b>
+  - <b>NetEffectContributions</b>
+  - <b>CohortDefinition</b> -- Profiles of <b>CohortDefinition</b> include:
+    - Profiles of <b>CohortDefinition</b> used for the inclusion and exclusion criteria of specific conceptual types of groups include <b>StudyEligibilityCriteria</b> (for a research study), <b>RecommendationEligibilityCriteria</b> (for a clinical practice guideline recommendation), <b>SystematicReviewEligibilityCriteria</b> (for a systematic review), <b>MetaanalysisEligibilityCriteria</b> (for a statistical meta-analysis), and <b>SearchStrategy</b> (for a literature search). These Profiles are not currently structurally different than <b>CohortDefinition</b> but are separated for future development in case of specialized developments for eligibility criteria.
+    - <b>ExposureDefinition</b>, <b>ComparatorDefinition</b>, <b>OutcomeDefinition</b>, and <b>MetaanalysisOutcomeDefinition</b> are Profiles of <b>CohortDefinition</b> used for the definition of evidence variables. These Profiles are not currently structurally different than <b>CohortDefinition</b> but are separated for future development in case of specialized developments for variable definitions.
+    - <b>EvidenceReportSubject</b> is used to define the subject of an <b>EvidenceReport</b>. A Profile of <b>EvidenceReportSubject</b> is:
+      - <b>ComparativeEvidenceReportSubject</b>
 
 
 
