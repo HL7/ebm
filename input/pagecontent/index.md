@@ -36,6 +36,26 @@ The Evidence Based Medicine on FHIR (EBMonFHIR) developed Resources (<b>Artifact
 
 The <b>[Evidence Resource](/evidence.html)</b> is the central atomic component for the Evidence-related Resources. The <b>Evidence Resource</b> provides a machine-interpretable expression of an evidence concept including the evidence variables (e.g., population, exposures, outcomes, covariates), the statistics (the quantitative results of a study or statistical analysis), and the certainty of this evidence.
 
+Profiles of <b>Evidence Resource</b> include:
+
+- <b>EvidenceR6</b> is a base for all other Evidence Profiles. Profiles of <b>EvidenceR6</b> include:
+  - <b>SingleStudyEvidence</b>
+  - <b>EvidenceSynthesisEvidence</b>
+  - <b>NonComparativeEvidence</b> -- Profiles of <b>NonComparativeEvidence</b> include:
+    - <b>ComparatorOnlyEvidence</b>
+    - <b>InterventionOnlyEvidence</b>
+    - <b>BaselineMeasureEvidence</b>
+    - <b>ParticipantFlow</b>
+  - <b>ComparativeEvidence</b> -- Profiles of <b>ComparativeEvidence</b> include:
+    - <b>ComparativeBaselineMeasureEvidence</b>
+    - <b>ComparativeParticipantFlow</b>
+    - <b>NetEffectContribution</b>
+  - <b>EndpointAnalysisPlan</b>
+  - <b>NetEffectEstimate</b> 
+
+
+
+
 ### Dependencies
 
 {% include dependency-table-short.xhtml %}

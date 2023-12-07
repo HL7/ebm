@@ -28,7 +28,7 @@ The certainty BackboneElement provides a machine-interpretable expression of cer
 
 The <b>EvidenceR6 Profile</b> is a base for all other Evidence Profiles. The <b>EvidenceR6 Profile</b> adds 3 extensions to variableDefinition (variableRoleCode 1..1, roleSubtype 0..1, and comparatorCategory 0..1), 1 extension to statistic (modelExpression 0..1), 6 extensions to statistic.modelCharacteristic, and 1 extension to statistic.modelCharacteristic.variable
 
-The <b>SingleStudyEvidence Profile</b> simply provide a "not applicable" value for the synthesisType element.
+The <b>SingleStudyEvidence Profile</b> simply provides a "not applicable" value for the synthesisType element.
 
 The <b>EvidenceSynthesisEvidence Profile</b> is used for evidence that is combined from two or more studies, and requires use of the synthesisType element to express the method by which evidence was synthesized.
 
