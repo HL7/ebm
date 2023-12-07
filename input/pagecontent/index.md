@@ -292,7 +292,7 @@ Composition.attester is a repeatable BackboneElement that is similar conceptuall
 
 Composition.custodian is optional and references an Organization Resource to represent the 'publisher' of the composition.
 
-Composition.relatesTo is similar to Resource.relatedArtifact used in other Resources.
+Composition.relatesTo is similar to Resource.relatedArtifact used in other Resources. In compositions used for scientific knowledge exchange, there is often a desire to inform the reader how to cite the composition. The relatesTo element may have an instance with a type of "cite-as" to represent how to cite the composition.
 
 Composition.event is a repeatable BackboneElement to represent the clinical service(s) being documented and is not expected to be used commonly in the EBMonFHIR Implementation Guide.
 
@@ -327,23 +327,50 @@ The ComparativeEvidenceReport Profile is a Profile of EvidenceReport and is used
 ..A 'Baseline Measures' section is optional. The 'Baseline Measures' section contains one or more sections with each of these sections identified by focus (Composition.section[baseline].section.focus) which references a VariableDefinition Profile. Each of these focused sections contain one or more of the following sections:
 
 ....Composition.section[baseline].section.section[comparatorEvidence] has a section.code value for 'Evidence with comparator alone' and entries limited to a single reference of a BaselineMeasureEvidence Profile.
+
 ....Composition.section[baseline].section.section[interventionEvidence] has a section.code value for 'Evidence with intervention alone' and entries limited to a single reference of a BaselineMeasureEvidence Profile.
+
 ....Composition.section[baseline].section.section[totalGroup] has a section.code value for 'Evidence with total group' and entries limited to a single reference of a BaselineMeasureEvidence Profile.
+
 ....Composition.section[baseline].section.section[comparativeEvidence] has a section.code value for 'Evidence with intervention vs. comparator' and entries limited to a single reference of a ComparativeBaselineMeasureEvidence Profile.
 
 ..A 'Participant Flow' section is optional. The 'Participant Flow' section contains one or more sections with each of these sections identified by focus (Composition.section[flow].section.focus) which references a ParticipantFlowMeasure Profile. Each of these focused sections contain one or more of the following sections:
 
 ....Composition.section[flow].section.section[comparatorEvidence] has a section.code value for 'Evidence with comparator alone' and entries limited to a single reference of a ParticipantFlow Profile.
+
 ....Composition.section[flow].section.section[interventionEvidence] has a section.code value for 'Evidence with intervention alone' and entries limited to a single reference of a ParticipantFlow Profile.
+
 ....Composition.section[flow].section.section[totalGroup] has a section.code value for 'Evidence with total group' and entries limited to a single reference of a ParticipantFlow Profile.
+
 ....Composition.section[flow].section.section[comparativeEvidence] has a section.code value for 'Evidence with intervention vs. comparator' and entries limited to a single reference of a ComparativeParticipantFlow Profile.
 
 ..An 'Outcome Measures' section is required. The 'Outcome Measures' section contains one or more sections with each of these sections identified by focus (Composition.section[outcomes].section.focus) which references a VariableDefinition Profile. Each of these focused sections contain one or more of the following sections:
 
 ....Composition.section[outcomes].section.section[comparatorEvidence] has a section.code value for 'Evidence with comparator alone' and entries limited to a single reference of a ComparatorOnlyEvidence Profile.
+
 ....Composition.section[outcomes].section.section[interventionEvidence] has a section.code value for 'Evidence with intervention alone' and entries limited to a single reference of a InterventionOnlyEvidence Profile.
+
 ....Composition.section[outcomes].section.section[comparativeEvidence] has a section.code value for 'Evidence with intervention vs. comparator' and entries limited to a single reference of a ComparativeEvidence Profile.
 
+The Guideline Profile is a Profile of EvidenceReport and is used for the composition of a clinical practice guideline and may be tightly related to use of the Recommendation Profile for related content. A category element instance expresses that the composition is a "Guideline" and additional category element instances may be used.
+
+The Guideline Profile will have 1 to 6 section element instances with any of the following section.code concepts:  Introduction, Recommendations, Text, Methods, Acknowledgements, and Appendices. The Recommendations section will have entries which are constrained to reference the Recommendation Profile. 
+
+The Recommendation Profile is a Profile of EvidenceReport and is used for the composition of a recommendation (such as that from a clinical practice guideline) and may be tightly related to a RecommendationPlan Profile of PlanDefinition and a RecommendationJustification Profile of ArtifactAssessment. A category element instance expresses that the composition is a "Recommendation" and additional category element instances may be used.
+
+The relatesTo element will have 1 or more instances with a type of "derived-from" which may reference RecommendationJustification Profile, PlanDefinition Resource, or Composition Resource where the structured data for the source content of the composition is found.
+
+The Recommendation Profile will have 1 to 5 section element instances with any of the following section.code concepts:  Recommendation Specification, Evidence, Net Effect, Judgments, and Considerations.
+
+..The Recommendation Specification section is required and contains sections with section.code concepts for Recommendation Statement, Rating System, Strength of Recommendation, Direction of Recommendation, Ratings, Related Items, Discussion, Population, Action, Opposite Action, and Data Source.
+
+..The Evidence section contains sections with section.code concepts for Summary of Findings, Desirable Effects, Undesirable Effects, Discussion, and Data Source. The Summary of Findings, Desirable Effects, and Undesirable Effects sections contain sections with section.code concepts for Ratings and Related Items.
+
+..The Net Effect section contains sections with section.code concepts for Summary, Ratings, Related Items, Preferences, Discussion, and Data Source. The Preferences section contains sections with section.code concepts for Ratings and Related Items.
+
+..The Judgments section contains sections with section.code concepts for Justification, Problem Importance, Costs, Cost-effectiveness, Equity, Acceptability, and Feasibility.  Each of these sections contain sections with section.code concepts for Ratings and Related Items.
+
+..The Considerations section contains sections with section.code concepts for Summary, Ratings, Related Items, Subgroup Considerations, Implementation Considerations, Monitoring Considerations, Competing Interests, and Research Considerations. The Subgroup Considerations, Implementation Considerations, Monitoring Considerations, Competing Interests, and Research Considerations sections contain sections with section.code concepts for Ratings and Related Items.
 
 ### Dependencies
 
