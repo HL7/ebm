@@ -28,6 +28,14 @@ This implementation guide is based on the HL7 [FHIR](https://hl7.org/fhir/R5/ind
 
 [FHIR Validation](http://hl7.org/fhir/R5/validation.html)
 
+## FHIR Versions R5 and R6
+
+The Evidence Based Medicine on FHIR (EBMonFHIR) developed Resources (<b>ArtifactAssessment</b>, <b>Citation</b>, <b>Evidence</b>, and <b>EvidenceVariable</b>) are first ready for use in the FHIR version R5.  The FHIR version R6 includes further enhancements to these Resources. This EBMonFHIR Implementation Guide is based on FHIR version R5 and adds extensions to FHIR Resources (especially <b>Group</b>, <b>Evidence</b>, and <b>EvidenceVariable</b>) to use the features as structured in FHIR version R6.  This is expected to support smooth interoperabiltiy for EBM Resources whether implementers use R5 or R6 versions.
+
+## Resources Used in the EBMonFHIR IG
+
+The <b>[Evidence Resource](/evidence.html)</b> is the central atomic component for the Evidence-related Resources. The <b>Evidence Resource</b> provides a machine-interpretable expression of an evidence concept including the evidence variables (e.g., population, exposures, outcomes, covariates), the statistics (the quantitative results of a study or statistical analysis), and the certainty of this evidence.
+
 ### Dependencies
 
 {% include dependency-table-short.xhtml %}
