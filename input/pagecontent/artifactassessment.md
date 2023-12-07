@@ -24,44 +24,46 @@ All Profiles of <b>ArtifactAssessment</b> include extensions for url, descriptio
 
 ### Comment Profile of ArtifactAssessment Resource
 
-The <b>Comment Profile</b> is used for comments about a Resource that may be created independently from Resource creators. <b>Comment</b> content will most commonly be expressed in ArtifactAssessment.content.summary elements.
+The **[Comment Profile][Comment]** is used for comments about a Resource that may be created independently from Resource creators. **[Comment][Comment]** content will most commonly be expressed in ArtifactAssessment.content.summary elements.
 
 ### Classification Profile of ArtifactAssessment Resource
 
-The <b>Classification Profile</b> is used for classifier tags that may be created independently from Resource creators and may be used for search indexes. <b>Classification</b> content will most commonly be expressed using ArtifactAssessment.content.type and ArtifactAssessment.content.classifier elements.
+The **[Classification Profile][Classification]** is used for classifier tags that may be created independently from Resource creators and may be used for search indexes. **[Classification][Classification]** content will most commonly be expressed using ArtifactAssessment.content.type and ArtifactAssessment.content.classifier elements.
 
 ### Rating Profile of ArtifactAssessment Resource
 
-The <b>Rating Profile</b> is used for classifier tags that may include quantitative ratings and may be created independently from Resource creators. <b>Rating</b> content will most commonly be expressed using ArtifactAssessment.content.type and ArtifactAssessment.content.classifier or ArtifactAssessment.content.quantity elements.
+The **[Rating Profile][Rating]** is used for classifier tags that may include quantitative ratings and may be created independently from Resource creators. **[Rating][Rating]** content will most commonly be expressed using ArtifactAssessment.content.type and ArtifactAssessment.content.classifier or ArtifactAssessment.content.quantity elements.
 
 ### DateAsRating Profile of ArtifactAssessment Resource
 
-The <b>DateAsRating Profile</b> is a Profile of <b>Classification</b> that is used for representing a date or dateTime as a classifier value. An extension to ArtifactAssessment.content provides the dateAsRating value with a dateTime datatype.
+The **[DateAsRating Profile][DateAsRating]** is a Profile of **[Classification][Classification]** that is used for representing a date or dateTime as a classifier value. An extension to ArtifactAssessment.content provides the dateAsRating value with a dateTime datatype.
 
 ### CertaintyOfEvidence Profile of ArtifactAssessment Resource
 
-The <b>CertaintyOfEvidence Profile</b> is used for expression of the certainty (also called quality or confidence in the estimates) of an Evidence artifact.
+The **[CertaintyOfEvidence Profile][CertaintyOfEvidence]** is used for expression of the certainty (also called quality or confidence in the estimates) of an Evidence artifact.
 
 ### RiskOfBias Profile of ArtifactAssessment Resource
 
-The <b>RiskOfBias Profile</b> is used for expression of the assessment of the threats to validity (or risk of bias) of an Evidence artifact or an artifact consisting of Evidence or the plan to create Evidence.
+The **[RiskOfBias Profile][RiskOfBias]** is used for expression of the assessment of the threats to validity (or risk of bias) of an Evidence artifact or an artifact consisting of Evidence or the plan to create Evidence.
 
 ### RecommendationJustification Profile of ArtifactAssessment Resource
 
-The <b>RecommendationJustification Profile</b> is used for expressing the rationale, evidence, and judgments supporting a recommendation, such as from a clinical practice guideline.
+The **[RecommendationJustification Profile][RecommendationJustification]** is used for expressing the rationale, evidence, and judgments supporting a recommendation, such as from a clinical practice guideline.
 
 ### OutcomeImportance Profile of ArtifactAssessment Resource
 
-The <b>OutcomeImportance Profile</b> is used for expression of the relative importance of an outcome. The outcome is typically expressed with an <b>EvidenceVariable Resource</b> and may use the <b>VariableDefinition Profile</b> of EvidenceVariable (or <b>OutcomeDefinition Profile</b> of Group). The ArtifactAssessment.content.quantity.value element is described with "The value must be 0 (no importance) or a positive decimal. The value of 100 represents the importance of the reference outcome. A value greater than 100 represents exceptionally high importance that is higher than the importance of the reference outcome." and the ArtifactAssessment.content.quantity.unit element is set to "%".
+The **[OutcomeImportance Profile][OutcomeImportance]** is used for expression of the relative importance of an outcome. The outcome is typically expressed with an <b>EvidenceVariable Resource</b> and may use the **[VariableDefinition Profile][VariableDefinition]** of EvidenceVariable (or **[OutcomeDefinition Profile][OutcomeDefinition]** of Group). The ArtifactAssessment.content.quantity.value element is described with "The value must be 0 (no importance) or a positive decimal. The value of 100 represents the importance of the reference outcome. A value greater than 100 represents exceptionally high importance that is higher than the importance of the reference outcome." and the ArtifactAssessment.content.quantity.unit element is set to "%".
 
 ### CompositeRating Profile of ArtifactAssessment Resource
 
-The <b>CompositeRating Profile</b> is used for a composite rating or classification of a Resource that may be created following ratings or classifications by two or more parties.
+The **[CompositeRating Profile][CompositeRating]** is used for a composite rating or classification of a Resource that may be created following ratings or classifications by two or more parties.
 
 ### Adaptation Profile of ArtifactAssessment Resource
 
-The <b>Adaptation Profile</b> is used for assessments of a knowledge artifact that are used to create a new knowledge artifact through acceptance, rejection or modification of the assessed artifact.
+The **[Adaptation Profile][Adaptation]** is used for assessments of a knowledge artifact that are used to create a new knowledge artifact through acceptance, rejection or modification of the assessed artifact.
 
 ### Comparison Profile of ArtifactAssessment Resource
 
-The <b>Comparison Profile</b> is a Profile of <b>Adaptation</b> that is used for assessments of similarities and differences between knowledge artifacts.
+The **[Comparison Profile][Comparison]** is a Profile of **[Adaptation][Adaptation]** that is used for assessments of similarities and differences between knowledge artifacts.
+
+{% include link-list.md %}

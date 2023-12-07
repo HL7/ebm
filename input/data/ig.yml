@@ -1,0 +1,2883 @@
+contact:
+- name: HL7 International - Clinical Decision Support WG
+  telecom:
+  - system: url
+    value: http://www.hl7.org/Special/committees/dss
+definition:
+  page:
+    generation: html
+    name: toc.html
+    page:
+    - generation: markdown
+      name: index.html
+      sourceUrl: index.html
+      title: Introduction
+    - generation: markdown
+      name: evidence.html
+      sourceUrl: evidence.html
+      title: Evidence Profiles
+    - generation: markdown
+      name: evidencevariable.html
+      sourceUrl: evidencevariable.html
+      title: EvidenceVariable Profiles
+    - generation: markdown
+      name: group.html
+      sourceUrl: group.html
+      title: Group Profiles
+    - generation: markdown
+      name: citation.html
+      sourceUrl: citation.html
+      title: Citation Profiles
+    - generation: markdown
+      name: artifactassessment.html
+      sourceUrl: artifactassessment.html
+      title: ArtifactAssessment Profiles
+    - generation: markdown
+      name: composition.html
+      sourceUrl: composition.html
+      title: Composition Profiles
+    - generation: markdown
+      name: otherprofiles.html
+      sourceUrl: otherprofiles.html
+      title: Other Profiles
+    - generation: markdown
+      name: profiles.html
+      sourceUrl: profiles.html
+      title: Profiles
+    - generation: markdown
+      name: extensions.html
+      sourceUrl: extensions.html
+      title: Extensions
+    - generation: markdown
+      name: terminologies.html
+      sourceUrl: terminologies.html
+      title: Terminologies
+    - generation: markdown
+      name: examples.html
+      sourceUrl: examples.html
+      title: Examples
+    sourceUrl: toc.html
+    title: Table of Contents
+  parameter:
+  - code:
+      code: copyrightyear
+      system: http://hl7.org/fhir/tools/CodeSystem/ig-parameters
+    value: 2022+
+  - code:
+      code: releaselabel
+      system: http://hl7.org/fhir/tools/CodeSystem/ig-parameters
+    value: ci-build
+  - code:
+      code: path-history
+      system: http://hl7.org/fhir/tools/CodeSystem/ig-parameters
+    value: https://hl7.org/fhir/uv/ebm/history.html
+  resource:
+  - description: 'COVID-19 pneumonia remdesivir vs. placebo 14-day mortality (779
+      events among 6,744 participants, 3 randomized trials)
+
+      Risk ratio 0.85 (95% CI 0.74 to 0.96) in fixed-effect analysis
+
+      Risk ratio 0.81 (95% CI 0.60 to 1.08) in random-effects analysis'
+    isExample: true
+    name: 14-day mortality remdesivir vs placebo meta-analysis (ACTT-1, Wang et al,
+      WHO SOLIDARITY)
+    reference:
+      reference: Evidence/55
+  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: '14706014 Chemohormonal therapy as primary treatment for metastatic prostate
+      cancer: a randomized study of estramustine phosphate plus luteinizing hormone-releasing
+      hormone agonist versus flutamide plus luteinizing hormone-releasing hormone
+      agonist.'
+    reference:
+      reference: Citation/179628
+  - description: This is an example describing the Boots Finger Pulse Oximeter for
+      use in an example of Group.characteristic.determinedByReference and does not
+      contain substantial detail as the focus is not the expression of device definition
+      details.
+    isExample: true
+    name: '179899'
+    reference:
+      reference: DeviceDefinition/179899
+  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: 18160893 Wonder woman. Like my childhood heroine, Mrs. Betty also had amazing
+      powers.
+    reference:
+      reference: Citation/179602
+  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: 18508207 A Phase 3 placebo-controlled, double-blind, multi-site trial of
+      the alpha-2-adrenergic agonist, lofexidine, for opioid withdrawal.
+    reference:
+      reference: Citation/179637
+  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: 19029421 Phase III trial of androgen ablation with or without three cycles
+      of systemic chemotherapy for advanced prostate cancer.
+    reference:
+      reference: Citation/179631
+  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: '19091394 Endocrine treatment, with or without radiotherapy, in locally
+      advanced prostate cancer (SPCG-7/SFUO-3): an open randomised phase III trial.'
+    reference:
+      reference: Citation/179627
+  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: 19967827 Wonder woman was Argentine and her real name was Evita.
+    reference:
+      reference: Citation/179603
+  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: '22056152 Combined androgen deprivation therapy and radiation therapy for
+      locally advanced prostate cancer: a randomised, phase 3 trial.'
+    reference:
+      reference: Citation/179626
+  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: '22502942 Addition of radiotherapy to long-term androgen deprivation in
+      locally advanced prostate cancer: an open randomised phase 3 trial.'
+    reference:
+      reference: Citation/179625
+  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: '23306100 Androgen-deprivation therapy alone or with docetaxel in non-castrate
+      metastatic prostate cancer (GETUG-AFU 15): a randomised, open-label, phase 3
+      trial.'
+    reference:
+      reference: Citation/179615
+  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: 23452809 Long-term follow-up of a phase II trial of chemotherapy plus hormone
+      therapy for biochemical relapse after definitive local therapy for prostate
+      cancer.
+    reference:
+      reference: Citation/179623
+  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: 23604530 A phase II trial of androgen deprivation therapy (ADT) plus chemotherapy
+      as initial treatment for local failures or advanced prostate cancer.
+    reference:
+      reference: Citation/179629
+  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: 24598155 Long-term results of a phase II study with neoadjuvant docetaxel
+      chemotherapy and complete androgen blockade in locally advanced and high-risk
+      prostate cancer.
+    reference:
+      reference: Citation/179624
+  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: '25301760 Survival with Newly Diagnosed Metastatic Prostate Cancer in the
+      "Docetaxel Era": Data from 917 Patients in the Control Arm of the STAMPEDE Trial
+      (MRC PR08, CRUK/06/019).'
+    reference:
+      reference: Citation/179617
+  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: 26002607 Should docetaxel be standard of care for patients with metastatic
+      hormone-sensitive prostate cancer? Pro and contra.
+    reference:
+      reference: Citation/179622
+  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: '26028518 Androgen deprivation therapy plus docetaxel and estramustine versus
+      androgen deprivation therapy alone for high-risk localised prostate cancer (GETUG
+      12): a phase 3 randomised controlled trial.'
+    reference:
+      reference: Citation/179621
+  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: 26092557 Feasibility study of a randomized controlled trial comparing docetaxel
+      chemotherapy and androgen deprivation therapy with sequential prostatic biopsies
+      from patients with advanced non-castration-resistant prostate cancer.
+    reference:
+      reference: Citation/179630
+  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: 26244877 Chemohormonal Therapy in Metastatic Hormone-Sensitive Prostate
+      Cancer.
+    reference:
+      reference: Citation/179616
+  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: '27222544 Metabolic Surgery in the Treatment Algorithm for Type 2 Diabetes:
+      A Joint Statement by International Diabetes Organizations.'
+    reference:
+      reference: Citation/33089
+  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: '27308831 Efficacy and Safety of Combined Androgen Deprivation Therapy (ADT)
+      and Docetaxel Compared with ADT Alone for Metastatic Hormone-Naive Prostate
+      Cancer: A Systematic Review and Meta-Analysis.'
+    reference:
+      reference: Citation/179613
+  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: 29114761 Web Exclusives. Annals Story Slam - How Wonder Woman Became My
+      Alter Ego.
+    reference:
+      reference: Citation/179601
+  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: 29114762 Web Exclusives. Annals Story Slam - Wonder Woman Is a Cartoon Character.
+    reference:
+      reference: Citation/179600
+  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: '29202628 "I Kinda Feel Like Wonder Woman": An Interpretative Phenomenological
+      Analysis of Pole Fitness and Positive Body Image.'
+    reference:
+      reference: Citation/179599
+  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: 29357271 Using Hawkeye from the Avengers to communicate on the eye.
+    reference:
+      reference: Citation/179598
+  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: '29694275 A regressive formula of perversity: Wertham and the women of comics.'
+    reference:
+      reference: Citation/179597
+  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: '29694302 Introduction: "Suffering Sappho!": Lesbian content and queer female
+      characters in comics.'
+    reference:
+      reference: Citation/179596
+  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: 30467172 Finding my inner Wonder Woman.
+    reference:
+      reference: Citation/179595
+  - description: Study results (Evidence Resources) included in Mean difference in
+      HbA1c effect of bariatric surgery in 2016 meta-analysis
+    isExample: true
+    name: '33395'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group
+    reference:
+      reference: Group/33395
+  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: 34871555 What Can Wonder Woman Teach Radiologists?
+    reference:
+      reference: Citation/179594
+  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: '35243488 Bariatric surgery and cardiovascular disease: a systematic review
+      and meta-analysis.'
+    reference:
+      reference: Citation/33399
+  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: '36491989 Another Georgia Wonder Woman: She Does More Astounding Tricks
+      Than Did Lula Hurst.'
+    reference:
+      reference: Citation/179605
+  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: '6907780 Career guide: to change what needs changing...doesn''t take Wonder
+      Woman.'
+    reference:
+      reference: Citation/179604
+  - description: Profile of ArtifactAssessment for Evidence Based Medicine IG. The
+      Adaptation Profile is used for assessments of a knowledge artifact that are
+      used to create a new knowledge artifact through acceptance, rejection or modification
+      of the assessed artifact.
+    isExample: false
+    name: Adaptation
+    reference:
+      reference: StructureDefinition/adaptation
+  - description: An example of an EndpointAnalysisPlan Profile which uses intended='true'
+      and include-if extensions within Evidence.statistic.modelCharacteristic elements.
+    isExample: true
+    name: ADAS-Cog(11) EndpointAnalysisPlan from PHUSE Lilly Redacted Protocol - EBMonFHIR
+      IG Version
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/endpoint-analysis-plan
+    reference:
+      reference: Evidence/179683
+  - description: The peer-reviewed report for combination of 3 adaptive RCTs
+    isExample: true
+    name: Anticoagulation for COVID-19 Combined RCTs in NEJM
+    reference:
+      reference: Citation/7636
+  - description: When the resource was approved by publisher.
+    isExample: false
+    name: ArtifactApprovalDate
+    reference:
+      reference: StructureDefinition/artifact-approvalDate
+  - description: The artifact being compared to the referenced artifact.
+    isExample: false
+    name: ArtifactAssessmentCompared
+    reference:
+      reference: StructureDefinition/artifact-assessment-compared
+  - description: A date or dateTime value as the classifier or rating value.
+    isExample: false
+    name: ArtifactAssessmentDateAsRating
+    reference:
+      reference: StructureDefinition/artifact-assessment-date-as-rating
+  - description: The period during which the resource content was or is planned to
+      be in active use.
+    isExample: false
+    name: ArtifactEffectivePeriod
+    reference:
+      reference: StructureDefinition/artifact-effectivePeriod
+  - description: When the resource was approved by publisher.
+    isExample: false
+    name: ArtifactLastReviewDate
+    reference:
+      reference: StructureDefinition/artifact-lastReviewDate
+  - description: "Inclusion Criteria: [[1]] Adults. [[2]] Diagnosed with type 2 diabetes.\
+      \ [[3]] Body Mass Index (BMI) \u2265 40.0 kg/m2 (BMI \u2265 37.5 kg/m2 in Asian\
+      \ Americans), or BMI \u2265 35.0 kg/m2 and \u2264 39.9 kg/m2 (BMI 32.5-37.4\
+      \ kg/m2 in Asian Americans) who do not achieve durable weight loss and improvement\
+      \ in comorbidities (including hyperglycemia) with nonsurgical methods. [[4]]\
+      \ Screened surgical candidates."
+    isExample: true
+    name: Bariatric_Surgery_Eligibility_Group_ADA_Recommendation_8_16
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-eligibility-criteria
+    reference:
+      reference: Group/32139
+  - description: "Inclusion Criteria: [[1]] Adults. [[2]] Diagnosed with type 2 diabetes.\
+      \ [[3]] Body Mass Index (BMI) \u2265 30.0 kg/m2 and \u2264 34.9 kg/m2 (BMI 27.5-32.4\
+      \ kg/m2 in Asian Americans) who do not achieve durable weight loss and improvement\
+      \ in comorbidities (including hyperglycemia) with nonsurgical methods. [[4]]\
+      \ Screened surgical candidates."
+    isExample: true
+    name: Bariatric_Surgery_Eligibility_Group_ADA_Recommendation_8_17
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-eligibility-criteria
+    reference:
+      reference: Group/179511
+  - description: Any of 4 bariatric surgery procedures (Roux-en-Y Gastric Bypass,
+      Vertical Sleeve Gastrectomy, Laparoscopic Adjustable Gastric banding, Biliopancreatic
+      Diversion)
+    isExample: true
+    name: Bariatric_Surgery_RYGB_VSG_LAGB_BPD
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-definition
+    reference:
+      reference: Group/172423
+  - description: Profile of Evidence for Evidence Based Medicine IG. The BaselineMeasureEvidence
+      Profile is used for evidence with a measured variable (with the role of outcome
+      for this Evidence) that is considered an independent variable with respect to
+      the outcome of an exposure or intervention in a study.
+    isExample: false
+    name: BaselineMeasureEvidence
+    reference:
+      reference: StructureDefinition/baseline-measure-evidence
+  - description: Age in Medical Group (n = 956) mean 45.7 years, SD 13.5 years
+    isExample: true
+    name: 'BaselineMeasureEvidence: Age in 2018 Norwegian Cohort Medical Group'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/baseline-measure-evidence
+    reference:
+      reference: Evidence/179451
+  - description: Age in Surgical Group (n = 932) mean 41.2 years, SD 10.5 years
+    isExample: true
+    name: 'BaselineMeasureEvidence: Age in 2018 Norwegian Cohort Surgical Group'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/baseline-measure-evidence
+    reference:
+      reference: Evidence/179452
+  - description: BMI in Medical Group (n = 956) mean 42.9 kg/m2, SD 5.7 kg/m2
+    isExample: true
+    name: 'BaselineMeasureEvidence: BMI in 2018 Norwegian Cohort Medical Group'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/baseline-measure-evidence
+    reference:
+      reference: Evidence/179458
+  - description: BMI in Surgical Group (n = 932) mean 45.4 kg/m2, SD 6.2 kg/m2
+    isExample: true
+    name: 'BaselineMeasureEvidence: BMI in 2018 Norwegian Cohort Surgical Group'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/baseline-measure-evidence
+    reference:
+      reference: Evidence/179457
+  - description: Profile of Citation for Evidence Based Medicine IG. The BookCitation
+      Profile is used for citations of a book.
+    isExample: false
+    name: BookCitation
+    reference:
+      reference: StructureDefinition/book-citation
+  - description: An example to map the BookCitation Profile
+    isExample: true
+    name: 'BookCitation: Crossing the Quality Chasm: A New Health System for the 21st
+      Century'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/book-citation
+    reference:
+      reference: Citation/121719
+  - description: Profile of Citation for Evidence Based Medicine IG. The BookPartCitation
+      Profile is used for citations of a part of a book.
+    isExample: false
+    name: BookPartCitation
+    reference:
+      reference: StructureDefinition/book-part-citation
+  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: 'BookPartCitation: Chapter 3 of Crossing the Quality Chasm: A New Health
+      System for the 21st Century'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/book-part-citation
+    reference:
+      reference: Citation/139859
+  - description: An example to map the BookCitation Profile
+    isExample: true
+    name: 'BookPartCitation: Chapter 3 of Crossing the Quality Chasm: A New Health
+      System for the 21st Century - without baseCitation'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/book-part-citation
+    reference:
+      reference: Citation/139860
+  - isExample: true
+    name: Certainty of Evidence Rating of 14-day mortality remdesivir vs placebo meta-analysis
+      (ACTT-1, Wang et al, WHO SOLIDARITY)
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/certainty-of-evidence
+    reference:
+      reference: ArtifactAssessment/179693
+  - description: Profile of ArtifactAssessment for Evidence Based Medicine IG. The
+      CertaintyOfEvidence Profile is used for expression of the certainty (also called
+      quality or confidence in the estimates) of an Evidence artifact.
+    isExample: false
+    name: CertaintyOfEvidence
+    reference:
+      reference: StructureDefinition/certainty-of-evidence
+  - description: Natural language description of the characteristic.
+    isExample: false
+    name: CharacteristicDescription
+    reference:
+      reference: StructureDefinition/characteristic-description
+  - description: Method for how the characteristic value was determined.
+    isExample: false
+    name: CharacteristicDeterminedByExpression
+    reference:
+      reference: StructureDefinition/characteristic-determined-by-expression
+  - description: Method for how the characteristic value was determined.
+    isExample: false
+    name: CharacteristicDeterminedByReference
+    reference:
+      reference: StructureDefinition/characteristic-determined-by-reference
+  - description: Length of time in which the characteristic is met.
+    isExample: false
+    name: CharacteristicDurationDuration
+    reference:
+      reference: StructureDefinition/characteristic-duration-duration
+  - description: Length of time in which the characteristic is met.
+    isExample: false
+    name: CharacteristicDurationRange
+    reference:
+      reference: StructureDefinition/characteristic-duration-range
+  - description: Number of occurrences meeting the characteristic.
+    isExample: false
+    name: CharacteristicInstancesQuantity
+    reference:
+      reference: StructureDefinition/characteristic-instances-quantity
+  - description: Number of occurrences meeting the characteristic.
+    isExample: false
+    name: CharacteristicInstancesRange
+    reference:
+      reference: StructureDefinition/characteristic-instances-range
+  - description: Method for how the characteristic value was determined.
+    isExample: false
+    name: CharacteristicMethod
+    reference:
+      reference: StructureDefinition/characteristic-method
+  - description: Defines the reference point for comparison when other than 0.
+    isExample: false
+    name: CharacteristicOffset
+    reference:
+      reference: StructureDefinition/characteristic-offset
+  - description: Timing in which the characteristic is determined.
+    isExample: false
+    name: CharacteristicTiming
+    reference:
+      reference: StructureDefinition/characteristic-timing
+  - description: The value of the trait that holds for members of the group, held
+      by Expression.
+    isExample: false
+    name: CharacteristicValueExpression
+    reference:
+      reference: StructureDefinition/characteristic-value-expression
+  - description: The value of the trait that holds for members of the group, held
+      by uri.
+    isExample: false
+    name: CharacteristicValueUri
+    reference:
+      reference: StructureDefinition/characteristic-value-uri
+  - description: An example of an EndpointAnalysisPlan Profile which uses intended='true'
+      and include-if extensions within Evidence.statistic.modelCharacteristic elements.
+    isExample: true
+    name: CIBIC+ EndpointAnalysisPlan from PHUSE Lilly Redacted Protocol - EBMonFHIR
+      IG Version
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/endpoint-analysis-plan
+    reference:
+      reference: Evidence/179690
+  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: 'Citation for FEvIR Evidence 55: 14-day mortality remdesivir vs placebo
+      meta-analysis (ACTT-1, Wang et al, WHO SOLIDARITY)'
+    reference:
+      reference: Citation/58
+  - description: A Evidence Resource to demonstrate complex evidence reporting
+    isExample: true
+    name: 'Citation for FEvIR Evidence 7637: Critically appraised summary of primary
+      outcome of multi-platform RCT of anticoagulation for non-critically ill COVID-19'
+    reference:
+      reference: Citation/7638
+  - description: Profile of ArtifactAssessment for Evidence Based Medicine IG. The
+      Classification Profile is used for classifier tags that may be created independently
+      from Resource creators and may be used for search indexes.
+    isExample: false
+    name: Classification
+    reference:
+      reference: StructureDefinition/classification
+  - isExample: true
+    name: 'Classification: Study Design for Association of Bariatric Surgery with
+      Complications and Comorbidities JAMA 2018 Norwegian Cohort'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/classification
+    reference:
+      reference: ArtifactAssessment/179448
+  - description: Profile of Group for Evidence Based Medicine IG. The CohortDefinition
+      Profile is used to provide a conceptual or definitional representation of a
+      Group. In R6, membership = conceptual allows avoiding the required use of type.
+      In R5, membership will be definitional and type value can be ignored for resource
+      content processing.
+    isExample: false
+    name: Cohort Definition
+    reference:
+      reference: StructureDefinition/cohort-definition
+  - description: This example shows used of combinationMethod (at-least) and combinationThreshold
+      (2) to express at least 2 of a set of characteristics.
+    isExample: true
+    name: CohortDefinition_At_least_2_risk_factors_for_stroke
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
+    reference:
+      reference: Group/179902
+  - description: BMI 27.5-32.4 in Asian Americans who do not achieve durable weight
+      loss and improvement in comorbidities without surgery
+    isExample: true
+    name: CohortDefinition_BMI_27_5_32_4_in_Asian_Americans_who_do_not_achieve_durable_weight_loss_and_improvement_in_comorbidities_without_surgery
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
+    reference:
+      reference: Group/179514
+  - description: BMI 30-34.9 in persons who do not achieve durable weight loss and
+      improvement in comorbidities without surgery
+    isExample: true
+    name: CohortDefinition_BMI_30_34_9_in_persons_who_do_not_achieve_durable_weight_loss_and_improvement_in_comorbidities_without_surgery
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
+    reference:
+      reference: Group/179513
+  - description: BMI 32.5-37.4 in Asian Americans who do not achieve durable weight
+      loss and improvement in comorbidities without surgery
+    isExample: true
+    name: CohortDefinition_BMI_32_5_37_4_in_Asian_Americans_who_do_not_achieve_durable_weight_loss_and_improvement_in_comorbidities_without_surgery
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
+    reference:
+      reference: Group/179510
+  - description: BMI 35-39.9 in persons who do not achieve durable weight loss and
+      improvement in comorbidities without surgery
+    isExample: true
+    name: CohortDefinition_BMI_35_39_9_in_persons_who_do_not_achieve_durable_weight_loss_and_improvement_in_comorbidities_without_surgery
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
+    reference:
+      reference: Group/179509
+  - description: "BMI \u2265 35 and at least 1 obesity-related comorbidity"
+    isExample: true
+    name: CohortDefinition_BMI_35_and_at_least_1_obesity_related_comorbidity
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
+    reference:
+      reference: Group/179376
+  - description: "BMI \u2265 37.5 kg/m2 in Asian Americans"
+    isExample: true
+    name: CohortDefinition_BMI_37_5_kg_m2_in_Asian_Americans
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
+    reference:
+      reference: Group/179508
+  - description: "Body Mass Index (BMI) \u2265 40.0 kg/m2 (BMI \u2265 37.5 kg/m2 in\
+      \ Asian Americans), or BMI \u2265 35.0 kg/m2 and \u2264 39.9 kg/m2 (BMI 32.5-37.4\
+      \ kg/m2 in Asian Americans) who do not achieve durable weight loss and improvement\
+      \ in comorbidities (including hyperglycemia) with nonsurgical methods."
+    isExample: true
+    name: CohortDefinition_BMI_criteria_for_ADA_surgery_recommendation
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
+    reference:
+      reference: Group/179506
+  - description: Cancer of any kind (except basal cell skin cancer or cancer in situ)
+      unless documented to be disease-free for five years
+    isExample: true
+    name: CohortDefinition_Cancer_of_any_kind_except_basal_cell_skin_cancer_or_cancer_in_situ_unless_documented_to_be_disease_free_for_five_years
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
+    reference:
+      reference: Group/170441
+  - description: Cardiovascular event (myocardial infarction, acute coronary syndrome,
+      coronary artery angioplasty or bypass, stroke)
+    isExample: true
+    name: CohortDefinition_Cardiovascular_event
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
+    reference:
+      reference: Group/170442
+  - description: This example shows how to express a Group defined by meeting either
+      of two phenotype definitions for 'heart failure' where the phenotype definitions
+      are found by URL in a system not using FHIR for phenotype expression. This demonstrates
+      the Group.characteristic.valueUri element.
+    isExample: true
+    name: CohortDefinition_Heart_failure_based_on_Phenotypes
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
+    reference:
+      reference: Group/179901
+  - description: "Body Mass Index (BMI) \u2265 30.0 kg/m2 and \u2264 34.9 kg/m2 (BMI\
+      \ 27.5-32.4 kg/m2 in Asian Americans) who do not achieve durable weight loss\
+      \ and improvement in comorbidities (including hyperglycemia) with nonsurgical\
+      \ methods."
+    isExample: true
+    name: CohortDefinition_Lower_BMI_criteria_for_ADA_surgery_consideration
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
+    reference:
+      reference: Group/179512
+  - description: Nonfatal myocardial infarction
+    isExample: true
+    name: CohortDefinition_Nonfatal_myocardial_infarction
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
+    reference:
+      reference: Group/173249
+  - description: Nonfatal myocardial infarction
+    isExample: true
+    name: CohortDefinition_Nonfatal_stroke
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
+    reference:
+      reference: Group/173250
+  - description: A characteristic of oxygen saturation < 96% on Boots Finger Pulse
+      Oximeter is shown here, specifically at least 3 episodes lasting at least 5
+      minutes. LOINC Code for oxygen saturation does not specify the device used.
+      If defining a Group characteristic by the device used, for example, in research
+      comparing devices, one needs to reference the DeviceDefinition, Device, or DeviceMetric
+      Resources. This example uses Group.characteristic.determinedByReference to show
+      where the device may be reported, Group.characteristic.instancesQuantity to
+      express at least 3 episodes, and Group.characteristic.durationDuration to express
+      at least 5 minutes.
+    isExample: true
+    name: CohortDefinition_Oxygen_saturation_96_on_Boots_Finger_Pulse_Oximeter
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
+    reference:
+      reference: Group/179898
+  - description: A characteristic of oxygen saturation < 96% on Boots Finger Pulse
+      Oximeter is shown here, specifically 2-4 episodes lasting 10-15 minutes. LOINC
+      Code for oxygen saturation does not specify the device used. If defining a Group
+      characteristic by the device used, for example, in research comparing devices,
+      one needs to reference the DeviceDefinition, Device, or DeviceMetric Resources.
+      This example uses Group.characteristic.determinedByReference to show where the
+      device may be reported, Group.characteristic.instancesRange to express 2-4 episodes,
+      and Group.characteristic.durationRange to express 10-15 minutes.
+    isExample: true
+    name: CohortDefinition_Oxygen_saturation_96_on_Boots_Finger_Pulse_Oximeter_with_Ranges
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
+    reference:
+      reference: Group/179900
+  - description: "Exclusion Criteria: Cardiovascular event (myocardial infarction,\
+      \ acute coronary syndrome, coronary artery angioplasty or bypass, stroke) in\
+      \ the past six months. Current evidence of congestive heart failure, angina\
+      \ pectoris, or symptomatic peripheral vascular disease. Cardiac stress test\
+      \ indicating that surgery or IMM would not be safe. Pulmonary embolus or thrombophlebitis\
+      \ in the past six months. Cancer of any kind (except basal cell skin cancer\
+      \ or cancer in situ) unless documented to be disease-free for five years. Significant\
+      \ anemia (hemoglobin 1.0 g or more below normal range) or history of coagulopathy.\
+      \ Serum creatinine \u2265 1.5 mg/dl. HbA1c > 14.0%."
+    isExample: true
+    name: CohortDefinition_Proxy_criteria_for_surgical_candidates
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
+    reference:
+      reference: Group/179507
+  - description: BMI at least 40 or at least 35 with at least 1 obesity-related comorbidity
+    isExample: true
+    name: CohortDefinition_Severe_obesity
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
+    reference:
+      reference: Group/179375
+  - description: Used to specify how two or more characteristics are combined.
+    isExample: false
+    name: CombinationMethod
+    reference:
+      reference: StructureDefinition/combination-method
+  - description: Provides the value of n when at-least or at-most codes are used for
+      combinationMethod.
+    isExample: false
+    name: CombinationThreshold
+    reference:
+      reference: StructureDefinition/combination-threshold
+  - description: Profile of ArtifactAssessment for Evidence Based Medicine IG. The
+      Comment Profile is used for comments about a Resource that may be created independently
+      from Resource creators.
+    isExample: false
+    name: Comment
+    reference:
+      reference: StructureDefinition/comment
+  - isExample: true
+    name: 'Comment on Guideline: ADA 2021 Standards of Medical Care 8. Obesity Management
+      for the Treatment of Type 2 Diabetes by Joanne Dehnbostel 2023-11-28T15:19:01.266Z'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comment
+    reference:
+      reference: ArtifactAssessment/179694
+  - description: Profile of Evidence for Evidence Based Medicine IG. The ComparativeBaselineMeasureEvidence
+      Profile is used for comparative evidence with a measured variable (with the
+      role of outcome for this Evidence) that is considered an independent variable
+      with respect to the outcome of an exposure or intervention in a study.
+    isExample: false
+    name: ComparativeBaselineMeasureEvidence
+    reference:
+      reference: StructureDefinition/comparative-baseline-measure-evidence
+  - description: Mean age 41.2 in Surgical Group vs. 45.7 in Medical Group (p < 0.001)
+    isExample: true
+    name: 'ComparativeBaselineMeasureEvidence: Age in 2018 Norwegian Cohort Surgical
+      Group vs. Medical Group'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-baseline-measure-evidence
+    reference:
+      reference: Evidence/179455
+  - description: Mean BMI 45.4 in Surgical Group vs. 42.9 in Medical Group (p < 0.001)
+    isExample: true
+    name: 'ComparativeBaselineMeasureEvidence: BMI in 2018 Norwegian Cohort Surgical
+      Group vs. Medical Group'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-baseline-measure-evidence
+    reference:
+      reference: Evidence/179456
+  - description: Profile of Evidence for Evidence Based Medicine IG. The ComparativeEvidence
+      Profile is used for evidence with a measured variable that is considered the
+      outcome of an exposure or intervention, and an exposure variable with two or
+      more categories that are being compared.
+    isExample: false
+    name: ComparativeEvidence
+    reference:
+      reference: StructureDefinition/comparative-evidence
+  - description: effect estimate for bariatric surgery on all-cause mortality pooled
+      hazard ratio (HR) 0.55 (95% confidence interval 0.49 to 0.62; P < 0.001 vs.
+      controls) in meta-analysis of 21 cohort studies with 133,524 patients after
+      bariatric surgery and 263,478 obese controls
+    isExample: true
+    name: 'ComparativeEvidence: All-cause mortality effect of bariatric surgery in
+      2022 meta-analysis'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    reference:
+      reference: Evidence/49328
+  - description: "Of 120 participants who were initially randomized, 98 (82%) completed\
+      \ 5 years of follow-up. At 5 years, 13 participants (23%) in the gastric bypass\
+      \ group and 2 (4%) in the lifestyle-intensive medical management group had achieved\
+      \ the composite triple end point (difference, 19%; 95% CI, 4%-34%; P\u2009=\u2009\
+      .01)."
+    isExample: true
+    name: 'ComparativeEvidence: Bariatric Surgery effect for ADA triple outcome at
+      5 years (Diabetes Surgery Study)'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    reference:
+      reference: Evidence/32144
+  - description: Surgical patients had a greater risk for undergoing at least 1 additional
+      gastrointestinal surgical procedure (AR, 31.3% vs 15.5%; RD, 15.8% [95% CI,
+      13.1%-18.5%]; RR, 2.0 [95% CI, 1.7-2.4]).
+    isExample: true
+    name: 'ComparativeEvidence: Bypass surgery effects on Additional GI surgical procedure
+      in JAMA 2018 Norwegian cohort study'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    reference:
+      reference: Evidence/104157
+  - description: Bariatric surgery was associated with a reduced number of cardiovascular
+      deaths (28 events among 2010 patients in the surgery group vs 49 events among
+      2037 patients in the control group; adjusted hazard ratio [HR], 0.47; 95% CI,
+      0.29-0.76; P = .002). The number of total first time (fatal or nonfatal) cardiovascular
+      events (myocardial infarction or stroke, whichever came first) was lower in
+      the surgery group (199 events among 2010 patients) than in the control group
+      (234 events among 2037 patients; adjusted HR, 0.67; 95% CI, 0.54-0.83; P < .001).
+      -- Extrapolated from this data the outcome of Nonfatal myocardial infarction
+      or stroke occurred in 188 out of 2037 patients in the control group and 171
+      out of 2010 patients in the surgery group, and the adjusted HR for total events
+      is assumed to apply (adjusted HR 0.67, 95% CI 0.54 to 0.83)
+    isExample: true
+    name: 'ComparativeEvidence: Bypass surgery effects on Myocardial infarction or
+      stroke in Swedish Obese Subjects (SOS) study'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    reference:
+      reference: Evidence/104098
+  - description: 'greater risk of new-onset depression: AR, 8.9% vs 6.5%; RD, 2.4%
+      [95% CI, 1.3%-3.5%], RR, 1.5 [95% CI, 1.4-1.7]'
+    isExample: true
+    name: 'ComparativeEvidence: Bypass surgery effects on New onset depression in
+      JAMA 2018 Norwegian cohort study'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    reference:
+      reference: Evidence/104155
+  - description: 'greater likelihood of diabetes remission: AR, 57.5% vs 14.8%; RD,
+      42.7% [95% CI, 35.8%-49.7%], RR, 3.9 [95% CI, 2.8-5.4]'
+    isExample: true
+    name: 'ComparativeEvidence: Bypass surgery effects on Remission of diabetes in
+      JAMA 2018 Norwegian cohort study'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    reference:
+      reference: Evidence/104121
+  - description: 'greater risk of treatment with opioids: AR, 19.4% vs 15.8%, RD,
+      3.6% [95% CI, 2.3%-4.9%], RR, 1.3 [95% CI, 1.2-1.4]'
+    isExample: true
+    name: 'ComparativeEvidence: Bypass surgery effects on Treatment with opioids in
+      JAMA 2018 Norwegian cohort study'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    reference:
+      reference: Evidence/104156
+  - description: Mean HbA1c at 12 months in Courcoulas 2014 was 6.6 % in Surgery group
+      (n = 41) and 7.0% in Medical/Lifestyle group (n = 17), mean difference -0.40%
+      (95% CI -0.89% to 0.09%)
+    isExample: true
+    name: 'ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle
+      groups in Courcoulas 2014'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    reference:
+      reference: Evidence/47740
+  - description: Mean HbA1c at 36 months in Courcoulas 2015 was 7.1% in Surgery group
+      (n = 38) and 7.2% in Medical/Lifestyle group (n = 14), mean difference -0.10%
+      (95% CI -0.35% to 0.15%)
+    isExample: true
+    name: 'ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle
+      groups in Courcoulas 2015'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    reference:
+      reference: Evidence/47768
+  - description: Mean HbA1c at 12 months in Cummings 2016 was 6.4% in Surgery group
+      (n = 15) and 6.9% in Medical/Lifestyle group (n = 17), mean difference -0.50%
+      (95% CI -1.52% to 0.52%)
+    isExample: true
+    name: 'ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle
+      groups in Cummings 2016'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    reference:
+      reference: Evidence/47759
+  - description: Mean HbA1c at 12 months in Ding 2015 was 7.17 % in Surgery group
+      (n = 18) and 7.15% in Medical/Lifestyle group (n = 22), mean difference 0.02%
+      (95% CI -0.16% to 0.20%)
+    isExample: true
+    name: 'ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle
+      groups in Ding 2015'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    reference:
+      reference: Evidence/47748
+  - description: Mean HbA1c at 24 months in Dixon 2008 was 6% in Surgery group (n
+      = 30) and 7.2% in Medical/Lifestyle group (n = 30), mean difference -1.20% (95%
+      CI -1.78% to -0.62%)
+    isExample: true
+    name: 'ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle
+      groups in Dixon 2008'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    reference:
+      reference: Evidence/47760
+  - description: Mean HbA1c at 12 months in Halperin 2014 was 6.2 % in Surgery group
+      (n = 19) and 8.8% in Medical/Lifestyle group (n = 19), mean difference -2.60%
+      (95% CI -3.37% to -1.83%)
+    isExample: true
+    name: 'ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle
+      groups in Halperin 2014'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    reference:
+      reference: Evidence/47749
+  - description: Mean HbA1c at 12 months in Ikramuddin 2013 was 6.3 % in Surgery group
+      (n = 57) and 7.8% in Medical/Lifestyle group (n = 19), mean difference -1.50%
+      (95% CI -1.95% to -1.05%)
+    isExample: true
+    name: 'ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle
+      groups in Ikramuddin 2013'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    reference:
+      reference: Evidence/47751
+  - description: Mean HbA1c at 24 months in Ikramuddin 2015 was 6.5% in Surgery group
+      (n = 56) and 8.4% in Medical/Lifestyle group (n = 54), mean difference -1.90%
+      (95% CI -2.78% to -1.02%)
+    isExample: true
+    name: 'ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle
+      groups in Ikramuddin 2015'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    reference:
+      reference: Evidence/47762
+  - description: Mean HbA1c at 12 months in Liang 2013 was 6 % in Surgery group (n
+      = 31) and 7.6% in Medical/Lifestyle group (n = 70), mean difference -1.60% (95%
+      CI -1.94% to -1.26%)
+    isExample: true
+    name: 'ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle
+      groups in Liang 2013'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    reference:
+      reference: Evidence/47752
+  - description: Mean HbA1c at 24 months in Mingrone 2012 was 5.65% in Surgery group
+      (n = 20) and 7.69% in Medical/Lifestyle group (n = 20), mean difference -2.04%
+      (95% CI -2.53% to -1.55%)
+    isExample: true
+    name: 'ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle
+      groups in Mingrone 2012 (DIBASY) trial'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    reference:
+      reference: Evidence/47665
+  - description: Mean HbA1c at 60 months in Mingrone 2015 was 6.55% in Surgery group
+      (n = 38) and 6.9% in Medical/Lifestyle group (n = 15), mean difference -0.35%
+      (95% CI -0.69% to -0.01%)
+    isExample: true
+    name: 'ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle
+      groups in Mingrone 2015 (DIBASY) trial'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    reference:
+      reference: Evidence/47695
+  - description: Mean HbA1c at 6 months in Parikh 2014 was 6.2 % in Surgery group
+      (n = 20) and 7.8% in Medical/Lifestyle group (n = 24), mean difference -1.60%
+      (95% CI -2.39% to -0.81%)
+    isExample: true
+    name: 'ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle
+      groups in Parikh 2014'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    reference:
+      reference: Evidence/47738
+  - description: Mean HbA1c at 12 months in Schauer 2012 was 6.5% in Surgery group
+      (n = 99) and 7.5% in Medical/Lifestyle group (n = 41), mean difference -1.00%
+      (95% CI -1.58% to -0.42%)
+    isExample: true
+    name: 'ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle
+      groups in Schauer 2012 (STAMPEDE) trial'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    reference:
+      reference: Evidence/47758
+  - description: Mean HbA1c at 36 months in Schauer 2014 was 6.85% in Surgery group
+      (n = 97) and 8.4% in Medical/Lifestyle group (n = 40), mean difference -1.55%
+      (95% CI -2.28% to -0.82%)
+    isExample: true
+    name: 'ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle
+      groups in Schauer 2014 (STAMPEDE) trial'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    reference:
+      reference: Evidence/47771
+  - description: Mean HbA1c at 24 months in Wentworth 2014 was 6.1% in Surgery group
+      (n = 23) and 7.3% in Medical/Lifestyle group (n = 25), mean difference -1.20%
+      (95% CI -1.84% to -0.56%)
+    isExample: true
+    name: 'ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle
+      groups in Wentworth 2014'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    reference:
+      reference: Evidence/47766
+  - description: effect estimate for differences in mean HbA1c at study end point
+      between Surgery and Medical/Lifestyle groups -1.14% (95% CI -1.57% to -0.71%)
+      in meta-analysis of 15 trials with 1,067 participants
+    isExample: true
+    name: 'ComparativeEvidence: Mean difference in HbA1c effect of bariatric surgery
+      in 2016 meta-analysis'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    reference:
+      reference: Evidence/33244
+  - description: Profile of Composition for Evidence Based Medicine IG. The ComparativeEvidenceReport
+      Profile is used for an evidence report including the study group, exposure,
+      comparator, and findings for any number of outcomes comparing the exposure to
+      the comparator in the study group.
+    isExample: false
+    name: ComparativeEvidenceReport
+    reference:
+      reference: StructureDefinition/comparative-evidence-report
+  - isExample: true
+    name: 'ComparativeEvidenceReport: Association of Bariatric Surgery vs Medical
+      Obesity Treatment With Long-term Medical Complications and Obesity-Related Comorbidities
+      (2018 Norwegian Cohort)'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence-report
+    reference:
+      reference: Composition/178426
+  - description: Profile of Group for Evidence Based Medicine IG. The EvidenceReportSubject
+      Profile is used to define the subject of an EvidenceReport.
+    isExample: false
+    name: ComparativeEvidenceReportSubject
+    reference:
+      reference: StructureDefinition/comparative-evidence-report-subject
+  - description: This example of a ComparativeEvidenceReportSubject Profile expresses
+      the conceptual group of PICO elements using the 'all of'' code in the combinationMethod
+      element. Each of the characteristics described in this example are defined by
+      reference to another Resource so the characteristic.code element has a value
+      of text:'Defined by Reference' and uses a valueReference element. Three of the
+      characteristics are defined by reference to a Group Resource and the last characteristic
+      (Outcomes) is defined by reference to a List Resource. This example demonstrates
+      the use of the 'conceptual' code for the membership element. In this case the
+      Group Resource is being used for the conceptual grouping of characteristics
+      and is not a group of people or physical objects.
+    isExample: true
+    name: ComparativeEvidenceReportSubject_Association_of_Bariatric_Surgery_vs_Medical_Obesity_Treatment_With_Long_term_Medical_Complications_and_Obesity_Related_Comorbidities_2018_Norwegian_Cohort
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence-report-subject
+    reference:
+      reference: Group/179633
+  - description: Profile of Evidence for Evidence Based Medicine IG. The ComparativeParticipantFlow
+      Profile is used for comparisons of counts of completion and reasons for non-completion
+      of participation in a research study.
+    isExample: false
+    name: ComparativeParticipantFlow
+    reference:
+      reference: StructureDefinition/comparative-participant-flow
+  - description: Dropout due to stopping intervention 18/33 with Lofexidine vs. 12/35
+      with Placebo in opioid detoxification trial
+    isExample: true
+    name: 'ComparativeParticipantFlow: Dropout due to stopping intervention Lofexidine
+      vs. Placebo in opioid detoxification trial'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-participant-flow
+    reference:
+      reference: Evidence/179635
+  - description: Profile of Group for Evidence Based Medicine IG. The ComparatorDefinition
+      Profile is used to express the criteria defining a reference group for comparison.
+    isExample: false
+    name: ComparatorDefinition
+    reference:
+      reference: StructureDefinition/comparator-definition
+  - description: Absence of any of 4 bariatric surgery procedures (Roux-en-Y Gastric
+      Bypass, Vertical Sleeve Gastrectomy, Laparoscopic Adjustable Gastric banding,
+      Biliopancreatic Diversion)
+    isExample: true
+    name: ComparatorDefinition_NOT_Bariatric_Surgery_RYGB_VSG_LAGB_BPD
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-definition
+    reference:
+      reference: Group/172424
+  - description: 'Description: usual-care pharmacologic thromboprophylaxis
+
+      Note: Thromboprophylaxis was provided at a dose and duration determined by the
+      treating clinician according to local practice.
+
+      Note: Usual-care pharmacological thromboprophylaxis included both intermediate-intensity
+      (in 27%) and prophylactic-intensity dosing (in 72%). Subgroup analyses may be
+      informative to determine if there is a difference related to the intensity used
+      in the control arm of the trial.'
+    isExample: true
+    name: ComparatorDefinition_Usual_care_pharmacologic_thromboprophylaxis
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-definition
+    reference:
+      reference: Group/179785
+  - description: Profile of Group for Evidence Based Medicine IG. The ComparatorGroup
+      Profile is used to represent a group (definitional or enumerated) used as a
+      comparator in a ComparativeEvidence.
+    isExample: false
+    name: ComparatorGroup
+    reference:
+      reference: StructureDefinition/comparator-group
+  - description: Example of an ComparatorGroup Profile with an enumerated group (quantity
+      = 956) meeting 2 characteristics defined by Group Resources (Member of a StudyGroup
+      Profile, excluding a Procedure defined by an ExposureDefinition Profile)
+    isExample: true
+    name: ComparatorGroup_JAMA_2018_Norwegian_cohort_study_Control_cohort
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group
+    reference:
+      reference: Group/172939
+  - description: This example of a ComparatorGroup Profile expresses the definition
+      of a group by the combination of meeting both (all of) two characteristics by
+      using the 'all-of' code in the combinationMethod element. Each of the two characteristics
+      in this example are defined by reference to another Group Resource, so the characteristic.code
+      element has a value of text:'Defined by Reference' and uses a valueReference
+      element.
+    isExample: true
+    name: ComparatorGroup_Obese_patients_18_years_old_without_bariatric_surgery
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group
+    reference:
+      reference: Group/172460
+  - description: Profile of Evidence for Evidence Based Medicine IG. The ComparatorOnlyEvidence
+      Profile is used for evidence with a measured variable that is considered the
+      outcome of an exposure or intervention, and a population that has an exposure
+      with a categorical value that is the reference category for the exposure in
+      a ComparativeEvidence Profile. The ComparatorOnlyEvidence describes the evidence
+      for the comparator group.
+    isExample: false
+    name: ComparatorOnlyEvidence
+    reference:
+      reference: StructureDefinition/comparator-only-evidence
+  - description: Risk of additional GI surgical procedure in control group was 15.5%.
+    isExample: true
+    name: 'ComparatorOnlyEvidence: Additional GI surgical procedure without bariatric
+      surgery (Control Group) in JAMA 2018 Norwegian cohort study'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence
+    reference:
+      reference: Evidence/104385
+  - description: estimate for all-cause mortality without bariatric surgery 4.75%
+      based on median control event rate in 26 cohort studies with post-bariatric
+      surgery patients and obese controls
+    isExample: true
+    name: 'ComparatorOnlyEvidence: All-cause mortality without bariatric surgery in
+      2022 meta-analysis'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence
+    reference:
+      reference: Evidence/104384
+  - description: Bariatric surgery was associated with 49 cardiovascular deaths among
+      2037 patients in the control group. The number of total first time (fatal or
+      nonfatal) cardiovascular events (myocardial infarction or stroke, whichever
+      came first) in the control group  was 234 events among 2037 patients. Extrapolated
+      from this data the outcome of Nonfatal myocardial infarction or stroke occurred
+      in 188 out of 2037 patients in the control group.
+    isExample: true
+    name: 'ComparatorOnlyEvidence: Myocardial infarction or stroke without bariatric
+      surgery (Control Group) in Swedish Obese Subjects (SOS) study'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence
+    reference:
+      reference: Evidence/104397
+  - description: Risk of New onset depression in control group was 6.5%.
+    isExample: true
+    name: 'ComparatorOnlyEvidence: New onset depression without bariatric surgery
+      (Control Group) in JAMA 2018 Norwegian cohort study'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence
+    reference:
+      reference: Evidence/104395
+  - description: Risk of Remission of diabetes in control group was 14.8%.
+    isExample: true
+    name: 'ComparatorOnlyEvidence: Remission of diabetes without bariatric surgery
+      (Control Group) in JAMA 2018 Norwegian cohort study'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence
+    reference:
+      reference: Evidence/104396
+  - description: Risk of Treatment with opioids in control group was 15.8%.
+    isExample: true
+    name: 'ComparatorOnlyEvidence: Treatment with opioids without bariatric surgery
+      (Control Group) in JAMA 2018 Norwegian cohort study'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence
+    reference:
+      reference: Evidence/104394
+  - description: Profile of ArtifactAssessment for Evidence Based Medicine IG. The
+      Comparison Profile is used for assessments of similarities and differences between
+      knowledge artifacts.
+    isExample: false
+    name: Comparison
+    reference:
+      reference: StructureDefinition/comparison
+  - isExample: true
+    name: 'Comparison: Original and Adapted Recommendation: ADA Obesity Management
+      Recommendation 8.16'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparison
+    reference:
+      reference: ArtifactAssessment/179700
+  - isExample: true
+    name: Composite Rating of FOI 153881 for Project FOI 112280
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/composite-rating
+    reference:
+      reference: ArtifactAssessment/171898
+  - description: Profile of ArtifactAssessment for Evidence Based Medicine IG. The
+      CompositeRating Profile is used for a composite rating or classification of
+      a Resource that may be created following ratings or classifications by two or
+      more parties.
+    isExample: false
+    name: CompositeRating
+    reference:
+      reference: StructureDefinition/composite-rating
+  - description: "Computable Publishing\xAE augments digital publishing with machine-interpretable\
+      \ forms. Computable Publishing\xAE offers publishers of any type (commercial,\
+      \ nonprofit, academic, government) the ability to extend their published works\
+      \ with computable (machine-interpretable) forms of expression, and users of\
+      \ any type support in using computable data to enhance, improve and achieve\
+      \ desired outcomes."
+    isExample: true
+    name: Computable_Publishing_LLC
+    reference:
+      reference: Organization/118079
+  - description: This example of a Group Resource is referenced from an example in
+      the EBMonFHIR Implementation Guide. This example shows a definitional value
+      for the membership element and a person value for the type element.
+    isExample: true
+    name: COVID_19PneumoniaHospitalizedAdult
+    reference:
+      reference: Group/12714
+  - description: Patients who were hospitalized for COVID-19 and who were not critically
+      ill were randomized in a response-adaptive manner to therapeutic-dose anticoagulation
+      with heparin vs. usual-care pharmacologic thromboprophylaxis. The outcome reported
+      here is the effect on organ support-free days (i.e. days without oxygen delivered
+      by high-flow nasal cannula, noninvasive or invasive mechanical ventilation,
+      or the use of vasopressors or inotropes). The statistical result was a median
+      adjusted odds ratio 1.27 (95% credible interval 1.03 to 1.58), based on 1,740
+      events among 2,219 participants with known outcome out of 2,244 enrolled participants.
+      The probability of superiority of therapeutic-dose anticoagulation with heparin
+      was 98.6%. The risk of bias in this effect estimate is of extremely serious
+      concern based on a serious concern for confounding covariate bias (confounding
+      difference in calendar time), a very serious concern for performance bias (inadequate
+      blinding of intervention deliverers who may determine the outcome based in part
+      on exposure status), and very serious concern for analysis bias (bias related
+      to selection of the analysis, and early trial termination).
+    isExample: true
+    name: Critically appraised summary of primary outcome of multi-platform RCT of
+      anticoagulation for non-critically ill patients with COVID-19
+    reference:
+      reference: Evidence/7637
+  - description: Profile of Citation for Evidence Based Medicine IG. The DatabaseCitation
+      Profile is used for citations of a database.
+    isExample: false
+    name: DatabaseCitation
+    reference:
+      reference: StructureDefinition/database-citation
+  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: 'DatabaseCitation: Citation for FEvIR Platform'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/database-citation
+    reference:
+      reference: Citation/29812
+  - description: Profile of Citation for Evidence Based Medicine IG. The DatabaseEntryCitation
+      Profile is used for citations of a record within a database.
+    isExample: false
+    name: DatabaseEntryCitation
+    reference:
+      reference: StructureDefinition/database-entry-citation
+  - description: A citation of a Resource on the FEvIR Platform
+    isExample: true
+    name: 'DatabaseEntryCitation: ComparativeEvidenceReport: Association of Bariatric
+      Surgery vs Medical Obesity Treatment With Long-term Medical Complications and
+      Obesity-Related Comorbidities (2018 Norwegian Cohort)'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/database-entry-citation
+    reference:
+      reference: Citation/179558
+  - description: Profile of CodeSystem for Evidence Based Medicine IG. The DataDictionary
+      Profile is used for a code key for variable names in a dataset.
+    isExample: false
+    name: DataDictionary
+    reference:
+      reference: StructureDefinition/data-dictionary
+  - description: A data dictionary (variable names) for research studies designed
+      to measure the rate of scientific knowledge transfer.
+    isExample: true
+    name: 'DataDictionary: Measuring the Rate of Scientific Knowledge Transfer'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/data-dictionary
+    reference:
+      reference: CodeSystem/181451
+  - description: This is an example of a DataDictionary Profile for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: 'DataDictionary: phs003190'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/data-dictionary
+    reference:
+      reference: CodeSystem/179650
+  - description: Profile of Citation for Evidence Based Medicine IG. The DatasetCitation
+      Profile is used for citations of a dataset.
+    isExample: false
+    name: DatasetCitation
+    reference:
+      reference: StructureDefinition/dataset-citation
+  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: 'DatasetCitation: Extrachromosomal DNA Amplification Contributes to Small
+      Cell Lung Cancer Heterogeneity and is Associated with Worse Outcomes'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/dataset-citation
+    reference:
+      reference: Citation/179559
+  - description: Profile of ArtifactAssessment for Evidence Based Medicine IG. The
+      DateAsRating Profile is used for representing a date or dateTime as a classifier
+      value.
+    isExample: false
+    name: DateAsRating
+    reference:
+      reference: StructureDefinition/date-as-rating
+  - isExample: true
+    name: DateOfFirstPublication Classification of FOI 153881 by Rachel Couban
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/classification
+    reference:
+      reference: ArtifactAssessment/181452
+  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: Delany-Moretlwe 2022 clinical trial
+    reference:
+      reference: Citation/153881
+  - description: This value set is a temporary workspace while drafting the Evidence
+      Based Medicine Implementation Guide. It may not be stable and may not be persistent.
+    isExample: true
+    name: EBMImplementationGuideProfile Value Set
+    reference:
+      reference: ValueSet/179430
+  - description: A characteristic of estimated glomerular filtration rate (eGFR) of
+      45-59 mL/min/1.73m2 is shown here. LOINC Code guidance states 'If transitioning
+      to the new 2021 calculations, note there are separate equations for male and
+      female patients that need to be implemented. The same LOINC code is applied
+      regardless of which sex-based equation is used to generate the result. Laboratories
+      need to build each male and female equation within their LIS and validate per
+      their accreditation requirements.' and 'While LOINC does not have a specific
+      code for reporting the exact equation used to calculate eGFR, it may be appropriate
+      for labs to transmit this information as part of the information contained in
+      the result comment field. The individual laboratory should determine whether
+      it is better to include the equation, or the author(s) of the equation, to identify
+      the method used to perform the eGFR calculation.' This example uses Group.characteristic.determinedByExpression
+      to show where the exact equation may be reported.
+    isExample: true
+    name: EGFR_45_59
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
+    reference:
+      reference: Group/179897
+  - description: Profile of Evidence for Evidence Based Medicine IG. The EndpointAnalysisPlan
+      Profile is used for specification of the statistical model for analysis of a
+      single endpoint.
+    isExample: false
+    name: EndpointAnalysisPlan
+    reference:
+      reference: StructureDefinition/endpoint-analysis-plan
+  - description: This code system is a temporary workspace while drafting the Evidence
+      Based Medicine Implementation Guide. It may not be stable and may not be persistent.
+    isExample: true
+    name: Evidence Based Medicine on FHIR Implementation Guide Code System
+    reference:
+      reference: CodeSystem/179423
+  - description: The sub-role that the variable plays.
+    isExample: false
+    name: Evidence Variable Role Subtype Value Set
+    reference:
+      reference: ValueSet/evidence-variable-role-subtype
+  - description: Profile of List for Evidence Based Medicine IG. The EvidenceList
+      Profile is used to provide a list of Evidence Resources. The EvidenceList Profile
+      is used to represent a Group of Evidence for the population for an EvidenceSynthesisEvidence
+      using a summary data meta-analysis approach and is referenced from a MetaanalysisStudyGroup.
+    isExample: false
+    name: EvidenceList
+    reference:
+      reference: StructureDefinition/evidence-list
+  - isExample: true
+    name: 'EvidenceList: Effect estimates for meta-analysis (Biegel 2020, Wang 2020,
+      SOLIDARITY)'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-list
+    reference:
+      reference: List/179800
+  - isExample: true
+    name: 'EvidenceList: Study results included in Mean difference in HbA1c effect
+      of bariatric surgery in 2016 meta-analysis'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-list
+    reference:
+      reference: List/179470
+  - description: Profile of Composition for Evidence Based Medicine IG. The EvidenceMap
+      Profile is used for an organized listing of Resources used to generate EvidenceReport
+      instances.
+    isExample: false
+    name: EvidenceMap
+    reference:
+      reference: StructureDefinition/evidence-map
+  - isExample: true
+    name: 'EvidenceMap: Bariatric Surgery Summary of Findings Example for GIN 2022'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-map
+    reference:
+      reference: Composition/104213
+  - description: Profile of Evidence for Evidence Based Medicine IG. The EvidenceR6
+      Profile is used to adjust the R5 Evidence base to match the structures in R6.
+    isExample: false
+    name: EvidenceR6
+    reference:
+      reference: StructureDefinition/evidence-r6
+  - description: Profile of Composition for Evidence Based Medicine IG. The EvidenceReport
+      Profile is used for a base structure (canonical resource management) for a report
+      combining any number of Citation, Evidence, EvidenceVariable, EvidenceReport,
+      and related Resources.
+    isExample: false
+    name: EvidenceReport
+    reference:
+      reference: StructureDefinition/evidence-report
+  - description: This value set is a temporary workspace while drafting the Evidence
+      Based Medicine Implementation Guide. It may not be stable and may not be persistent.
+    isExample: true
+    name: EvidenceReportSectionCode Value Set
+    reference:
+      reference: ValueSet/179431
+  - description: Profile of Group for Evidence Based Medicine IG. The EvidenceReportSubject
+      Profile is used to define the subject of an EvidenceReport.
+    isExample: false
+    name: EvidenceReportSubject
+    reference:
+      reference: StructureDefinition/evidence-report-subject
+  - description: Population Patients eligible for bariatric surgery, Intervention
+      Bariatric surgery, Comparator No bariatric surgery, selected Clinical Outcomes
+    isExample: true
+    name: EvidenceReportSubject_Clinical_Outcomes_for_Effects_of_Bariatric_Surgery
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report-subject
+    reference:
+      reference: Group/179562
+  - description: Profile of Evidence for Evidence Based Medicine IG. The EvidenceSynthesisEvidence
+      Profile is used for evidence that is combined from two or more studies, explicitly
+      expressing the method by which evidence was synthesized.
+    isExample: false
+    name: EvidenceSynthesisEvidence
+    reference:
+      reference: StructureDefinition/evidence-synthesis-evidence
+  - description: Reference to a Group Resource to express a definition for a categorical
+      value.
+    isExample: false
+    name: EvidenceVariableCategoryValueReference
+    reference:
+      reference: StructureDefinition/evidence-variable-category-value-reference
+  - description: Reference to a CodeableConcept and/or a Group Resource to express
+      a definition for an EvidenceVariable.
+    isExample: false
+    name: EvidenceVariableDefinition
+    reference:
+      reference: StructureDefinition/evidence-variable-definition
+  - description: This value set is a temporary workspace while drafting the Evidence
+      Based Medicine Implementation Guide. It may not be stable and may not be persistent.
+    isExample: true
+    name: EvidenceVariableRoleSubtype Value Set
+    reference:
+      reference: ValueSet/179424
+  - description: An example of an EndpointAnalysisPlan Profile which uses intended='true'
+      and include-if extensions within Evidence.statistic.modelCharacteristic elements.
+    isExample: true
+    name: Example EndpointAnalysisPlan from PHUSE Lilly Redacted Protocol - EBMonFHIR
+      IG Version
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/endpoint-analysis-plan
+    reference:
+      reference: Evidence/179691
+  - description: Profile of Group for Evidence Based Medicine IG. The ExposureDefinition
+      Profile is used to express the criteria defining an evidence variable (or categorical
+      value for a variable) in the role of exposure.
+    isExample: false
+    name: ExposureDefinition
+    reference:
+      reference: StructureDefinition/exposure-definition
+  - description: 'Description: therapeutic-dose anticoagulation with heparin
+
+      Note: Therapeutic-dose anticoagulation with unfractionated or low-molecular-weight
+      heparin was administered according to local protocols for the treatment of acute
+      venous thromboembolism for up to 14 days or until recovery; the latter was defined
+      as hospital discharge or a discontinuation of supplemental oxygen for at least
+      24 hours.'
+    isExample: true
+    name: ExposureDefinition_Therapeutic_dose_anticoagulation_with_heparin
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-definition
+    reference:
+      reference: Group/179786
+  - description: Profile of Group for Evidence Based Medicine IG. The ExposureGroup
+      Profile is used to represent a group (definitional or enumerated) used in a
+      ComparativeEvidence.
+    isExample: false
+    name: ExposureGroup
+    reference:
+      reference: StructureDefinition/exposure-group
+  - description: Example of an ExposureGroup Profile with an enumerated group (quantity
+      = 932) meeting 2 characteristics defined by Group Resources (Member of a StudyGroup
+      Profile, Procedure defined by an ExposureDefinition Profile)
+    isExample: true
+    name: ExposureGroup_JAMA_2018_Norwegian_cohort_study_Surgery_cohort
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group
+    reference:
+      reference: Group/172934
+  - description: This example expresses the variable 'Age' as a continuous variable
+      with a simple definition using definition.concept.coding and is used with the
+      BaselineMeasureEvidence Profile of Evidence in the Evidence.variableDefinition
+      with variableRole='outcome'
+    isExample: true
+    name: 'ExposureVariable: Age (as continuous variable)'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    reference:
+      reference: EvidenceVariable/179449
+  - description: This example expresses the variable 'Body Mass Index' as a continuous
+      variable with a simple definition using definition.concept.coding and is used
+      with the BaselineMeasureEvidence Profile of Evidence in the Evidence.variableDefinition
+      with variableRole='outcome'
+    isExample: true
+    name: 'ExposureVariable: Body Mass Index (as continuous variable)'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    reference:
+      reference: EvidenceVariable/179450
+  - description: Subject age at diagnosis - datatype integer, encoded value
+    isExample: true
+    name: 'ExposureVariable: pht013093.v1.p1 Age at diagnosis'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    reference:
+      reference: EvidenceVariable/179662
+  - description: Self-reported race - datatype string
+    isExample: true
+    name: 'ExposureVariable: pht013093.v1.p1 RACE'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    reference:
+      reference: EvidenceVariable/179661
+  - description: Self-reported sex - datatype CodeableConcept
+    isExample: true
+    name: 'ExposureVariable: pht013093.v1.p1 SEX'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    reference:
+      reference: EvidenceVariable/179658
+  - description: Subject ID - datatype string
+    isExample: true
+    name: 'ExposureVariable: pht013093.v1.p1 SUBJECT_ID'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    reference:
+      reference: EvidenceVariable/179649
+  - description: Analyte type of the sample - datatype string
+    isExample: true
+    name: 'ExposureVariable: pht013094.v1.p1 ANALYTE_TYPE'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    reference:
+      reference: EvidenceVariable/179680
+  - description: Body site where sample was collected - datatype string
+    isExample: true
+    name: 'ExposureVariable: pht013094.v1.p1 BODY_SITE'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    reference:
+      reference: EvidenceVariable/179678
+  - description: The tumor status of the sample - datatype CodeableConcept
+    isExample: true
+    name: 'ExposureVariable: pht013094.v1.p1 IS_TUMOR'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    reference:
+      reference: EvidenceVariable/179682
+  - description: Sample ID - datatype string
+    isExample: true
+    name: 'ExposureVariable: pht013094.v1.p1 SAMPLE_ID'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    reference:
+      reference: EvidenceVariable/179677
+  - description: Technology employed on the sample - datatype string
+    isExample: true
+    name: 'ExposureVariable: pht013094.v1.p1 SAMPLE_USE'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    reference:
+      reference: EvidenceVariable/179679
+  - description: Source of sample - datatype string
+    isExample: true
+    name: 'ExposureVariable: pht013094.v1.p1 Source_Type'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    reference:
+      reference: EvidenceVariable/179681
+  - description: Profile of EvidenceVariable for Evidence Based Medicine IG. The GroupAssignment
+      Profile is used to classify an EvidenceVariable as an exposure managed as a
+      categorical variable. The variable definitions are found in the category element
+      instead of the definition element.
+    isExample: false
+    name: GroupAssignment
+    reference:
+      reference: StructureDefinition/group-assignment
+  - description: This example of a GroupAssignment Profile describes a 2-group study
+      (so handling='dichotomous') and lists the 2 study arms in category.name elements.
+      Because the definition of this EvidenceVariable Resource is fully expressed
+      in the handling and category elements, the defintion.concept element uses a
+      CodeableConcept for 'Defined in handling and category elements'.
+    isExample: true
+    name: 'GroupAssignment: Bariatric Surgery vs. no bariatric surgery'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment
+    reference:
+      reference: EvidenceVariable/172427
+  - description: This example of a GroupAssignment Profile describes a 3-arm trial
+      (so handling='polychotomous') and lists the 3 trial arms in category.name elements.
+      Because the definition of this EvidenceVariable Resource is fully expressed
+      in the handling and category elements, the defintion.concept element uses a
+      CodeableConcept for 'Defined in handling and category elements'.
+    isExample: true
+    name: 'GroupAssignment: high dose xanomeline vs. low dose xanomeline vs. placebo'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment
+    reference:
+      reference: EvidenceVariable/179689
+  - description: This example of a GroupAssignment Profile describes a 2-group study
+      (so handling='dichotomous') and lists the 2 study arms in category.name elements.
+      Because the definition of this EvidenceVariable Resource is fully expressed
+      in the handling and category elements, the defintion.concept element uses a
+      CodeableConcept for 'Defined in handling and category elements'.
+    isExample: true
+    name: 'GroupAssignment: Roux-en-Y gastric bypass or Biliopancreatic Diversion
+      vs. medical treatment'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment
+    reference:
+      reference: EvidenceVariable/172479
+  - description: This example of a GroupAssignment Profile describes a 2-group study
+      (so handling='dichotomous') and lists the 2 study arms in category.name elements.
+      Because the definition of this EvidenceVariable Resource is fully expressed
+      in the handling and category elements, the defintion.concept element uses a
+      CodeableConcept for 'Defined in handling and category elements'.
+    isExample: true
+    name: 'GroupAssignment: Roux-en-Y gastric bypass surgery vs. Lifestyle-intensive
+      medical management intervention alone'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment
+    reference:
+      reference: EvidenceVariable/172481
+  - description: This example of a GroupAssignment Profile describes a 2-group study
+      (so handling='dichotomous') and lists the 2 study arms in category.name elements.
+      Because the definition of this EvidenceVariable Resource is fully expressed
+      in the handling and category elements, the defintion.concept element uses a
+      CodeableConcept for 'Defined in handling and category elements'.
+    isExample: true
+    name: 'GroupAssignment: Roux-en-Y gastric bypass vs. medical treatment'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment
+    reference:
+      reference: EvidenceVariable/172478
+  - description: Therapeutic-dose anticoagulation with heparin vs. Usual-care pharmacologic
+      thromboprophylaxis in multi-platform RCT of anticoagulation for non-critically
+      ill patients with COVID-19
+    isExample: true
+    name: 'GroupAssignment: Therapeutic-dose anticoagulation with heparin vs. Usual-care
+      pharmacologic thromboprophylaxis'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment
+    reference:
+      reference: EvidenceVariable/179784
+  - description: Profile of Group for Evidence Based Medicine IG. The GroupR6 Profile
+      is used to adjust the R5 Group base to match the structures in R6.
+    isExample: false
+    name: GroupR6
+    reference:
+      reference: StructureDefinition/group-r6
+  - description: Profile of Composition for Evidence Based Medicine IG. The Guideline
+      Profile is used for the composition of a clinical practice guideline and may
+      be tightly related to use of Recommendation Profile of Composition for related
+      content.
+    isExample: false
+    name: Guideline
+    reference:
+      reference: StructureDefinition/guideline
+  - isExample: true
+    name: 'Guideline: ADA 2021 Standards of Medical Care 8. Obesity Management for
+      the Treatment of Type 2 Diabetes'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/guideline
+    reference:
+      reference: Composition/179465
+  - description: Any of 4 bariatric surgery procedures (Roux-en-Y Gastric Bypass,
+      Vertical Sleeve Gastrectomy, Laparoscopic Adjustable Gastric banding, Biliopancreatic
+      Diversion)
+    isExample: true
+    name: 'InterventionDefinition: Bariatric Surgery (RYGB, VSG, LAGB, BPD)'
+    reference:
+      reference: EvidenceVariable/33245
+  - description: Absence of any of 4 bariatric surgery procedures (Roux-en-Y Gastric
+      Bypass, Vertical Sleeve Gastrectomy, Laparoscopic Adjustable Gastric banding,
+      Biliopancreatic Diversion)
+    isExample: true
+    name: 'InterventionDefinition: NOT Bariatric Surgery (RYGB, VSG, LAGB, BPD)'
+    reference:
+      reference: EvidenceVariable/33394
+  - description: Profile of Evidence for Evidence Based Medicine IG. The InterventionOnlyEvidence
+      Profile is used for evidence with a measured variable that is considered the
+      outcome of an exposure or intervention. The InterventionOnlyEvidence describes
+      the evidence for the intervention group.
+    isExample: false
+    name: InterventionOnlyEvidence
+    reference:
+      reference: StructureDefinition/intervention-only-evidence
+  - description: 'Risk of additional GI surgical procedure in intervention group was
+      31.3%. 292 out of 932 observed with percentage of: 31.3%'
+    isExample: true
+    name: 'InterventionOnlyEvidence: Additional GI surgical procedure with bariatric
+      surgery (Intervention Group) in JAMA 2018 Norwegian cohort study'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/intervention-only-evidence
+    reference:
+      reference: Evidence/104398
+  - description: Risk of New onset depression in intervention group was 8.9%.
+    isExample: true
+    name: 'InterventionOnlyEvidence: New onset depression with bariatric surgery (Intervention
+      Group) in JAMA 2018 Norwegian cohort study'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/intervention-only-evidence
+    reference:
+      reference: Evidence/104400
+  - description: Risk of Remission of diabetes in intervention group was 57.5%.
+    isExample: true
+    name: 'InterventionOnlyEvidence: Remission of diabetes with bariatric surgery
+      (Intervention Group) in JAMA 2018 Norwegian cohort study'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/intervention-only-evidence
+    reference:
+      reference: Evidence/104401
+  - description: Risk of Treatment with opioids in intervention group was 19.4%.
+    isExample: true
+    name: 'InterventionOnlyEvidence: Treatment with opioids with bariatric surgery
+      (Intervention Group) in JAMA 2018 Norwegian cohort study'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/intervention-only-evidence
+    reference:
+      reference: Evidence/104402
+  - description: For all ANOVA and ANCOVA models, data collected from investigators
+      who enrolled fewer than 3 patients in any one treatment group will be combined
+      prior to analysis. If this combination still results in a treatment group having
+      fewer than 3 patients in any one treatment group, then this group of patients
+      will be combined with the next fewest enrolling investigator. In the event that
+      there is a tie for fewest-enrolling investigator, one of these will be chosen
+      at random by a random-number generator.
+    isExample: true
+    name: Investigator
+    reference:
+      reference: EvidenceVariable/159673
+  - description: The Investigator-by-treatment interaction variable is polychotomous
+      (a category for each investigator) but the investigator names are unknown at
+      the time of trial planning so the category element is not used to define the
+      categories.
+    isExample: true
+    name: Investigator-by-treatment interaction for ADAS-Cog(11) ANCOVA
+    reference:
+      reference: EvidenceVariable/156673
+  - description: This example uses the Dosage datatype to represent dosing for IV
+      remdesivir.
+    isExample: true
+    name: IV remdesivir 200 mg then 100 mg/day for 9 days
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-action
+    reference:
+      reference: ActivityDefinition/213
+  - isExample: true
+    name: 'Joanne Dehnbostel''s Adaptation Report of Recommendation: ADA Obesity Management
+      Recommendation 8.16'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/adaptation
+    reference:
+      reference: ArtifactAssessment/179698
+  - description: Profile of Citation for Evidence Based Medicine IG. The JournalArticleCitation
+      Profile is used for citations of an article published in a periodical venue
+      classified as a journal.
+    isExample: false
+    name: JournalArticleCitation
+    reference:
+      reference: StructureDefinition/journal-article-citation
+  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: 'JournalArticleCitation: ADA 2021 Standards of Medical Care 8. Obesity Management
+      for the Treatment of Type 2 Diabetes'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/journal-article-citation
+    reference:
+      reference: Citation/32137
+  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: 'JournalArticleCitation: Association of Bariatric Surgery with Complications
+      and Comorbidities JAMA 2018 Norwegian Cohort'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/journal-article-citation
+    reference:
+      reference: Citation/104116
+  - isExample: true
+    name: 'Justification for Recommendation: ADA Obesity Management Recommendation
+      8.16'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-justification
+    reference:
+      reference: ArtifactAssessment/179469
+  - isExample: true
+    name: 'Justification for Recommendation: ADA Obesity Management Recommendation
+      8.17'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-justification
+    reference:
+      reference: ArtifactAssessment/179515
+  - isExample: true
+    name: M11 Report Template Instructions
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/m11-report
+    reference:
+      reference: Composition/181448
+  - description: Profile of Composition for Evidence Based Medicine IG. The M11Report
+      Profile is used for the International Council for Harmonisation of Technical
+      Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured
+      Harmonised Protocol (CeSHarP) M11 Technical Specification.
+    isExample: false
+    name: M11Report
+    reference:
+      reference: StructureDefinition/m11-report
+  - description: Profile of Group for Evidence Based Medicine IG. The MetaanalysisEligibilityCriteria
+      Profile is used to describe inclusion and exclusion criteria for a meta-analysis.
+    isExample: false
+    name: MetaanalysisEligibilityCriteria
+    reference:
+      reference: StructureDefinition/metaanalysis-eligibility-criteria
+  - description: Study population includes type 2 diabetes and BMI > 25 kg/m2; study
+      design includes randomized assignment; exposure is bariatric surgery vs. no
+      bariatric surgery; outcome measured is mean difference in HbA1c comparing bariatric
+      surgery vs. no bariatric surgery
+    isExample: true
+    name: MetaanalysisEligibilityCriteria_Mean_difference_in_HbA1c_effect_of_bariatric_surgery_in_type_2_diabetes_and_elevated_BMI_in_2016_meta_analysis
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-eligibility-criteria
+    reference:
+      reference: Group/175766
+  - description: Profile of Group for Evidence Based Medicine IG. The MetaanalysisOutcomeDefinition
+      Profile is used to express the criteria defining an evidence variable in the
+      role of outcome where the population (dataset) is a set of Evidence Resources.
+      Characteristics define the characteristics of the Evidence Resource to be eligible
+      to be used for this outcome.
+    isExample: false
+    name: MetaanalysisOutcomeDefinition
+    reference:
+      reference: StructureDefinition/metaanalysis-outcome-definition
+  - description: Mean difference in HbA1c between Surgery and Medical/Lifestyle groups
+      at end of follow-up. As a MetaanalysisOutcomeDefinition, the type of object
+      that has the characteristics in the definition is an Evidence Resource.
+    isExample: true
+    name: MetaanalysisOutcomeDefinition_Mean_difference_in_HbA1c_between_Surgery_and_Medical_Lifestyle_groups_at_end_of_follow_up
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-outcome-definition
+    reference:
+      reference: Group/175765
+  - description: Profile of Group for Evidence Based Medicine IG. The MetaanalysisStudyGroup
+      Profile is used to represent an enumerated group of participants in a meta-analysis
+      where the participants are Evidence Resources.
+    isExample: false
+    name: MetaanalysisStudyGroup
+    reference:
+      reference: StructureDefinition/metaanalysis-study-group
+  - description: Effect Estimates for Mortality at 14 days from COVID19 Remdesivir
+      vs. Placebo RCTs (Biegel 2020 data 35/541 vs. 61/521) (Wang 2020 data 15/153
+      vs. 7/78) (SOLIDARITY data 219/2743 vs. 219/2708)
+    isExample: true
+    name: MetaanalysisStudyGroup_Effect_Estimates_for_Mortality_at_14_days_from_COVID19_Remdesivir_vs_Placebo_RCTs
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group
+    reference:
+      reference: Group/179799
+  - description: mortality at 14 days
+    isExample: true
+    name: Mortality at 14 days
+    reference:
+      reference: EvidenceVariable/12719
+  - description: Profile of Evidence for Evidence Based Medicine IG. The NetEffectContribution
+      Profile is used for evidence in which the effect estimates, expressed as risk
+      differences, is multiplied by a relative importance rating of the outcomes.
+    isExample: false
+    name: NetEffectContribution
+    reference:
+      reference: StructureDefinition/net-effect-contribution
+  - description: -1.24 (-1.74 to -0.87)
+    isExample: true
+    name: 'NetEffectContribution: Additional GI surgical procedure for Example for
+      GIN 2022'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution
+    reference:
+      reference: Evidence/179591
+  - description: 2.14 (1.8 to 2.42)
+    isExample: true
+    name: 'NetEffectContribution: All-cause mortality for Example for GIN 2022'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution
+    reference:
+      reference: Evidence/179586
+  - description: -0.16 (-0.23 to -0.13)
+    isExample: true
+    name: 'NetEffectContribution: New onset depression for Example for GIN 2022'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution
+    reference:
+      reference: Evidence/179589
+  - description: 0.91 (0.47 to 1.27)
+    isExample: true
+    name: 'NetEffectContribution: Nonfatal myocardial infarction or stroke for Example
+      for GIN 2022'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution
+    reference:
+      reference: Evidence/179587
+  - description: 2.15 (1.33 to 3.26) - example showing statistic.extension:modelExpression
+    isExample: true
+    name: 'NetEffectContribution: Remission of diabetes for Example for GIN 2022'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution
+    reference:
+      reference: Evidence/179588
+  - description: -0.24 (-0.32 to -0.16)
+    isExample: true
+    name: 'NetEffectContribution: Treatment with opioids for Example for GIN 2022'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution
+    reference:
+      reference: Evidence/179590
+  - description: Profile of List for Evidence Based Medicine IG. The NetEffectContributionList
+      Profile is used to provide a list of Evidence Resources (NetEffectContribution
+      Profile). The NetEffectContributionList Profile is used to represent a Group
+      of Evidence for the population for a NetEffectEstimate (Profile of Evidence)
+      using a net effect analysis approach and is referenced from a NetEffectContributions
+      (Profile of Group).
+    isExample: false
+    name: NetEffectContributionList
+    reference:
+      reference: StructureDefinition/net-effect-contribution-list
+  - isExample: true
+    name: 'NetEffectContributionList: Bariatric Surgery Example for GIN 2022'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution-list
+    reference:
+      reference: List/179585
+  - description: Profile of Group for Evidence Based Medicine IG. The NetEffectContributions
+      Profile is used to represent an enumerated group of participants in a net effect
+      analysis where the participants are Evidence Resources (NetEffectContribution
+      Profile).
+    isExample: false
+    name: NetEffectContributions
+    reference:
+      reference: StructureDefinition/net-effect-contributions
+  - description: This is an example of a NetEffectContributions Profile of a Group
+      Resource. This is a conceptual group (membership = 'conceptual') where the type
+      of group member is an Evidence Resource (NetEffectContribution Profile) and
+      this type is not supported in the type element so the type element is not used.
+      The characteristic is defined by reference to a NetEffectContributionList Profile
+      of List Resource where the 'group members' can be found.
+    isExample: true
+    name: NetEffectContributions_Bariatric_Surgery_Example_for_GIN_2022
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contributions
+    reference:
+      reference: Group/179584
+  - description: Profile of Evidence for Evidence Based Medicine IG. The NetEffectEstimate
+      Profile is used for evidence in which the observed data is net effect contributions
+      (effect estimates expressed as risk differences, multiplied by relative importance
+      ratings of outcomes).
+    isExample: false
+    name: NetEffectEstimate
+    reference:
+      reference: StructureDefinition/net-effect-estimate
+  - description: Net Effect Estimate = 3.55 (2.38 to 4.73)
+    isExample: true
+    name: 'NetEffectEstimate: Bariatric Surgery Example for GIN 2022'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-estimate
+    reference:
+      reference: Evidence/179583
+  - description: Profile of Evidence for Evidence Based Medicine IG. The NonComparativeEvidence
+      Profile is used for evidence about a single group with no comparisons between
+      groups.
+    isExample: false
+    name: NonComparativeEvidence
+    reference:
+      reference: StructureDefinition/non-comparative-evidence
+  - description: "The primary outcome was organ support\u2013free days, evaluated\
+      \ on an ordinal scale that combined in-hospital death and the number of days\
+      \ free of cardiovascular or respiratory organ support up to day 21 among patients\
+      \ who survived to hospital discharge. Patients who were discharged from the\
+      \ hospital before day 21 were assumed to be alive and free of organ support\
+      \ through day 21. Any death during the index hospitalization through 90 days\
+      \ was assigned the worst score on the outcome scale (\u20131). This end point\
+      \ reflects both the use of ICU-level interventions and survival, with higher\
+      \ values indicating better outcomes."
+    isExample: true
+    name: Organ support-free days
+    reference:
+      reference: EvidenceVariable/7753
+  - isExample: true
+    name: Outcome Importance Rating (default value 100) of All-cause mortality
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/rating
+    reference:
+      reference: ArtifactAssessment/104064
+  - isExample: true
+    name: Outcome Importance Rating (default value 30) of Nonfatal myocardial infarction
+      or stroke
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-importance
+    reference:
+      reference: ArtifactAssessment/104192
+  - isExample: true
+    name: Outcome Importance Rating (default value 5) of New onset depression
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/rating
+    reference:
+      reference: ArtifactAssessment/104194
+  - isExample: true
+    name: Outcome Importance Rating (default value 5) of Remission of diabetes
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-importance
+    reference:
+      reference: ArtifactAssessment/104193
+  - isExample: true
+    name: Outcome Importance Rating (default value 5) of Treatment with opioids
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-importance
+    reference:
+      reference: ArtifactAssessment/104195
+  - isExample: true
+    name: Outcome Importance Rating (default value 8) of Additional GI surgical procedure
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-importance
+    reference:
+      reference: ArtifactAssessment/104196
+  - description: Profile of Group for Evidence Based Medicine IG. The OutcomeDefinition
+      Profile is used to express the criteria defining an evidence variable (or categorical
+      value for a variable) in the role of outcome.
+    isExample: false
+    name: OutcomeDefinition
+    reference:
+      reference: StructureDefinition/outcome-definition
+  - description: The American Diabetes Association composite triple end point of hemoglobin
+      A1c less than 7.0%, low-density lipoprotein cholesterol less than 100 mg/dL,
+      and systolic blood pressure less than 130 mm Hg at 5 years
+    isExample: true
+    name: OutcomeDefinition_American_Diabetes_Association_composite_triple_end_point_for_metabolic_control
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition
+    reference:
+      reference: Group/172480
+  - description: Diabetes in remission
+    isExample: true
+    name: OutcomeDefinition_Diabetes_in_remission
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition
+    reference:
+      reference: Group/173252
+  - description: HbA1c at 12 months
+    isExample: true
+    name: OutcomeDefinition_HbA1c_at_12_months
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition
+    reference:
+      reference: Group/172484
+  - description: HbA1c at 24 months
+    isExample: true
+    name: OutcomeDefinition_HbA1c_at_24_months
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition
+    reference:
+      reference: Group/172477
+  - description: HbA1c at 36 months
+    isExample: true
+    name: OutcomeDefinition_HbA1c_at_36_months
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition
+    reference:
+      reference: Group/173245
+  - description: HbA1c at 60 months
+    isExample: true
+    name: OutcomeDefinition_HbA1c_at_60_months
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition
+    reference:
+      reference: Group/172476
+  - description: HbA1c at 6 months
+    isExample: true
+    name: OutcomeDefinition_HbA1c_at_6_months
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition
+    reference:
+      reference: Group/175762
+  - description: New onset depression
+    isExample: true
+    name: OutcomeDefinition_New_onset_depression
+    reference:
+      reference: Group/173251
+  - description: Nonfatal myocardial infarction or stroke
+    isExample: true
+    name: OutcomeDefinition_Nonfatal_myocardial_infarction_or_stroke
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition
+    reference:
+      reference: Group/173248
+  - description: Profile of ArtifactAssessment for Evidence Based Medicine IG. The
+      OutcomeImportance Profile is used for expression of the relative importance
+      of an outcome. The outcome is typically expressed with an EvidenceVariable Resource
+      and may use the VariableDefinition Profile of EvidenceVariable (or OutcomeDefinition
+      Profile of Group).
+    isExample: false
+    name: OutcomeImportance
+    reference:
+      reference: StructureDefinition/outcome-importance
+  - description: Profile of List for Evidence Based Medicine IG. The OutcomeList Profile
+      is used to provide a list of outcomes. The OutcomeList Profile is referenced
+      in the EvidenceReportSubject Profile as a way to define the set of outcomes
+      that an EvidenceReport is about.
+    isExample: false
+    name: OutcomeList
+    reference:
+      reference: StructureDefinition/outcome-list
+  - isExample: true
+    name: 'OutcomeList: Clinical Outcomes for Effects of Bariatric Surgery'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-list
+    reference:
+      reference: List/179579
+  - description: The American Diabetes Association composite triple end point of hemoglobin
+      A1c less than 7.0%, low-density lipoprotein cholesterol less than 100 mg/dL,
+      and systolic blood pressure less than 130 mm Hg at 5 years
+    isExample: true
+    name: 'OutcomeVariable: American Diabetes Association composite triple end point
+      for metabolic control at 5 years'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    reference:
+      reference: EvidenceVariable/32143
+  - description: HbA1c at 12 months
+    isExample: true
+    name: 'OutcomeVariable: HbA1c at 12 months'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    reference:
+      reference: EvidenceVariable/173243
+  - description: HbA1c at 24 months
+    isExample: true
+    name: 'OutcomeVariable: HbA1c at 24 months'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    reference:
+      reference: EvidenceVariable/173246
+  - description: HbA1c at 36 months
+    isExample: true
+    name: 'OutcomeVariable: HbA1c at 36 months'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    reference:
+      reference: EvidenceVariable/173244
+  - description: HbA1c at 6 months
+    isExample: true
+    name: 'OutcomeVariable: HbA1c at 6 months'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    reference:
+      reference: EvidenceVariable/175763
+  - description: HbA1c at 60 months
+    isExample: true
+    name: 'OutcomeVariable: HbA1c at 60 months'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    reference:
+      reference: EvidenceVariable/173247
+  - description: Mean difference in HbA1c between Surgery and Medical/Lifestyle groups
+      at end of follow-up for HbA1c end point
+    isExample: true
+    name: 'OutcomeVariable: Mean difference in HbA1c between Surgery and Medical/Lifestyle
+      groups at end of follow-up'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    reference:
+      reference: EvidenceVariable/46025
+  - description: This example expresses the variable 'New onset depression' as a dichotomous
+      variable with a definition using definition.reference which references an OutcomeDefinition
+      Profile of Group Resource.
+    isExample: true
+    name: 'OutcomeVariable: New onset depression'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    reference:
+      reference: EvidenceVariable/104118
+  - description: Nonfatal myocardial infarction or stroke
+    isExample: true
+    name: 'OutcomeVariable: Nonfatal myocardial infarction or stroke'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    reference:
+      reference: EvidenceVariable/104097
+  - description: This example expresses the variable 'Remission of diabetes' as a
+      dichotomous variable with a definition using both definition.concept (for a
+      SNOMED CT term) and definition.reference which references an OutcomeDefinition
+      Profile of Group Resource.
+    isExample: true
+    name: 'OutcomeVariable: Remission of diabetes'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    reference:
+      reference: EvidenceVariable/104117
+  - description: This example expresses the variable 'Additional GI surgical procedure'
+      as a dichotomous variable with a simple definition using definition.concept.text
+    isExample: true
+    name: OutcomeVariable_Additional_GI_surgical_procedure
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    reference:
+      reference: EvidenceVariable/104120
+  - description: A dichotomous variable (outcome measure) defined by CodeableConcept.
+    isExample: true
+    name: OutcomeVariable_All_cause_mortality
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    reference:
+      reference: EvidenceVariable/49217
+  - description: This example expresses the variable 'Treatment with opioids' as a
+      dichotomous variable with a simple definition using definition.concept.text
+    isExample: true
+    name: OutcomeVariable_Treatment_with_opioids
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    reference:
+      reference: EvidenceVariable/104119
+  - description: Profile of EvidenceVariable for Evidence Based Medicine IG. The ParticipantFlowMeasure
+      Profile is used to describe outcome measures for completion and reasons for
+      non-completion of participation in a research study.
+    isExample: false
+    name: Participant Flow Measure
+    reference:
+      reference: StructureDefinition/participant-flow-measure
+  - description: Profile of Evidence for Evidence Based Medicine IG. The ParticipantFlow
+      Profile is used for counts of completion and reasons for non-completion of participation
+      in a research study.
+    isExample: false
+    name: ParticipantFlow
+    reference:
+      reference: StructureDefinition/participant-flow
+  - description: 221 excluded from analysis
+    isExample: true
+    name: 'ParticipantFlow: 2018 Norwegian Cohort Excluded from Analysis'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow
+    reference:
+      reference: Evidence/179460
+  - description: 1888 included in analysis
+    isExample: true
+    name: 'ParticipantFlow: 2018 Norwegian Cohort Included in Analysis'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow
+    reference:
+      reference: Evidence/179462
+  - description: 956 included in analysis
+    isExample: true
+    name: 'ParticipantFlow: 2018 Norwegian Cohort Medical Group Included in Analysis'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow
+    reference:
+      reference: Evidence/179464
+  - description: 932 included in analysis
+    isExample: true
+    name: 'ParticipantFlow: 2018 Norwegian Cohort Surgical Group Included in Analysis'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow
+    reference:
+      reference: Evidence/179463
+  - description: Dropout due to stopping intervention
+    isExample: true
+    name: 'ParticipantFlowMeasure: Dropout due to stopping intervention'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow-measure
+    reference:
+      reference: EvidenceVariable/179636
+  - description: This example expresses the variable 'Excluded from analysis' as a
+      dichotomous variable with a simple definition using definition.concept.text
+      and is used with the ParticipantFlow Profile of Evidence in the Evidence.variableDefinition
+      with variableRole='outcome'
+    isExample: true
+    name: 'ParticipantFlowMeasure: Exclusion from analysis'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow-measure
+    reference:
+      reference: EvidenceVariable/179459
+  - description: This example expresses the variable 'Inclusion in analysis' as a
+      dichotomous variable with a simple definition using definition.concept.text
+      and is used with the ParticipantFlow Profile of Evidence in the Evidence.variableDefinition
+      with variableRole='outcome'
+    isExample: true
+    name: 'ParticipantFlowMeasure: Inclusion in analysis'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow-measure
+    reference:
+      reference: EvidenceVariable/179461
+  - description: An enumerated group participating in a randomized trial.
+    isExample: true
+    name: Participants_in_Anticoagulation_for_COVID_19_Combined_ATTACC_ACTIV_4a_and_REMAP_CAP_RCT_hospitalized_not_critically_ill
+    reference:
+      reference: Group/7750
+  - description: An definitional group used to support the 'intended' element in Evidence.varaibleDefinition
+      with variableRole = 'population'.
+    isExample: true
+    name: Patients_who_are_hospitalized_for_COVID_19_and_who_are_not_critically_ill
+    reference:
+      reference: Group/7749
+  - description: Placebo
+    isExample: true
+    name: Placebo
+    reference:
+      reference: EvidenceVariable/12718
+  - description: "8.16 Metabolic surgery should be a recommended option to treat type\
+      \ 2 diabetes in screened surgical candidates with BMI \u226540 kg/m2 (BMI \u2265\
+      37.5 kg/m2 in Asian Americans) and in adults with BMI 35.0\u201339.9 kg/m2 (32.5\u2013\
+      37.4 kg/m2 in Asian Americans) who do not achieve durable weight loss and improvement\
+      \ in comorbidities (including hyperglycemia) with nonsurgical methods. A"
+    isExample: true
+    name: 'PlanDefinition for Recommendation: ADA Obesity Management Recommendation
+      8.16'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-plan
+    reference:
+      reference: PlanDefinition/179468
+  - description: "8.17 Metabolic surgery may be considered as an option to treat type\
+      \ 2 diabetes in adults with BMI 30.0\u201334.9 kg/m2 (27.5\u201332.4 kg/m2 in\
+      \ Asian Americans) who do not achieve durable weight loss and improvement in\
+      \ comorbidities (including hyperglycemia) with nonsurgical methods. A"
+    isExample: true
+    name: 'PlanDefinition for Recommendation: ADA Obesity Management Recommendation
+      8.17'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-plan
+    reference:
+      reference: PlanDefinition/179554
+  - description: Profile of Citation for Evidence Based Medicine IG. The PreprintCitation
+      Profile is used for citations of an article published in a form prior to peer-reviewed
+      publication in a journal, book, or other permanent record.
+    isExample: false
+    name: PreprintCitation
+    reference:
+      reference: StructureDefinition/preprint-citation
+  - description: A preprint that has only an abstract and data is different than CT.gov
+      results
+    isExample: true
+    name: 'PreprintCitation: Nigella Sativa for COVID-19 OSF Preprint'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/preprint-citation
+    reference:
+      reference: Citation/5296
+  - description: Profile of ArtifactAssessment for Evidence Based Medicine IG. The
+      Rating Profile is used for classifier tags that may include quantitative ratings
+      and may be created independently from Resource creators.
+    isExample: false
+    name: Rating
+    reference:
+      reference: StructureDefinition/rating
+  - description: Profile of Composition for Evidence Based Medicine IG. The Recommendation
+      Profile is used for the composition of a recommendation (such as that from a
+      clinical practice guideline) and may be tightly related to a RecommendationPlan
+      Profile of PlanDefinition and a RecommendationJustification Profile of ArtifactAssessment.
+    isExample: false
+    name: Recommendation
+    reference:
+      reference: StructureDefinition/recommendation
+  - description: 'Codes for use with the Classifier drop-down menu for FEvIR(R): Recommendation
+      Justification Builder.'
+    isExample: false
+    name: Recommendation Justification Classifier Codes Value Set
+    reference:
+      reference: ValueSet/recommendation-justification-classifier
+  - description: This resource (this entire set of content) is being used for active
+      development of a code system to support a RecommendationJustification Profile
+      of ArtifactAssessment Resource. This code system is not yet released for expected
+      use and may not be stable. This resource may be used for the continuous development
+      of the code system, and published versions of the code system (when ready) may
+      be published as separate resources with stable identifiers.
+    isExample: true
+    name: Recommendation Justification Code System
+    reference:
+      reference: CodeSystem/27834
+  - isExample: true
+    name: 'Recommendation: ADA Obesity Management Recommendation 8.16'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation
+    reference:
+      reference: Composition/179466
+  - isExample: true
+    name: 'Recommendation: ADA Obesity Management Recommendation 8.16-adapted'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation
+    reference:
+      reference: Composition/179699
+  - isExample: true
+    name: 'Recommendation: ADA Obesity Management Recommendation 8.17'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation
+    reference:
+      reference: Composition/179467
+  - description: Profile of ActivityDefinition for Evidence Based Medicine IG. The
+      RecommendationAction Profile is used for a recommendation from a clinical practice
+      guideline.
+    isExample: false
+    name: RecommendationAction
+    reference:
+      reference: StructureDefinition/recommendation-action
+  - description: Profile of Group for Evidence Based Medicine IG. The RecommendationEligibilityCriteria
+      Profile is used to express the criteria defining a group for whom a recommendation
+      applies.
+    isExample: false
+    name: RecommendationEligibilityCriteria
+    reference:
+      reference: StructureDefinition/recommendation-eligibility-criteria
+  - description: Profile of ArtifactAssessment for Evidence Based Medicine IG. The
+      RecommendationJustification Profile is used for expressing the rationale, evidence,
+      and judgments supporting a recommendation, such as from a clinical practice
+      guideline.
+    isExample: false
+    name: RecommendationJustification
+    reference:
+      reference: StructureDefinition/recommendation-justification
+  - description: Profile of PlanDefinition for Evidence Based Medicine IG. The RecommendationPlan
+      Profile is used for the implementable representation of a recommendation (such
+      as that from a clinical practice guideline).
+    isExample: false
+    name: RecommendationPlan
+    reference:
+      reference: StructureDefinition/recommendation-plan
+  - description: Remdesivir
+    isExample: true
+    name: Remdesivir
+    reference:
+      reference: EvidenceVariable/12717
+  - description: Remdesivir IV 200 mg once then 100 mg once daily for 9 days
+    isExample: true
+    name: Remdesivir_IV_200_mg_once_then_100_mg_once_daily_for_9_days
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-definition
+    reference:
+      reference: Group/179783
+  - isExample: true
+    name: Risk of Bias Assessment of Critically appraised summary of primary outcome
+      of multi-platform RCT of anticoagulation for non-critically ill patients with
+      COVID-19
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/risk-of-bias
+    reference:
+      reference: ArtifactAssessment/179692
+  - description: Types of bias for used with risk of bias assessment.
+    isExample: false
+    name: Risk Of Bias Type Value Set
+    reference:
+      reference: ValueSet/risk-of-bias-type
+  - description: Profile of ArtifactAssessment for Evidence Based Medicine IG. The
+      RiskOfBias Profile is used for expression of the assessment of the threats to
+      validity (or risk of bias) of an Evidence artifact or an artifact consisting
+      of Evidence or the plan to create Evidence.
+    isExample: false
+    name: RiskOfBias
+    reference:
+      reference: StructureDefinition/risk-of-bias
+  - description: Profile of Library for Evidence Based Medicine IG. The SearchResults
+      Profile is used to represent search results, such as for a systematic review.
+    isExample: false
+    name: SearchResults
+    reference:
+      reference: StructureDefinition/search-results
+  - description: Example of searching for 'Wonder Woman' in titles and abstracts in
+      PubMed
+    isExample: true
+    name: 'SearchResults: PubMed search for Wonder Woman'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/search-results
+    reference:
+      reference: Library/179606
+  - description: Profile of Group for Evidence Based Medicine IG. The SearchStrategy
+      Profile is used to express the criteria defining a search strategy, such as
+      for a systematic review.
+    isExample: false
+    name: SearchStrategy
+    reference:
+      reference: StructureDefinition/search-strategy
+  - description: "We conducted a search in Pubmed and Embase databases from inception\
+      \ to 28 August 2021. The search strategy composed the PICO method: patients\
+      \ of interest were obese, adult (age \u226518 years old) patients, Intervention\
+      \ was bariatric surgery, Controls were obese patients who did not undergo bariatric\
+      \ surgery, and Outcomes were defined as all-cause mortality, CV mortality, and\
+      \ incidence of CV disease, i.e. incident AF, incident HF, incident myocardial\
+      \ infarction, incident stroke, and incident aortic stenosis. Further, for clarity\
+      \ reasons we investigated myocardial infarction, and not incident coronary artery\
+      \ disease, because it is very difficult if not impossible to define its onset,\
+      \ also this was not uniform across the studies. Somewhat similarly, we investigated\
+      \ stroke and not incident cerebrovascular disease. A few studies, however, further\
+      \ differentiated between ischaemic vs. haemorrhagic stroke, and thus we also\
+      \ separately investigated the effect on ischaemic stroke."
+    isExample: true
+    name: SearchStrategy_PubMed_and_Embase_search_for_van_Veldhuisen_2022_systematic_review
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/search-strategy
+    reference:
+      reference: Group/179592
+  - description: Example of searching for "Wonder Woman" in titles and abstracts in
+      PubMed
+    isExample: true
+    name: SearchStrategy_PubMed_search_for_Wonder_Woman
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/search-strategy
+    reference:
+      reference: Group/179593
+  - description: "Cohort study with baseline data of exposures from November 2005\
+      \ through July 2010 and follow-up data from 2006 until death or through December\
+      \ 2015 at a tertiary care outpatient center, Vestfold Hospital Trust, Norway.\
+      \ Consecutive treatment-seeking adult patients (n\u2009=\u20092109) with severe\
+      \ obesity assessed (221 patients excluded and 1888 patients included)."
+    isExample: true
+    name: Severely_Obese_Adults_2018_Norwegian_Cohort
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/study-group
+    reference:
+      reference: Group/178427
+  - description: Profile of Evidence for Evidence Based Medicine IG. The SingleStudyEvidence
+      Profile is used for evidence from single studies, explicitly expressing that
+      no studies were synthesized.
+    isExample: false
+    name: SingleStudyEvidence
+    reference:
+      reference: StructureDefinition/single-study-evidence
+  - description: Profile of PlanDefinition for temporary testing to coordination with
+      M11 use.
+    isExample: false
+    name: SoaPlanDefinition
+    reference:
+      reference: StructureDefinition/soa-plandefinition
+  - description: Example of Schedule of Activities with follow-up assessment 3 months
+      after study start
+    isExample: true
+    name: 'SoaPlanDefinition: Follow-up assessment 3 months after study start'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/soa-plandefinition
+    reference:
+      reference: PlanDefinition/181450
+  - description: Profile of Citation for Evidence Based Medicine IG. The SoftwareCitation
+      Profile is used for citations of executable code.
+    isExample: false
+    name: SoftwareCitation
+    reference:
+      reference: StructureDefinition/software-citation
+  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: "SoftwareCitation: Computable Publishing\xAE: ClinicalTrials.gov-to-FEvIR\
+      \ Converter"
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/software-citation
+    reference:
+      reference: Citation/179560
+  - description: The analysis that was applied.
+    isExample: false
+    name: StatisticModelApplied
+    reference:
+      reference: StructureDefinition/statistic-model-applied
+  - description: An expression that defines the statistical analysis.
+    isExample: false
+    name: StatisticModelExpression
+    reference:
+      reference: StructureDefinition/statistic-model-expression
+  - description: The condition under which the variable (or modelCharacteristic) will
+      be included.
+    isExample: false
+    name: StatisticModelIncludeIf
+    reference:
+      reference: StructureDefinition/statistic-model-include-if
+  - description: The plan for analysis.
+    isExample: false
+    name: StatisticModelIntended
+    reference:
+      reference: StructureDefinition/statistic-model-intended
+  - description: The specific value (when paired with code) as a CodeableConcept
+    isExample: false
+    name: StatisticModelValueCodeableConcept
+    reference:
+      reference: StructureDefinition/statistic-model-value-codeableconcept
+  - description: The specific value (when paired with code) as a Quantity
+    isExample: false
+    name: StatisticModelValueQuantity
+    reference:
+      reference: StructureDefinition/statistic-model-value-quantity
+  - description: The specific value (when paired with code) as a Quantity
+    isExample: false
+    name: StatisticModelValueRange
+    reference:
+      reference: StructureDefinition/statistic-model-value-range
+  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: 'StudyCitation: 2022 Systematic Review of bariatric surgery mortality effect
+      35243488'
+    reference:
+      reference: Citation/33400
+  - description: Profile of Group for Evidence Based Medicine IG. The StudyEligibilityCriteria
+      Profile is used to describe inclusion and exclusion criteria for a clinical
+      trial or other research study.
+    isExample: false
+    name: StudyEligibilityCriteria
+    reference:
+      reference: StructureDefinition/study-eligibility-criteria
+  - description: "Inclusion Criteria:    Age 30 to 67 years at eligibility visit.\
+      \    Diagnosed with T2DM at least 6 months prior to enrollment, under the active\
+      \ care of a doctor for at least the six months prior to enrollment, and HbA1c\
+      \ \u2265 8.0%.    Body Mass Index (BMI) \u2265 30.0 kg/m2 and \u2264 39.9 kg/m2\
+      \ at eligibility visit.    Willingness to accept random assignment to either\
+      \ treatment group.    Expect to live or work within approximately one hour's\
+      \ traveling time from the study clinic for the duration of the two-year trial.\
+      \    Willingness to comply with the follow-up protocol and successful completion\
+      \ of the run-in.    Written informed consent. ///// Exclusion Criteria:   Cardiovascular\
+      \ event (myocardial infarction, acute coronary syndrome, coronary artery angioplasty\
+      \ or bypass, stroke) in the past six months.    Current evidence of congestive\
+      \ heart failure, angina pectoris, or symptomatic peripheral vascular disease.\
+      \    Cardiac stress test indicating that surgery or IMM would not be safe. \
+      \   Pulmonary embolus or thrombophlebitis in the past six months.    Cancer\
+      \ of any kind (except basal cell skin cancer or cancer in situ) unless documented\
+      \ to be disease-free for five years.    Significant anemia (hemoglobin 1.0 g\
+      \ or more below normal range) or history of coagulopathy.    Serum creatinine\
+      \ \u2265 1.5 mg/dl.    HbA1c > 14.0%."
+    isExample: true
+    name: StudyEligibilityCriteria_Eligibility_Criteria_for_Bariatric_Surgery_Randomized_Trial_Diabetes_Surgery_Study
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/study-eligibility-criteria
+    reference:
+      reference: Group/170443
+  - description: Patients aged 30-60 years with a body-mass index of 35 kg/m(2) or
+      more and a history of type 2 diabetes lasting at least 5 years
+    isExample: true
+    name: StudyEligibilityCriteria_Eligibility_Criteria_for_DIBASY_Trial
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/study-eligibility-criteria
+    reference:
+      reference: Group/172461
+  - description: "obese, adult (age \u226518 years old) patients"
+    isExample: true
+    name: StudyEligibilityCriteria_Obese_patients_18_years_old
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/study-eligibility-criteria
+    reference:
+      reference: Group/171819
+  - description: Profile of Group for Evidence Based Medicine IG. The StudyGroup Profile
+      is used to represent an enumerated group of participants in a research study.
+    isExample: false
+    name: StudyGroup
+    reference:
+      reference: StructureDefinition/study-group
+  - description: An enumerated group with a single characteristic referencing the
+      StudyEligibilityCriteria.
+    isExample: true
+    name: StudyGroup_Bariatric_Surgery_Trial_Enrollment_Group
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/study-group
+    reference:
+      reference: Group/32145
+  - description: An enumerated group with a single characteristic referencing the
+      StudyEligibilityCriteria.
+    isExample: true
+    name: StudyGroup_DIBASY_Trial_Enrollment_Group
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/study-group
+    reference:
+      reference: Group/46117
+  - description: Profile of Composition for Evidence Based Medicine IG. The SummaryOfFindings
+      Profile is used for an evidence report combining Evidence and EvidenceVariable
+      Resources, organized around VariableDefinition (Profile of EvidenceVariable),
+      to represent the summary of findings of comparative evidence.
+    isExample: false
+    name: SummaryOfFindings
+    reference:
+      reference: StructureDefinition/summary-of-findings
+  - isExample: true
+    name: 'SummaryOfFindings: Bariatric Surgery Summary of Findings Example for GIN
+      2022'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/summary-of-findings
+    reference:
+      reference: Composition/104215
+  - description: Profile of Composition for Evidence Based Medicine IG. The SummaryOfNetEffect
+      Profile is used for an evidence report combining ArtifactAssessment and Evidence
+      and EvidenceVariable Resources, organized around VariableDefinition (Profile
+      of EvidenceVariable), to represent the summary of net effect contributions of
+      comparative evidence, adjusted for the relative importance of outcomes.
+    isExample: false
+    name: SummaryOfNetEffect
+    reference:
+      reference: StructureDefinition/summary-of-net-effect
+  - isExample: true
+    name: 'SummaryOfNetEffect: Bariatric Surgery Summary of Net Effect Contributions
+      Example for GIN 2022'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/summary-of-net-effect
+    reference:
+      reference: Composition/104383
+  - description: Profile of Group for Evidence Based Medicine IG. The SystematicReviewEligibilityCriteria
+      Profile is used to describe inclusion and exclusion criteria for a systematic
+      review.
+    isExample: false
+    name: SystematicReviewEligibilityCriteria
+    reference:
+      reference: StructureDefinition/systematic-review-eligibility-criteria
+  - description: "**Study selection criteria**\nTypes of Studies.\nRandomized controlled\
+      \ clinical trials (RCTs) with parallel design that compared the association\
+      \ of ADT and chemotherapy (docetaxel), versus ADT alone.\n\nTypes of participants.\n\
+      Patients aged \u226518 years with cytological or histological diagnosis of mHNPC."
+    isExample: true
+    name: SystematicReviewEligibilityCriteria_ADT_and_Docetaxel_vs_ADT_alone_for_metastatic_hormone_naive_prostate_cancer
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/systematic-review-eligibility-criteria
+    reference:
+      reference: Group/179619
+  - description: Profile of Library for Evidence Based Medicine IG. The SystematicReviewExcludedStudies
+      Profile is used to represent the subset of search results of a systematic review
+      which did not meet the inclusion criteria.
+    isExample: false
+    name: SystematicReviewExcludedStudies
+    reference:
+      reference: StructureDefinition/systematic-review-excluded-studies
+  - description: 11 excluded studies
+    isExample: true
+    name: 'SystematicReviewExcludedStudies: ADT and Docetaxel vs. ADT alone for metastatic
+      hormone-naive prostate cancer - Brian S. Alper'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/systematic-review-excluded-studies
+    reference:
+      reference: Library/179632
+  - description: Profile of Library for Evidence Based Medicine IG. The SystematicReviewIncludedStudies
+      Profile is used to represent the subset of search results of a systematic review
+      which meet the inclusion criteria.
+    isExample: false
+    name: SystematicReviewIncludedStudies
+    reference:
+      reference: StructureDefinition/systematic-review-included-studies
+  - description: 3 included studies
+    isExample: true
+    name: 'SystematicReviewIncludedStudies: ADT and Docetaxel vs. ADT alone for metastatic
+      hormone-naive prostate cancer'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/systematic-review-included-studies
+    reference:
+      reference: Library/179618
+  - description: Therapeutic-dose anticoagulation with unfractionated or low-molecular-weight
+      heparin was administered according to local protocols for the treatment of acute
+      venous thromboembolism for up to 14 days or until recovery; the latter was defined
+      as hospital discharge or a discontinuation of supplemental oxygen for at least
+      24 hours.
+    isExample: true
+    name: Therapeutic-dose anticoagulation with heparin
+    reference:
+      reference: EvidenceVariable/7751
+  - description: A conceptual group with 2 characteristics for study participant eligibility
+      criteria that were used for a meta-analysis.
+    isExample: true
+    name: Type_2_diabetes_and_elevated_BMI_in_2016_meta_analysis
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/study-eligibility-criteria
+    reference:
+      reference: Group/33398
+  - description: Profile of EvidenceVariable for Evidence Based Medicine IG. The VariableDefinition
+      Profile uses a CodeableReference Datatype to provide a concept (e.g. coding
+      in a code system) and/or a reference to a Group Resource for structured data
+      to define the variable.
+    isExample: false
+    name: VariableDefinition
+    reference:
+      reference: StructureDefinition/variable-definition
+  - description: The reference value used for comparison.
+    isExample: false
+    name: VariableDefinitionComparatorCategory
+    reference:
+      reference: StructureDefinition/variable-definition-comparator-category
+  - description: Sub-classification of the role of the variable.
+    isExample: false
+    name: VariableDefinitionRoleSubtype
+    reference:
+      reference: StructureDefinition/variable-definition-role-subtype
+  - description: Classification of the role of the variable.
+    isExample: false
+    name: VariableDefinitionVariableRoleCode
+    reference:
+      reference: StructureDefinition/variable-definition-variable-role-code
+  - description: Profile of Citation for Evidence Based Medicine IG. The WebPageCitation
+      Profile is used for citations of a web page or website, typically when there
+      is not another type being used to classify the cited artifact.
+    isExample: false
+    name: WebPageCitation
+    reference:
+      reference: StructureDefinition/web-page-citation
+  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      Implementation Guide.
+    isExample: true
+    name: 'WebPageCitation: A HEvKA Update Summary'
+    profile:
+    - https://hl7.org/fhir/uv/ebm/StructureDefinition/web-page-citation
+    reference:
+      reference: Citation/179561
+fhirVersion:
+- 5.0.0
+id: hl7.fhir.uv.ebm
+jurisdiction:
+- coding:
+  - code: '001'
+    display: World
+    system: http://unstats.un.org/unsd/methods/m49/m49.htm
+name: EBMIG
+packageId: hl7.fhir.uv.ebm
+publisher: HL7 International - Clinical Decision Support WG
+resourceType: ImplementationGuide
+status: draft
+url: https://hl7.org/fhir/uv/ebm/ImplementationGuide/hl7.fhir.uv.ebm
+version: 0.1.0

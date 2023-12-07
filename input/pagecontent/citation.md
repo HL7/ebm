@@ -28,21 +28,21 @@ In many examples derived from the structured data in PubMed MEDLINE, the 'code s
 
 ### Profiles of Citation Resource
 
-The <b>JournalArticleCitation Profile</b> includes a citedArtifact.classification with a type value of "Knowledge Artifact Type" and a classifier value of "Journal Article"
+The **[JournalArticleCitation Profile][JournalArticleCitation]** includes a citedArtifact.classification with a type value of "Knowledge Artifact Type" and a classifier value of "Journal Article"
 
-The <b>BookCitation Profile</b> includes a citedArtifact.classification with a type value of "Knowledge Artifact Type" and a classifier value of "Book".
+The **[BookCitation Profile][BookCitation]** includes a citedArtifact.classification with a type value of "Knowledge Artifact Type" and a classifier value of "Book".
 
-The <b>BookPartCitation Profile</b> includes a citedArtifact.publicationForm.publishedIn.type value of "Book" and a citedArtifact.classification with a type value of "Knowledge Artifact Type" and a classifier value of "Book Part".
+The **[BookPartCitation Profile][BookPartCitation]** includes a citedArtifact.publicationForm.publishedIn.type value of "Book" and a citedArtifact.classification with a type value of "Knowledge Artifact Type" and a classifier value of "Book Part".
 
-The <b>DatabaseCitation Profile</b> includes a citedArtifact.classification with a type value of "Knowledge Artifact Type" and a classifier value of "Database".
+The **[DatabaseCitation Profile][DatabaseCitation]** includes a citedArtifact.classification with a type value of "Knowledge Artifact Type" and a classifier value of "Database".
   
-The <b>DatabaseEntryCitation Profile</b> includes a citedArtifact.publicationForm.publishedIn.type value of "Database" and a citedArtifact.classification with a type value of "Knowledge Artifact Type" and a classifier value of "Database Entry".
+The **[DatabaseEntryCitation Profile][DatabaseEntryCitation]** includes a citedArtifact.publicationForm.publishedIn.type value of "Database" and a citedArtifact.classification with a type value of "Knowledge Artifact Type" and a classifier value of "Database Entry".
 
-The <b>DatasetCitation Profile</b> includes a citedArtifact.classification with a type value of "Knowledge Artifact Type" and a classifier value of "Dataset".
+The **[DatasetCitation Profile][DatasetCitation]** includes a citedArtifact.classification with a type value of "Knowledge Artifact Type" and a classifier value of "Dataset".
 
-The <b>PreprintCitation Profile</b> includes a citedArtifact.classification with a type value of "Knowledge Artifact Type" and a classifier value of "Preprint".
+The **[PreprintCitation Profile][PreprintCitation]** includes a citedArtifact.classification with a type value of "Knowledge Artifact Type" and a classifier value of "Preprint".
 
-The <b>SoftwareCitation Profile</b> includes a citedArtifact.classification with a type value of "Knowledge Artifact Type" and a classifier value of "Executable app".
+The **[SoftwareCitation Profile][SoftwareCitation]** includes a citedArtifact.classification with a type value of "Knowledge Artifact Type" and a classifier value of "Executable app".
 
-The <b>WebPageCitation Profile</b> includes a citedArtifact.classification with a type value of "Knowledge Artifact Type" and a classifier value of "Webpage".
+The **[WebPageCitation Profile][WebPageCitation]** includes a citedArtifact.classification with a type value of "Knowledge Artifact Type" and a classifier value of "Webpage".
 
