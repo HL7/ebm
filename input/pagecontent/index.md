@@ -115,6 +115,24 @@ Profiles of <b>Composition Resource</b> include:
   - <b>EvidenceMap</b> is used for an organized listing of Resources used to generate <b>EvidenceReport</b> instances.
   - <b>M11Report</b> is used for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification.
 
+Other Resources and <b>[Other Profiles](/otherprofiles.html)</b> used in the EBMonFHIR Implementation Guide include:
+- <b>ResearchStudy Resource</b>
+- <b>CodeSystem Resource</b> including a Profile of:
+  - <b>DataDictionary</b> used for a code key for variable names in a dataset.
+- <b>ActivityDefinition Resource</b> including a Profile of:
+  - <b>RecommendationAction</b> used for a recommendation from a clinical practice guideline.
+- <b>PlanDefinition Resource</b> including Profiles of:
+  - <b>RecommendationPlan</b> used for the implementable representation of a recommendation (such as that from a clinical practice guideline). <b>RecommendationPlan</b> is developed to match the CPGonFHIR related Implementation Guidance.
+  - <b>SoaPlanDefinition</b> used for the representation of a schedule of activities that is often includes with a research study protocol. <b>SoaPlanDefinition</b> is in development related to efforts to support the <b>M11Report Profile</b>.
+- <b>Library Resource</b> including Profiles of:
+  - <b>SearchResults</b> used to represent search results, such as for a systematic review. The subjectReference element is limited to reference a <b>SearchStrategy Profile</b>.
+  - <b>SystematicReviewIncludedStudies</b> used to represent the subset of search results of a systematic review which meet the inclusion criteria. The subjectReference element is limited to reference a <b>SystematicReviewEligibilityCriteria Profile</b>.
+  - <b>SystematicReviewExcludedStudies</b> used to represent the subset of search results of a systematic review which did not meet the inclusion criteria. The subjectReference element is limited to reference a <b>SystematicReviewEligibilityCriteria Profile</b>.
+- <b>List Resource</b> including Profiles of:
+  - <b>EvidenceList</b> used provide a list of <b>Evidence Resources</b>. <b>EvidenceList</b> is used to represent a group of evidence for the population for an <b>EvidenceSynthesisEvidence</b> using a summary data meta-analysis approach and is referenced from a <b>MetaanalysisStudyGroup</b>. The entry element is repeatable and limited to reference an <b>Evidence Resource</b>.
+  - <b>NetEffectContributionList</b> used provide a list of Evidence Resources (<b>NetEffectContribution Profile</b>). <b>NetEffectContributionList</b> is used to represent a group of evidence for the population for a <b>NetEffectEstimate</b> (Profile of Evidence) using a net effect analysis approach and is referenced from a <b>NetEffectContributions</b> (Profile of Group). The entry element is repeatable and limited to reference a <b>NetEffectContribution Resource</b>.
+  - <b>OutcomeList</b> used provide a list of outcomes. <b>OutcomeList</b> is referenced in the <b>EvidenceReportSubject Profile</b> as a way to define the set of outcomes that an <b>EvidenceReport</b> is about. The entry element is repeatable and limited to reference an <b>OutcomeDefinition Profile</b> or a <b>VariableDefinition Profile</b>.
+
 
 ### Dependencies
 
