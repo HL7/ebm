@@ -36,7 +36,7 @@ The Evidence Based Medicine on FHIR (EBMonFHIR) developed Resources (<b>Artifact
 
 ### Evidence Resource
 
-The <b>[Evidence Resource](/ig/HL7/ebm/evidence.html)</b> is the central atomic component for the Evidence-related Resources. The <b>Evidence Resource</b> provides a machine-interpretable expression of an evidence concept including the evidence variables (e.g., population, exposures, outcomes, covariates), the statistics (the quantitative results of a study or statistical analysis), and the certainty of this evidence.
+The <b>Evidence Resource</b> is the central atomic component for the Evidence-related Resources. The <b>Evidence Resource</b> provides a machine-interpretable expression of an evidence concept including the evidence variables (e.g., population, exposures, outcomes, covariates), the statistics (the quantitative results of a study or statistical analysis), and the certainty of this evidence.
 
 Profiles of <b>Evidence Resource</b> include:
 
@@ -57,7 +57,7 @@ Profiles of <b>Evidence Resource</b> include:
 
 ### EvidenceVariable Resource
 
-The <b>[EvidenceVariable Resource](/ig/HL7/ebm/evidencevariable.html)</b> describes a single variable used in a statistical analysis.
+The <b>EvidenceVariable Resource</b> describes a single variable used in a statistical analysis.
 
 Profiles of <b>EvidenceVariable Resource</b> include:
 - <b>VariableDefinition</b> is a base for all other EvidenceVariable Profiles. Profiles of <b>VariableDefinition</b> include:
@@ -66,7 +66,7 @@ Profiles of <b>EvidenceVariable Resource</b> include:
 
 ### Group Resource
 
-The <b>[Group Resource](/ig/HL7/ebm/group.html)</b> represents a defined collection of entities. The group may be enumerated, meaning that there is a known quantity of group members with or without a listing of the group members. The group may be definitional, meaning there is a structured representation of the characteristics (criteria) that define membership eligiblity, or who or what matches the criteria to be considered a member of the group.
+The <b>Group Resource</b> represents a defined collection of entities. The group may be enumerated, meaning that there is a known quantity of group members with or without a listing of the group members. The group may be definitional, meaning there is a structured representation of the characteristics (criteria) that define membership eligiblity, or who or what matches the criteria to be considered a member of the group.
 
 Profiles of <b>Group Resource</b> include:
 - <b>GroupR6</b> is a base for all other Group Profiles. Profiles of <b>GroupR6</b> include:
@@ -83,7 +83,7 @@ Profiles of <b>Group Resource</b> include:
 
 ### Citation Resource
 
-The <b>[Citation Resource](/ig/HL7/ebm/citation.html)</b> enables reference to any knowledge artifact for purposes of identification and attribution. The <b>Citation Resource</b> supports existing reference structures and developing publication practices such as versioning, expressing complex contributorship roles, and referencing computable resources.
+The <b>Citation Resource</b> enables reference to any knowledge artifact for purposes of identification and attribution. The <b>Citation Resource</b> supports existing reference structures and developing publication practices such as versioning, expressing complex contributorship roles, and referencing computable resources.
 
 Profiles of <b>Citation Resource</b> include:
 - <b>JournalArticleCitation</b>
@@ -98,7 +98,7 @@ Profiles of <b>Citation Resource</b> include:
 
 ### ArtifactAssessment Resource
 
-The <b>[ArtifactAssessment Resource](/ig/HL7/ebm/artifactassessment.html)</b> provides one or more comments, classifiers or ratings about a Resource and supports attribution and rights management metadata for the added content.
+The <b>ArtifactAssessment Resource</b> provides one or more comments, classifiers or ratings about a Resource and supports attribution and rights management metadata for the added content.
 
 Profiles of <b>ArtifactAssessment Resource</b> include:
 - <b>Comment</b>
@@ -115,7 +115,7 @@ Profiles of <b>ArtifactAssessment Resource</b> include:
 
 ### Composition Resource
 
-The <b>[Composition Resource](/ig/HL7/ebm/composition.html)</b> is a structure for grouping information for purposes of persistence and attestability. The <b>Composition Resource</b> provides the basic structure for a FHIR document. The full content of the document is expressed using a <b>Bundle Resource</b> containing the Composition and its entries (which are references to other FHIR Resources).
+The <b>Composition Resource</b> is a structure for grouping information for purposes of persistence and attestability. The <b>Composition Resource</b> provides the basic structure for a FHIR document. The full content of the document is expressed using a <b>Bundle Resource</b> containing the Composition and its entries (which are references to other FHIR Resources).
 
 Profiles of <b>Composition Resource</b> include:
 - <b>EvidenceReport</b> is used for a base structure (canonical resource management) for a report combining any number of <b>Citation</b>, <b>Evidence</b>, <b>EvidenceVariable</b>, <b>EvidenceReport</b>, and related Resources. Profiles of <b>EvidenceReport</b> include:
@@ -129,7 +129,7 @@ Profiles of <b>Composition Resource</b> include:
 
 ### Other Resources
 
-Other Resources and <b>[Other Profiles](/ig/HL7/ebm/otherprofiles.html)</b> used in the EBMonFHIR Implementation Guide include:
+Other Resources and <b>Other Profiles</b> used in the EBMonFHIR Implementation Guide include:
 - <b>ResearchStudy Resource</b>
 - <b>CodeSystem Resource</b> including a Profile of:
   - <b>DataDictionary</b> used for a code key for variable names in a dataset.
