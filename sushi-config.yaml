@@ -42,9 +42,28 @@ publisher:
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
 #
-# pages:
-#   index.md:
-#     title: Example Home
+pages:
+  index.md:
+    title: Introduction
+  evidence.md:
+    title: Evidence Profiles
+  evidencevariable.md:
+    title: EvidenceVariable Profiles
+  group.md:
+    title: Group Profiles
+  citation.md:
+    title: Citation Profiles
+  artifactassessment.md:
+    title: ArtifactAssessment Profiles
+  composition.md:
+    title: Composition Profiles
+  otherprofiles.md:
+    title: Other Profiles
+  profiles.md:
+  extensions.md:
+  terminologies.md:
+  examples.md:
+
 #   implementation.xml:
 #   examples.xml:
 #     title: Examples Overview
@@ -73,6 +92,18 @@ publisher:
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 menu:
   Home: index.html
+  Profiles:
+    Evidence: evidence.html
+    EvidenceVariable: evidencevariable.html
+    Group: group.html
+    Citation: citation.html
+    ArtifactAssessment: artifactassessment.html
+    Composition: composition.html
+    Other: otherprofiles.html
+    All: profiles.html
+  Extensions: extensions.html
+  Terminologies: terminologies.html
+  Examples: examples.html
   Artifacts: artifacts.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮

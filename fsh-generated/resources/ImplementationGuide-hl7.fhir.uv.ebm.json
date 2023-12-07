@@ -1851,7 +1851,10 @@
         },
         "description": "Body site where sample was collected - datatype string",
         "name": "ExposureVariable: pht013094.v1.p1 BODY_SITE",
-        "isExample": true
+        "isExample": true,
+        "profile": [
+          "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+        ]
       },
       {
         "reference": {
@@ -3421,10 +3424,76 @@
       "generation": "html",
       "page": [
         {
-          "title": "Home",
+          "title": "Introduction",
           "generation": "markdown",
           "name": "index.html",
           "sourceUrl": "index.html"
+        },
+        {
+          "title": "Evidence Profiles",
+          "generation": "markdown",
+          "name": "evidence.html",
+          "sourceUrl": "evidence.html"
+        },
+        {
+          "title": "EvidenceVariable Profiles",
+          "generation": "markdown",
+          "name": "evidencevariable.html",
+          "sourceUrl": "evidencevariable.html"
+        },
+        {
+          "title": "Group Profiles",
+          "generation": "markdown",
+          "name": "group.html",
+          "sourceUrl": "group.html"
+        },
+        {
+          "title": "Citation Profiles",
+          "generation": "markdown",
+          "name": "citation.html",
+          "sourceUrl": "citation.html"
+        },
+        {
+          "title": "ArtifactAssessment Profiles",
+          "generation": "markdown",
+          "name": "artifactassessment.html",
+          "sourceUrl": "artifactassessment.html"
+        },
+        {
+          "title": "Composition Profiles",
+          "generation": "markdown",
+          "name": "composition.html",
+          "sourceUrl": "composition.html"
+        },
+        {
+          "title": "Other Profiles",
+          "generation": "markdown",
+          "name": "otherprofiles.html",
+          "sourceUrl": "otherprofiles.html"
+        },
+        {
+          "title": "Profiles",
+          "generation": "markdown",
+          "name": "profiles.html",
+          "sourceUrl": "profiles.html"
+        },
+        {
+          "title": "Extensions",
+          "generation": "markdown",
+          "name": "extensions.html",
+          "sourceUrl": "extensions.html"
+        },
+        {
+          "title": "Terminologies",
+          "generation": "markdown",
+          "name": "terminologies.html",
+          "sourceUrl": "terminologies.html"
+        },
+        {
+          "title": "Examples",
+          "generation": "markdown",
+          "name": "examples.html",
+          "sourceUrl": "examples.html"
         }
       ],
       "name": "toc.html",
