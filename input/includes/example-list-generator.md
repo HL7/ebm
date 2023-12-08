@@ -1,11 +1,13 @@
-
 {% for p in site.data.ig.definition.resource %}
   {%- if p.isExample -%}
-      {% if types %}
-        {% assign types =  types | append: "," | append: p.reference.reference | split: '/' | first %}
-      {% else %}
-       {% assign types = p.reference.reference | split: '/' | first %}
-      {% endif %}
+      {% assign type = p.reference.reference | split: '/' | first %}
+      {% unless type == "CodeSystem" or type == "ValueSet" %}
+          {% if types %}
+            {% assign types =  types | append: "," | append: type %}
+          {% else %}
+            {% assign types = type %}
+          {% endif %}
+      {% endunless %}
   {% endif %}
 {% endfor %}
 
@@ -22,5 +24,4 @@
             {%- endif -%}
        {%- endif -%}
    {%- endfor %}
-{% comment %} keep this line here for proper rendering {% endcomment %}
 {% endfor %}
