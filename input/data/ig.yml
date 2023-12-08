@@ -66,7 +66,7 @@ definition:
   - code:
       code: releaselabel
       system: http://hl7.org/fhir/tools/CodeSystem/ig-parameters
-    value: ci-build
+    value: trial-use
   - code:
       code: path-history
       system: http://hl7.org/fhir/tools/CodeSystem/ig-parameters
@@ -2514,11 +2514,13 @@ definition:
     - https://hl7.org/fhir/uv/ebm/StructureDefinition/risk-of-bias
     reference:
       reference: ArtifactAssessment/179692
-  - description: Types of bias for used with risk of bias assessment.
-    isExample: false
+  - description: Types of bias for use with risk of bias assessment. This is a snapshot
+      version from a code system in development (original source at https://fevir.net/resources/CodeSystem/27270)
+      and is provided for example support in the EBMonFHIR Implementation Guide.
+    isExample: true
     name: Risk Of Bias Type Value Set
     reference:
-      reference: ValueSet/risk-of-bias-type
+      reference: ValueSet/181524
   - description: Profile of ArtifactAssessment for Evidence Based Medicine IG. The
       RiskOfBias Profile is used for expression of the assessment of the threats to
       validity (or risk of bias) of an Evidence artifact or an artifact consisting
@@ -2527,6 +2529,17 @@ definition:
     name: RiskOfBias
     reference:
       reference: StructureDefinition/risk-of-bias
+  - description: This code system was copied as a snapshot from the version being
+      used for active development of the Scientific Evidence Code System (SEVCO).
+      This code system is not yet released for expected use and may not be stable.
+      This resource may be used for supporting the examples in the EBMonFHIR Implementation
+      Guide, and published versions of the code system (when ready) will be published
+      as separate resources with stable identifiers.
+    isExample: true
+    name: Scientific Evidence Code System (SEVCO) -- EXAMPLE VERSION for EBMonFHIR
+      Implementation Guide
+    reference:
+      reference: CodeSystem/181513
   - description: Profile of Library for Evidence Based Medicine IG. The SearchResults
       Profile is used to represent search results, such as for a systematic review.
     isExample: false
@@ -2880,4 +2893,4 @@ publisher: HL7 International - Clinical Decision Support WG
 resourceType: ImplementationGuide
 status: draft
 url: https://hl7.org/fhir/uv/ebm/ImplementationGuide/hl7.fhir.uv.ebm
-version: 0.1.0
+version: 1.0.0-ballot
