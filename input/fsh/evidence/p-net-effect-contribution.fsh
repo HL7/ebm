@@ -37,7 +37,7 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The NetEffectC
   * attributeEstimate ^slicing.rules = #open
   * attributeEstimate contains confidenceInterval 1..1 MS
   * attributeEstimate[confidenceInterval].type.coding 1..1
-  * attributeEstimate[confidenceInterval].type.coding = https://fevir.net/resources/CodeSystem/181513#TBD:0000059 "Confidence interval"
+  * attributeEstimate[confidenceInterval].type.coding = https://fevir.net/resources/CodeSystem/181513#STATO:0000196 "confidence interval"
   * modelCharacteristic 1..*
   * modelCharacteristic ^slicing.discriminator.type = #value
   * modelCharacteristic ^slicing.discriminator.path = "code.coding"
