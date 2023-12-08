@@ -33,7 +33,7 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
   * ^short = "A rating"
 * content.informationType
   * ^comment = "The code 'rating' will be the value in most instances. Other codes may be used for complex RiskOfBias with content.component use."
-* content.type from risk-of-bias-type (extensible)
+* content.type from $ebm-risk-of-bias-type (extensible)
 * content.classifier from http://hl7.org/fhir/ValueSet/certainty-rating (extensible) //TODO - change to from risk-of-bias-classifier from $sevco when ready
 * content.freeToShare
   * ^definition = "Acceptable to publicly share the RiskOfBias content, specific to the associated content instance"
