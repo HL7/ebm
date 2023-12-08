@@ -30,19 +30,19 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The NetEffectC
 * statistic ^slicing.rules = #open
 * statistic contains netEffect 1..1 MS
 * statistic[netEffect].statisticType.coding 1..1
-* statistic[netEffect].statisticType.coding = https://fevir.net/resources/CodeSystem/27270#STATO:0000424 "Risk Difference"
+* statistic[netEffect].statisticType.coding = https://fevir.net/resources/CodeSystem/181513#STATO:0000424 "Risk Difference"
 * statistic[netEffect]
   * attributeEstimate ^slicing.discriminator.type = #value
   * attributeEstimate ^slicing.discriminator.path = "type.coding"
   * attributeEstimate ^slicing.rules = #open
   * attributeEstimate contains confidenceInterval 1..1 MS
   * attributeEstimate[confidenceInterval].type.coding 1..1
-  * attributeEstimate[confidenceInterval].type.coding = https://fevir.net/resources/CodeSystem/27270#TBD:0000059 "Confidence interval"
+  * attributeEstimate[confidenceInterval].type.coding = https://fevir.net/resources/CodeSystem/181513#TBD:0000059 "Confidence interval"
   * modelCharacteristic 1..*
   * modelCharacteristic ^slicing.discriminator.type = #value
   * modelCharacteristic ^slicing.discriminator.path = "code.coding"
   * modelCharacteristic ^slicing.rules = #open
   * modelCharacteristic contains netEffectContributionAnalysis 1..1 MS
   * modelCharacteristic[netEffectContributionAnalysis].code.coding 1..1
-  * modelCharacteristic[netEffectContributionAnalysis].code.coding = https://fevir.net/resources/CodeSystem/27270#TBD:net-effect-contribution-analysis "Net effect contribution analysis"
+  * modelCharacteristic[netEffectContributionAnalysis].code.coding = https://fevir.net/resources/CodeSystem/181513#TBD:net-effect-contribution-analysis "Net effect contribution analysis"
   

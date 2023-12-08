@@ -3,7 +3,7 @@
 To download related CodeSystem and ValueSet Resources:
 
 Copy the JSON content from 
-* [Scientific Evidence Code System (SEVCO)](https://fevir.net/resources/CodeSystem/27270#json)
+* [Scientific Evidence Code System (SEVCO)](https://fevir.net/resources/CodeSystem/181513#json)
 * [Recommendation Justification Code System](https://fevir.net/resources/CodeSystem/27834#json)
 * [Evidence Based Medicine on FHIR Implementation Guide Code System](https://fevir.net/resources/CodeSystem/179423#json)
 * [EvidenceVariableRoleSubtype Value Set](https://fevir.net/resources/ValueSet/179424#json)
