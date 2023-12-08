@@ -167,6 +167,7 @@
 <artifact id="Group/179897" key="Group-179897" name="EGFR_45_59"/>
 <artifact id="StructureDefinition/endpoint-analysis-plan" key="StructureDefinition-endpoint-analysis-plan" name="EndpointAnalysisPlan"/>
 <artifact id="CodeSystem/179423" key="CodeSystem-179423" name="Evidence Based Medicine on FHIR Implementation Guide Code System"/>
+<artifact id="CodeSystem/181513" key="CodeSystem-181513" name="Scientific Evidence Code System (SEVCO) -- EXAMPLE VERSION for EBMonFHIR Implementation Guide"/>
 <artifact id="ValueSet/evidence-variable-role-subtype" key="ValueSet-evidence-variable-role-subtype" name="Evidence Variable Role Subtype Value Set"/>
 <artifact id="StructureDefinition/evidence-list" key="StructureDefinition-evidence-list" name="EvidenceList"/>
 <artifact id="List/179800" key="List-179800" name="EvidenceList: Effect estimates for meta-analysis (Biegel 2020, Wang 2020, SOLIDARITY)"/>

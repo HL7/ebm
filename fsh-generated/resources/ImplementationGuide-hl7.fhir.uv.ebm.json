@@ -1592,6 +1592,14 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/181513"
+        },
+        "description": "This code system was copied as a snapshot from the version being used for active development of the Scientific Evidence Code System (SEVCO). This code system is not yet released for expected use and may not be stable. This resource may be used for supporting the examples in the EBMonFHIR Implementation Guide, and published versions of the code system (when ready) will be published as separate resources with stable identifiers.",
+        "name": "Scientific Evidence Code System (SEVCO) -- EXAMPLE VERSION for EBMonFHIR Implementation Guide",
+        "isExample": true
+      },
+      {
+        "reference": {
           "reference": "ValueSet/evidence-variable-role-subtype"
         },
         "name": "Evidence Variable Role Subtype Value Set",

@@ -82,6 +82,7 @@
 [RecommendationJustification]: StructureDefinition-recommendation-justification.html
 [RecommendationPlan]: StructureDefinition-recommendation-plan.html
 [RiskOfBias]: StructureDefinition-risk-of-bias.html
+[Scientific Evidence Code System (SEVCO) -- EXAMPLE VERSION for EBMonFHIR Implementation Guide]: CodeSystem-181513.html
 [SearchResults]: StructureDefinition-search-results.html
 [SearchStrategy]: StructureDefinition-search-strategy.html
 [SingleStudyEvidence]: StructureDefinition-single-study-evidence.html
