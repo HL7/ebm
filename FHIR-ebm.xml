@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="https://hl7.org/fhir/uv/ebm/ImplementationGuide/hl7.fhir.uv.ebm/2024Jan" ciUrl="" defaultVersion="1.0.0-ballot" defaultWorkgroup="cds" gitUrl="https://github.com/HL7/ebm" url="https://hl7.org/fhir/uv/ebm">
+<specification xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ballotUrl="http://hl7.org/fhir/uv/ebm/ImplementationGuide/hl7.fhir.uv.ebm/2024Jan" ciUrl="http://build.fhir.org/ig/HL7/ebm" defaultVersion="1.0.0-ballot" defaultWorkgroup="cds" gitUrl="https://github.com/HL7/ebm" url="http://hl7.org/fhir/uv/ebm">
+<version code="current" url="http://build.fhir.org/ig/HL7/ebm"/>
 <version code="1.0.0-ballot" url="https://hl7.org/fhir/uv/ebm/ImplementationGuide/hl7.fhir.uv.ebm/2024Jan"/>
 <artifactPageExtension value="-definitions"/>
 <artifactPageExtension value="-examples"/>
@@ -253,12 +254,12 @@
 <artifact id="Evidence/179583" key="Evidence-179583" name="NetEffectEstimate: Bariatric Surgery Example for GIN 2022"/>
 <artifact id="StructureDefinition/non-comparative-evidence" key="StructureDefinition-non-comparative-evidence" name="NonComparativeEvidence"/>
 <artifact id="EvidenceVariable/7753" key="EvidenceVariable-7753" name="Organ support-free days"/>
-<artifact id="ArtifactAssessment/104064" key="ArtifactAssessment-104064" name="Outcome Importance Rating (default value 100) of All-cause mortality"/>
-<artifact id="ArtifactAssessment/104192" key="ArtifactAssessment-104192" name="Outcome Importance Rating (default value 30) of Nonfatal myocardial infarction or stroke"/>
-<artifact id="ArtifactAssessment/104194" key="ArtifactAssessment-104194" name="Outcome Importance Rating (default value 5) of New onset depression"/>
-<artifact id="ArtifactAssessment/104193" key="ArtifactAssessment-104193" name="Outcome Importance Rating (default value 5) of Remission of diabetes"/>
-<artifact id="ArtifactAssessment/104195" key="ArtifactAssessment-104195" name="Outcome Importance Rating (default value 5) of Treatment with opioids"/>
-<artifact id="ArtifactAssessment/104196" key="ArtifactAssessment-104196" name="Outcome Importance Rating (default value 8) of Additional GI surgical procedure"/>
+<artifact id="ArtifactAssessment/104064" key="ArtifactAssessment-104064" name="Outcome Importance Rating 100 of All-cause mortality"/>
+<artifact id="ArtifactAssessment/104192" key="ArtifactAssessment-104192" name="Outcome Importance Rating 30 of Nonfatal myocardial infarction or stroke"/>
+<artifact id="ArtifactAssessment/104194" key="ArtifactAssessment-104194" name="Outcome Importance Rating 5 of New onset depression"/>
+<artifact id="ArtifactAssessment/104193" key="ArtifactAssessment-104193" name="Outcome Importance Rating 5 of Remission of diabetes"/>
+<artifact id="ArtifactAssessment/104195" key="ArtifactAssessment-104195" name="Outcome Importance Rating 5 of Treatment with opioids"/>
+<artifact id="ArtifactAssessment/104196" key="ArtifactAssessment-104196" name="Outcome Importance Rating 8 of Additional GI surgical procedure"/>
 <artifact id="StructureDefinition/outcome-definition" key="StructureDefinition-outcome-definition" name="OutcomeDefinition"/>
 <artifact id="Group/172480" key="Group-172480" name="OutcomeDefinition_American_Diabetes_Association_composite_triple_end_point_for_metabolic_control"/>
 <artifact id="Group/173252" key="Group-173252" name="OutcomeDefinition_Diabetes_in_remission"/>

@@ -2061,38 +2061,37 @@ definition:
     reference:
       reference: EvidenceVariable/7753
   - isExample: true
-    name: Outcome Importance Rating (default value 100) of All-cause mortality
+    name: Outcome Importance Rating 100 of All-cause mortality
     profile:
     - https://hl7.org/fhir/uv/ebm/StructureDefinition/rating
     reference:
       reference: ArtifactAssessment/104064
   - isExample: true
-    name: Outcome Importance Rating (default value 30) of Nonfatal myocardial infarction
-      or stroke
+    name: Outcome Importance Rating 30 of Nonfatal myocardial infarction or stroke
     profile:
     - https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-importance
     reference:
       reference: ArtifactAssessment/104192
   - isExample: true
-    name: Outcome Importance Rating (default value 5) of New onset depression
+    name: Outcome Importance Rating 5 of New onset depression
     profile:
     - https://hl7.org/fhir/uv/ebm/StructureDefinition/rating
     reference:
       reference: ArtifactAssessment/104194
   - isExample: true
-    name: Outcome Importance Rating (default value 5) of Remission of diabetes
+    name: Outcome Importance Rating 5 of Remission of diabetes
     profile:
     - https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-importance
     reference:
       reference: ArtifactAssessment/104193
   - isExample: true
-    name: Outcome Importance Rating (default value 5) of Treatment with opioids
+    name: Outcome Importance Rating 5 of Treatment with opioids
     profile:
     - https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-importance
     reference:
       reference: ArtifactAssessment/104195
   - isExample: true
-    name: Outcome Importance Rating (default value 8) of Additional GI surgical procedure
+    name: Outcome Importance Rating 8 of Additional GI surgical procedure
     profile:
     - https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-importance
     reference:
