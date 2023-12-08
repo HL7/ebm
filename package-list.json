@@ -3,7 +3,7 @@
     "version" : "1.0.0-ballot",
     "path" : "https://hl7.org/fhir/uv/ebm/ImplementationGuide/hl7.fhir.uv.ebm/2024Jan",
     "mode" : "working",
-    "status" : "release",
+    "status" : "ballot",
     "sequence" : "Releases",
     "desc" : "This is the initial release of the EBMonFHIR Implementation Guide for initial ballot January 2024.",
     "first" : true,
