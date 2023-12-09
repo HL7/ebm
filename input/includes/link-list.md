@@ -21,7 +21,7 @@
 [CharacteristicValueExpression]: StructureDefinition-characteristic-value-expression.html
 [CharacteristicValueUri]: StructureDefinition-characteristic-value-uri.html
 [Classification]: StructureDefinition-classification.html
-[Cohort Definition]: StructureDefinition-cohort-definition.html
+[CohortDefinition]: StructureDefinition-cohort-definition.html
 [CombinationMethod]: StructureDefinition-combination-method.html
 [CombinationThreshold]: StructureDefinition-combination-threshold.html
 [Comment]: StructureDefinition-comment.html

@@ -583,7 +583,7 @@ definition:
       In R5, membership will be definitional and type value can be ignored for resource
       content processing.
     isExample: false
-    name: Cohort Definition
+    name: CohortDefinition
     reference:
       reference: StructureDefinition/cohort-definition
   - description: This example shows used of combinationMethod (at-least) and combinationThreshold
