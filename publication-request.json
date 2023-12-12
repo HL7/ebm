@@ -4,7 +4,7 @@
     "path" : "https://hl7.org/fhir/uv/ebm/ImplementationGuide/hl7.fhir.uv.ebm/2024Jan",
     "mode" : "working",
     "status" : "ballot",
-    "sequence" : "Releases",
+    "sequence" : "STU1",
     "desc" : "This is the initial release of the EBMonFHIR Implementation Guide for initial ballot January 2024.",
     "first" : true,
     "title" : "Evidence Based Medicine on FHIR Implementation Guide",
