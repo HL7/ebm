@@ -2292,13 +2292,6 @@ definition:
     - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
     reference:
       reference: EvidenceVariable/104119
-  - description: Profile of EvidenceVariable for Evidence Based Medicine IG. The ParticipantFlowMeasure
-      Profile is used to describe outcome measures for completion and reasons for
-      non-completion of participation in a research study.
-    isExample: false
-    name: Participant Flow Measure
-    reference:
-      reference: StructureDefinition/participant-flow-measure
   - description: Profile of Evidence for Evidence Based Medicine IG. The ParticipantFlow
       Profile is used for counts of completion and reasons for non-completion of participation
       in a research study.
@@ -2334,6 +2327,13 @@ definition:
     - https://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow
     reference:
       reference: Evidence/179463
+  - description: Profile of EvidenceVariable for Evidence Based Medicine IG. The ParticipantFlowMeasure
+      Profile is used to describe outcome measures for completion and reasons for
+      non-completion of participation in a research study.
+    isExample: false
+    name: ParticipantFlowMeasure
+    reference:
+      reference: StructureDefinition/participant-flow-measure
   - description: Dropout due to stopping intervention
     isExample: true
     name: 'ParticipantFlowMeasure: Dropout due to stopping intervention'

@@ -46,3 +46,4 @@ The **[SoftwareCitation Profile][SoftwareCitation]** includes a citedArtifact.cl
 
 The **[WebPageCitation Profile][WebPageCitation]** includes a citedArtifact.classification with a type value of "Knowledge Artifact Type" and a classifier value of "Webpage".
 
+{% include link-list.md %}

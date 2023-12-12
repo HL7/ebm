@@ -71,8 +71,8 @@
 [OutcomeDefinition]: StructureDefinition-outcome-definition.html
 [OutcomeImportance]: StructureDefinition-outcome-importance.html
 [OutcomeList]: StructureDefinition-outcome-list.html
-[Participant Flow Measure]: StructureDefinition-participant-flow-measure.html
 [ParticipantFlow]: StructureDefinition-participant-flow.html
+[ParticipantFlowMeasure]: StructureDefinition-participant-flow-measure.html
 [PreprintCitation]: StructureDefinition-preprint-citation.html
 [Rating]: StructureDefinition-rating.html
 [Recommendation]: StructureDefinition-recommendation.html
@@ -113,4 +113,4 @@
 [VS EvidenceReportSectionCode Value Set]: ValueSet-179431.html
 [VS EvidenceVariableRoleSubtype Value Set]: ValueSet-179424.html
 [VS Recommendation Justification Classifier Codes Value Set]: ValueSet-recommendation-justification-classifier.html
-[VS Risk Of Bias Type Value Set]: ValueSet-risk-of-bias-type.html
+[VS Risk Of Bias Type Value Set]: ValueSet-181524.html
