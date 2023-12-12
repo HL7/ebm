@@ -1,7 +1,7 @@
 {
     "package-id" : "hl7.fhir.uv.ebm",
     "version" : "1.0.0-ballot",
-    "path" : "http://hl7.org/fhir/uv/ebm/ImplementationGuide/hl7.fhir.uv.ebm/2024Jan",
+    "path" : "http://hl7.org/fhir/uv/ebm/2024Jan",
     "mode" : "working",
     "status" : "ballot",
     "sequence" : "STU1",
