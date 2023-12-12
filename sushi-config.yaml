@@ -4,7 +4,7 @@
 # │  see: https://fshschool.org/docs/sushi/configuration/.                                         │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: hl7.fhir.uv.ebm
-canonical: https://hl7.org/fhir/uv/ebm
+canonical: http://hl7.org/fhir/uv/ebm
 name: EBM-IG
 title: Evidence Based Medicine on FHIR Implementation Guide
 # description: Example Implementation Guide for getting started with SUSHI
