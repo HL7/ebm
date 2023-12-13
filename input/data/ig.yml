@@ -2888,7 +2888,7 @@ jurisdiction:
     system: http://unstats.un.org/unsd/methods/m49/m49.htm
 name: EBMIG
 packageId: hl7.fhir.uv.ebm
-publisher: HL7 International - Clinical Decision Support WG
+publisher: HL7 International / Clinical Decision Support
 resourceType: ImplementationGuide
 status: draft
 url: http://hl7.org/fhir/uv/ebm/ImplementationGuide/hl7.fhir.uv.ebm

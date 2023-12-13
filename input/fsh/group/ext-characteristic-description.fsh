@@ -1,6 +1,9 @@
 Extension: CharacteristicDescription
 Id: characteristic-description
 Description: "Natural language description of the characteristic."
+* ^extension[$ext-fmm].valueInteger = 1
+* ^extension[$ext-wg].valueCode = #cds
+* ^extension[$ext-standards-status].valueCode = #draft
 * ^context.type = #element
 * ^context.expression = "Group.characteristic"
 * value[x] only markdown

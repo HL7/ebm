@@ -16,7 +16,7 @@ releaseLabel: ballot # ci-build | draft | qa-preview | ballot | trial-use | rele
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher:
-  name: HL7 International - Clinical Decision Support WG
+  name: HL7 International / Clinical Decision Support
   url: http://www.hl7.org/Special/committees/dss
 
 # The dependencies property corresponds to IG.dependsOn. The key is the

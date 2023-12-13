@@ -1,6 +1,9 @@
 Extension: CharacteristicDurationRange
 Id: characteristic-duration-range
 Description: "Length of time in which the characteristic is met."
+* ^extension[$ext-fmm].valueInteger = 1
+* ^extension[$ext-wg].valueCode = #cds
+* ^extension[$ext-standards-status].valueCode = #draft
 * ^context.type = #element
 * ^context.expression = "Group.characteristic"
 * value[x] only Range

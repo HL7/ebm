@@ -1,6 +1,9 @@
 Extension: ArtifactLastReviewDate
 Id: artifact-lastReviewDate
 Description: "When the resource was approved by publisher."
+* ^extension[$ext-fmm].valueInteger = 1
+* ^extension[$ext-wg].valueCode = #cds
+* ^extension[$ext-standards-status].valueCode = #draft
 * ^context.type = #element
 * ^context.expression = "Composition"
 * value[x] only date
