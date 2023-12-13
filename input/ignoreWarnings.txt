@@ -6,6 +6,12 @@ The resource should declare its jurisdiction to match the package id (hl7.fhir.u
 # Suppressing the warnings about reference to jurisdiction elements (now deprecated) becuase errors in IG Publisher if jurisdiction elements are not present.
 Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
 
+# Suppressing the slicing information hints about not recognizing extensions for structuredefinition-wg as this is an artifact of SUSHI adding the extension to examples
+This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment|1.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-action|1.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow-measure|1.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
+
 # Suppressing warnings about unknown Code System URIs where these are commented in the Understanding the Citation Resource section
 Code System URI 'https://meshb.nlm.nih.gov/' could not be found so the code cannot be validated
 Code System URI 'https://www.nlm.nih.gov/bsd/licensee/elements_descriptions.html#citationsubset' could not be found so the code cannot be validated
