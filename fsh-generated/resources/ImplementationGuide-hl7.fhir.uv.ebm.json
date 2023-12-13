@@ -1,7 +1,21 @@
 {
   "resourceType": "ImplementationGuide",
   "id": "hl7.fhir.uv.ebm",
-  "url": "http://hl7.org/fhir/uv/ebm/ImplementationGuide/hl7.fhir.uv.ebm",
+  "extension" : [
+      {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm",
+      "valueInteger" : 1
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-wg",
+      "valueCode" : "cds"
+    },
+    {
+      "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
+      "valueCode" : "draft"
+    }
+  ],
+ "url": "http://hl7.org/fhir/uv/ebm/ImplementationGuide/hl7.fhir.uv.ebm",
   "version": "0.1.0",
   "name": "EBMIG",
   "status": "draft",
