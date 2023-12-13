@@ -9,6 +9,9 @@ name: EBM-IG
 title: Evidence Based Medicine on FHIR Implementation Guide
 # description: Example Implementation Guide for getting started with SUSHI
 status: draft # draft | active | retired | unknown
+extension:
+  - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg  #<<< must include a http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension that identifies the workgroup responsible for the IG. This is the authoritative element.
+    valueCode: cds  # <<< The value must be the code for the workgroup
 version: 1.0.0-ballot
 fhirVersion: 5.0.0 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2022+
@@ -18,6 +21,8 @@ jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World" # https
 publisher:
   name: HL7 International / Clinical Decision Support
   url: http://www.hl7.org/Special/committees/dss
+
+  
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
