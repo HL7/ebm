@@ -11,7 +11,7 @@ This element does not match any known slice defined in the profile http://hl7.or
 This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment|1.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-action|1.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow-measure|1.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
-
+ 
 # Suppressing warnings about unknown Code System URIs where these are commented in the Understanding the Citation Resource section
 Code System URI 'https://meshb.nlm.nih.gov/' could not be found so the code cannot be validated
 Code System URI 'https://www.nlm.nih.gov/bsd/licensee/elements_descriptions.html#citationsubset' could not be found so the code cannot be validated
