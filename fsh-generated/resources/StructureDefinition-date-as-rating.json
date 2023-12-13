@@ -15,7 +15,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/date-as-rating",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/date-as-rating",
   "name": "DateAsRating",
   "status": "draft",
   "description": "Profile of ArtifactAssessment for Evidence Based Medicine IG. The DateAsRating Profile is used for representing a date or dateTime as a classifier value.",
@@ -40,7 +40,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "ArtifactAssessment",
-  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/classification",
+  "baseDefinition": "http://hl7.org/fhir/uv/ebm/StructureDefinition/classification",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -68,7 +68,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/artifact-assessment-date-as-rating"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/artifact-assessment-date-as-rating"
             ]
           }
         ]

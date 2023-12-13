@@ -19,7 +19,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-plan",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-plan",
   "name": "RecommendationPlan",
   "status": "draft",
   "description": "Profile of PlanDefinition for Evidence Based Medicine IG. The RecommendationPlan Profile is used for the implementable representation of a recommendation (such as that from a clinical practice guideline).",
@@ -157,7 +157,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-timing"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-timing"
             ]
           }
         ]

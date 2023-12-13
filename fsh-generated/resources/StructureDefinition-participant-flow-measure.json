@@ -19,7 +19,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow-measure",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow-measure",
   "name": "ParticipantFlowMeasure",
   "title": "Participant Flow Measure",
   "status": "draft",
@@ -45,7 +45,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "EvidenceVariable",
-  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition",
+  "baseDefinition": "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition",
   "derivation": "constraint",
   "differential": {
     "element": [

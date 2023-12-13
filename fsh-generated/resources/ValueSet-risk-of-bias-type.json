@@ -5,7 +5,7 @@
   "id": "risk-of-bias-type",
   "title": "Risk Of Bias Type Value Set",
   "description": "Types of bias for used with risk of bias assessment.",
-  "url": "https://hl7.org/fhir/uv/ebm/ValueSet/risk-of-bias-type",
+  "url": "http://hl7.org/fhir/uv/ebm/ValueSet/risk-of-bias-type",
   "experimental": false,
   "compose": {
     "include": [

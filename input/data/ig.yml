@@ -70,7 +70,7 @@ definition:
   - code:
       code: path-history
       system: http://hl7.org/fhir/tools/CodeSystem/ig-parameters
-    value: https://hl7.org/fhir/uv/ebm/history.html
+    value: http://hl7.org/fhir/uv/ebm/history.html
   resource:
   - description: 'COVID-19 pneumonia remdesivir vs. placebo 14-day mortality (779
       events among 6,744 participants, 3 randomized trials)
@@ -282,7 +282,7 @@ definition:
     isExample: true
     name: '33395'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group
     reference:
       reference: Group/33395
   - description: This Citation Resource is referenced in an example for the EBMonFHIR
@@ -326,7 +326,7 @@ definition:
     name: ADAS-Cog(11) EndpointAnalysisPlan from PHUSE Lilly Redacted Protocol - EBMonFHIR
       IG Version
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/endpoint-analysis-plan
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/endpoint-analysis-plan
     reference:
       reference: Evidence/179683
   - description: The peer-reviewed report for combination of 3 adaptive RCTs
@@ -369,7 +369,7 @@ definition:
     isExample: true
     name: Bariatric_Surgery_Eligibility_Group_ADA_Recommendation_8_16
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-eligibility-criteria
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-eligibility-criteria
     reference:
       reference: Group/32139
   - description: "Inclusion Criteria: [[1]] Adults. [[2]] Diagnosed with type 2 diabetes.\
@@ -380,7 +380,7 @@ definition:
     isExample: true
     name: Bariatric_Surgery_Eligibility_Group_ADA_Recommendation_8_17
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-eligibility-criteria
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-eligibility-criteria
     reference:
       reference: Group/179511
   - description: Any of 4 bariatric surgery procedures (Roux-en-Y Gastric Bypass,
@@ -389,7 +389,7 @@ definition:
     isExample: true
     name: Bariatric_Surgery_RYGB_VSG_LAGB_BPD
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-definition
     reference:
       reference: Group/172423
   - description: Profile of Evidence for Evidence Based Medicine IG. The BaselineMeasureEvidence
@@ -404,28 +404,28 @@ definition:
     isExample: true
     name: 'BaselineMeasureEvidence: Age in 2018 Norwegian Cohort Medical Group'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/baseline-measure-evidence
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/baseline-measure-evidence
     reference:
       reference: Evidence/179451
   - description: Age in Surgical Group (n = 932) mean 41.2 years, SD 10.5 years
     isExample: true
     name: 'BaselineMeasureEvidence: Age in 2018 Norwegian Cohort Surgical Group'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/baseline-measure-evidence
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/baseline-measure-evidence
     reference:
       reference: Evidence/179452
   - description: BMI in Medical Group (n = 956) mean 42.9 kg/m2, SD 5.7 kg/m2
     isExample: true
     name: 'BaselineMeasureEvidence: BMI in 2018 Norwegian Cohort Medical Group'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/baseline-measure-evidence
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/baseline-measure-evidence
     reference:
       reference: Evidence/179458
   - description: BMI in Surgical Group (n = 932) mean 45.4 kg/m2, SD 6.2 kg/m2
     isExample: true
     name: 'BaselineMeasureEvidence: BMI in 2018 Norwegian Cohort Surgical Group'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/baseline-measure-evidence
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/baseline-measure-evidence
     reference:
       reference: Evidence/179457
   - description: Profile of Citation for Evidence Based Medicine IG. The BookCitation
@@ -439,7 +439,7 @@ definition:
     name: 'BookCitation: Crossing the Quality Chasm: A New Health System for the 21st
       Century'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/book-citation
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/book-citation
     reference:
       reference: Citation/121719
   - description: Profile of Citation for Evidence Based Medicine IG. The BookPartCitation
@@ -454,7 +454,7 @@ definition:
     name: 'BookPartCitation: Chapter 3 of Crossing the Quality Chasm: A New Health
       System for the 21st Century'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/book-part-citation
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/book-part-citation
     reference:
       reference: Citation/139859
   - description: An example to map the BookCitation Profile
@@ -462,14 +462,14 @@ definition:
     name: 'BookPartCitation: Chapter 3 of Crossing the Quality Chasm: A New Health
       System for the 21st Century - without baseCitation'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/book-part-citation
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/book-part-citation
     reference:
       reference: Citation/139860
   - isExample: true
     name: Certainty of Evidence Rating of 14-day mortality remdesivir vs placebo meta-analysis
       (ACTT-1, Wang et al, WHO SOLIDARITY)
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/certainty-of-evidence
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/certainty-of-evidence
     reference:
       reference: ArtifactAssessment/179693
   - description: Profile of ArtifactAssessment for Evidence Based Medicine IG. The
@@ -547,7 +547,7 @@ definition:
     name: CIBIC+ EndpointAnalysisPlan from PHUSE Lilly Redacted Protocol - EBMonFHIR
       IG Version
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/endpoint-analysis-plan
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/endpoint-analysis-plan
     reference:
       reference: Evidence/179690
   - description: This Citation Resource is referenced in an example for the EBMonFHIR
@@ -574,7 +574,7 @@ definition:
     name: 'Classification: Study Design for Association of Bariatric Surgery with
       Complications and Comorbidities JAMA 2018 Norwegian Cohort'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/classification
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/classification
     reference:
       reference: ArtifactAssessment/179448
   - description: Profile of Group for Evidence Based Medicine IG. The CohortDefinition
@@ -591,7 +591,7 @@ definition:
     isExample: true
     name: CohortDefinition_At_least_2_risk_factors_for_stroke
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
     reference:
       reference: Group/179902
   - description: BMI 27.5-32.4 in Asian Americans who do not achieve durable weight
@@ -599,7 +599,7 @@ definition:
     isExample: true
     name: CohortDefinition_BMI_27_5_32_4_in_Asian_Americans_who_do_not_achieve_durable_weight_loss_and_improvement_in_comorbidities_without_surgery
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
     reference:
       reference: Group/179514
   - description: BMI 30-34.9 in persons who do not achieve durable weight loss and
@@ -607,7 +607,7 @@ definition:
     isExample: true
     name: CohortDefinition_BMI_30_34_9_in_persons_who_do_not_achieve_durable_weight_loss_and_improvement_in_comorbidities_without_surgery
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
     reference:
       reference: Group/179513
   - description: BMI 32.5-37.4 in Asian Americans who do not achieve durable weight
@@ -615,7 +615,7 @@ definition:
     isExample: true
     name: CohortDefinition_BMI_32_5_37_4_in_Asian_Americans_who_do_not_achieve_durable_weight_loss_and_improvement_in_comorbidities_without_surgery
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
     reference:
       reference: Group/179510
   - description: BMI 35-39.9 in persons who do not achieve durable weight loss and
@@ -623,21 +623,21 @@ definition:
     isExample: true
     name: CohortDefinition_BMI_35_39_9_in_persons_who_do_not_achieve_durable_weight_loss_and_improvement_in_comorbidities_without_surgery
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
     reference:
       reference: Group/179509
   - description: "BMI \u2265 35 and at least 1 obesity-related comorbidity"
     isExample: true
     name: CohortDefinition_BMI_35_and_at_least_1_obesity_related_comorbidity
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
     reference:
       reference: Group/179376
   - description: "BMI \u2265 37.5 kg/m2 in Asian Americans"
     isExample: true
     name: CohortDefinition_BMI_37_5_kg_m2_in_Asian_Americans
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
     reference:
       reference: Group/179508
   - description: "Body Mass Index (BMI) \u2265 40.0 kg/m2 (BMI \u2265 37.5 kg/m2 in\
@@ -647,7 +647,7 @@ definition:
     isExample: true
     name: CohortDefinition_BMI_criteria_for_ADA_surgery_recommendation
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
     reference:
       reference: Group/179506
   - description: Cancer of any kind (except basal cell skin cancer or cancer in situ)
@@ -655,7 +655,7 @@ definition:
     isExample: true
     name: CohortDefinition_Cancer_of_any_kind_except_basal_cell_skin_cancer_or_cancer_in_situ_unless_documented_to_be_disease_free_for_five_years
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
     reference:
       reference: Group/170441
   - description: Cardiovascular event (myocardial infarction, acute coronary syndrome,
@@ -663,7 +663,7 @@ definition:
     isExample: true
     name: CohortDefinition_Cardiovascular_event
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
     reference:
       reference: Group/170442
   - description: This example shows how to express a Group defined by meeting either
@@ -673,7 +673,7 @@ definition:
     isExample: true
     name: CohortDefinition_Heart_failure_based_on_Phenotypes
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
     reference:
       reference: Group/179901
   - description: "Body Mass Index (BMI) \u2265 30.0 kg/m2 and \u2264 34.9 kg/m2 (BMI\
@@ -683,21 +683,21 @@ definition:
     isExample: true
     name: CohortDefinition_Lower_BMI_criteria_for_ADA_surgery_consideration
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
     reference:
       reference: Group/179512
   - description: Nonfatal myocardial infarction
     isExample: true
     name: CohortDefinition_Nonfatal_myocardial_infarction
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
     reference:
       reference: Group/173249
   - description: Nonfatal myocardial infarction
     isExample: true
     name: CohortDefinition_Nonfatal_stroke
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
     reference:
       reference: Group/173250
   - description: A characteristic of oxygen saturation < 96% on Boots Finger Pulse
@@ -712,7 +712,7 @@ definition:
     isExample: true
     name: CohortDefinition_Oxygen_saturation_96_on_Boots_Finger_Pulse_Oximeter
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
     reference:
       reference: Group/179898
   - description: A characteristic of oxygen saturation < 96% on Boots Finger Pulse
@@ -726,7 +726,7 @@ definition:
     isExample: true
     name: CohortDefinition_Oxygen_saturation_96_on_Boots_Finger_Pulse_Oximeter_with_Ranges
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
     reference:
       reference: Group/179900
   - description: "Exclusion Criteria: Cardiovascular event (myocardial infarction,\
@@ -741,14 +741,14 @@ definition:
     isExample: true
     name: CohortDefinition_Proxy_criteria_for_surgical_candidates
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
     reference:
       reference: Group/179507
   - description: BMI at least 40 or at least 35 with at least 1 obesity-related comorbidity
     isExample: true
     name: CohortDefinition_Severe_obesity
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
     reference:
       reference: Group/179375
   - description: Used to specify how two or more characteristics are combined.
@@ -773,7 +773,7 @@ definition:
     name: 'Comment on Guideline: ADA 2021 Standards of Medical Care 8. Obesity Management
       for the Treatment of Type 2 Diabetes by Joanne Dehnbostel 2023-11-28T15:19:01.266Z'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comment
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/comment
     reference:
       reference: ArtifactAssessment/179694
   - description: Profile of Evidence for Evidence Based Medicine IG. The ComparativeBaselineMeasureEvidence
@@ -789,7 +789,7 @@ definition:
     name: 'ComparativeBaselineMeasureEvidence: Age in 2018 Norwegian Cohort Surgical
       Group vs. Medical Group'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-baseline-measure-evidence
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-baseline-measure-evidence
     reference:
       reference: Evidence/179455
   - description: Mean BMI 45.4 in Surgical Group vs. 42.9 in Medical Group (p < 0.001)
@@ -797,7 +797,7 @@ definition:
     name: 'ComparativeBaselineMeasureEvidence: BMI in 2018 Norwegian Cohort Surgical
       Group vs. Medical Group'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-baseline-measure-evidence
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-baseline-measure-evidence
     reference:
       reference: Evidence/179456
   - description: Profile of Evidence for Evidence Based Medicine IG. The ComparativeEvidence
@@ -816,7 +816,7 @@ definition:
     name: 'ComparativeEvidence: All-cause mortality effect of bariatric surgery in
       2022 meta-analysis'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
     reference:
       reference: Evidence/49328
   - description: "Of 120 participants who were initially randomized, 98 (82%) completed\
@@ -828,7 +828,7 @@ definition:
     name: 'ComparativeEvidence: Bariatric Surgery effect for ADA triple outcome at
       5 years (Diabetes Surgery Study)'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
     reference:
       reference: Evidence/32144
   - description: Surgical patients had a greater risk for undergoing at least 1 additional
@@ -838,7 +838,7 @@ definition:
     name: 'ComparativeEvidence: Bypass surgery effects on Additional GI surgical procedure
       in JAMA 2018 Norwegian cohort study'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
     reference:
       reference: Evidence/104157
   - description: Bariatric surgery was associated with a reduced number of cardiovascular
@@ -856,7 +856,7 @@ definition:
     name: 'ComparativeEvidence: Bypass surgery effects on Myocardial infarction or
       stroke in Swedish Obese Subjects (SOS) study'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
     reference:
       reference: Evidence/104098
   - description: 'greater risk of new-onset depression: AR, 8.9% vs 6.5%; RD, 2.4%
@@ -865,7 +865,7 @@ definition:
     name: 'ComparativeEvidence: Bypass surgery effects on New onset depression in
       JAMA 2018 Norwegian cohort study'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
     reference:
       reference: Evidence/104155
   - description: 'greater likelihood of diabetes remission: AR, 57.5% vs 14.8%; RD,
@@ -874,7 +874,7 @@ definition:
     name: 'ComparativeEvidence: Bypass surgery effects on Remission of diabetes in
       JAMA 2018 Norwegian cohort study'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
     reference:
       reference: Evidence/104121
   - description: 'greater risk of treatment with opioids: AR, 19.4% vs 15.8%, RD,
@@ -883,7 +883,7 @@ definition:
     name: 'ComparativeEvidence: Bypass surgery effects on Treatment with opioids in
       JAMA 2018 Norwegian cohort study'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
     reference:
       reference: Evidence/104156
   - description: Mean HbA1c at 12 months in Courcoulas 2014 was 6.6 % in Surgery group
@@ -893,7 +893,7 @@ definition:
     name: 'ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle
       groups in Courcoulas 2014'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
     reference:
       reference: Evidence/47740
   - description: Mean HbA1c at 36 months in Courcoulas 2015 was 7.1% in Surgery group
@@ -903,7 +903,7 @@ definition:
     name: 'ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle
       groups in Courcoulas 2015'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
     reference:
       reference: Evidence/47768
   - description: Mean HbA1c at 12 months in Cummings 2016 was 6.4% in Surgery group
@@ -913,7 +913,7 @@ definition:
     name: 'ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle
       groups in Cummings 2016'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
     reference:
       reference: Evidence/47759
   - description: Mean HbA1c at 12 months in Ding 2015 was 7.17 % in Surgery group
@@ -923,7 +923,7 @@ definition:
     name: 'ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle
       groups in Ding 2015'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
     reference:
       reference: Evidence/47748
   - description: Mean HbA1c at 24 months in Dixon 2008 was 6% in Surgery group (n
@@ -933,7 +933,7 @@ definition:
     name: 'ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle
       groups in Dixon 2008'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
     reference:
       reference: Evidence/47760
   - description: Mean HbA1c at 12 months in Halperin 2014 was 6.2 % in Surgery group
@@ -943,7 +943,7 @@ definition:
     name: 'ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle
       groups in Halperin 2014'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
     reference:
       reference: Evidence/47749
   - description: Mean HbA1c at 12 months in Ikramuddin 2013 was 6.3 % in Surgery group
@@ -953,7 +953,7 @@ definition:
     name: 'ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle
       groups in Ikramuddin 2013'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
     reference:
       reference: Evidence/47751
   - description: Mean HbA1c at 24 months in Ikramuddin 2015 was 6.5% in Surgery group
@@ -963,7 +963,7 @@ definition:
     name: 'ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle
       groups in Ikramuddin 2015'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
     reference:
       reference: Evidence/47762
   - description: Mean HbA1c at 12 months in Liang 2013 was 6 % in Surgery group (n
@@ -973,7 +973,7 @@ definition:
     name: 'ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle
       groups in Liang 2013'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
     reference:
       reference: Evidence/47752
   - description: Mean HbA1c at 24 months in Mingrone 2012 was 5.65% in Surgery group
@@ -983,7 +983,7 @@ definition:
     name: 'ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle
       groups in Mingrone 2012 (DIBASY) trial'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
     reference:
       reference: Evidence/47665
   - description: Mean HbA1c at 60 months in Mingrone 2015 was 6.55% in Surgery group
@@ -993,7 +993,7 @@ definition:
     name: 'ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle
       groups in Mingrone 2015 (DIBASY) trial'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
     reference:
       reference: Evidence/47695
   - description: Mean HbA1c at 6 months in Parikh 2014 was 6.2 % in Surgery group
@@ -1003,7 +1003,7 @@ definition:
     name: 'ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle
       groups in Parikh 2014'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
     reference:
       reference: Evidence/47738
   - description: Mean HbA1c at 12 months in Schauer 2012 was 6.5% in Surgery group
@@ -1013,7 +1013,7 @@ definition:
     name: 'ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle
       groups in Schauer 2012 (STAMPEDE) trial'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
     reference:
       reference: Evidence/47758
   - description: Mean HbA1c at 36 months in Schauer 2014 was 6.85% in Surgery group
@@ -1023,7 +1023,7 @@ definition:
     name: 'ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle
       groups in Schauer 2014 (STAMPEDE) trial'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
     reference:
       reference: Evidence/47771
   - description: Mean HbA1c at 24 months in Wentworth 2014 was 6.1% in Surgery group
@@ -1033,7 +1033,7 @@ definition:
     name: 'ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle
       groups in Wentworth 2014'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
     reference:
       reference: Evidence/47766
   - description: effect estimate for differences in mean HbA1c at study end point
@@ -1043,7 +1043,7 @@ definition:
     name: 'ComparativeEvidence: Mean difference in HbA1c effect of bariatric surgery
       in 2016 meta-analysis'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence
     reference:
       reference: Evidence/33244
   - description: Profile of Composition for Evidence Based Medicine IG. The ComparativeEvidenceReport
@@ -1059,7 +1059,7 @@ definition:
       Obesity Treatment With Long-term Medical Complications and Obesity-Related Comorbidities
       (2018 Norwegian Cohort)'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence-report
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence-report
     reference:
       reference: Composition/178426
   - description: Profile of Group for Evidence Based Medicine IG. The EvidenceReportSubject
@@ -1081,7 +1081,7 @@ definition:
     isExample: true
     name: ComparativeEvidenceReportSubject_Association_of_Bariatric_Surgery_vs_Medical_Obesity_Treatment_With_Long_term_Medical_Complications_and_Obesity_Related_Comorbidities_2018_Norwegian_Cohort
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence-report-subject
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence-report-subject
     reference:
       reference: Group/179633
   - description: Profile of Evidence for Evidence Based Medicine IG. The ComparativeParticipantFlow
@@ -1097,7 +1097,7 @@ definition:
     name: 'ComparativeParticipantFlow: Dropout due to stopping intervention Lofexidine
       vs. Placebo in opioid detoxification trial'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-participant-flow
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-participant-flow
     reference:
       reference: Evidence/179635
   - description: Profile of Group for Evidence Based Medicine IG. The ComparatorDefinition
@@ -1112,7 +1112,7 @@ definition:
     isExample: true
     name: ComparatorDefinition_NOT_Bariatric_Surgery_RYGB_VSG_LAGB_BPD
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-definition
     reference:
       reference: Group/172424
   - description: 'Description: usual-care pharmacologic thromboprophylaxis
@@ -1127,7 +1127,7 @@ definition:
     isExample: true
     name: ComparatorDefinition_Usual_care_pharmacologic_thromboprophylaxis
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-definition
     reference:
       reference: Group/179785
   - description: Profile of Group for Evidence Based Medicine IG. The ComparatorGroup
@@ -1143,7 +1143,7 @@ definition:
     isExample: true
     name: ComparatorGroup_JAMA_2018_Norwegian_cohort_study_Control_cohort
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group
     reference:
       reference: Group/172939
   - description: This example of a ComparatorGroup Profile expresses the definition
@@ -1155,7 +1155,7 @@ definition:
     isExample: true
     name: ComparatorGroup_Obese_patients_18_years_old_without_bariatric_surgery
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group
     reference:
       reference: Group/172460
   - description: Profile of Evidence for Evidence Based Medicine IG. The ComparatorOnlyEvidence
@@ -1173,7 +1173,7 @@ definition:
     name: 'ComparatorOnlyEvidence: Additional GI surgical procedure without bariatric
       surgery (Control Group) in JAMA 2018 Norwegian cohort study'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence
     reference:
       reference: Evidence/104385
   - description: estimate for all-cause mortality without bariatric surgery 4.75%
@@ -1183,7 +1183,7 @@ definition:
     name: 'ComparatorOnlyEvidence: All-cause mortality without bariatric surgery in
       2022 meta-analysis'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence
     reference:
       reference: Evidence/104384
   - description: Bariatric surgery was associated with 49 cardiovascular deaths among
@@ -1196,7 +1196,7 @@ definition:
     name: 'ComparatorOnlyEvidence: Myocardial infarction or stroke without bariatric
       surgery (Control Group) in Swedish Obese Subjects (SOS) study'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence
     reference:
       reference: Evidence/104397
   - description: Risk of New onset depression in control group was 6.5%.
@@ -1204,7 +1204,7 @@ definition:
     name: 'ComparatorOnlyEvidence: New onset depression without bariatric surgery
       (Control Group) in JAMA 2018 Norwegian cohort study'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence
     reference:
       reference: Evidence/104395
   - description: Risk of Remission of diabetes in control group was 14.8%.
@@ -1212,7 +1212,7 @@ definition:
     name: 'ComparatorOnlyEvidence: Remission of diabetes without bariatric surgery
       (Control Group) in JAMA 2018 Norwegian cohort study'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence
     reference:
       reference: Evidence/104396
   - description: Risk of Treatment with opioids in control group was 15.8%.
@@ -1220,7 +1220,7 @@ definition:
     name: 'ComparatorOnlyEvidence: Treatment with opioids without bariatric surgery
       (Control Group) in JAMA 2018 Norwegian cohort study'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence
     reference:
       reference: Evidence/104394
   - description: Profile of ArtifactAssessment for Evidence Based Medicine IG. The
@@ -1234,13 +1234,13 @@ definition:
     name: 'Comparison: Original and Adapted Recommendation: ADA Obesity Management
       Recommendation 8.16'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/comparison
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/comparison
     reference:
       reference: ArtifactAssessment/179700
   - isExample: true
     name: Composite Rating of FOI 153881 for Project FOI 112280
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/composite-rating
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/composite-rating
     reference:
       reference: ArtifactAssessment/171898
   - description: Profile of ArtifactAssessment for Evidence Based Medicine IG. The
@@ -1299,7 +1299,7 @@ definition:
     isExample: true
     name: 'DatabaseCitation: Citation for FEvIR Platform'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/database-citation
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/database-citation
     reference:
       reference: Citation/29812
   - description: Profile of Citation for Evidence Based Medicine IG. The DatabaseEntryCitation
@@ -1314,7 +1314,7 @@ definition:
       Surgery vs Medical Obesity Treatment With Long-term Medical Complications and
       Obesity-Related Comorbidities (2018 Norwegian Cohort)'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/database-entry-citation
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/database-entry-citation
     reference:
       reference: Citation/179558
   - description: Profile of CodeSystem for Evidence Based Medicine IG. The DataDictionary
@@ -1328,7 +1328,7 @@ definition:
     isExample: true
     name: 'DataDictionary: Measuring the Rate of Scientific Knowledge Transfer'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/data-dictionary
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/data-dictionary
     reference:
       reference: CodeSystem/181451
   - description: This is an example of a DataDictionary Profile for the EBMonFHIR
@@ -1336,7 +1336,7 @@ definition:
     isExample: true
     name: 'DataDictionary: phs003190'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/data-dictionary
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/data-dictionary
     reference:
       reference: CodeSystem/179650
   - description: Profile of Citation for Evidence Based Medicine IG. The DatasetCitation
@@ -1351,7 +1351,7 @@ definition:
     name: 'DatasetCitation: Extrachromosomal DNA Amplification Contributes to Small
       Cell Lung Cancer Heterogeneity and is Associated with Worse Outcomes'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/dataset-citation
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/dataset-citation
     reference:
       reference: Citation/179559
   - description: Profile of ArtifactAssessment for Evidence Based Medicine IG. The
@@ -1364,7 +1364,7 @@ definition:
   - isExample: true
     name: DateOfFirstPublication Classification of FOI 153881 by Rachel Couban
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/classification
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/classification
     reference:
       reference: ArtifactAssessment/181452
   - description: This Citation Resource is referenced in an example for the EBMonFHIR
@@ -1395,7 +1395,7 @@ definition:
     isExample: true
     name: EGFR_45_59
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition
     reference:
       reference: Group/179897
   - description: Profile of Evidence for Evidence Based Medicine IG. The EndpointAnalysisPlan
@@ -1428,14 +1428,14 @@ definition:
     name: 'EvidenceList: Effect estimates for meta-analysis (Biegel 2020, Wang 2020,
       SOLIDARITY)'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-list
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-list
     reference:
       reference: List/179800
   - isExample: true
     name: 'EvidenceList: Study results included in Mean difference in HbA1c effect
       of bariatric surgery in 2016 meta-analysis'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-list
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-list
     reference:
       reference: List/179470
   - description: Profile of Composition for Evidence Based Medicine IG. The EvidenceMap
@@ -1448,7 +1448,7 @@ definition:
   - isExample: true
     name: 'EvidenceMap: Bariatric Surgery Summary of Findings Example for GIN 2022'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-map
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-map
     reference:
       reference: Composition/104213
   - description: Profile of Evidence for Evidence Based Medicine IG. The EvidenceR6
@@ -1482,7 +1482,7 @@ definition:
     isExample: true
     name: EvidenceReportSubject_Clinical_Outcomes_for_Effects_of_Bariatric_Surgery
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report-subject
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report-subject
     reference:
       reference: Group/179562
   - description: Profile of Evidence for Evidence Based Medicine IG. The EvidenceSynthesisEvidence
@@ -1516,7 +1516,7 @@ definition:
     name: Example EndpointAnalysisPlan from PHUSE Lilly Redacted Protocol - EBMonFHIR
       IG Version
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/endpoint-analysis-plan
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/endpoint-analysis-plan
     reference:
       reference: Evidence/179691
   - description: Profile of Group for Evidence Based Medicine IG. The ExposureDefinition
@@ -1536,7 +1536,7 @@ definition:
     isExample: true
     name: ExposureDefinition_Therapeutic_dose_anticoagulation_with_heparin
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-definition
     reference:
       reference: Group/179786
   - description: Profile of Group for Evidence Based Medicine IG. The ExposureGroup
@@ -1552,7 +1552,7 @@ definition:
     isExample: true
     name: ExposureGroup_JAMA_2018_Norwegian_cohort_study_Surgery_cohort
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group
     reference:
       reference: Group/172934
   - description: This example expresses the variable 'Age' as a continuous variable
@@ -1562,7 +1562,7 @@ definition:
     isExample: true
     name: 'ExposureVariable: Age (as continuous variable)'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
     reference:
       reference: EvidenceVariable/179449
   - description: This example expresses the variable 'Body Mass Index' as a continuous
@@ -1572,77 +1572,77 @@ definition:
     isExample: true
     name: 'ExposureVariable: Body Mass Index (as continuous variable)'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
     reference:
       reference: EvidenceVariable/179450
   - description: Subject age at diagnosis - datatype integer, encoded value
     isExample: true
     name: 'ExposureVariable: pht013093.v1.p1 Age at diagnosis'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
     reference:
       reference: EvidenceVariable/179662
   - description: Self-reported race - datatype string
     isExample: true
     name: 'ExposureVariable: pht013093.v1.p1 RACE'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
     reference:
       reference: EvidenceVariable/179661
   - description: Self-reported sex - datatype CodeableConcept
     isExample: true
     name: 'ExposureVariable: pht013093.v1.p1 SEX'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
     reference:
       reference: EvidenceVariable/179658
   - description: Subject ID - datatype string
     isExample: true
     name: 'ExposureVariable: pht013093.v1.p1 SUBJECT_ID'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
     reference:
       reference: EvidenceVariable/179649
   - description: Analyte type of the sample - datatype string
     isExample: true
     name: 'ExposureVariable: pht013094.v1.p1 ANALYTE_TYPE'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
     reference:
       reference: EvidenceVariable/179680
   - description: Body site where sample was collected - datatype string
     isExample: true
     name: 'ExposureVariable: pht013094.v1.p1 BODY_SITE'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
     reference:
       reference: EvidenceVariable/179678
   - description: The tumor status of the sample - datatype CodeableConcept
     isExample: true
     name: 'ExposureVariable: pht013094.v1.p1 IS_TUMOR'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
     reference:
       reference: EvidenceVariable/179682
   - description: Sample ID - datatype string
     isExample: true
     name: 'ExposureVariable: pht013094.v1.p1 SAMPLE_ID'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
     reference:
       reference: EvidenceVariable/179677
   - description: Technology employed on the sample - datatype string
     isExample: true
     name: 'ExposureVariable: pht013094.v1.p1 SAMPLE_USE'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
     reference:
       reference: EvidenceVariable/179679
   - description: Source of sample - datatype string
     isExample: true
     name: 'ExposureVariable: pht013094.v1.p1 Source_Type'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
     reference:
       reference: EvidenceVariable/179681
   - description: Profile of EvidenceVariable for Evidence Based Medicine IG. The GroupAssignment
@@ -1661,7 +1661,7 @@ definition:
     isExample: true
     name: 'GroupAssignment: Bariatric Surgery vs. no bariatric surgery'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment
     reference:
       reference: EvidenceVariable/172427
   - description: This example of a GroupAssignment Profile describes a 3-arm trial
@@ -1672,7 +1672,7 @@ definition:
     isExample: true
     name: 'GroupAssignment: high dose xanomeline vs. low dose xanomeline vs. placebo'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment
     reference:
       reference: EvidenceVariable/179689
   - description: This example of a GroupAssignment Profile describes a 2-group study
@@ -1684,7 +1684,7 @@ definition:
     name: 'GroupAssignment: Roux-en-Y gastric bypass or Biliopancreatic Diversion
       vs. medical treatment'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment
     reference:
       reference: EvidenceVariable/172479
   - description: This example of a GroupAssignment Profile describes a 2-group study
@@ -1696,7 +1696,7 @@ definition:
     name: 'GroupAssignment: Roux-en-Y gastric bypass surgery vs. Lifestyle-intensive
       medical management intervention alone'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment
     reference:
       reference: EvidenceVariable/172481
   - description: This example of a GroupAssignment Profile describes a 2-group study
@@ -1707,7 +1707,7 @@ definition:
     isExample: true
     name: 'GroupAssignment: Roux-en-Y gastric bypass vs. medical treatment'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment
     reference:
       reference: EvidenceVariable/172478
   - description: Therapeutic-dose anticoagulation with heparin vs. Usual-care pharmacologic
@@ -1717,7 +1717,7 @@ definition:
     name: 'GroupAssignment: Therapeutic-dose anticoagulation with heparin vs. Usual-care
       pharmacologic thromboprophylaxis'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment
     reference:
       reference: EvidenceVariable/179784
   - description: Profile of Group for Evidence Based Medicine IG. The GroupR6 Profile
@@ -1738,7 +1738,7 @@ definition:
     name: 'Guideline: ADA 2021 Standards of Medical Care 8. Obesity Management for
       the Treatment of Type 2 Diabetes'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/guideline
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/guideline
     reference:
       reference: Composition/179465
   - description: Any of 4 bariatric surgery procedures (Roux-en-Y Gastric Bypass,
@@ -1769,7 +1769,7 @@ definition:
     name: 'InterventionOnlyEvidence: Additional GI surgical procedure with bariatric
       surgery (Intervention Group) in JAMA 2018 Norwegian cohort study'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/intervention-only-evidence
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/intervention-only-evidence
     reference:
       reference: Evidence/104398
   - description: Risk of New onset depression in intervention group was 8.9%.
@@ -1777,7 +1777,7 @@ definition:
     name: 'InterventionOnlyEvidence: New onset depression with bariatric surgery (Intervention
       Group) in JAMA 2018 Norwegian cohort study'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/intervention-only-evidence
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/intervention-only-evidence
     reference:
       reference: Evidence/104400
   - description: Risk of Remission of diabetes in intervention group was 57.5%.
@@ -1785,7 +1785,7 @@ definition:
     name: 'InterventionOnlyEvidence: Remission of diabetes with bariatric surgery
       (Intervention Group) in JAMA 2018 Norwegian cohort study'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/intervention-only-evidence
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/intervention-only-evidence
     reference:
       reference: Evidence/104401
   - description: Risk of Treatment with opioids in intervention group was 19.4%.
@@ -1793,7 +1793,7 @@ definition:
     name: 'InterventionOnlyEvidence: Treatment with opioids with bariatric surgery
       (Intervention Group) in JAMA 2018 Norwegian cohort study'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/intervention-only-evidence
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/intervention-only-evidence
     reference:
       reference: Evidence/104402
   - description: For all ANOVA and ANCOVA models, data collected from investigators
@@ -1820,14 +1820,14 @@ definition:
     isExample: true
     name: IV remdesivir 200 mg then 100 mg/day for 9 days
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-action
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-action
     reference:
       reference: ActivityDefinition/213
   - isExample: true
     name: 'Joanne Dehnbostel''s Adaptation Report of Recommendation: ADA Obesity Management
       Recommendation 8.16'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/adaptation
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/adaptation
     reference:
       reference: ArtifactAssessment/179698
   - description: Profile of Citation for Evidence Based Medicine IG. The JournalArticleCitation
@@ -1843,7 +1843,7 @@ definition:
     name: 'JournalArticleCitation: ADA 2021 Standards of Medical Care 8. Obesity Management
       for the Treatment of Type 2 Diabetes'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/journal-article-citation
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/journal-article-citation
     reference:
       reference: Citation/32137
   - description: This Citation Resource is referenced in an example for the EBMonFHIR
@@ -1852,27 +1852,27 @@ definition:
     name: 'JournalArticleCitation: Association of Bariatric Surgery with Complications
       and Comorbidities JAMA 2018 Norwegian Cohort'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/journal-article-citation
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/journal-article-citation
     reference:
       reference: Citation/104116
   - isExample: true
     name: 'Justification for Recommendation: ADA Obesity Management Recommendation
       8.16'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-justification
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-justification
     reference:
       reference: ArtifactAssessment/179469
   - isExample: true
     name: 'Justification for Recommendation: ADA Obesity Management Recommendation
       8.17'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-justification
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-justification
     reference:
       reference: ArtifactAssessment/179515
   - isExample: true
     name: M11 Report Template Instructions
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/m11-report
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/m11-report
     reference:
       reference: Composition/181448
   - description: Profile of Composition for Evidence Based Medicine IG. The M11Report
@@ -1896,7 +1896,7 @@ definition:
     isExample: true
     name: MetaanalysisEligibilityCriteria_Mean_difference_in_HbA1c_effect_of_bariatric_surgery_in_type_2_diabetes_and_elevated_BMI_in_2016_meta_analysis
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-eligibility-criteria
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-eligibility-criteria
     reference:
       reference: Group/175766
   - description: Profile of Group for Evidence Based Medicine IG. The MetaanalysisOutcomeDefinition
@@ -1914,7 +1914,7 @@ definition:
     isExample: true
     name: MetaanalysisOutcomeDefinition_Mean_difference_in_HbA1c_between_Surgery_and_Medical_Lifestyle_groups_at_end_of_follow_up
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-outcome-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-outcome-definition
     reference:
       reference: Group/175765
   - description: Profile of Group for Evidence Based Medicine IG. The MetaanalysisStudyGroup
@@ -1930,7 +1930,7 @@ definition:
     isExample: true
     name: MetaanalysisStudyGroup_Effect_Estimates_for_Mortality_at_14_days_from_COVID19_Remdesivir_vs_Placebo_RCTs
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group
     reference:
       reference: Group/179799
   - description: mortality at 14 days
@@ -1950,21 +1950,21 @@ definition:
     name: 'NetEffectContribution: Additional GI surgical procedure for Example for
       GIN 2022'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution
     reference:
       reference: Evidence/179591
   - description: 2.14 (1.8 to 2.42)
     isExample: true
     name: 'NetEffectContribution: All-cause mortality for Example for GIN 2022'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution
     reference:
       reference: Evidence/179586
   - description: -0.16 (-0.23 to -0.13)
     isExample: true
     name: 'NetEffectContribution: New onset depression for Example for GIN 2022'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution
     reference:
       reference: Evidence/179589
   - description: 0.91 (0.47 to 1.27)
@@ -1972,21 +1972,21 @@ definition:
     name: 'NetEffectContribution: Nonfatal myocardial infarction or stroke for Example
       for GIN 2022'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution
     reference:
       reference: Evidence/179587
   - description: 2.15 (1.33 to 3.26) - example showing statistic.extension:modelExpression
     isExample: true
     name: 'NetEffectContribution: Remission of diabetes for Example for GIN 2022'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution
     reference:
       reference: Evidence/179588
   - description: -0.24 (-0.32 to -0.16)
     isExample: true
     name: 'NetEffectContribution: Treatment with opioids for Example for GIN 2022'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution
     reference:
       reference: Evidence/179590
   - description: Profile of List for Evidence Based Medicine IG. The NetEffectContributionList
@@ -2002,7 +2002,7 @@ definition:
   - isExample: true
     name: 'NetEffectContributionList: Bariatric Surgery Example for GIN 2022'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution-list
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution-list
     reference:
       reference: List/179585
   - description: Profile of Group for Evidence Based Medicine IG. The NetEffectContributions
@@ -2022,7 +2022,7 @@ definition:
     isExample: true
     name: NetEffectContributions_Bariatric_Surgery_Example_for_GIN_2022
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contributions
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contributions
     reference:
       reference: Group/179584
   - description: Profile of Evidence for Evidence Based Medicine IG. The NetEffectEstimate
@@ -2037,7 +2037,7 @@ definition:
     isExample: true
     name: 'NetEffectEstimate: Bariatric Surgery Example for GIN 2022'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-estimate
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-estimate
     reference:
       reference: Evidence/179583
   - description: Profile of Evidence for Evidence Based Medicine IG. The NonComparativeEvidence
@@ -2063,37 +2063,37 @@ definition:
   - isExample: true
     name: Outcome Importance Rating 100 of All-cause mortality
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/rating
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/rating
     reference:
       reference: ArtifactAssessment/104064
   - isExample: true
     name: Outcome Importance Rating 30 of Nonfatal myocardial infarction or stroke
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-importance
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-importance
     reference:
       reference: ArtifactAssessment/104192
   - isExample: true
     name: Outcome Importance Rating 5 of New onset depression
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/rating
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/rating
     reference:
       reference: ArtifactAssessment/104194
   - isExample: true
     name: Outcome Importance Rating 5 of Remission of diabetes
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-importance
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-importance
     reference:
       reference: ArtifactAssessment/104193
   - isExample: true
     name: Outcome Importance Rating 5 of Treatment with opioids
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-importance
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-importance
     reference:
       reference: ArtifactAssessment/104195
   - isExample: true
     name: Outcome Importance Rating 8 of Additional GI surgical procedure
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-importance
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-importance
     reference:
       reference: ArtifactAssessment/104196
   - description: Profile of Group for Evidence Based Medicine IG. The OutcomeDefinition
@@ -2109,49 +2109,49 @@ definition:
     isExample: true
     name: OutcomeDefinition_American_Diabetes_Association_composite_triple_end_point_for_metabolic_control
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition
     reference:
       reference: Group/172480
   - description: Diabetes in remission
     isExample: true
     name: OutcomeDefinition_Diabetes_in_remission
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition
     reference:
       reference: Group/173252
   - description: HbA1c at 12 months
     isExample: true
     name: OutcomeDefinition_HbA1c_at_12_months
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition
     reference:
       reference: Group/172484
   - description: HbA1c at 24 months
     isExample: true
     name: OutcomeDefinition_HbA1c_at_24_months
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition
     reference:
       reference: Group/172477
   - description: HbA1c at 36 months
     isExample: true
     name: OutcomeDefinition_HbA1c_at_36_months
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition
     reference:
       reference: Group/173245
   - description: HbA1c at 60 months
     isExample: true
     name: OutcomeDefinition_HbA1c_at_60_months
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition
     reference:
       reference: Group/172476
   - description: HbA1c at 6 months
     isExample: true
     name: OutcomeDefinition_HbA1c_at_6_months
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition
     reference:
       reference: Group/175762
   - description: New onset depression
@@ -2163,7 +2163,7 @@ definition:
     isExample: true
     name: OutcomeDefinition_Nonfatal_myocardial_infarction_or_stroke
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition
     reference:
       reference: Group/173248
   - description: Profile of ArtifactAssessment for Evidence Based Medicine IG. The
@@ -2186,7 +2186,7 @@ definition:
   - isExample: true
     name: 'OutcomeList: Clinical Outcomes for Effects of Bariatric Surgery'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-list
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-list
     reference:
       reference: List/179579
   - description: The American Diabetes Association composite triple end point of hemoglobin
@@ -2196,42 +2196,42 @@ definition:
     name: 'OutcomeVariable: American Diabetes Association composite triple end point
       for metabolic control at 5 years'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
     reference:
       reference: EvidenceVariable/32143
   - description: HbA1c at 12 months
     isExample: true
     name: 'OutcomeVariable: HbA1c at 12 months'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
     reference:
       reference: EvidenceVariable/173243
   - description: HbA1c at 24 months
     isExample: true
     name: 'OutcomeVariable: HbA1c at 24 months'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
     reference:
       reference: EvidenceVariable/173246
   - description: HbA1c at 36 months
     isExample: true
     name: 'OutcomeVariable: HbA1c at 36 months'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
     reference:
       reference: EvidenceVariable/173244
   - description: HbA1c at 6 months
     isExample: true
     name: 'OutcomeVariable: HbA1c at 6 months'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
     reference:
       reference: EvidenceVariable/175763
   - description: HbA1c at 60 months
     isExample: true
     name: 'OutcomeVariable: HbA1c at 60 months'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
     reference:
       reference: EvidenceVariable/173247
   - description: Mean difference in HbA1c between Surgery and Medical/Lifestyle groups
@@ -2240,7 +2240,7 @@ definition:
     name: 'OutcomeVariable: Mean difference in HbA1c between Surgery and Medical/Lifestyle
       groups at end of follow-up'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
     reference:
       reference: EvidenceVariable/46025
   - description: This example expresses the variable 'New onset depression' as a dichotomous
@@ -2249,14 +2249,14 @@ definition:
     isExample: true
     name: 'OutcomeVariable: New onset depression'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
     reference:
       reference: EvidenceVariable/104118
   - description: Nonfatal myocardial infarction or stroke
     isExample: true
     name: 'OutcomeVariable: Nonfatal myocardial infarction or stroke'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
     reference:
       reference: EvidenceVariable/104097
   - description: This example expresses the variable 'Remission of diabetes' as a
@@ -2266,7 +2266,7 @@ definition:
     isExample: true
     name: 'OutcomeVariable: Remission of diabetes'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
     reference:
       reference: EvidenceVariable/104117
   - description: This example expresses the variable 'Additional GI surgical procedure'
@@ -2274,14 +2274,14 @@ definition:
     isExample: true
     name: OutcomeVariable_Additional_GI_surgical_procedure
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
     reference:
       reference: EvidenceVariable/104120
   - description: A dichotomous variable (outcome measure) defined by CodeableConcept.
     isExample: true
     name: OutcomeVariable_All_cause_mortality
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
     reference:
       reference: EvidenceVariable/49217
   - description: This example expresses the variable 'Treatment with opioids' as a
@@ -2289,7 +2289,7 @@ definition:
     isExample: true
     name: OutcomeVariable_Treatment_with_opioids
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
     reference:
       reference: EvidenceVariable/104119
   - description: Profile of Evidence for Evidence Based Medicine IG. The ParticipantFlow
@@ -2303,28 +2303,28 @@ definition:
     isExample: true
     name: 'ParticipantFlow: 2018 Norwegian Cohort Excluded from Analysis'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow
     reference:
       reference: Evidence/179460
   - description: 1888 included in analysis
     isExample: true
     name: 'ParticipantFlow: 2018 Norwegian Cohort Included in Analysis'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow
     reference:
       reference: Evidence/179462
   - description: 956 included in analysis
     isExample: true
     name: 'ParticipantFlow: 2018 Norwegian Cohort Medical Group Included in Analysis'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow
     reference:
       reference: Evidence/179464
   - description: 932 included in analysis
     isExample: true
     name: 'ParticipantFlow: 2018 Norwegian Cohort Surgical Group Included in Analysis'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow
     reference:
       reference: Evidence/179463
   - description: Profile of EvidenceVariable for Evidence Based Medicine IG. The ParticipantFlowMeasure
@@ -2338,7 +2338,7 @@ definition:
     isExample: true
     name: 'ParticipantFlowMeasure: Dropout due to stopping intervention'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow-measure
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow-measure
     reference:
       reference: EvidenceVariable/179636
   - description: This example expresses the variable 'Excluded from analysis' as a
@@ -2348,7 +2348,7 @@ definition:
     isExample: true
     name: 'ParticipantFlowMeasure: Exclusion from analysis'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow-measure
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow-measure
     reference:
       reference: EvidenceVariable/179459
   - description: This example expresses the variable 'Inclusion in analysis' as a
@@ -2358,7 +2358,7 @@ definition:
     isExample: true
     name: 'ParticipantFlowMeasure: Inclusion in analysis'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow-measure
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow-measure
     reference:
       reference: EvidenceVariable/179461
   - description: An enumerated group participating in a randomized trial.
@@ -2386,7 +2386,7 @@ definition:
     name: 'PlanDefinition for Recommendation: ADA Obesity Management Recommendation
       8.16'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-plan
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-plan
     reference:
       reference: PlanDefinition/179468
   - description: "8.17 Metabolic surgery may be considered as an option to treat type\
@@ -2397,7 +2397,7 @@ definition:
     name: 'PlanDefinition for Recommendation: ADA Obesity Management Recommendation
       8.17'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-plan
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-plan
     reference:
       reference: PlanDefinition/179554
   - description: Profile of Citation for Evidence Based Medicine IG. The PreprintCitation
@@ -2412,7 +2412,7 @@ definition:
     isExample: true
     name: 'PreprintCitation: Nigella Sativa for COVID-19 OSF Preprint'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/preprint-citation
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/preprint-citation
     reference:
       reference: Citation/5296
   - description: Profile of ArtifactAssessment for Evidence Based Medicine IG. The
@@ -2449,19 +2449,19 @@ definition:
   - isExample: true
     name: 'Recommendation: ADA Obesity Management Recommendation 8.16'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation
     reference:
       reference: Composition/179466
   - isExample: true
     name: 'Recommendation: ADA Obesity Management Recommendation 8.16-adapted'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation
     reference:
       reference: Composition/179699
   - isExample: true
     name: 'Recommendation: ADA Obesity Management Recommendation 8.17'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation
     reference:
       reference: Composition/179467
   - description: Profile of ActivityDefinition for Evidence Based Medicine IG. The
@@ -2502,7 +2502,7 @@ definition:
     isExample: true
     name: Remdesivir_IV_200_mg_once_then_100_mg_once_daily_for_9_days
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-definition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-definition
     reference:
       reference: Group/179783
   - isExample: true
@@ -2510,7 +2510,7 @@ definition:
       of multi-platform RCT of anticoagulation for non-critically ill patients with
       COVID-19
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/risk-of-bias
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/risk-of-bias
     reference:
       reference: ArtifactAssessment/179692
   - description: Types of bias for use with risk of bias assessment. This is a snapshot
@@ -2550,7 +2550,7 @@ definition:
     isExample: true
     name: 'SearchResults: PubMed search for Wonder Woman'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/search-results
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/search-results
     reference:
       reference: Library/179606
   - description: Profile of Group for Evidence Based Medicine IG. The SearchStrategy
@@ -2576,7 +2576,7 @@ definition:
     isExample: true
     name: SearchStrategy_PubMed_and_Embase_search_for_van_Veldhuisen_2022_systematic_review
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/search-strategy
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/search-strategy
     reference:
       reference: Group/179592
   - description: Example of searching for "Wonder Woman" in titles and abstracts in
@@ -2584,7 +2584,7 @@ definition:
     isExample: true
     name: SearchStrategy_PubMed_search_for_Wonder_Woman
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/search-strategy
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/search-strategy
     reference:
       reference: Group/179593
   - description: "Cohort study with baseline data of exposures from November 2005\
@@ -2595,7 +2595,7 @@ definition:
     isExample: true
     name: Severely_Obese_Adults_2018_Norwegian_Cohort
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/study-group
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group
     reference:
       reference: Group/178427
   - description: Profile of Evidence for Evidence Based Medicine IG. The SingleStudyEvidence
@@ -2616,7 +2616,7 @@ definition:
     isExample: true
     name: 'SoaPlanDefinition: Follow-up assessment 3 months after study start'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/soa-plandefinition
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/soa-plandefinition
     reference:
       reference: PlanDefinition/181450
   - description: Profile of Citation for Evidence Based Medicine IG. The SoftwareCitation
@@ -2631,7 +2631,7 @@ definition:
     name: "SoftwareCitation: Computable Publishing\xAE: ClinicalTrials.gov-to-FEvIR\
       \ Converter"
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/software-citation
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/software-citation
     reference:
       reference: Citation/179560
   - description: The analysis that was applied.
@@ -2705,7 +2705,7 @@ definition:
     isExample: true
     name: StudyEligibilityCriteria_Eligibility_Criteria_for_Bariatric_Surgery_Randomized_Trial_Diabetes_Surgery_Study
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/study-eligibility-criteria
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/study-eligibility-criteria
     reference:
       reference: Group/170443
   - description: Patients aged 30-60 years with a body-mass index of 35 kg/m(2) or
@@ -2713,14 +2713,14 @@ definition:
     isExample: true
     name: StudyEligibilityCriteria_Eligibility_Criteria_for_DIBASY_Trial
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/study-eligibility-criteria
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/study-eligibility-criteria
     reference:
       reference: Group/172461
   - description: "obese, adult (age \u226518 years old) patients"
     isExample: true
     name: StudyEligibilityCriteria_Obese_patients_18_years_old
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/study-eligibility-criteria
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/study-eligibility-criteria
     reference:
       reference: Group/171819
   - description: Profile of Group for Evidence Based Medicine IG. The StudyGroup Profile
@@ -2734,7 +2734,7 @@ definition:
     isExample: true
     name: StudyGroup_Bariatric_Surgery_Trial_Enrollment_Group
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/study-group
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group
     reference:
       reference: Group/32145
   - description: An enumerated group with a single characteristic referencing the
@@ -2742,7 +2742,7 @@ definition:
     isExample: true
     name: StudyGroup_DIBASY_Trial_Enrollment_Group
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/study-group
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group
     reference:
       reference: Group/46117
   - description: Profile of Composition for Evidence Based Medicine IG. The SummaryOfFindings
@@ -2757,7 +2757,7 @@ definition:
     name: 'SummaryOfFindings: Bariatric Surgery Summary of Findings Example for GIN
       2022'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/summary-of-findings
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/summary-of-findings
     reference:
       reference: Composition/104215
   - description: Profile of Composition for Evidence Based Medicine IG. The SummaryOfNetEffect
@@ -2773,7 +2773,7 @@ definition:
     name: 'SummaryOfNetEffect: Bariatric Surgery Summary of Net Effect Contributions
       Example for GIN 2022'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/summary-of-net-effect
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/summary-of-net-effect
     reference:
       reference: Composition/104383
   - description: Profile of Group for Evidence Based Medicine IG. The SystematicReviewEligibilityCriteria
@@ -2790,7 +2790,7 @@ definition:
     isExample: true
     name: SystematicReviewEligibilityCriteria_ADT_and_Docetaxel_vs_ADT_alone_for_metastatic_hormone_naive_prostate_cancer
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/systematic-review-eligibility-criteria
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/systematic-review-eligibility-criteria
     reference:
       reference: Group/179619
   - description: Profile of Library for Evidence Based Medicine IG. The SystematicReviewExcludedStudies
@@ -2805,7 +2805,7 @@ definition:
     name: 'SystematicReviewExcludedStudies: ADT and Docetaxel vs. ADT alone for metastatic
       hormone-naive prostate cancer - Brian S. Alper'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/systematic-review-excluded-studies
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/systematic-review-excluded-studies
     reference:
       reference: Library/179632
   - description: Profile of Library for Evidence Based Medicine IG. The SystematicReviewIncludedStudies
@@ -2820,7 +2820,7 @@ definition:
     name: 'SystematicReviewIncludedStudies: ADT and Docetaxel vs. ADT alone for metastatic
       hormone-naive prostate cancer'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/systematic-review-included-studies
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/systematic-review-included-studies
     reference:
       reference: Library/179618
   - description: Therapeutic-dose anticoagulation with unfractionated or low-molecular-weight
@@ -2837,7 +2837,7 @@ definition:
     isExample: true
     name: Type_2_diabetes_and_elevated_BMI_in_2016_meta_analysis
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/study-eligibility-criteria
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/study-eligibility-criteria
     reference:
       reference: Group/33398
   - description: Profile of EvidenceVariable for Evidence Based Medicine IG. The VariableDefinition
@@ -2875,7 +2875,7 @@ definition:
     isExample: true
     name: 'WebPageCitation: A HEvKA Update Summary'
     profile:
-    - https://hl7.org/fhir/uv/ebm/StructureDefinition/web-page-citation
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/web-page-citation
     reference:
       reference: Citation/179561
 fhirVersion:
@@ -2891,5 +2891,5 @@ packageId: hl7.fhir.uv.ebm
 publisher: HL7 International - Clinical Decision Support WG
 resourceType: ImplementationGuide
 status: draft
-url: https://hl7.org/fhir/uv/ebm/ImplementationGuide/hl7.fhir.uv.ebm
+url: http://hl7.org/fhir/uv/ebm/ImplementationGuide/hl7.fhir.uv.ebm
 version: 1.0.0-ballot

@@ -7,7 +7,7 @@
       "valueCode": "can-bind"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition-comparator-category",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition-comparator-category",
   "name": "VariableDefinitionComparatorCategory",
   "status": "draft",
   "description": "The reference value used for comparison.",
@@ -46,7 +46,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition-comparator-category"
+        "fixedUri": "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition-comparator-category"
       },
       {
         "id": "Extension.value[x]",

@@ -15,7 +15,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence-report-subject",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence-report-subject",
   "name": "ComparativeEvidenceReportSubject",
   "status": "draft",
   "description": "Profile of Group for Evidence Based Medicine IG. The EvidenceReportSubject Profile is used to define the subject of an EvidenceReport.",
@@ -40,7 +40,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Group",
-  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report-subject",
+  "baseDefinition": "http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report-subject",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -63,7 +63,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/study-group"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group"
             ]
           }
         ]
@@ -82,8 +82,8 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition",
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-definition"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition",
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-definition"
             ]
           }
         ]
@@ -102,9 +102,9 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition",
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-definition",
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-definition"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition",
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-definition",
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-definition"
             ]
           }
         ]

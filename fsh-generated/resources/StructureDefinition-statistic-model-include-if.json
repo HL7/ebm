@@ -7,7 +7,7 @@
       "valueCode": "can-bind"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-include-if",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-include-if",
   "name": "StatisticModelIncludeIf",
   "status": "draft",
   "description": "The condition under which the variable (or modelCharacteristic) will be included.",
@@ -118,7 +118,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-include-if"
+        "fixedUri": "http://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-include-if"
       },
       {
         "id": "Extension.value[x]",

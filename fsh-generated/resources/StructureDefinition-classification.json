@@ -15,7 +15,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/classification",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/classification",
   "name": "Classification",
   "status": "draft",
   "description": "Profile of ArtifactAssessment for Evidence Based Medicine IG. The Classification Profile is used for classifier tags that may be created independently from Resource creators and may be used for search indexes.",

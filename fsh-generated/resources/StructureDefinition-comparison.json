@@ -15,7 +15,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparison",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparison",
   "name": "Comparison",
   "status": "draft",
   "description": "Profile of ArtifactAssessment for Evidence Based Medicine IG. The Comparison Profile is used for assessments of similarities and differences between knowledge artifacts.",
@@ -40,7 +40,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "ArtifactAssessment",
-  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/adaptation",
+  "baseDefinition": "http://hl7.org/fhir/uv/ebm/StructureDefinition/adaptation",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -54,7 +54,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/artifact-assessment-compared"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/artifact-assessment-compared"
             ]
           }
         ]

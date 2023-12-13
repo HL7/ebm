@@ -7,7 +7,7 @@
       "valueCode": "can-bind"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-duration-range",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-duration-range",
   "name": "CharacteristicDurationRange",
   "status": "draft",
   "description": "Length of time in which the characteristic is met.",
@@ -46,7 +46,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-duration-range"
+        "fixedUri": "http://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-duration-range"
       },
       {
         "id": "Extension.value[x]",

@@ -19,7 +19,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition",
   "name": "VariableDefinition",
   "status": "draft",
   "description": "Profile of EvidenceVariable for Evidence Based Medicine IG. The VariableDefinition Profile uses a CodeableReference Datatype to provide a concept (e.g. coding in a code system) and/or a reference to a Group Resource for structured data to define the variable.",
@@ -73,7 +73,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-variable-definition"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-variable-definition"
             ]
           }
         ]
@@ -112,7 +112,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-variable-category-value-reference"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-variable-category-value-reference"
             ]
           }
         ]

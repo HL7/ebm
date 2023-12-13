@@ -7,7 +7,7 @@
       "valueCode": "can-bind"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-expression",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-expression",
   "name": "StatisticModelExpression",
   "status": "draft",
   "description": "An expression that defines the statistical analysis.",
@@ -46,7 +46,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-expression"
+        "fixedUri": "http://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-expression"
       },
       {
         "id": "Extension.value[x]",

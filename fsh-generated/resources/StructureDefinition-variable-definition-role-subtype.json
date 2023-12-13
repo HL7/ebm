@@ -7,7 +7,7 @@
       "valueCode": "can-bind"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition-role-subtype",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition-role-subtype",
   "name": "VariableDefinitionRoleSubtype",
   "status": "draft",
   "description": "Sub-classification of the role of the variable.",
@@ -46,7 +46,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition-role-subtype"
+        "fixedUri": "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition-role-subtype"
       },
       {
         "id": "Extension.value[x]",

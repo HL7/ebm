@@ -7,7 +7,7 @@
       "valueCode": "can-bind"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-value-expression",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-value-expression",
   "name": "CharacteristicValueExpression",
   "status": "draft",
   "description": "The value of the trait that holds for members of the group, held by Expression.",
@@ -46,7 +46,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-value-expression"
+        "fixedUri": "http://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-value-expression"
       },
       {
         "id": "Extension.value[x]",

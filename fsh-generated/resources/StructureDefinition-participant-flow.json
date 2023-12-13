@@ -19,7 +19,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow",
   "name": "ParticipantFlow",
   "status": "draft",
   "description": "Profile of Evidence for Evidence Based Medicine IG. The ParticipantFlow Profile is used for counts of completion and reasons for non-completion of participation in a research study.",
@@ -44,7 +44,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Evidence",
-  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/non-comparative-evidence",
+  "baseDefinition": "http://hl7.org/fhir/uv/ebm/StructureDefinition/non-comparative-evidence",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -90,7 +90,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow-measure"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow-measure"
             ]
           }
         ]

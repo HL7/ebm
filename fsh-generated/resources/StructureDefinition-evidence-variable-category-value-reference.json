@@ -7,7 +7,7 @@
       "valueCode": "can-bind"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-variable-category-value-reference",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-variable-category-value-reference",
   "name": "EvidenceVariableCategoryValueReference",
   "status": "draft",
   "description": "Reference to a Group Resource to express a definition for a categorical value.",
@@ -46,7 +46,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-variable-category-value-reference"
+        "fixedUri": "http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-variable-category-value-reference"
       },
       {
         "id": "Extension.value[x]",

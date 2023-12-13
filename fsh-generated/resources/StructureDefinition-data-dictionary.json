@@ -19,7 +19,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/data-dictionary",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/data-dictionary",
   "name": "DataDictionary",
   "status": "draft",
   "description": "Profile of CodeSystem for Evidence Based Medicine IG. The DataDictionary Profile is used for a code key for variable names in a dataset.",

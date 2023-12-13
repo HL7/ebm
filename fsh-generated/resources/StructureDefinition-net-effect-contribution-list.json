@@ -15,7 +15,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution-list",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution-list",
   "name": "NetEffectContributionList",
   "status": "draft",
   "description": "Profile of List for Evidence Based Medicine IG. The NetEffectContributionList Profile is used to provide a list of Evidence Resources (NetEffectContribution Profile). The NetEffectContributionList Profile is used to represent a Group of Evidence for the population for a NetEffectEstimate (Profile of Evidence) using a net effect analysis approach and is referenced from a NetEffectContributions (Profile of Group).",
@@ -72,7 +72,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution"
             ]
           }
         ]

@@ -15,7 +15,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition",
   "name": "OutcomeDefinition",
   "status": "draft",
   "description": "Profile of Group for Evidence Based Medicine IG. The OutcomeDefinition Profile is used to express the criteria defining an evidence variable (or categorical value for a variable) in the role of outcome.",
@@ -40,7 +40,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Group",
-  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition",
+  "baseDefinition": "http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition",
   "derivation": "constraint",
   "differential": {
     "element": [

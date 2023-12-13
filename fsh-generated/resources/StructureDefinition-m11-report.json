@@ -15,7 +15,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/m11-report",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/m11-report",
   "name": "M11Report",
   "status": "draft",
   "description": "Profile of Composition for Evidence Based Medicine IG. The M11Report Profile is used for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification.",
@@ -50,7 +50,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Composition",
-  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report",
+  "baseDefinition": "http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -408,7 +408,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/soa-plandefinition"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/soa-plandefinition"
             ]
           }
         ]
@@ -450,7 +450,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/soa-plandefinition"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/soa-plandefinition"
             ]
           }
         ]
@@ -805,7 +805,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
             ]
           }
         ]
@@ -1500,7 +1500,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
             ]
           }
         ]
@@ -1542,7 +1542,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
             ]
           }
         ]
@@ -1584,7 +1584,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
             ]
           }
         ]
@@ -1852,7 +1852,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-definition"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-definition"
             ]
           }
         ]
@@ -1894,7 +1894,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-definition"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-definition"
             ]
           }
         ]
@@ -4035,7 +4035,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
             ]
           }
         ]
@@ -4097,7 +4097,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/endpoint-analysis-plan"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/endpoint-analysis-plan"
             ]
           }
         ]
@@ -4199,7 +4199,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/endpoint-analysis-plan"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/endpoint-analysis-plan"
             ]
           }
         ]
@@ -4265,7 +4265,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
             ]
           }
         ]
@@ -4326,7 +4326,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/endpoint-analysis-plan"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/endpoint-analysis-plan"
             ]
           }
         ]
@@ -4428,7 +4428,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/endpoint-analysis-plan"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/endpoint-analysis-plan"
             ]
           }
         ]
@@ -4494,7 +4494,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
             ]
           }
         ]
@@ -4555,7 +4555,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/endpoint-analysis-plan"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/endpoint-analysis-plan"
             ]
           }
         ]
@@ -4657,7 +4657,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/endpoint-analysis-plan"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/endpoint-analysis-plan"
             ]
           }
         ]
@@ -4819,7 +4819,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/endpoint-analysis-plan"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/endpoint-analysis-plan"
             ]
           }
         ]

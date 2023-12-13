@@ -7,7 +7,7 @@
       "valueCode": "can-bind"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-offset",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-offset",
   "name": "CharacteristicOffset",
   "status": "draft",
   "description": "Defines the reference point for comparison when other than 0.",
@@ -46,7 +46,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-offset"
+        "fixedUri": "http://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-offset"
       },
       {
         "id": "Extension.value[x]",

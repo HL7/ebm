@@ -19,7 +19,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/single-study-evidence",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/single-study-evidence",
   "name": "SingleStudyEvidence",
   "status": "draft",
   "description": "Profile of Evidence for Evidence Based Medicine IG. The SingleStudyEvidence Profile is used for evidence from single studies, explicitly expressing that no studies were synthesized.",
@@ -44,7 +44,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Evidence",
-  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-r6",
+  "baseDefinition": "http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-r6",
   "derivation": "constraint",
   "differential": {
     "element": [

@@ -15,7 +15,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition",
   "name": "CohortDefinition",
   "title": "Cohort Definition",
   "status": "draft",
@@ -41,7 +41,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Group",
-  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/group-r6",
+  "baseDefinition": "http://hl7.org/fhir/uv/ebm/StructureDefinition/group-r6",
   "derivation": "constraint",
   "differential": {
     "element": [

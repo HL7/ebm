@@ -15,7 +15,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group",
   "name": "ComparatorGroup",
   "status": "draft",
   "description": "Profile of Group for Evidence Based Medicine IG. The ComparatorGroup Profile is used to represent a group (definitional or enumerated) used as a comparator in a ComparativeEvidence.",
@@ -40,7 +40,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Group",
-  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/group-r6",
+  "baseDefinition": "http://hl7.org/fhir/uv/ebm/StructureDefinition/group-r6",
   "derivation": "constraint",
   "differential": {
     "element": [

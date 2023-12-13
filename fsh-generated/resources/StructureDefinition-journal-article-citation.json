@@ -19,7 +19,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/journal-article-citation",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/journal-article-citation",
   "name": "JournalArticleCitation",
   "status": "draft",
   "description": "Profile of Citation for Evidence Based Medicine IG. The JournalArticleCitation Profile is used for citations of an article published in a periodical venue classified as a journal.",

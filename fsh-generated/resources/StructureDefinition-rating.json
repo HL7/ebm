@@ -15,7 +15,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/rating",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/rating",
   "name": "Rating",
   "status": "draft",
   "description": "Profile of ArtifactAssessment for Evidence Based Medicine IG. The Rating Profile is used for classifier tags that may include quantitative ratings and may be created independently from Resource creators.",

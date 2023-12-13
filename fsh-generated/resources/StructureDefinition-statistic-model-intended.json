@@ -7,7 +7,7 @@
       "valueCode": "can-bind"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-intended",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-intended",
   "name": "StatisticModelIntended",
   "status": "draft",
   "description": "The plan for analysis.",
@@ -46,7 +46,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-intended"
+        "fixedUri": "http://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-intended"
       },
       {
         "id": "Extension.value[x]",

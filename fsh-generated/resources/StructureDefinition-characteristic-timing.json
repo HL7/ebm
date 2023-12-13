@@ -7,7 +7,7 @@
       "valueCode": "can-bind"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-timing",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-timing",
   "name": "CharacteristicTiming",
   "status": "draft",
   "description": "Timing in which the characteristic is determined.",
@@ -220,7 +220,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-timing"
+        "fixedUri": "http://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-timing"
       },
       {
         "id": "Extension.value[x]",

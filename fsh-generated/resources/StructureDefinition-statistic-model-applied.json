@@ -7,7 +7,7 @@
       "valueCode": "can-bind"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-applied",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-applied",
   "name": "StatisticModelApplied",
   "status": "draft",
   "description": "The analysis that was applied.",
@@ -46,7 +46,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-applied"
+        "fixedUri": "http://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-applied"
       },
       {
         "id": "Extension.value[x]",

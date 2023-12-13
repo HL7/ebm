@@ -19,7 +19,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/intervention-only-evidence",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/intervention-only-evidence",
   "name": "InterventionOnlyEvidence",
   "status": "draft",
   "description": "Profile of Evidence for Evidence Based Medicine IG. The InterventionOnlyEvidence Profile is used for evidence with a measured variable that is considered the outcome of an exposure or intervention. The InterventionOnlyEvidence describes the evidence for the intervention group.",
@@ -44,7 +44,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Evidence",
-  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/non-comparative-evidence",
+  "baseDefinition": "http://hl7.org/fhir/uv/ebm/StructureDefinition/non-comparative-evidence",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -65,8 +65,8 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group",
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group",
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group"
             ]
           }
         ]

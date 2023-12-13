@@ -15,7 +15,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/comment",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/comment",
   "name": "Comment",
   "status": "draft",
   "description": "Profile of ArtifactAssessment for Evidence Based Medicine IG. The Comment Profile is used for comments about a Resource that may be created independently from Resource creators.",

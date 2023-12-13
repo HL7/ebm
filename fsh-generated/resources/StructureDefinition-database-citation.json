@@ -19,7 +19,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/database-citation",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/database-citation",
   "name": "DatabaseCitation",
   "status": "draft",
   "description": "Profile of Citation for Evidence Based Medicine IG. The DatabaseCitation Profile is used for citations of a database.",

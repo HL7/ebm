@@ -7,7 +7,7 @@
       "valueCode": "can-bind"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/combination-threshold",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/combination-threshold",
   "name": "CombinationThreshold",
   "status": "draft",
   "description": "Provides the value of n when at-least or at-most codes are used for combinationMethod.",
@@ -46,7 +46,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://hl7.org/fhir/uv/ebm/StructureDefinition/combination-threshold"
+        "fixedUri": "http://hl7.org/fhir/uv/ebm/StructureDefinition/combination-threshold"
       },
       {
         "id": "Extension.value[x]",

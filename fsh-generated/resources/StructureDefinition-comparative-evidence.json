@@ -19,7 +19,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence",
   "name": "ComparativeEvidence",
   "status": "draft",
   "description": "Profile of Evidence for Evidence Based Medicine IG. The ComparativeEvidence Profile is used for evidence with a measured variable that is considered the outcome of an exposure or intervention, and an exposure variable with two or more categories that are being compared.",
@@ -44,7 +44,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Evidence",
-  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-r6",
+  "baseDefinition": "http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-r6",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -102,10 +102,10 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/study-group",
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group",
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group",
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group",
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group",
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group",
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group"
             ]
           }
         ]
@@ -167,7 +167,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment"
             ]
           }
         ]
@@ -179,7 +179,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
             ]
           }
         ]
@@ -225,7 +225,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
             ]
           }
         ]

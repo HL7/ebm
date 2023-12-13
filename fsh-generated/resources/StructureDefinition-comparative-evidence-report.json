@@ -15,7 +15,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence-report",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence-report",
   "name": "ComparativeEvidenceReport",
   "status": "draft",
   "description": "Profile of Composition for Evidence Based Medicine IG. The ComparativeEvidenceReport Profile is used for an evidence report including the study group, exposure, comparator, and findings for any number of outcomes comparing the exposure to the comparator in the study group.",
@@ -50,7 +50,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Composition",
-  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report",
+  "baseDefinition": "http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -132,7 +132,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/study-group"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group"
             ]
           }
         ]
@@ -203,7 +203,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-definition"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-definition"
             ]
           }
         ]
@@ -240,7 +240,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group"
             ]
           }
         ]
@@ -311,8 +311,8 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-definition",
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-definition"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-definition",
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-definition"
             ]
           }
         ]
@@ -349,8 +349,8 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group",
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group",
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group"
             ]
           }
         ]
@@ -382,7 +382,7 @@
             "code": "Reference",
             "targetProfile": [
               "http://hl7.org/fhir/StructureDefinition/ResearchStudy",
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/classification"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/classification"
             ]
           }
         ]
@@ -423,7 +423,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
             ]
           }
         ]
@@ -474,7 +474,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/baseline-measure-evidence"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/baseline-measure-evidence"
             ]
           }
         ]
@@ -511,7 +511,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/baseline-measure-evidence"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/baseline-measure-evidence"
             ]
           }
         ]
@@ -548,7 +548,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/baseline-measure-evidence"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/baseline-measure-evidence"
             ]
           }
         ]
@@ -585,7 +585,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-baseline-measure-evidence"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-baseline-measure-evidence"
             ]
           }
         ]
@@ -626,7 +626,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow-measure"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow-measure"
             ]
           }
         ]
@@ -677,7 +677,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow"
             ]
           }
         ]
@@ -714,7 +714,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow"
             ]
           }
         ]
@@ -751,7 +751,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow"
             ]
           }
         ]
@@ -788,7 +788,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-participant-flow"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-participant-flow"
             ]
           }
         ]
@@ -829,7 +829,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
             ]
           }
         ]
@@ -880,7 +880,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence"
             ]
           }
         ]
@@ -917,7 +917,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/intervention-only-evidence"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/intervention-only-evidence"
             ]
           }
         ]
@@ -954,7 +954,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
             ]
           }
         ]

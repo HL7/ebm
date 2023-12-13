@@ -7,7 +7,7 @@
       "valueCode": "can-bind"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-instances-quantity",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-instances-quantity",
   "name": "CharacteristicInstancesQuantity",
   "status": "draft",
   "description": "Number of occurrences meeting the characteristic.",
@@ -46,7 +46,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-instances-quantity"
+        "fixedUri": "http://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-instances-quantity"
       },
       {
         "id": "Extension.value[x]",

@@ -19,7 +19,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/dataset-citation",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/dataset-citation",
   "name": "DatasetCitation",
   "status": "draft",
   "description": "Profile of Citation for Evidence Based Medicine IG. The DatasetCitation Profile is used for citations of a dataset.",

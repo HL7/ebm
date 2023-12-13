@@ -15,7 +15,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-outcome-definition",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-outcome-definition",
   "name": "MetaanalysisOutcomeDefinition",
   "status": "draft",
   "description": "Profile of Group for Evidence Based Medicine IG. The MetaanalysisOutcomeDefinition Profile is used to express the criteria defining an evidence variable in the role of outcome where the population (dataset) is a set of Evidence Resources. Characteristics define the characteristics of the Evidence Resource to be eligible to be used for this outcome.",
@@ -40,7 +40,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Group",
-  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition",
+  "baseDefinition": "http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition",
   "derivation": "constraint",
   "differential": {
     "element": [

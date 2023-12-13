@@ -19,7 +19,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence",
   "name": "ComparatorOnlyEvidence",
   "status": "draft",
   "description": "Profile of Evidence for Evidence Based Medicine IG. The ComparatorOnlyEvidence Profile is used for evidence with a measured variable that is considered the outcome of an exposure or intervention, and a population that has an exposure with a categorical value that is the reference category for the exposure in a ComparativeEvidence Profile. The ComparatorOnlyEvidence describes the evidence for the comparator group.",
@@ -44,7 +44,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Evidence",
-  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/non-comparative-evidence",
+  "baseDefinition": "http://hl7.org/fhir/uv/ebm/StructureDefinition/non-comparative-evidence",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -65,9 +65,9 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group",
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group",
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group",
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group",
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group"
             ]
           }
         ]

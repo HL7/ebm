@@ -19,7 +19,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-r6",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-r6",
   "name": "EvidenceR6",
   "status": "draft",
   "description": "Profile of Evidence for Evidence Based Medicine IG. The EvidenceR6 Profile is used to adjust the R5 Evidence base to match the structures in R6.",
@@ -73,7 +73,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition-variable-role-code"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition-variable-role-code"
             ]
           }
         ]
@@ -88,7 +88,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition-role-subtype"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition-role-subtype"
             ]
           }
         ]
@@ -103,7 +103,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition-comparator-category"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition-comparator-category"
             ]
           }
         ]
@@ -137,7 +137,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-expression"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-expression"
             ]
           }
         ]
@@ -166,7 +166,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-value-quantity"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-value-quantity"
             ]
           }
         ]
@@ -181,7 +181,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-value-range"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-value-range"
             ]
           }
         ]
@@ -196,7 +196,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-value-codeableconcept"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-value-codeableconcept"
             ]
           }
         ]
@@ -211,7 +211,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-intended"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-intended"
             ]
           }
         ]
@@ -226,7 +226,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-applied"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-applied"
             ]
           }
         ]
@@ -241,7 +241,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-include-if"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-include-if"
             ]
           }
         ]
@@ -275,7 +275,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-include-if"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/statistic-model-include-if"
             ]
           }
         ]

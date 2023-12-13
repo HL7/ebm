@@ -19,7 +19,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/non-comparative-evidence",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/non-comparative-evidence",
   "name": "NonComparativeEvidence",
   "status": "draft",
   "description": "Profile of Evidence for Evidence Based Medicine IG. The NonComparativeEvidence Profile is used for evidence about a single group with no comparisons between groups.",
@@ -44,7 +44,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Evidence",
-  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-r6",
+  "baseDefinition": "http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-r6",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -102,10 +102,10 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/study-group",
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group",
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group",
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group",
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group",
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group",
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group"
             ]
           }
         ]
@@ -162,7 +162,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
             ]
           }
         ]

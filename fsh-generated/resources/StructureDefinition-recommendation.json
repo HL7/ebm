@@ -15,7 +15,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation",
   "name": "Recommendation",
   "status": "draft",
   "description": "Profile of Composition for Evidence Based Medicine IG. The Recommendation Profile is used for the composition of a recommendation (such as that from a clinical practice guideline) and may be tightly related to a RecommendationPlan Profile of PlanDefinition and a RecommendationJustification Profile of ArtifactAssessment.",
@@ -50,7 +50,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Composition",
-  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report",
+  "baseDefinition": "http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -121,7 +121,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-justification",
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-justification",
               "http://hl7.org/fhir/StructureDefinition/PlanDefinition",
               "http://hl7.org/fhir/StructureDefinition/Composition"
             ]

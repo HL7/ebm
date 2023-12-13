@@ -7,7 +7,7 @@
       "valueCode": "can-bind"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-variable-definition",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-variable-definition",
   "name": "EvidenceVariableDefinition",
   "status": "draft",
   "description": "Reference to a CodeableConcept and/or a Group Resource to express a definition for an EvidenceVariable.",
@@ -46,7 +46,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-variable-definition"
+        "fixedUri": "http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-variable-definition"
       },
       {
         "id": "Extension.value[x]",

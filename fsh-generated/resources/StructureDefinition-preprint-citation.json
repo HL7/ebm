@@ -19,7 +19,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/preprint-citation",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/preprint-citation",
   "name": "PreprintCitation",
   "status": "draft",
   "description": "Profile of Citation for Evidence Based Medicine IG. The PreprintCitation Profile is used for citations of an article published in a form prior to peer-reviewed publication in a journal, book, or other permanent record.",

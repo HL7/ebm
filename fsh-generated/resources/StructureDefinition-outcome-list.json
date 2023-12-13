@@ -15,7 +15,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-list",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-list",
   "name": "OutcomeList",
   "status": "draft",
   "description": "Profile of List for Evidence Based Medicine IG. The OutcomeList Profile is used to provide a list of outcomes. The OutcomeList Profile is referenced in the EvidenceReportSubject Profile as a way to define the set of outcomes that an EvidenceReport is about.",
@@ -72,8 +72,8 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition",
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition",
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
             ]
           }
         ]

@@ -15,7 +15,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-importance",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-importance",
   "name": "OutcomeImportance",
   "status": "draft",
   "description": "Profile of ArtifactAssessment for Evidence Based Medicine IG. The OutcomeImportance Profile is used for expression of the relative importance of an outcome. The outcome is typically expressed with an EvidenceVariable Resource and may use the VariableDefinition Profile of EvidenceVariable (or OutcomeDefinition Profile of Group).",

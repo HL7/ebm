@@ -15,7 +15,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/adaptation",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/adaptation",
   "name": "Adaptation",
   "status": "draft",
   "description": "Profile of ArtifactAssessment for Evidence Based Medicine IG. The Adaptation Profile is used for assessments of a knowledge artifact that are used to create a new knowledge artifact through acceptance, rejection or modification of the assessed artifact.",

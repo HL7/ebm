@@ -5,7 +5,7 @@
   "id": "evidence-variable-role-subtype",
   "title": "Evidence Variable Role Subtype Value Set",
   "description": "The sub-role that the variable plays.",
-  "url": "https://hl7.org/fhir/uv/ebm/ValueSet/evidence-variable-role-subtype",
+  "url": "http://hl7.org/fhir/uv/ebm/ValueSet/evidence-variable-role-subtype",
   "experimental": false,
   "compose": {
     "include": [

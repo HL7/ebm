@@ -15,7 +15,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-justification",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-justification",
   "name": "RecommendationJustification",
   "status": "draft",
   "description": "Profile of ArtifactAssessment for Evidence Based Medicine IG. The RecommendationJustification Profile is used for expressing the rationale, evidence, and judgments supporting a recommendation, such as from a clinical practice guideline.",
@@ -167,7 +167,7 @@
         "path": "ArtifactAssessment.content.classifier",
         "binding": {
           "strength": "extensible",
-          "valueSet": "https://hl7.org/fhir/uv/ebm/ValueSet/recommendation-justification-classifier"
+          "valueSet": "http://hl7.org/fhir/uv/ebm/ValueSet/recommendation-justification-classifier"
         }
       },
       {

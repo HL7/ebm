@@ -15,7 +15,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report",
   "name": "EvidenceReport",
   "status": "draft",
   "description": "Profile of Composition for Evidence Based Medicine IG. The EvidenceReport Profile is used for a base structure (canonical resource management) for a report combining any number of Citation, Evidence, EvidenceVariable, EvidenceReport, and related Resources.",
@@ -168,7 +168,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/artifact-approvalDate"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/artifact-approvalDate"
             ]
           }
         ]
@@ -183,7 +183,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/artifact-lastReviewDate"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/artifact-lastReviewDate"
             ]
           }
         ]
@@ -198,7 +198,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/artifact-effectivePeriod"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/artifact-effectivePeriod"
             ]
           }
         ]
@@ -224,8 +224,8 @@
             "code": "Reference",
             "targetProfile": [
               "http://hl7.org/fhir/StructureDefinition/Citation",
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/classification",
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report-subject",
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/classification",
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report-subject",
               "http://hl7.org/fhir/StructureDefinition/ResearchStudy"
             ]
           }

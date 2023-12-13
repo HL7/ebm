@@ -19,7 +19,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-action",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-action",
   "name": "RecommendationAction",
   "status": "draft",
   "description": "Profile of ActivityDefinition for Evidence Based Medicine IG. The RecommendationAction Profile is used for a recommendation from a clinical practice guideline.",
@@ -77,7 +77,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-timing"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-timing"
             ]
           }
         ]

@@ -15,7 +15,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/composite-rating",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/composite-rating",
   "name": "CompositeRating",
   "status": "draft",
   "description": "Profile of ArtifactAssessment for Evidence Based Medicine IG. The CompositeRating Profile is used for a composite rating or classification of a Resource that may be created following ratings or classifications by two or more parties.",

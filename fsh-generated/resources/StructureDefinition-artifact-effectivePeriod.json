@@ -7,7 +7,7 @@
       "valueCode": "can-bind"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/artifact-effectivePeriod",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/artifact-effectivePeriod",
   "name": "ArtifactEffectivePeriod",
   "status": "draft",
   "description": "The period during which the resource content was or is planned to be in active use.",
@@ -46,7 +46,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://hl7.org/fhir/uv/ebm/StructureDefinition/artifact-effectivePeriod"
+        "fixedUri": "http://hl7.org/fhir/uv/ebm/StructureDefinition/artifact-effectivePeriod"
       },
       {
         "id": "Extension.value[x]",

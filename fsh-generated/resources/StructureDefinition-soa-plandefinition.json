@@ -19,7 +19,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/soa-plandefinition",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/soa-plandefinition",
   "name": "SoaPlanDefinition",
   "status": "draft",
   "description": "Profile of PlanDefinition for temporary testing to coordination with M11 use.",
@@ -82,7 +82,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-timing"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-timing"
             ]
           }
         ]

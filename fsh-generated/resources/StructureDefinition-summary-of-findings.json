@@ -15,7 +15,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/summary-of-findings",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/summary-of-findings",
   "name": "SummaryOfFindings",
   "status": "draft",
   "description": "Profile of Composition for Evidence Based Medicine IG. The SummaryOfFindings Profile is used for an evidence report combining Evidence and EvidenceVariable Resources, organized around VariableDefinition (Profile of EvidenceVariable), to represent the summary of findings of comparative evidence.",
@@ -50,7 +50,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Composition",
-  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report",
+  "baseDefinition": "http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -350,7 +350,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
             ]
           }
         ]
@@ -400,7 +400,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
             ]
           }
         ]
@@ -459,7 +459,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence"
             ]
           }
         ]
@@ -495,7 +495,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/intervention-only-evidence"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/intervention-only-evidence"
             ]
           }
         ]
@@ -531,8 +531,8 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence",
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence",
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
             ]
           }
         ]
@@ -568,7 +568,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
             ]
           }
         ]
@@ -603,8 +603,8 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence",
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/certainty-of-evidence"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence",
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/certainty-of-evidence"
             ]
           }
         ]
@@ -640,7 +640,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
             ]
           }
         ]

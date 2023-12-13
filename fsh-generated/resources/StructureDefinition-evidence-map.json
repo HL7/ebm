@@ -15,7 +15,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-map",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-map",
   "name": "EvidenceMap",
   "status": "draft",
   "description": "Profile of Composition for Evidence Based Medicine IG. The EvidenceMap Profile is used for an organized listing of Resources used to generate EvidenceReport instances.",
@@ -50,7 +50,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Composition",
-  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report",
+  "baseDefinition": "http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -126,7 +126,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
             ]
           }
         ]
@@ -156,7 +156,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence"
             ]
           }
         ]
@@ -186,7 +186,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/intervention-only-evidence"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/intervention-only-evidence"
             ]
           }
         ]
@@ -216,7 +216,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
             ]
           }
         ]
@@ -246,7 +246,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/certainty-of-evidence"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/certainty-of-evidence"
             ]
           }
         ]
@@ -306,7 +306,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
             ]
           }
         ]

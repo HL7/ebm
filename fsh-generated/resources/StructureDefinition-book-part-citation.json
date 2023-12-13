@@ -19,7 +19,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/book-part-citation",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/book-part-citation",
   "name": "BookPartCitation",
   "status": "draft",
   "description": "Profile of Citation for Evidence Based Medicine IG. The BookPartCitation Profile is used for citations of a part of a book.",

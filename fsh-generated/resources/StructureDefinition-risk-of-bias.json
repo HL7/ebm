@@ -15,7 +15,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/risk-of-bias",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/risk-of-bias",
   "name": "RiskOfBias",
   "status": "draft",
   "description": "Profile of ArtifactAssessment for Evidence Based Medicine IG. The RiskOfBias Profile is used for expression of the assessment of the threats to validity (or risk of bias) of an Evidence artifact or an artifact consisting of Evidence or the plan to create Evidence.",
@@ -189,7 +189,7 @@
         "path": "ArtifactAssessment.content.type",
         "binding": {
           "strength": "extensible",
-          "valueSet": "https://hl7.org/fhir/uv/ebm/ValueSet/risk-of-bias-type"
+          "valueSet": "http://hl7.org/fhir/uv/ebm/ValueSet/risk-of-bias-type"
         }
       },
       {

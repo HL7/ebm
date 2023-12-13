@@ -19,7 +19,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-participant-flow",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-participant-flow",
   "name": "ComparativeParticipantFlow",
   "status": "draft",
   "description": "Profile of Evidence for Evidence Based Medicine IG. The ComparativeParticipantFlow Profile is used for comparisons of counts of completion and reasons for non-completion of participation in a research study.",
@@ -44,7 +44,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Evidence",
-  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence",
+  "baseDefinition": "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -105,7 +105,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow-measure"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow-measure"
             ]
           }
         ]

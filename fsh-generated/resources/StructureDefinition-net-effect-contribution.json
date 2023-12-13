@@ -19,7 +19,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution",
   "name": "NetEffectContribution",
   "status": "draft",
   "description": "Profile of Evidence for Evidence Based Medicine IG. The NetEffectContribution Profile is used for evidence in which the effect estimates, expressed as risk differences, is multiplied by a relative importance rating of the outcomes.",
@@ -44,7 +44,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Evidence",
-  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence",
+  "baseDefinition": "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -82,7 +82,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-importance"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-importance"
             ]
           }
         ]

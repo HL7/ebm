@@ -7,7 +7,7 @@
       "valueCode": "can-bind"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/combination-method",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/combination-method",
   "name": "CombinationMethod",
   "status": "draft",
   "description": "Used to specify how two or more characteristics are combined.",
@@ -46,7 +46,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://hl7.org/fhir/uv/ebm/StructureDefinition/combination-method"
+        "fixedUri": "http://hl7.org/fhir/uv/ebm/StructureDefinition/combination-method"
       },
       {
         "id": "Extension.value[x]",

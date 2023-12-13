@@ -19,7 +19,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-estimate",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-estimate",
   "name": "NetEffectEstimate",
   "status": "draft",
   "description": "Profile of Evidence for Evidence Based Medicine IG. The NetEffectEstimate Profile is used for evidence in which the observed data is net effect contributions (effect estimates expressed as risk differences, multiplied by relative importance ratings of outcomes).",
@@ -44,7 +44,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Evidence",
-  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-r6",
+  "baseDefinition": "http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-r6",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -101,7 +101,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contributions"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contributions"
             ]
           }
         ]
@@ -156,7 +156,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment"
             ]
           }
         ]

@@ -15,7 +15,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report-subject",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report-subject",
   "name": "EvidenceReportSubject",
   "status": "draft",
   "description": "Profile of Group for Evidence Based Medicine IG. The EvidenceReportSubject Profile is used to define the subject of an EvidenceReport.",
@@ -40,7 +40,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Group",
-  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition",
+  "baseDefinition": "http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -491,7 +491,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-list"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-list"
             ]
           }
         ]

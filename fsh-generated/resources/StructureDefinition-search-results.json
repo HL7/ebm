@@ -19,7 +19,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/search-results",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/search-results",
   "name": "SearchResults",
   "status": "draft",
   "description": "Profile of Library for Evidence Based Medicine IG. The SearchResults Profile is used to represent search results, such as for a systematic review.",
@@ -85,7 +85,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/search-strategy"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/search-strategy"
             ]
           }
         ]

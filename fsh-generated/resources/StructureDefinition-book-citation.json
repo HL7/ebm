@@ -19,7 +19,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/book-citation",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/book-citation",
   "name": "BookCitation",
   "status": "draft",
   "description": "Profile of Citation for Evidence Based Medicine IG. The BookCitation Profile is used for citations of a book.",

@@ -15,7 +15,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/search-strategy",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/search-strategy",
   "name": "SearchStrategy",
   "status": "draft",
   "description": "Profile of Group for Evidence Based Medicine IG. The SearchStrategy Profile is used to express the criteria defining a search strategy, such as for a systematic review.",
@@ -40,7 +40,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Group",
-  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition",
+  "baseDefinition": "http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition",
   "derivation": "constraint",
   "differential": {
     "element": [

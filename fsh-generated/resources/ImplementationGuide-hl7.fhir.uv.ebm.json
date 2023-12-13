@@ -1,7 +1,7 @@
 {
   "resourceType": "ImplementationGuide",
   "id": "hl7.fhir.uv.ebm",
-  "url": "https://hl7.org/fhir/uv/ebm/ImplementationGuide/hl7.fhir.uv.ebm",
+  "url": "http://hl7.org/fhir/uv/ebm/ImplementationGuide/hl7.fhir.uv.ebm",
   "version": "0.1.0",
   "name": "EBMIG",
   "status": "draft",
@@ -266,7 +266,7 @@
         "name": "33395",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group"
         ]
       },
       {
@@ -317,7 +317,7 @@
         "name": "ADAS-Cog(11) EndpointAnalysisPlan from PHUSE Lilly Redacted Protocol - EBMonFHIR IG Version",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/endpoint-analysis-plan"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/endpoint-analysis-plan"
         ]
       },
       {
@@ -376,7 +376,7 @@
         "name": "Bariatric_Surgery_Eligibility_Group_ADA_Recommendation_8_16",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-eligibility-criteria"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-eligibility-criteria"
         ]
       },
       {
@@ -387,7 +387,7 @@
         "name": "Bariatric_Surgery_Eligibility_Group_ADA_Recommendation_8_17",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-eligibility-criteria"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-eligibility-criteria"
         ]
       },
       {
@@ -398,7 +398,7 @@
         "name": "Bariatric_Surgery_RYGB_VSG_LAGB_BPD",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-definition"
         ]
       },
       {
@@ -417,7 +417,7 @@
         "name": "BaselineMeasureEvidence: Age in 2018 Norwegian Cohort Medical Group",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/baseline-measure-evidence"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/baseline-measure-evidence"
         ]
       },
       {
@@ -428,7 +428,7 @@
         "name": "BaselineMeasureEvidence: Age in 2018 Norwegian Cohort Surgical Group",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/baseline-measure-evidence"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/baseline-measure-evidence"
         ]
       },
       {
@@ -439,7 +439,7 @@
         "name": "BaselineMeasureEvidence: BMI in 2018 Norwegian Cohort Medical Group",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/baseline-measure-evidence"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/baseline-measure-evidence"
         ]
       },
       {
@@ -450,7 +450,7 @@
         "name": "BaselineMeasureEvidence: BMI in 2018 Norwegian Cohort Surgical Group",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/baseline-measure-evidence"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/baseline-measure-evidence"
         ]
       },
       {
@@ -469,7 +469,7 @@
         "name": "BookCitation: Crossing the Quality Chasm: A New Health System for the 21st Century",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/book-citation"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/book-citation"
         ]
       },
       {
@@ -488,7 +488,7 @@
         "name": "BookPartCitation: Chapter 3 of Crossing the Quality Chasm: A New Health System for the 21st Century",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/book-part-citation"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/book-part-citation"
         ]
       },
       {
@@ -499,7 +499,7 @@
         "name": "BookPartCitation: Chapter 3 of Crossing the Quality Chasm: A New Health System for the 21st Century - without baseCitation",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/book-part-citation"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/book-part-citation"
         ]
       },
       {
@@ -509,7 +509,7 @@
         "name": "Certainty of Evidence Rating of 14-day mortality remdesivir vs placebo meta-analysis (ACTT-1, Wang et al, WHO SOLIDARITY)",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/certainty-of-evidence"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/certainty-of-evidence"
         ]
       },
       {
@@ -624,7 +624,7 @@
         "name": "CIBIC+ EndpointAnalysisPlan from PHUSE Lilly Redacted Protocol - EBMonFHIR IG Version",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/endpoint-analysis-plan"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/endpoint-analysis-plan"
         ]
       },
       {
@@ -658,7 +658,7 @@
         "name": "Classification: Study Design for Association of Bariatric Surgery with Complications and Comorbidities JAMA 2018 Norwegian Cohort",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/classification"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/classification"
         ]
       },
       {
@@ -677,7 +677,7 @@
         "name": "CohortDefinition_At_least_2_risk_factors_for_stroke",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
         ]
       },
       {
@@ -688,7 +688,7 @@
         "name": "CohortDefinition_BMI_27_5_32_4_in_Asian_Americans_who_do_not_achieve_durable_weight_loss_and_improvement_in_comorbidities_without_surgery",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
         ]
       },
       {
@@ -699,7 +699,7 @@
         "name": "CohortDefinition_BMI_30_34_9_in_persons_who_do_not_achieve_durable_weight_loss_and_improvement_in_comorbidities_without_surgery",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
         ]
       },
       {
@@ -710,7 +710,7 @@
         "name": "CohortDefinition_BMI_32_5_37_4_in_Asian_Americans_who_do_not_achieve_durable_weight_loss_and_improvement_in_comorbidities_without_surgery",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
         ]
       },
       {
@@ -721,7 +721,7 @@
         "name": "CohortDefinition_BMI_35_39_9_in_persons_who_do_not_achieve_durable_weight_loss_and_improvement_in_comorbidities_without_surgery",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
         ]
       },
       {
@@ -732,7 +732,7 @@
         "name": "CohortDefinition_BMI_35_and_at_least_1_obesity_related_comorbidity",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
         ]
       },
       {
@@ -743,7 +743,7 @@
         "name": "CohortDefinition_BMI_37_5_kg_m2_in_Asian_Americans",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
         ]
       },
       {
@@ -754,7 +754,7 @@
         "name": "CohortDefinition_BMI_criteria_for_ADA_surgery_recommendation",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
         ]
       },
       {
@@ -765,7 +765,7 @@
         "name": "CohortDefinition_Cancer_of_any_kind_except_basal_cell_skin_cancer_or_cancer_in_situ_unless_documented_to_be_disease_free_for_five_years",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
         ]
       },
       {
@@ -776,7 +776,7 @@
         "name": "CohortDefinition_Cardiovascular_event",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
         ]
       },
       {
@@ -787,7 +787,7 @@
         "name": "CohortDefinition_Heart_failure_based_on_Phenotypes",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
         ]
       },
       {
@@ -798,7 +798,7 @@
         "name": "CohortDefinition_Lower_BMI_criteria_for_ADA_surgery_consideration",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
         ]
       },
       {
@@ -809,7 +809,7 @@
         "name": "CohortDefinition_Nonfatal_myocardial_infarction",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
         ]
       },
       {
@@ -820,7 +820,7 @@
         "name": "CohortDefinition_Nonfatal_stroke",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
         ]
       },
       {
@@ -831,7 +831,7 @@
         "name": "CohortDefinition_Oxygen_saturation_96_on_Boots_Finger_Pulse_Oximeter",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
         ]
       },
       {
@@ -842,7 +842,7 @@
         "name": "CohortDefinition_Oxygen_saturation_96_on_Boots_Finger_Pulse_Oximeter_with_Ranges",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
         ]
       },
       {
@@ -853,7 +853,7 @@
         "name": "CohortDefinition_Proxy_criteria_for_surgical_candidates",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
         ]
       },
       {
@@ -864,7 +864,7 @@
         "name": "CohortDefinition_Severe_obesity",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
         ]
       },
       {
@@ -898,7 +898,7 @@
         "name": "Comment on Guideline: ADA 2021 Standards of Medical Care 8. Obesity Management for the Treatment of Type 2 Diabetes by Joanne Dehnbostel 2023-11-28T15:19:01.266Z",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comment"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/comment"
         ]
       },
       {
@@ -917,7 +917,7 @@
         "name": "ComparativeBaselineMeasureEvidence: Age in 2018 Norwegian Cohort Surgical Group vs. Medical Group",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-baseline-measure-evidence"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-baseline-measure-evidence"
         ]
       },
       {
@@ -928,7 +928,7 @@
         "name": "ComparativeBaselineMeasureEvidence: BMI in 2018 Norwegian Cohort Surgical Group vs. Medical Group",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-baseline-measure-evidence"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-baseline-measure-evidence"
         ]
       },
       {
@@ -947,7 +947,7 @@
         "name": "ComparativeEvidence: All-cause mortality effect of bariatric surgery in 2022 meta-analysis",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
         ]
       },
       {
@@ -958,7 +958,7 @@
         "name": "ComparativeEvidence: Bariatric Surgery effect for ADA triple outcome at 5 years (Diabetes Surgery Study)",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
         ]
       },
       {
@@ -969,7 +969,7 @@
         "name": "ComparativeEvidence: Bypass surgery effects on Additional GI surgical procedure in JAMA 2018 Norwegian cohort study",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
         ]
       },
       {
@@ -980,7 +980,7 @@
         "name": "ComparativeEvidence: Bypass surgery effects on Myocardial infarction or stroke in Swedish Obese Subjects (SOS) study",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
         ]
       },
       {
@@ -991,7 +991,7 @@
         "name": "ComparativeEvidence: Bypass surgery effects on New onset depression in JAMA 2018 Norwegian cohort study",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
         ]
       },
       {
@@ -1002,7 +1002,7 @@
         "name": "ComparativeEvidence: Bypass surgery effects on Remission of diabetes in JAMA 2018 Norwegian cohort study",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
         ]
       },
       {
@@ -1013,7 +1013,7 @@
         "name": "ComparativeEvidence: Bypass surgery effects on Treatment with opioids in JAMA 2018 Norwegian cohort study",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
         ]
       },
       {
@@ -1024,7 +1024,7 @@
         "name": "ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle groups in Courcoulas 2014",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
         ]
       },
       {
@@ -1035,7 +1035,7 @@
         "name": "ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle groups in Courcoulas 2015",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
         ]
       },
       {
@@ -1046,7 +1046,7 @@
         "name": "ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle groups in Cummings 2016",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
         ]
       },
       {
@@ -1057,7 +1057,7 @@
         "name": "ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle groups in Ding 2015",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
         ]
       },
       {
@@ -1068,7 +1068,7 @@
         "name": "ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle groups in Dixon 2008",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
         ]
       },
       {
@@ -1079,7 +1079,7 @@
         "name": "ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle groups in Halperin 2014",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
         ]
       },
       {
@@ -1090,7 +1090,7 @@
         "name": "ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle groups in Ikramuddin 2013",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
         ]
       },
       {
@@ -1101,7 +1101,7 @@
         "name": "ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle groups in Ikramuddin 2015",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
         ]
       },
       {
@@ -1112,7 +1112,7 @@
         "name": "ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle groups in Liang 2013",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
         ]
       },
       {
@@ -1123,7 +1123,7 @@
         "name": "ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle groups in Mingrone 2012 (DIBASY) trial",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
         ]
       },
       {
@@ -1134,7 +1134,7 @@
         "name": "ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle groups in Mingrone 2015 (DIBASY) trial",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
         ]
       },
       {
@@ -1145,7 +1145,7 @@
         "name": "ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle groups in Parikh 2014",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
         ]
       },
       {
@@ -1156,7 +1156,7 @@
         "name": "ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle groups in Schauer 2012 (STAMPEDE) trial",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
         ]
       },
       {
@@ -1167,7 +1167,7 @@
         "name": "ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle groups in Schauer 2014 (STAMPEDE) trial",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
         ]
       },
       {
@@ -1178,7 +1178,7 @@
         "name": "ComparativeEvidence: Mean difference in HbA1c between Surgery and Medical/Lifestyle groups in Wentworth 2014",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
         ]
       },
       {
@@ -1189,7 +1189,7 @@
         "name": "ComparativeEvidence: Mean difference in HbA1c effect of bariatric surgery in 2016 meta-analysis",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence"
         ]
       },
       {
@@ -1207,7 +1207,7 @@
         "name": "ComparativeEvidenceReport: Association of Bariatric Surgery vs Medical Obesity Treatment With Long-term Medical Complications and Obesity-Related Comorbidities (2018 Norwegian Cohort)",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence-report"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence-report"
         ]
       },
       {
@@ -1226,7 +1226,7 @@
         "name": "ComparativeEvidenceReportSubject_Association_of_Bariatric_Surgery_vs_Medical_Obesity_Treatment_With_Long_term_Medical_Complications_and_Obesity_Related_Comorbidities_2018_Norwegian_Cohort",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence-report-subject"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence-report-subject"
         ]
       },
       {
@@ -1245,7 +1245,7 @@
         "name": "ComparativeParticipantFlow: Dropout due to stopping intervention Lofexidine vs. Placebo in opioid detoxification trial",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-participant-flow"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-participant-flow"
         ]
       },
       {
@@ -1264,7 +1264,7 @@
         "name": "ComparatorDefinition_NOT_Bariatric_Surgery_RYGB_VSG_LAGB_BPD",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-definition"
         ]
       },
       {
@@ -1275,7 +1275,7 @@
         "name": "ComparatorDefinition_Usual_care_pharmacologic_thromboprophylaxis",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-definition"
         ]
       },
       {
@@ -1294,7 +1294,7 @@
         "name": "ComparatorGroup_JAMA_2018_Norwegian_cohort_study_Control_cohort",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group"
         ]
       },
       {
@@ -1305,7 +1305,7 @@
         "name": "ComparatorGroup_Obese_patients_18_years_old_without_bariatric_surgery",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group"
         ]
       },
       {
@@ -1324,7 +1324,7 @@
         "name": "ComparatorOnlyEvidence: Additional GI surgical procedure without bariatric surgery (Control Group) in JAMA 2018 Norwegian cohort study",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence"
         ]
       },
       {
@@ -1335,7 +1335,7 @@
         "name": "ComparatorOnlyEvidence: All-cause mortality without bariatric surgery in 2022 meta-analysis",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence"
         ]
       },
       {
@@ -1346,7 +1346,7 @@
         "name": "ComparatorOnlyEvidence: Myocardial infarction or stroke without bariatric surgery (Control Group) in Swedish Obese Subjects (SOS) study",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence"
         ]
       },
       {
@@ -1357,7 +1357,7 @@
         "name": "ComparatorOnlyEvidence: New onset depression without bariatric surgery (Control Group) in JAMA 2018 Norwegian cohort study",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence"
         ]
       },
       {
@@ -1368,7 +1368,7 @@
         "name": "ComparatorOnlyEvidence: Remission of diabetes without bariatric surgery (Control Group) in JAMA 2018 Norwegian cohort study",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence"
         ]
       },
       {
@@ -1379,7 +1379,7 @@
         "name": "ComparatorOnlyEvidence: Treatment with opioids without bariatric surgery (Control Group) in JAMA 2018 Norwegian cohort study",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-only-evidence"
         ]
       },
       {
@@ -1397,7 +1397,7 @@
         "name": "Comparison: Original and Adapted Recommendation: ADA Obesity Management Recommendation 8.16",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparison"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparison"
         ]
       },
       {
@@ -1407,7 +1407,7 @@
         "name": "Composite Rating of FOI 153881 for Project FOI 112280",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/composite-rating"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/composite-rating"
         ]
       },
       {
@@ -1458,7 +1458,7 @@
         "name": "DatabaseCitation: Citation for FEvIR Platform",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/database-citation"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/database-citation"
         ]
       },
       {
@@ -1477,7 +1477,7 @@
         "name": "DatabaseEntryCitation: ComparativeEvidenceReport: Association of Bariatric Surgery vs Medical Obesity Treatment With Long-term Medical Complications and Obesity-Related Comorbidities (2018 Norwegian Cohort)",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/database-entry-citation"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/database-entry-citation"
         ]
       },
       {
@@ -1496,7 +1496,7 @@
         "name": "DataDictionary: Measuring the Rate of Scientific Knowledge Transfer",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/data-dictionary"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/data-dictionary"
         ]
       },
       {
@@ -1507,7 +1507,7 @@
         "name": "DataDictionary: phs003190",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/data-dictionary"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/data-dictionary"
         ]
       },
       {
@@ -1526,7 +1526,7 @@
         "name": "DatasetCitation: Extrachromosomal DNA Amplification Contributes to Small Cell Lung Cancer Heterogeneity and is Associated with Worse Outcomes",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/dataset-citation"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/dataset-citation"
         ]
       },
       {
@@ -1544,7 +1544,7 @@
         "name": "DateOfFirstPublication Classification of FOI 153881 by Rachel Couban",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/classification"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/classification"
         ]
       },
       {
@@ -1571,7 +1571,7 @@
         "name": "EGFR_45_59",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition"
         ]
       },
       {
@@ -1621,7 +1621,7 @@
         "name": "EvidenceList: Effect estimates for meta-analysis (Biegel 2020, Wang 2020, SOLIDARITY)",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-list"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-list"
         ]
       },
       {
@@ -1631,7 +1631,7 @@
         "name": "EvidenceList: Study results included in Mean difference in HbA1c effect of bariatric surgery in 2016 meta-analysis",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-list"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-list"
         ]
       },
       {
@@ -1649,7 +1649,7 @@
         "name": "EvidenceMap: Bariatric Surgery Summary of Findings Example for GIN 2022",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-map"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-map"
         ]
       },
       {
@@ -1692,7 +1692,7 @@
         "name": "EvidenceReportSubject_Clinical_Outcomes_for_Effects_of_Bariatric_Surgery",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report-subject"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report-subject"
         ]
       },
       {
@@ -1735,7 +1735,7 @@
         "name": "Example EndpointAnalysisPlan from PHUSE Lilly Redacted Protocol - EBMonFHIR IG Version",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/endpoint-analysis-plan"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/endpoint-analysis-plan"
         ]
       },
       {
@@ -1754,7 +1754,7 @@
         "name": "ExposureDefinition_Therapeutic_dose_anticoagulation_with_heparin",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-definition"
         ]
       },
       {
@@ -1773,7 +1773,7 @@
         "name": "ExposureGroup_JAMA_2018_Norwegian_cohort_study_Surgery_cohort",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group"
         ]
       },
       {
@@ -1784,7 +1784,7 @@
         "name": "ExposureVariable: Age (as continuous variable)",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
         ]
       },
       {
@@ -1795,7 +1795,7 @@
         "name": "ExposureVariable: Body Mass Index (as continuous variable)",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
         ]
       },
       {
@@ -1806,7 +1806,7 @@
         "name": "ExposureVariable: pht013093.v1.p1 Age at diagnosis",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
         ]
       },
       {
@@ -1817,7 +1817,7 @@
         "name": "ExposureVariable: pht013093.v1.p1 RACE",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
         ]
       },
       {
@@ -1828,7 +1828,7 @@
         "name": "ExposureVariable: pht013093.v1.p1 SEX",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
         ]
       },
       {
@@ -1839,7 +1839,7 @@
         "name": "ExposureVariable: pht013093.v1.p1 SUBJECT_ID",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
         ]
       },
       {
@@ -1850,7 +1850,7 @@
         "name": "ExposureVariable: pht013094.v1.p1 ANALYTE_TYPE",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
         ]
       },
       {
@@ -1861,7 +1861,7 @@
         "name": "ExposureVariable: pht013094.v1.p1 BODY_SITE",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
         ]
       },
       {
@@ -1872,7 +1872,7 @@
         "name": "ExposureVariable: pht013094.v1.p1 IS_TUMOR",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
         ]
       },
       {
@@ -1883,7 +1883,7 @@
         "name": "ExposureVariable: pht013094.v1.p1 SAMPLE_ID",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
         ]
       },
       {
@@ -1894,7 +1894,7 @@
         "name": "ExposureVariable: pht013094.v1.p1 SAMPLE_USE",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
         ]
       },
       {
@@ -1905,7 +1905,7 @@
         "name": "ExposureVariable: pht013094.v1.p1 Source_Type",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
         ]
       },
       {
@@ -1924,7 +1924,7 @@
         "name": "GroupAssignment: Bariatric Surgery vs. no bariatric surgery",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment"
         ]
       },
       {
@@ -1935,7 +1935,7 @@
         "name": "GroupAssignment: high dose xanomeline vs. low dose xanomeline vs. placebo",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment"
         ]
       },
       {
@@ -1946,7 +1946,7 @@
         "name": "GroupAssignment: Roux-en-Y gastric bypass or Biliopancreatic Diversion vs. medical treatment",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment"
         ]
       },
       {
@@ -1957,7 +1957,7 @@
         "name": "GroupAssignment: Roux-en-Y gastric bypass surgery vs. Lifestyle-intensive medical management intervention alone",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment"
         ]
       },
       {
@@ -1968,7 +1968,7 @@
         "name": "GroupAssignment: Roux-en-Y gastric bypass vs. medical treatment",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment"
         ]
       },
       {
@@ -1979,7 +1979,7 @@
         "name": "GroupAssignment: Therapeutic-dose anticoagulation with heparin vs. Usual-care pharmacologic thromboprophylaxis",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/group-assignment"
         ]
       },
       {
@@ -2005,7 +2005,7 @@
         "name": "Guideline: ADA 2021 Standards of Medical Care 8. Obesity Management for the Treatment of Type 2 Diabetes",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/guideline"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/guideline"
         ]
       },
       {
@@ -2040,7 +2040,7 @@
         "name": "InterventionOnlyEvidence: Additional GI surgical procedure with bariatric surgery (Intervention Group) in JAMA 2018 Norwegian cohort study",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/intervention-only-evidence"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/intervention-only-evidence"
         ]
       },
       {
@@ -2051,7 +2051,7 @@
         "name": "InterventionOnlyEvidence: New onset depression with bariatric surgery (Intervention Group) in JAMA 2018 Norwegian cohort study",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/intervention-only-evidence"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/intervention-only-evidence"
         ]
       },
       {
@@ -2062,7 +2062,7 @@
         "name": "InterventionOnlyEvidence: Remission of diabetes with bariatric surgery (Intervention Group) in JAMA 2018 Norwegian cohort study",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/intervention-only-evidence"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/intervention-only-evidence"
         ]
       },
       {
@@ -2073,7 +2073,7 @@
         "name": "InterventionOnlyEvidence: Treatment with opioids with bariatric surgery (Intervention Group) in JAMA 2018 Norwegian cohort study",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/intervention-only-evidence"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/intervention-only-evidence"
         ]
       },
       {
@@ -2100,7 +2100,7 @@
         "name": "IV remdesivir 200 mg then 100 mg/day for 9 days",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-action"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-action"
         ]
       },
       {
@@ -2110,7 +2110,7 @@
         "name": "Joanne Dehnbostel's Adaptation Report of Recommendation: ADA Obesity Management Recommendation 8.16",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/adaptation"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/adaptation"
         ]
       },
       {
@@ -2129,7 +2129,7 @@
         "name": "JournalArticleCitation: ADA 2021 Standards of Medical Care 8. Obesity Management for the Treatment of Type 2 Diabetes",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/journal-article-citation"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/journal-article-citation"
         ]
       },
       {
@@ -2140,7 +2140,7 @@
         "name": "JournalArticleCitation: Association of Bariatric Surgery with Complications and Comorbidities JAMA 2018 Norwegian Cohort",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/journal-article-citation"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/journal-article-citation"
         ]
       },
       {
@@ -2150,7 +2150,7 @@
         "name": "Justification for Recommendation: ADA Obesity Management Recommendation 8.16",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-justification"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-justification"
         ]
       },
       {
@@ -2160,7 +2160,7 @@
         "name": "Justification for Recommendation: ADA Obesity Management Recommendation 8.17",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-justification"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-justification"
         ]
       },
       {
@@ -2170,7 +2170,7 @@
         "name": "M11 Report Template Instructions",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/m11-report"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/m11-report"
         ]
       },
       {
@@ -2197,7 +2197,7 @@
         "name": "MetaanalysisEligibilityCriteria_Mean_difference_in_HbA1c_effect_of_bariatric_surgery_in_type_2_diabetes_and_elevated_BMI_in_2016_meta_analysis",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-eligibility-criteria"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-eligibility-criteria"
         ]
       },
       {
@@ -2216,7 +2216,7 @@
         "name": "MetaanalysisOutcomeDefinition_Mean_difference_in_HbA1c_between_Surgery_and_Medical_Lifestyle_groups_at_end_of_follow_up",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-outcome-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-outcome-definition"
         ]
       },
       {
@@ -2235,7 +2235,7 @@
         "name": "MetaanalysisStudyGroup_Effect_Estimates_for_Mortality_at_14_days_from_COVID19_Remdesivir_vs_Placebo_RCTs",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group"
         ]
       },
       {
@@ -2262,7 +2262,7 @@
         "name": "NetEffectContribution: Additional GI surgical procedure for Example for GIN 2022",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution"
         ]
       },
       {
@@ -2273,7 +2273,7 @@
         "name": "NetEffectContribution: All-cause mortality for Example for GIN 2022",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution"
         ]
       },
       {
@@ -2284,7 +2284,7 @@
         "name": "NetEffectContribution: New onset depression for Example for GIN 2022",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution"
         ]
       },
       {
@@ -2295,7 +2295,7 @@
         "name": "NetEffectContribution: Nonfatal myocardial infarction or stroke for Example for GIN 2022",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution"
         ]
       },
       {
@@ -2306,7 +2306,7 @@
         "name": "NetEffectContribution: Remission of diabetes for Example for GIN 2022",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution"
         ]
       },
       {
@@ -2317,7 +2317,7 @@
         "name": "NetEffectContribution: Treatment with opioids for Example for GIN 2022",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution"
         ]
       },
       {
@@ -2335,7 +2335,7 @@
         "name": "NetEffectContributionList: Bariatric Surgery Example for GIN 2022",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution-list"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contribution-list"
         ]
       },
       {
@@ -2354,7 +2354,7 @@
         "name": "NetEffectContributions_Bariatric_Surgery_Example_for_GIN_2022",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contributions"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-contributions"
         ]
       },
       {
@@ -2373,7 +2373,7 @@
         "name": "NetEffectEstimate: Bariatric Surgery Example for GIN 2022",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-estimate"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-estimate"
         ]
       },
       {
@@ -2399,7 +2399,7 @@
         "name": "Outcome Importance Rating (default value 100) of All-cause mortality",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/rating"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/rating"
         ]
       },
       {
@@ -2409,7 +2409,7 @@
         "name": "Outcome Importance Rating (default value 30) of Nonfatal myocardial infarction or stroke",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-importance"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-importance"
         ]
       },
       {
@@ -2419,7 +2419,7 @@
         "name": "Outcome Importance Rating (default value 5) of New onset depression",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/rating"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/rating"
         ]
       },
       {
@@ -2429,7 +2429,7 @@
         "name": "Outcome Importance Rating (default value 5) of Remission of diabetes",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-importance"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-importance"
         ]
       },
       {
@@ -2439,7 +2439,7 @@
         "name": "Outcome Importance Rating (default value 5) of Treatment with opioids",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-importance"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-importance"
         ]
       },
       {
@@ -2449,7 +2449,7 @@
         "name": "Outcome Importance Rating (default value 8) of Additional GI surgical procedure",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-importance"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-importance"
         ]
       },
       {
@@ -2468,7 +2468,7 @@
         "name": "OutcomeDefinition_American_Diabetes_Association_composite_triple_end_point_for_metabolic_control",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition"
         ]
       },
       {
@@ -2479,7 +2479,7 @@
         "name": "OutcomeDefinition_Diabetes_in_remission",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition"
         ]
       },
       {
@@ -2490,7 +2490,7 @@
         "name": "OutcomeDefinition_HbA1c_at_12_months",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition"
         ]
       },
       {
@@ -2501,7 +2501,7 @@
         "name": "OutcomeDefinition_HbA1c_at_24_months",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition"
         ]
       },
       {
@@ -2512,7 +2512,7 @@
         "name": "OutcomeDefinition_HbA1c_at_36_months",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition"
         ]
       },
       {
@@ -2523,7 +2523,7 @@
         "name": "OutcomeDefinition_HbA1c_at_60_months",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition"
         ]
       },
       {
@@ -2534,7 +2534,7 @@
         "name": "OutcomeDefinition_HbA1c_at_6_months",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition"
         ]
       },
       {
@@ -2553,7 +2553,7 @@
         "name": "OutcomeDefinition_Nonfatal_myocardial_infarction_or_stroke",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-definition"
         ]
       },
       {
@@ -2579,7 +2579,7 @@
         "name": "OutcomeList: Clinical Outcomes for Effects of Bariatric Surgery",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-list"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-list"
         ]
       },
       {
@@ -2590,7 +2590,7 @@
         "name": "OutcomeVariable: American Diabetes Association composite triple end point for metabolic control at 5 years",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
         ]
       },
       {
@@ -2601,7 +2601,7 @@
         "name": "OutcomeVariable: HbA1c at 12 months",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
         ]
       },
       {
@@ -2612,7 +2612,7 @@
         "name": "OutcomeVariable: HbA1c at 24 months",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
         ]
       },
       {
@@ -2623,7 +2623,7 @@
         "name": "OutcomeVariable: HbA1c at 36 months",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
         ]
       },
       {
@@ -2634,7 +2634,7 @@
         "name": "OutcomeVariable: HbA1c at 6 months",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
         ]
       },
       {
@@ -2645,7 +2645,7 @@
         "name": "OutcomeVariable: HbA1c at 60 months",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
         ]
       },
       {
@@ -2656,7 +2656,7 @@
         "name": "OutcomeVariable: Mean difference in HbA1c between Surgery and Medical/Lifestyle groups at end of follow-up",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
         ]
       },
       {
@@ -2667,7 +2667,7 @@
         "name": "OutcomeVariable: New onset depression",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
         ]
       },
       {
@@ -2678,7 +2678,7 @@
         "name": "OutcomeVariable: Nonfatal myocardial infarction or stroke",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
         ]
       },
       {
@@ -2689,7 +2689,7 @@
         "name": "OutcomeVariable: Remission of diabetes",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
         ]
       },
       {
@@ -2700,7 +2700,7 @@
         "name": "OutcomeVariable_Additional_GI_surgical_procedure",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
         ]
       },
       {
@@ -2711,7 +2711,7 @@
         "name": "OutcomeVariable_All_cause_mortality",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
         ]
       },
       {
@@ -2722,7 +2722,7 @@
         "name": "OutcomeVariable_Treatment_with_opioids",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition"
         ]
       },
       {
@@ -2749,7 +2749,7 @@
         "name": "ParticipantFlow: 2018 Norwegian Cohort Excluded from Analysis",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow"
         ]
       },
       {
@@ -2760,7 +2760,7 @@
         "name": "ParticipantFlow: 2018 Norwegian Cohort Included in Analysis",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow"
         ]
       },
       {
@@ -2771,7 +2771,7 @@
         "name": "ParticipantFlow: 2018 Norwegian Cohort Medical Group Included in Analysis",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow"
         ]
       },
       {
@@ -2782,7 +2782,7 @@
         "name": "ParticipantFlow: 2018 Norwegian Cohort Surgical Group Included in Analysis",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow"
         ]
       },
       {
@@ -2793,7 +2793,7 @@
         "name": "ParticipantFlowMeasure: Dropout due to stopping intervention",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow-measure"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow-measure"
         ]
       },
       {
@@ -2804,7 +2804,7 @@
         "name": "ParticipantFlowMeasure: Exclusion from analysis",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow-measure"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow-measure"
         ]
       },
       {
@@ -2815,7 +2815,7 @@
         "name": "ParticipantFlowMeasure: Inclusion in analysis",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow-measure"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/participant-flow-measure"
         ]
       },
       {
@@ -2850,7 +2850,7 @@
         "name": "PlanDefinition for Recommendation: ADA Obesity Management Recommendation 8.16",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-plan"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-plan"
         ]
       },
       {
@@ -2861,7 +2861,7 @@
         "name": "PlanDefinition for Recommendation: ADA Obesity Management Recommendation 8.17",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-plan"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-plan"
         ]
       },
       {
@@ -2880,7 +2880,7 @@
         "name": "PreprintCitation: Nigella Sativa for COVID-19 OSF Preprint",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/preprint-citation"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/preprint-citation"
         ]
       },
       {
@@ -2922,7 +2922,7 @@
         "name": "Recommendation: ADA Obesity Management Recommendation 8.16",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation"
         ]
       },
       {
@@ -2932,7 +2932,7 @@
         "name": "Recommendation: ADA Obesity Management Recommendation 8.16-adapted",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation"
         ]
       },
       {
@@ -2942,7 +2942,7 @@
         "name": "Recommendation: ADA Obesity Management Recommendation 8.17",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation"
         ]
       },
       {
@@ -2993,7 +2993,7 @@
         "name": "Remdesivir_IV_200_mg_once_then_100_mg_once_daily_for_9_days",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-definition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-definition"
         ]
       },
       {
@@ -3003,7 +3003,7 @@
         "name": "Risk of Bias Assessment of Critically appraised summary of primary outcome of multi-platform RCT of anticoagulation for non-critically ill patients with COVID-19",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/risk-of-bias"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/risk-of-bias"
         ]
       },
       {
@@ -3038,7 +3038,7 @@
         "name": "SearchResults: PubMed search for Wonder Woman",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/search-results"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/search-results"
         ]
       },
       {
@@ -3057,7 +3057,7 @@
         "name": "SearchStrategy_PubMed_and_Embase_search_for_van_Veldhuisen_2022_systematic_review",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/search-strategy"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/search-strategy"
         ]
       },
       {
@@ -3068,7 +3068,7 @@
         "name": "SearchStrategy_PubMed_search_for_Wonder_Woman",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/search-strategy"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/search-strategy"
         ]
       },
       {
@@ -3079,7 +3079,7 @@
         "name": "Severely_Obese_Adults_2018_Norwegian_Cohort",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/study-group"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group"
         ]
       },
       {
@@ -3106,7 +3106,7 @@
         "name": "SoaPlanDefinition: Follow-up assessment 3 months after study start",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/soa-plandefinition"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/soa-plandefinition"
         ]
       },
       {
@@ -3125,7 +3125,7 @@
         "name": "SoftwareCitation: Computable Publishing®: ClinicalTrials.gov-to-FEvIR Converter",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/software-citation"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/software-citation"
         ]
       },
       {
@@ -3208,7 +3208,7 @@
         "name": "StudyEligibilityCriteria_Eligibility_Criteria_for_Bariatric_Surgery_Randomized_Trial_Diabetes_Surgery_Study",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/study-eligibility-criteria"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/study-eligibility-criteria"
         ]
       },
       {
@@ -3219,7 +3219,7 @@
         "name": "StudyEligibilityCriteria_Eligibility_Criteria_for_DIBASY_Trial",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/study-eligibility-criteria"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/study-eligibility-criteria"
         ]
       },
       {
@@ -3230,7 +3230,7 @@
         "name": "StudyEligibilityCriteria_Obese_patients_18_years_old",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/study-eligibility-criteria"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/study-eligibility-criteria"
         ]
       },
       {
@@ -3249,7 +3249,7 @@
         "name": "StudyGroup_Bariatric_Surgery_Trial_Enrollment_Group",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/study-group"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group"
         ]
       },
       {
@@ -3260,7 +3260,7 @@
         "name": "StudyGroup_DIBASY_Trial_Enrollment_Group",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/study-group"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group"
         ]
       },
       {
@@ -3278,7 +3278,7 @@
         "name": "SummaryOfFindings: Bariatric Surgery Summary of Findings Example for GIN 2022",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/summary-of-findings"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/summary-of-findings"
         ]
       },
       {
@@ -3296,7 +3296,7 @@
         "name": "SummaryOfNetEffect: Bariatric Surgery Summary of Net Effect Contributions Example for GIN 2022",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/summary-of-net-effect"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/summary-of-net-effect"
         ]
       },
       {
@@ -3315,7 +3315,7 @@
         "name": "SystematicReviewEligibilityCriteria_ADT_and_Docetaxel_vs_ADT_alone_for_metastatic_hormone_naive_prostate_cancer",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/systematic-review-eligibility-criteria"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/systematic-review-eligibility-criteria"
         ]
       },
       {
@@ -3334,7 +3334,7 @@
         "name": "SystematicReviewExcludedStudies: ADT and Docetaxel vs. ADT alone for metastatic hormone-naive prostate cancer - Brian S. Alper",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/systematic-review-excluded-studies"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/systematic-review-excluded-studies"
         ]
       },
       {
@@ -3353,7 +3353,7 @@
         "name": "SystematicReviewIncludedStudies: ADT and Docetaxel vs. ADT alone for metastatic hormone-naive prostate cancer",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/systematic-review-included-studies"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/systematic-review-included-studies"
         ]
       },
       {
@@ -3372,7 +3372,7 @@
         "name": "Type_2_diabetes_and_elevated_BMI_in_2016_meta_analysis",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/study-eligibility-criteria"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/study-eligibility-criteria"
         ]
       },
       {
@@ -3423,7 +3423,7 @@
         "name": "WebPageCitation: A HEvKA Update Summary",
         "isExample": true,
         "profile": [
-          "https://hl7.org/fhir/uv/ebm/StructureDefinition/web-page-citation"
+          "http://hl7.org/fhir/uv/ebm/StructureDefinition/web-page-citation"
         ]
       }
     ],
@@ -3527,7 +3527,7 @@
           "code": "path-history",
           "system": "http://hl7.org/fhir/tools/CodeSystem/ig-parameters"
         },
-        "value": "https://hl7.org/fhir/uv/ebm/history.html"
+        "value": "http://hl7.org/fhir/uv/ebm/history.html"
       }
     ]
   }

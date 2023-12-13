@@ -15,7 +15,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/group-r6",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/group-r6",
   "name": "GroupR6",
   "status": "draft",
   "description": "Profile of Group for Evidence Based Medicine IG. The GroupR6 Profile is used to adjust the R5 Group base to match the structures in R6.",
@@ -293,7 +293,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/combination-method"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/combination-method"
             ]
           }
         ]
@@ -308,7 +308,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/combination-threshold"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/combination-threshold"
             ]
           }
         ]
@@ -366,7 +366,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-value-uri"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-value-uri"
             ]
           }
         ]
@@ -381,7 +381,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-value-expression"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-value-expression"
             ]
           }
         ]
@@ -396,7 +396,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-description"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-description"
             ]
           }
         ]
@@ -411,7 +411,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-method"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-method"
             ]
           }
         ]
@@ -426,7 +426,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-determined-by-reference"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-determined-by-reference"
             ]
           }
         ]
@@ -441,7 +441,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-determined-by-expression"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-determined-by-expression"
             ]
           }
         ]
@@ -456,7 +456,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-offset"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-offset"
             ]
           }
         ]
@@ -471,7 +471,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-instances-quantity"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-instances-quantity"
             ]
           }
         ]
@@ -486,7 +486,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-instances-range"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-instances-range"
             ]
           }
         ]
@@ -501,7 +501,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-duration-duration"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-duration-duration"
             ]
           }
         ]
@@ -516,7 +516,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-duration-range"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-duration-range"
             ]
           }
         ]
@@ -531,7 +531,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-timing"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-timing"
             ]
           }
         ]

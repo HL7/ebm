@@ -19,7 +19,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/database-entry-citation",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/database-entry-citation",
   "name": "DatabaseEntryCitation",
   "status": "draft",
   "description": "Profile of Citation for Evidence Based Medicine IG. The DatabaseEntryCitation Profile is used for citations of a record within a database.",

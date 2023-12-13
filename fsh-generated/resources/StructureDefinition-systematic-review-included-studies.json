@@ -19,7 +19,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/systematic-review-included-studies",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/systematic-review-included-studies",
   "name": "SystematicReviewIncludedStudies",
   "status": "draft",
   "description": "Profile of Library for Evidence Based Medicine IG. The SystematicReviewIncludedStudies Profile is used to represent the subset of search results of a systematic review which meet the inclusion criteria.",
@@ -85,7 +85,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/systematic-review-eligibility-criteria"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/systematic-review-eligibility-criteria"
             ]
           }
         ]

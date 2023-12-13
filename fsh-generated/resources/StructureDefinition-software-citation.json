@@ -19,7 +19,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/software-citation",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/software-citation",
   "name": "SoftwareCitation",
   "status": "draft",
   "description": "Profile of Citation for Evidence Based Medicine IG. The SoftwareCitation Profile is used for citations of executable code.",

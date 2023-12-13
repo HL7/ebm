@@ -15,7 +15,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-definition",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-definition",
   "name": "ComparatorDefinition",
   "status": "draft",
   "description": "Profile of Group for Evidence Based Medicine IG. The ComparatorDefinition Profile is used to express the criteria defining a reference group for comparison.",
@@ -40,7 +40,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Group",
-  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition",
+  "baseDefinition": "http://hl7.org/fhir/uv/ebm/StructureDefinition/cohort-definition",
   "derivation": "constraint",
   "differential": {
     "element": [

@@ -15,7 +15,7 @@
       "valueCode": "draft"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group",
   "name": "MetaanalysisStudyGroup",
   "status": "draft",
   "description": "Profile of Group for Evidence Based Medicine IG. The MetaanalysisStudyGroup Profile is used to represent an enumerated group of participants in a meta-analysis where the participants are Evidence Resources.",
@@ -40,7 +40,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Group",
-  "baseDefinition": "https://hl7.org/fhir/uv/ebm/StructureDefinition/group-r6",
+  "baseDefinition": "http://hl7.org/fhir/uv/ebm/StructureDefinition/group-r6",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -84,7 +84,7 @@
           {
             "code": "Reference",
             "targetProfile": [
-              "https://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-list"
+              "http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-list"
             ]
           }
         ]

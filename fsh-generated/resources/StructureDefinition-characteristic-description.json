@@ -7,7 +7,7 @@
       "valueCode": "can-bind"
     }
   ],
-  "url": "https://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-description",
+  "url": "http://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-description",
   "name": "CharacteristicDescription",
   "status": "draft",
   "description": "Natural language description of the characteristic.",
@@ -46,7 +46,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-description"
+        "fixedUri": "http://hl7.org/fhir/uv/ebm/StructureDefinition/characteristic-description"
       },
       {
         "id": "Extension.value[x]",
