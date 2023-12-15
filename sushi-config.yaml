@@ -68,6 +68,7 @@ pages:
   extensions.md:
   terminologies.md:
   examples.md:
+  downloads.md:
 
 #   implementation.xml:
 #   examples.xml:
@@ -110,6 +111,7 @@ menu:
   Terminologies: terminologies.html
   Examples: examples.html
   Artifacts: artifacts.html
+  Downloads: downloads.html
 
 # ╭───────────────────────────Less Common Implementation Guide Properties──────────────────────────╮
 # │  Uncomment the properties below to configure additional properties on the ImplementationGuide  │
