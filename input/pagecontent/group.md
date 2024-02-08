@@ -2,13 +2,29 @@
 
 The <b>Group Resource</b> represents a defined collection of entities. The group may be enumerated, meaning that there is a known quantity of group members with or without a listing of the group members. The group may be definitional, meaning there is a structured representation of the characteristics (criteria) that define membership eligiblity, or who or what matches the criteria to be considered a member of the group.
 
+#### Group.type
+
 The Group.type element is used to classify the type of group member in terms of FHIR types with options limited to person, animal, practitioner, device, careteam, healthcareservice, location, organization, relatedperson, and specimen. Group.type is a required element in the use of <b>Group Resource</b> for health data exchange.
+
+In other words, type is letting you know the type of group (Person, Specimen,...).  The choices in Group.type are limited to concepts represented in FHIR. If type is person, then the members would have to be resources of type person. If type is device, you will expect a different set of resources. 
+
+In FHIR version R5, the Group.type element is required. In FHIR version R6, the Group.type element is required if the Group.membership element has a value of definitional or enumerated. 
+
+#### Group.membership
 
 The Group.membership element is used to classify the <b>Group Resource</b> as either definitional or enumerated, and is a required element.
 
+- 'enumerated': Use this code if you desire to list the group members and/or specify the number of entities in the group.
+
+- 'definitional': Use this code if the Group.characteristic value(s) specified are both necessary and sufficient to determine qualifications for membership (for defining what makes something a member of the group). If a group is both enumerated and definitional, then use the enumerated code.
+
 In FHIR version R6, a third code (conceptual) is allowed for the Group.membership element value, and Group.type is not required when Group.membership = 'conceptual'. This allows greater flexibility as needed for science data exchange.
 
+- 'conceptual': Use this code if the Group is neither enumerated (listing or counting actual members) nor definitional (providing complete definition for membership qualifications). A different use of conceptual is when the 'conceptual' Group is a 'definitional' Group in which the Group.type is not bound to FHIR types.
+
 In the EBMonFHIR Implementation Guide, which is built on FHIR version R5 so must respect the Group.type and Group.membership requirements, there is no constraints or extensions to change the type or membership element values to concepts not fitting the base requirements. When a Group would be considered 'conceptual' the examples will use 'definitional' and when a Group would not use the type element the example will use 'animal' (as the least likely value to be confused for a real value in the examples used in the EBMonFHIR Implementation Guide).
+
+#### Group.characteristic
 
 The base <b>Group Resource</b> in FHIR version R5 uses a repeatable characteristic element to define inclusion and exclusion criteria. This characteristic element includes 4 elements:
 
