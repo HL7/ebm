@@ -17,7 +17,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Compara
 * section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code.coding"
 * section ^slicing.rules = #open
-* section contains population 1..1 MS and intervention 1..* MS and comparator 1..1 MS and studyDesign 1..1 MS and baseline 0..1 MS and flow 0..1 MS and outcomes 1..1 MS
+* section contains population 1..1 MS and intervention 1..* MS and comparator 1..1 MS and researchStudy 1..1 MS and baseline 0..1 MS and flow 0..1 MS and outcomes 1..1 MS
 * section[population].code.coding 1..1
 * section[population].code.coding = https://fevir.net/resources/CodeSystem/179423#population "Population"
 * section[population]
@@ -58,10 +58,10 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Compara
   * section[group]
     * entry 0..1
     * entry only Reference(ComparatorGroup or ExposureGroup)
-* section[studyDesign].code.coding 1..1
-* section[studyDesign].code.coding = https://fevir.net/resources/CodeSystem/179423#study-design "Study Design"
-* section[studyDesign]
-  * entry only Reference(ResearchStudy or Classification)
+* section[researchStudy].code.coding 1..1
+* section[researchStudy].code.coding = https://fevir.net/resources/CodeSystem/179423#research-study "Research Study"
+* section[researchStudy]
+  * entry only Reference(ResearchStudy or Citation)
 * section[baseline].code.coding 1..1
 * section[baseline].code.coding = https://fevir.net/resources/CodeSystem/179423#baseline-measures "Baseline Measures"
 * section[baseline]
