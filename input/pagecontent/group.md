@@ -14,15 +14,23 @@ In FHIR version R5, the Group.type element is required. In FHIR version R6, the 
 
 The Group.membership element is used to classify the <b>Group Resource</b> as either definitional or enumerated, and is a required element.
 
-- 'enumerated': Use this code if you desire to list the group members and/or specify the number of entities in the group.
+- *enumerated*: Use this code if you desire to list the group members and/or specify the number of entities in the group.
 
-- 'definitional': Use this code if the Group.characteristic value(s) specified are both necessary and sufficient to determine qualifications for membership (for defining what makes something a member of the group). If a group is both enumerated and definitional, then use the enumerated code.
+- *definitional*: Use this code if the Group.characteristic value(s) specified are both necessary and sufficient to determine qualifications for membership (for defining what makes something a member of the group). If a group is both enumerated and definitional, then use the enumerated code.
 
 In FHIR version R6, a third code (conceptual) is allowed for the Group.membership element value, and Group.type is not required when Group.membership = 'conceptual'. This allows greater flexibility as needed for science data exchange.
 
-- 'conceptual': Use this code if the Group is neither enumerated (listing or counting actual members) nor definitional (providing complete definition for membership qualifications). A different use of conceptual is when the 'conceptual' Group is a 'definitional' Group in which the Group.type is not bound to FHIR types.
+- *conceptual*: Use this code if the Group is neither enumerated (listing or counting actual members) nor definitional (providing complete definition for membership qualifications). A different use of conceptual is when the 'conceptual' Group is a 'definitional' Group in which the Group.type is not bound to FHIR types.
 
 In the EBMonFHIR Implementation Guide, which is built on FHIR version R5 so must respect the Group.type and Group.membership requirements, there is no constraints or extensions to change the type or membership element values to concepts not fitting the base requirements. When a Group would be considered 'conceptual' the examples will use 'definitional' and when a Group would not use the type element the example will use 'animal' (as the least likely value to be confused for a real value in the examples used in the EBMonFHIR Implementation Guide).
+
+#### Group.code
+
+Group.code is used to describe the kind of group members, especially when a more specific classification than the Group.type value is desired. For example, if Group.type is 'animal', then Group.code may be 'cow'. If Group.type is 'device', then Group.code could be 'syringe' or 'cytometer'.
+
+#### Group.quantity
+
+Group.quantity is a count of group members, so it must be an integer if used.
 
 #### Group.characteristic
 
@@ -41,6 +49,16 @@ The base <b>Group Resource</b> in FHIR version R5 uses a repeatable characterist
 The **[GroupR6 Profile][GroupR6]** is a base for all other Group Profiles. Extensions for metadata about the Group Resource include url, version, versionAlgorithmString, title, experimental, date, publisher, contact, useContext, purpose, copyright, copyrightLabel, author, and relatedArtifact. A modifierExtension for status allows specifying whether the Resource is active, draft, or retired. An extension for characteristicExpression allows use of an Expression datatype to represent the group definition instead of using the characteristic element.
 
 Extensions for combinationMethod (valueCode choices of all-of, any-of, at-least, at-most, except-subset) and combinationThreshold (valuePositiveInt for use with at-least or at-most) express how 2 or more characteristic instances are combined.
+
+The Group.combinationMethod extension is used when there are two or more Group.characteristic instances to define how the characteristics are combined. 
+
+- Use a code *all-of* to indicate that each of the characteristics must be met. This is functionally equivalent to  combining all characteristics with an AND operator.
+- Use a code *any-of* to indicate that at least one of the characteristics must be met. This is functionally equivalent to combining all characteristics with an OR operator.
+- Use a code *at-least* to indicate that at least n of the characteristics must be met. Use Group.combinationThreshold to specify the value of n.
+- Use a code *at-most* to indicate that at most n of the characteristics must be met. Use Group.combinationThreshold to specify the value of n.
+- Use a code *except-subset* to indicate that the characteristics expressed as exclusion criteria are used as exceptions to meeting the characteristics expressed as inclusion criteria. Explaining by example: “Cancer of any kind (except basal cell skin cancer or cancer in situ) unless documented to be disease-free for five years” (https://fevir.net/resources/Group/170441)
+
+The Group.combinationThreshold extension provides the value of "n" when *at-least* or *at-most* codes are used for the Group.combinationMethod extension (see above)
 
 The characteristic element has multiple extensions to support more ways of defining eligibility criteria.
 
