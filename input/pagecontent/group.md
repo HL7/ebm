@@ -36,13 +36,98 @@ Group.quantity is a count of group members, so it must be an integer if used.
 
 The base <b>Group Resource</b> in FHIR version R5 uses a repeatable characteristic element to define inclusion and exclusion criteria. This characteristic element includes 4 elements:
 
-.. code which is a required CodeableConcept to represent the type of characterstic
+.. code which is a required CodeableConcept to represent the type of characterstic. 
 
 .. value[x] with is a required element, with datatype of CodeableConcept, boolean, Quantity, Range, or Reference, to represent the matching value for the type of characteristic
 
 .. exclude which is a required boolean to determine if this is an inclusion or exclusion criterion
 
 .. period which is an optional Period for when in calendar time the characteristic applies
+
+Each characteristic must have a code value (CodeableConcept datatype) to specify the attribute. 
+
+For a characteristic of "age > 18 years” the attribute is “age” and the attribute of age may be expressed as:
+
+"code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "397669002",
+            "display": "Age"
+          }
+        ]
+      }
+
+For a characteristic of "Body mass index >= 30 kg/m2" the attribute is "Body mass index" and the attribute may be expressed as:
+ 
+      
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "39156-5",
+            "display": "Body mass index (BMI) [Ratio]"
+          }
+        ]
+      }
+
+(Examples taken from https://fevir.net/resources/Group/171819)
+
+Each characteristic must have a value[x] value to specify the value of the attribute that holds for members of the group. There is no [x] in the JSON or XML expression as it is replaced with the data type (CodeableConcept, boolean, Quantity, Range, Reference, or in FHIR version R6 uri or Expression)
+
+For a characteristic of "age > 18 years” the value is “> 18 years” and the value may be expressed with a Quantity datatype as:
+
+"valueQuantity": {
+        "comparator": ">=",
+        "value": 18,
+        "unit": "years",
+        "system": "http://unitsofmeasure.org",
+        "code": "a"
+             }
+
+Ror a characteristic of "Body mass index >= 30 kg/m2" the value is ">= 30 kg/m2" and the value may be expressed as:
+
+"valueQuantity": {
+        "comparator": ">=",
+        "value": 30,
+        "unit": "kg/m2",
+        "system": "http://unitsofmeasure.org",
+        "code": "kg/m2"
+             }
+
+(Examples taken from https://fevir.net/resources/Group/171819)
+
+Sometimes group membership is determined by characteristics not possessed. When this is the case, the Group.characteristic.exclude element has a value of true ("exclude": true). For characteristics that are not exclusion criteria, the Group.characteristic.exclude element has a value of false ("exclude": false). The exclude element is required.
+
+For example, an exclusion criterion of HbA1c ≥ 14.0% is expressed as:
+
+{
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "59261-8",
+            "display": "Hemoglobin A1c/Hemoglobin.total in Blood"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 14,
+        "comparator": ">=",
+        "unit": "%",
+        "system": "http://unitsofmeasure.org",
+        "code": "%"
+      },
+      "exclude": true
+    }
+
+modified off:
+
+StudyEligibilityCriteria: Eligibility Criteria for Bariatric Surgery Randomized Trial (Diabetes Surgery Study) [Database Entry: FHIR Group Resource]. Contributors: Brian S. Alper [Authors/Creators]. In: Fast Evidence Interoperability Resources (FEvIR) Platform, FOI 170443. Revised 2022-09-09. Available at: https://fevir.net/resources/Group/170443. Computable resource at: https://fevir.net/resources/Group/170443.
+
+#### Group.member
+
+The Group.member element is a BackboneElement (multiple elements per instance) and may have any number of instances. Each instance refers to an actual member of the group.  Each member must be represented in an entity element (Group.member.entity) which uses a Reference datatype, and each member may optionally have a period element (Group.member.period) with a Period datatype for the timeframe of group membership and an inactive element (Group.member.inactive) with a boolean datatype to denote if a member is no longer in the group.
 
 ### Profiles of Group Resource
 
@@ -64,21 +149,48 @@ The characteristic element has multiple extensions to support more ways of defin
 
 .. valueUri and valueExpression provide additional datatypes for the value of the characteristic
 
-.. description uses a markdown datatype and supports a human-readable description of the characteristic
+.. description uses a markdown datatype and supports a human-readable description of the characteristic. A short, natural language description of the characteristic could be used to communicate the criterion to an end-user.  The description element is for convenience so that end users can understand the characteristic and is neither a required part of the characteristic nor part of the structured representation of the characteristic.
 
-.. method uses a CodeableConcept datatype and supports specification of how the value of the characteristic is determined
+.. method uses a CodeableConcept datatype and supports specification of how the value of the characteristic is determined. The method modifies the Group.characteristic.code and indicates how the value is to be determined.  For example, HbA1c values can be determined by High-Performance Liquid Chromatography (HPLC) or by capillary electrophoresis. The method may be expressed as multiple concepts, e.g. standing barefoot for height measurements could be expressed as two separate concepts (standing and barefoot) that express the method.
 
 .. determinedByReference uses a Reference datatype to specify a <b>Device</b>, <b>DeviceMetric</b>, or <b>DeviceDefinition</b> used to determine the value of the characteristic
 
 .. determinedByExpression uses an Expression datatype to specify the formula or calculation used to determine the value of the characteristic
 
-.. offset uses a CodeableConcept datatype and supports specification of a reference point from which the value is measured, e.g., 2 units above the upper normal limit would be expressed with a valueQuantity of 2 units and an offset with a coding for Upper Normal Limit
+In the FHIR version R6 Group Resource, Group.characteristic.determinedBy[x] modifies the Group.characteristic.code and indicates how the value is to be determined, using either a Reference datatype or an Expression datatype.  This provides a means of expressing or modifying the method, not as a set of concepts, but as either a reference to a device or as an Expression.  The reference to a device can be either to a specific device using the Device Resource or the DeviceMetric Resource if a specific set of device parameters is needed, or a type of device using the DeviceDefinition Resource.
 
-.. instancesQuantity and instancesRange are used to express the number of times the characteristic is met
+.. offset uses a CodeableConcept datatype and supports specification of a reference point from which the value is measured, e.g., 2 units above the upper normal limit would be expressed with a valueQuantity of 2 units and an offset with a coding for Upper Normal Limit. The offset defines the reference point for comparison when other than 0.  To express a characteristic of a calcium level greater than the normal limit or a hemoglobin level less than 1 g/dL below the reference range, the offset concept would represent "normal limit" or "reference range". This is a modifier element because it modifies the meaning of the characteristic.value[x].
 
-.. durationDuration and durationRange are used to express how long the characteristic is met
+.. instancesQuantity and instancesRange are used to express the number of times the characteristic is met, i.e. the number of occurrences meeting the characteristic. There should be a constraint on the Quantity.value and Range.low.value and Range.high.value that it can only be non-negative whole numbers.
 
-.. timing uses a complex expression (matching the RelativeTime datatype in FHIR version R6) to express timing relative to an event or context other than calendar time
+.. durationDuration and durationRange are used to express how long the characteristic is met, i.e. the length of time in which the characteristic is met.
+
+.. timing uses a complex expression (matching the RelativeTime datatype in FHIR version R6) to express timing relative to an event or context other than calendar time, e.g. within a month following patient discharge.
+
+Note: RelativeTime is a new datatype in FHIR version R6. RelativeTime is used to express a point in time or an interval of time relative to an event defined in data types other than dateTime.
+
+Example representing "at 12 months form inclusion in a clinical trial" from https://fevir.net/resources/Group/172484 with inclusion defined as enrollment:
+
+ "timing": [
+        {
+          "contextCode": {
+            "coding": [
+              {
+                "system": "http://snomed.info/sct",
+                "code": "709491003",
+                "display": "Enrollment in clinical trial"
+              }
+            ]
+          },
+          "offsetDuration": {
+            "value": 12,
+            "unit": "months",
+            "system": "http://unitsofmeasure.org",
+            "code": "mo"
+          },
+          "text": "at 12 months"
+        }
+
 
 The **[CohortDefinition Profile][CohortDefinition]** is a Profile of **[GroupR6][GroupR6]** that is used to provide a conceptual or definitional representation of a group. In FHIR version R6, membership = conceptual allows avoiding the required use of type. In this IG for FHIR version R5, membership is definitional and the type value can be ignored for resource content processing. The quantity and member elements are not used in the **[CohortDefinition Profile][CohortDefinition]**.
 The **[CohortDefinition Profile][CohortDefinition]** is used to support characteristics that are combinations of two or more characteristics. 
