@@ -1,0 +1,1 @@
+See [Understanding the Composition Resource](composition.html) for additional information.
