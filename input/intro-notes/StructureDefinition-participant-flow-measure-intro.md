@@ -1,0 +1,1 @@
+See [Understanding the EvidenceVariable Resource](evidencevariable.html) for additional information.
