@@ -1,0 +1,1 @@
+See [Understanding the ArtifactAssessment Resource](artifactassessment.html) for additional information.
