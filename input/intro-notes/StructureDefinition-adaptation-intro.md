@@ -1,1 +1,1 @@
-See [Understanding the ArtifactAssessment Resource](artifactassessment.html) for additional information.
+See [Understanding the ArtifactAssessment Resource](artifactassessment.html) for additional information about the resource structure.
