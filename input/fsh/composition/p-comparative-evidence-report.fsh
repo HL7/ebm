@@ -71,7 +71,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Compara
     * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code.coding"
     * section ^slicing.rules = #open
-    * section contains comparatorEvidence 1..1 MS and interventionEvidence 1..1 MS and totalGroup 0..1 MS and comparativeEvidence 0..1 MS
+    * section contains comparatorEvidence 0..1 MS and interventionEvidence 0..1 MS and totalGroup 0..1 MS and comparativeEvidence 0..1 MS
     * section[comparatorEvidence].code.coding 1..1
     * section[comparatorEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-comparator-alone "Evidence with comparator alone"
     * section[comparatorEvidence]
