@@ -5,6 +5,7 @@
 [ArtifactEffectivePeriod]: StructureDefinition-artifact-effectivePeriod.html
 [ArtifactLastReviewDate]: StructureDefinition-artifact-lastReviewDate.html
 [BaselineMeasureEvidence]: StructureDefinition-baseline-measure-evidence.html
+[BaselineMeasureReport]: StructureDefinition-baseline-measure-report.html
 [BookCitation]: StructureDefinition-book-citation.html
 [BookPartCitation]: StructureDefinition-book-part-citation.html
 [CertaintyOfEvidence]: StructureDefinition-certainty-of-evidence.html
