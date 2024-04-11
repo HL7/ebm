@@ -18,13 +18,13 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Baselin
 * relatesTo ^slicing.discriminator.path = "label"
 * relatesTo ^slicing.rules = #open
 * relatesTo contains interventionGroup 0..* MS and comparatorGroup 0..* MS and totalGroup 0..1 MS
-* relatesTo[interventionGroup].type = "depends-on"
+* relatesTo[interventionGroup].type = #depends-on
 * relatesTo[interventionGroup].label = "Intervention Group"
 * relatesTo[interventionGroup].resourceReference only Reference(ExposureGroup or ComparatorGroup)
-* relatesTo[comparatorGroup].type = "depends-on"
+* relatesTo[comparatorGroup].type = #depends-on
 * relatesTo[comparatorGroup].label = "Comparator Group"
 * relatesTo[comparatorGroup].resourceReference only Reference(ExposureGroup or ComparatorGroup)
-* relatesTo[totalGroup].type = "depends-on"
+* relatesTo[totalGroup].type = #depends-on
 * relatesTo[totalGroup].label = "Total Group"
 * relatesTo[totalGroup].resourceReference only Reference(StudyGroup)
 * section 1..*
