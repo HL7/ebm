@@ -29,7 +29,6 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Partici
 * relatesTo[totalGroup].resourceReference only Reference(StudyGroup)
 * section 1..*
   * focus only Reference(ParticipantFlowMeasure)
-  * section 1..*
   * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code.coding"
   * section ^slicing.rules = #open
