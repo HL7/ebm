@@ -214,8 +214,6 @@
 <artifact id="StructureDefinition/guideline" key="StructureDefinition-guideline" name="Guideline"/>
 <artifact id="Composition/179465" key="Composition-179465" name="Guideline: ADA 2021 Standards of Medical Care 8. Obesity Management for the Treatment of Type 2 Diabetes"/>
 <artifact id="ActivityDefinition/213" key="ActivityDefinition-213" name="IV remdesivir 200 mg then 100 mg/day for 9 days"/>
-<artifact id="EvidenceVariable/33245" key="EvidenceVariable-33245" name="InterventionDefinition: Bariatric Surgery (RYGB, VSG, LAGB, BPD)"/>
-<artifact id="EvidenceVariable/33394" key="EvidenceVariable-33394" name="InterventionDefinition: NOT Bariatric Surgery (RYGB, VSG, LAGB, BPD)"/>
 <artifact id="StructureDefinition/intervention-only-evidence" key="StructureDefinition-intervention-only-evidence" name="InterventionOnlyEvidence"/>
 <artifact id="Evidence/104398" key="Evidence-104398" name="InterventionOnlyEvidence: Additional GI surgical procedure with bariatric surgery (Intervention Group) in JAMA 2018 Norwegian cohort study"/>
 <artifact id="Evidence/104400" key="Evidence-104400" name="InterventionOnlyEvidence: New onset depression with bariatric surgery (Intervention Group) in JAMA 2018 Norwegian cohort study"/>

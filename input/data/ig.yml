@@ -1741,20 +1741,6 @@ definition:
     - http://hl7.org/fhir/uv/ebm/StructureDefinition/guideline
     reference:
       reference: Composition/179465
-  - description: Any of 4 bariatric surgery procedures (Roux-en-Y Gastric Bypass,
-      Vertical Sleeve Gastrectomy, Laparoscopic Adjustable Gastric banding, Biliopancreatic
-      Diversion)
-    isExample: true
-    name: 'InterventionDefinition: Bariatric Surgery (RYGB, VSG, LAGB, BPD)'
-    reference:
-      reference: EvidenceVariable/33245
-  - description: Absence of any of 4 bariatric surgery procedures (Roux-en-Y Gastric
-      Bypass, Vertical Sleeve Gastrectomy, Laparoscopic Adjustable Gastric banding,
-      Biliopancreatic Diversion)
-    isExample: true
-    name: 'InterventionDefinition: NOT Bariatric Surgery (RYGB, VSG, LAGB, BPD)'
-    reference:
-      reference: EvidenceVariable/33394
   - description: Profile of Evidence for Evidence Based Medicine IG. The InterventionOnlyEvidence
       Profile is used for evidence with a measured variable that is considered the
       outcome of an exposure or intervention. The InterventionOnlyEvidence describes
