@@ -160,7 +160,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
       * section[population].code.text = "estimand-population"
       * section[population]
         * text 1..1
-        * text ^comment = "[List of key characteristics, such as demographic characteristics (e.g., age, sex) and clinical characteristics (e.g., prior therapies, symptoms, severity, biomarker status)"
+        * text ^comment = "List of key characteristics, such as demographic characteristics (e.g., age, sex) and clinical characteristics (e.g., prior therapies, symptoms, severity, biomarker status)"
       * section[treatment].title = "Treatment"
       * section[treatment].code.text = "estimand-treatment"
       * section[treatment]
@@ -175,7 +175,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
       * section[estimand].code.text = "statistic-type"
       * section[estimand]
         * text 1..1
-        * text ^comment = "Description of the population-level summary (e.g., mean difference, relative risk"
+        * text ^comment = "Description of the population-level summary (e.g., mean difference, relative risk)"
       * section[intercurrent].title = "Intercurrent Event"
       * section[intercurrent].code.text = "intercurrent-event"
       * section[intercurrent]
@@ -391,8 +391,8 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * section[contraceptionDefinitions]
       * text 1..1
       * text ^comment = "Specify the definitions of Participant of childbearing potential and Participant of non-childbearing potential, or state Not Applicable."
-    * section[contraceptionDetails].title = "Contraception"
-    * section[contraceptionDetails].code.text = "section15.4.2-contraception-details"
+    * section[contraceptionDetails].title = "Contraception Requirements"
+    * section[contraceptionDetails].code.text = "section5.4.2-contraception-details"
     * section[contraceptionDetails]
       * text 1..1
       * text ^comment = "Specify the contraceptive methods required and duration of use, or state Not Applicable."
@@ -980,6 +980,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * section[investigatorResponsibilities].code.text = "section11.2.1-investigator-responsibilities"
     * section[investigatorResponsibilities]
       * text 1..1
+      * text ^comment = "Enter Investigator Responsibilities."
     * section[sponsorResponsibilities].title = "Sponsor Responsibilities"
     * section[sponsorResponsibilities].code.text = "section11.2.2-sponsor-responsibilities"
     * section[sponsorResponsibilities]
