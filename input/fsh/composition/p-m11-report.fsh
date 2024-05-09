@@ -11,11 +11,123 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
 * category ^slicing.rules = #open
 * category contains m11report 1..1 MS
 * category[m11report].text = "CeSHarP Report"
-* section 14..*
+* section 15..*
 * section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code.text"
 * section ^slicing.rules = #open
-* section contains summary 1..1 MS and introduction 1..1 MS and endpoints 1..* MS and design 1..1 MS and population 1..1 MS and intervention 1..1 MS and dropout 1..1 MS and assessments 1..1 MS and adverseEvents 1..1 MS and statistics 1..1 MS and oversight 1..1 MS and definitions 1..1 MS and glossary 1..1 MS and references 1..1 MS
+* section contains titlepage 1..1 MS and summary 1..1 MS and introduction 1..1 MS and endpoints 1..* MS and design 1..1 MS and population 1..1 MS and intervention 1..1 MS and dropout 1..1 MS and assessments 1..1 MS and adverseEvents 1..1 MS and statistics 1..1 MS and oversight 1..1 MS and definitions 1..1 MS and glossary 1..1 MS and references 1..1 MS
+* section[titlepage].title = "Title Page"
+* section[titlepage].code.text = "section0-title-page"
+* section[titlepage]
+  * section ^slicing.discriminator.type = #value
+  * section ^slicing.discriminator.path = "code.text"
+  * section ^slicing.rules = #open
+  * section contains confidentiality 0..1 MS and title 1..1 MS and acronym 0..1 MS and identifier 0..1 MS and original 1..1 MS and version 0..1 MS and versiondate 0..1 MS and amendmentidentifier 0..1 MS and amendmentscope 0..1 MS and compoundcode 0..1 MS and compoundname 0..1 MS and trialphase 1..1 MS and shorttitle 0..1 MS and sponsorname 1..1 MS and manufacturer 0..1 MS and regulatoryidentifiers 1..1 MS and sponsorapproval 1..1 MS and signatory 1..1 MS and medicalexpert 1..1 MS and saereporting 1..1 MS and amendment 1..1 MS
+  * section[confidentiality].title = "Sponsor Confidentiality Statement"
+  * section[confidentiality].code.text = "section0.1-sponsor-confidentiality-statement"
+  * section[confidentiality]
+    * text 1..1
+    * text ^comment = "Insert the Sponsor’s confidentiality statement, if applicable, otherwise delete."
+  * section[title].title = "Full Title"
+  * section[title].code.text = "section0.2-full-title"
+  * section[title]
+    * text 1..1
+    * text ^comment = "The protocol should have a descriptive title that identifies the scientific aspects of the trial sufficiently to ensure it is immediately evident what the trial is investigating and on whom, and to allow retrieval from literature or internet searches."
+  * section[acronym].title = "Trial Acronym"
+  * section[acronym].code.text = "section0.3-trial-acronym"
+  * section[acronym]
+    * text 1..1
+    * text ^comment = "Acronym or abbreviation used publicly to identify the clinical trial, if any.  Delete this line from the table if not applicable."
+  * section[identifier].title = "Sponsor Protocol Identifier"
+  * section[identifier].code.text = "section0.4-protocol-identifier"
+  * section[identifier]
+    * text 1..1
+    * text ^comment = "A unique alphanumeric identifier for the trial, designated by the Sponsor, is a standard part of trial data, and should be included for most trials."
+  * section[original].title = "Original Protocol"
+  * section[original].code.text = "section0.5-original-protocol"
+  * section[original]
+    * text 1..1
+    * text ^comment = "Enter 'Yes' or 'No'."
+  * section[version].title = "Version Number"
+  * section[version].code.text = "section0.6-version-number"
+  * section[version]
+    * text 1..1
+    * text ^comment = "An optional field for use by the Sponsor at their discretion."
+  * section[versiondate].title = "Version Date"
+  * section[versiondate].code.text = "section0.7-version-date"
+  * section[versiondate]
+    * text 1..1
+    * text ^comment = "An optional field for use by the Sponsor at their discretion."
+  * section[amendmentidentifier].title = "Amendment Identifier"
+  * section[amendmentidentifier].code.text = "section0.8-amendment-identifier"
+  * section[amendmentidentifier]
+    * text 1..1
+    * text ^comment = "Enter the amendment identifier (e.g., amendment number).  If this is the original instance of the protocol, leave blank."
+  * section[amendmentscope].title = "Amendment Scope"
+  * section[amendmentscope].code.text = "section0.9-amendment-scope"
+  * section[amendmentscope]
+    * text 1..1
+    * text ^comment = "Leave blank for original protocol. If an amendment applies to all sites in the trial, enter “global” and delete the Country, Region and Site Identifier fields. If amending a single-country study, enter “global”. If the amendment does not apply to all sites in the trial, select “Not Global” and utilize one of the identifiers based on amendment scope. Use the ISO-3166 region or country identifier (for example, DE or EU)."
+  * section[compoundcode].title = "Compound Code(s)"
+  * section[compoundcode].code.text = "section0.10-compound-code"
+  * section[compoundcode]
+    * text 1..1
+    * text ^comment = "Enter the Sponsor’s unique identifier for investigational compound(s) in the trial.  Add fields as needed."
+  * section[compoundname].title = "Compound Name(s)"
+  * section[compoundname].code.text = "section0.11-compound-name"
+  * section[compoundname]
+    * text 1..1
+    * text ^comment = "Delete this line from the table if a nonproprietary name has not yet been assigned.  Omit proprietary name fields if not yet established."
+  * section[trialphase].title = "Trial Phase"
+  * section[trialphase].code.text = "section0.12-trial-phase"
+  * section[trialphase]
+    * text 1..1
+    * text ^comment = "For trials combining investigational drugs or vaccines with devices, classify according to the phase of drug development."
+  * section[shorttitle].title = "Short Title"
+  * section[shorttitle].code.text = "section0.13-short-title"
+  * section[shorttitle]
+    * text 1..1
+    * text ^comment = "Short title should convey in plain language what the trial is about and is suitable for use as “Brief Title” or “Title in Plain Language” in global clinical trial registries.  It can also be suitable for use with informed consents and ethics committee submissions."
+  * section[sponsorname].title = "Sponsor Name and Address"
+  * section[sponsorname].code.text = "section0.14-sponsor-name-address"
+  * section[sponsorname]
+    * text 1..1
+    * text ^comment = "<Enter Sponsor Name> <Enter Sponsor Legal Address> <Enter Co-Sponsor Name> <Enter Co-Sponsor Legal Address> Provide the legal name of the individual or pharmaceutical or medical device company, governmental agency, academic institution, private organisation, or other organisation who takes primary responsibility for and initiates a clinical investigation.  If more than one Sponsor, list the Primary Sponsor in this field.   Local Sponsor Name and Address: <Enter Local Sponsor Name> <Enter Local Sponsor Address> In some countries, the clinical trial Sponsor may be the local affiliate company (or designee).  In such cases, indicate in the Sponsor Local Name and Address Field."
+  * section[manufacturer].title = "Manufacturer Name and Address"
+  * section[manufacturer].code.text = "section0.15-manufacturer"
+  * section[manufacturer]
+    * text 1..1
+    * text ^comment = "Manufacturer name and address information is required only for protocols that include investigational device(s) and should not be included for other protocols. Include the manufacturer address only if the manufacturer is different than the Sponsor listed above. Add additional fields as needed if multiple investigational devices will be used in the trial.  Delete this line from the table if not applicable."
+  * section[regulatoryidentifiers].title = "Regulatory Agency Identifier Number(s)"
+  * section[regulatoryidentifiers].code.text = "section0.16-regulatory-identifiers"
+  * section[regulatoryidentifiers]
+    * text 1..1
+    * text ^comment = "<EU CT Number><IDE Number><FDA IND Number><JRCT Number><NCT Number><NMPA IND Number><WHO/UTN Number><Other Regulatory Agency Identifier Number> Include all numbers that are applicable for the trial and available at the time of protocol or amendment finalisation.  Delete prompts for numbers not available at the time of document finalisation.  Delete unused fields.  Add fields for “other” if more than one is needed."
+  * section[sponsorapproval].title = "Sponsor Approval Date"
+  * section[sponsorapproval].code.text = "section0.17-sponsor-approval-date"
+  * section[sponsorapproval]
+    * text 1..1
+    * text ^comment = "<Enter Approval Date or state location where information can be found> All versions should be uniquely identifiable.  Use the CDISC date format (dd/mmm/yyyy, for example 07/JUN/2015) to indicate the date the protocol (or amendment) was approved by the Sponsor."
+  * section[signatory].title = "Sponsor Signatory"
+  * section[signatory].code.text = "section0.18-sponsor-signatory"
+  * section[signatory]
+    * text 1..1
+    * text ^comment = "Include either the sponsor signature (name and title of sponsor signatory and signature date) or the statement {This protocol was approved via <describe method> as described on the approval page appended to the document.}."
+  * section[medicalexpert].title = "Medical Expert Contact"
+  * section[medicalexpert].code.text = "section0.19-medical-expert-contact"
+  * section[medicalexpert]
+    * text 1..1
+    * text ^comment = "Enter contact information for Medical Expert (as designated by sponsor) or state location where information can be found."
+  * section[saereporting].title = "SAE Reporting Method"
+  * section[saereporting].code.text = "section0.19-medical-expert-contact"
+  * section[saereporting]
+    * text 1..1
+    * text ^comment = "Report Serious Adverse Events to the sponsor <Enter SAE reporting method(s)> Refer to Section 9.4 for detailed reporting instructions."
+  * section[amendment].title = "Amendment Details"
+  * section[amendment].code.text = "section0.20-amendment-detials"
+  * section[amendment]
+    * text 1..1
+    * text ^comment = "State {Not applicable. This protocol has not been amended.} or state {This protocol has been amended previously. Details of prior amendments are presented in Prior Protocol Amendment(s).} or include Current Amendment details as appropriate (See instructions)."
 * section[summary].title = "Protocol Summary"
 * section[summary].code.text = "section1-protocol-summary"
 * section[summary]
