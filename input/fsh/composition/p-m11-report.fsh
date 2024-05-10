@@ -120,7 +120,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * text 1..1
     * text ^comment = "Enter contact information for Medical Expert (as designated by sponsor) or state location where information can be found."
   * section[saereporting].title = "SAE Reporting Method"
-  * section[saereporting].code.text = "section0.19-sae-reporting-method"
+  * section[saereporting].code.text = "section0.20-sae-reporting-method"
   * section[saereporting]
     * text 1..1
     * text ^comment = "Report Serious Adverse Events to the sponsor <Enter SAE reporting method(s)> Refer to Section 9.4 for detailed reporting instructions."
