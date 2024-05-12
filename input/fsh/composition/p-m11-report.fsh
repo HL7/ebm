@@ -125,7 +125,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * text 1..1
     * text ^comment = "Report Serious Adverse Events to the sponsor <Enter SAE reporting method(s)> Refer to Section 9.4 for detailed reporting instructions."
   * section[amendment].title = "Amendment Details"
-  * section[amendment].code.text = "section0.21-amendment-detials"
+  * section[amendment].code.text = "section0.21-amendment-details"
   * section[amendment]
     * text 1..1
     * text ^comment = "State {Not applicable. This protocol has not been amended.} or state {This protocol has been amended previously. Details of prior amendments are presented in Prior Protocol Amendment(s).} or include Current Amendment details as appropriate (See instructions)."
