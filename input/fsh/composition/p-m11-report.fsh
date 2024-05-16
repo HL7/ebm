@@ -961,80 +961,90 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * text ^comment = "Describe the summary statistics that will be used to describe the distribution of demographic and other relevant variables at baseline. Specify the timing of the measurement of the variables (e.g., at inclusion in the trial; before , or at randomization). Relevant variables include, but are not limited to: stratification variables specified in Section 6.8, covariates for the statistical models specified in Section 10.4, other suspected predictive or prognostic variables, and variables used for planned subgroup analyses."
   * section[analysisPrimaryObjective].title = "Analyses Associated with the Primary Objective(s)"
   * section[analysisPrimaryObjective].code.text = "section10.4-analysis-primary-objective"
-  * section[analysisPrimaryObjective]
-    * focus only Reference(VariableDefinition)
-    * text 0..1
-    * text ^comment = "No content here. Create a new section for each estimand."
-    * section 3..*
     * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
-    * section contains statisticalModel 1..1 MS and intercurrentEventHandling 0..1 MS and missingData 1..1 MS and sensitvityAnalysis 1..1 MS and supplementaryAnalysis 0..1 MS
-    * section[statisticalModel].title = "Statistical Method of Analysis"
-    * section[statisticalModel].code.text = "section10.4.1-statistical-method"
-    * section[statisticalModel]
-      * text 1..1
-      * text ^comment = "Describe the statistical analysis methods that will be used to evaluate the primary objective(s) and associated estimand(s) in Section 3.1. Ensure that the statistical hypothesis/model/analysis (and corresponding assumptions) is aligned with the primary estimand(s). For each objective, state the null and alternative hypotheses, including the pre-planned type 1 error rate, or alternative criteria for evaluating whether the objective has been met, and relevant operating characteristics if appropriate. Describe the statistical model used and the factors that will be included (covariates and interactions) and any rules for handling these factors (for example, pooling of centres). If modelling and simulation methods are to be used, please describe the model (inputs and outputs), the underlying assumptions, and the method of model fitting."
-      * entry only Reference(EndpointAnalysisPlan)
-    * section[intercurrentEventHandling].title = "Handling of Data in Relation to Primary Estimand(s)"
-    * section[intercurrentEventHandling].code.text = "section10.4.2-data-handling"
-    * section[intercurrentEventHandling]
-      * text 1..1
-      * text ^comment = "For each intercurrent event of the primary estimand(s) (Section 3.1, Estimand[s] for the Primary Objective[s]), explain how data will be handled for the statistical analysis in line with the primary estimand. The handling of intercurrent events in statistical analysis should be aligned with the specific estimand strategies being used. This section should describe with more detail the rationale and handling of the data rather than repeating the guidance from the preceding sections."
-    * section[missingData].title = "Handling of Missing Data"
-    * section[missingData].code.text = "section10.4.3-missing-data-handling"
-    * section[missingData]
-      * text 1..1
-      * text ^comment = "Describe how missing data will be addressed (e.g., imputation method and model), state the underlying assumptions, and provide a rationale for the approach. Refer to the E9(R1) addendum when the estimand framework is used."
-    * section[sensitvityAnalysis].title = "Sensitivity Analysis"
-    * section[sensitvityAnalysis].code.text = "section10.4.4-sensitivity-analysis"
-    * section[sensitvityAnalysis]
-      * text 1..1
-      * text ^comment = "Describe sensitivity analyses. Sensitivity analyses are a series of analyses conducted with the intent to explore the robustness of inferences from the main estimator to deviations from its underlying modelling assumptions and limitations in the data."
-      * entry only Reference(EndpointAnalysisPlan)
-    * section[supplementaryAnalysis].title = "Supplementary Analysis"
-    * section[supplementaryAnalysis].code.text = "section10.4.5-supplementary-analysis"
-    * section[supplementaryAnalysis]
-      * text 1..1
-      * text ^comment = "Describe any supplementary analysis if applicable. Supplementary analyses are conducted in addition to the main and sensitivity analysis with the intent to provide additional insights into the understanding of the treatment effect."
+    * section contains analysisPrimaryInstance 1..* MS
+    * section[analysisPrimaryInstance].code.text = "section10.4-analysis-primary-objective-instance"
+    * section[analysisPrimaryInstance]
+      * focus only Reference(VariableDefinition)
+      * text 0..1
+      * text ^comment = "No content here. Create a new section for each estimand."
+      * section 3..*
+      * section ^slicing.discriminator.type = #value
+      * section ^slicing.discriminator.path = "code.text"
+      * section ^slicing.rules = #open
+      * section contains statisticalModel 1..1 MS and intercurrentEventHandling 0..1 MS and missingData 1..1 MS and sensitvityAnalysis 1..1 MS and supplementaryAnalysis 0..1 MS
+      * section[statisticalModel].title = "Statistical Method of Analysis"
+      * section[statisticalModel].code.text = "section10.4.1-statistical-method"
+      * section[statisticalModel]
+        * text 1..1
+        * text ^comment = "Describe the statistical analysis methods that will be used to evaluate the primary objective(s) and associated estimand(s) in Section 3.1. Ensure that the statistical hypothesis/model/analysis (and corresponding assumptions) is aligned with the primary estimand(s). For each objective, state the null and alternative hypotheses, including the pre-planned type 1 error rate, or alternative criteria for evaluating whether the objective has been met, and relevant operating characteristics if appropriate. Describe the statistical model used and the factors that will be included (covariates and interactions) and any rules for handling these factors (for example, pooling of centres). If modelling and simulation methods are to be used, please describe the model (inputs and outputs), the underlying assumptions, and the method of model fitting."
+        * entry only Reference(EndpointAnalysisPlan)
+      * section[intercurrentEventHandling].title = "Handling of Data in Relation to Primary Estimand(s)"
+      * section[intercurrentEventHandling].code.text = "section10.4.2-data-handling"
+      * section[intercurrentEventHandling]
+        * text 1..1
+        * text ^comment = "For each intercurrent event of the primary estimand(s) (Section 3.1, Estimand[s] for the Primary Objective[s]), explain how data will be handled for the statistical analysis in line with the primary estimand. The handling of intercurrent events in statistical analysis should be aligned with the specific estimand strategies being used. This section should describe with more detail the rationale and handling of the data rather than repeating the guidance from the preceding sections."
+      * section[missingData].title = "Handling of Missing Data"
+      * section[missingData].code.text = "section10.4.3-missing-data-handling"
+      * section[missingData]
+        * text 1..1
+        * text ^comment = "Describe how missing data will be addressed (e.g., imputation method and model), state the underlying assumptions, and provide a rationale for the approach. Refer to the E9(R1) addendum when the estimand framework is used."
+      * section[sensitvityAnalysis].title = "Sensitivity Analysis"
+      * section[sensitvityAnalysis].code.text = "section10.4.4-sensitivity-analysis"
+      * section[sensitvityAnalysis]
+        * text 1..1
+        * text ^comment = "Describe sensitivity analyses. Sensitivity analyses are a series of analyses conducted with the intent to explore the robustness of inferences from the main estimator to deviations from its underlying modelling assumptions and limitations in the data."
+        * entry only Reference(EndpointAnalysisPlan)
+      * section[supplementaryAnalysis].title = "Supplementary Analysis"
+      * section[supplementaryAnalysis].code.text = "section10.4.5-supplementary-analysis"
+      * section[supplementaryAnalysis]
+        * text 1..1
+        * text ^comment = "Describe any supplementary analysis if applicable. Supplementary analyses are conducted in addition to the main and sensitivity analysis with the intent to provide additional insights into the understanding of the treatment effect."
   * section[secondaryAnalysis].title = "Analysis Associated with the Secondary Objective(s)"
   * section[secondaryAnalysis].code.text = "section10.5-analysis-secondary-objective"
-  * section[secondaryAnalysis]
-    * focus only Reference(VariableDefinition)
-    * text 0..1
-    * text ^comment = "No content here. Create a new section for each estimand."
-    * section 0..*
     * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
-    * section contains statisticalModel 0..1 MS and intercurrentEventHandling 0..1 MS and missingData 0..1 MS and sensitvityAnalysis 0..1 MS and supplementaryAnalysis 0..1 MS
-    * section[statisticalModel].title = "Statistical Method of Analysis"
-    * section[statisticalModel].code.text = "section10.5.1-statistical-method"
-    * section[statisticalModel]
-      * text 1..1
-      * text ^comment = "Clearly specify any secondary hypotheses that will be tested for confirmatory purposes."
-      * entry only Reference(EndpointAnalysisPlan)
-    * section[intercurrentEventHandling].title = "Handling of Data in Relation to Secondary Estimand(s)"
-    * section[intercurrentEventHandling].code.text = "section10.5.2-data-handling"
-    * section[intercurrentEventHandling]
-      * text 1..1
-      * text ^comment = "Enter Handling of Data in Relation to Secondary Estimand(s)"
-    * section[missingData].title = "Handling of Missing Data"
-    * section[missingData].code.text = "section10.5.3-missing-data-handling"
-    * section[missingData]
-      * text 1..1
-      * text ^comment = "Describe how missing data will be addressed (e.g., imputation method and model), state the underlying assumptions, and provide a rationale for the approach. Refer to the E9(R1) addendum when the estimand framework is used."
-    * section[sensitvityAnalysis].title = "Sensitivity Analysis"
-    * section[sensitvityAnalysis].code.text = "section10.5.4-sensitivity-analysis"
-    * section[sensitvityAnalysis]
-      * text 1..1
-      * text ^comment = "Describe sensitivity analyses. Sensitivity analyses are a series of analyses conducted with the intent to explore the robustness of inferences from the main estimator to deviations from its underlying modelling assumptions and limitations in the data."
-      * entry only Reference(EndpointAnalysisPlan)
-    * section[supplementaryAnalysis].title = "Supplementary Analysis"
-    * section[supplementaryAnalysis].code.text = "section10.5.5-supplementary-analysis"
-    * section[supplementaryAnalysis]
-      * text 1..1
-      * text ^comment = "Describe any supplementary analysis if applicable. Supplementary analyses are conducted in addition to the main and sensitivity analysis with the intent to provide additional insights into the understanding of the treatment effect."
+    * section contains analysisSecondaryInstance 1..* MS
+    * section[analysisSecondaryInstance].code.text = "section10.5-analysis-secondary-objective-instance"
+    * section[analysisSecondaryInstance]
+      * focus only Reference(VariableDefinition)
+      * text 0..1
+      * text ^comment = "No content here. Create a new section for each estimand."
+      * section 0..*
+      * section ^slicing.discriminator.type = #value
+      * section ^slicing.discriminator.path = "code.text"
+      * section ^slicing.rules = #open
+      * section contains statisticalModel 0..1 MS and intercurrentEventHandling 0..1 MS and missingData 0..1 MS and sensitvityAnalysis 0..1 MS and supplementaryAnalysis 0..1 MS
+      * section[statisticalModel].title = "Statistical Method of Analysis"
+      * section[statisticalModel].code.text = "section10.5.1-statistical-method"
+      * section[statisticalModel]
+        * text 1..1
+        * text ^comment = "Clearly specify any secondary hypotheses that will be tested for confirmatory purposes."
+        * entry only Reference(EndpointAnalysisPlan)
+      * section[intercurrentEventHandling].title = "Handling of Data in Relation to Secondary Estimand(s)"
+      * section[intercurrentEventHandling].code.text = "section10.5.2-data-handling"
+      * section[intercurrentEventHandling]
+        * text 1..1
+        * text ^comment = "Enter Handling of Data in Relation to Secondary Estimand(s)"
+      * section[missingData].title = "Handling of Missing Data"
+      * section[missingData].code.text = "section10.5.3-missing-data-handling"
+      * section[missingData]
+        * text 1..1
+        * text ^comment = "Describe how missing data will be addressed (e.g., imputation method and model), state the underlying assumptions, and provide a rationale for the approach. Refer to the E9(R1) addendum when the estimand framework is used."
+      * section[sensitvityAnalysis].title = "Sensitivity Analysis"
+      * section[sensitvityAnalysis].code.text = "section10.5.4-sensitivity-analysis"
+      * section[sensitvityAnalysis]
+        * text 1..1
+        * text ^comment = "Describe sensitivity analyses. Sensitivity analyses are a series of analyses conducted with the intent to explore the robustness of inferences from the main estimator to deviations from its underlying modelling assumptions and limitations in the data."
+        * entry only Reference(EndpointAnalysisPlan)
+      * section[supplementaryAnalysis].title = "Supplementary Analysis"
+      * section[supplementaryAnalysis].code.text = "section10.5.5-supplementary-analysis"
+      * section[supplementaryAnalysis]
+        * text 1..1
+        * text ^comment = "Describe any supplementary analysis if applicable. Supplementary analyses are conducted in addition to the main and sensitivity analysis with the intent to provide additional insights into the understanding of the treatment effect."
   * section[exploratoryAnalysis].title = "Analysis Associated with the Exploratory Objective(s)"
   * section[exploratoryAnalysis].code.text = "section10.6-analysis-exploratory-objective"
   * section[exploratoryAnalysis]
