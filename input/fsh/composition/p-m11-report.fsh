@@ -958,6 +958,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * text ^comment = "Describe the summary statistics that will be used to describe the distribution of demographic and other relevant variables at baseline. Specify the timing of the measurement of the variables (e.g., at inclusion in the trial; before , or at randomization). Relevant variables include, but are not limited to: stratification variables specified in Section 6.8, covariates for the statistical models specified in Section 10.4, other suspected predictive or prognostic variables, and variables used for planned subgroup analyses."
   * section[analysisPrimaryObjective].title = "Analyses Associated with the Primary Objective(s)"
   * section[analysisPrimaryObjective].code.text = "section10.4-analysis-primary-objective"
+  * section[analysisPrimaryObjective]
     * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
@@ -1001,6 +1002,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
         * text ^comment = "Describe any supplementary analysis if applicable. Supplementary analyses are conducted in addition to the main and sensitivity analysis with the intent to provide additional insights into the understanding of the treatment effect."
   * section[secondaryAnalysis].title = "Analysis Associated with the Secondary Objective(s)"
   * section[secondaryAnalysis].code.text = "section10.5-analysis-secondary-objective"
+  * section[secondaryAnalysis]
     * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
