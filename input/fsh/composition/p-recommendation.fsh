@@ -5,13 +5,8 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Recomme
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
-* category 1..*
-* category ^slicing.discriminator.type = #value
-* category ^slicing.discriminator.path = "coding"
-* category ^slicing.rules = #open
-* category contains recommendation 1..1 MS
-* category[recommendation].coding 1..1
-* category[recommendation].coding = https://fevir.net/resources/CodeSystem/179423#Recommendation "Recommendation"
+* type.coding 1..1
+* type.coding = https://fevir.net/resources/CodeSystem/179423#Recommendation "Recommendation"
 * relatesTo 1..*
 * relatesTo ^slicing.discriminator.type = #value
 * relatesTo ^slicing.discriminator.path = "type"

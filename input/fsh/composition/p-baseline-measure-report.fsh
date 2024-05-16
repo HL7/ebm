@@ -5,14 +5,9 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Baselin
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
-* category 1..*
-* category ^slicing.discriminator.type = #value
-* category ^slicing.discriminator.path = "coding"
-* category ^slicing.rules = #open
-* category contains baselineMeasureReport 1..1 MS
-* category[baselineMeasureReport].coding 1..1
-* category[baselineMeasureReport].coding = https://fevir.net/resources/CodeSystem/179423#BaselineMeasureReport "BaselineMeasureReport"
-* category[baselineMeasureReport].text = "Baseline Measure Report"
+* type.coding 1..1
+* type.coding = https://fevir.net/resources/CodeSystem/179423#BaselineMeasureReport "BaselineMeasureReport"
+* type.text = "Baseline Measure Report"
 * relatesTo 1..*
 * relatesTo ^slicing.discriminator.type = #value
 * relatesTo ^slicing.discriminator.path = "label"

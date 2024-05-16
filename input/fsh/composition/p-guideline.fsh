@@ -5,13 +5,8 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Guideli
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
-* category 1..*
-* category ^slicing.discriminator.type = #value
-* category ^slicing.discriminator.path = "coding"
-* category ^slicing.rules = #open
-* category contains guideline 1..1 MS
-* category[guideline].coding 1..1
-* category[guideline].coding = https://fevir.net/resources/CodeSystem/179423#Guideline "Guideline"
+* type.coding 1..1
+* type.coding = https://fevir.net/resources/CodeSystem/179423#Guideline "Guideline"
 * section 1..6
 * section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code.coding"

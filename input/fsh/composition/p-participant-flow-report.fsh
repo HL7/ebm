@@ -5,14 +5,9 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Partici
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
-* category 1..*
-* category ^slicing.discriminator.type = #value
-* category ^slicing.discriminator.path = "coding"
-* category ^slicing.rules = #open
-* category contains participantFlowReport 1..1 MS
-* category[participantFlowReport].coding 1..1
-* category[participantFlowReport].coding = https://fevir.net/resources/CodeSystem/179423#ParticipantFlowReport "ParticipantFlowReport"
-* category[participantFlowReport].text = "Participant Flow Report"
+* type.coding 1..1
+* type.coding = https://fevir.net/resources/CodeSystem/179423#ParticipantFlowReport "ParticipantFlowReport"
+* type.text = "Participant Flow Report"
 * relatesTo 1..*
 * relatesTo ^slicing.discriminator.type = #value
 * relatesTo ^slicing.discriminator.path = "label"

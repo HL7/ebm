@@ -5,14 +5,9 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Summary
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
-* category 1..*
-* category ^slicing.discriminator.type = #value
-* category ^slicing.discriminator.path = "coding"
-* category ^slicing.rules = #open
-* category contains summaryOfFindings 1..1 MS
-* category[summaryOfFindings].coding 1..1
-* category[summaryOfFindings].coding = https://fevir.net/resources/CodeSystem/179423#SummaryOfFindings "SummaryOfFindings"
-* category[summaryOfFindings].text = "Summary of Findings"
+* type.coding 1..1
+* type.coding = https://fevir.net/resources/CodeSystem/179423#SummaryOfFindings "SummaryOfFindings"
+* type.text = "Summary of Findings"
 * section 2..*
 * section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code.coding"
