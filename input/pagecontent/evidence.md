@@ -44,9 +44,9 @@ The **[BaselineMeasureEvidence Profile][BaselineMeasureEvidence]** is a Profile 
 
 The **[ComparativeBaselineMeasureEvidence Profile][ComparativeBaselineMeasureEvidence]** is a Profile of **[ComparativeEvidence][ComparativeEvidence]** which has the baseline measure in the variableDefinition with the role of 'outcome'.
 
-The **[ParticipantFlow Profile][ParticipantFlow]** is a Profile of **[NonComparativeEvidence][NonComparativeEvidence]** which has the participant flow measure in the variableDefinition with the role of 'outcome'. The intended and directnessMatch elements in variableDefinition are not used. The statistic.numberAffected element is not used because the number counted is the statistic.quantity and the statistic.modelCharacteristic element is not used because simple counting does not require any statistical modeling.
+The **[ParticipantFlowEvidence Profile][ParticipantFlowEvidence]** is a Profile of **[NonComparativeEvidence][NonComparativeEvidence]** which has the participant flow measure in the variableDefinition with the role of 'outcome'. The intended and directnessMatch elements in variableDefinition are not used. The statistic.numberAffected element is not used because the number counted is the statistic.quantity and the statistic.modelCharacteristic element is not used because simple counting does not require any statistical modeling.
 
-The **[ComparativeParticipantFlow Profile][ComparativeParticipantFlow]** is a Profile of **[ComparativeEvidence][ComparativeEvidence]** which has the participant flow measure in the variableDefinition with the role of 'outcome'. The intended and directnessMatch elements in variableDefinition are not used.
+The **[ComparativeParticipantFlowEvidence Profile][ComparativeParticipantFlowEvidence]** is a Profile of **[ComparativeEvidence][ComparativeEvidence]** which has the participant flow measure in the variableDefinition with the role of 'outcome'. The intended and directnessMatch elements in variableDefinition are not used.
 
 The **[EndpointAnalysisPlan Profile][EndpointAnalysisPlan]** is used for specification of the planned statistical model for analysis of a single endpoint. The statistic.modelCharacteristic.intended element in FHIR version R6 and the statistic.modelCharacteristic.extension:intended element in FHIR version R5 is set to true.
 

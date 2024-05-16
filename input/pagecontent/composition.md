@@ -32,13 +32,13 @@ section.text is a Narrative datatype used for a text summary of the section. A N
 
 ### EvidenceReport Profile of Composition Resource
 
-The **[EvidenceReport Profile][EvidenceReport]** is used for a base structure (canonical resource management) for a report combining any number of <b>Citation</b>, <b>Evidence</b>, <b>EvidenceVariable</b>, **[EvidenceReport][EvidenceReport]**, and related Resources. The **[EvidenceReport Profile][EvidenceReport]** adds a number of extensions for metadata (<i>versionAlgorithm</i>, <i>experimental</i>, description, purpose,  copyrightLabel, approvalDate, lastReviewDate, and effectivePeriod). The **[EvidenceReport Profile][EvidenceReport]** sets the Composition.type.coding value to an "EvidenceReport" coding. The EvidenceReport Profile limits the number of subject elements to 1 and limits the resource types that can be referenced as the subject to <b>Citation</b>, **[Classification][Classification]**, **[EvidenceReportSubject][EvidenceReportSubject]**, or <b>ResearchStudy</b>. The Composition.attester.mode element uses a CodeableConcept datatype and a Contributor Role Value Set is provided with preferred binding to include concepts for reviewer, editor, endorser, informant, and funder. An EvidenceReport Section Code Value Set is provided with extensible binding for the section.code elements.
+The **[EvidenceReport Profile][EvidenceReport]** is used for a base structure (canonical resource management) for a report combining any number of <b>Citation</b>, <b>Evidence</b>, <b>EvidenceVariable</b>, **[EvidenceReport][EvidenceReport]**, and related Resources. The **[EvidenceReport Profile][EvidenceReport]** adds a number of extensions for metadata (<i>versionAlgorithm</i>, <i>experimental</i>, description, purpose,  copyrightLabel, approvalDate, lastReviewDate, and effectivePeriod). The EvidenceReport Profile limits the number of subject elements to 1 and limits the resource types that can be referenced as the subject to <b>Citation</b>, **[Classification][Classification]**, **[EvidenceReportSubject][EvidenceReportSubject]**, or <b>ResearchStudy</b>. The Composition.attester.mode element uses a CodeableConcept datatype and a Contributor Role Value Set is provided with preferred binding to include concepts for reviewer, editor, endorser, informant, and funder. An EvidenceReport Section Code Value Set is provided with extensible binding for the section.code elements.
 
 ### ComparativeEvidenceReport Profile of Composition Resource
 
 The **[ComparativeEvidenceReport Profile][ComparativeEvidenceReport]** is a Profile of **[EvidenceReport][EvidenceReport]** and is used for an evidence report including the study group, exposure, comparator, and findings for any number of outcomes comparing the exposure to the comparator in the study group. 
 
-A category element instance expresses that the composition is a "Comparative Evidence Report" and additional category element instances may be used.
+The Composition.type value is set to a "Comparative Evidence Report".
 
 ..A 'Population' section is required with entries limited to reference **[StudyGroup Profile][StudyGroup]**.
 
@@ -58,15 +58,15 @@ A category element instance expresses that the composition is a "Comparative Evi
 
 ....Composition.section[baseline].section.section[comparativeEvidence] has a section.code value for 'Evidence with intervention vs. comparator' and entries limited to a single reference of a **[ComparativeBaselineMeasureEvidence Profile][ComparativeBaselineMeasureEvidence]**.
 
-..A 'Participant Flow' section is optional. The 'Participant Flow' section contains one or more sections with each of these sections identified by focus (Composition.section[flow].section.focus) which references a **[ParticipantFlowMeasure Profile][ParticipantFlowMeasure]**. Each of these focused sections contain one or more of the following sections:
+..A 'Participant Flow' section is optional. The 'Participant Flow' section contains one or more sections with each of these sections identified by focus (Composition.section[flow].section.focus) which references a **[ParticipantFlowMEvidenceVariable Profile][ParticipantFlowEvidenceVariable]**. Each of these focused sections contain one or more of the following sections:
 
-....Composition.section[flow].section.section[comparatorEvidence] has a section.code value for 'Evidence with comparator alone' and entries limited to a single reference of a **[ParticipantFlow Profile][ParticipantFlow]**.
+....Composition.section[flow].section.section[comparatorEvidence] has a section.code value for 'Evidence with comparator alone' and entries limited to a single reference of a **[ParticipantFlowEvidence Profile][ParticipantFlowEvidence]**.
 
-....Composition.section[flow].section.section[interventionEvidence] has a section.code value for 'Evidence with intervention alone' and entries limited to a single reference of a **[ParticipantFlow Profile][ParticipantFlow]**.
+....Composition.section[flow].section.section[interventionEvidence] has a section.code value for 'Evidence with intervention alone' and entries limited to a single reference of a **[ParticipantFlowEvidence Profile][ParticipantFlowEvidence]**.
 
-....Composition.section[flow].section.section[totalGroup] has a section.code value for 'Evidence with total group' and entries limited to a single reference of a **[ParticipantFlow Profile][ParticipantFlow]**.
+....Composition.section[flow].section.section[totalGroup] has a section.code value for 'Evidence with total group' and entries limited to a single reference of a **[ParticipantFlowEvidence Profile][ParticipantFlowEvidence]**.
 
-....Composition.section[flow].section.section[comparativeEvidence] has a section.code value for 'Evidence with intervention vs. comparator' and entries limited to a single reference of a **[ComparativeParticipantFlow Profile][ComparativeParticipantFlow]**.
+....Composition.section[flow].section.section[comparativeEvidence] has a section.code value for 'Evidence with intervention vs. comparator' and entries limited to a single reference of a **[ComparativeParticipantFlowEvidence Profile][ComparativeParticipantFlowEvidence]**.
 
 ..An 'Outcome Measures' section is required. The 'Outcome Measures' section contains one or more sections with each of these sections identified by focus (Composition.section[outcomes].section.focus) which references a **[VariableDefinition Profile][VariableDefinition]**. Each of these focused sections contain one or more of the following sections:
 
@@ -80,7 +80,7 @@ A category element instance expresses that the composition is a "Comparative Evi
 
 The **[BaselineMeasureReport Profile][BaselineMeasureReport]** is a Profile of **[EvidenceReport][EvidenceReport]** and is used for an evidence report including the findings for any number of baseline measures in a research study. 
 
-A category element instance expresses that the composition is a "Baseline Measure Report" and additional category element instances may be used.
+The Composition.type value is set to a "Baseline Measure Report".
 
 The relatesTo element may include instances with type values of "depends-on", label values to identify the contextual use of specific Group Resources (such as "Intervention Group", "Comparator Group", and "Total Group"), and resourceReference values which may be limited to reference **[StudyGroup][StudyGroup]**, **[ExposureGroup][ExposureGroup]**, or **[ComparatorGroup][ComparatorGroup]** Profiles.
 
@@ -95,11 +95,30 @@ The section element contains one or more instances (sections) with each of these
 ..Composition.section.section[comparativeEvidence] has a section.code value for 'Evidence with intervention vs. comparator' and entries limited to a single reference of a **[ComparativeBaselineMeasureEvidence Profile][ComparativeBaselineMeasureEvidence]**.
 
 
+### ParticipantFlowReport Profile of Composition Resource
+
+The **[ParticipantFlowReport Profile][ParticipantFlowReport]** is a Profile of **[EvidenceReport][EvidenceReport]** and is used for an evidence report including the counts (and proportions) for any number of participant flow measures in a research study. For example, the ParticipantFlowReport may include the data for a CONSORT Participant Flow Diagram reported with a randomized controlled trial.
+
+The Composition.type value is set to a "Participant Flow Report".
+
+The relatesTo element may include instances with type values of "depends-on", label values to identify the contextual use of specific Group Resources (such as "Intervention Group", "Comparator Group", and "Total Group"), and resourceReference values which may be limited to reference **[StudyGroup][StudyGroup]**, **[ExposureGroup][ExposureGroup]**, or **[ComparatorGroup][ComparatorGroup]** Profiles.
+
+The section element contains one or more instances (sections) with each of these sections identified by focus (Composition.section.focus) which references a **[VariableDefinition Profile][VariableDefinition]**. Each of these focused sections contain one or more of the following sections:
+
+..Composition.section.section[comparatorEvidence] has a section.code value for 'Evidence with comparator alone' and entries limited to a single reference of a **[ParticipantFlowEvidence Profile][ParticipantFlowEvidence]**.
+
+..Composition.section.section[interventionEvidence] has a section.code value for 'Evidence with intervention alone' and entries limited to a single reference of a **[ParticipantFlowEvidence Profile][ParticipantFlowEvidence]**.
+
+..Composition.section.section[totalGroup] has a section.code value for 'Evidence with total group' and entries limited to a single reference of a **[ParticipantFlowEvidence Profile][ParticipantFlowEvidence]**.
+
+..Composition.section.section[comparativeEvidence] has a section.code value for 'Evidence with intervention vs. comparator' and entries limited to a single reference of a **[ComparativeParticipantFlowEvidence Profile][ComparativeParticipantFlowEvidence]**.
+
+
 ### Guideline Profile of Composition Resource
 
 The **[Guideline Profile][Guideline]** is a Profile of **[EvidenceReport][EvidenceReport]** and is used for the composition of a clinical practice guideline and may be tightly related to use of the **[Recommendation Profile][Recommendation]** for related content. 
 
-A category element instance expresses that the composition is a "Guideline" and additional category element instances may be used.
+The Composition.type value is set to a "Guideline".
 
 The **[Guideline Profile][Guideline]** will have 1 to 6 section element instances with any of the following section.code concepts:  Introduction, Recommendations, Text, Methods, Acknowledgements, and Appendices. The Recommendations section will have entries which are constrained to reference the **[Recommendation Profile][Recommendation]**. 
 
@@ -107,7 +126,7 @@ The **[Guideline Profile][Guideline]** will have 1 to 6 section element instance
 
 The **[Recommendation Profile][Recommendation]** is a Profile of **[EvidenceReport][EvidenceReport]** and is used for the composition of a recommendation (such as that from a clinical practice guideline) and may be tightly related to a **[RecommendationPlan Profile][RecommendationPlan]** of PlanDefinition and a **[RecommendationJustification Profile][RecommendationJustification]** of ArtifactAssessment. 
 
-A category element instance expresses that the composition is a "Recommendation" and additional category element instances may be used.
+The Composition.type value is set to a "Recommendation".
 
 The relatesTo element will have 1 or more instances with a type of "derived-from" which may reference **[RecommendationJustification Profile][RecommendationJustification]**, <b>PlanDefinition Resource</b>, or <b>Composition Resource</b> where the structured data for the source content of the composition is found.
 
@@ -127,7 +146,7 @@ The **[Recommendation Profile][Recommendation]** will have 1 to 5 section elemen
 
 The **[SummaryOfFindings Profile][SummaryOfFindings]** is a Profile of **[EvidenceReport][EvidenceReport]** and is used for an evidence report combining <b>Evidence</b> and <b>EvidenceVariable Resources</b>, organized around **[VariableDefinition][VariableDefinition]** (Profile of EvidenceVariable), to represent the summary of findings of comparative evidence. 
 
-A category element instance expresses that the composition is a "Summary of Findings" and additional category element instances may be used.
+The Composition.type value is set to a "Summary of Findings".
 
 The **[SummaryOfFindings Profile][SummaryOfFindings]** has 1 'Column Headers' section and 1 or more 'Summary of findings entry for a single outcome' sections.  Each 'Summary of findings entry for a single outcome' section has a focus element (section.focus) which references a **[VariableDefinition Profile][VariableDefinition]**. Each of these sections has the same set of section.section.code patterns to provide the following contained sections:
 
@@ -151,7 +170,7 @@ The **[SummaryOfFindings Profile][SummaryOfFindings]** has 1 'Column Headers' se
 
 The **[SummaryOfNetEffect Profile][SummaryOfNetEffect]** is a Profile of **[EvidenceReport][EvidenceReport]** and is used for an evidence report combining <b>ArtifactAssessment</b>, <b>Evidence</b>, and <b>EvidenceVariable Resources</b>, organized around **[VariableDefinition][VariableDefinition]** (Profile of EvidenceVariable), to represent the summary of net effect contributions of comparative evidence, adjusted for the relative importance of outcomes. 
 
-A category element instance expresses that the composition is a "Summary of Net Effect Contributions" and additional category element instances may be used.
+The Composition.type value is set to a "Summary of Net Effect Contributions".
 
 The **[SummaryOfNetEffect Profile][SummaryOfNetEffect]** has 1 'Column Headers' section, 1 or more 'Summary of net effect contributions entry for a single outcome' sections, and may have a 'Net Effect Estimate' section.  Each 'Summary of net effect contributions entry for a single outcome' section has a focus element (section.focus) which references a **[VariableDefinition Profile][VariableDefinition]**. Each of these sections and the 'Column Headers' section has the same set of section.section.code patterns to provide the following contained sections:
 
@@ -178,7 +197,7 @@ The 'Net Effect Estimate' section, if used, is limited to a single entry which r
 
 The **[EvidenceMap Profile][EvidenceMap]** is a Profile of **[EvidenceReport][EvidenceReport]** and is used for an organized listing of Resources used to generate **[EvidenceReport][EvidenceReport]** instances.
 
-A category element instance expresses that the composition is a "EvidenceMap" and additional category element instances may be used.
+The Composition.type value is set to a "EvidenceMap".
 
 The **[EvidenceMap Profile][EvidenceMap]** provides 11 optional sections with a suggested section.code.coding value and limitations of resource type for section.entry values. The 11 sections are:
 
@@ -198,7 +217,7 @@ The **[EvidenceMap Profile][EvidenceMap]** provides 11 optional sections with a 
 
 The **[M11Report Profile][M11Report]** is a Profile of **[EvidenceReport][EvidenceReport]** and is used for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification.
 
-A category element instance expresses that the composition is a "CeSHarP Report" and additional category element instances may be used.
+The Composition.type value is set to a "Clinical Trial Protocol" and "CeSHarP Report".
 
 The **[M11Report Profile][M11Report]** contains 15 sections with highly detailed instructions and is shared in the EBMonFHIR Implementation Guide for initial development and coordination with the base structures in the EBMonFHIR Implementation Guide. There will likely be a future 'M11 Report' Implementation Guide developed by a different but coordinated group.
 

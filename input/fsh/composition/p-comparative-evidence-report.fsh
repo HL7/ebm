@@ -91,7 +91,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Compara
 * section[flow].code.coding = https://fevir.net/resources/CodeSystem/179423#participant-flow "Participant Flow"
 * section[flow]
   * section 1..*
-    * focus only Reference(ParticipantFlowMeasure)
+    * focus only Reference(ParticipantFlowEvidenceVariable)
     * section 1..*
     * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code.coding"
@@ -101,22 +101,22 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Compara
     * section[comparatorEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-comparator-alone "Evidence with comparator alone"
     * section[comparatorEvidence]
       * entry 0..1 
-      * entry only Reference(ParticipantFlow)
+      * entry only Reference(ParticipantFlowEvidence)
     * section[interventionEvidence].code.coding 1..1
     * section[interventionEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-intervention-alone "Evidence with intervention alone"
     * section[interventionEvidence]
       * entry 0..1 
-      * entry only Reference(ParticipantFlow)
+      * entry only Reference(ParticipantFlowEvidence)
     * section[totalGroup].code.coding 1..1
     * section[totalGroup].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-total-group "Evidence with total group"
     * section[totalGroup]
       * entry 0..1 
-      * entry only Reference(ParticipantFlow)
+      * entry only Reference(ParticipantFlowEvidence)
     * section[comparativeEvidence].code.coding 1..1
     * section[comparativeEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-intervention-vs-comparator "Evidence with intervention vs. comparator"
     * section[comparativeEvidence]
       * entry 0..1 
-      * entry only Reference(ComparativeParticipantFlow)
+      * entry only Reference(ComparativeParticipantFlowEvidence)
 * section[outcomes].code.coding 1..1
 * section[outcomes].code.coding = https://fevir.net/resources/CodeSystem/179423#outcome-measures "Outcome Measures"
 * section[outcomes]

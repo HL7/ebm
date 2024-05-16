@@ -30,7 +30,7 @@
 [ComparativeEvidence]: StructureDefinition-comparative-evidence.html
 [ComparativeEvidenceReport]: StructureDefinition-comparative-evidence-report.html
 [ComparativeEvidenceReportSubject]: StructureDefinition-comparative-evidence-report-subject.html
-[ComparativeParticipantFlow]: StructureDefinition-comparative-participant-flow.html
+[ComparativeParticipantFlowEvidence]: StructureDefinition-comparative-participant-flow-evidence.html
 [ComparatorDefinition]: StructureDefinition-comparator-definition.html
 [ComparatorGroup]: StructureDefinition-comparator-group.html
 [ComparatorOnlyEvidence]: StructureDefinition-comparator-only-evidence.html
@@ -72,8 +72,8 @@
 [OutcomeDefinition]: StructureDefinition-outcome-definition.html
 [OutcomeImportance]: StructureDefinition-outcome-importance.html
 [OutcomeList]: StructureDefinition-outcome-list.html
-[ParticipantFlow]: StructureDefinition-participant-flow.html
-[ParticipantFlowMeasure]: StructureDefinition-participant-flow-measure.html
+[ParticipantFlowEvidence]: StructureDefinition-participant-flow-evidence.html
+[ParticipantFlowEvidenceVariable]: StructureDefinition-participant-flow-evidence-variable.html
 [PreprintCitation]: StructureDefinition-preprint-citation.html
 [Rating]: StructureDefinition-rating.html
 [Recommendation]: StructureDefinition-recommendation.html

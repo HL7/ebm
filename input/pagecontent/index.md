@@ -47,10 +47,10 @@ Profiles of <b>Evidence Resource</b> include:
     - <b>ComparatorOnlyEvidence</b>
     - <b>InterventionOnlyEvidence</b>
     - <b>BaselineMeasureEvidence</b>
-    - <b>ParticipantFlow</b>
+    - <b>ParticipantFlowEvidence</b>
   - <b>ComparativeEvidence</b> -- Profiles of <b>ComparativeEvidence</b> include:
     - <b>ComparativeBaselineMeasureEvidence</b>
-    - <b>ComparativeParticipantFlow</b>
+    - <b>ComparativeParticipantFlowEvidence</b>
     - <b>NetEffectContribution</b>
   - <b>EndpointAnalysisPlan</b>
   - <b>NetEffectEstimate</b> 
@@ -62,7 +62,7 @@ The <b>EvidenceVariable Resource</b> describes a single variable used in a stati
 Profiles of <b>EvidenceVariable Resource</b> include:
 - <b>VariableDefinition</b> is a base for all other EvidenceVariable Profiles. Profiles of <b>VariableDefinition</b> include:
   - <b>GroupAssignment</b>
-  - <b>ParticipantFlowMeasure</b>
+  - <b>ParticipantFlowEvidenceVariable</b>
 
 ### Group Resource
 

@@ -28,6 +28,6 @@ The **[VariableDefinition Profile][VariableDefinition]** is a base for all other
 
 The **[GroupAssignment Profile][GroupAssignment]** is a Profile of **[VariableDefinition][VariableDefinition]** used for **[ComparativeEvidence][ComparativeEvidence]** (for the variableDefinition in the role of 'exposure'). The **[GroupAssignment Profile][GroupAssignment]** is used to classify an <b>EvidenceVariable</b> as an exposure managed as a categorical variable. The variable definition is 'Defined by handling and category elements' and there must be at least 2 category element instances. The category element instances must have a name, and the name of one of these category element instances will be used in the **[ComparativeEvidence][ComparativeEvidence]** (in variableDefinition.comparatorCategory) to express the reference value for comparison.
 
-The **[ParticipantFlowMeasure Profile][ParticipantFlowMeasure]** is a Profile of **[VariableDefinition][VariableDefinition]** used to describe outcome measures for completion and reasons for non-completion of participation in a research study. For simplicity the handling element always has a value of 'dichotomous'.
+The **[ParticipantFlowEvidenceVariable Profile][ParticipantFlowEvidenceVariable]** is a Profile of **[VariableDefinition][VariableDefinition]** used to describe outcome measures for completion and reasons for non-completion of participation in a research study. For simplicity the handling element always has a value of 'dichotomous'.
 
 {% include link-list.md %}
