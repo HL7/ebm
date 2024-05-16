@@ -219,6 +219,6 @@ The **[M11Report Profile][M11Report]** is a Profile of **[EvidenceReport][Eviden
 
 The Composition.type value is set to a "Clinical Trial Protocol" and "CeSHarP Report".
 
-The **[M11Report Profile][M11Report]** contains 15 sections with highly detailed instructions and is shared in the EBMonFHIR Implementation Guide for initial development and coordination with the base structures in the EBMonFHIR Implementation Guide. There will likely be a future 'M11 Report' Implementation Guide developed by a different but coordinated group.
+The **[M11Report Profile][M11Report]** contains 15 sections with highly detailed instructions and is shared in the EBMonFHIR Implementation Guide for initial development and coordination with the base structures in the EBMonFHIR Implementation Guide. There will likely be a future 'M11 Report' Implementation Guide developed by a different but coordinated group. 
 
 {% include link-list.md %}
