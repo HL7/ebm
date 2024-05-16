@@ -202,6 +202,9 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * section[benefitsAndRisks].title = "Summary of Benefits and Risks"
   * section[benefitsAndRisks].code.text = "section2.2-benefits-risks"
   * section[benefitsAndRisks]
+    * text 1..1
+    * text ^comment = "Include an assessment of known and potential risks and benefits, if any, from the perspective of an individual participant, including the basis of the risk (for example, nonclinical studies or prior clinical trials). Optional level 3 subheadings are provided to assist with organization of the section; alternatively, the section may be summarized in a single section utilizing the overall benefit-risk entry point."
+  * section[benefitsAndRisks]
     * section 3..*
     * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code.text"
@@ -215,11 +218,13 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * section[riskSummary].title = "Risk Summary and Mitigation Strategy"
     * section[riskSummary].code.text = "section2.2.2-risk-summary"
     * section[riskSummary]
-      * section 3..*
+      * text 0..1
+      * text ^comment = "You may enter the entire risk summary here or use the subsections for Trial Intervention, Trial Procedures, and Other as noted below."
+    * section[riskSummary]
       * section ^slicing.discriminator.type = #value
       * section ^slicing.discriminator.path = "code.text"
       * section ^slicing.rules = #open
-      * section contains trialIntervention 1..1 MS and trialProcedures 1..1 and otherRisk 1..1
+      * section contains trialIntervention 0..1 MS and trialProcedures 0..1 and otherRisk 0..1
       * section[trialIntervention].title = "Trial-specific Intervention Risks and Mitigations"
       * section[trialIntervention].code.text = "section2.2.2.1-trial-intervention-risk-summary"
       * section[trialIntervention]
@@ -251,6 +256,9 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * section[primaryEstimands].title = "Primary Objective(s) and Associated Estimand(s)"
   * section[primaryEstimands].code.text = "section3.1-primary-objective-estimand"
   * section[primaryEstimands]
+    * text 1..1
+    * text ^comment = "For all trials, precisely state each primary and secondary trial objective by providing a meaningful and concise description of the treatment effect of interest using natural, non-technical language for clear understanding of sponsors, investigators, clinical site personnel, trial participants, ethics committees, and regulators."
+  * section[primaryEstimands]
     * section 1..*
     * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code.text"
@@ -258,6 +266,9 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * section contains objectiveEstimand 1..* MS
     * section[objectiveEstimand].title = "Primary Objective"
     * section[objectiveEstimand].code.text = "section3.1-objective-endpoint-estimand"
+    * section[objectiveEstimand]
+      * text 1..1
+      * text ^comment = "For trials intended to estimate a treatment effect or test a hypothesis related to a treatment effect, use the table to precisely describe the associated estimand(s). This includes specification of the target population, the treatment condition(s), the endpoint (or variable), the population-level summary, and each intercurrent event and the associated strategy for handling it. For other types of trials not intended to estimate a treatment effect or test a hypothesis related to a treatment effect, describe additional information relevant to the clinical question(s) of interest (e.g., the endpoint(s) associated with each objective)."
     * section[objectiveEstimand]
       * focus 1..1
       * focus only Reference(VariableDefinition)
@@ -294,6 +305,9 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
 
   * section[secondaryEstimands].title = "Secondary Objective(s) and Associated Estimand(s)"
   * section[secondaryEstimands].code.text = "section3.2-secondary-objective-estimand"
+  * section[secondaryEstimands]
+    * text 1..1
+    * text ^comment = "Describe the secondary objective(s) and associated estimand(s) as outlined in Section 3.1. Use the same approach as above and consider including a table for a precise estimand description."
   * section[secondaryEstimands]
     * section 1..*
     * section ^slicing.discriminator.type = #value
@@ -338,6 +352,9 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
 
   * section[exploratoryEstimands].title = "Exploratory Objective(s)"
   * section[exploratoryEstimands].code.text = "section3.3-exploratory-objective-estimand"
+  * section[exploratoryEstimands]
+    * text 1..1
+    * text ^comment = "State each exploratory objective. This should generally include documentation of associated exploratory endpoints. It may be helpful in some cases to describe precise estimands to provide clarity on what is being estimated."
   * section[exploratoryEstimands]
     * section 1..*
     * section ^slicing.discriminator.type = #value
@@ -865,6 +882,9 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * section[recording].title = "Recording and Follow-Up"
   * section[recording].code.text = "section9.3-recording-and-follow-up"
   * section[recording]
+    * text 1..1
+    * text ^comment = "Specify the Investigator’s actions for recording AEs and SAEs, including severity, causality, and the final outcome."
+  * section[recording]
     * section 4..*
     * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code.text"
@@ -892,6 +912,9 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
       * text ^comment = "Specify the procedures for follow-up of AEs, SAEs, pregnancy and product complaints.  Include the assessment tools that will be used to monitor the events and the duration of follow-up after appearance of the events.  Specify any procedures to be used for trials in which death is not an endpoint."
   * section[reporting].title = "Reporting"
   * section[reporting].code.text = "section9.4-reporting-events"
+  * section[reporting]
+    * text 1..1
+    * text ^comment = "Specify the SAE reporting method (for example, an electronic data collection tool or a paper CRF) and reporting timeline to the Sponsor."
   * section[reporting]
     * section 3..*
     * section ^slicing.discriminator.type = #value
