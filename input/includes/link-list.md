@@ -74,6 +74,7 @@
 [OutcomeList]: StructureDefinition-outcome-list.html
 [ParticipantFlowEvidence]: StructureDefinition-participant-flow-evidence.html
 [ParticipantFlowEvidenceVariable]: StructureDefinition-participant-flow-evidence-variable.html
+[ParticipantFlowReport]: StructureDefinition-participant-flow-report.html
 [PreprintCitation]: StructureDefinition-preprint-citation.html
 [Rating]: StructureDefinition-rating.html
 [Recommendation]: StructureDefinition-recommendation.html
