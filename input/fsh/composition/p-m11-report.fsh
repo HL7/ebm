@@ -5,7 +5,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
-* ^copyright = "This Profile is developed to support the evolving draft of the M11 Template. The ICH is the copyright holder for the M11 template and has not endorsed or sponsored this Profile."
+* ^copyright = "This Profile is developed to support the evolving draft of the M11 Template. The International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) is the copyright holder for the M11 template and has not endorsed or sponsored this Profile."
 * type.coding 1..1
 * type.coding = http://loinc.org#35528-9 "Clinical trial protocol"
 * type.text = "CeSHarP Report"
