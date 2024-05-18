@@ -661,6 +661,9 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * section[noninvestigationalTherapy].title = "Non-Investigational Trial Intervention(s)"
   * section[noninvestigationalTherapy].code.text = "section6.10-noninvestigational-interventions"
   * section[noninvestigationalTherapy]
+    * text 1..1
+    * text ^comment = "As stated in Section 6, non-investigational interventions are products used in the trial but are not part of trial objectives and hence, are not investigational trial interventions. The non-investigational trial intervention(s) may be described concisely in a table or in the following sections as applicable."
+  * section[noninvestigationalTherapy]
     * section 0..*
     * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code.text"
