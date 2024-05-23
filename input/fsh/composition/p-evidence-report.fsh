@@ -17,6 +17,6 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
 * subject only Reference(Citation or Classification or EvidenceReportSubject or ResearchStudy)
 * subject 0..1
   * ^comment = "Reference a single Citation Resource, EvidenceVariable Resource (EvidenceReportSubject Profile), or ReserchStudy Resource to define the subject of this EvidenceReport."
-* attester.mode from http://hl7.org/fhir/ValueSet/contributor-role (preferred)
-  * ^short = "reviewer | editor | endorser | informant"
+* attester.mode from EvidenceReportContributorRole (preferred)
+  * ^short = "reviewer | editor | endorser | informant | recorder"
 * section.code from $ebm-evidence-report-section-code (extensible)
