@@ -33,16 +33,14 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * content ^slicing.discriminator.type = #value
 * content ^slicing.discriminator.path = "type"
 * content ^slicing.rules = #closed
-* content contains recommendationSpecification 1..1 MS and evidence 0..1 MS and netEffect 0..1 MS and judgments 0..1 MS and considerations 0..1 MS
+* content contains recommendationSpecification 1..1 MS and evidence 0..1 MS and netEffect 0..1 MS and judgments 0..1 MS and competingInterests 0..1 MS
 * content[recommendationSpecification].informationType = http://hl7.org/fhir/artifactassessment-information-type#container
 * content[recommendationSpecification].type = https://fevir.net/resources/CodeSystem/179423#recommendation-specification "Recommendation Specification"
 * content[recommendationSpecification]
   * component ^slicing.discriminator.type = #value
   * component ^slicing.discriminator.path = "type"
   * component ^slicing.rules = #closed
-  * component contains recommendationStatement 0..1 MS and ratingSystem 0..1 MS and strengthOfRecommendation 0..1 MS and directionOfRecommendation 0..1 MS and otherRatings 0..1 and discussion 0..1 and population 0..1 MS and action 0..1 MS and oppositeAction 0..1 MS
-  * component[recommendationStatement].informationType = http://hl7.org/fhir/artifactassessment-information-type#comment
-  * component[recommendationStatement].type = https://fevir.net/resources/CodeSystem/179423#recommendation-statement "Recommendation Statement"
+  * component contains ratingSystem 0..1 MS and strengthOfRecommendation 0..1 MS and directionOfRecommendation 0..1 MS and otherRatings 0..1 and discussion 0..1
   * component[ratingSystem].informationType = http://hl7.org/fhir/artifactassessment-information-type#classifier
   * component[ratingSystem].type = https://fevir.net/resources/CodeSystem/179423#rating-system "Rating System"
   * component[strengthOfRecommendation].informationType = http://hl7.org/fhir/artifactassessment-information-type#rating
@@ -53,15 +51,6 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
   * component[otherRatings].type = https://fevir.net/resources/CodeSystem/179423#ratings "Ratings"
   * component[discussion].informationType = http://hl7.org/fhir/artifactassessment-information-type#comment
   * component[discussion].type = https://fevir.net/resources/CodeSystem/179423#discussion "Discussion"
-  * component[population].informationType = http://hl7.org/fhir/artifactassessment-information-type#container
-  * component[population].type = https://fevir.net/resources/CodeSystem/179423#population "Population"
-  * component[population].relatedArtifact ^comment = "The population Resource SHALL be the same as that referenced by the Resource in the artifactReference element."
-  * component[action].informationType = http://hl7.org/fhir/artifactassessment-information-type#container
-  * component[action].type = https://fevir.net/resources/CodeSystem/179423#action "Action"
-  * component[action].relatedArtifact ^comment = "The action Resource(s) SHALL be the same as that referenced by the Resource in the artifactReference element."
-  * component[oppositeAction].informationType = http://hl7.org/fhir/artifactassessment-information-type#container
-  * component[oppositeAction].type = https://fevir.net/resources/CodeSystem/179423#opposite-action "Opposite Action"
-  * component[oppositeAction].relatedArtifact ^comment = "The opposited action Resource(s) SHALL be the same as that referenced by the Resource in the artifactReference element."
 * content[evidence].informationType = http://hl7.org/fhir/artifactassessment-information-type#container
 * content[evidence].type = https://fevir.net/resources/CodeSystem/179423#evidence "Evidence"
 * content[evidence]
@@ -96,18 +85,8 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
   * component[equity].type = https://fevir.net/resources/CodeSystem/179423#equity "Equity"
   * component[acceptability].type = https://fevir.net/resources/CodeSystem/179423#acceptability "Acceptability"
   * component[feasibility].type = https://fevir.net/resources/CodeSystem/179423#feasibility "Feasibility"
-* content[considerations].informationType = http://hl7.org/fhir/artifactassessment-information-type#container
-* content[considerations].type = https://fevir.net/resources/CodeSystem/179423#considerations "Considerations"
-* content[considerations]
-  * component ^slicing.discriminator.type = #value
-  * component ^slicing.discriminator.path = "type"
-  * component ^slicing.rules = #closed
-  * component contains subgroupConsiderations 0..1 MS and implementationConsiderations 0..1 MS and monitoringConsiderations 0..1 MS and competingInterests 0..1 MS and researchPriorities 0..1 MS
-  * component[subgroupConsiderations].type = https://fevir.net/resources/CodeSystem/179423#subgroup-considerations "Subgroup Considerations"
-  * component[implementationConsiderations].type = https://fevir.net/resources/CodeSystem/179423#implementation-considerations "Implementation Considerations"
-  * component[monitoringConsiderations].type = https://fevir.net/resources/CodeSystem/179423#monitoring-considerations "Monitoring Considerations"
-  * component[competingInterests].type = https://fevir.net/resources/CodeSystem/179423#competing-interests "Competing Interests"
-  * component[researchPriorities].type = https://fevir.net/resources/CodeSystem/179423#research-considerations "Research Considerations"
+* content[competingInterests].informationType = http://hl7.org/fhir/artifactassessment-information-type#container
+* content[competingInterests].type = https://fevir.net/resources/CodeSystem/179423#competing-interests "Competing Interests"
 * content.classifier from recommendation-justification-classifier (extensible)
 * content.freeToShare
   * ^definition = "Acceptable to publicly share the content, specific to the associated content instance"
