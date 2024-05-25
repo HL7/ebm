@@ -128,19 +128,17 @@ The **[Recommendation Profile][Recommendation]** is a Profile of **[EvidenceRepo
 
 The Composition.type value is set to a "Recommendation".
 
-The relatesTo element will have 1 or more instances with a type of "derived-from" which may reference **[RecommendationJustification Profile][RecommendationJustification]**, <b>PlanDefinition Resource</b>, or <b>Composition Resource</b> where the structured data for the source content of the composition is found.
+The **[Recommendation Profile][Recommendation]** will have 1 or more section element instances with any of the following section.code concepts:  Recommendation Specification (required), Discussion (optional), Evidence (optional), Justification (optional), and Considerations (optional).
 
-The **[Recommendation Profile][Recommendation]** will have 1 to 5 section element instances with any of the following section.code concepts:  Recommendation Specification, Evidence, Net Effect, Judgments, and Considerations.
+..The Recommendation Specification section is required and contains sections with section.code concepts for Recommendation Statement, Population, Action, and Opposite Action.
 
-..The Recommendation Specification section is required and contains sections with section.code concepts for Recommendation Statement, Rating System, Strength of Recommendation, Direction of Recommendation, Ratings, Related Items, Discussion, Population, Action, Opposite Action, and Data Source.
+..The Discussion section may contain sections for text-based summaries.
 
-..The Evidence section contains sections with section.code concepts for Summary of Findings, Desirable Effects, Undesirable Effects, Discussion, and Data Source. The Summary of Findings, Desirable Effects, and Undesirable Effects sections contain sections with section.code concepts for Ratings and Related Items.
+..The Evidence section may contain sections for text-based summaries and may contain entries referencing ArtifactAssessment, Evidence, or Composition Resources.
 
-..The Net Effect section contains sections with section.code concepts for Summary, Ratings, Related Items, Preferences, Discussion, and Data Source. The Preferences section contains sections with section.code concepts for Ratings and Related Items.
+..The Justification section may contain sections for text-based summaries and may contain entries referencing ArtifactAssessment Resources (RecommendationJustification Profile).
 
-..The Judgments section contains sections with section.code concepts for Justification, Problem Importance, Costs, Cost-effectiveness, Equity, Acceptability, and Feasibility.  Each of these sections contain sections with section.code concepts for Ratings and Related Items.
-
-..The Considerations section contains sections with section.code concepts for Summary, Ratings, Related Items, Subgroup Considerations, Implementation Considerations, Monitoring Considerations, Competing Interests, and Research Considerations. The Subgroup Considerations, Implementation Considerations, Monitoring Considerations, Competing Interests, and Research Considerations sections contain sections with section.code concepts for Ratings and Related Items.
+..The Considerations section contains sections with section.code concepts for Summary, Subgroup Considerations, Implementation Considerations, Monitoring Considerations, Competing Interests, and Research Considerations.
 
 ### SummaryOfFindings Profile of Composition Resource
 
