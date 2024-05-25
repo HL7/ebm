@@ -130,7 +130,7 @@ The Composition.type value is set to a "Recommendation".
 
 The **[Recommendation Profile][Recommendation]** will have 1 or more section element instances with any of the following section.code concepts:  Recommendation Specification (required), Discussion (optional), Evidence (optional), Justification (optional), and Considerations (optional).
 
-..The Recommendation Specification section is required and contains sections with section.code concepts for Recommendation Statement, Population, Action, and Opposite Action.
+..The Recommendation Specification section is required and contains sections with section.code concepts for Recommendation Statement, Ratings, Population, Action, and Opposite Action.
 
 ..The Discussion section may contain sections for text-based summaries.
 

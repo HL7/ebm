@@ -23,9 +23,11 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Recomme
   * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code.coding"
   * section ^slicing.rules = #open
-  * section contains recommendationStatement 0..1 MS and population 0..1 and action 0..1 and oppositeAction 0..1
+  * section contains recommendationStatement 0..1 MS and ratings 0..1 and population 0..1 and action 0..1 and oppositeAction 0..1
   * section[recommendationStatement].code.coding 1..1
   * section[recommendationStatement].code.coding = https://fevir.net/resources/CodeSystem/179423#recommendation-statement "Recommendation Statement"
+  * section[ratings].code.coding 1..1
+  * section[ratings].code.coding = https://fevir.net/resources/CodeSystem/179423#ratings "Ratings"
   * section[population].code.coding 1..1
   * section[population].code.coding = https://fevir.net/resources/CodeSystem/179423#population "Population"
   * section[action].code.coding 1..1
