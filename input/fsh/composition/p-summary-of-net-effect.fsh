@@ -1,5 +1,5 @@
 Profile: SummaryOfNetEffect
-Parent: EvidenceReport
+Parent: EvidenceReportPackage
 Id: summary-of-net-effect
 Description: "Profile of Composition for Evidence Based Medicine IG. The SummaryOfNetEffect Profile is used for an evidence report combining ArtifactAssessment and Evidence and EvidenceVariable Resources, organized around VariableDefinition (Profile of EvidenceVariable), to represent the summary of net effect contributions of comparative evidence, adjusted for the relative importance of outcomes."
 * ^extension[$ext-fmm].valueInteger = 1

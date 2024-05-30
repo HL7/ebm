@@ -49,6 +49,7 @@
 [EvidenceMap]: StructureDefinition-evidence-map.html
 [EvidenceR6]: StructureDefinition-evidence-r6.html
 [EvidenceReport]: StructureDefinition-evidence-report.html
+[EvidenceReportPackage]: StructureDefinition-evidence-report-package.html
 [EvidenceReportSubject]: StructureDefinition-evidence-report-subject.html
 [EvidenceSynthesisEvidence]: StructureDefinition-evidence-synthesis-evidence.html
 [EvidenceVariableCategoryValueReference]: StructureDefinition-evidence-variable-category-value-reference.html

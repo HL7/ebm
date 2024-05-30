@@ -19,4 +19,9 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
   * ^comment = "Reference a single Citation Resource, EvidenceVariable Resource (EvidenceReportSubject Profile), or ReserchStudy Resource to define the subject of this EvidenceReport."
 * attester.mode from EvidenceReportContributorRole (preferred)
   * ^short = "reviewer | editor | endorser | informant | recorder"
+* relatesTo ^slicing.discriminator.type = #value
+* relatesTo ^slicing.discriminator.path = "type"
+* relatesTo ^slicing.rules = #open
+* relatesTo contains citeAs 0..1
+* relatesTo[citeAs].type = http://hl7.org/fhir/related-artifact-type#cite-as
 * section.code from $ebm-evidence-report-section-code (extensible)
