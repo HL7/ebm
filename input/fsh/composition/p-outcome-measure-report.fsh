@@ -32,17 +32,17 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Outcome
   * section[comparatorEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-comparator-alone "Evidence with comparator alone"
   * section[comparatorEvidence]
     * entry 0..1 
-    * entry only Reference(NoncomparativeEvidence)
+    * entry only Reference(NonComparativeEvidence)
   * section[interventionEvidence].code.coding 1..1
   * section[interventionEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-intervention-alone "Evidence with intervention alone"
   * section[interventionEvidence]
     * entry 0..1 
-    * entry only Reference(NoncomparativeEvidence)
+    * entry only Reference(NonComparativeEvidence)
   * section[totalGroup].code.coding 1..1
   * section[totalGroup].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-total-group "Evidence with total group"
   * section[totalGroup]
     * entry 0..1 
-    * entry only Reference(NoncomparativeEvidence)
+    * entry only Reference(NonComparativeEvidence)
   * section[comparativeEvidence].code.coding 1..1
   * section[comparativeEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-intervention-vs-comparator "Evidence with intervention vs. comparator"
   * section[comparativeEvidence]
