@@ -1,5 +1,5 @@
 Profile: ComparativeEvidenceReport
-Parent: EvidenceReport
+Parent: EvidenceReportPackage
 Id: comparative-evidence-report
 Description: "Profile of Composition for Evidence Based Medicine IG. The ComparativeEvidenceReport Profile is used for an evidence report including the study group, exposure, comparator, and findings for any number of outcomes comparing the exposure to the comparator in the study group."
 * ^extension[$ext-fmm].valueInteger = 1
@@ -56,70 +56,23 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Compara
 * section[researchStudy].code.coding 1..1
 * section[researchStudy].code.coding = https://fevir.net/resources/CodeSystem/179423#research-study "Research Study"
 * section[researchStudy]
-  * entry only Reference(ResearchStudy or Citation)
+  * entry only Reference(ResearchStudy or Citation or Composition)
 * section[baseline].code.coding 1..1
 * section[baseline].code.coding = https://fevir.net/resources/CodeSystem/179423#baseline-measures "Baseline Measures"
 * section[baseline]
-  * section 1..*
-    * focus only Reference(VariableDefinition)
-    * section 1..*
-    * section ^slicing.discriminator.type = #value
-    * section ^slicing.discriminator.path = "code.coding"
-    * section ^slicing.rules = #open
-    * section contains comparatorEvidence 0..1 MS and interventionEvidence 0..1 MS and totalGroup 0..1 MS and comparativeEvidence 0..1 MS
-    * section[comparatorEvidence].code.coding 1..1
-    * section[comparatorEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-comparator-alone "Evidence with comparator alone"
-    * section[comparatorEvidence]
-      * entry 0..1 
-      * entry only Reference(BaselineMeasureEvidence)
-    * section[interventionEvidence].code.coding 1..1
-    * section[interventionEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-intervention-alone "Evidence with intervention alone"
-    * section[interventionEvidence]
-      * entry 0..1 
-      * entry only Reference(BaselineMeasureEvidence)
-    * section[totalGroup].code.coding 1..1
-    * section[totalGroup].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-total-group "Evidence with total group"
-    * section[totalGroup]
-      * entry 0..1 
-      * entry only Reference(BaselineMeasureEvidence)
-    * section[comparativeEvidence].code.coding 1..1
-    * section[comparativeEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-intervention-vs-comparator "Evidence with intervention vs. comparator"
-    * section[comparativeEvidence]
-      * entry 0..1 
-      * entry only Reference(ComparativeBaselineMeasureEvidence)
+    * entry 0..1 
+    * entry only Reference(BaselineMeasureReport)
 * section[flow].code.coding 1..1
 * section[flow].code.coding = https://fevir.net/resources/CodeSystem/179423#participant-flow "Participant Flow"
 * section[flow]
-  * section 1..*
-    * focus only Reference(ParticipantFlowEvidenceVariable)
-    * section 1..*
-    * section ^slicing.discriminator.type = #value
-    * section ^slicing.discriminator.path = "code.coding"
-    * section ^slicing.rules = #open
-    * section contains comparatorEvidence 0..1 MS and interventionEvidence 0..1 MS and totalGroup 0..1 MS and comparativeEvidence 0..1 MS
-    * section[comparatorEvidence].code.coding 1..1
-    * section[comparatorEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-comparator-alone "Evidence with comparator alone"
-    * section[comparatorEvidence]
-      * entry 0..1 
-      * entry only Reference(ParticipantFlowEvidence)
-    * section[interventionEvidence].code.coding 1..1
-    * section[interventionEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-intervention-alone "Evidence with intervention alone"
-    * section[interventionEvidence]
-      * entry 0..1 
-      * entry only Reference(ParticipantFlowEvidence)
-    * section[totalGroup].code.coding 1..1
-    * section[totalGroup].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-total-group "Evidence with total group"
-    * section[totalGroup]
-      * entry 0..1 
-      * entry only Reference(ParticipantFlowEvidence)
-    * section[comparativeEvidence].code.coding 1..1
-    * section[comparativeEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-intervention-vs-comparator "Evidence with intervention vs. comparator"
-    * section[comparativeEvidence]
-      * entry 0..1 
-      * entry only Reference(ComparativeParticipantFlowEvidence)
+    * entry 0..1 
+    * entry only Reference(ParticipantFlowReport)
 * section[outcomes].code.coding 1..1
 * section[outcomes].code.coding = https://fevir.net/resources/CodeSystem/179423#outcome-measures "Outcome Measures"
 * section[outcomes]
+    * entry 0..*
+    * entry only Reference(OutcomeMeasureReport or SummaryOfFindings)
+
   * section 1..*
     * focus only Reference(VariableDefinition)
     * section 1..*

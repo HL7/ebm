@@ -73,6 +73,7 @@
 [OutcomeDefinition]: StructureDefinition-outcome-definition.html
 [OutcomeImportance]: StructureDefinition-outcome-importance.html
 [OutcomeList]: StructureDefinition-outcome-list.html
+[OutcomeMeasureReport]: StructureDefinition-outcome-measure-report.html
 [ParticipantFlowEvidence]: StructureDefinition-participant-flow-evidence.html
 [ParticipantFlowEvidenceVariable]: StructureDefinition-participant-flow-evidence-variable.html
 [ParticipantFlowReport]: StructureDefinition-participant-flow-report.html
