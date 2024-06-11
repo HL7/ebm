@@ -60,38 +60,15 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Compara
 * section[baseline].code.coding 1..1
 * section[baseline].code.coding = https://fevir.net/resources/CodeSystem/179423#baseline-measures "Baseline Measures"
 * section[baseline]
-    * entry 0..1 
-    * entry only Reference(BaselineMeasureReport)
+  * entry 0..1 
+  * entry only Reference(BaselineMeasureReport)
 * section[flow].code.coding 1..1
 * section[flow].code.coding = https://fevir.net/resources/CodeSystem/179423#participant-flow "Participant Flow"
 * section[flow]
-    * entry 0..1 
-    * entry only Reference(ParticipantFlowReport)
+  * entry 0..1 
+  * entry only Reference(ParticipantFlowReport)
 * section[outcomes].code.coding 1..1
 * section[outcomes].code.coding = https://fevir.net/resources/CodeSystem/179423#outcome-measures "Outcome Measures"
 * section[outcomes]
-    * entry 0..*
-    * entry only Reference(OutcomeMeasureReport or SummaryOfFindings)
-
-  * section 1..*
-    * focus only Reference(VariableDefinition)
-    * section 1..*
-    * section ^slicing.discriminator.type = #value
-    * section ^slicing.discriminator.path = "code.coding"
-    * section ^slicing.rules = #open
-    * section contains comparatorEvidence 0..1 MS and interventionEvidence 0..1 MS and comparativeEvidence 1..1 MS
-    * section[comparatorEvidence].code.coding 1..1
-    * section[comparatorEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-comparator-alone "Evidence with comparator alone"
-    * section[comparatorEvidence]
-      * entry 0..1 
-      * entry only Reference(ComparatorOnlyEvidence)
-    * section[interventionEvidence].code.coding 1..1
-    * section[interventionEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-intervention-alone "Evidence with intervention alone"
-    * section[interventionEvidence]
-      * entry 0..1 
-      * entry only Reference(InterventionOnlyEvidence)
-    * section[comparativeEvidence].code.coding 1..1
-    * section[comparativeEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-intervention-vs-comparator "Evidence with intervention vs. comparator"
-    * section[comparativeEvidence]
-      * entry 0..1 
-      * entry only Reference(ComparativeEvidence)
+  * entry 0..*
+  * entry only Reference(OutcomeMeasureReport or SummaryOfFindings)
