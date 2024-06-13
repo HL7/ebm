@@ -90,7 +90,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * section[sponsorname].code.text = "section0.14-sponsor-name-address"
   * section[sponsorname]
     * text 1..1
-    * text ^comment = "<Enter Sponsor Name> <Enter Sponsor Legal Address> <Enter Co-Sponsor Name> <Enter Co-Sponsor Legal Address> Provide the legal name of the individual or pharmaceutical or medical device company, governmental agency, academic institution, private organisation, or other organisation who takes primary responsibility for and initiates a clinical investigation.  If more than one Sponsor, list the Primary Sponsor in this field.   Local Sponsor Name and Address: <Enter Local Sponsor Name> <Enter Local Sponsor Address> In some countries, the clinical trial Sponsor may be the local affiliate company (or designee).  In such cases, indicate in the Sponsor Local Name and Address Field."
+    * text ^comment = "Enter Sponsor Name, Enter Sponsor Legal Address, Enter Co-Sponsor Name, Enter Co-Sponsor Legal Address. Provide the legal name of the individual or pharmaceutical or medical device company, governmental agency, academic institution, private organisation, or other organisation who takes primary responsibility for and initiates a clinical investigation.  If more than one Sponsor, list the Primary Sponsor in this field.   Local Sponsor Name and Address: Enter Local Sponsor Name, Enter Local Sponsor Address. In some countries, the clinical trial Sponsor may be the local affiliate company (or designee).  In such cases, indicate in the Sponsor Local Name and Address Field."
   * section[manufacturer].title = "Manufacturer Name and Address"
   * section[manufacturer].code.text = "section0.15-manufacturer"
   * section[manufacturer]
@@ -100,12 +100,12 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * section[regulatoryidentifiers].code.text = "section0.16-regulatory-identifiers"
   * section[regulatoryidentifiers]
     * text 1..1
-    * text ^comment = "<EU CT Number><IDE Number><FDA IND Number><JRCT Number><NCT Number><NMPA IND Number><WHO/UTN Number><Other Regulatory Agency Identifier Number> Include all numbers that are applicable for the trial and available at the time of protocol or amendment finalisation.  Delete prompts for numbers not available at the time of document finalisation.  Delete unused fields.  Add fields for “other” if more than one is needed."
+    * text ^comment = "Include any of EU CT Number, IDE Number, FDA IND Number, JRCT Number, NCT Number, NMPA IND Number, WHO/UTN Number, Other Regulatory Agency Identifier Number. Include all numbers that are applicable for the trial and available at the time of protocol or amendment finalisation.  Delete prompts for numbers not available at the time of document finalisation.  Delete unused fields.  Add fields for “other” if more than one is needed."
   * section[sponsorapproval].title = "Sponsor Approval Date"
   * section[sponsorapproval].code.text = "section0.17-sponsor-approval-date"
   * section[sponsorapproval]
     * text 1..1
-    * text ^comment = "<Enter Approval Date or state location where information can be found> All versions should be uniquely identifiable.  Use the CDISC date format (dd/mmm/yyyy, for example 07/JUN/2015) to indicate the date the protocol (or amendment) was approved by the Sponsor."
+    * text ^comment = "Enter Approval Date or state location where information can be found. All versions should be uniquely identifiable.  Use the CDISC date format (dd/mmm/yyyy, for example 07/JUN/2015) to indicate the date the protocol (or amendment) was approved by the Sponsor."
   * section[signatory].title = "Sponsor Signatory"
   * section[signatory].code.text = "section0.18-sponsor-signatory"
   * section[signatory]
@@ -120,7 +120,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * section[saereporting].code.text = "section0.20-sae-reporting-method"
   * section[saereporting]
     * text 1..1
-    * text ^comment = "Report Serious Adverse Events to the sponsor <Enter SAE reporting method(s)> Refer to Section 9.4 for detailed reporting instructions."
+    * text ^comment = "Report Serious Adverse Events to the sponsor. Enter SAE reporting method(s). Refer to Section 9.4 for detailed reporting instructions."
   * section[amendment].title = "Amendment Details"
   * section[amendment].code.text = "section0.21-amendment-details"
   * section[amendment]
