@@ -4,7 +4,7 @@
 The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.ebm, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World') (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
 
 # Suppressing the warnings about reference to jurisdiction elements (now deprecated) becuase errors in IG Publisher if jurisdiction elements are not present.
-Reference to deprecated item http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
+Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
 
 # Suppressing the slicing information hints about not recognizing extensions for structuredefinition-wg as this is an artifact of SUSHI adding the extension to examples
 This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
@@ -32,9 +32,21 @@ The definition for the Code System with URI 'urn:oid:2.16.840.1.113883.6.238' do
 # Suppressing warning about using a retired code 'pooled' - this is the appropriate code and we will consider bringing it out of retirement
 The code 'pooled' is valid but is retired
 
+# Suppressing hints where referenced CodeSystem Resources are outside the control of the EBMonFHIR IG and these CodeSystem Resources have draft status.
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/directness|2.0.0
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/statistic-type|1.0.0
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/attribute-estimate-type|1.0.0
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/organization-type|2.0.0
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/synthesis-type|4.0.1
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/library-type|1.0.0
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/plan-definition-type|1.0.0
+
 # Suppressing hints where CodeSystem Resources referenced by extensions are outside the control of the EBMonFHIR IG and these CodeSystem Resources have draft status.
 Reference to draft item http://hl7.org/fhir/hl7-work-group|1.0.0
 Reference to draft item http://hl7.org/fhir/standards-status|1.0.0
+
+# Suppressing message that a CodeSysem in R5 is draft (unable to change R5)
+Reference to draft CodeSystem http://hl7.org/fhir/characteristic-offset|5.0.0
 
 # Suppressing message that a CodeSysem in R5 is experimental (unable to change R5)
 Reference to experimental CodeSystem http://hl7.org/fhir/citation-artifact-classifier|5.0.0
