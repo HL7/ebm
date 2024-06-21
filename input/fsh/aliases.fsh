@@ -31,3 +31,5 @@ Alias: $ext-copyright = http://hl7.org/fhir/StructureDefinition/artifact-copyrig
 Alias: $ext-copyrightLabel = http://hl7.org/fhir/StructureDefinition/artifact-copyrightLabel
 Alias: $ext-author = http://hl7.org/fhir/StructureDefinition/artifact-author
 Alias: $ext-relatedArtifact = http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact
+
+Alias: $ext-characteristic-method = http://hl7.org/fhir/6.0/StructureDefinition/extension-Group.characteristic.method

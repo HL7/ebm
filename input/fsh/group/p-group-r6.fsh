@@ -27,7 +27,7 @@ Description: "Profile of Group for Evidence Based Medicine IG. The GroupR6 Profi
   * extension contains CharacteristicValueUri named valueUri 0..1
   * extension contains CharacteristicValueExpression named valueExpression 0..1
   * extension contains CharacteristicDescription named description 0..1
-  * extension contains CharacteristicMethod named method 0..*
+  * extension contains $ext-characteristic-method named method 0..*
   * extension contains CharacteristicDeterminedByReference named determinedByReference 0..1
   * extension contains CharacteristicDeterminedByExpression named determinedByExpression 0..1
   * extension contains CharacteristicOffset named offset 0..1
