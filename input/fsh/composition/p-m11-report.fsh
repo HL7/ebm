@@ -110,7 +110,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * section[signatory].code.text = "section0.18-sponsor-signatory"
   * section[signatory]
     * text 1..1
-    * text ^comment = "Include either the sponsor signature (name and title of sponsor signatory and signature date) or the statement {This protocol was approved via <describe method> as described on the approval page appended to the document.}."
+    * text ^comment = "Include either the sponsor signature (name and title of sponsor signatory and signature date) or the statement {This protocol was approved via [describe method] as described on the approval page appended to the document.}."
   * section[medicalexpert].title = "Medical Expert Contact"
   * section[medicalexpert].code.text = "section0.19-medical-expert-contact"
   * section[medicalexpert]
