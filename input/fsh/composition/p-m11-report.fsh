@@ -20,7 +20,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code.text"
   * section ^slicing.rules = #open
-  * section contains confidentiality 0..1 MS and title 1..1 MS and acronym 0..1 MS and identifier 0..1 MS and original 1..1 MS and version 0..1 MS and versiondate 0..1 MS and amendmentidentifier 0..1 MS and amendmentscope 0..1 MS and compoundcode 0..1 MS and compoundname 0..1 MS and trialphase 1..1 MS and shorttitle 0..1 MS and sponsorname 1..1 MS and manufacturer 0..1 MS and regulatoryidentifiers 1..1 MS and sponsorapproval 1..1 MS and signatory 1..1 MS and medicalexpert 1..1 MS and saereporting 1..1 MS and amendment 1..1 MS
+  * section contains confidentiality 0..1 MS and title 1..1 MS and acronym 0..1 MS and identifier 1..1 MS and original 1..1 MS and version 0..1 MS and versiondate 0..1 MS and amendmentidentifier 0..1 MS and amendmentscope 0..1 MS and compoundcode 0..1 MS and compoundname 0..1 MS and trialphase 1..1 MS and shorttitle 0..1 MS and sponsorname 1..1 MS and manufacturer 0..1 MS and regulatoryidentifiers 1..1 MS and sponsorapproval 1..1 MS and signatory 1..1 MS and medicalexpert 1..1 MS and saereporting 1..1 MS and amendment 1..1 MS
   * section[confidentiality].title = "Sponsor Confidentiality Statement"
   * section[confidentiality].code.text = "section0.1-sponsor-confidentiality-statement"
   * section[confidentiality]
