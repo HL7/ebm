@@ -7,3 +7,13 @@ Description: "Profile of CodeSystem for Evidence Based Medicine IG. The DataDict
 * ^extension[$ext-standards-status].valueCode = #draft
 * url 1..1
 * topic 0..0
+* property ^slicing.discriminator.type = #value
+* property ^slicing.discriminator.path = "code"
+* property ^slicing.rules = #open
+* property contains datatype 0..1 MS and unitsOfMeasure 0..1 MS
+* property[datatype].code = #Datatype
+* property[datatype].uri = "http://hl7.org/fhir/uv/ebm/StructureDefinition/data-dictionary"
+* property[datatype].type = #string
+* property[unitsOfMeasure].code = #Units
+* property[unitsOfMeasure].uri = "http://hl7.org/fhir/uv/ebm/StructureDefinition/data-dictionary"
+* property[unitsOfMeasure].type = #string
