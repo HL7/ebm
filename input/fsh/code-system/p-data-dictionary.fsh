@@ -12,8 +12,6 @@ Description: "Profile of CodeSystem for Evidence Based Medicine IG. The DataDict
 * property ^slicing.rules = #open
 * property contains datatype 0..1 MS and unitsOfMeasure 0..1 MS
 * property[datatype].code = #Datatype
-* property[datatype].uri = "http://hl7.org/fhir/uv/ebm/StructureDefinition/data-dictionary"
 * property[datatype].type = #string
 * property[unitsOfMeasure].code = #Units
-* property[unitsOfMeasure].uri = "http://hl7.org/fhir/uv/ebm/StructureDefinition/data-dictionary"
 * property[unitsOfMeasure].type = #string
