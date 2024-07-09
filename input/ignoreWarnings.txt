@@ -38,6 +38,10 @@ Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/synthesis-ty
 # Suppressing message that a CodeSystem in R5 is experimental (unable to change R5)
 Reference to experimental CodeSystem http://hl7.org/fhir/citation-artifact-classifier|5.0.0
 
+# Suppressing message that a CodeSystem property has a code without a URI; these properties were used in a DataDictionary Profile where these properties are not precisely terminology concepts
+This property has only a code ('Datatype') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
+This property has only a code ('Units') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
+
 # Suppressing message that a CodeSystem property has a code without a URI; these properties were used for terminology development in the CodeSystem provided for term reference and are not part of the IG we are demonstrating
 This property has only a code ('editors') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
 This property has only a code ('approval') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
