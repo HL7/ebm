@@ -59,13 +59,21 @@ The Composition.type value is set to a "Comparative Evidence Report".
 ..An 'Outcome Measures' section is required. The 'Outcome Measures' section entry element is limited to reference **[OutcomeMeasureReport Profile][OutcomeMeasureReport]** or **[SummaryOfFindings Profile][SummaryOfFindings]**.
 
 
+### EvidenceMeasureReportPackage Profile of Composition Resource
+
+The **[EvidenceMeasureReportPackage Profile][EvidenceMeasureReportPackage]** is used for a base structure to extend the **[EvidenceReport Profile][EvidenceReport]** with optional relatesTo slices for Total Group, Intervention Group, Comparator Group, and Group Assignment.
+
+The relatesTo element may include instances with type values of "depends-on", label values to identify the contextual use of specific Group Resources (such as "Intervention Group", "Comparator Group", and "Total Group"), and resourceReference values which may be limited to reference **[StudyGroup][StudyGroup]**, **[ExposureGroup][ExposureGroup]**, or **[ComparatorGroup][ComparatorGroup]** Profiles.
+
+The relatesTo element may include instances with type values of "composed-of", label values of "Group Assignment" to identify the contextual use of specific EvidenceVariable Resources, and resourceReference values which may be limited to reference **[GroupAssignment][GroupAssignment]** Profiles.
+
 ### BaselineMeasureReport Profile of Composition Resource
 
-The **[BaselineMeasureReport Profile][BaselineMeasureReport]** is a Profile of **[EvidenceReport][EvidenceReport]** and is used for an evidence report including the findings for any number of baseline measures in a research study. 
+The **[BaselineMeasureReport Profile][BaselineMeasureReport]** is a Profile of **[EvidenceMeasureReportPackage][EvidenceMeasureReportPackage]** and is used for an evidence report including the findings for any number of baseline measures in a research study. 
 
 The Composition.type value is set to a "Baseline Measure Report".
 
-The relatesTo element may include instances with type values of "depends-on", label values to identify the contextual use of specific Group Resources (such as "Intervention Group", "Comparator Group", and "Total Group"), and resourceReference values which may be limited to reference **[StudyGroup][StudyGroup]**, **[ExposureGroup][ExposureGroup]**, or **[ComparatorGroup][ComparatorGroup]** Profiles.
+The relatesTo element may include instances with type values of "derived-from", label values of "Baseline Measure" to identify the contextual use of specific EvidenceVariable Resources, and resourceReference values which may be limited to reference **[VariableDefinition][VariableDefinition]** Profiles.
 
 The section element contains one or more instances (sections) with each of these sections identified by focus (Composition.section.focus) which references a **[VariableDefinition Profile][VariableDefinition]**. Each of these focused sections contain one or more of the following sections:
 
@@ -80,13 +88,13 @@ The section element contains one or more instances (sections) with each of these
 
 ### ParticipantFlowReport Profile of Composition Resource
 
-The **[ParticipantFlowReport Profile][ParticipantFlowReport]** is a Profile of **[EvidenceReport][EvidenceReport]** and is used for an evidence report including the counts (and proportions) for any number of participant flow measures in a research study. For example, the ParticipantFlowReport may include the data for a CONSORT Participant Flow Diagram reported with a randomized controlled trial.
+The **[ParticipantFlowReport Profile][ParticipantFlowReport]** is a Profile of **[EvidenceMeasureReportPackage][EvidenceMeasureReportPackage]** and is used for an evidence report including the counts (and proportions) for any number of participant flow measures in a research study. For example, the ParticipantFlowReport may include the data for a CONSORT Participant Flow Diagram reported with a randomized controlled trial.
 
 The Composition.type value is set to a "Participant Flow Report".
 
-The relatesTo element may include instances with type values of "depends-on", label values to identify the contextual use of specific Group Resources (such as "Intervention Group", "Comparator Group", and "Total Group"), and resourceReference values which may be limited to reference **[StudyGroup][StudyGroup]**, **[ExposureGroup][ExposureGroup]**, or **[ComparatorGroup][ComparatorGroup]** Profiles.
+The relatesTo element may include instances with type values of "derived-from", label values of "Participant Flow Measure" to identify the contextual use of specific EvidenceVariable Resources, and resourceReference values which may be limited to reference **[ParticipantFlowEvidenceVariable][ParticipantFlowEvidenceVariable]** Profiles.
 
-The section element contains one or more instances (sections) with each of these sections identified by focus (Composition.section.focus) which references a **[VariableDefinition Profile][VariableDefinition]**. Each of these focused sections contain one or more of the following sections:
+The section element contains one or more instances (sections) with each of these sections identified by focus (Composition.section.focus) which references a **[ParticipantFlowEvidenceVariable Profile][ParticipantFlowEvidenceVariable]**. Each of these focused sections contain one or more of the following sections:
 
 ..Composition.section.section[comparatorEvidence] has a section.code value for 'Evidence with comparator alone' and entries limited to a single reference of a **[ParticipantFlowEvidence Profile][ParticipantFlowEvidence]**.
 
@@ -100,11 +108,11 @@ The section element contains one or more instances (sections) with each of these
 
 ### OutcomeMeasureReport Profile of Composition Resource
 
-The **[OutcomeMeasureReport Profile][OutcomeMeasureReport]** is a Profile of **[EvidenceReport][EvidenceReport]** and is used for an evidence report including the findings for any number of outcome measures in a research study. 
+The **[OutcomeMeasureReport Profile][OutcomeMeasureReport]** is a Profile of **[EvidenceMeasureReportPackage][EvidenceMeasureReportPackage]** and is used for an evidence report including the findings for any number of outcome measures in a research study. 
 
 The Composition.type value is set to an "Outcome Measure Report".
 
-The relatesTo element may include instances with type values of "depends-on", label values to identify the contextual use of specific Group Resources (such as "Intervention Group", "Comparator Group", and "Total Group"), and resourceReference values which may be limited to reference **[StudyGroup][StudyGroup]**, **[ExposureGroup][ExposureGroup]**, or **[ComparatorGroup][ComparatorGroup]** Profiles.
+The relatesTo element may include instances with type values of "derived-from", label values of "Outcome Measure" to identify the contextual use of specific EvidenceVariable Resources, and resourceReference values which may be limited to reference **[VariableDefinition][VariableDefinition]** Profiles.
 
 The section element contains one or more instances (sections) with each of these sections identified by focus (Composition.section.focus) which references a **[VariableDefinition Profile][VariableDefinition]**. Each of these focused sections contain one or more of the following sections:
 

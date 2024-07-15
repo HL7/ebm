@@ -22,7 +22,11 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
 * relatesTo ^slicing.discriminator.type = #value
 * relatesTo ^slicing.discriminator.path = "label"
 * relatesTo ^slicing.rules = #open
-* relatesTo contains citeAs 0..1
+* relatesTo contains citeAs 0..1 and partOf 0..* and derivedFrom 0..*
 * relatesTo[citeAs].type = http://hl7.org/fhir/related-artifact-type#cite-as
 * relatesTo[citeAs].label = "Cite as"
+* relatesTo[partOf].type = http://hl7.org/fhir/related-artifact-type#part-of
+* relatesTo[partOf].label = "Part of"
+* relatesTo[derivedFrom].type = http://hl7.org/fhir/related-artifact-type#derived-from
+* relatesTo[derivedFrom].label = "Derived from"
 * section.code from $ebm-evidence-report-section-code (extensible)

@@ -1,5 +1,5 @@
 Profile: ParticipantFlowReport
-Parent: EvidenceReport
+Parent: EvidenceMeasureReportPackage
 Id: participant-flow-report
 Description: "Profile of Composition for Evidence Based Medicine IG. The ParticipantFlowReport Profile is used for an evidence report including the counts (and proportions) for any number of participant flow measures in a research study. For example, the ParticipantFlowReport may include the data for a CONSORT Participant Flow Diagram reported with a randomized controlled trial."
 * ^extension[$ext-fmm].valueInteger = 1
@@ -8,20 +8,13 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Partici
 * type.coding 1..1
 * type.coding = https://fevir.net/resources/CodeSystem/179423#ParticipantFlowReport "ParticipantFlowReport"
 * type.text = "Participant Flow Report"
-* relatesTo 1..*
 * relatesTo ^slicing.discriminator.type = #value
 * relatesTo ^slicing.discriminator.path = "label"
 * relatesTo ^slicing.rules = #open
-* relatesTo contains interventionGroup 0..* MS and comparatorGroup 0..* MS and totalGroup 0..1 MS
-* relatesTo[interventionGroup].type = #depends-on
-* relatesTo[interventionGroup].label = "Intervention Group"
-* relatesTo[interventionGroup].resourceReference only Reference(ExposureGroup or ComparatorGroup)
-* relatesTo[comparatorGroup].type = #depends-on
-* relatesTo[comparatorGroup].label = "Comparator Group"
-* relatesTo[comparatorGroup].resourceReference only Reference(ExposureGroup or ComparatorGroup)
-* relatesTo[totalGroup].type = #depends-on
-* relatesTo[totalGroup].label = "Total Group"
-* relatesTo[totalGroup].resourceReference only Reference(StudyGroup)
+* relatesTo contains flowMeasure 0..* MS
+* relatesTo[flowMeasure].type = #depends-on
+* relatesTo[flowMeasure].label = "Participant Flow Measure"
+* relatesTo[flowMeasure].resourceReference only Reference(ParticipantFlowEvidenceVariable)
 * section 1..*
   * focus only Reference(ParticipantFlowEvidenceVariable)
   * section ^slicing.discriminator.type = #value

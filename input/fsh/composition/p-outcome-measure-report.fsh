@@ -1,5 +1,5 @@
 Profile: OutcomeMeasureReport
-Parent: EvidenceReport
+Parent: EvidenceMeasureReportPackage
 Id: outcome-measure-report
 Description: "Profile of Composition for Evidence Based Medicine IG. The OutcomeMeasureReport Profile is used for an evidence report including the findings for any number of outcome measures in a research study."
 * ^extension[$ext-fmm].valueInteger = 1
@@ -8,20 +8,13 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Outcome
 * type.coding 1..1
 * type.coding = https://fevir.net/resources/CodeSystem/179423#OutcomeMeasureReport "OutcomeMeasureReport"
 * type.text = "Outcome Measure Report"
-* relatesTo 1..*
 * relatesTo ^slicing.discriminator.type = #value
 * relatesTo ^slicing.discriminator.path = "label"
 * relatesTo ^slicing.rules = #open
-* relatesTo contains interventionGroup 0..* MS and comparatorGroup 0..* MS and totalGroup 0..1 MS
-* relatesTo[interventionGroup].type = #depends-on
-* relatesTo[interventionGroup].label = "Intervention Group"
-* relatesTo[interventionGroup].resourceReference only Reference(ExposureGroup or ComparatorGroup)
-* relatesTo[comparatorGroup].type = #depends-on
-* relatesTo[comparatorGroup].label = "Comparator Group"
-* relatesTo[comparatorGroup].resourceReference only Reference(ExposureGroup or ComparatorGroup)
-* relatesTo[totalGroup].type = #depends-on
-* relatesTo[totalGroup].label = "Total Group"
-* relatesTo[totalGroup].resourceReference only Reference(StudyGroup)
+* relatesTo contains outcomeMeasure 0..* MS
+* relatesTo[outcomeMeasure].type = #depends-on
+* relatesTo[outcomeMeasure].label = "Outcome Measure"
+* relatesTo[outcomeMeasure].resourceReference only Reference(VariableDefinition)
 * section 1..*
   * focus only Reference(VariableDefinition)
   * section ^slicing.discriminator.type = #value
