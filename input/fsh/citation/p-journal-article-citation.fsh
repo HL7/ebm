@@ -11,7 +11,7 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The JournalArt
   * classification ^slicing.discriminator.type = #value
   * classification ^slicing.discriminator.path = "type.coding"
   * classification ^slicing.rules = #open
-  * classification contains knowledgeArtifactType 1..1 MS and publishingModel 0..1 and publicationType 0..1 and citationSubset 0..1 and studyDesign 0..1 and definedInText 0..* and meshHeading 0..1 and chemical 0..1
+  * classification contains knowledgeArtifactType 1..1 MS and publishingModel 0..1 and publicationType 0..1 and citationSubset 0..1 and studyDesign 0..1 and definedInText 0..* and meshHeading 0..1 and chemical 0..1 and keyword 0..1
   * classification[knowledgeArtifactType].type.coding 1..1
   * classification[knowledgeArtifactType].type.coding = http://hl7.org/fhir/cited-artifact-classification-type#knowledge-artifact-type "Knowledge Artifact Type"
   * classification[knowledgeArtifactType]
@@ -33,6 +33,8 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The JournalArt
   * classification[definedInText].type.coding 1..1
   * classification[definedInText].type.coding = https://fevir.net/resources/CodeSystem/179423#defined-in-text "Defined in text"
   * classification[meshHeading].type.coding 1..1
-  * classification[meshHeading].type.coding = http://hl7.org/fhir/cited-artifact-classification-type#mesh-heading "MeSH Heading"
+  * classification[meshHeading].type.coding = http://hl7.org/fhir/cited-artifact-classification-type#mesh-heading "MeSH heading"
+  * classification[keyword].type.coding 1..1
+  * classification[keyword].type.coding = http://hl7.org/fhir/cited-artifact-classification-type#keyword "Keyword"
   * classification[chemical].type.coding 1..1
   * classification[chemical].type.coding = http://hl7.org/fhir/cited-artifact-classification-type#chemical "Chemical"
