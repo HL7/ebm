@@ -8,6 +8,13 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Compara
 * type.coding 1..1
 * type.coding = https://fevir.net/resources/CodeSystem/179423#ComparativeEvidenceReport "ComparativeEvidenceReport"
 * type.text = "Comparative Evidence Report"
+* relatesTo ^slicing.discriminator.type = #value
+* relatesTo ^slicing.discriminator.path = "label"
+* relatesTo ^slicing.rules = #open
+* relatesTo contains groupAssignment 0..*
+* relatesTo[groupAssignment].type = #composed-of
+* relatesTo[groupAssignment].label = "Group Assignment"
+* relatesTo[groupAssignment].resourceReference only Reference(GroupAssignment)
 * section 5..*
 * section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code.coding"
