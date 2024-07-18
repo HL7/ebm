@@ -56,6 +56,7 @@ This property has only the standard code ('comment') but not the standard URI 'h
 
 # Suppressing message that a slice is not found in a base Profile (but it is used in a derivative Profile) in a Resource mapped to 2 Profiles
 This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report-package|1.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-measure-report-package|1.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice) 
 
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 # (And include comments like this justifying why)
