@@ -6,7 +6,7 @@ Description: "Profile of ResearchStudy for Evidence Based Medicine IG. The Syste
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
 * extension contains ResearchStudySearchStrategy named searchStrategy 0..*
-* extension contains ResearchStudyStudyEligibilityCriteria named studyEligibiltiyCriteria 0..1
+* extension contains ResearchStudySystematicReviewEligibilityCriteria named systematicReviewEligibilityCriteria 0..1
 * extension contains ResearchStudyNumberOfStudiesIdentified named numberOfStudiesIdentified 0..1
 * extension contains ResearchStudyNumberOfStudiesIncluded named numberOfStudiesIncluded 0..1
 * extension contains ResearchStudyIncludedStudy named includedStudy 0..*
