@@ -104,6 +104,7 @@
 [StudyGroup]: StructureDefinition-study-group.html
 [SummaryOfFindings]: StructureDefinition-summary-of-findings.html
 [SummaryOfNetEffect]: StructureDefinition-summary-of-net-effect.html
+[SystematicReview]: StructureDefinition-systematic-review.html
 [SystematicReviewEligibilityCriteria]: StructureDefinition-systematic-review-eligibility-criteria.html
 [SystematicReviewExcludedStudies]: StructureDefinition-systematic-review-excluded-studies.html
 [SystematicReviewIncludedStudies]: StructureDefinition-systematic-review-included-studies.html

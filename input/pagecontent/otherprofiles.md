@@ -1,8 +1,12 @@
+### SystematicReview Profile of ResearchStudy Resource
+
+The **[SystematicReview Profile][SystematicReview]** is a Profile of <b>ResearchStudy Resource</b> and is used for .
+
 ### DataDictionary Profile of CodeSystem Resource
 
-The **[DataDictionary Profile][DataDictionary]** is a Profile of <b>CodeSystem Resource</b> and is used for a code key for variable names in a dataset.
+The **[DataDictionary Profile][DataDictionary]** is a Profile of <b>CodeSystem Resource</b> and is used for a scientific study based on a protocol that includes search and selection of eligible studies, study quality assessment, data extraction, and synthesis.
 
-A url is required to provide accessibility for the data dictionary.
+Extensions are provided for searchStrategy, systematicReviewEligibilityCriteria, numberOfStudiesIdentified, numberOfStudiesIncluded, includedStudy, excludedStudy, and resultAsComposition.
 
 ### RecommendationAction Profile of ActivityDefinition Resource
 
