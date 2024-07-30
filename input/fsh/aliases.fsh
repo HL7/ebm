@@ -7,6 +7,7 @@ Alias: $cpg-common-persona = http://hl7.org/fhir/uv/cpg/ValueSet/cpg-common-pers
 Alias: $ebm-evidence-variable-role-subtype = https://fevir.net/resources/ValueSet/179424
 Alias: $ebm-evidence-report-section-code = https://fevir.net/resources/ValueSet/179431
 Alias: $ebm-risk-of-bias-type = https://fevir.net/resources/ValueSet/181524
+Alias: $ebm-search-strategy-characteristic-code = https://fevir.net/resources/ValueSet/265087
 
  // Aliases for common structure definition extensions
 Alias: $ext-fmm = http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm
