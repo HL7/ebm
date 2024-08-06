@@ -31,5 +31,5 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The Estimand P
 * statistic.statisticType 1..1
 * statistic.modelCharacteristic 1..1
   * ^comment = "TBD for Handling of intercurrent events"
-  * code.text = "Handling of intercurrent events"
-
+  * code.coding 1..1
+  * code.coding = https://fevir.net/resources/CodeSystem/179423#handling-ICE "Handling of intercurrent events"
