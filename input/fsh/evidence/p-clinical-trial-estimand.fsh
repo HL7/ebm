@@ -1,7 +1,7 @@
-Profile: Estimand
+Profile: ClinicalTrialEstimand
 Parent: EvidenceR6
-Id: estimand
-Description: "Profile of Evidence for Evidence Based Medicine IG. The Estimand Profile is used to specify the quantity estimated in order to address the study's research objective. The estimand consists of the following five attributes: Population, Treatment conditions, Variable (or Endpoint), Population-level summary (or Summary measure), and Handling of intercurrent events."
+Id: clinical-trial-estimand
+Description: "Profile of Evidence for Evidence Based Medicine IG. The ClinicalTrialEstimand Profile is used to specify the quantity estimated in order to address the clinical trial's research objective. The estimand consists of the following five attributes: Population, Treatment conditions, Variable (or Endpoint), Population-level summary (or Summary measure), and Handling of intercurrent events."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
@@ -25,11 +25,22 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The Estimand P
   * extension[variableRoleCode].valueCode = #outcome
   * note.text = "outcome"
   * extension[VariableDefinitionComparatorCategory] 0..0
-  * observed only Reference(VariableDefinition)
+  * observed only Reference(EvidenceVariable)
   * intended only Reference(EvidenceVariable)
 * statistic 1..*
 * statistic.statisticType 1..1
-* statistic.modelCharacteristic 1..1
-  * ^comment = "TBD for Handling of intercurrent events"
-  * code.coding 1..1
-  * code.coding = https://fevir.net/resources/CodeSystem/179423#handling-ICE "Handling of intercurrent events"
+* statistic.modelCharacteristic 1..*
+* statistic
+  * modelCharacteristic ^slicing.discriminator.type = #value
+  * modelCharacteristic ^slicing.discriminator.path = "code"
+  * modelCharacteristic ^slicing.rules = #open
+  * modelCharacteristic contains handlingICE 1..1
+  * modelCharacteristic[handlingICE] 
+    * ^comment = "TBD for Handling of intercurrent events"
+    * code.coding 1..1
+    * code.coding = https://fevir.net/resources/CodeSystem/179423#handling-ICE "Handling of intercurrent events"
+    * attributeEstimate 1..*
+      * description 1..1
+      * type 1..1
+      * type
+        * ^comment = "TBD to add Value Set with choices of Treatment policy, Composite, While-on-treatment/while-alive, Hypotetical, Principal stratum"
