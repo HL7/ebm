@@ -19,10 +19,10 @@ Description: "An outcome measure described with the estimand framework."
 * extension[population].value[x] only Reference(Group)
   * ^short = "Population"
   * ^definition = "Patients for whom researchers want to estimate the treatment effect."
-* extension[intervention].value[x] only Reference(Group or EvidenceVariable)
+* extension[intervention].value[x] only Reference(Group or EvidenceVariable) //consider replacing with only id (to reference comparisonGroup.linkId)
   * ^short = "Intervention"
   * ^definition = "One of the intervention strategies being compared in the treatment effect definition."
-* extension[comparator].value[x] only Reference(Group or EvidenceVariable)
+* extension[comparator].value[x] only Reference(Group or EvidenceVariable) //consider replacing with only id (to reference comparisonGroup.linkId)
   * ^short = "Comparator"
   * ^definition = "One of the intervention strategies being compared in the treatment effect definition, in the role of comparator."
 * extension[summaryMeasure].value[x] only CodeableConcept
@@ -32,6 +32,7 @@ Description: "An outcome measure described with the estimand framework."
 * extension[eventHandling].value[x] 0..0
   * ^short = "Handling of intercurrent event"
   * ^definition = "Strategies used to handle each intercurrent event in the treatment effect definition; different strategies could be used for different types of intercurrent events."
+* extension[eventHandling]
   * extension contains event 0..1 and group 0..1 and handling 0..1 and description 0..1
   * extension[event].value[x] only CodeableConcept
     * ^short = "the event"
