@@ -30,9 +30,9 @@ Description: "An outcome measure described with the estimand framework."
   * ^definition = "Method used to summarise and compare the endpoint between treatment conditions (eg, risk ratio, odds ratio)."
 * extension[summaryMeasure].valueCodeableConcept from $ebm-evidence-statistic-type (extensible)
 * extension[eventHandling]
+  * value[x] 0..0
   * ^short = "Handling of intercurrent event"
   * ^definition = "Strategies used to handle each intercurrent event in the treatment effect definition; different strategies could be used for different types of intercurrent events."
-  * value[x] 0..0
   * extension contains event 0..1 and group 0..1 and handling 0..1 and description 0..1
   * extension[event].value[x] only CodeableConcept
     * ^short = "the event"
