@@ -7,8 +7,8 @@ Description: "An outcome measure described with the estimand framework."
 * ^context.type = #element
 * ^context.expression = "ResearchStudy.objective"
 * value[x] 0..0
-  * ^short = "An outcome measure described with the estimand framework"
-  * ^definition = "An outcome measure described with the estimand framework."
+* . ^short = "An outcome measure described with the estimand framework"
+* . ^definition = "An outcome measure described with the estimand framework."
 * extension contains linkId 0..1 and endpoint 1..1 and population 0..1 and intervention 0..1 and comparator 0..1 and summaryMeasure 0..1 and eventHandling 0..*
 * extension[linkId].value[x] only id
   * ^short = "Short identifier"
