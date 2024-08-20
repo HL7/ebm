@@ -13,7 +13,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
 * section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code.text"
 * section ^slicing.rules = #open
-* section contains titlepage 1..1 MS and summary 1..1 MS and introduction 1..1 MS and endpoints 1..* MS and design 1..1 MS and population 1..1 MS and intervention 1..1 MS and dropout 1..1 MS and assessments 1..1 MS and adverseEvents 1..1 MS and statistics 1..1 MS and oversight 1..1 MS and definitions 1..1 MS and glossary 1..1 MS and references 1..1 MS
+* section contains titlepage 1..1 MS and summary 1..1 MS and introduction 1..1 MS and estimands 1..1 MS and design 1..1 MS and population 1..1 MS and intervention 1..1 MS and dropout 1..1 MS and assessments 1..1 MS and adverseEvents 1..1 MS and statistics 1..1 MS and oversight 1..1 MS and definitions 1..1 MS and glossary 1..1 MS and references 1..1 MS
 * section[titlepage].title = "Title Page"
 * section[titlepage].code.text = "section0-title-page"
 * section[titlepage]
@@ -137,9 +137,9 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * section[overallBenefitRisk]
       * text 1..1
       * text ^comment = "Provide a succinct, concluding statement on the perceived balance between risks that have been identified from cumulative safety data, protocol procedures, and anticipated efficacy/benefits within the context of the proposed trial. Risks need to be assessed against the benefits for the individual participant at least once a year."
-* section[endpoints].title = "Trial Objectives and Estimands"
-* section[endpoints].code.text = "section3-estimands"
-* section[endpoints]
+* section[estimands].title = "Trial Objectives and Estimands"
+* section[estimands].code.text = "section3-estimands"
+* section[estimands]
   * entry only Reference(M11ResearchStudy)
 * section[design].title = "Trial Design"
 * section[design].code.text = "section4-trial-design"

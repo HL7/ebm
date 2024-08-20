@@ -1,5 +1,5 @@
-Extension: ResearchStudyEndpointEstimand
-Id: research-study-endpoint-estimand
+Extension: ResearchStudyEstimand
+Id: research-study-estimand
 Description: "An outcome measure described with the estimand framework."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds

@@ -11,5 +11,5 @@ Description: "Profile of ResearchStudy for Evidence Based Medicine IG. The M11Re
 * extension contains ResearchStudyStudyAmendment named studyAmendment 0..1
 * title ^comment = "The protocol should have a descriptive title that identifies the scientific aspects of the trial sufficiently to ensure it is immediately evident what the trial is investigating and on whom, and to allow retrieval from literature or internet searches."
 * objective
-  * extension contains ResearchStudyEndpointEstimand named endpointEstimand 0..*
+  * extension contains ResearchStudyEstimand named estimand 0..*
 * outcomeMeasure 0..0
