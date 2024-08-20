@@ -14,20 +14,24 @@ Description: "An outcome measure described with the estimand framework."
   * ^short = "Short identifier"
   * ^definition = "Identiifer for internal referencing."
 * extension[endpoint].value[x] only Reference(EvidenceVariable or ObservationDefinition or PlanDefinition)
-  * ^short = "Outcome measure"
+  * ^short = "Outcome measure/Endpoint"
   * ^definition = "Outcome for each participant that is used in the treatment effect definition."
 * extension[population].value[x] only Reference(Group)
   * ^short = "Population"
   * ^definition = "Patients for whom researchers want to estimate the treatment effect."
-* extension[intervention].value[x] only Reference(Group or EvidenceVariable) //consider replacing with only id (to reference comparisonGroup.linkId)
+  * ^comment = "List of key characteristics, such as demographic characteristics (e.g., age, sex) and clinical characteristics (e.g., prior therapies, symptoms, severity, biomarker status)"
+* extension[intervention].value[x] only id
   * ^short = "Intervention"
   * ^definition = "One of the intervention strategies being compared in the treatment effect definition."
-* extension[comparator].value[x] only Reference(Group or EvidenceVariable) //consider replacing with only id (to reference comparisonGroup.linkId)
+  * ^comment = "The valueId value should match a ResearchStudy.comparisonGroup.linkId value. List of key aspects of treatment regimens in each study group, including at least investigational agents, dosage, and administration route"
+* extension[comparator].value[x] only id
   * ^short = "Comparator"
   * ^definition = "One of the intervention strategies being compared in the treatment effect definition, in the role of comparator."
+  * ^comment = "The valueId value should match a ResearchStudy.comparisonGroup.linkId value. List of key aspects of treatment regimens in each study group, including at least investigational agents, dosage, and administration route"
 * extension[summaryMeasure].value[x] only CodeableConcept
   * ^short = "Statistical measure for treatment effect estimate"
   * ^definition = "Method used to summarise and compare the endpoint between treatment conditions (eg, risk ratio, odds ratio)."
+  * ^comment = "Description of the population-level summary (e.g., mean difference, relative risk)"
 * extension[summaryMeasure].valueCodeableConcept from $ebm-evidence-statistic-type (extensible)
 * extension[eventHandling]
   * value[x] 0..0
@@ -37,12 +41,14 @@ Description: "An outcome measure described with the estimand framework."
   * extension[event].value[x] only CodeableConcept
     * ^short = "the event"
     * ^definition = "The situation that leads to a change in interpretation of the data."
+    * ^comment = "For each intercurrent event, provide a Description of Intercurrent Event (e.g., permanent discontinuation of trial intervention)."
   * extension[group].value[x] only CodeableConcept
     * ^short = "the group that is affected by this event handling"
     * ^definition = "The group (intervention group, comparator group, both groups, a subgroup) that receives a change in interpretation of the data."
   * extension[handling].value[x] only CodeableConcept
     * ^short = "how the data is handled"
     * ^definition = "The method used for interpretation of the data."
+    * ^comment = "For each intercurrent event, provide a Description of the strategy to address the intercurrent event (e.g., a treatment policy strategy)."
   * extension[description].value[x] only markdown
     * ^short = "text summary of event handling"
     * ^definition = "The human-readable summary of the handling of an intercurrent event."
