@@ -9,10 +9,14 @@ Description: "An outcome measure described with the estimand framework."
 * value[x] 0..0
 * . ^short = "An outcome measure described with the estimand framework"
 * . ^definition = "An outcome measure described with the estimand framework."
-* extension contains linkId 0..1 and endpoint 1..1 and population 0..1 and intervention 0..1 and comparator 0..1 and summaryMeasure 0..1 and eventHandling 0..*
-* extension[linkId].value[x] only id
-  * ^short = "Short identifier"
-  * ^definition = "Identiifer for internal referencing."
+* extension contains label 0..1 and type 0..1 and endpoint 1..1 and population 0..1 and intervention 0..1 and comparator 0..1 and summaryMeasure 0..1 and eventHandling 0..*
+* extension[label].value[x] only string
+  * ^short = "Short name or identifier"
+  * ^definition = "Name or identiifer for internal referencing."
+* extension[type].value[x] only CodeableConcept
+  * ^short = "Primary, secondary, or exploratory"
+  * ^definition = "Classification of the estimand/outcome measure as a primary focus or not."
+* extension[summaryMeasure].valueCodeableConcept from $research-study-objective-type (preferred)
 * extension[endpoint].value[x] only Reference(EvidenceVariable or ObservationDefinition or PlanDefinition)
   * ^short = "Outcome measure/Endpoint"
   * ^definition = "Outcome for each participant that is used in the treatment effect definition."

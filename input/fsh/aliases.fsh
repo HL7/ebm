@@ -9,6 +9,7 @@ Alias: $ebm-evidence-report-section-code = https://fevir.net/resources/ValueSet/
 Alias: $ebm-evidence-statistic-type = http://hl7.org/fhir/ValueSet/statistic-type
 Alias: $ebm-risk-of-bias-type = https://fevir.net/resources/ValueSet/181524
 Alias: $ebm-search-strategy-characteristic-code = https://fevir.net/resources/ValueSet/265087
+Alias: $research-study-objective-type = http://hl7.org/fhir/ValueSet/research-study-objective-type
 
  // Aliases for common structure definition extensions
 Alias: $ext-fmm = http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm
