@@ -36,3 +36,4 @@ Alias: $ext-author = http://hl7.org/fhir/StructureDefinition/artifact-author
 Alias: $ext-relatedArtifact = http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact
 
 Alias: $ext-characteristic-method = http://hl7.org/fhir/6.0/StructureDefinition/extension-Group.characteristic.method
+Alias: $ext-researchStudy-studyRegistration = http://hl7.org/fhir/StructureDefinition/researchStudy-studyRegistration
