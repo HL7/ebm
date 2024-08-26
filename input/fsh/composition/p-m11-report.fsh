@@ -769,7 +769,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
       * section[supplementaryAnalysis]
         * text 1..1
         * text ^comment = "Describe any supplementary analysis if applicable. Supplementary analyses are conducted in addition to the main and sensitivity analysis with the intent to provide additional insights into the understanding of the treatment effect."
-  * section[secondaryAnalysis].title = "Analysis Associated with the Secondary Objective(s)"
+  * section[secondaryAnalysis].title = "Analyses Associated with the Secondary Objective(s)"
   * section[secondaryAnalysis].code.text = "section10.5-analysis-secondary-objective"
   * section[secondaryAnalysis]
     * section ^slicing.discriminator.type = #value
@@ -813,7 +813,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
       * section[supplementaryAnalysis]
         * text 1..1
         * text ^comment = "Describe any supplementary analysis if applicable. Supplementary analyses are conducted in addition to the main and sensitivity analysis with the intent to provide additional insights into the understanding of the treatment effect."
-  * section[exploratoryAnalysis].title = "Analysis Associated with the Exploratory Objective(s)"
+  * section[exploratoryAnalysis].title = "Analyses Associated with the Exploratory Objective(s)"
   * section[exploratoryAnalysis].code.text = "section10.6-analysis-exploratory-objective"
   * section[exploratoryAnalysis]
     * text 1..1
