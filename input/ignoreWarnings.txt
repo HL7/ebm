@@ -34,6 +34,7 @@ Reference to draft CodeSystem http://hl7.org/fhir/characteristic-offset|5.0.0
 
 # Suppressing message that a CodeSystem in THO is draft (the CodeSystem in THO is not derived from the IG)
 Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/synthesis-type|2.0.0
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/research-study-phase|1.0.0
 
 # Suppressing message that a CodeSystem in R5 is experimental (unable to change R5)
 Reference to experimental CodeSystem http://hl7.org/fhir/citation-artifact-classifier|5.0.0
