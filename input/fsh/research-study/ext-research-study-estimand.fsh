@@ -9,7 +9,7 @@ Description: "An outcome measure described with the estimand framework."
 * value[x] 0..0
 * . ^short = "An outcome measure described with the estimand framework"
 * . ^definition = "An outcome measure described with the estimand framework."
-* extension contains label 0..1 and type 0..1 and endpoint 1..1 and population 0..1 and intervention 0..1 and comparator 0..1 and summaryMeasure 0..1 and eventHandling 0..*
+* extension contains label 0..1 and type 0..1 and endpoint 1..1 and population 0..1 and interventionGroup 0..1 and comparatorGroup 0..1 and summaryMeasure 0..1 and eventHandling 0..*
 * extension[label].value[x] only string
   * ^short = "Short name or identifier"
   * ^definition = "Name or identiifer for internal referencing."
@@ -24,11 +24,11 @@ Description: "An outcome measure described with the estimand framework."
   * ^short = "Population"
   * ^definition = "Patients for whom researchers want to estimate the treatment effect."
   * ^comment = "List of key characteristics, such as demographic characteristics (e.g., age, sex) and clinical characteristics (e.g., prior therapies, symptoms, severity, biomarker status)"
-* extension[intervention].value[x] only id
+* extension[interventionGroup].value[x] only id
   * ^short = "Intervention"
   * ^definition = "One of the intervention strategies being compared in the treatment effect definition."
   * ^comment = "The valueId value should match a ResearchStudy.comparisonGroup.linkId value. List of key aspects of treatment regimens in each study group, including at least investigational agents, dosage, and administration route"
-* extension[comparator].value[x] only id
+* extension[comparatorGroup].value[x] only id
   * ^short = "Comparator"
   * ^definition = "One of the intervention strategies being compared in the treatment effect definition, in the role of comparator."
   * ^comment = "The valueId value should match a ResearchStudy.comparisonGroup.linkId value. List of key aspects of treatment regimens in each study group, including at least investigational agents, dosage, and administration route"
