@@ -133,6 +133,7 @@ Profiles of <b>Composition Resource</b> include:
 
 Other Resources and <b>Other Profiles</b> used in the EBMonFHIR Implementation Guide include:
 - <b>ResearchStudy Resource</b>
+  - <b>M11ResearchStudy</b> used to add extensions for use with an M11 Report.
   - <b>SystematicReview</b> used for a research study that involves investigation of research studies.
 - <b>CodeSystem Resource</b> including a Profile of:
   - <b>DataDictionary</b> used for a code key for variable names in a dataset.
