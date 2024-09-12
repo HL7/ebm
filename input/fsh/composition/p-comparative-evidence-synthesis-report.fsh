@@ -60,15 +60,15 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Compara
   * section[comparatorEvidence].code.coding 1..1
   * section[comparatorEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#result-with-comparator-alone "Result with comparator alone"
   * section[comparatorEvidence]
-    * entry only Reference(NoncomparativeEvidence)
+    * entry only Reference(NonComparativeEvidence)
   * section[interventionEvidence].code.coding 1..1
   * section[interventionEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#result-with-intervention-alone "Result with intervention alone"
   * section[interventionEvidence]
-    * entry only Reference(NoncomparativeEvidence)
+    * entry only Reference(NonComparativeEvidence)
   * section[interventionEvidenceCalculated].code.coding 1..1
   * section[interventionEvidenceCalculated].code.coding = https://fevir.net/resources/CodeSystem/179423#result-with-intervention-alone-calculated "Result with intervention alone (calculated)"
   * section[interventionEvidenceCalculated]
-    * entry only Reference(NoncomparativeEvidence)
+    * entry only Reference(NonComparativeEvidence)
   * section[comparativeEvidence].code.coding 1..1
   * section[comparativeEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#result-with-intervention-vs-comparator "Result with intervention vs. comparator"
   * section[comparativeEvidence]
