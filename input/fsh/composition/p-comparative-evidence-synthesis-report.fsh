@@ -44,7 +44,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Compara
   * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code.coding"
   * section ^slicing.rules = #open
-  * section contains population 0.1 MS and intervention 0..1 MS and comparator 0..1 MSand comparatorEvidence 0..1 MS and interventionEvidence 0..1 MS and interventionEvidenceCalculated 0..1 MS and comparativeEvidence 0..1 MS
+  * section contains population 0..1 MS and intervention 0..1 MS and comparator 0..1 MS and comparatorEvidence 0..1 MS and interventionEvidence 0..1 MS and interventionEvidenceCalculated 0..1 MS and comparativeEvidence 0..1 MS
   * section[population].code.coding 1..1
   * section[population].code.coding = https://fevir.net/resources/CodeSystem/179423#population "Population"
   * section[population]
