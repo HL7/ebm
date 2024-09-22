@@ -16,7 +16,7 @@ Description: "An outcome measure described with the estimand framework."
 * extension[type].value[x] only CodeableConcept
   * ^short = "Primary, secondary, or exploratory"
   * ^definition = "Classification of the estimand/outcome measure as a primary focus or not."
-* extension[summaryMeasure].valueCodeableConcept from $research-study-objective-type (preferred)
+* extension[type].valueCodeableConcept from $research-study-objective-type (preferred)
 * extension[endpoint].value[x] only Reference(EvidenceVariable or ObservationDefinition or PlanDefinition)
   * ^short = "Outcome measure/Endpoint"
   * ^definition = "Outcome for each participant that is used in the treatment effect definition."
