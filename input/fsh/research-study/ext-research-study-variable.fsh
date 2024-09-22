@@ -8,7 +8,7 @@ Description: "A concept that is measured and how it is measured."
 * ^context.expression = "ResearchStudy"
 * value[x] 0..0
 * . ^short = "A concept that is measured and how it is measured"
-* . ^definition = A concept that is measured in a research study, how it is measured, and its permissible values. A variable may be called a baseline measure, outcome measure, or endpoint."
+* . ^definition = "A concept that is measured in a research study, how it is measured, and its permissible values. A variable may be called a baseline measure, outcome measure, or endpoint."
 * extension contains id 0..1 and label 0..1 and description 0..1 and outcomeType 0..1 and definition 1..1 and datatype 0..* and minimum 0..1 and maximum 0..1  and stringLength 0..1 and	expectedValueSet 0..1 and anyValueAllowed 0..1 and missingDataHandling 0..* and unacceptableDataHandling 0..* and	estimand 0..*
 * extension[id].value[x] only id
   * ^short = "Key for data dictionary"
@@ -89,4 +89,3 @@ Description: "A concept that is measured and how it is measured."
     * extension[description].value[x] only markdown
       * ^short = "text summary of event handling"
       * ^definition = "The human-readable summary of the handling of an intercurrent event."
-
