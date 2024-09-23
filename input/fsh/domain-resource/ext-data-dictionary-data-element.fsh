@@ -34,10 +34,10 @@ Description: "A catalog entry outlining the structure, content, and meaning of a
 * extension[maximumQuantity].value[x] only Quantity
   * ^short = "The highest permissible value of the variable"
   * ^definition = "The highest permissible value of the variable, used with variables that have a number-based datatype (with or without units)."
-* extension[earliestDateTime].value[x] only DateTime
+* extension[earliestDateTime].value[x] only dateTime
   * ^short = "The earliest permissible value of the variable"
   * ^definition = "The earliest permissible value of the variable, used with variables that have a date/time-based datatype."
-* extension[latestDateTime].value[x] only DateTime
+* extension[latestDateTime].value[x] only dateTime
   * ^short = "The latest permissible value of the variable"
   * ^definition = "The latest permissible value of the variable, used with variables that have a date/time-based datatype."
 * extension[minimumStringLength].value[x] only integer

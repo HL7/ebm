@@ -1,5 +1,5 @@
 Profile: DataDictionary
-Parent: Base
+Parent: DomainResource
 Id: data-dictionary
 Description: "Profile of Base for Evidence Based Medicine IG. The DataDictionary Profile is used for a code key for variable names in a dataset."
 * ^extension[$ext-fmm].valueInteger = 1
