@@ -32,7 +32,10 @@ Description: "A catalog entry outlining the structure, content, and meaning of a
   * value[x] 0..0
   * ^short = "Limit on acceptability of data value"
   * ^definition = "Limit on acceptability of data used to express value of the variable or data element."
-  * extension contains minimumQuantity 0..1 and maximumQuantity 0..1 and earliestDateTime 0..1 and latestDateTime 0..1 and minimumStringLength 0..1 and maximumStringLength 0..1 and code 0..1 and expression 0..1 and expectedValueSet 0..1 and expectedUnitsValueSet 0..1 and anyValueAllowed 0..1
+  * extension contains conditional 0..1 and minimumQuantity 0..1 and maximumQuantity 0..1 and earliestDateTime 0..1 and latestDateTime 0..1 and minimumStringLength 0..1 and maximumStringLength 0..1 and code 0..1 and expression 0..1 and expectedValueSet 0..1 and expectedUnitsValueSet 0..1 and anyValueAllowed 0..1
+  * extension[conditional].value[x] only CodeableConcept
+    * ^short = "When this constraint applies"
+    * ^definition = "When this constraint applies."
   * extension[minimumQuantity].value[x] only Quantity
     * ^short = "The lowest permissible value of the variable"
     * ^definition = "The lowest permissible value of the variable, used with variables that have a number-based datatype (with or without units)."
