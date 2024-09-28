@@ -6,6 +6,11 @@ Description: "Profile of EvidenceVariable for Evidence Based Medicine IG. The Va
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
 * extension contains EvidenceVariableDefinition named definition 1..1
+* extension contains EvidenceVariableClassifier named classifier 0..*
+* extension contains EvidenceVariableDatatype named datatype 0..*
+* extension contains EvidenceVariableConstraint named constraint 0..*
+* extension contains EvidenceVariableMissingData named missingDataMeaning 0..1
+* extension contains EvidenceVariableDataCleaning named unacceptableDataHandling 0..*
 * characteristic 0..0
 * handling 1..1
 * category
