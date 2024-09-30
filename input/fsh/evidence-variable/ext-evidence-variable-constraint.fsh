@@ -8,7 +8,7 @@ Description: "Limit on acceptability of data used to express value of the variab
 * ^context.expression = "EvidenceVariable"
 * value[x] 0..0
 * . ^short = "Limit on acceptability of data value"
-* . ^definition = "Limit on acceptability of data used to express value of the variable."
+* . ^definition = "Limit on acceptability of data used to express values of the variable."
 * extension contains conditional 0..1 and minimumQuantity 0..1 and maximumQuantity 0..1 and earliestDateTime 0..1 and latestDateTime 0..1 and minimumStringLength 0..1 and maximumStringLength 0..1 and code 0..1 and expression 0..1 and expectedValueSet 0..1 and expectedUnitsValueSet 0..1 and anyValueAllowed 0..1
 * extension[conditional].value[x] only CodeableConcept
   * ^short = "When this constraint applies"
