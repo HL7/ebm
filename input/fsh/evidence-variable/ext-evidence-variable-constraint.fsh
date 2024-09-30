@@ -1,6 +1,6 @@
 Extension: EvidenceVariableConstraint
 Id: evidence-variable-constraint
-Description: "Limit on acceptability of data used to express value of the variable."
+Description: "Limit on acceptability of data used to express values of the variable."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
