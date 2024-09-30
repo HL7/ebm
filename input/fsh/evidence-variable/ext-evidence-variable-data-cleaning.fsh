@@ -1,5 +1,5 @@
-Extension: EvidenceVariableDatatype
-Id: evidence-variable-datatype
+Extension: EvidenceVariableDataCleaning
+Id: evidence-variable-data-cleaning
 Description: "A method or transformation applied for data that does not match required patterns."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds

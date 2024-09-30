@@ -1,5 +1,5 @@
-Extension: EvidenceVariableDatatype
-Id: evidence-variable-datatype
+Extension: EvidenceVariableMissingData
+Id: evidence-variable-missing-data
 Description: "A method or transformation applied for missing data."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
