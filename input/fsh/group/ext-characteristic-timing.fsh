@@ -10,6 +10,8 @@ Description: "Timing in which the characteristic is determined."
 * ^context[1].expression = "PlanDefinition.action"
 * ^context[2].type = #element
 * ^context[2].expression = "ActivityDefinition"
+* ^context[3].type = #element
+* ^context[3].expression = "EvidenceVariable"
 * value[x] 0..0
 * . ^short = "Timing in which the characteristic is determined"
 * . ^definition = "Timing in which the characteristic is determined."
@@ -30,5 +32,5 @@ Description: "Timing in which the characteristic is determined."
   * ^short = "An offset or offset range before (negative values) or after (positive values) the event"
   * ^definition = "An offset or offset range before (negative values) or after (positive values) the event. Range is limited to time-valued quantities (Durations)."
 * extension[text].value[x] only string
-  * ^short = "aFree-text description"
+  * ^short = "Free-text description"
   * ^definition = "Free-text (human-readable) description." 
