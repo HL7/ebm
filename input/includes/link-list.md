@@ -38,7 +38,6 @@
 [CompositeRating]: StructureDefinition-composite-rating.html
 [DatabaseCitation]: StructureDefinition-database-citation.html
 [DatabaseEntryCitation]: StructureDefinition-database-entry-citation.html
-[DataDictionary]: StructureDefinition-data-dictionary.html
 [DataDictionary: Measuring the Rate of Scientific Knowledge Transfer]: CodeSystem-181451.html
 [DataDictionary: phs003190]: CodeSystem-179650.html
 [DatasetCitation]: StructureDefinition-dataset-citation.html
@@ -87,6 +86,7 @@
 [RecommendationEligibilityCriteria]: StructureDefinition-recommendation-eligibility-criteria.html
 [RecommendationJustification]: StructureDefinition-recommendation-justification.html
 [RecommendationPlan]: StructureDefinition-recommendation-plan.html
+[ResearchStudyDataDictionary]: StructureDefinition-research-study-data-dictionary.html
 [RiskOfBias]: StructureDefinition-risk-of-bias.html
 [Scientific Evidence Code System (SEVCO) -- EXAMPLE VERSION for EBMonFHIR Implementation Guide]: CodeSystem-181513.html
 [SearchResults]: StructureDefinition-search-results.html
