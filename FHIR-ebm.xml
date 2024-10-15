@@ -154,7 +154,6 @@
 <artifact id="StructureDefinition/composite-rating" key="StructureDefinition-composite-rating" name="CompositeRating"/>
 <artifact id="Organization/118079" key="Organization-118079" name="Computable_Publishing_LLC"/>
 <artifact id="Evidence/7637" key="Evidence-7637" name="Critically appraised summary of primary outcome of multi-platform RCT of anticoagulation for non-critically ill patients with COVID-19"/>
-<artifact id="StructureDefinition/data-dictionary" key="StructureDefinition-data-dictionary" name="DataDictionary"/>
 <artifact id="CodeSystem/181451" key="CodeSystem-181451" name="DataDictionary: Measuring the Rate of Scientific Knowledge Transfer"/>
 <artifact id="CodeSystem/179650" key="CodeSystem-179650" name="DataDictionary: phs003190"/>
 <artifact id="StructureDefinition/database-citation" key="StructureDefinition-database-citation" name="DatabaseCitation"/>
