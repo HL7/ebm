@@ -7,7 +7,6 @@ Description: "Profile of EvidenceVariable for Evidence Based Medicine IG. The Di
 * ^extension[$ext-standards-status].valueCode = #draft
 * extension[definition].valueCodeableReference.concept 1..1
 * extension[definition].valueCodeableReference.reference 0..0
-* extension[datatype] 1..1
-* extension[datatype].valueCodeableConcept = http://hl7.org/fhir/fhir-types#boolean "boolean"
+* actual = false
 * handling = #dichotomous
 
