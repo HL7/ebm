@@ -34,6 +34,10 @@ section.text is a Narrative datatype used for a text summary of the section. A N
 
 The **[EvidenceReport Profile][EvidenceReport]** is used for a base structure (canonical resource management) for a report combining any number of <b>Citation</b>, <b>Evidence</b>, <b>EvidenceVariable</b>, **[EvidenceReport][EvidenceReport]**, and related Resources. The **[EvidenceReport Profile][EvidenceReport]** adds a number of extensions for metadata (<i>versionAlgorithm</i>, <i>experimental</i>, description, purpose, copyright,  copyrightLabel, approvalDate, lastReviewDate, and effectivePeriod). The EvidenceReport Profile limits the number of subject elements to 1 and limits the resource types that can be referenced as the subject to <b>Citation</b>, **[Classification][Classification]**, **[EvidenceReportSubject][EvidenceReportSubject]**, or <b>ResearchStudy</b>. The Composition.attester.mode element uses a CodeableConcept datatype and a Contributor Role Value Set is provided with preferred binding to include concepts for reviewer, editor, endorser, informant, and funder. An EvidenceReport Section Code Value Set is provided with extensible binding for the section.code elements.
 
+### ResearchStudyDataDictionary Profile of Composition Resource
+
+The **[ResearchStudyDataDictionary Profile][ResearchStudyDataDictionary]** is a Profile of **[EvidenceReport Profile][EvidenceReport]** and is used for a code key for variable names in a dataset containing the observations collected in a research study. Each variable is included in a section.entry instance which references **[VariableDefinition Profile][VariableDefinition]**.
+
 ### EvidenceReportPackage Profile of Composition Resource
 
 The **[EvidenceReportPackage Profile][EvidenceReportPackage]** is used for a base structure to extend the **[EvidenceReport Profile][EvidenceReport]** with optional sections for Introduction, Discussion, Methods, References, Competing Interests, Acknowledgements, and Appendices.
@@ -50,13 +54,30 @@ The Composition.type value is set to a "Comparative Evidence Report".
 
 ..A 'Comparator' section is required with 2 contained sections. A 'Comparator Description' section is required with entries limited to reference **[ComparatorDefinition Profile][ComparatorDefinition]** or **[ExposureDefinition Profile][ExposureDefinition]**. A 'Comparator Group' section is required with entries limited to reference **[ComparatorGroup Profile][ComparatorGroup]** or **[ExposureGroup Profile][ExposureGroup]**.
 
-..A 'Study Design' section is required with entries limited to reference <b>ResearchStudy Resource</b> or **[Classification Profile][Classification]**.
+..A 'Research Study' section is required with entries limited to reference <b>ResearchStudy Resource</b> or <b>Citation Resource</b> or <b>Composition Resource</b>.
 
 ..A 'Baseline Measures' section is optional. The 'Baseline Measures' section entry element is limited to a single instance that references **[BaselineMeasureReport Profile][BaselineMeasureReport]**. 
 
 ..A 'Participant Flow' section is optional. The 'Participant Flow' section entry element is limited to a single instance that references **[ParticipantFlowReport Profile][ParticipantFlowReport]**. 
 
 ..An 'Outcome Measures' section is required. The 'Outcome Measures' section entry element is limited to reference **[OutcomeMeasureReport Profile][OutcomeMeasureReport]** or **[SummaryOfFindings Profile][SummaryOfFindings]**.
+
+
+### ComparativeEvidenceSynthesisReport Profile of Composition Resource
+
+The **[ComparativeEvidenceSynthesisReport Profile][ComparativeEvidenceSynthesisReport]** is a Profile of **[EvidenceReportPackage][EvidenceReportPackage]** and is used for an evidence report including the intended population, intended exposure, intended comparator, and findings for any number of outcomes comparing the exposure to the comparator with observed study group, observed exposure group, and observed comparator group unique for each outcome.
+
+The Composition.type value is set to a "Comparative Evidence Synthesis Report".
+
+..A 'Population' section is required with entries limited to reference **[CohortDefinition Profile][CohortDefinition]**.
+
+..One or more 'Intervention description' sections are required with entries limited to reference **[CohortDefinition Profile][CohortDefinition]**.
+
+..A 'Comparator' section is required with entries limited to reference **[CohortDefinition Profile][CohortDefinition]**.
+
+..A 'Research Study' section is required with entries limited to reference <b>ResearchStudy Resource</b> or <b>Citation Resource</b> or <b>Composition Resource</b>.
+
+..A 'Results' section is required and contains one or more 'Result' sections, each of which has a focus element to reference **[VariableDefinition Profile][VariableDefinition]** and contains 'Population', 'Intervention Group', 'Comparator Group', 'Result with comparator alone', 'Result with intervention alone', 'Result with intervention alone (calculated)', and 'Result with intervention vs. comparator' sections.
 
 
 ### EvidenceMeasureReportPackage Profile of Composition Resource
