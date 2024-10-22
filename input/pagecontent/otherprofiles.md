@@ -4,9 +4,9 @@ The **[M11ResearchStudy Profile][M11ResearchStudy]** is a Profile of <b>Research
 
 The **[SystematicReview Profile][SystematicReview]** is a Profile of <b>ResearchStudy Resource</b> and is used for a scientific study based on a protocol that includes search and selection of eligible studies, study quality assessment, data extraction, and synthesis.
 
-### DataDictionary Profile of CodeSystem Resource
+### DataDictionaryCodeSystem Profile of CodeSystem Resource
 
-The **[DataDictionary Profile][DataDictionary]** is a Profile of <b>CodeSystem Resource</b> and is used for a scientific study based on a protocol that includes search and selection of eligible studies, study quality assessment, data extraction, and synthesis.
+The **[DataDictionaryCodeSystem Profile][DataDictionaryCodeSystem]** is a Profile of <b>CodeSystem Resource</b> and is used for a scientific study based on a protocol that includes search and selection of eligible studies, study quality assessment, data extraction, and synthesis.
 
 Extensions are provided for searchStrategy, systematicReviewEligibilityCriteria, numberOfStudiesIdentified, numberOfStudiesIncluded, includedStudy, excludedStudy, and resultAsComposition.
 
