@@ -1,7 +1,7 @@
 Profile: EvidenceMeasureReportPackage
 Parent: EvidenceReport
 Id: evidence-measure-report-package
-Description: "Profile of Composition for Evidence Based Medicine IG. The EvidenceMeasureReportPackage Profile is used for a base structure to extend the EvidenceReport Profile with optional relatesTo slices for Total Group, Intervention Group, Comparator Group, and Group Assignment."
+Description: "Profile of Composition for Evidence Based Medicine IG. THIS PROFILE WILL BE REPLACED WITH EvidenceTableReportPackage. The EvidenceMeasureReportPackage Profile is used for a base structure to extend the EvidenceReport Profile with optional relatesTo slices for Total Group, Intervention Group, Comparator Group, and Group Assignment."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
