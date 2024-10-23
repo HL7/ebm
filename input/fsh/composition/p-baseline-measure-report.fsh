@@ -1,5 +1,5 @@
 Profile: BaselineMeasureReport
-Parent: EvidenceMeasureReportPackage
+Parent: EvidenceTableReportPackage
 Id: baseline-measure-report
 Description: "Profile of Composition for Evidence Based Medicine IG. The BaselineMeasureReport Profile is used for an evidence report including the findings for any number of baseline measures in a research study."
 * ^extension[$ext-fmm].valueInteger = 1
@@ -8,36 +8,30 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Baselin
 * type.coding 1..1
 * type.coding = https://fevir.net/resources/CodeSystem/179423#BaselineMeasureReport "BaselineMeasureReport"
 * type.text = "Baseline Measure Report"
-* relatesTo ^slicing.discriminator.type = #value
-* relatesTo ^slicing.discriminator.path = "label"
-* relatesTo ^slicing.rules = #open
-* relatesTo contains baselineMeasure 0..* MS
-* relatesTo[baselineMeasure].type = #depends-on
-* relatesTo[baselineMeasure].label = "Baseline Measure"
-* relatesTo[baselineMeasure].resourceReference only Reference(VariableDefinition)
-* section 1..*
-  * focus only Reference(VariableDefinition)
-  * section ^slicing.discriminator.type = #value
-  * section ^slicing.discriminator.path = "code.coding"
-  * section ^slicing.rules = #open
-  * section contains comparatorEvidence 0..1 MS and interventionEvidence 0..1 MS and totalGroup 0..1 MS and comparativeEvidence 0..1 MS
-  * section[comparatorEvidence].code.coding 1..1
-  * section[comparatorEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-comparator-alone "Evidence with comparator alone"
-  * section[comparatorEvidence]
-    * entry 0..1 
-    * entry only Reference(BaselineMeasureEvidence)
-  * section[interventionEvidence].code.coding 1..1
-  * section[interventionEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-intervention-alone "Evidence with intervention alone"
-  * section[interventionEvidence]
-    * entry 0..1 
-    * entry only Reference(BaselineMeasureEvidence)
-  * section[totalGroup].code.coding 1..1
-  * section[totalGroup].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-total-group "Evidence with total group"
-  * section[totalGroup]
-    * entry 0..1 
-    * entry only Reference(BaselineMeasureEvidence)
-  * section[comparativeEvidence].code.coding 1..1
-  * section[comparativeEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-intervention-vs-comparator "Evidence with intervention vs. comparator"
-  * section[comparativeEvidence]
-    * entry 0..1 
-    * entry only Reference(ComparativeBaselineMeasureEvidence)
+* section[results]
+  * section 1..*
+    * focus only Reference(VariableDefinition)
+    * section ^slicing.discriminator.type = #value
+    * section ^slicing.discriminator.path = "code.coding"
+    * section ^slicing.rules = #open
+    * section contains comparatorEvidence 0..1 MS and interventionEvidence 0..1 MS and totalGroup 0..1 MS and comparativeEvidence 0..1 MS
+    * section[comparatorEvidence].code.coding 1..1
+    * section[comparatorEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-comparator-alone "Evidence with comparator alone"
+    * section[comparatorEvidence]
+      * entry 0..1 
+      * entry only Reference(BaselineMeasureEvidence)
+    * section[interventionEvidence].code.coding 1..1
+    * section[interventionEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-intervention-alone "Evidence with intervention alone"
+    * section[interventionEvidence]
+      * entry 0..1 
+      * entry only Reference(BaselineMeasureEvidence)
+    * section[totalGroup].code.coding 1..1
+    * section[totalGroup].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-total-group "Evidence with total group"
+    * section[totalGroup]
+      * entry 0..1 
+      * entry only Reference(BaselineMeasureEvidence)
+    * section[comparativeEvidence].code.coding 1..1
+    * section[comparativeEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-intervention-vs-comparator "Evidence with intervention vs. comparator"
+    * section[comparativeEvidence]
+      * entry 0..1 
+      * entry only Reference(ComparativeBaselineMeasureEvidence)
