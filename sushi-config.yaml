@@ -12,9 +12,9 @@ status: draft # draft | active | retired | unknown
 extension:
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-wg  #<<< must include a http://hl7.org/fhir/StructureDefinition/structuredefinition-wg extension that identifies the workgroup responsible for the IG. This is the authoritative element.
     valueCode: cds  # <<< The value must be the code for the workgroup
-version: 1.0.0-ballot
-fhirVersion: 5.0.0 # https://www.hl7.org/fhir/valueset-FHIR-version.html
-copyrightYear: 2022+
+version: 2.0.0-ballot
+fhirVersion: 6.0.0 # https://www.hl7.org/fhir/valueset-FHIR-version.html
+copyrightYear: 2024+
 releaseLabel: ballot # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World" # https://www.hl7.org/fhir/valueset-jurisdiction.html
