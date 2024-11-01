@@ -1,20 +1,18 @@
 Extension: CharacteristicTiming
 Id: characteristic-timing
-Description: "Timing in which the characteristic is determined."
+Description: "Timing in which the characteristic is determined or action is taken."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
 * ^context[0].type = #element
-* ^context[0].expression = "Group.characteristic"
+* ^context[0].expression = "PlanDefinition.action"
 * ^context[1].type = #element
-* ^context[1].expression = "PlanDefinition.action"
+* ^context[1].expression = "ActivityDefinition"
 * ^context[2].type = #element
-* ^context[2].expression = "ActivityDefinition"
-* ^context[3].type = #element
-* ^context[3].expression = "EvidenceVariable"
+* ^context[2].expression = "EvidenceVariable"
 * value[x] 0..0
-* . ^short = "Timing in which the characteristic is determined"
-* . ^definition = "Timing in which the characteristic is determined."
+* . ^short = "Timing in which the characteristic is determined or action is taken"
+* . ^definition = "Timing in which the characteristic is determined or action is taken."
 * extension contains contextReference 0..1 and contextDefinition 0..1 and contextPath 0..1 and contextCode 0..1 and offset 0..1 and text 0..1
 * extension[contextReference].value[x] only Reference
   * ^short = "The specific event occurrence or resource context used as a base point (reference point) in time"

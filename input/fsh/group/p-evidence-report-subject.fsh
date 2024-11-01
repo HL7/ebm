@@ -5,8 +5,7 @@ Description: "Profile of Group for Evidence Based Medicine IG. The EvidenceRepor
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
-* extension[CombinationMethod]
-  * valueCode = #all-of
+* combinationMethod = #all-of
 * characteristic ^slicing.discriminator.type = #value
 * characteristic ^slicing.discriminator.path = "code.text"
 * characteristic ^slicing.rules = #open
