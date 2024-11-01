@@ -5,7 +5,7 @@ Description: "Profile of EvidenceVariable for Evidence Based Medicine IG. The Gr
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
-* extension[definition].valueCodeableReference.concept.coding 1..1
-* extension[definition].valueCodeableReference.concept.coding = https://fevir.net/resources/CodeSystem/179423#defined-in-handling-and-category "Defined in handling and category elements"
+* definition.concept.coding 1..1
+* definition.concept.coding = https://fevir.net/resources/CodeSystem/179423#defined-in-handling-and-category "Defined in handling and category elements"
 * category 2..*
   * name 1..1

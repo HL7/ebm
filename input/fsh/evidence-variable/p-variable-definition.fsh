@@ -5,7 +5,6 @@ Description: "Profile of EvidenceVariable for Evidence Based Medicine IG. The Va
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
-* extension contains EvidenceVariableDefinition named definition 1..1
 * extension contains EvidenceVariableClassifier named classifier 0..*
 * extension contains EvidenceVariableConditional named conditional 0..1
 * extension contains EvidenceVariableDataStorage named dataStorage 0..*
@@ -15,5 +14,3 @@ Description: "Profile of EvidenceVariable for Evidence Based Medicine IG. The Va
 * extension contains EvidenceVariableMissingData named missingDataMeaning 0..1
 * extension contains EvidenceVariableDataCleaning named unacceptableDataHandling 0..*
 * handling 1..1
-* category
-  * extension contains EvidenceVariableCategoryValueReference named valueReference 0..1
