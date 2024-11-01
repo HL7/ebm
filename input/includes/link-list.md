@@ -9,22 +9,9 @@
 [BookCitation]: StructureDefinition-book-citation.html
 [BookPartCitation]: StructureDefinition-book-part-citation.html
 [CertaintyOfEvidence]: StructureDefinition-certainty-of-evidence.html
-[CharacteristicDescription]: StructureDefinition-characteristic-description.html
-[CharacteristicDeterminedByExpression]: StructureDefinition-characteristic-determined-by-expression.html
-[CharacteristicDeterminedByReference]: StructureDefinition-characteristic-determined-by-reference.html
-[CharacteristicDurationDuration]: StructureDefinition-characteristic-duration-duration.html
-[CharacteristicDurationRange]: StructureDefinition-characteristic-duration-range.html
-[CharacteristicInstancesQuantity]: StructureDefinition-characteristic-instances-quantity.html
-[CharacteristicInstancesRange]: StructureDefinition-characteristic-instances-range.html
-[CharacteristicMethod]: StructureDefinition-characteristic-method.html
-[CharacteristicOffset]: StructureDefinition-characteristic-offset.html
 [CharacteristicTiming]: StructureDefinition-characteristic-timing.html
-[CharacteristicValueExpression]: StructureDefinition-characteristic-value-expression.html
-[CharacteristicValueUri]: StructureDefinition-characteristic-value-uri.html
 [Classification]: StructureDefinition-classification.html
 [CohortDefinition]: StructureDefinition-cohort-definition.html
-[CombinationMethod]: StructureDefinition-combination-method.html
-[CombinationThreshold]: StructureDefinition-combination-threshold.html
 [Comment]: StructureDefinition-comment.html
 [ComparativeBaselineMeasureEvidence]: StructureDefinition-comparative-baseline-measure-evidence.html
 [ComparativeEvidence]: StructureDefinition-comparative-evidence.html
@@ -46,13 +33,11 @@
 [Evidence Based Medicine on FHIR Implementation Guide Code System]: CodeSystem-179423.html
 [EvidenceList]: StructureDefinition-evidence-list.html
 [EvidenceMap]: StructureDefinition-evidence-map.html
-[EvidenceR6]: StructureDefinition-evidence-r6.html
 [EvidenceReport]: StructureDefinition-evidence-report.html
 [EvidenceReportPackage]: StructureDefinition-evidence-report-package.html
 [EvidenceMeasureReportPackage]: StructureDefinition-evidence-measure-report-package.html
 [EvidenceReportSubject]: StructureDefinition-evidence-report-subject.html
 [EvidenceSynthesisEvidence]: StructureDefinition-evidence-synthesis-evidence.html
-[EvidenceVariableCategoryValueReference]: StructureDefinition-evidence-variable-category-value-reference.html
 [EvidenceVariableDefinition]: StructureDefinition-evidence-variable-definition.html
 [ExposureDefinition]: StructureDefinition-exposure-definition.html
 [ExposureGroup]: StructureDefinition-exposure-group.html
@@ -94,13 +79,9 @@
 [SingleStudyEvidence]: StructureDefinition-single-study-evidence.html
 [SoaPlanDefinition]: StructureDefinition-soa-plandefinition.html
 [SoftwareCitation]: StructureDefinition-software-citation.html
-[StatisticModelApplied]: StructureDefinition-statistic-model-applied.html
+[StatisticModel]: StructureDefinition-statistic-model.html
 [StatisticModelExpression]: StructureDefinition-statistic-model-expression.html
 [StatisticModelIncludeIf]: StructureDefinition-statistic-model-include-if.html
-[StatisticModelIntended]: StructureDefinition-statistic-model-intended.html
-[StatisticModelValueCodeableConcept]: StructureDefinition-statistic-model-value-codeableconcept.html
-[StatisticModelValueQuantity]: StructureDefinition-statistic-model-value-quantity.html
-[StatisticModelValueRange]: StructureDefinition-statistic-model-value-range.html
 [StudyEligibilityCriteria]: StructureDefinition-study-eligibility-criteria.html
 [StudyGroup]: StructureDefinition-study-group.html
 [SummaryOfFindings]: StructureDefinition-summary-of-findings.html
@@ -109,10 +90,6 @@
 [SystematicReviewEligibilityCriteria]: StructureDefinition-systematic-review-eligibility-criteria.html
 [SystematicReviewExcludedStudies]: StructureDefinition-systematic-review-excluded-studies.html
 [SystematicReviewIncludedStudies]: StructureDefinition-systematic-review-included-studies.html
-[VariableDefinition]: StructureDefinition-variable-definition.html
-[VariableDefinitionComparatorCategory]: StructureDefinition-variable-definition-comparator-category.html
-[VariableDefinitionRoleSubtype]: StructureDefinition-variable-definition-role-subtype.html
-[VariableDefinitionVariableRoleCode]: StructureDefinition-variable-definition-variable-role-code.html
 [WebPageCitation]: StructureDefinition-web-page-citation.html
 
 [VS EBMImplementationGuideProfile Value Set]: ValueSet-179430.html

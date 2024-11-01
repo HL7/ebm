@@ -1,5 +1,5 @@
 Profile: SingleStudyEvidence
-Parent: EvidenceR6
+Parent: Evidence
 Id: single-study-evidence
 Description: "Profile of Evidence for Evidence Based Medicine IG. The SingleStudyEvidence Profile is used for evidence from single studies, explicitly expressing that no studies were synthesized." 
 * ^extension[$ext-fmm].valueInteger = 1
