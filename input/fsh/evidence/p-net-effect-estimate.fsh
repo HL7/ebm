@@ -1,5 +1,5 @@
 Profile: NetEffectEstimate
-Parent: EvidenceR6
+Parent: Evidence
 Id: net-effect-estimate
 Description: "Profile of Evidence for Evidence Based Medicine IG. The NetEffectEstimate Profile is used for evidence in which the observed data is net effect contributions (effect estimates expressed as risk differences, multiplied by relative importance ratings of outcomes)."
 * ^extension[$ext-fmm].valueInteger = 1
@@ -7,18 +7,16 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The NetEffectE
 * ^extension[$ext-standards-status].valueCode = #draft
 * variableDefinition 2..*
 * variableDefinition ^slicing.discriminator.type = #value
-* variableDefinition ^slicing.discriminator.path = "note.text"
+* variableDefinition ^slicing.discriminator.path = "variableRole"
 * variableDefinition ^slicing.rules = #open
 * variableDefinition contains population 1..1 and exposure 1..1
 * variableDefinition[population]
-  * extension[VariableDefinitionVariableRoleCode].valueCode = #population
-  * note.text = "population"
+  * variableRole = #population
   * observed only Reference(NetEffectContributions)
   * intended 0..0
 * variableDefinition[exposure]
-  * extension[VariableDefinitionVariableRoleCode].valueCode = #exposure
-  * note.text = "exposure"
-  * extension[VariableDefinitionComparatorCategory] 1..1
+  * variableRole = #exposure
+  * comparatorCategory 1..1
   * observed only Reference(GroupAssignment)
   * intended 0..0
 * statistic 1..*

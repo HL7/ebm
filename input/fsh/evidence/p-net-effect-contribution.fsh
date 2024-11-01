@@ -15,13 +15,12 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The NetEffectC
   * resourceReference only Reference(OutcomeImportance)
 * relatedArtifact[citeAs].type = #cite-as
 * variableDefinition ^slicing.discriminator.type = #value
-* variableDefinition ^slicing.discriminator.path = "note.text"
+* variableDefinition ^slicing.discriminator.path = "variableRole"
 * variableDefinition ^slicing.rules = #open
 * variableDefinition contains covariate 1..*
 * variableDefinition[covariate]
-  * extension[VariableDefinitionVariableRoleCode].valueCode = #covariate
-  * note.text = "covariate"
-  * extension[VariableDefinitionRoleSubtype].valueCodeableConcept.text = "Relative Value Multiplier"
+  * variableRole = #covariate
+  * roleSubtype.text = "Relative Value Multiplier"
   * observed.display = "Relative Importance Multiplier"
   * intended 0..0
 * statistic 1..*
