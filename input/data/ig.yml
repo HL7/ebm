@@ -2865,7 +2865,7 @@ definition:
     reference:
       reference: Citation/179561
 fhirVersion:
-- 5.0.0
+- 6.0.0-ballot2
 id: hl7.fhir.uv.ebm
 jurisdiction:
 - coding:
@@ -2878,4 +2878,4 @@ publisher: HL7 International / Clinical Decision Support
 resourceType: ImplementationGuide
 status: draft
 url: http://hl7.org/fhir/uv/ebm/ImplementationGuide/hl7.fhir.uv.ebm
-version: 1.0.0-ballot
+version: 2.0.0-ballot
