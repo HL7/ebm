@@ -28,7 +28,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Outcome
     * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code.coding"
     * section ^slicing.rules = #open
-    * section contains population 0..1 MS and intervention 0..1 MS and comparator 0..1 MS and groupAssignment 0..1 and comparatorEvidence 0..1 MS and interventionEvidence 0..1 MS and interventionEvidenceCalculated 0..1 MS and comparativeEvidence 0..1 MS
+    * section contains population 0..1 MS and intervention 0..1 MS and comparator 0..1 MS and groupAssignment 0..1 and comparatorEvidence 0..1 MS and interventionEvidence 0..1 MS and comparativeEvidence 0..1 MS
     * section[population].code.coding 1..1
     * section[population].code.coding = https://fevir.net/resources/CodeSystem/179423#population "Population"
     * section[population]
@@ -53,10 +53,6 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Outcome
     * section[interventionEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#result-with-intervention-alone "Result with intervention alone"
     * section[interventionEvidence]
       * entry only Reference(NonComparativeEvidence)
-    * section[interventionEvidenceCalculated].code.coding 1..1
-    * section[interventionEvidenceCalculated].code.coding = https://fevir.net/resources/CodeSystem/179423#result-with-intervention-alone-calculated "Result with intervention alone (calculated)"
-    * section[interventionEvidenceCalculated]
-      * entry only Reference(NonComparativeEvidence or ComparativeEvidence)
     * section[comparativeEvidence].code.coding 1..1
     * section[comparativeEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#result-with-intervention-vs-comparator "Result with intervention vs. comparator"
     * section[comparativeEvidence]
