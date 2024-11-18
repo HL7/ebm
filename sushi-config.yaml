@@ -22,9 +22,9 @@ publisher:
   name: HL7 International / Clinical Decision Support
   url: http://www.hl7.org/Special/committees/dss
 
-dependencies:
-  hl7.fhir.uv.extensions.r5: latest
-  hl7.terminology.r5: latest
+#dependencies:
+#  hl7.fhir.uv.extensions.r5: latest
+#  hl7.terminology.r5: latest
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
