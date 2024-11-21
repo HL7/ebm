@@ -30,8 +30,6 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * content 1..*
   * ^definition = "A comment about the artifact."
   * ^short = "A comment"
-* content.informationType
-  * ^comment = "The code 'comment' will be the value in most instances. Other codes may be used for complex Comments with content.component use."
 * content.freeToShare
   * ^definition = "Acceptable to publicly share the Comment content, specific to the associated content instance"
   * ^short = "Acceptable to publicly share the Comment content"

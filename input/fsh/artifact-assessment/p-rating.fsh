@@ -30,8 +30,6 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * content 1..*
   * ^definition = "A rating of the artifact."
   * ^short = "A rating"
-* content.informationType
-  * ^comment = "The code 'rating' will be the value in most instances. Other codes may be used for complex Ratings with content.component use."
 * content.quantity
   * ^short = "Quantitative rating"
   * ^definition = "A quantitative rating of the artifact."

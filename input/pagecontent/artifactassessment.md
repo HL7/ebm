@@ -8,7 +8,7 @@ The <b>ArtifactAssessment Resource</b> provides a structure to communicate judgm
 
 The artifact[x] element is required and uses a Reference, canonical, or uri datatype to express the single artifact that the assessment is about.
 
-The content element is a BackboneElement and repeatable recursively with a component element. Each content element may contain any of informationType (a code to classify the content unit), summary (a markdown comment), type (a CodeableConcept to classify the type of content), classifier (an array of CodeableConcept for the classifier values), quantity (a Quantity for the classifier value), author (a Reference to the creator of the content), path (an array of uri values if the content is about a part of the artifact[x]), relatedArtifact (an array of RelatedArtifact), freeToShare (a boolean), and component (an array of BackBoneElement using the content structure).
+The content element is a BackboneElement and repeatable recursively with a component element. Each content element may contain any of summary (a markdown comment), type (a CodeableConcept to classify the type of content), classifier (an array of CodeableConcept for the classifier values), quantity (a Quantity for the classifier value), author (a Reference to the creator of the content), path (an array of uri values if the content is about a part of the artifact[x]), relatedArtifact (an array of RelatedArtifact), freeToShare (a boolean), and component (an array of BackBoneElement using the content structure).
 
 <b>ArtifactAssessment</b> is about the content of a Resource and not about the provenance of the Resource so should not be confused with <b>Provenance</b>.
 
