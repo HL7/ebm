@@ -19,25 +19,35 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Compara
 * section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code.coding"
 * section ^slicing.rules = #open
-* section contains population 1..1 MS and intervention 1..* MS and comparator 1..1 MS and researchStudy 1..1 MS and results 1..1 MS
+* section contains population 1..1 MS and intervention 1..* MS and comparator 1..1 MS and researchStudy 1..1 MS and outcomeVariables 0..1 and results 0..1 MS and summaryOfFindings 0..1 MS
 * section[population].code.coding 1..1
 * section[population].code.coding = https://fevir.net/resources/CodeSystem/179423#population "Population"
 * section[population]
-  * entry only Reference(CohortDefinition)
+  * entry only Reference(CohortDefinition or ConceptualCohortDefinition)
 * section[intervention].code.coding 1..1
 * section[intervention].code.coding = https://fevir.net/resources/CodeSystem/179423#intervention-description "Intervention Description"
 * section[intervention]
-  * entry only Reference(CohortDefinition)
+  * entry only Reference(CohortDefinition or ConceptualCohortDefinition)
 * section[comparator].code.coding 1..1
 * section[comparator].code.coding = https://fevir.net/resources/CodeSystem/179423#comparator-description "Comparator Description"
 * section[comparator]
-  * entry only Reference(CohortDefinition)
+  * entry only Reference(CohortDefinition or ConceptualCohortDefinition)
 * section[researchStudy].code.coding 1..1
 * section[researchStudy].code.coding = https://fevir.net/resources/CodeSystem/179423#research-study "Research Study"
 * section[researchStudy]
   * entry only Reference(ResearchStudy or Citation or Composition)
+* section[outcomeVariables].code.coding 1..1
+* section[outcomeVariables].code.coding = https://fevir.net/resources/CodeSystem/179423#variables "Variables"
+* section[outcomeVariables]
+  * entry 0..*
+  * entry only Reference(VariableDefinition)
 * section[results].code.coding 1..1
 * section[results].code.coding = https://fevir.net/resources/CodeSystem/179423#results "Results"
 * section[results]
   * entry 0..*
-  * entry only Reference(OutcomeMeasureSynthesisReport or SummaryOfFindings)
+  * entry only Reference(OutcomeMeasureSynthesisReport)
+* section[summaryOfFindings].code.coding 1..1
+* section[summaryOfFindings].code.coding = https://fevir.net/resources/CodeSystem/179423#summary-of-findings "Summary of Findings"
+* section[summaryOfFindings]
+  * entry 0..*
+  * entry only Reference(SummaryOfFindings)

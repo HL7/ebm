@@ -23,6 +23,7 @@
 [ComparatorOnlyEvidence]: StructureDefinition-comparator-only-evidence.html
 [Comparison]: StructureDefinition-comparison.html
 [CompositeRating]: StructureDefinition-composite-rating.html
+[ConceptualCohortDefinition]: StructureDefinition-conceptual-cohort-definition.html
 [DatabaseCitation]: StructureDefinition-database-citation.html
 [DatabaseEntryCitation]: StructureDefinition-database-entry-citation.html
 [DataDictionary: Measuring the Rate of Scientific Knowledge Transfer]: CodeSystem-181451.html
@@ -91,6 +92,7 @@
 [SystematicReviewExcludedStudies]: StructureDefinition-systematic-review-excluded-studies.html
 [SystematicReviewIncludedStudies]: StructureDefinition-systematic-review-included-studies.html
 [WebPageCitation]: StructureDefinition-web-page-citation.html
+[VariableDefinition]: StructureDefintion-variable-definition.html
 
 [VS EBMImplementationGuideProfile Value Set]: ValueSet-179430.html
 [VS Evidence Variable Role Subtype Value Set]: ValueSet-evidence-variable-role-subtype.html

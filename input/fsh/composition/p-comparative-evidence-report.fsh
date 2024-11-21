@@ -19,7 +19,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Compara
 * section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code.coding"
 * section ^slicing.rules = #open
-* section contains population 1..1 MS and intervention 1..* MS and comparator 1..1 MS and researchStudy 1..1 MS and baseline 0..1 MS and flow 0..1 MS and outcomes 1..1 MS
+* section contains population 1..1 MS and intervention 1..* MS and comparator 1..1 MS and researchStudy 1..1 MS and baseline 0..1 MS and flow 0..1 MS and outcomes 0..1 MS and summaryOfFindings 0..1 MS
 * section[population].code.coding 1..1
 * section[population].code.coding = https://fevir.net/resources/CodeSystem/179423#population "Population"
 * section[population]
@@ -78,4 +78,9 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Compara
 * section[outcomes].code.coding = https://fevir.net/resources/CodeSystem/179423#outcome-measures "Outcome Measures"
 * section[outcomes]
   * entry 0..*
-  * entry only Reference(OutcomeMeasureReport or SummaryOfFindings)
+  * entry only Reference(OutcomeMeasureReport)
+* section[summaryOfFindings].code.coding 1..1
+* section[summaryOfFindings].code.coding = https://fevir.net/resources/CodeSystem/179423#summary-of-findings "Summary of Findings"
+* section[summaryOfFindings]
+  * entry 0..*
+  * entry only Reference(SummaryOfFindings)
