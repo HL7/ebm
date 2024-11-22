@@ -1656,7 +1656,7 @@ definition:
   - description: This example of a GroupAssignment Profile describes a 2-group study
       (so handling='dichotomous') and lists the 2 study arms in category.name elements.
       Because the definition of this EvidenceVariable Resource is fully expressed
-      in the handling and category elements, the defintion.concept element uses a
+      in the handling and category elements, the definition.concept element uses a
       CodeableConcept for 'Defined in handling and category elements'.
     isExample: true
     name: 'GroupAssignment: Bariatric Surgery vs. no bariatric surgery'
@@ -1667,7 +1667,7 @@ definition:
   - description: This example of a GroupAssignment Profile describes a 3-arm trial
       (so handling='polychotomous') and lists the 3 trial arms in category.name elements.
       Because the definition of this EvidenceVariable Resource is fully expressed
-      in the handling and category elements, the defintion.concept element uses a
+      in the handling and category elements, the definition.concept element uses a
       CodeableConcept for 'Defined in handling and category elements'.
     isExample: true
     name: 'GroupAssignment: high dose xanomeline vs. low dose xanomeline vs. placebo'
@@ -1678,7 +1678,7 @@ definition:
   - description: This example of a GroupAssignment Profile describes a 2-group study
       (so handling='dichotomous') and lists the 2 study arms in category.name elements.
       Because the definition of this EvidenceVariable Resource is fully expressed
-      in the handling and category elements, the defintion.concept element uses a
+      in the handling and category elements, the definition.concept element uses a
       CodeableConcept for 'Defined in handling and category elements'.
     isExample: true
     name: 'GroupAssignment: Roux-en-Y gastric bypass or Biliopancreatic Diversion
@@ -1690,7 +1690,7 @@ definition:
   - description: This example of a GroupAssignment Profile describes a 2-group study
       (so handling='dichotomous') and lists the 2 study arms in category.name elements.
       Because the definition of this EvidenceVariable Resource is fully expressed
-      in the handling and category elements, the defintion.concept element uses a
+      in the handling and category elements, the definition.concept element uses a
       CodeableConcept for 'Defined in handling and category elements'.
     isExample: true
     name: 'GroupAssignment: Roux-en-Y gastric bypass surgery vs. Lifestyle-intensive
@@ -1702,7 +1702,7 @@ definition:
   - description: This example of a GroupAssignment Profile describes a 2-group study
       (so handling='dichotomous') and lists the 2 study arms in category.name elements.
       Because the definition of this EvidenceVariable Resource is fully expressed
-      in the handling and category elements, the defintion.concept element uses a
+      in the handling and category elements, the definition.concept element uses a
       CodeableConcept for 'Defined in handling and category elements'.
     isExample: true
     name: 'GroupAssignment: Roux-en-Y gastric bypass vs. medical treatment'

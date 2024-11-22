@@ -92,7 +92,7 @@
 [SystematicReviewExcludedStudies]: StructureDefinition-systematic-review-excluded-studies.html
 [SystematicReviewIncludedStudies]: StructureDefinition-systematic-review-included-studies.html
 [WebPageCitation]: StructureDefinition-web-page-citation.html
-[VariableDefinition]: StructureDefintion-variable-definition.html
+[VariableDefinition]: StructureDefinition-variable-definition.html
 
 [VS EBMImplementationGuideProfile Value Set]: ValueSet-179430.html
 [VS Evidence Variable Role Subtype Value Set]: ValueSet-evidence-variable-role-subtype.html
