@@ -30,6 +30,7 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * content
   * ^definition = "A rating or classification of the artifact."
   * ^short = "A rating"
+* content.informationType 0..0
 * content.type from http://hl7.org/fhir/ValueSet/certainty-type (extensible)
 * content.classifier from http://hl7.org/fhir/ValueSet/certainty-rating (extensible)
 * content.freeToShare

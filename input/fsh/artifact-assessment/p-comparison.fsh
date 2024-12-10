@@ -25,6 +25,7 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * artifact[x]
   * ^definition = "A reference to a resource, canonical resource, or non-FHIR resource which the Comparison is about."
   * ^short = "The artifact that is being compared"
+* content.informationType 0..0
 * content.freeToShare
   * ^definition = "Acceptable to publicly share the Comparison content, specific to the associated content instance"
   * ^short = "Acceptable to publicly share the content"

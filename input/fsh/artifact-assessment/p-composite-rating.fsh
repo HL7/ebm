@@ -27,6 +27,7 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * artifact[x]
   * ^definition = "A reference to a resource, canonical resource, or non-FHIR resource which the CompositeRating is about."
   * ^short = "The artifact that is rated or classified"
+* content.informationType 0..0
 * content 1..*
   * ^definition = "A rating or classification of the artifact."
   * ^short = "A rating or classification"

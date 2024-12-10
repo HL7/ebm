@@ -77,6 +77,7 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
   * component[acceptability].type = https://fevir.net/resources/CodeSystem/179423#acceptability "Acceptability"
   * component[feasibility].type = https://fevir.net/resources/CodeSystem/179423#feasibility "Feasibility"
 * content[competingInterests].type = https://fevir.net/resources/CodeSystem/179423#competing-interests "Competing Interests"
+* content.informationType 0..0
 * content.classifier from recommendation-justification-classifier (extensible)
 * content.freeToShare
   * ^definition = "Acceptable to publicly share the content, specific to the associated content instance"

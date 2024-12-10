@@ -30,6 +30,7 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * content 1..*
   * ^definition = "A classification of the artifact."
   * ^short = "A classification"
+* content.informationType 0..0
 * content.freeToShare
   * ^definition = "Acceptable to publicly share the classification content, specific to the associated content instance"
   * ^short = "Acceptable to publicly share the classification content"
