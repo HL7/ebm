@@ -37,6 +37,9 @@ Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/plan-definit
 # Suppressing message that a Resource StructureDefinition is experimental (as we will suggest to change it in a later version of R6 to not be experimental)
 The definition builds on 'http://hl7.org/fhir/StructureDefinition/ResearchStudy' which is experimental, but this definition is not labeled as experimental
 
+# Suppressing message that a value set is experimental (as it is no longer used in a later version of R6)
+The definition for the element 'ArtifactAssessment.content.informationType' binds to the value set 'http://hl7.org/fhir/ValueSet/artifactassessment-information-type|6.0.0-ballot2' which is experimental, but this structure is not labeled as experimental
+
 # Suppressing message that a value set is experimental (as we will suggest to change it in a later version of R6 to not be experimental)
 The definition for the element 'ActivityDefinition.versionAlgorithm[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/version-algorithm' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'ActivityDefinition.subject[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/participant-resource-types' which is experimental, but this structure is not labeled as experimental
@@ -152,6 +155,9 @@ Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/research-stu
 
 # Suppressing message that a CodeSystem in R5 is experimental (unable to change R5)
 Reference to experimental CodeSystem http://hl7.org/fhir/citation-artifact-classifier|5.0.0
+
+# Suppressing message that a CodeSystem is experimental (as we will suggest to change it in a later version of R6 to not be experimental)
+Reference to experimental CodeSystem http://hl7.org/fhir/citation-artifact-classifier|6.0.0-ballot2
 
 # Suppressing message that a CodeSystem property has a code without a URI; these properties were used in a DataDictionary Profile where these properties are not precisely terminology concepts
 This property has only a code ('Datatype') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
