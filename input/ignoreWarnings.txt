@@ -74,6 +74,9 @@ The definition for the element 'Library.versionAlgorithm[x]' binds to the value 
 The definition for the element 'Library.subject[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/participant-resource-types' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Library.jurisdiction' binds to the value set 'http://hl7.org/fhir/ValueSet/jurisdiction' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Library.topic' binds to the value set 'http://hl7.org/fhir/ValueSet/definition-topic' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'List.mode' binds to the value set 'http://hl7.org/fhir/ValueSet/list-mode|6.0.0-ballot2' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'List.code' binds to the value set 'http://hl7.org/fhir/ValueSet/list-example-codes' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'List.entry.flag' binds to the value set 'http://hl7.org/fhir/ValueSet/list-item-flag' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Group.versionAlgorithm[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/version-algorithm' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Group.characteristic.method' binds to the value set 'http://hl7.org/fhir/ValueSet/definition-method' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Group.characteristic.offset' binds to the value set 'http://hl7.org/fhir/ValueSet/characteristic-offset' which is experimental, but this structure is not labeled as experimental
