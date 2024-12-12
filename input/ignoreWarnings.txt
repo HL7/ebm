@@ -38,6 +38,17 @@ Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/plan-definit
 The definition builds on 'http://hl7.org/fhir/StructureDefinition/ResearchStudy' which is experimental, but this definition is not labeled as experimental
 
 # Suppressing message that a value set is experimental (as we will suggest to change it in a later version of R6 to not be experimental)
+The definition for the element 'ActivityDefinition.versionAlgorithm[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/version-algorithm' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'ActivityDefinition.subject[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/participant-resource-types' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'ActivityDefinition.jurisdiction' binds to the value set 'http://hl7.org/fhir/ValueSet/jurisdiction' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'ActivityDefinition.topic' binds to the value set 'http://hl7.org/fhir/ValueSet/definition-topic' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'ActivityDefinition.code' binds to the value set 'http://hl7.org/fhir/ValueSet/procedure-code' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'ActivityDefinition.intent' binds to the value set 'http://hl7.org/fhir/ValueSet/request-intent|6.0.0-ballot2' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'ActivityDefinition.priority' binds to the value set 'http://hl7.org/fhir/ValueSet/request-priority|6.0.0-ballot2' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'ActivityDefinition.asNeeded[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/medication-as-needed-reason' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'ActivityDefinition.participant.function' binds to the value set 'http://hl7.org/fhir/ValueSet/action-participant-function' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'ActivityDefinition.product[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/medication-codes' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'ActivityDefinition.bodySite' binds to the value set 'http://hl7.org/fhir/ValueSet/body-site' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'ArtifactAssessment.content.type' binds to the value set 'http://hl7.org/fhir/ValueSet/certainty-type' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'ArtifactAssessment.content.classifier' binds to the value set 'http://hl7.org/fhir/ValueSet/certainty-rating' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'ArtifactAssessment.workflowStatus' binds to the value set 'http://hl7.org/fhir/ValueSet/artifactassessment-workflow-status|6.0.0-ballot2' which is experimental, but this structure is not labeled as experimental
