@@ -124,6 +124,22 @@ The definition for the element 'Evidence.statistic.modelCharacteristic.code' bin
 The definition for the element 'Evidence.statistic.modelCharacteristic.variable.handling' binds to the value set 'http://hl7.org/fhir/ValueSet/variable-handling|6.0.0-ballot2' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Evidence.certainty.type' binds to the value set 'http://hl7.org/fhir/ValueSet/certainty-type' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Evidence.certainty.rating' binds to the value set 'http://hl7.org/fhir/ValueSet/certainty-rating' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'PlanDefinition.versionAlgorithm[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/version-algorithm' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'PlanDefinition.subject[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/participant-resource-types' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'PlanDefinition.jurisdiction' binds to the value set 'http://hl7.org/fhir/ValueSet/jurisdiction' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'PlanDefinition.topic' binds to the value set 'http://hl7.org/fhir/ValueSet/definition-topic' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'PlanDefinition.goal.category' binds to the value set 'http://hl7.org/fhir/ValueSet/goal-category' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'PlanDefinition.goal.description' binds to the value set 'http://hl7.org/fhir/ValueSet/clinical-findings' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'PlanDefinition.goal.priority' binds to the value set 'http://hl7.org/fhir/ValueSet/goal-priority' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'PlanDefinition.goal.start' binds to the value set 'http://hl7.org/fhir/ValueSet/goal-start-event' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'PlanDefinition.goal.addresses' binds to the value set 'http://hl7.org/fhir/ValueSet/condition-code' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'PlanDefinition.goal.target.measure' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-codes' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'PlanDefinition.action.priority' binds to the value set 'http://hl7.org/fhir/ValueSet/request-priority|6.0.0-ballot2' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'PlanDefinition.action.code' binds to the value set 'http://hl7.org/fhir/ValueSet/action-code' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'PlanDefinition.action.reason' binds to the value set 'http://hl7.org/fhir/ValueSet/action-reason-code' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'PlanDefinition.action.subject[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/participant-resource-types' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'PlanDefinition.action.participant.function' binds to the value set 'http://hl7.org/fhir/ValueSet/action-participant-function' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'PlanDefinition.asNeeded[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/medication-as-needed-reason' which is experimental, but this structure is not labeled as experimental
 
 # Suppressing message that a CodeSystem in R5 is draft (unable to change R5)
 Reference to draft CodeSystem http://hl7.org/fhir/characteristic-offset|5.0.0
