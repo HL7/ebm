@@ -135,8 +135,6 @@ Other Resources and <b>Other Profiles</b> used in the EBMonFHIR Implementation G
 - <b>ResearchStudy Resource</b>
   - <b>M11ResearchStudy</b> used to add extensions for use with an M11 Report.
   - <b>SystematicReview</b> used for a research study that involves investigation of research studies.
-- <b>CodeSystem Resource</b> including a Profile of:
-  - <b>DataDictionaryCodeSystem</b> used for a code key for variable names in a dataset.
 - <b>ActivityDefinition Resource</b> including a Profile of:
   - <b>RecommendationAction</b> used for a recommendation from a clinical practice guideline.
 - <b>PlanDefinition Resource</b> including Profiles of:

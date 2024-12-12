@@ -26,8 +26,6 @@
 [ConceptualCohortDefinition]: StructureDefinition-conceptual-cohort-definition.html
 [DatabaseCitation]: StructureDefinition-database-citation.html
 [DatabaseEntryCitation]: StructureDefinition-database-entry-citation.html
-[DataDictionary: Measuring the Rate of Scientific Knowledge Transfer]: CodeSystem-181451.html
-[DataDictionary: phs003190]: CodeSystem-179650.html
 [DatasetCitation]: StructureDefinition-dataset-citation.html
 [DateAsRating]: StructureDefinition-date-as-rating.html
 [EndpointAnalysisPlan]: StructureDefinition-endpoint-analysis-plan.html

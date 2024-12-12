@@ -39,6 +39,7 @@ The definition builds on 'http://hl7.org/fhir/StructureDefinition/ResearchStudy'
 
 # Suppressing message that a value set is experimental (as it is no longer used in a later version of R6)
 The definition for the element 'ArtifactAssessment.content.informationType' binds to the value set 'http://hl7.org/fhir/ValueSet/artifactassessment-information-type|6.0.0-ballot2' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'ArtifactAssessment.content.component.informationType' binds to the value set 'http://hl7.org/fhir/ValueSet/artifactassessment-information-type|6.0.0-ballot2' which is experimental, but this structure is not labeled as experimental
 
 # Suppressing message that a value set is experimental (as we will suggest to change it in a later version of R6 to not be experimental)
 The definition for the element 'ActivityDefinition.versionAlgorithm[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/version-algorithm' which is experimental, but this structure is not labeled as experimental
@@ -151,10 +152,17 @@ Reference to draft CodeSystem http://hl7.org/fhir/characteristic-offset|5.0.0
 
 # Suppressing message that a CodeSystem in THO is draft (the CodeSystem in THO is not derived from the IG)
 Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/synthesis-type|2.0.0
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/synthesis-type|2.0.0 from hl7.terminology.r4#6.1.0
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/synthesis-type|2.0.0 from hl7.terminology.r4#6.1.0 (from http://tx.fhir.org/r5)
 Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/research-study-phase|1.0.0
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/directness|2.0.0 from hl7.terminology.r4#6.1.0
+Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/directness|2.0.0 from hl7.terminology.r4#6.1.0 (from http://tx.fhir.org/r5)
 
 # Suppressing message that a CodeSystem in R5 is experimental (unable to change R5)
 Reference to experimental CodeSystem http://hl7.org/fhir/citation-artifact-classifier|5.0.0
+
+# Suppressing message that a CodeSystem is draft (as we will suggest to change it in a later version of R6 to be active)
+Reference to draft CodeSystem http://hl7.org/fhir/characteristic-offset|6.0.0-ballot2
 
 # Suppressing message that a CodeSystem is experimental (as we will suggest to change it in a later version of R6 to not be experimental)
 Reference to experimental CodeSystem http://hl7.org/fhir/citation-artifact-classifier|6.0.0-ballot2
@@ -178,6 +186,7 @@ This property has only the standard code ('comment') but not the standard URI 'h
 # Suppressing message that a slice is not found in a base Profile (but it is used in a derivative Profile) in a Resource mapped to 2 Profiles
 This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report-package|1.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-measure-report-package|1.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice) 
+This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report-package|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 
 #Suppressing a message about XML tags in markdown. This is a known issue converting structured abstract data from MEDLINE and is handled in the presentation of the data.
 The markdown contains content that appears to be an embedded HTML tag starting at '<A'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
