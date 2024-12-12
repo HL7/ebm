@@ -91,6 +91,7 @@ The definition for the element 'List.mode' binds to the value set 'http://hl7.or
 The definition for the element 'List.code' binds to the value set 'http://hl7.org/fhir/ValueSet/list-example-codes' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'List.entry.flag' binds to the value set 'http://hl7.org/fhir/ValueSet/list-item-flag' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Group.versionAlgorithm[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/version-algorithm' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'Group.characteristic.code' binds to the value set 'https://fevir.net/resources/ValueSet/265087' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Group.characteristic.method' binds to the value set 'http://hl7.org/fhir/ValueSet/definition-method' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Group.characteristic.offset' binds to the value set 'http://hl7.org/fhir/ValueSet/characteristic-offset' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Group.member.involvement' binds to the value set 'http://hl7.org/fhir/ValueSet/group-involvement-set' which is experimental, but this structure is not labeled as experimental
