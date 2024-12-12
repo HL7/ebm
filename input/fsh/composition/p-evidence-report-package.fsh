@@ -8,7 +8,9 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
 * section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code.coding"
 * section ^slicing.rules = #open
-* section contains introduction 0..1 MS and discussion 0..1 MS and methods 0..1 MS and references 0..1 MS and competingInterests 0..1 MS and acknowledgements 0..1 MS and appendices 0..1 MS
+* section contains summary 0..1 and introduction 0..1 MS and discussion 0..1 MS and methods 0..1 MS and references 0..1 MS and competingInterests 0..1 MS and acknowledgements 0..1 MS and appendices 0..1 MS
+* section[summary].code.coding 1..1
+* section[summary].code.coding = https://fevir.net/resources/CodeSystem/179423#summary "Summary"
 * section[introduction].code.coding 1..1
 * section[introduction].code.coding = https://fevir.net/resources/CodeSystem/179423#introduction "Introduction"
 * section[discussion].code.coding 1..1
