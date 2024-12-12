@@ -140,6 +140,7 @@ The definition for the element 'PlanDefinition.action.reason' binds to the value
 The definition for the element 'PlanDefinition.action.subject[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/participant-resource-types' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'PlanDefinition.action.participant.function' binds to the value set 'http://hl7.org/fhir/ValueSet/action-participant-function' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'PlanDefinition.asNeeded[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/medication-as-needed-reason' which is experimental, but this structure is not labeled as experimental
+The definition for the element 'Extension.extension.value[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/statistic-type' which is experimental, but this structure is not labeled as experimental
 
 # Suppressing message that a CodeSystem in R5 is draft (unable to change R5)
 Reference to draft CodeSystem http://hl7.org/fhir/characteristic-offset|5.0.0
