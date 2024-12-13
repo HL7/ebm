@@ -193,6 +193,9 @@ The markdown contains content that appears to be an embedded HTML tag starting a
 The markdown contains content that appears to be an embedded HTML tag starting at 'OB'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
 The markdown contains content that appears to be an embedded HTML tag starting at 'BA'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
 
+#Suppressing warning about not finding definition for a CodeSystem (for CDC Race and Ethnicity) but the official URL is used from https://terminology.hl7.org/5.1.0/CodeSystem-CDCREC.html
+A definition for CodeSystem 'urn:oid:2.16.840.1.113883.6.238' could not be found, so the code cannot be validated
+
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
