@@ -188,13 +188,16 @@ This element does not match any known slice defined in the profile http://hl7.or
 This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-measure-report-package|1.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice) 
 This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report-package|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 
-#Suppressing a message about XML tags in markdown. This is a known issue converting structured abstract data from MEDLINE and is handled in the presentation of the data.
+# Suppressing a message about XML tags in markdown. This is a known issue converting structured abstract data from MEDLINE and is handled in the presentation of the data.
 The markdown contains content that appears to be an embedded HTML tag starting at '<A'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
 The markdown contains content that appears to be an embedded HTML tag starting at 'OB'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
 The markdown contains content that appears to be an embedded HTML tag starting at 'BA'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
 
-#Suppressing warning about not finding definition for a CodeSystem (for CDC Race and Ethnicity) but the official URL is used from https://terminology.hl7.org/5.1.0/CodeSystem-CDCREC.html
+# Suppressing warning about not finding definition for a CodeSystem (for CDC Race and Ethnicity) but the official URL is used from https://terminology.hl7.org/5.1.0/CodeSystem-CDCREC.html
 A definition for CodeSystem 'urn:oid:2.16.840.1.113883.6.238' could not be found, so the code cannot be validated
+
+# Suppressing security string content warning for use of text that looks like embedded HTML tags as they are used in SEVCO CodeSystem properties for some comments
+The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 # (And include comments like this justifying why)
