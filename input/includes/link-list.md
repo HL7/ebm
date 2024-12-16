@@ -1,9 +1,6 @@
 [Adaptation]: StructureDefinition-adaptation.html
-[ArtifactApprovalDate]: StructureDefinition-artifact-approvalDate.html
 [ArtifactAssessmentCompared]: StructureDefinition-artifact-assessment-compared.html
 [ArtifactAssessmentDateAsRating]: StructureDefinition-artifact-assessment-date-as-rating.html
-[ArtifactEffectivePeriod]: StructureDefinition-artifact-effectivePeriod.html
-[ArtifactLastReviewDate]: StructureDefinition-artifact-lastReviewDate.html
 [BaselineMeasureEvidence]: StructureDefinition-baseline-measure-evidence.html
 [BaselineMeasureReport]: StructureDefinition-baseline-measure-report.html
 [BookCitation]: StructureDefinition-book-citation.html

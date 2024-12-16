@@ -181,6 +181,7 @@ This property has only a code ('open-for-voting') and not a URI, so it has no cl
 This property has only a code ('change-for-vote') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
 This property has only a code ('multiple-parents') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
 This property has only a code ('statistical-purpose') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
+This property has only a code ('deprecated') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
 This property has only the standard code ('comment') but not the standard URI 'http://hl7.org/fhir/concept-properties#comment', so it has no clearly defined meaning in the terminology ecosystem
 
 # Suppressing message that a slice is not found in a base Profile (but it is used in a derivative Profile) in a Resource mapped to 2 Profiles
