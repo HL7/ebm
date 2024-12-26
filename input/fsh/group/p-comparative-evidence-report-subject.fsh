@@ -15,7 +15,7 @@ Description: "Profile of Group for Evidence Based Medicine IG. The EvidenceRepor
 * characteristic[intervention].exclude = false
 * characteristic[comparator] 1..1
 * characteristic[comparator].code.text = "Comparator"
-* characteristic[comparator].valueReference only Reference(VariableDefinition or ExposureDefinition or ComparatorDefinition)
+* characteristic[comparator].valueReference only Reference(VariableDefinition or ExposureDefinition or ComparatorDefinition or ConceptualExposureDefinition or ConceptualComparatorDefinition)
 * characteristic[comparator].exclude = false
 * characteristic[outcomes] 1..1
 * characteristic[outcomes].code.text = "Outcomes"
