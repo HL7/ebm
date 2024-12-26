@@ -13,6 +13,6 @@ Description: "A characteristic applied to the definition of the EvidenceVariable
 * extension[code].value[x] only CodeableConcept
   * ^short = "Type of modifier"
   * ^definition = "Type of modifier; e.g. method, unit of measure, relative timing."
-* extension[value].value[x] only CodeableConcept or Quantity or Range or Expression or boolean or Period or RelativeTime or Reference or uri
+* extension[value].value[x] only CodeableConcept or Quantity or Range or Expression or boolean or Period or Reference or uri
   * ^short = "Value of modifier"
   * ^definition = "Value of modifier."
