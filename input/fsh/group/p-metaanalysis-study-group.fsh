@@ -5,6 +5,8 @@ Description: "Profile of Group for Evidence Based Medicine IG. The MetaanalysisS
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
+* membership = #conceptual
+* type 0..0
 * code.text = "Evidence"
 * characteristic 1..1
   * code.text = "Member of"
