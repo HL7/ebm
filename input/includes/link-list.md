@@ -27,6 +27,7 @@
 [DatabaseEntryCitation]: StructureDefinition-database-entry-citation.html
 [DatasetCitation]: StructureDefinition-dataset-citation.html
 [DateAsRating]: StructureDefinition-date-as-rating.html
+[DichotomousPatientImportantOutcome]: StructureDefinition-dichotomous-patient-important-outcome.html
 [EndpointAnalysisPlan]: StructureDefinition-endpoint-analysis-plan.html
 [Evidence Based Medicine on FHIR Implementation Guide Code System]: CodeSystem-179423.html
 [EvidenceList]: StructureDefinition-evidence-list.html
