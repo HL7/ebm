@@ -8,3 +8,11 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Researc
 * type.coding 1..1
 * type.coding = https://fevir.net/resources/CodeSystem/179423#ResearchStudyDataDictionary "ResearchStudyDataDictionary"
 * type.text = "Research Study Data Dictionary"
+* section ^slicing.discriminator.type = #value
+* section ^slicing.discriminator.path = "code.coding"
+* section ^slicing.rules = #open
+* section contains variableDefinition 1..*
+* section[variableDefinition].code.coding 1..1
+* section[variableDefinition].code.coding = https://fevir.net/resources/CodeSystem/179423#variables "Variables"
+* section[variableDefinition]
+  * entry only Reference(VariableDefinition)
