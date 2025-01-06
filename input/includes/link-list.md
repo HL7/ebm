@@ -14,6 +14,7 @@
 [ComparativeEvidence]: StructureDefinition-comparative-evidence.html
 [ComparativeEvidenceReport]: StructureDefinition-comparative-evidence-report.html
 [ComparativeEvidenceReportSubject]: StructureDefinition-comparative-evidence-report-subject.html
+[ComparativeEvidenceSynthesisReport]: StructureDefinition-comparative-evidence-synthesis-report.html
 [ComparativeParticipantFlowEvidence]: StructureDefinition-comparative-participant-flow-evidence.html
 [ComparatorDefinition]: StructureDefinition-comparator-definition.html
 [ComparatorGroup]: StructureDefinition-comparator-group.html
