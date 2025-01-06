@@ -40,7 +40,7 @@ The **[ResearchStudyDataDictionary Profile][ResearchStudyDataDictionary]** is a 
 
 ### EvidenceReportPackage Profile of Composition Resource
 
-The **[EvidenceReportPackage Profile][EvidenceReportPackage]** is used for a base structure to extend the **[EvidenceReport Profile][EvidenceReport]** with optional sections for Introduction, Discussion, Methods, References, Competing Interests, Acknowledgements, and Appendices.
+The **[EvidenceReportPackage Profile][EvidenceReportPackage]** is used for a base structure to extend the **[EvidenceReport Profile][EvidenceReport]** with optional sections for Summary, Introduction, Discussion, Methods, References, Competing Interests, Acknowledgements, and Appendices.
 
 ### ComparativeEvidenceReport Profile of Composition Resource
 
