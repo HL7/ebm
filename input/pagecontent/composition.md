@@ -78,7 +78,7 @@ The Composition.type value is set to a "Comparative Evidence Synthesis Report".
 
 ..A 'Research Study' section is required with entries limited to reference <b>ResearchStudy Resource</b> or <b>Citation Resource</b> or <b>Composition Resource</b>.
 
-..An 'Outcome Variables' section is optional with entries limited to reference **[VariabletDefinition Profile][VariabletDefinition]**.
+..An 'Outcome Variables' section is optional with entries limited to reference **[VariableDefinition Profile][VariableDefinition]**.
 
 ..A 'Results' section is optional. The 'Results' section entry element is limited to reference **[OutcomeMeasureSynthesisReport Profile][OutcomeMeasureSynthesisReport]**.
 
