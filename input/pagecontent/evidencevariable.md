@@ -30,6 +30,6 @@ The **[GroupAssignment Profile][GroupAssignment]** is a Profile of **[VariableDe
 
 The **[ParticipantFlowEvidenceVariable Profile][ParticipantFlowEvidenceVariable]** is a Profile of **[VariableDefinition][VariableDefinition]** used to describe outcome measures for completion and reasons for non-completion of participation in a research study. For simplicity the handling element always has a value of 'dichotomous'.
 
-The **[DichotomousPatientImportantOutcome Profile][DichotomousPatientImportantOutcome]** is a Profile of **[VariableDefinition][VariableDefinition]** used to provide a common variable definition for the 'intended' variable in the role of 'outcome' in <b>Evidence Resources</b>, to allow mapping evidence with different observaed variables that relate to the same intended outcome.
+The **[DichotomousIntendedOutcome Profile][DichotomousIntendedOutcome]** is a Profile of **[VariableDefinition][VariableDefinition]** used to provide a common variable definition for the 'intended' variable in the role of 'outcome' in <b>Evidence Resources</b>, to allow mapping evidence with different observed variables that relate to the same intended outcome.
 
 {% include link-list.md %}
