@@ -85,105 +85,73 @@ The Composition.type value is set to a "Comparative Evidence Synthesis Report".
 ..A 'Summary of Findings' section is optional. The 'Summary of Findings' section entry element is limited to reference **[SummaryOfFindings Profile][SummaryOfFindings]**.
 
 
-### EvidenceMeasureReportPackage Profile of Composition Resource
+### EvidenceTableReportPackage Profile of Composition Resource
 
-The **[EvidenceMeasureReportPackage Profile][EvidenceMeasureReportPackage]** is used for a base structure to extend the **[EvidenceReport Profile][EvidenceReport]** with optional relatesTo slices for Total Group, Intervention Group, Comparator Group, and Group Assignment.
+The **[EvidenceTableReportPackage Profile][EvidenceTableReportPackage]** is used for a base structure to extend the **[EvidenceReport Profile][EvidenceReport]** with sections for Groups (Total Group, Intervention Group, Comparator Group, and Group Assignment), Evidence Variables, and Results.
 
-The relatesTo element may include instances with type values of "depends-on", label values to identify the contextual use of specific Group Resources (such as "Intervention Group", "Comparator Group", and "Total Group"), and resourceReference values which may be limited to reference **[StudyGroup][StudyGroup]**, **[ExposureGroup][ExposureGroup]**, or **[ComparatorGroup][ComparatorGroup]** Profiles.
-
-The relatesTo element may include instances with type values of "composed-of", label values of "Group Assignment" to identify the contextual use of specific EvidenceVariable Resources, and resourceReference values which may be limited to reference **[GroupAssignment][GroupAssignment]** Profiles.
+The Groups and Evidence Variables sections have limits to the reference types for their entry content: **[StudyGroup Profile][StudyGroup]** for Total Group, **[ExposureGroup][ExposureGroup]** or **[ComparatorGroup][ComparatorGroup]** Profile for Intervention Group, **[ExposureGroup][ExposureGroup]** or **[ComparatorGroup][ComparatorGroup]** Profile for Comparator Group, **[GroupAssignment Profile][GroupAssignment]** for Group Assignment, and **[VariableDefinition Profile][VariableDefinition]** for Evidence Variables.
 
 ### BaselineMeasureReport Profile of Composition Resource
 
-The **[BaselineMeasureReport Profile][BaselineMeasureReport]** is a Profile of **[EvidenceMeasureReportPackage][EvidenceMeasureReportPackage]** and is used for an evidence report including the findings for any number of baseline measures in a research study. 
+The **[BaselineMeasureReport Profile][BaselineMeasureReport]** is a Profile of **[EvidenceTableReportPackage][EvidenceTableReportPackage]** and is used for an evidence report including the findings for any number of baseline measures in a research study.
 
 The Composition.type value is set to a "Baseline Measure Report".
 
-The relatesTo element may include instances with type values of "derived-from", label values of "Baseline Measure" to identify the contextual use of specific EvidenceVariable Resources, and resourceReference values which may be limited to reference **[VariableDefinition][VariableDefinition]** Profiles.
+The section element (Results section slice) contains one or more instances (sections) with each of these sections identified by focus (Composition.section.section.focus) which references a **[VariableDefinition Profile][VariableDefinition]**. Each of these focused sections contain one or more of the following sections:
 
-The section element contains one or more instances (sections) with each of these sections identified by focus (Composition.section.focus) which references a **[VariableDefinition Profile][VariableDefinition]**. Each of these focused sections contain one or more of the following sections:
+..Composition.section.section.section[comparatorEvidence] has a section.code value for 'Evidence with comparator alone' and entries limited to a single reference of a **[BaselineMeasureEvidence Profile][BaselineMeasureEvidence]**.
 
-..Composition.section.section[comparatorEvidence] has a section.code value for 'Evidence with comparator alone' and entries limited to a single reference of a **[BaselineMeasureEvidence Profile][BaselineMeasureEvidence]**.
+..Composition.section.section.section[interventionEvidence] has a section.code value for 'Evidence with intervention alone' and entries limited to a single reference of a **[BaselineMeasureEvidence Profile][BaselineMeasureEvidence]**.
 
-..Composition.section.section[interventionEvidence] has a section.code value for 'Evidence with intervention alone' and entries limited to a single reference of a **[BaselineMeasureEvidence Profile][BaselineMeasureEvidence]**.
+..Composition.section.section.section[totalGroup] has a section.code value for 'Evidence with total group' and entries limited to a single reference of a **[BaselineMeasureEvidence Profile][BaselineMeasureEvidence]**.
 
-..Composition.section.section[totalGroup] has a section.code value for 'Evidence with total group' and entries limited to a single reference of a **[BaselineMeasureEvidence Profile][BaselineMeasureEvidence]**.
-
-..Composition.section.section[comparativeEvidence] has a section.code value for 'Evidence with intervention vs. comparator' and entries limited to a single reference of a **[ComparativeBaselineMeasureEvidence Profile][ComparativeBaselineMeasureEvidence]**.
+..Composition.section.section.section[comparativeEvidence] has a section.code value for 'Evidence with intervention vs. comparator' and entries limited to a single reference of a **[ComparativeBaselineMeasureEvidence Profile][ComparativeBaselineMeasureEvidence]**.
 
 
 ### ParticipantFlowReport Profile of Composition Resource
 
-The **[ParticipantFlowReport Profile][ParticipantFlowReport]** is a Profile of **[EvidenceMeasureReportPackage][EvidenceMeasureReportPackage]** and is used for an evidence report including the counts (and proportions) for any number of participant flow measures in a research study. For example, the ParticipantFlowReport may include the data for a CONSORT Participant Flow Diagram reported with a randomized controlled trial.
+The **[ParticipantFlowReport Profile][ParticipantFlowReport]** is a Profile of **[EvidenceTableReportPackage][EvidenceTableReportPackage]** and is used for an evidence report including the counts (and proportions) for any number of participant flow measures in a research study. For example, the ParticipantFlowReport may include the data for a CONSORT Participant Flow Diagram reported with a randomized controlled trial.
 
 The Composition.type value is set to a "Participant Flow Report".
 
-The relatesTo element may include instances with type values of "derived-from", label values of "Participant Flow Measure" to identify the contextual use of specific EvidenceVariable Resources, and resourceReference values which may be limited to reference **[ParticipantFlowEvidenceVariable][ParticipantFlowEvidenceVariable]** Profiles.
+The section element (Variables slice) is limited to reference **[ParticipantFlowEvidenceVariable Profile][ParticipantFlowEvidenceVariable]** for entry values.
 
-The section element contains one or more instances (sections) with each of these sections identified by focus (Composition.section.focus) which references a **[ParticipantFlowEvidenceVariable Profile][ParticipantFlowEvidenceVariable]**. Each of these focused sections contain one or more of the following sections:
+The section element (Results section slice) contains one or more instances (sections) with each of these sections identified by focus (Composition.section.section.focus) which references a **[ParticipantFlowEvidenceVariable Profile][ParticipantFlowEvidenceVariable]**. Each of these focused sections contain one or more of the following sections:
 
-..Composition.section.section[comparatorEvidence] has a section.code value for 'Evidence with comparator alone' and entries limited to a single reference of a **[ParticipantFlowEvidence Profile][ParticipantFlowEvidence]**.
+..Composition.section.section.section[comparatorEvidence] has a section.code value for 'Evidence with comparator alone' and entries limited to a single reference of a **[ParticipantFlowEvidence Profile][ParticipantFlowEvidence]**.
 
-..Composition.section.section[interventionEvidence] has a section.code value for 'Evidence with intervention alone' and entries limited to a single reference of a **[ParticipantFlowEvidence Profile][ParticipantFlowEvidence]**.
+..Composition.section.section.section[interventionEvidence] has a section.code value for 'Evidence with intervention alone' and entries limited to a single reference of a **[ParticipantFlowEvidence Profile][ParticipantFlowEvidence]**.
 
-..Composition.section.section[totalGroup] has a section.code value for 'Evidence with total group' and entries limited to a single reference of a **[ParticipantFlowEvidence Profile][ParticipantFlowEvidence]**.
+..Composition.section.section.section[totalGroup] has a section.code value for 'Evidence with total group' and entries limited to a single reference of a **[ParticipantFlowEvidence Profile][ParticipantFlowEvidence]**.
 
-..Composition.section.section[comparativeEvidence] has a section.code value for 'Evidence with intervention vs. comparator' and entries limited to a single reference of a **[ComparativeParticipantFlowEvidence Profile][ComparativeParticipantFlowEvidence]**.
+..Composition.section.section.section[comparativeEvidence] has a section.code value for 'Evidence with intervention vs. comparator' and entries limited to a single reference of a **[ComparativeParticipantFlowEvidence Profile][ComparativeParticipantFlowEvidence]**.
 
 
 
 ### OutcomeMeasureReport Profile of Composition Resource
 
-The **[OutcomeMeasureReport Profile][OutcomeMeasureReport]** is a Profile of **[EvidenceMeasureReportPackage][EvidenceMeasureReportPackage]** and is used for an evidence report including the findings for any number of outcome measures in a research study. 
+The **[OutcomeMeasureReport Profile][OutcomeMeasureReport]** is a Profile of **[EvidenceTableReportPackage][EvidenceTableReportPackage]** and is used for an evidence report including the findings for any number of outcome measures in a research study. 
 
 The Composition.type value is set to an "Outcome Measure Report".
 
-The relatesTo element may include instances with type values of "derived-from", label values of "Outcome Measure" to identify the contextual use of specific EvidenceVariable Resources, and resourceReference values which may be limited to reference **[VariableDefinition][VariableDefinition]** Profiles.
+The section element (Results section slice) contains one or more instances (sections) with each of these sections identified by focus (Composition.section.section.focus) which references a **[VariableDefinition Profile][VariableDefinition]**. Each of these focused sections contain one or more of the following sections:
 
-The section element contains one or more instances (sections) with each of these sections identified by focus (Composition.section.focus) which references a **[VariableDefinition Profile][VariableDefinition]**. Each of these focused sections contain one or more of the following sections:
+..Composition.section.section.section[comparatorEvidence] has a section.code value for 'Evidence with comparator alone' and entries limited to a single reference of a **[NoncomparativeEvidence Profile][NoncomparativeEvidence]**.
 
-..Composition.section.section[comparatorEvidence] has a section.code value for 'Evidence with comparator alone' and entries limited to a single reference of a **[NoncomparativeEvidence Profile][NoncomparativeEvidence]**.
+..Composition.section.section.section[interventionEvidence] has a section.code value for 'Evidence with intervention alone' and entries limited to a single reference of a **[NoncomparativeEvidence Profile][NoncomparativeEvidence]**.
 
-..Composition.section.section[interventionEvidence] has a section.code value for 'Evidence with intervention alone' and entries limited to a single reference of a **[NoncomparativeEvidence Profile][NoncomparativeEvidence]**.
+..Composition.section.section.section[totalGroup] has a section.code value for 'Evidence with total group' and entries limited to a single reference of a **[NoncomparativeEvidence Profile][NoncomparativeEvidence]**.
 
-..Composition.section.section[totalGroup] has a section.code value for 'Evidence with total group' and entries limited to a single reference of a **[NoncomparativeEvidence Profile][NoncomparativeEvidence]**.
+..Composition.section.section.section[comparativeEvidence] has a section.code value for 'Evidence with intervention vs. comparator' and entries limited to a single reference of a **[ComparativeEvidence Profile][ComparativeEvidence]**.
 
-..Composition.section.section[comparativeEvidence] has a section.code value for 'Evidence with intervention vs. comparator' and entries limited to a single reference of a **[ComparativeEvidence Profile][ComparativeEvidence]**.
-
-
-### Guideline Profile of Composition Resource
-
-The **[Guideline Profile][Guideline]** is a Profile of **[EvidenceReportPackage][EvidenceReportPackage]** and is used for the composition of a clinical practice guideline and may be tightly related to use of the **[Recommendation Profile][Recommendation]** for related content. 
-
-The Composition.type value is set to a "Guideline".
-
-The **[Guideline Profile][Guideline]** will have 1 to 6 section element instances with any of the following section.code concepts:  Introduction, Recommendations, Text, Methods, Acknowledgements, and Appendices. The Recommendations section will have entries which are constrained to reference the **[Recommendation Profile][Recommendation]**. 
-
-### Recommendation Profile of Composition Resource
-
-The **[Recommendation Profile][Recommendation]** is a Profile of **[EvidenceReportPackage][EvidenceReportPackage]** and is used for the composition of a recommendation (such as that from a clinical practice guideline) and may be tightly related to a **[RecommendationPlan Profile][RecommendationPlan]** of PlanDefinition and a **[RecommendationJustification Profile][RecommendationJustification]** of ArtifactAssessment. 
-
-The Composition.type value is set to a "Recommendation".
-
-The **[Recommendation Profile][Recommendation]** will have 1 or more section element instances with any of the following section.code concepts:  Recommendation Specification (required), Discussion (optional), Evidence (optional), Justification (optional), and Considerations (optional).
-
-..The Recommendation Specification section is required and contains sections with section.code concepts for Recommendation Statement, Ratings, Population, Action, and Opposite Action.
-
-..The Discussion section may contain sections for text-based summaries.
-
-..The Evidence section may contain sections for text-based summaries and may contain entries referencing ArtifactAssessment, Evidence, or Composition Resources.
-
-..The Justification section may contain sections for text-based summaries and may contain entries referencing ArtifactAssessment Resources (RecommendationJustification Profile).
-
-..The Considerations section contains sections with section.code concepts for Summary, Subgroup Considerations, Implementation Considerations, Monitoring Considerations, Competing Interests, and Research Considerations.
 
 ### SummaryOfFindings Profile of Composition Resource
 
-The **[SummaryOfFindings Profile][SummaryOfFindings]** is a Profile of **[EvidenceReport][EvidenceReport]** and is used for an evidence report combining <b>Evidence</b> and <b>EvidenceVariable Resources</b>, organized around **[VariableDefinition][VariableDefinition]** (Profile of EvidenceVariable), to represent the summary of findings of comparative evidence. 
+The **[SummaryOfFindings Profile][SummaryOfFindings]** is a Profile of **[EvidenceTableReportPackage][EvidenceTableReportPackage]** and is used for an evidence report combining <b>Evidence</b> and <b>EvidenceVariable Resources</b>, organized around **[VariableDefinition][VariableDefinition]** (Profile of EvidenceVariable), to represent the summary of findings of comparative evidence.
 
 The Composition.type value is set to a "Summary of Findings".
 
-The **[SummaryOfFindings Profile][SummaryOfFindings]** has 1 'Column Headers' section and 1 or more 'Summary of findings entry for a single outcome' sections.  Each 'Summary of findings entry for a single outcome' section has a focus element (section.focus) which references a **[VariableDefinition Profile][VariableDefinition]**. Each of these sections has the same set of section.section.code patterns to provide the following contained sections:
+The **[SummaryOfFindings Profile][SummaryOfFindings]** has 1 'Column Headers' section and 1 'Summary of Findings' section. The 'Summary of Findings' section contains 1 or more 'Summary of findings entry for a single outcome' sections.  Each 'Summary of findings entry for a single outcome' section has a focus element (section.focus) which references a **[VariableDefinition Profile][VariableDefinition]**. Each of these sections has the same set of section.section.code patterns to provide the following contained sections:
 
 1. An 'Outcome Measure' section is required for the 'Column Headers' section and optional for the 'Summary of findings entry for a single outcome' sections. If used in the 'Summary of findings entry for a single outcome' section, entries are limited to reference a single **[VariableDefinition Profile][VariableDefinition]**.
 
@@ -200,6 +168,31 @@ The **[SummaryOfFindings Profile][SummaryOfFindings]** has 1 'Column Headers' se
 7. A 'Certainty of Evidence' section is optional. If used in the 'Summary of findings entry for a single outcome' section, entries may reference **[ComparativeEvidence Profile][ComparativeEvidence]** or **[CertaintyOfEvidence Profile][CertaintyOfEvidence]**.
 
 8. An 'Assertion' section is optional. If used in the 'Summary of findings entry for a single outcome' section, entries are limited to reference a single **[ComparativeEvidence Profile][ComparativeEvidence]**.
+
+
+### Guideline Profile of Composition Resource
+
+The **[Guideline Profile][Guideline]** is a Profile of **[EvidenceReportPackage][EvidenceReportPackage]** and is used for the composition of a clinical practice guideline and may be tightly related to use of the **[Recommendation Profile][Recommendation]** for related content. 
+
+The Composition.type value is set to a "Guideline".
+
+The **[Guideline Profile][Guideline]** will have a Recommendations section which will have entries which are constrained to reference the **[Recommendation Profile][Recommendation]**. 
+
+### Recommendation Profile of Composition Resource
+
+The **[Recommendation Profile][Recommendation]** is a Profile of **[EvidenceReportPackage][EvidenceReportPackage]** and is used for the composition of a recommendation (such as that from a clinical practice guideline) and may be tightly related to a **[RecommendationPlan Profile][RecommendationPlan]** of PlanDefinition and a **[RecommendationJustification Profile][RecommendationJustification]** of ArtifactAssessment. 
+
+The Composition.type value is set to a "Recommendation".
+
+The **[Recommendation Profile][Recommendation]** will have 1 or more section element instances with any of the following section.code concepts:  Recommendation Specification (required), Evidence (optional), Justification (optional), and Considerations (optional).
+
+..The Recommendation Specification section is required and contains sections with section.code concepts for Recommendation Statement, Ratings, Population, Action, and Opposite Action.
+
+..The Evidence section may contain sections for text-based summaries and may contain entries referencing other Resources.
+
+..The Justification section may contain sections for text-based summaries and may contain entries referencing **[RecommendationJustification Profile][RecommendationJustification]** of ArtifactAssessment.
+
+..The Considerations section may contain sections for text-based summaries and may contain entries referencing other Resources.
 
 ### SummaryOfNetEffect Profile of Composition Resource
 
@@ -228,26 +221,6 @@ The **[SummaryOfNetEffect Profile][SummaryOfNetEffect]** has 1 'Column Headers' 
 The 'Net Effect Estimate' section, if used, is limited to a single entry which references a **[NetEffectEstimate Profile][NetEffectEstimate]**.
 
  
-### EvidenceMap Profile of Composition Resource
-
-The **[EvidenceMap Profile][EvidenceMap]** is a Profile of **[EvidenceReport][EvidenceReport]** and is used for an organized listing of Resources used to generate **[EvidenceReport][EvidenceReport]** instances.
-
-The Composition.type value is set to a "EvidenceMap".
-
-The **[EvidenceMap Profile][EvidenceMap]** provides 11 optional sections with a suggested section.code.coding value and limitations of resource type for section.entry values. The 11 sections are:
-
-1. Outcome Measure, limited to reference **[VariableDefinition Profile][VariableDefinition]**.
-2. Evidence with comparator alone, limited to reference **[ComparatorOnlyEvidence Profile][ComparatorOnlyEvidence]**.
-3. Evidence with intervention alone, limited to reference **[InterventionOnlyEvidence Profile][InterventionOnlyEvidence]**.
-4. Evidence with intervention vs. comparator, limited to reference **[ComparativeEvidence Profile][ComparativeEvidence]**.
-5. Certainty of Evidence, limited to reference **[CertaintyOfEvidence Profile][CertaintyOfEvidence]**.
-6. Population, limited to reference <b>Group Resource</b>.
-7. Intervention, limited to reference **[VariableDefinition Profile][VariableDefinition]**.
-8. Intervention Description, limited to reference <b>Group Resource</b>.
-9. Intervention Group, limited to reference <b>Group Resource</b>.
-10. Classifier, limited to reference <b>ArtifactAssessment Resource</b>.
-11. Relative Importance, limited to reference <b>ArtifactAssessment Resource</b>.
-
 ### M11Report Profile of Composition Resource
 
 The **[M11Report Profile][M11Report]** is a Profile of **[EvidenceReport][EvidenceReport]** and is used for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification.

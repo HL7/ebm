@@ -8,6 +8,8 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Partici
 * type.coding 1..1
 * type.coding = https://fevir.net/resources/CodeSystem/179423#ParticipantFlowReport "ParticipantFlowReport"
 * type.text = "Participant Flow Report"
+* section[variables]
+  * entry only Reference(ParticipantFlowEvidenceVariable)
 * section[results]
   * section 1..*
     * focus only Reference(ParticipantFlowEvidenceVariable)

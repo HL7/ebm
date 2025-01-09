@@ -32,12 +32,11 @@
 [EndpointAnalysisPlan]: StructureDefinition-endpoint-analysis-plan.html
 [Evidence Based Medicine on FHIR Implementation Guide Code System]: CodeSystem-179423.html
 [EvidenceList]: StructureDefinition-evidence-list.html
-[EvidenceMap]: StructureDefinition-evidence-map.html
 [EvidenceReport]: StructureDefinition-evidence-report.html
 [EvidenceReportPackage]: StructureDefinition-evidence-report-package.html
-[EvidenceMeasureReportPackage]: StructureDefinition-evidence-measure-report-package.html
 [EvidenceReportSubject]: StructureDefinition-evidence-report-subject.html
 [EvidenceSynthesisEvidence]: StructureDefinition-evidence-synthesis-evidence.html
+[EvidenceTableReportPackage]: StructureDefinition-evidence-table-report-package.html
 [EvidenceVariableDefinition]: StructureDefinition-evidence-variable-definition.html
 [ExposureDefinition]: StructureDefinition-exposure-definition.html
 [ExposureGroup]: StructureDefinition-exposure-group.html
