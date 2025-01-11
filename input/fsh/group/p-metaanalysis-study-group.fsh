@@ -11,3 +11,4 @@ Description: "Profile of Group for Evidence Based Medicine IG. The MetaanalysisS
 * characteristic 1..1
   * code.text = "Member of"
   * valueReference only Reference(EvidenceList)
+  * exclude = false
