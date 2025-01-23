@@ -1,5 +1,5 @@
 Profile: OutcomeMeasureSynthesisReport
-Parent: EvidenceReport
+Parent: EvidenceSynthesisTableReportPackage
 Id: outcome-measure-synthesis-report
 Description: "Profile of Composition for Evidence Based Medicine IG. The OutcomeMeasureSynthesisReport Profile is used for an evidence report including the findings for any number of outcomes in a synthesis of research studies, where there may be a unique observed study group, observed exposure group, and observed comparator group for each outcome."
 * ^extension[$ext-fmm].valueInteger = 1
@@ -8,21 +8,9 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Outcome
 * type.coding 1..1
 * type.coding = https://fevir.net/resources/CodeSystem/179423#OutcomeMeasureSynthesisReport "OutcomeMeasureSynthesisReport"
 * type.text = "Outcome Measure Synthesis Report"
-* section ^slicing.discriminator.type = #value
-* section ^slicing.discriminator.path = "code.coding"
-* section ^slicing.rules = #open
-* section contains results 1..1 MS
-* section[results].code.coding 1..1
-* section[results].code.coding = https://fevir.net/resources/CodeSystem/179423#results "Results"
-* section[results]
+* section[results] 1..1
   * section 1..*
-  * section ^slicing.discriminator.type = #value
-  * section ^slicing.discriminator.path = "code.coding"
-  * section ^slicing.rules = #open
-  * section contains result 1..* MS
-  * section[result].code.coding 1..1
-  * section[result].code.coding = https://fevir.net/resources/CodeSystem/179423#summary-of-findings-entry-for-a-single-outcome "Summary of findings entry for a single outcome"
-  * section[result]
+  * section
     * focus 1..1
     * focus only Reference(VariableDefinition)
     * section ^slicing.discriminator.type = #value
