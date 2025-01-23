@@ -36,6 +36,7 @@
 [EvidenceReportPackage]: StructureDefinition-evidence-report-package.html
 [EvidenceReportSubject]: StructureDefinition-evidence-report-subject.html
 [EvidenceSynthesisEvidence]: StructureDefinition-evidence-synthesis-evidence.html
+[EvidenceSynthesisTableReportPackage]: StructureDefinition-evidence-synthesis-table-report-package.html
 [EvidenceTableReportPackage]: StructureDefinition-evidence-table-report-package.html
 [EvidenceVariableDefinition]: StructureDefinition-evidence-variable-definition.html
 [ExposureDefinition]: StructureDefinition-exposure-definition.html
@@ -85,6 +86,7 @@
 [StudyEligibilityCriteria]: StructureDefinition-study-eligibility-criteria.html
 [StudyGroup]: StructureDefinition-study-group.html
 [SummaryOfFindings]: StructureDefinition-summary-of-findings.html
+[SummaryOfSynthesisFindings]: StructureDefinition-summary-of-synthesis-findings.html
 [SummaryOfNetEffect]: StructureDefinition-summary-of-net-effect.html
 [SystematicReview]: StructureDefinition-systematic-review.html
 [SystematicReviewEligibilityCriteria]: StructureDefinition-systematic-review-eligibility-criteria.html

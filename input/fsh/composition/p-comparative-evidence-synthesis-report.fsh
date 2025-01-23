@@ -50,4 +50,4 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Compara
 * section[summaryOfFindings].code.coding = https://fevir.net/resources/CodeSystem/179423#summary-of-findings "Summary of Findings"
 * section[summaryOfFindings]
   * entry 0..*
-  * entry only Reference(SummaryOfFindings)
+  * entry only Reference(SummaryOfSynthesisFindings)

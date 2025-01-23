@@ -82,7 +82,7 @@ The Composition.type value is set to a "Comparative Evidence Synthesis Report".
 
 ..A 'Results' section is optional. The 'Results' section entry element is limited to reference **[OutcomeMeasureSynthesisReport Profile][OutcomeMeasureSynthesisReport]**.
 
-..A 'Summary of Findings' section is optional. The 'Summary of Findings' section entry element is limited to reference **[SummaryOfFindings Profile][SummaryOfFindings]**.
+..A 'Summary of Findings' section is optional. The 'Summary of Findings' section entry element is limited to reference **[SummaryOfSynthesisFindings Profile][SummaryOfSynthesisFindings]**.
 
 
 ### EvidenceTableReportPackage Profile of Composition Resource
@@ -169,6 +169,37 @@ The **[SummaryOfFindings Profile][SummaryOfFindings]** has 1 'Column Headers' se
 
 8. An 'Assertion' section is optional. If used in the 'Summary of findings entry for a single outcome' section, entries are limited to reference a single **[ComparativeEvidence Profile][ComparativeEvidence]**.
 
+### EvidenceSynthesisTableReportPackage Profile of Composition Resource
+
+The **[EvidenceSynthesisTableReportPackage Profile][EvidenceSynthesisTableReportPackage]** is used for a base structure to extend the **[EvidenceReport Profile][EvidenceReport]** with sections for Groups (Total Group, Intervention Group, Comparator Group, and Group Assignment; which reference conceptual or definitional Groups), Evidence Variables, and Results.
+
+The Groups and Evidence Variables sections have limits to the reference types for their entry content: **[CohortDefinition][CohortDefinition]** or **[ConceptualCohortDefinition][ConceptualCohortDefinition]** for Total Group, **[CohortDefinition][CohortDefinition]** or **[ConceptualCohortDefinition][ConceptualCohortDefinition]** Profile for Intervention Group, **[CohortDefinition][CohortDefinition]** or **[ConceptualCohortDefinition][ConceptualCohortDefinition]** Profile for Comparator Group, **[GroupAssignment Profile][GroupAssignment]** for Group Assignment, and **[VariableDefinition Profile][VariableDefinition]** for Evidence Variables.
+
+
+### OutcomeMeasureSynthesisReport Profile of Composition Resource
+
+The **[OutcomeMeasureSynthesisReport Profile][OutcomeMeasureSynthesisReport]** is a Profile of **[EvidenceSynthesisTableReportPackage][EvidenceSynthesisTableReportPackage]** and is used for an evidence report including the findings for any number of outcomes in a synthesis of research studies, where there may be a unique observed study group, observed exposure group, and observed comparator group for each outcome.
+
+The Composition.type value is set to an "Outcome Measure Synthesis Report".
+
+The section element (Results section slice) contains one or more instances (sections) with each of these sections identified by focus (Composition.section.section.focus) which references a **[VariableDefinition Profile][VariableDefinition]**. Each of these focused sections contain one or more of the following sections:
+
+..TO BE ADDED..Note the sections for observed groups...
+
+..Composition.section.section.section[comparatorEvidence] has a section.code value for 'Evidence with comparator alone' and entries limited to a single reference of a **[NoncomparativeEvidence Profile][NoncomparativeEvidence]**.
+
+..Composition.section.section.section[interventionEvidence] has a section.code value for 'Evidence with intervention alone' and entries limited to a single reference of a **[NoncomparativeEvidence Profile][NoncomparativeEvidence]**.
+
+..Composition.section.section.section[totalGroup] has a section.code value for 'Evidence with total group' and entries limited to a single reference of a **[NoncomparativeEvidence Profile][NoncomparativeEvidence]**.
+
+..Composition.section.section.section[comparativeEvidence] has a section.code value for 'Evidence with intervention vs. comparator' and entries limited to a single reference of a **[ComparativeEvidence Profile][ComparativeEvidence]**.
+
+
+### SummaryOfSynthesisFindings Profile of Composition Resource
+
+The **[SummaryOfSynthesisFindings Profile][SummaryOfSynthesisFindings]** is a Profile of **[EvidenceSynthesisTableReportPackage][EvidenceSynthesisTableReportPackage]** and is used for an evidence report combining <b>Evidence</b> and <b>EvidenceVariable Resources</b>, organized around **[VariableDefinition][VariableDefinition]** (Profile of EvidenceVariable), to represent the summary of findings of comparative evidence from an evidence synthesis.
+
+The Composition.type value is set to a "Summary of Synthesis Findings". The underlying structure is otherwise similar to the **[SummaryOfFindings Profile][SummaryOfFindings]** used for summarizing evidence from a single study.
 
 ### Guideline Profile of Composition Resource
 

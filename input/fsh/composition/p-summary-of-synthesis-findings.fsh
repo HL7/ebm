@@ -6,8 +6,8 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Summary
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
 * type.coding 1..1
-* type.coding = https://fevir.net/resources/CodeSystem/179423#SummaryOfFindings "SummaryOfFindings"
-* type.text = "Summary of Findings"
+* type.coding = https://fevir.net/resources/CodeSystem/179423#SummaryOfSynthesisFindings "SummaryOfSynthesisFindings"
+* type.text = "Summary of Synthesis Findings"
 * section 2..*
 * section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code.coding"
