@@ -87,9 +87,17 @@ The Composition.type value is set to a "Comparative Evidence Synthesis Report".
 
 ### EvidenceTableReportPackage Profile of Composition Resource
 
-The **[EvidenceTableReportPackage Profile][EvidenceTableReportPackage]** is used for a base structure to extend the **[EvidenceReport Profile][EvidenceReport]** with sections for Groups (Total Group, Intervention Group, Comparator Group, and Group Assignment), Evidence Variables, and Results.
+The **[EvidenceTableReportPackage Profile][EvidenceTableReportPackage]** is used for a base structure to extend the **[EvidenceReport Profile][EvidenceReport]** with sections for Groups (Screened Group, Selected Group, Intervention Group, Comparator Group, and Group Assignment), Evidence Variables, and Results. The Groups section also supports descriptive groups (Population Definition, Intervention Definition, Comparator Definition).
 
-The Groups and Evidence Variables sections have limits to the reference types for their entry content: **[StudyGroup Profile][StudyGroup]** for Total Group, **[ExposureGroup][ExposureGroup]** or **[ComparatorGroup][ComparatorGroup]** Profile for Intervention Group, **[ExposureGroup][ExposureGroup]** or **[ComparatorGroup][ComparatorGroup]** Profile for Comparator Group, **[GroupAssignment Profile][GroupAssignment]** for Group Assignment, and **[VariableDefinition Profile][VariableDefinition]** for Evidence Variables.
+The Groups and Evidence Variables sections have limits to the reference types for their entry content:
+
+Enumerated Groups are used for Groups that are quantified in the evidence report: **[StudyGroup Profile][StudyGroup]** is used for Screened Group and Selected Group sections; **[ExposureGroup][ExposureGroup]** or **[ComparatorGroup][ComparatorGroup]** Profile is used for Intervention Group and Comparator Group sections.
+
+Descriptive (definitional or conceptual) Groups are used for definitions or conceptual representations of groups or evidence variables in the evidence report: **[CohortDefinition][CohortDefinition]** or **[ConceptualCohortDefinition][ConceptualCohortDefinition]** Profile for Population Description, Intervention Description, and Comparator Description sections.
+
+EvidenceVariable Profiles are used for the evidence variables: **[GroupAssignment Profile][GroupAssignment]** is used for the Group Assignment section, and **[VariableDefinition Profile][VariableDefinition]** is used for the Evidence Variables section.
+
+
 
 ### BaselineMeasureReport Profile of Composition Resource
 
