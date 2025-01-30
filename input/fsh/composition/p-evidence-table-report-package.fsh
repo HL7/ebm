@@ -54,3 +54,65 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
   * entry only Reference(VariableDefinition)
 * section[results].code.coding 1..1
 * section[results].code.coding = https://fevir.net/resources/CodeSystem/179423#results "Results"
+* section[results]
+  * section ^slicing.discriminator.type = #value
+  * section ^slicing.discriminator.path = "code.coding"
+  * section ^slicing.rules = #open
+  * section contains screenedToSelected 0..1 MS and comparativeResults 0..* MS
+  * section[screenedToSelected].code.coding 1..1
+  * section[screenedToSelected].code.coding = https://fevir.net/resources/CodeSystem/179423#screened-to-selected-results "Screened to Selected Results"
+  * section[screenedToSelected]
+    * focus only Reference(GroupAssignment)
+    * section
+      * focus only Reference(VariableDefinition)
+      * section ^slicing.discriminator.type = #value
+      * section ^slicing.discriminator.path = "code.coding"
+      * section ^slicing.rules = #open
+      * section contains screenedEvidence 0..1 MS and selectedEvidence 0..1 MS and comparativeEvidence 0..1 MS
+      * section[screenedEvidence].code.coding 1..1
+      * section[screenedEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-for-screened-group "Evidence for Screened Group"
+      * section[screenedEvidence]
+        * entry 0..1 
+        * entry only Reference(NoncomparativeEvidence)
+      * section[selectedEvidence].code.coding 1..1
+      * section[selectedEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-for-selected-group "Evidence for Selected Group"
+      * section[selectedEvidence]
+        * entry 0..1 
+        * entry only Reference(NoncomparativeEvidence)
+      * section[comparativeEvidence].code.coding 1..1
+      * section[comparativeEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-for-screened-vs-selected "Evidence for Screened Group vs. Selected Group"
+      * section[comparativeEvidence]
+        * entry 0..1 
+        * entry only Reference(ComparativeEvidence)   
+  * section[comparativeResults].code.coding 1..1
+  * section[comparativeResults].code.coding = https://fevir.net/resources/CodeSystem/179423#comparative-results "Comparative Results"
+  * section[comparativeResults]
+    * focus only Reference(GroupAssignment)
+    * section 1..*
+      * focus only Reference(VariableDefinition)
+      * section ^slicing.discriminator.type = #value
+      * section ^slicing.discriminator.path = "code.coding"
+      * section ^slicing.rules = #open
+      * section contains comparatorEvidence 0..1 MS and interventionEvidence 0..1 MS and selectedGroupEvidence 0..1 MS and comparativeEvidence 0..1 MS
+      * section[comparatorEvidence].code.coding 1..1
+      * section[comparatorEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-comparator-alone "Evidence with comparator alone"
+      * section[comparatorEvidence]
+        * entry 0..1 
+        * entry only Reference(NoncomparativeEvidence)
+      * section[interventionEvidence].code.coding 1..1
+      * section[interventionEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-intervention-alone "Evidence with intervention alone"
+      * section[interventionEvidence]
+        * entry 0..1 
+        * entry only Reference(NoncomparativeEvidence)
+      * section[selectedGroupEvidence].code.coding 1..1
+      * section[selectedGroupEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-selected-group "Evidence with selected group"
+      * section[selectedGroupEvidence]
+        * entry 0..1 
+        * entry only Reference(NoncomparativeEvidence)
+      * section[comparativeEvidence].code.coding 1..1
+      * section[comparativeEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-intervention-vs-comparator "Evidence with intervention vs. comparator"
+      * section[comparativeEvidence]
+        * entry 0..1 
+        * entry only Reference(ComparativeEvidence)
+
+
