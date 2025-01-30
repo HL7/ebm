@@ -87,7 +87,7 @@ The Composition.type value is set to a "Comparative Evidence Synthesis Report".
 
 ### EvidenceTableReportPackage Profile of Composition Resource
 
-The **[EvidenceTableReportPackage Profile][EvidenceTableReportPackage]** is used for a base structure to extend the **[EvidenceReport Profile][EvidenceReport]** with sections for Groups (Screened Group, Selected Group, Intervention Group, Comparator Group, and Group Assignment), Evidence Variables, and Results. The Groups section also supports descriptive groups (Population Definition, Intervention Definition, Comparator Definition).
+The **[EvidenceTableReportPackage Profile][EvidenceTableReportPackage]** is used for a base structure to extend the **[EvidenceReport Profile][EvidenceReport]** with sections for Groups (Screened Group, Selected Group, Population Definition, Intervention Group, Intervention Definition, Comparator Group, and Comparator Definition). Group Assignment, Evidence Variables, and Results.
 
 The Groups and Evidence Variables sections have limits to the reference types for their entry content:
 

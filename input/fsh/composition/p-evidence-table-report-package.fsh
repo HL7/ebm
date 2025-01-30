@@ -1,21 +1,21 @@
 Profile: EvidenceTableReportPackage
 Parent: EvidenceReport
 Id: evidence-table-report-package
-Description: "Profile of Composition for Evidence Based Medicine IG. The EvidenceTableReportPackage Profile is used for a base structure to extend the EvidenceReport Profile with sections for Groups (Screened Group, Selected Group, Intervention Group, Comparator Group, and Group Assignment), Evidence Variables, and Results. The Groups section also supports descriptive groups (Population Definition, Intervention Definition, Comparator Definition)."
+Description: "Profile of Composition for Evidence Based Medicine IG. The EvidenceTableReportPackage Profile is used for a base structure to extend the EvidenceReport Profile with sections for Groups (Screened Group, Selected Group, Population Definition, Intervention Group, Intervention Definition, Comparator Group, and Comparator Definition). Group Assignment, Evidence Variables, and Results."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
 * section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code.coding"
 * section ^slicing.rules = #open
-* section contains groups 0..1 MS and variables 0..1 MS and results 0..1 MS
+* section contains groups 0..1 MS and groupAssignment 0..* MS and variables 0..1 MS and results 0..1 MS
 * section[groups].code.coding 1..1
 * section[groups].code.coding = https://fevir.net/resources/CodeSystem/179423#groups "Groups"
 * section[groups]
   * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code.coding"
   * section ^slicing.rules = #open
-  * section contains screenedGroup 0..1 and selectedGroup 0..1 MS and populationDefinition 0..1 and interventionGroup 0..* MS and comparatorGroup 0..* MS and interventionDescription 0..* and comparatorDescription 0..* and groupAssignment 0..*
+  * section contains screenedGroup 0..1 and selectedGroup 0..1 MS and populationDefinition 0..1 and interventionGroup 0..* MS and comparatorGroup 0..* MS and interventionDescription 0..* and comparatorDescription 0..*
   * section[screenedGroup].code.coding 1..1
   * section[screenedGroup].code.coding = https://fevir.net/resources/CodeSystem/179423#screened-group "Screened Group"
   * section[screenedGroup]
@@ -44,10 +44,10 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
   * section[comparatorDescription].code.coding = https://fevir.net/resources/CodeSystem/179423#comparator-description "Comparator Description"
   * section[comparatorDescription]
     * entry only Reference(CohortDefinition or ConceptualCohortDefinition)
-  * section[groupAssignment].code.coding 1..1
-  * section[groupAssignment].code.coding = https://fevir.net/resources/CodeSystem/179423#GroupAssignment "GroupAssignment"
-  * section[groupAssignment]
-    * entry only Reference(GroupAssignment)
+* section[groupAssignment].code.coding 1..1
+* section[groupAssignment].code.coding = https://fevir.net/resources/CodeSystem/179423#GroupAssignment "GroupAssignment"
+* section[groupAssignment]
+  * entry only Reference(GroupAssignment)
 * section[variables].code.coding 1..1
 * section[variables].code.coding = https://fevir.net/resources/CodeSystem/179423#variables "Variables"
 * section[variables]
