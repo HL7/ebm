@@ -15,7 +15,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
   * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code.coding"
   * section ^slicing.rules = #open
-  * section contains screenedGroup 0..1 and selectedGroup 0..1 MS and populationDefinition 0..1 and interventionGroup 0..* MS and comparatorGroup 0..* MS and interventionDescription 0..* and comparatorDescription and groupAssignment 0..*
+  * section contains screenedGroup 0..1 and selectedGroup 0..1 MS and populationDefinition 0..1 and interventionGroup 0..* MS and comparatorGroup 0..* MS and interventionDescription 0..* and comparatorDescription 0..* and groupAssignment 0..*
   * section[screenedGroup].code.coding 1..1
   * section[screenedGroup].code.coding = https://fevir.net/resources/CodeSystem/179423#screened-group "Screened Group"
   * section[screenedGroup]
