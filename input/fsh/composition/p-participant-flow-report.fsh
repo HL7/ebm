@@ -11,29 +11,23 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Partici
 * section[variables]
   * entry only Reference(ParticipantFlowEvidenceVariable)
 * section[results]
-  * section 1..*
-    * focus only Reference(ParticipantFlowEvidenceVariable)
-    * section ^slicing.discriminator.type = #value
-    * section ^slicing.discriminator.path = "code.coding"
-    * section ^slicing.rules = #open
-    * section contains comparatorEvidence 0..1 MS and interventionEvidence 0..1 MS and totalGroup 0..1 MS and comparativeEvidence 0..1 MS
-    * section[comparatorEvidence].code.coding 1..1
-    * section[comparatorEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-comparator-alone "Evidence with comparator alone"
-    * section[comparatorEvidence]
-      * entry 0..1 
-      * entry only Reference(ParticipantFlowEvidence)
-    * section[interventionEvidence].code.coding 1..1
-    * section[interventionEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-intervention-alone "Evidence with intervention alone"
-    * section[interventionEvidence]
-      * entry 0..1 
-      * entry only Reference(ParticipantFlowEvidence)
-    * section[totalGroup].code.coding 1..1
-    * section[totalGroup].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-total-group "Evidence with total group"
-    * section[totalGroup]
-      * entry 0..1 
-      * entry only Reference(ParticipantFlowEvidence)
-    * section[comparativeEvidence].code.coding 1..1
-    * section[comparativeEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-intervention-vs-comparator "Evidence with intervention vs. comparator"
-    * section[comparativeEvidence]
-      * entry 0..1 
-      * entry only Reference(ComparativeParticipantFlowEvidence)
+  * section[screenedToSelected]
+    * section
+      * focus only Reference(ParticipantFlowEvidenceVariable)
+      * section[screenedEvidence]
+        * entry only Reference(ParticipantFlowEvidence)
+      * section[selectedEvidence]
+        * entry only Reference(ParticipantFlowEvidence)
+      * section[comparativeEvidence]
+        * entry only Reference(ComparativeParticipantFlowEvidence)   
+  * section[comparativeResults]
+    * section
+      * focus only Reference(ParticipantFlowEvidenceVariable)
+      * section[comparatorEvidence]
+        * entry only Reference(ParticipantFlowEvidence)
+      * section[interventionEvidence]
+        * entry only Reference(ParticipantFlowEvidence)
+      * section[selectedGroupEvidence]
+        * entry only Reference(ParticipantFlowEvidence)
+      * section[comparativeEvidence]
+        * entry only Reference(ComparativeParticipantFlowEvidence)

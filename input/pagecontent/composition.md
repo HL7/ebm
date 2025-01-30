@@ -101,23 +101,24 @@ The Results section is organized with two contained sections (ScreenedToSelected
 
 The ScreenedToSelected section may have a focus element (referencing a **[GroupAssignment Profile][GroupAssignment]**) if comparative evidence is reported for the screened group vs. the selected group. The ScreenedToSelected section may have sections where each section instance may have a focus element (referencing a **[VariableDefinition Profile][VariableDefinition]**) for the measured evidence variable and section elements for the noncomparative evidence for that variable in the screened group, the noncomparative evidence for that variable in the selected group, and the comparative evidence for that variable compared the screened group vs. the selected group.
 
-The ComparativeResults section (which may have multiple instances to support evidence reports with multiple comparisons) may have a focus element (referencing a **[GroupAssignment Profile][GroupAssignment]**) if comparative evidence is reported for the intervention group vs. the comparator group. The ComparativeResults section may have sections where each section instance may have a focus element (referencing a **[VariableDefinition Profile][VariableDefinition]**) for the measured evidence variable and section elements for the noncomparative evidence for that variable in the intervention group, the noncomparative evidence for that variable in the comparator group, the noncomparative evidence for that variable in the selected group, and the comparative evidence for that variable compared the intervention group vs. the comparator group.
+The ComparativeResults section (which may have multiple instances to support evidence reports with multiple comparisons) may have a focus element (referencing a **[GroupAssignment Profile][GroupAssignment]**) if comparative evidence is reported for the intervention group vs. the comparator group. 
+
+The ComparativeResults section contains one or more instances (sections) with each of these sections identified by focus (Composition.section[results].section[comparativeResults].section.focus) which references a **[VariableDefinition Profile][VariableDefinition]**. Each of these focused sections contain one or more of the following sections:
+
+..Composition.section.section.section.section[comparatorEvidence] has a section.code value for 'Evidence with comparator alone' and entries limited to a single reference of a **[NonComparativeEvidence Profile][NonComparativeEvidence]**.
+
+..Composition.section.section.section.section[interventionEvidence] has a section.code value for 'Evidence with intervention alone' and entries limited to a single reference of a **[NonComparativeEvidence Profile][NonComparativeEvidence]**.
+
+..Composition.section.section.section.section[selectedGroupEvidence] has a section.code value for 'Evidence with selected group' and entries limited to a single reference of a **[NonComparativeEvidence Profile][NonComparativeEvidence]**.
+
+..Composition.section.section.section.section[comparativeEvidence] has a section.code value for 'Evidence with intervention vs. comparator' and entries limited to a single reference of a **[ComparativeEvidence Profile][ComparativeEvidence]**.
+
 
 ### BaselineMeasureReport Profile of Composition Resource
 
 The **[BaselineMeasureReport Profile][BaselineMeasureReport]** is a Profile of **[EvidenceTableReportPackage][EvidenceTableReportPackage]** and is used for an evidence report including the findings for any number of baseline measures in a research study.
 
 The Composition.type value is set to a "Baseline Measure Report".
-
-The section element (Results section slice) contains one or more instances (sections) with each of these sections identified by focus (Composition.section.section.focus) which references a **[VariableDefinition Profile][VariableDefinition]**. Each of these focused sections contain one or more of the following sections:
-
-..Composition.section.section.section[comparatorEvidence] has a section.code value for 'Evidence with comparator alone' and entries limited to a single reference of a **[BaselineMeasureEvidence Profile][BaselineMeasureEvidence]**.
-
-..Composition.section.section.section[interventionEvidence] has a section.code value for 'Evidence with intervention alone' and entries limited to a single reference of a **[BaselineMeasureEvidence Profile][BaselineMeasureEvidence]**.
-
-..Composition.section.section.section[totalGroup] has a section.code value for 'Evidence with total group' and entries limited to a single reference of a **[BaselineMeasureEvidence Profile][BaselineMeasureEvidence]**.
-
-..Composition.section.section.section[comparativeEvidence] has a section.code value for 'Evidence with intervention vs. comparator' and entries limited to a single reference of a **[ComparativeBaselineMeasureEvidence Profile][ComparativeBaselineMeasureEvidence]**.
 
 
 ### ParticipantFlowReport Profile of Composition Resource
@@ -128,15 +129,7 @@ The Composition.type value is set to a "Participant Flow Report".
 
 The section element (Variables slice) is limited to reference **[ParticipantFlowEvidenceVariable Profile][ParticipantFlowEvidenceVariable]** for entry values.
 
-The section element (Results section slice) contains one or more instances (sections) with each of these sections identified by focus (Composition.section.section.focus) which references a **[ParticipantFlowEvidenceVariable Profile][ParticipantFlowEvidenceVariable]**. Each of these focused sections contain one or more of the following sections:
-
-..Composition.section.section.section[comparatorEvidence] has a section.code value for 'Evidence with comparator alone' and entries limited to a single reference of a **[ParticipantFlowEvidence Profile][ParticipantFlowEvidence]**.
-
-..Composition.section.section.section[interventionEvidence] has a section.code value for 'Evidence with intervention alone' and entries limited to a single reference of a **[ParticipantFlowEvidence Profile][ParticipantFlowEvidence]**.
-
-..Composition.section.section.section[totalGroup] has a section.code value for 'Evidence with total group' and entries limited to a single reference of a **[ParticipantFlowEvidence Profile][ParticipantFlowEvidence]**.
-
-..Composition.section.section.section[comparativeEvidence] has a section.code value for 'Evidence with intervention vs. comparator' and entries limited to a single reference of a **[ComparativeParticipantFlowEvidence Profile][ComparativeParticipantFlowEvidence]**.
+The section element (Results section slice) applies constraints to the **[EvidenceTableReportPackage][EvidenceTableReportPackage]** in which any references to **[VariableDefinition Profile][VariableDefinition]** are further constrained to **[ParticipantFlowEvidenceVariable Profile][ParticipantFlowEvidenceVariable]**, any references to **[NonComparativeEvidence Profile][NonComparativeEvidence]** are further constrained to **[ParticipantFlowEvidence Profile][ParticipantFlowEvidence]**, and any references to **[ComparativeEvidence Profile][ComparativeEvidence]** are further constrained to **[ComparativeParticipantFlowEvidence Profile][ComparativeParticipantFlowEvidence]**.
 
 
 
@@ -145,16 +138,6 @@ The section element (Results section slice) contains one or more instances (sect
 The **[OutcomeMeasureReport Profile][OutcomeMeasureReport]** is a Profile of **[EvidenceTableReportPackage][EvidenceTableReportPackage]** and is used for an evidence report including the findings for any number of outcome measures in a research study. 
 
 The Composition.type value is set to an "Outcome Measure Report".
-
-The section element (Results section slice) contains one or more instances (sections) with each of these sections identified by focus (Composition.section.section.focus) which references a **[VariableDefinition Profile][VariableDefinition]**. Each of these focused sections contain one or more of the following sections:
-
-..Composition.section.section.section[comparatorEvidence] has a section.code value for 'Evidence with comparator alone' and entries limited to a single reference of a **[NoncomparativeEvidence Profile][NoncomparativeEvidence]**.
-
-..Composition.section.section.section[interventionEvidence] has a section.code value for 'Evidence with intervention alone' and entries limited to a single reference of a **[NoncomparativeEvidence Profile][NoncomparativeEvidence]**.
-
-..Composition.section.section.section[totalGroup] has a section.code value for 'Evidence with total group' and entries limited to a single reference of a **[NoncomparativeEvidence Profile][NoncomparativeEvidence]**.
-
-..Composition.section.section.section[comparativeEvidence] has a section.code value for 'Evidence with intervention vs. comparator' and entries limited to a single reference of a **[ComparativeEvidence Profile][ComparativeEvidence]**.
 
 
 ### SummaryOfFindings Profile of Composition Resource
