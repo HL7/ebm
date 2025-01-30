@@ -97,7 +97,11 @@ Descriptive (definitional or conceptual) Groups are used for definitions or conc
 
 EvidenceVariable Profiles are used for the evidence variables: **[GroupAssignment Profile][GroupAssignment]** is used for the Group Assignment section, and **[VariableDefinition Profile][VariableDefinition]** is used for the Evidence Variables section.
 
+The Results section is organized with two contained sections (ScreenedToSelected and ComparativeResults). 
 
+The ScreenedToSelected section may have a focus element (referencing a **[GroupAssignment Profile][GroupAssignment]**) if comparative evidence is reported for the screened group vs. the selected group. The ScreenedToSelected section may have sections where each section instance may have a focus element (referencing a **[VariableDefinition Profile][VariableDefinition]**) for the measured evidence variable and section elements for the noncomparative evidence for that variable in the screened group, the noncomparative evidence for that variable in the selected group, and the comparative evidence for that variable compared the screened group vs. the selected group.
+
+The ComparativeResults section (which may have multiple instances to support evidence reports with multiple comparisons) may have a focus element (referencing a **[GroupAssignment Profile][GroupAssignment]**) if comparative evidence is reported for the intervention group vs. the comparator group. The ComparativeResults section may have sections where each section instance may have a focus element (referencing a **[VariableDefinition Profile][VariableDefinition]**) for the measured evidence variable and section elements for the noncomparative evidence for that variable in the intervention group, the noncomparative evidence for that variable in the comparator group, the noncomparative evidence for that variable in the selected group, and the comparative evidence for that variable compared the intervention group vs. the comparator group.
 
 ### BaselineMeasureReport Profile of Composition Resource
 
