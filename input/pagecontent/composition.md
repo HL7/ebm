@@ -87,36 +87,34 @@ The Composition.type value is set to a "Comparative Evidence Synthesis Report".
 
 ### EvidenceTableReportPackage Profile of Composition Resource
 
-The **[EvidenceTableReportPackage Profile][EvidenceTableReportPackage]** is used for a base structure to extend the **[EvidenceReport Profile][EvidenceReport]** with sections for Groups (Screened Group, Selected Group, Population Definition, Intervention Group, Intervention Definition, Comparator Group, and Comparator Definition). Group Assignment, Evidence Variables, and Results.
+The **[EvidenceTableReportPackage Profile][EvidenceTableReportPackage]** is used for a base structure to extend the **[EvidenceReport Profile][EvidenceReport]** with sections for Groups, Group Assignment, Evidence Variables, and Results.
 
-The Groups and Evidence Variables sections have limits to the reference types for their entry content:
+The Groups section includes sections for Screened Group, Enrolled Group, Population Definition, Intervention Group, Intervention Definition, Comparator Group, and Comparator Definition. These sections have limits to the reference types for their entry content: **[StudyGroup Profile][StudyGroup]** is used for Screened Group and Enrolled Group sections; **[ExposureGroup][ExposureGroup]** or **[ComparatorGroup][ComparatorGroup]** Profile is used for Intervention Group and Comparator Group sections; and **[CohortDefinition][CohortDefinition]** or **[ConceptualCohortDefinition][ConceptualCohortDefinition]** Profile is used for Population Description, Intervention Description, and Comparator Description sections.
 
-Enumerated Groups are used for Groups that are quantified in the evidence report: **[StudyGroup Profile][StudyGroup]** is used for Screened Group and Selected Group sections; **[ExposureGroup][ExposureGroup]** or **[ComparatorGroup][ComparatorGroup]** Profile is used for Intervention Group and Comparator Group sections.
+The Group Assignment section limits the reference type for its entry content to **[GroupAssignment Profile][GroupAssignment]**.
 
-Descriptive (definitional or conceptual) Groups are used for definitions or conceptual representations of groups or evidence variables in the evidence report: **[CohortDefinition][CohortDefinition]** or **[ConceptualCohortDefinition][ConceptualCohortDefinition]** Profile for Population Description, Intervention Description, and Comparator Description sections.
+The Evidence Variables section limits the reference type for its entry content to **[VariableDefinition Profile][VariableDefinition]**.
 
-EvidenceVariable Profiles are used for the evidence variables: **[GroupAssignment Profile][GroupAssignment]** is used for the Group Assignment section, and **[VariableDefinition Profile][VariableDefinition]** is used for the Evidence Variables section.
+The Results section (Composition.section[results]) is organized with two contained sections: Enrollment (Composition.section[results].section[enrollment]) and ComparativeResults (Composition.section[results].section[comparativeResults]). 
 
-The Results section is organized with two contained sections (ScreenedToSelected and ComparativeResults). 
+The Enrollment section may have a focus element (referencing a **[GroupAssignment Profile][GroupAssignment]**) if comparative evidence is reported for the screened group vs. the enrolled group. The Enrollment section may have sections where each section instance may have a focus element (referencing a **[VariableDefinition Profile][VariableDefinition]**) for the measured evidence variable and section elements for the noncomparative evidence for that variable in the screened group, the noncomparative evidence for that variable in the enrolled group, and the comparative evidence for that variable comparing the screened group vs. the enrolled group.
 
-The ScreenedToSelected section may have a focus element (referencing a **[GroupAssignment Profile][GroupAssignment]**) if comparative evidence is reported for the screened group vs. the selected group. The ScreenedToSelected section may have sections where each section instance may have a focus element (referencing a **[VariableDefinition Profile][VariableDefinition]**) for the measured evidence variable and section elements for the noncomparative evidence for that variable in the screened group, the noncomparative evidence for that variable in the selected group, and the comparative evidence for that variable compared the screened group vs. the selected group.
+The ComparativeResults section may have repeated (multiple) instances to support evidence reports with multiple comparisons. The ComparativeResults section may have a focus element (referencing a **[GroupAssignment Profile][GroupAssignment]**) if comparative evidence is reported for the intervention group vs. the comparator group. 
 
-The ComparativeResults section (which may have multiple instances to support evidence reports with multiple comparisons) may have a focus element (referencing a **[GroupAssignment Profile][GroupAssignment]**) if comparative evidence is reported for the intervention group vs. the comparator group. 
-
-The ComparativeResults section contains one or more instances (sections) with each of these sections identified by focus (Composition.section[results].section[comparativeResults].section.focus) which references a **[VariableDefinition Profile][VariableDefinition]**. Each of these focused sections contain one or more of the following sections:
+The ComparativeResults section (Composition.section[results].section[comparativeResults]) contains one or more instances (sections) with each of these sections identified by focus (Composition.section[results].section[comparativeResults].section.focus) which references a **[VariableDefinition Profile][VariableDefinition]**. Each of these focused sections contain one or more of the following sections:
 
 ..Composition.section.section.section.section[comparatorEvidence] has a section.code value for 'Evidence with comparator alone' and entries limited to a single reference of a **[NonComparativeEvidence Profile][NonComparativeEvidence]**.
 
 ..Composition.section.section.section.section[interventionEvidence] has a section.code value for 'Evidence with intervention alone' and entries limited to a single reference of a **[NonComparativeEvidence Profile][NonComparativeEvidence]**.
 
-..Composition.section.section.section.section[selectedGroupEvidence] has a section.code value for 'Evidence with selected group' and entries limited to a single reference of a **[NonComparativeEvidence Profile][NonComparativeEvidence]**.
+..Composition.section.section.section.section[enrolledGroupEvidence] has a section.code value for 'Evidence with enrolled group' and entries limited to a single reference of a **[NonComparativeEvidence Profile][NonComparativeEvidence]**.
 
 ..Composition.section.section.section.section[comparativeEvidence] has a section.code value for 'Evidence with intervention vs. comparator' and entries limited to a single reference of a **[ComparativeEvidence Profile][ComparativeEvidence]**.
 
 
 ### BaselineMeasureReport Profile of Composition Resource
 
-The **[BaselineMeasureReport Profile][BaselineMeasureReport]** is a Profile of **[EvidenceTableReportPackage][EvidenceTableReportPackage]** and is used for an evidence report including the findings for any number of baseline measures in a research study.
+The **[BaselineMeasureReport Profile][BaselineMeasureReport]** is a Profile of **[EvidenceTableReportPackage][EvidenceTableReportPackage]** and is used for an evidence report including the findings for any number of baseline measures in a research study. This is often represented as "Table 1" in a journal article reporting research study results.
 
 The Composition.type value is set to a "Baseline Measure Report".
 
