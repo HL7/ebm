@@ -11,12 +11,12 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Partici
 * section[variables]
   * entry only Reference(ParticipantFlowEvidenceVariable)
 * section[results]
-  * section[screenedToSelected]
+  * section[enrollment]
     * section
       * focus only Reference(ParticipantFlowEvidenceVariable)
       * section[screenedEvidence]
         * entry only Reference(ParticipantFlowEvidence)
-      * section[selectedEvidence]
+      * section[enrolledEvidence]
         * entry only Reference(ParticipantFlowEvidence)
       * section[comparativeEvidence]
         * entry only Reference(ComparativeParticipantFlowEvidence)   
@@ -27,7 +27,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Partici
         * entry only Reference(ParticipantFlowEvidence)
       * section[interventionEvidence]
         * entry only Reference(ParticipantFlowEvidence)
-      * section[selectedGroupEvidence]
+      * section[enrolledGroupEvidence]
         * entry only Reference(ParticipantFlowEvidence)
       * section[comparativeEvidence]
         * entry only Reference(ComparativeParticipantFlowEvidence)
