@@ -15,7 +15,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
   * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code.coding"
   * section ^slicing.rules = #open
-  * section contains screenedGroup 0..1 and enrolledGroup 0..1 MS and populationDefinition 0..1 and interventionGroup 0..* MS and comparatorGroup 0..* MS and interventionDescription 0..* and comparatorDescription 0..*
+  * section contains screenedGroup 0..1 and enrolledGroup 0..1 MS and populationDefinition 0..1 and interventionGroup 0..* MS and comparatorGroup 0..* MS and interventionDescription 0..* and comparatorDescription 0..* and analyzedGroup 0..1 MS
   * section[screenedGroup].code.coding 1..1
   * section[screenedGroup].code.coding = https://fevir.net/resources/CodeSystem/179423#screened-group "Screened Group"
   * section[screenedGroup]
@@ -44,6 +44,10 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
   * section[comparatorDescription].code.coding = https://fevir.net/resources/CodeSystem/179423#comparator-description "Comparator Description"
   * section[comparatorDescription]
     * entry only Reference(CohortDefinition or ConceptualCohortDefinition)
+  * section[analyzedGroup].code.coding 1..1
+  * section[analyzedGroup].code.coding = https://fevir.net/resources/CodeSystem/179423#analyzed-group "Analyzed Group"
+  * section[analyzedGroup]
+    * entry only Reference(StudyGroup)
 * section[groupAssignment].code.coding 1..1
 * section[groupAssignment].code.coding = https://fevir.net/resources/CodeSystem/179423#GroupAssignment "GroupAssignment"
 * section[groupAssignment]
@@ -93,7 +97,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
       * section ^slicing.discriminator.type = #value
       * section ^slicing.discriminator.path = "code.coding"
       * section ^slicing.rules = #open
-      * section contains comparatorEvidence 0..1 MS and interventionEvidence 0..1 MS and enrolledGroupEvidence 0..1 MS and comparativeEvidence 0..1 MS
+      * section contains comparatorEvidence 0..1 MS and interventionEvidence 0..1 MS and analyzedGroupEvidence 0..1 MS and comparativeEvidence 0..1 MS
       * section[comparatorEvidence].code.coding 1..1
       * section[comparatorEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-with-comparator-alone "Evidence with comparator alone"
       * section[comparatorEvidence]
@@ -104,9 +108,9 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
       * section[interventionEvidence]
         * entry 0..1 
         * entry only Reference(NonComparativeEvidence)
-      * section[enrolledGroupEvidence].code.coding 1..1
-      * section[enrolledGroupEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-for-enrolled-group "Evidence for Enrolled Group"
-      * section[enrolledGroupEvidence]
+      * section[analyzedGroupEvidence].code.coding 1..1
+      * section[analyzedGroupEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence-for-analyzed-group "Evidence for Analyzed Group"
+      * section[analyzedGroupEvidence]
         * entry 0..1 
         * entry only Reference(NonComparativeEvidence)
       * section[comparativeEvidence].code.coding 1..1
