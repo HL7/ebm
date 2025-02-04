@@ -6,6 +6,9 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
 * section[results]
+  * section ^slicing.discriminator.type = #value
+  * section ^slicing.discriminator.path = "code.coding"
+  * section ^slicing.rules = #open
   * section contains populationGroup 0..* MS and interventionGroup 0..* MS and comparatorGroup 0..* MS
   * section[populationGroup].code.coding 1..1
   * section[populationGroup].code.coding = https://fevir.net/resources/CodeSystem/179423#population "Population"

@@ -42,6 +42,6 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
   * section[comparativeEvidence].code.coding = https://fevir.net/resources/CodeSystem/179423#comparative-results "Comparative Results"
   * section[comparativeEvidence]
     * focus only Reference(GroupAssignment)
-      entry only Reference(ComparativeEvidence)
+    * entry only Reference(ComparativeEvidence)
 
 
