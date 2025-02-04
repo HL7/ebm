@@ -12,6 +12,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
 * section[results].code.coding 1..1
 * section[results].code.coding = https://fevir.net/resources/CodeSystem/179423#results "Results"
 * section[results]
+  * focus 1..1
   * focus only Reference(VariableDefinition)
   * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code.coding"
