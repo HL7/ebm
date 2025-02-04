@@ -8,26 +8,17 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Partici
 * type.coding 1..1
 * type.coding = https://fevir.net/resources/CodeSystem/179423#ParticipantFlowReport "ParticipantFlowReport"
 * type.text = "Participant Flow Report"
-* section[variables]
-  * entry only Reference(ParticipantFlowEvidenceVariable)
 * section[results]
-  * section[enrollment]
-    * section
-      * focus only Reference(ParticipantFlowEvidenceVariable)
-      * section[screenedEvidence]
-        * entry only Reference(ParticipantFlowEvidence)
-      * section[enrolledEvidence]
-        * entry only Reference(ParticipantFlowEvidence)
-      * section[comparativeEvidence]
-        * entry only Reference(ComparativeParticipantFlowEvidence)   
-  * section[comparativeResults]
-    * section
-      * focus only Reference(ParticipantFlowEvidenceVariable)
-      * section[comparatorEvidence]
-        * entry only Reference(ParticipantFlowEvidence)
-      * section[interventionEvidence]
-        * entry only Reference(ParticipantFlowEvidence)
-      * section[analyzedGroupEvidence]
-        * entry only Reference(ParticipantFlowEvidence)
-      * section[comparativeEvidence]
-        * entry only Reference(ComparativeParticipantFlowEvidence)
+  * focus only Reference(ParticipantFlowEvidenceVariable)
+  * section[screenedEvidence]
+    * entry only Reference(ParticipantFlowEvidence)
+  * section[enrolledEvidence]
+    * entry only Reference(ParticipantFlowEvidence)
+  * section[analyzedEvidence]
+    * entry only Reference(ParticipantFlowEvidence)
+  * section[interventionEvidence]
+    * entry only Reference(ParticipantFlowEvidence)
+  * section[comparatorEvidence]
+    * entry only Reference(ParticipantFlowEvidence)
+  * section[comparativeEvidence]
+    * entry only Reference(ComparativeParticipantFlowEvidence)

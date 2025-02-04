@@ -1,5 +1,5 @@
 Profile: SummaryOfSynthesisFindings
-Parent: EvidenceSynthesisTableReportPackage
+Parent: EvidenceReport
 Id: summary-of-synthesis-findings
 Description: "Profile of Composition for Evidence Based Medicine IG. The SummaryOfSynthesisFindings Profile is used for an evidence report combining Evidence and EvidenceVariable Resources, organized around VariableDefinition (Profile of EvidenceVariable), to represent the summary of findings of comparative evidence from an evidence synthesis."
 * ^extension[$ext-fmm].valueInteger = 1
