@@ -23,6 +23,7 @@ publisher:
   url: http://www.hl7.org/Special/committees/dss
 
 dependencies:
+  hl7.fhir.r6.core: latest
   hl7.fhir.uv.extensions.r5: latest
   hl7.terminology.r5: latest
 
