@@ -18,4 +18,4 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
   * section[comparatorGroup].code.coding 1..1
   * section[comparatorGroup].code.coding = https://fevir.net/resources/CodeSystem/179423#comparator-group "Comparator Group"
   * section[comparatorGroup]
-    * entry only Reference(ComparatorGroup or ExposureGroup)
+    * entry only Reference(Group)
