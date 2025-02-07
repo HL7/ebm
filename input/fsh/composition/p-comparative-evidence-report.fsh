@@ -24,6 +24,26 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Compara
 * section[population].code.coding = https://fevir.net/resources/CodeSystem/179423#population "Population"
 * section[population]
   * entry only Reference(StudyGroup)
+  * section ^slicing.discriminator.type = #value
+  * section ^slicing.discriminator.path = "code.coding"
+  * section ^slicing.rules = #open
+  * section contains screened 0..1 MS and enrolled 0..1 MS and analyzed 0..1 MS and definition 0..1 MS
+  * section[screened].code.coding 1..1
+  * section[screened].code.coding = https://fevir.net/resources/CodeSystem/179423#screened-group "Screened Group"
+  * section[screened]
+    * entry only Reference(StudyGroup)
+  * section[enrolled].code.coding 1..1
+  * section[enrolled].code.coding = https://fevir.net/resources/CodeSystem/179423#enrolled-group "Enrolled Group"
+  * section[enrolled]
+    * entry only Reference(StudyGroup)
+  * section[analyzed].code.coding 1..1
+  * section[analyzed].code.coding = https://fevir.net/resources/CodeSystem/179423#analyzed-group "Analyzed Group"
+  * section[analyzed]
+    * entry only Reference(StudyGroup)
+  * section[definition].code.coding 1..1
+  * section[definition].code.coding = https://fevir.net/resources/CodeSystem/179423#population-description "Population Description"
+  * section[definition]
+    * entry only Reference(CohortDefinition or ConceptualCohortDefinition)
 * section[intervention].code.coding 1..1
 * section[intervention].code.coding = https://fevir.net/resources/CodeSystem/179423#intervention "Intervention"
 * section[intervention]
@@ -49,7 +69,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Compara
   * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code.coding"
   * section ^slicing.rules = #open
-  * section contains description 1..1 MS and group 1..1 MS
+  * section contains description 1..1 MS and group 1..1 MS and groupAssignment 0..1
   * section[description].code.coding 1..1
   * section[description].code.coding = https://fevir.net/resources/CodeSystem/179423#comparator-description "Comparator Description"
   * section[description]
@@ -60,6 +80,10 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Compara
   * section[group]
     * entry 0..1
     * entry only Reference(ComparatorGroup or ExposureGroup)
+  * section[groupAssignment].code.coding 1..1
+  * section[groupAssignment].code.coding = https://fevir.net/resources/CodeSystem/179423#GroupAssignment "GroupAssignment"
+  * section[groupAssignment]
+    * entry only Reference(GroupAssignment)
 * section[researchStudy].code.coding 1..1
 * section[researchStudy].code.coding = https://fevir.net/resources/CodeSystem/179423#research-study "Research Study"
 * section[researchStudy]
