@@ -91,20 +91,16 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Compara
 * section[baseline].code.coding 1..1
 * section[baseline].code.coding = https://fevir.net/resources/CodeSystem/179423#baseline-measures "Baseline Measures"
 * section[baseline]
-  * entry 0..1 
-  * entry only Reference(BaselineMeasureReport)
+  * entry only Reference(BaselineMeasureReport or VariablesList)
 * section[flow].code.coding 1..1
 * section[flow].code.coding = https://fevir.net/resources/CodeSystem/179423#participant-flow "Participant Flow"
 * section[flow]
-  * entry 0..1 
-  * entry only Reference(ParticipantFlowReport)
+  * entry only Reference(ParticipantFlowReport or VariablesList)
 * section[outcomes].code.coding 1..1
 * section[outcomes].code.coding = https://fevir.net/resources/CodeSystem/179423#outcome-measures "Outcome Measures"
 * section[outcomes]
-  * entry 0..*
-  * entry only Reference(OutcomeMeasureReport)
+  * entry only Reference(OutcomeMeasureReport or VariablesList)
 * section[summaryOfFindings].code.coding 1..1
 * section[summaryOfFindings].code.coding = https://fevir.net/resources/CodeSystem/179423#summary-of-findings "Summary of Findings"
 * section[summaryOfFindings]
-  * entry 0..*
-  * entry only Reference(SummaryOfFindings)
+  * entry only Reference(SummaryOfFindings or VariablesList)
