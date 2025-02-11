@@ -3,6 +3,7 @@
 [ArtifactAssessmentDateAsRating]: StructureDefinition-artifact-assessment-date-as-rating.html
 [BaselineMeasureEvidence]: StructureDefinition-baseline-measure-evidence.html
 [BaselineMeasureReport]: StructureDefinition-baseline-measure-report.html
+[BaselineVariablesList]: StructureDefinition-baseline-variables-list.html
 [BookCitation]: StructureDefinition-book-citation.html
 [BookPartCitation]: StructureDefinition-book-part-citation.html
 [CertaintyOfEvidence]: StructureDefinition-certainty-of-evidence.html
@@ -36,7 +37,6 @@
 [EvidenceReportPackage]: StructureDefinition-evidence-report-package.html
 [EvidenceReportSubject]: StructureDefinition-evidence-report-subject.html
 [EvidenceSynthesisEvidence]: StructureDefinition-evidence-synthesis-evidence.html
-[EvidenceSynthesisTableReportPackage]: StructureDefinition-evidence-synthesis-table-report-package.html
 [EvidenceTableReportPackage]: StructureDefinition-evidence-table-report-package.html
 [EvidenceVariableDefinition]: StructureDefinition-evidence-variable-definition.html
 [ExposureDefinition]: StructureDefinition-exposure-definition.html
@@ -60,10 +60,11 @@
 [OutcomeImportance]: StructureDefinition-outcome-importance.html
 [OutcomeList]: StructureDefinition-outcome-list.html
 [OutcomeMeasureReport]: StructureDefinition-outcome-measure-report.html
-[OutcomeMeasureSynthesisReport]: StructureDefinition-outcome-measure-synthesis-report.html
+[OutcomeVariablesList]: StructureDefinition-outcome-variables-list.html
 [ParticipantFlowEvidence]: StructureDefinition-participant-flow-evidence.html
 [ParticipantFlowEvidenceVariable]: StructureDefinition-participant-flow-evidence-variable.html
 [ParticipantFlowReport]: StructureDefinition-participant-flow-report.html
+[ParticipantFlowVariablesList]: StructureDefinition-participant-flow-variables-list.html
 [PreprintCitation]: StructureDefinition-preprint-citation.html
 [Rating]: StructureDefinition-rating.html
 [Recommendation]: StructureDefinition-recommendation.html
@@ -86,7 +87,6 @@
 [StudyEligibilityCriteria]: StructureDefinition-study-eligibility-criteria.html
 [StudyGroup]: StructureDefinition-study-group.html
 [SummaryOfFindings]: StructureDefinition-summary-of-findings.html
-[SummaryOfSynthesisFindings]: StructureDefinition-summary-of-synthesis-findings.html
 [SummaryOfNetEffect]: StructureDefinition-summary-of-net-effect.html
 [SystematicReview]: StructureDefinition-systematic-review.html
 [SystematicReviewEligibilityCriteria]: StructureDefinition-systematic-review-eligibility-criteria.html
@@ -94,6 +94,7 @@
 [SystematicReviewIncludedStudies]: StructureDefinition-systematic-review-included-studies.html
 [WebPageCitation]: StructureDefinition-web-page-citation.html
 [VariableDefinition]: StructureDefinition-variable-definition.html
+[VariablesList]: StructureDefinition-variables-list.html
 
 [VS EBMImplementationGuideProfile Value Set]: ValueSet-179430.html
 [VS Evidence Variable Role Subtype Value Set]: ValueSet-evidence-variable-role-subtype.html

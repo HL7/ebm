@@ -40,7 +40,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Compara
 * section[outcomeVariables].code.coding = https://fevir.net/resources/CodeSystem/179423#variables "Variables"
 * section[outcomeVariables]
   * entry 0..*
-  * entry only Reference(VariableDefinition)
+  * entry only Reference(VariableDefinition or OutcomeVariablesList or VariablesList)
 * section[results].code.coding 1..1
 * section[results].code.coding = https://fevir.net/resources/CodeSystem/179423#results "Results"
 * section[results]
@@ -50,4 +50,4 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Compara
 * section[summaryOfFindings].code.coding = https://fevir.net/resources/CodeSystem/179423#summary-of-findings "Summary of Findings"
 * section[summaryOfFindings]
   * entry 0..*
-  * entry only Reference(SummaryOfSynthesisFindings)
+  * entry only Reference(SummaryOfFindings)
