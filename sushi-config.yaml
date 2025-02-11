@@ -24,7 +24,6 @@ publisher:
 
 dependencies:
   hl7.fhir.r6.core: latest
-  hl7.fhir.uv.tools.r6: latest
   hl7.fhir.uv.extensions.r5: latest
   hl7.terminology.r5: latest
 
