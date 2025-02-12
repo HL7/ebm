@@ -85,31 +85,29 @@ The Composition.type value is set to a "Comparative Evidence Synthesis Report".
 ..A 'Summary of Findings' section is optional. The 'Summary of Findings' section entry element is limited to reference **[SummaryOfFindings Profile][SummaryOfFindings]**.
 
 
-### EvidenceTableReportPackage Profile of Composition Resource (TO BE EDITED)
+### EvidenceTableReportPackage Profile of Composition Resource
 
-The **[EvidenceTableReportPackage Profile][EvidenceTableReportPackage]** is used for a base structure to extend the **[EvidenceReport Profile][EvidenceReport]** with sections for Groups, Group Assignment, Evidence Variables, and Results.
+The **[EvidenceTableReportPackage Profile][EvidenceTableReportPackage]** is used for a base structure to extend the **[EvidenceReport Profile][EvidenceReport]** with Results sections where each results section instance has a focus on a measured variable and a reproducible structure to represent evidence about that measured variable for different groups.
 
-The Groups section includes sections for Screened Group, Enrolled Group, Population Definition, Intervention Group, Intervention Definition, Comparator Group, and Comparator Definition. These sections have limits to the reference types for their entry content: **[StudyGroup Profile][StudyGroup]** is used for Screened Group and Enrolled Group sections; **[ExposureGroup][ExposureGroup]** or **[ComparatorGroup][ComparatorGroup]** Profile is used for Intervention Group and Comparator Group sections; and **[CohortDefinition][CohortDefinition]** or **[ConceptualCohortDefinition][ConceptualCohortDefinition]** Profile is used for Population Description, Intervention Description, and Comparator Description sections.
+One or more 'Results' sections are required. Each 'Result' section has a focus with the reference type limited to **[VariableDefinition Profile][VariableDefinition]**. Each 'Result' section contains the following optional sections:
 
-The Group Assignment section limits the reference type for its entry content to **[GroupAssignment Profile][GroupAssignment]**.
+--an 'Evidence for Screened Group' section which limits the reference type for its entry content to **[NonComparativeEvidence Profile][NonComparativeEvidence]**.
 
-The Evidence Variables section limits the reference type for its entry content to **[VariableDefinition Profile][VariableDefinition]**.
+--an 'Evidence for Enrolled Group' section which limits the reference type for its entry content to **[NonComparativeEvidence Profile][NonComparativeEvidence]**.
 
-The Results section (Composition.section[results]) is organized with two contained sections: Enrollment (Composition.section[results].section[enrollment]) and ComparativeResults (Composition.section[results].section[comparativeResults]). 
+--an 'Evidence for Analyzed Group' section which limits the reference type for its entry content to **[NonComparativeEvidence Profile][NonComparativeEvidence]**.
 
-The Enrollment section may have a focus element (referencing a **[GroupAssignment Profile][GroupAssignment]**) if comparative evidence is reported for the screened group vs. the enrolled group. The Enrollment section may have sections where each section instance may have a focus element (referencing a **[VariableDefinition Profile][VariableDefinition]**) for the measured evidence variable and section elements for the noncomparative evidence for that variable in the screened group, the noncomparative evidence for that variable in the enrolled group, and the comparative evidence for that variable comparing the screened group vs. the enrolled group.
+--an 'Evidence with intervention alone' section which limits the reference type for its entry content to **[NonComparativeEvidence Profile][NonComparativeEvidence]**.
 
-The ComparativeResults section may have repeated (multiple) instances to support evidence reports with multiple comparisons. The ComparativeResults section may have a focus element (referencing a **[GroupAssignment Profile][GroupAssignment]**) if comparative evidence is reported for the intervention group vs. the comparator group. 
+--an 'Evidence with comparator alone' section which limits the reference type for its entry content to **[NonComparativeEvidence Profile][NonComparativeEvidence]**.
 
-The ComparativeResults section (Composition.section[results].section[comparativeResults]) contains one or more instances (sections) with each of these sections identified by focus (Composition.section[results].section[comparativeResults].section.focus) which references a **[VariableDefinition Profile][VariableDefinition]**. Each of these focused sections contain one or more of the following sections:
+--a 'Comparative Results' section which has a focus with the reference type limited to **[GroupAssignment Profile][GroupAssignment]**, and limits the reference type for its entry content to **[ComparativeEvidence Profile][ComparativeEvidence]**.
 
-..Composition.section.section.section.section[comparatorEvidence] has a section.code value for 'Evidence with comparator alone' and entries limited to a single reference of a **[NonComparativeEvidence Profile][NonComparativeEvidence]**.
+--a 'Population' section which limits the reference type for its entry content to Group Resource.
 
-..Composition.section.section.section.section[interventionEvidence] has a section.code value for 'Evidence with intervention alone' and entries limited to a single reference of a **[NonComparativeEvidence Profile][NonComparativeEvidence]**.
+--an 'Intervention Group' section which limits the reference type for its entry content to Group Resource.
 
-..Composition.section.section.section.section[enrolledGroupEvidence] has a section.code value for 'Evidence with enrolled group' and entries limited to a single reference of a **[NonComparativeEvidence Profile][NonComparativeEvidence]**.
-
-..Composition.section.section.section.section[comparativeEvidence] has a section.code value for 'Evidence with intervention vs. comparator' and entries limited to a single reference of a **[ComparativeEvidence Profile][ComparativeEvidence]**.
+--an 'Comparator Group' section which limits the reference type for its entry content to Group Resource.
 
 
 ### BaselineMeasureReport Profile of Composition Resource
