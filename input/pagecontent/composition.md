@@ -48,21 +48,21 @@ The **[ComparativeEvidenceReport Profile][ComparativeEvidenceReport]** is a Prof
 
 The Composition.type value is set to a "Comparative Evidence Report".
 
-..A 'Population' section is required with entries limited to reference **[StudyGroup Profile][StudyGroup]**.
+..A 'Population' section is required with entries limited to reference **[StudyGroup Profile][StudyGroup]**. The 'Population' section contains 4 optional sections: a 'Screened Group' section with entries limited to reference **[StudyGroup Profile][StudyGroup]**, an 'Enrolled Group' section with entries limited to reference **[StudyGroup Profile][StudyGroup]**, an 'Analyzed Group' section with entries limited to reference **[StudyGroup Profile][StudyGroup]**, and a 'Population Description' section with entries limited to reference **[CohortDefinition Profile][CohortDefinition]** or **[ConceptualCohortDefinition Profile][ConceptualCohortDefinition]**.
 
-..An 'Intervention' section is required with 2 contained sections. The 'Intervention' section may be repeated. An 'Intervention Description' section is required with entries limited to reference **[ExposureDefinition Profile][ExposureDefinition]** or **[ConceptualExposureDefinition Profile][ConceptualExposureDefinition]**. An 'Intervention Group' section is required with entries limited to reference **[ExposureGroup Profile][ExposureGroup]**.
+..An 'Intervention' section is required with at least 2 contained sections. The 'Intervention' section may be repeated. An 'Intervention Description' section is required with entries limited to reference **[ExposureDefinition Profile][ExposureDefinition]** or **[ConceptualExposureDefinition Profile][ConceptualExposureDefinition]**. An 'Intervention Group' section is required with entries limited to reference **[ExposureGroup Profile][ExposureGroup]**.
 
-..A 'Comparator' section is required with 2 contained sections. A 'Comparator Description' section is required with entries limited to reference **[ComparatorDefinition Profile][ComparatorDefinition]** or **[ExposureDefinition Profile][ExposureDefinition]** or **[ConceptualComparatorDefinition Profile][ConceptualComparatorDefinition]** or **[ConceptualExposureDefinition Profile][ConceptualExposureDefinition]**. A 'Comparator Group' section is required with entries limited to reference **[ComparatorGroup Profile][ComparatorGroup]** or **[ExposureGroup Profile][ExposureGroup]**.
+..A 'Comparator' section is required with at least 2 contained sections. A 'Comparator Description' section is required with entries limited to reference **[ComparatorDefinition Profile][ComparatorDefinition]** or **[ExposureDefinition Profile][ExposureDefinition]** or **[ConceptualComparatorDefinition Profile][ConceptualComparatorDefinition]** or **[ConceptualExposureDefinition Profile][ConceptualExposureDefinition]**. A 'Comparator Group' section is required with entries limited to reference **[ComparatorGroup Profile][ComparatorGroup]** or **[ExposureGroup Profile][ExposureGroup]**. A 'Group Assignment' section is optional with entries limited to **[GroupAssignment Profile][GroupAssignment]**.
 
 ..A 'Research Study' section is required with entries limited to reference <b>ResearchStudy Resource</b> or <b>Citation Resource</b> or <b>Composition Resource</b>.
 
-..A 'Baseline Measures' section is optional. The 'Baseline Measures' section entry element is limited to a single instance that references **[BaselineMeasureReport Profile][BaselineMeasureReport]**. 
+..A 'Baseline Measures' section is optional. The 'Baseline Measures' section entry element is limited to reference **[BaselineMeasureReport Profile][BaselineMeasureReport]** or **[BaselineVaraiblesList Profile][BaselineVaraiblesList]**. 
 
-..A 'Participant Flow' section is optional. The 'Participant Flow' section entry element is limited to a single instance that references **[ParticipantFlowReport Profile][ParticipantFlowReport]**. 
+..A 'Participant Flow' section is optional. The 'Participant Flow' section entry element is limited to reference **[ParticipantFlowReport Profile][ParticipantFlowReport]** or **[ParticipantFlowVaraiblesList Profile][ParticipantFlowVaraiblesList]**. 
 
-..An 'Outcome Measures' section is optional. The 'Outcome Measures' section entry element is limited to reference **[OutcomeMeasureReport Profile][OutcomeMeasureReport]**.
+..An 'Outcome Measures' section is optional. The 'Outcome Measures' section entry element is limited to reference **[OutcomeMeasureReport Profile][OutcomeMeasureReport]** or **[OutcomeVaraiblesList Profile][OutcomeVaraiblesList]**. 
 
-..A 'Summary of Findings' section is optional. The 'Summary of Findings' section entry element is limited to reference **[SummaryOfFindings Profile][SummaryOfFindings]**.
+..A 'Summary of Findings' section is optional. The 'Summary of Findings' section entry element is limited to reference **[SummaryOfFindings Profile][SummaryOfFindings]** or **[OutcomeVaraiblesList Profile][OutcomeVaraiblesList]** or **[VaraiblesList Profile][VaraiblesList]**. 
 
 ### ComparativeEvidenceSynthesisReport Profile of Composition Resource
 
@@ -78,14 +78,14 @@ The Composition.type value is set to a "Comparative Evidence Synthesis Report".
 
 ..A 'Research Study' section is required with entries limited to reference <b>ResearchStudy Resource</b> or <b>Citation Resource</b> or <b>Composition Resource</b>.
 
-..An 'Outcome Variables' section is optional with entries limited to reference **[VariableDefinition Profile][VariableDefinition]**.
+..An 'Outcome Variables' section is optional with entries limited to reference **[VariableDefinition Profile][VariableDefinition]** or **[OutcomeVaraiblesList Profile][OutcomeVaraiblesList]** or **[VaraiblesList Profile][VaraiblesList]**.
 
-..A 'Results' section is optional. The 'Results' section entry element is limited to reference **[OutcomeMeasureSynthesisReport Profile][OutcomeMeasureSynthesisReport]**.
+..A 'Results' section is optional. The 'Results' section entry element is limited to reference **[OutcomeMeasureReport Profile][OutcomeMeasureReport]**.
 
-..A 'Summary of Findings' section is optional. The 'Summary of Findings' section entry element is limited to reference **[SummaryOfSynthesisFindings Profile][SummaryOfSynthesisFindings]**.
+..A 'Summary of Findings' section is optional. The 'Summary of Findings' section entry element is limited to reference **[SummaryOfFindings Profile][SummaryOfFindings]**.
 
 
-### EvidenceTableReportPackage Profile of Composition Resource
+### EvidenceTableReportPackage Profile of Composition Resource (TO BE EDITED)
 
 The **[EvidenceTableReportPackage Profile][EvidenceTableReportPackage]** is used for a base structure to extend the **[EvidenceReport Profile][EvidenceReport]** with sections for Groups, Group Assignment, Evidence Variables, and Results.
 
@@ -161,38 +161,6 @@ The **[SummaryOfFindings Profile][SummaryOfFindings]** has 1 'Column Headers' se
 7. A 'Certainty of Evidence' section is optional. If used in the 'Summary of findings entry for a single outcome' section, entries may reference **[ComparativeEvidence Profile][ComparativeEvidence]** or **[CertaintyOfEvidence Profile][CertaintyOfEvidence]**.
 
 8. An 'Assertion' section is optional. If used in the 'Summary of findings entry for a single outcome' section, entries are limited to reference a single **[ComparativeEvidence Profile][ComparativeEvidence]**.
-
-### EvidenceSynthesisTableReportPackage Profile of Composition Resource
-
-The **[EvidenceSynthesisTableReportPackage Profile][EvidenceSynthesisTableReportPackage]** is used for a base structure to extend the **[EvidenceReport Profile][EvidenceReport]** with sections for Groups (Total Group, Intervention Group, Comparator Group, and Group Assignment; which reference conceptual or definitional Groups), Evidence Variables, and Results.
-
-The Groups and Evidence Variables sections have limits to the reference types for their entry content: **[CohortDefinition][CohortDefinition]** or **[ConceptualCohortDefinition][ConceptualCohortDefinition]** for Total Group, **[CohortDefinition][CohortDefinition]** or **[ConceptualCohortDefinition][ConceptualCohortDefinition]** Profile for Intervention Group, **[CohortDefinition][CohortDefinition]** or **[ConceptualCohortDefinition][ConceptualCohortDefinition]** Profile for Comparator Group, **[GroupAssignment Profile][GroupAssignment]** for Group Assignment, and **[VariableDefinition Profile][VariableDefinition]** for Evidence Variables.
-
-
-### OutcomeMeasureSynthesisReport Profile of Composition Resource
-
-The **[OutcomeMeasureSynthesisReport Profile][OutcomeMeasureSynthesisReport]** is a Profile of **[EvidenceSynthesisTableReportPackage][EvidenceSynthesisTableReportPackage]** and is used for an evidence report including the findings for any number of outcomes in a synthesis of research studies, where there may be a unique observed study group, observed exposure group, and observed comparator group for each outcome.
-
-The Composition.type value is set to an "Outcome Measure Synthesis Report".
-
-The section element (Results section slice) contains one or more instances (sections) with each of these sections identified by focus (Composition.section.section.focus) which references a **[VariableDefinition Profile][VariableDefinition]**. Each of these focused sections contain one or more of the following sections:
-
-..TO BE ADDED..Note the sections for observed groups...
-
-..Composition.section.section.section[comparatorEvidence] has a section.code value for 'Evidence with comparator alone' and entries limited to a single reference of a **[NoncomparativeEvidence Profile][NoncomparativeEvidence]**.
-
-..Composition.section.section.section[interventionEvidence] has a section.code value for 'Evidence with intervention alone' and entries limited to a single reference of a **[NoncomparativeEvidence Profile][NoncomparativeEvidence]**.
-
-..Composition.section.section.section[totalGroup] has a section.code value for 'Evidence with total group' and entries limited to a single reference of a **[NoncomparativeEvidence Profile][NoncomparativeEvidence]**.
-
-..Composition.section.section.section[comparativeEvidence] has a section.code value for 'Evidence with intervention vs. comparator' and entries limited to a single reference of a **[ComparativeEvidence Profile][ComparativeEvidence]**.
-
-
-### SummaryOfSynthesisFindings Profile of Composition Resource
-
-The **[SummaryOfSynthesisFindings Profile][SummaryOfSynthesisFindings]** is a Profile of **[EvidenceSynthesisTableReportPackage][EvidenceSynthesisTableReportPackage]** and is used for an evidence report combining <b>Evidence</b> and <b>EvidenceVariable Resources</b>, organized around **[VariableDefinition][VariableDefinition]** (Profile of EvidenceVariable), to represent the summary of findings of comparative evidence from an evidence synthesis.
-
-The Composition.type value is set to a "Summary of Synthesis Findings". The underlying structure is otherwise similar to the **[SummaryOfFindings Profile][SummaryOfFindings]** used for summarizing evidence from a single study.
 
 ### Guideline Profile of Composition Resource
 

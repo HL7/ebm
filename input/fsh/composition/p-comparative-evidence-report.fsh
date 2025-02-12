@@ -47,7 +47,6 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Compara
 * section[intervention].code.coding 1..1
 * section[intervention].code.coding = https://fevir.net/resources/CodeSystem/179423#intervention "Intervention"
 * section[intervention]
-  * section 2..2
   * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code.coding"
   * section ^slicing.rules = #open
@@ -65,7 +64,6 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Compara
 * section[comparator].code.coding 1..1
 * section[comparator].code.coding = https://fevir.net/resources/CodeSystem/179423#comparator "Comparator"
 * section[comparator]
-  * section 2..2
   * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code.coding"
   * section ^slicing.rules = #open
