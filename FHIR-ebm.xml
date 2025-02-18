@@ -173,9 +173,6 @@
 <artifact id="StructureDefinition/evidence-list" key="StructureDefinition-evidence-list" name="EvidenceList"/>
 <artifact id="List/179800" key="List-179800" name="EvidenceList: Effect estimates for meta-analysis (Biegel 2020, Wang 2020, SOLIDARITY)"/>
 <artifact id="List/179470" key="List-179470" name="EvidenceList: Study results included in Mean difference in HbA1c effect of bariatric surgery in 2016 meta-analysis"/>
-<artifact id="StructureDefinition/evidence-map" key="StructureDefinition-evidence-map" name="EvidenceMap"/>
-<artifact id="Composition/104213" key="Composition-104213" name="EvidenceMap: Bariatric Surgery Summary of Findings Example for GIN 2022"/>
-<artifact id="StructureDefinition/evidence-r6" key="StructureDefinition-evidence-r6" name="EvidenceR6"/>
 <artifact id="StructureDefinition/evidence-report" key="StructureDefinition-evidence-report" name="EvidenceReport"/>
 <artifact id="ValueSet/179431" key="ValueSet-179431" name="EvidenceReportSectionCode Value Set"/>
 <artifact id="StructureDefinition/evidence-report-subject" key="StructureDefinition-evidence-report-subject" name="EvidenceReportSubject"/>
