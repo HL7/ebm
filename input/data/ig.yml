@@ -2333,7 +2333,7 @@ definition:
     name: Participants_in_Anticoagulation_for_COVID_19_Combined_ATTACC_ACTIV_4a_and_REMAP_CAP_RCT_hospitalized_not_critically_ill
     reference:
       reference: Group/7750
-  - description: An definitional group used to support the 'intended' element in Evidence.varaibleDefinition
+  - description: An definitional group used to support the 'intended' element in Evidence.variableDefinition
       with variableRole = 'population'.
     isExample: true
     name: Patients_who_are_hospitalized_for_COVID_19_and_who_are_not_critically_ill

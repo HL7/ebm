@@ -56,13 +56,13 @@ The Composition.type value is set to a "Comparative Evidence Report".
 
 ..A 'Research Study' section is required with entries limited to reference <b>ResearchStudy Resource</b> or <b>Citation Resource</b> or <b>Composition Resource</b>.
 
-..A 'Baseline Measures' section is optional. The 'Baseline Measures' section entry element is limited to reference **[BaselineMeasureReport Profile][BaselineMeasureReport]** or **[BaselineVaraiblesList Profile][BaselineVaraiblesList]**. 
+..A 'Baseline Measures' section is optional. The 'Baseline Measures' section entry element is limited to reference **[BaselineMeasureReport Profile][BaselineMeasureReport]** or **[BaselineVariablesList Profile][BaselineVariablesList]**. 
 
-..A 'Participant Flow' section is optional. The 'Participant Flow' section entry element is limited to reference **[ParticipantFlowReport Profile][ParticipantFlowReport]** or **[ParticipantFlowVaraiblesList Profile][ParticipantFlowVaraiblesList]**. 
+..A 'Participant Flow' section is optional. The 'Participant Flow' section entry element is limited to reference **[ParticipantFlowReport Profile][ParticipantFlowReport]** or **[ParticipantFlowVariablesList Profile][ParticipantFlowVariablesList]**. 
 
-..An 'Outcome Measures' section is optional. The 'Outcome Measures' section entry element is limited to reference **[OutcomeMeasureReport Profile][OutcomeMeasureReport]** or **[OutcomeVaraiblesList Profile][OutcomeVaraiblesList]**. 
+..An 'Outcome Measures' section is optional. The 'Outcome Measures' section entry element is limited to reference **[OutcomeMeasureReport Profile][OutcomeMeasureReport]** or **[OutcomeVariablesList Profile][OutcomeVariablesList]**. 
 
-..A 'Summary of Findings' section is optional. The 'Summary of Findings' section entry element is limited to reference **[SummaryOfFindings Profile][SummaryOfFindings]** or **[OutcomeVaraiblesList Profile][OutcomeVaraiblesList]** or **[VaraiblesList Profile][VaraiblesList]**. 
+..A 'Summary of Findings' section is optional. The 'Summary of Findings' section entry element is limited to reference **[SummaryOfFindings Profile][SummaryOfFindings]** or **[OutcomeVariablesList Profile][OutcomeVariablesList]** or **[VariablesList Profile][VariablesList]**. 
 
 ### ComparativeEvidenceSynthesisReport Profile of Composition Resource
 
@@ -78,7 +78,7 @@ The Composition.type value is set to a "Comparative Evidence Synthesis Report".
 
 ..A 'Research Study' section is required with entries limited to reference <b>ResearchStudy Resource</b> or <b>Citation Resource</b> or <b>Composition Resource</b>.
 
-..An 'Outcome Variables' section is optional with entries limited to reference **[VariableDefinition Profile][VariableDefinition]** or **[OutcomeVaraiblesList Profile][OutcomeVaraiblesList]** or **[VaraiblesList Profile][VaraiblesList]**.
+..An 'Outcome Variables' section is optional with entries limited to reference **[VariableDefinition Profile][VariableDefinition]** or **[OutcomeVariablesList Profile][OutcomeVariablesList]** or **[VariablesList Profile][VariablesList]**.
 
 ..A 'Results' section is optional. The 'Results' section entry element is limited to reference **[OutcomeMeasureReport Profile][OutcomeMeasureReport]**.
 
