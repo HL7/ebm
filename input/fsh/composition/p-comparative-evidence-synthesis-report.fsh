@@ -10,7 +10,6 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Compara
 * type.text = "Comparative Evidence Synthesis Report"
 * relatesTo[dependsOn]
   * ^comment = "Use targetReference(GroupAssignment) to include GroupAssignment references not directly included in the section entries, to facilitate data exchange for construction of OutcomeMeasureReport and SummaryOfFindings."
-.resourceReference only Reference(GroupAssignment)
 * section 5..*
 * section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code.coding"
