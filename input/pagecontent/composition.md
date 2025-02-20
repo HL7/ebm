@@ -12,7 +12,7 @@ Composition.attester is a repeatable BackboneElement that is similar conceptuall
 
 Composition.custodian is optional and references an <b>Organization Resource</b> to represent the 'publisher' of the composition.
 
-Composition.relatesTo is similar to Resource.relatedArtifact used in other Resources. In compositions used for scientific knowledge exchange, there is often a desire to inform the reader how to cite the composition. The relatesTo element may have an instance with a type of "cite-as" to represent how to cite the composition.
+Composition.relatesTo is similar to Resource.relatedArtifact used in other Resources. In compositions used for scientific knowledge exchange, there is often a desire to inform the reader how to cite the composition. The relatesTo element may have an instance with a type of "cite-as" to represent how to cite the composition. In FHIR R6, the RelatedArtifact datatype was deprecated and Composition.relatesTo became a BackboneElement including type 1..1 code and target[x] 1..1 uri | canonical | Reference | Attachment | markdown.
 
 Composition.event is a repeatable BackboneElement to represent the clinical service(s) being documented and is not expected to be used commonly in the EBMonFHIR Implementation Guide.
 
@@ -32,7 +32,7 @@ section.text is a Narrative datatype used for a text summary of the section. A N
 
 ### EvidenceReport Profile of Composition Resource
 
-The **[EvidenceReport Profile][EvidenceReport]** is used for a base structure (canonical resource management) for a report combining any number of <b>Citation</b>, <b>Evidence</b>, <b>EvidenceVariable</b>, <b>Composition</b>, and related Resources. The **[EvidenceReport Profile][EvidenceReport]** adds a number of extensions for metadata (versionAlgorithm, experimental, description, purpose, copyright, copyrightLabel, approvalDate, lastReviewDate, and effectivePeriod). The Composition.attester.mode element uses a CodeableConcept datatype and a Contributor Role Value Set is provided with preferred binding to include concepts for reviewer, editor, endorser, informant, recorder, and funder. An EvidenceReport Section Code Value Set is provided with extensible binding for the section.code elements.
+The **[EvidenceReport Profile][EvidenceReport]** is used for a base structure (canonical resource management) for a report combining any number of <b>Citation</b>, <b>Evidence</b>, <b>EvidenceVariable</b>, <b>Composition</b>, and related Resources. The **[EvidenceReport Profile][EvidenceReport]** adds a number of extensions for metadata (versionAlgorithm, experimental, description, purpose, copyright, copyrightLabel, approvalDate, lastReviewDate, and effectivePeriod). The Composition.attester.mode element uses a CodeableConcept datatype and a Contributor Role Value Set is provided with preferred binding to include concepts for reviewer, editor, endorser, informant, recorder, and funder. The Composition.relatesTo element includes extensions (targetUri, targetCanonical, targetReference, targetAttachment, targetMarkdown) until these elements are included in the base FHIR R6 specification used for this implementation guide. An EvidenceReport Section Code Value Set is provided with extensible binding for the section.code elements.
 
 ### ResearchStudyDataDictionary Profile of Composition Resource
 
