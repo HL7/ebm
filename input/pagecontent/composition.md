@@ -12,7 +12,7 @@ Composition.attester is a repeatable BackboneElement that is similar conceptuall
 
 Composition.custodian is optional and references an <b>Organization Resource</b> to represent the 'publisher' of the composition.
 
-Composition.relatesTo is similar to Resource.relatedArtifact used in other Resources. In compositions used for scientific knowledge exchange, there is often a desire to inform the reader how to cite the composition. The relatesTo element may have an instance with a type of "cite-as" to represent how to cite the composition. In FHIR R6, the RelatedArtifact datatype was deprecated and Composition.relatesTo became a BackboneElement including type 1..1 code and target[x] 1..1 uri | canonical | Reference | Attachment | markdown.
+Composition.relatesTo is similar to Resource.relatedArtifact used in other Resources. In compositions used for scientific knowledge exchange, there is often a desire to inform the reader how to cite the composition. The relatesTo element may have an instance with a type of "cite-as" to represent how to cite the composition. In FHIR R6, the RelatedArtifact datatype was deprecated and Composition.relatesTo became a BackboneElement including type 1..1 code and target[x] 1..1 uri or canonical or Reference or Attachment or markdown.
 
 Composition.event is a repeatable BackboneElement to represent the clinical service(s) being documented and is not expected to be used commonly in the EBMonFHIR Implementation Guide.
 
