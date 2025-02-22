@@ -131,12 +131,12 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * section[benefitSummary].code.text = "section2.2.2-benefit-summary"
     * section[benefitSummary]
       * text 1..1
-      * text ^comment = "[The benefit summary should describe any physical, psychological, social, or any other potential benefits to individual participants as a result of participating in the trial, addressing immediate potential benefits and/or long-range potential benefits. Clearly state if no benefits to an individual participant can be anticipated, or if potential benefits are unknown. For early clinical trials such as Phase 1 or trials in healthy participants, benefits for an individual participant (other than those of altruism) are expected to be minimal. Benefits to society in general may also be included but should be described separately from the individual participant perspective."
+      * text ^comment = "The benefit summary should describe any physical, psychological, social, or any other potential benefits to individual participants as a result of participating in the trial, addressing immediate potential benefits and/or long-range potential benefits. Clearly state if no benefits to an individual participant can be anticipated, or if potential benefits are unknown. For early clinical trials such as Phase 1 or trials in healthy participants, benefits for an individual participant (other than those of altruism) are expected to be minimal. Benefits to society in general may also be included but should be described separately from the individual participant perspective."
     * section[overallBenefitRisk].title = "Overall Benefit:Risk Conclusion"
     * section[overallBenefitRisk].code.text = "section2.2.3-overall-benefit-risk-conclusion"
     * section[overallBenefitRisk]
       * text 1..1
-      * text ^comment = "[Provide a succinct, concluding statement on the perceived balance between risks that have been identified from cumulative safety data, protocol procedures, and anticipated efficacy/benefits within the context of the proposed trial."
+      * text ^comment = "Provide a succinct, concluding statement on the perceived balance between risks that have been identified from cumulative safety data, protocol procedures, and anticipated efficacy/benefits within the context of the proposed trial."
 * section[estimands].title = "Trial Objectives and Associated Estimands"
 * section[estimands].code.text = "section3-estimands"
 * section[estimands]
@@ -172,7 +172,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
-    * section contains endpoints 0..1 MS model 0..1 MS and comparator 0..1 MS and duration 0..1 MS and adaptive 0..1 MS and interim 0..1 MS and otherAspects 0..1 MS
+    * section contains endpoints 0..1 MS and model 0..1 MS and comparator 0..1 MS and duration 0..1 MS and adaptive 0..1 MS and interim 0..1 MS and otherAspects 0..1 MS
     * section[endpoints].title = "Rationale for Estimands"
     * section[endpoints].code.text = "section4.2.1-rationale-estimands"
     * section[endpoints]
@@ -182,7 +182,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * section[model].code.text = "section4.2.2-rationale-intervention-model"
     * section[model]
       * text 1..1
-      * text ^comment = "[Provide a rationale for the trial intervention model described in Section 4.1 Description of Trial Design with a cross reference to Section 6.2 Rationale for Investigational Intervention Dose and Regimen. Rationale for choice of comparator, if applicable, should be described separately in Section 4.2.5 Rationale for Control Type. A rationale for the choice of trial population should be described separately in Section 5.1 Description of Trial Population and Rationale."
+      * text ^comment = "Provide a rationale for the trial intervention model described in Section 4.1 Description of Trial Design with a cross reference to Section 6.2 Rationale for Investigational Intervention Dose and Regimen. Rationale for choice of comparator, if applicable, should be described separately in Section 4.2.5 Rationale for Control Type. A rationale for the choice of trial population should be described separately in Section 5.1 Description of Trial Population and Rationale."
     * section[comparator].title = "Rationale for Control Type"
     * section[comparator].code.text = "section4.2.3-rationale-comparator"
     * section[comparator]
@@ -222,7 +222,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * section[access].code.text = "section4.5-access-after-trial"
   * section[access]
     * text 1..1
-    * text ^comment = "[If applicable, describe any possibilities for access to trial intervention, if any, beyond completion of the trial. Planned extension trials, if described in Section 4.1 Description of Trial Design, do not need to be repeated in this section." 
+    * text ^comment = "If applicable, describe any possibilities for access to trial intervention, if any, beyond completion of the trial. Planned extension trials, if described in Section 4.1 Description of Trial Design, do not need to be repeated in this section." 
 * section[population].title = "Trial Population"
 * section[population].code.text = "section5-trial-population"
 * section[population]
@@ -381,7 +381,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * section[randomisation].code.text = "section6.7.2-randomisation"
     * section[randomisation]
       * text 1..1
-      * text ^comment = "[Describe the randomisation procedures (e.g., central randomisation procedures), the method used to generate the randomisation schedule (e.g., computer generated), the source of the randomisation schedule (e.g., sponsor, investigator, or other), and whether IxRS will be used. To maintain the integrity of the blinding, do not include the block size."
+      * text ^comment = "Describe the randomisation procedures (e.g., central randomisation procedures), the method used to generate the randomisation schedule (e.g., computer generated), the source of the randomisation schedule (e.g., sponsor, investigator, or other), and whether IxRS will be used. To maintain the integrity of the blinding, do not include the block size."
     * section[blinding].title = "Blinding"
     * section[blinding].code.text = "section6.7.3-blinding"
     * section[blinding]
@@ -654,7 +654,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
       * section[causality].code.text = "section9.2.2.3-causality"
       * section[causality]
         * text 1..1
-        * text ^comment = "[Specify the causality categories/scale and the procedures for assessing causality."
+        * text ^comment = "Specify the causality categories/scale and the procedures for assessing causality."
       * section[recording].title = "Recording"
       * section[recording].code.text = "section9.2.2.4-recording"
       * section[recording]
@@ -807,7 +807,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
       * section[statisticalModel].code.text = "section10.5.1.1-statistical-method"
       * section[statisticalModel]
         * text 1..1
-        * text ^comment = "[Clearly specify any secondary hypotheses that will be tested for confirmatory purposes. Entries should Reference EndpointAnalysisPlan Profile of Evidence Resource."
+        * text ^comment = "Clearly specify any secondary hypotheses that will be tested for confirmatory purposes. Entries should Reference EndpointAnalysisPlan Profile of Evidence Resource."
         * entry only Reference(EndpointAnalysisPlan)
       * section[intercurrentEventHandling].title = "Handling of Data in Relation to Secondary Estimand(s)"
       * section[intercurrentEventHandling].code.text = "section10.5.1.2-data-handling"
@@ -918,7 +918,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * section[rescreening].code.text = "section11.3.1-rescreening-consent-process"
     * section[rescreening]
       * text 1..1
-      * text ^comment = "[If participants can be rescreened as described in Section 5.6, state whether the participant needs to complete a new consent. Screen failure and rescreening should be clearly defined in the protocol, with cross reference to those definitions."
+      * text ^comment = "If participants can be rescreened as described in Section 5.6, state whether the participant needs to complete a new consent. Screen failure and rescreening should be clearly defined in the protocol, with cross reference to those definitions."
     * section[remainingSamples].title = "Informed Consent for Remaining Samples in Exploratory Research"
     * section[remainingSamples].code.text = "section11.3.2-remaining-samples"
     * section[remainingSamples]
