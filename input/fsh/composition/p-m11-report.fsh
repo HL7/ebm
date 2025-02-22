@@ -689,7 +689,6 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * section[diseaseRelatedEvents]
       * text 1..1
       * text ^comment = "Specify any DREs, DROs, or both that will not be reported as AEs or SAEs (e.g., seizures in anticonvulsant trials) or state “Not applicable.”"
-    * section[pregnancy].title = "Pregnancy and Postpartum Information"
   * section[pregnancy].title = "Pregnancy and Postpartum Informatio"
   * section[pregnancy].code.text = "section9.3-pregnancy-postpartum"
   * section[pregnancy]
