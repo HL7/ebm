@@ -167,7 +167,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * section[rationale].title = "Rationale for Trial Design"
   * section[rationale].code.text = "section4.2-rationale-for-trial-design"
   * section[rationale]
-    * text ^comment = "<Enter Overall Rationale for Trial Design> if not using below optional subheadings."
+    * text ^comment = "Enter Overall Rationale for Trial Design if not using below optional subheadings."
     * section 0..*
     * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code.text"
