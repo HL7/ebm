@@ -224,7 +224,7 @@
 <artifact deprecated="true" id="Citation/33090" key="Citation-33090" name="JournalArticleCitation: Metabolic Surgery in the Treatment Algorithm for Type 2 Diabetes: A Joint Statement by International Diabetes Organizations"/>
 <artifact id="ArtifactAssessment/179469" key="ArtifactAssessment-179469" name="Justification for Recommendation: ADA Obesity Management Recommendation 8.16"/>
 <artifact id="ArtifactAssessment/179515" key="ArtifactAssessment-179515" name="Justification for Recommendation: ADA Obesity Management Recommendation 8.17"/>
-<artifact id="Composition/239266" key="Composition-239266" name="M11 Report Template Instructions"/>
+<artifact id="Composition/343018" key="Composition-343018" name="M11 Report Template Instructions"/>
 <artifact id="StructureDefinition/m11-report" key="StructureDefinition-m11-report" name="M11Report"/>
 <artifact id="StructureDefinition/metaanalysis-eligibility-criteria" key="StructureDefinition-metaanalysis-eligibility-criteria" name="MetaanalysisEligibilityCriteria"/>
 <artifact id="Group/175766" key="Group-175766" name="MetaanalysisEligibilityCriteria_Mean_difference_in_HbA1c_effect_of_bariatric_surgery_in_type_2_diabetes_and_elevated_BMI_in_2016_meta_analysis"/>

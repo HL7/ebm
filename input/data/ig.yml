@@ -1841,7 +1841,7 @@ definition:
     profile:
     - http://hl7.org/fhir/uv/ebm/StructureDefinition/m11-report
     reference:
-      reference: Composition/239266
+      reference: Composition/343018
   - description: Profile of Composition for Evidence Based Medicine IG. The M11Report
       Profile is used for the International Council for Harmonisation of Technical
       Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured
