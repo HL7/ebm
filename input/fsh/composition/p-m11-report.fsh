@@ -132,7 +132,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * section[benefitSummary]
       * text 1..1
       * text ^comment = "The benefit summary should describe any physical, psychological, social, or any other potential benefits to individual participants as a result of participating in the trial, addressing immediate potential benefits and/or long-range potential benefits. Clearly state if no benefits to an individual participant can be anticipated, or if potential benefits are unknown. For early clinical trials such as Phase 1 or trials in healthy participants, benefits for an individual participant (other than those of altruism) are expected to be minimal. Benefits to society in general may also be included but should be described separately from the individual participant perspective."
-    * section[overallBenefitRisk].title = "Overall Benefit:Risk Conclusion"
+    * section[overallBenefitRisk].title = "Overall Risk-Benefit Assessment"
     * section[overallBenefitRisk].code.text = "section2.2.3-overall-benefit-risk-conclusion"
     * section[overallBenefitRisk]
       * text 1..1
@@ -589,7 +589,6 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
 * section[adverseEvents].title = "Adverse Events, Serious Adverse Events, Product Complaints, Pregnancy and Postpartum Information, and Special Safety Situations"
 * section[adverseEvents].code.text = "section9-adverse-events"
 * section[adverseEvents]
-  * section 5..*
   * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code.text"
   * section ^slicing.rules = #open
