@@ -173,7 +173,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
     * section contains endpoints 0..1 MS and model 0..1 MS and comparator 0..1 MS and duration 0..1 MS and adaptive 0..1 MS and interim 0..1 MS and otherAspects 0..1 MS
-    * section[endpoints].title = "Rationale for Estimands"
+    * section[endpoints].title = "Rationale for Estimand(s)"
     * section[endpoints].code.text = "section4.2.1-rationale-estimands"
     * section[endpoints]
       * text 1..1
@@ -341,7 +341,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * text 1..1
     * text ^comment = "Describe what is meant by investigational trial intervention overdose. Provide any available information on managing the overdose and ensure it is consistent with the Investigator’s Brochure or product labelling. Cross reference these documents as applicable. Entries should Reference ActivityDefinition Resource or PlanDefinition Resource."
     * entry only Reference(ActivityDefinition or PlanDefinition)
-  * section[preparation].title = "Preparation, Storage, Handling and Accountability of Investigational Trial Intervention(s)"
+  * section[preparation].title = "Preparation, Storage, Handling and Accountability of Investigational Trial Intervention"
   * section[preparation].code.text = "section6.6-preparation-storage-handling"
   * section[preparation]
     * section 3..*
@@ -349,7 +349,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
     * section contains preparationIntervention 1..1 MS and storageHandling 1..1 MS and accountability 1..1 MS
-    * section[preparationIntervention].title = "Preparation of Investigational Trial Intervention(s)"
+    * section[preparationIntervention].title = "Preparation of Investigational Trial Intervention"
     * section[preparationIntervention].code.text = "section6.6.1-preparation"
     * section[preparationIntervention]
       * text 1..1
@@ -382,7 +382,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * section[randomisation]
       * text 1..1
       * text ^comment = "Describe the randomisation procedures (e.g., central randomisation procedures), the method used to generate the randomisation schedule (e.g., computer generated), the source of the randomisation schedule (e.g., sponsor, investigator, or other), and whether IxRS will be used. To maintain the integrity of the blinding, do not include the block size."
-    * section[blinding].title = "Blinding"
+    * section[blinding].title = "Measures to Maintain Blinding"
     * section[blinding].code.text = "section6.7.3-blinding"
     * section[blinding]
       * text 1..1
@@ -397,7 +397,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * section[adherence]
     * text 1..1
     * text ^comment = "Describe the measures to monitor and document participants’ adherence with investigational trial intervention (e.g., trial intervention accountability records, diary cards, or investigational trial intervention concentration measurements). List what documents are mandatory to complete (e.g., participant drug log) and what source data/records will be used to document investigational trial intervention adherence."
-  * section[noninvestigationalTherapy].title = "Non-Investigational Trial Intervention(s)"
+  * section[noninvestigationalTherapy].title = "Non-Investigational Trial Intervention"
   * section[noninvestigationalTherapy].code.text = "section6.9-noninvestigational-interventions"
   * section[noninvestigationalTherapy]
     * text 1..1
@@ -408,7 +408,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
     * section contains background 0..1 MS and rescue 0..1 MS and other 0..1 MS
-    * section[background].title = "Background Intervention"
+    * section[background].title = "Background Trial Intervention"
     * section[background].code.text = "section6.9.1-background-intervention"
     * section[background]
       * text 1..1
@@ -418,7 +418,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * section[rescue]
       * text 1..1
       * text ^comment = "List all permitted rescue medications, treatments, and/or procedures, including any relevant instructions on administration and any conditions of use. If administration of rescue therapy leads to the temporary discontinuation of trial intervention or a participant’s withdrawal from the trial, refer to Section 7 Participant Discontinuation of Trial Intervention and Discontinuation or Withdrawal from Trial."
-    * section[other].title = "Other Therapy"
+    * section[other].title = "Other Noninvestigational Trial Intervention"
     * section[other].code.text = "section6.9.3-other-therapy"
     * section[other]
       * text 1..1
@@ -689,7 +689,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * section[diseaseRelatedEvents]
       * text 1..1
       * text ^comment = "Specify any DREs, DROs, or both that will not be reported as AEs or SAEs (e.g., seizures in anticonvulsant trials) or state “Not applicable.”"
-  * section[pregnancy].title = "Pregnancy and Postpartum Informatio"
+  * section[pregnancy].title = "Pregnancy and Postpartum Information"
   * section[pregnancy].code.text = "section9.3-pregnancy-postpartum"
   * section[pregnancy]
     * section 0..*
