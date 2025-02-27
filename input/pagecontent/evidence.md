@@ -44,6 +44,8 @@ The **[ComparativeBaselineMeasureEvidence Profile][ComparativeBaselineMeasureEvi
 
 The **[ParticipantFlowEvidence Profile][ParticipantFlowEvidence]** is a Profile of **[NonComparativeEvidence][NonComparativeEvidence]** which has the participant flow measure in the variableDefinition with the role of 'outcome'. The intended and directnessMatch elements in variableDefinition are not used. The statistic.numberAffected element is not used because the number counted is the statistic.quantity and the statistic.modelCharacteristic element is not used because simple counting does not require any statistical modeling.
 
+The **[ComparativeBaselineMeasureEvidence Profile][ComparativeBaselineMeasureEvidence]** is a Profile of **[ComparativeEvidence][ComparativeEvidence]** which has the baseline measure in the variableDefinition with the role of 'outcome'.
+
 The **[ComparativeParticipantFlowEvidence Profile][ComparativeParticipantFlowEvidence]** is a Profile of **[ComparativeEvidence][ComparativeEvidence]** which has the participant flow measure in the variableDefinition with the role of 'outcome'. The intended and directnessMatch elements in variableDefinition are not used.
 
 The **[StatisticModel Profile][StatisticModel]** is used to add extensions to Evidence for complex expressions for the statistical model or endpoint analysis plan.
