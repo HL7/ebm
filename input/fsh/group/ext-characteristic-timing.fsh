@@ -13,7 +13,7 @@ Description: "Timing in which the characteristic is determined or action is take
 * value[x] 0..0
 * . ^short = "Timing in which the characteristic is determined or action is taken"
 * . ^definition = "Timing in which the characteristic is determined or action is taken."
-* extension contains contextReference 0..1 and contextDefinition 0..1 and contextPath 0..1 and contextCode 0..1 and offset 0..1 and text 0..1
+* extension contains contextReference 0..1 and contextDefinition 0..1 and contextPath 0..1 and contextCode 0..1 and offset 0..1 and offsetRange 0..1 and text 0..1
 * extension[contextReference].value[x] only Reference
   * ^short = "The specific event occurrence or resource context used as a base point (reference point) in time"
   * ^definition = "The specific event occurrence or resource context used as a base point (reference point) in time. This establishes the context in which the path is evaluated."
@@ -26,9 +26,12 @@ Description: "Timing in which the characteristic is determined or action is take
 * extension[contextCode].value[x] only CodeableConcept
   * ^short = "Coded representation of the event used as a base point (reference point) in time"
   * ^definition = "Coded representation of the event used as a base point (reference point) in time."
-* extension[offset].value[x] only Duration or Range
-  * ^short = "An offset or offset range before (negative values) or after (positive values) the event"
-  * ^definition = "An offset or offset range before (negative values) or after (positive values) the event. Range is limited to time-valued quantities (Durations)."
+* extension[offset].value[x] only Duration
+  * ^short = "An offset before (negative values) or after (positive values) the event"
+  * ^definition = "An offset before (negative values) or after (positive values) the event. Range is limited to time-valued quantities (Durations)."
+* extension[offsetRange].value[x] only Range
+  * ^short = "An offset range before (negative values) or after (positive values) the event"
+  * ^definition = "An offset range before (negative values) or after (positive values) the event. Range is limited to time-valued quantities (Durations)."
 * extension[text].value[x] only string
   * ^short = "Free-text description"
   * ^definition = "Free-text (human-readable) description." 
