@@ -193,6 +193,10 @@ This element does not match any known slice defined in the profile http://hl7.or
 # Suppressing message that a slice is not found in the ResearchStudyDataDictionary Profile because the Profile does not specify section codes for descriptive sections
 This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/research-study-data-dictionary|1.0.0-ballot2 (this may not be a problem, but you should check that it's not intended to match a slice)
 
+# Suppressing warnings about the content of an actual ValueSet used for example purposes, as this was based on a real ValueSet that we are not able to revise
+No definition can be found for the system http://fhir.de/CodeSystem/bfarm/icd-10-gm, and the property 'child' is not a generally known property, so the property might not be valid, or understood by the terminology ecosystem. In case it's useful, the list of generally known properties for all systems is concept,code,status,inactive,effectiveDate,deprecationDate,retirementDate,notSelectable,synonym,comment,itemWeight
+Error from http://tx.fhir.org/r5: Unable to provide support for code system http://fhir.de/CodeSystem/bfarm/icd-10-gm version 2025
+
 # Suppressing a message about XML tags in markdown. This is a known issue converting structured abstract data from MEDLINE and is handled in the presentation of the data.
 The markdown contains content that appears to be an embedded HTML tag starting at '<A'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
 The markdown contains content that appears to be an embedded HTML tag starting at 'OB'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
