@@ -188,6 +188,10 @@ This property has only the standard code ('comment') but not the standard URI 'h
 This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report-package|1.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-measure-report-package|1.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice) 
 This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report-package|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report-package|1.0.0-ballot2 (this may not be a problem, but you should check that it's not intended to match a slice)
+
+# Suppressing message that a slice is not found in the ResearchStudyDataDictionary Profile because the Profile does not specify section codes for descriptive sections
+This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/research-study-data-dictionary|1.0.0-ballot2 (this may not be a problem, but you should check that it's not intended to match a slice)
 
 # Suppressing a message about XML tags in markdown. This is a known issue converting structured abstract data from MEDLINE and is handled in the presentation of the data.
 The markdown contains content that appears to be an embedded HTML tag starting at '<A'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
