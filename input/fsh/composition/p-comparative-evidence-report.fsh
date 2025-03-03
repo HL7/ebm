@@ -48,7 +48,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Compara
   * section[description].code.coding = https://fevir.net/resources/CodeSystem/179423#intervention-description "Intervention Description"
   * section[description]
     * entry 0..1
-    * entry only Reference(ExposureDefinition or ConceptualExposureDefinition)
+    * entry only Reference(ConceptualExposureDefinition)
   * section[group].code.coding 1..1
   * section[group].code.coding = https://fevir.net/resources/CodeSystem/179423#intervention-group "Intervention Group"
   * section[group]
@@ -65,7 +65,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Compara
   * section[description].code.coding = https://fevir.net/resources/CodeSystem/179423#comparator-description "Comparator Description"
   * section[description]
     * entry 0..1
-    * entry only Reference(ComparatorDefinition or ExposureDefinition or ConceptualComparatorDefinition or ConceptualExposureDefinition)
+    * entry only Reference(ConceptualComparatorDefinition or ConceptualExposureDefinition)
   * section[group].code.coding 1..1
   * section[group].code.coding = https://fevir.net/resources/CodeSystem/179423#comparator-group "Comparator Group"
   * section[group]

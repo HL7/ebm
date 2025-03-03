@@ -17,7 +17,6 @@
 [ComparativeEvidenceReportSubject]: StructureDefinition-comparative-evidence-report-subject.html
 [ComparativeEvidenceSynthesisReport]: StructureDefinition-comparative-evidence-synthesis-report.html
 [ComparativeParticipantFlowEvidence]: StructureDefinition-comparative-participant-flow-evidence.html
-[ComparatorDefinition]: StructureDefinition-comparator-definition.html
 [ComparatorGroup]: StructureDefinition-comparator-group.html
 [ComparatorOnlyEvidence]: StructureDefinition-comparator-only-evidence.html
 [Comparison]: StructureDefinition-comparison.html
@@ -39,7 +38,6 @@
 [EvidenceSynthesisEvidence]: StructureDefinition-evidence-synthesis-evidence.html
 [EvidenceTableReportPackage]: StructureDefinition-evidence-table-report-package.html
 [EvidenceVariableDefinition]: StructureDefinition-evidence-variable-definition.html
-[ExposureDefinition]: StructureDefinition-exposure-definition.html
 [ExposureGroup]: StructureDefinition-exposure-group.html
 [GroupAssignment]: StructureDefinition-group-assignment.html
 [GroupR6]: StructureDefinition-group-r6.html
