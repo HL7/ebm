@@ -8,6 +8,7 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * extension contains $ext-url named url 0..1
 * extension contains $ext-description named description 0..1
 * extension contains $ext-author named author 0..*
+* extension contains $ext-useContext named useContext 0..*
 * identifier
   * ^definition = "A formal identifier that is used to identify this RiskOfBias when it is represented in other formats, or referenced in a specification, model, design or an instance." 
   * ^short = "Additional identifier for the RiskOfBias"
