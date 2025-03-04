@@ -11,6 +11,10 @@ Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|6.0.0
 A definition for CodeSystem 'http://spor.ema.europa.eu/v1/example-reason' could not be found, so the code cannot be validated
 A definition for CodeSystem 'http://example.org' could not be found, so the code cannot be validated
 
+# Suppressing warnings about recognizing SEVCO as a CodeSystem - SEVCO was just approved 2025-02-24 by TSMG for listing with THO
+A definition for CodeSystem 'https://fevir.net/sevco' could not be found, so the code cannot be validated
+The code 'SEVCO:*
+
 # Suppressing warnings about unknown Code System URIs where these are commented in the Understanding the Citation Resource section
 Code System URI 'https://meshb.nlm.nih.gov/' could not be found so the code cannot be validated
 Code System URI 'https://www.nlm.nih.gov/bsd/licensee/elements_descriptions.html#citationsubset' could not be found so the code cannot be validated
