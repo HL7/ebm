@@ -14,6 +14,7 @@ A definition for CodeSystem 'http://example.org' could not be found, so the code
 # Suppressing warnings about recognizing SEVCO as a CodeSystem - SEVCO was just approved 2025-02-24 by TSMG for listing with THO
 A definition for CodeSystem 'https://fevir.net/sevco' could not be found, so the code cannot be validated
 The code 'SEVCO:*
+Error from http://tx.fhir.org/r5: Unable to provide support for code system https://fevir.net/sevco version 2.0
 
 # Suppressing warnings about unknown Code System URIs where these are commented in the Understanding the Citation Resource section
 Code System URI 'https://meshb.nlm.nih.gov/' could not be found so the code cannot be validated
