@@ -1,37 +1,40 @@
-Extension: ResearchStudyEstimand
-Id: research-study-estimand
-Description: "An outcome measure described with the estimand framework."
+Extension: ResearchStudyOutcomeMeasure
+Id: research-study-outcome-measure
+Description: "A variable measured during the study."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
 * ^context.type = #element
 * ^context.expression = "ResearchStudy.objective"
 * value[x] 0..0
-* . ^short = "An outcome measure described with the estimand framework"
-* . ^definition = "An outcome measure described with the estimand framework."
-* extension contains label 0..1 and type 0..1 and endpoint 1..1 and population 0..1 and interventionGroup 0..1 and comparatorGroup 0..1 and summaryMeasure 0..1 and eventHandling 0..*
-* extension[label].value[x] only string
-  * ^short = "Short name or identifier"
-  * ^definition = "Name or identiifer for internal referencing."
+* . ^short = "A variable measured during the study"
+* . ^definition = "An outcome measure, endpoint, effect measure or measure of effect is a specific measurement or observation used to quantify the effect of experimental variables on the participants in a study, or for observational studies, to describe patterns of diseases or traits or associations with exposures, risk factors or treatment."
+* extension contains name 0..1 and type 0..1 and description 0..1 and endpoint 1..1 and population 0..1 and intervention 0..1 and comparator 0..1 and summaryMeasure 0..1 and eventHandling 0..*
+* extension[name].value[x] only string
+  * ^short = "Label for the outcome measure"
+  * ^definition = "Label for the outcome measure."
 * extension[type].value[x] only CodeableConcept
   * ^short = "Primary, secondary, or exploratory"
-  * ^definition = "Classification of the estimand/outcome measure as a primary focus or not."
+  * ^definition = "The kind of outcome measure."
 * extension[type].valueCodeableConcept from $research-study-objective-type (preferred)
-* extension[endpoint].value[x] only Reference(EvidenceVariable or ObservationDefinition or PlanDefinition)
-  * ^short = "Outcome measure/Endpoint"
-  * ^definition = "Outcome for each participant that is used in the treatment effect definition."
+* extension[description].value[x] only markdown
+  * ^short = "Description of the outcome measure"
+  * ^definition = "Description of the outcome measure."
+* extension[endpoint].value[x] only Reference(EvidenceVariable)
+  * ^short = "Definition of the outcome measure"
+  * ^definition = "Definition of the outcome measure."
 * extension[population].value[x] only Reference(Group)
-  * ^short = "Population"
+  * ^short = "Population for this estimand"
   * ^definition = "Patients for whom researchers want to estimate the treatment effect."
   * ^comment = "List of key characteristics, such as demographic characteristics (e.g., age, sex) and clinical characteristics (e.g., prior therapies, symptoms, severity, biomarker status)"
-* extension[interventionGroup].value[x] only id
-  * ^short = "Intervention"
+* extension[intervention].value[x] only Reference(Group)
+  * ^short = "Intervention is the Comparison group of interest"
   * ^definition = "One of the intervention strategies being compared in the treatment effect definition."
-  * ^comment = "The valueId value should match a ResearchStudy.comparisonGroup.linkId value. List of key aspects of treatment regimens in each study group, including at least investigational agents, dosage, and administration route"
-* extension[comparatorGroup].value[x] only id
-  * ^short = "Comparator"
+  * ^comment = "To do: How to reference internally to the comparisonGroup.id"
+* extension[comparator].value[x] only Reference(Group)
+  * ^short = "Comparator is the Comparison group for comparison"
   * ^definition = "One of the intervention strategies being compared in the treatment effect definition, in the role of comparator."
-  * ^comment = "The valueId value should match a ResearchStudy.comparisonGroup.linkId value. List of key aspects of treatment regimens in each study group, including at least investigational agents, dosage, and administration route"
+  * ^comment = "To do: How to reference internally to the comparisonGroup.id"
 * extension[summaryMeasure].value[x] only CodeableConcept
   * ^short = "Statistical measure for treatment effect estimate"
   * ^definition = "Method used to summarise and compare the endpoint between treatment conditions (eg, risk ratio, odds ratio)."

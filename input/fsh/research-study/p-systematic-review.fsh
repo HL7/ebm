@@ -16,3 +16,5 @@ Description: "Profile of ResearchStudy for Evidence Based Medicine IG. The Syste
 * extension contains $ext-researchStudy-studyRegistration named studyRegistration 0..*
 * phase 0..0
 * recruitment 0..0
+* objective
+  * extension contains ResearchStudyOutcomeMeasure named outcomeMeasure 0..*

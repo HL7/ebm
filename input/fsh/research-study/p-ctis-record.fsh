@@ -7,3 +7,5 @@ Description: "Profile of ResearchStudy for Evidence Based Medicine IG. The CTISR
 * ^extension[$ext-standards-status].valueCode = #draft
 * extension contains ResearchStudyResultAsComposition named resultAsComposition 0..*
 * extension contains $ext-researchStudy-studyRegistration named studyRegistration 0..*
+* objective
+  * extension contains ResearchStudyOutcomeMeasure named outcomeMeasure 0..*
