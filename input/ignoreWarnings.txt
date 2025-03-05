@@ -4,7 +4,6 @@
 The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.ebm, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World') (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
 
 # Suppressing the warnings about reference to jurisdiction elements (now deprecated) becuase errors in IG Publisher if jurisdiction elements are not present.
-Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|5.0.0
 Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|6.0.0-ballot2
 
 # Suppressing warnings about unknown Code System URIs where these are clearly labeled as examples in the URI
@@ -17,27 +16,12 @@ The code 'SEVCO:*
 Error from http://tx.fhir.org/r5: Unable to provide support for code system https://fevir.net/sevco version 2.0
 
 # Suppressing warnings about unknown Code System URIs where these are commented in the Understanding the Citation Resource section
-Code System URI 'https://meshb.nlm.nih.gov/' could not be found so the code cannot be validated
-Code System URI 'https://www.nlm.nih.gov/bsd/licensee/elements_descriptions.html#citationsubset' could not be found so the code cannot be validated
-Code System URI 'https://www.nlm.nih.gov/bsd/licensee/elements_descriptions.html#owner_value' could not be found so the code cannot be validated
-Code System URI 'https://www.nlm.nih.gov/bsd/licensee/elements_descriptions.html#issn' could not be found so the code cannot be validated
-Code System URI 'https://ncithesaurus.nci.nih.gov/ncitbrowser' could not be found so the code cannot be validated
-Code System URI 'https://www.cas.org/support/documentation/chemical-substances' could not be found so the code cannot be validated
 A definition for CodeSystem 'https://meshb.nlm.nih.gov/' could not be found, so the code cannot be validated
 A definition for CodeSystem 'https://ncithesaurus.nci.nih.gov/ncitbrowser' could not be found, so the code cannot be validated
 A definition for CodeSystem 'https://www.nlm.nih.gov/bsd/licensee/elements_descriptions.html#issn' could not be found, so the code cannot be validated
 A definition for CodeSystem 'https://www.nlm.nih.gov/bsd/licensee/elements_descriptions.html#owner_value' could not be found, so the code cannot be validated
 A definition for CodeSystem 'https://www.nlm.nih.gov/bsd/licensee/elements_descriptions.html#citationsubset' could not be found, so the code cannot be validated
 A definition for CodeSystem 'https://www.cas.org/support/documentation/chemical-substances' could not be found, so the code cannot be validated
-
-# Suppressing hints where referenced CodeSystem Resources are outside the control of the EBMonFHIR IG and these CodeSystem Resources have draft status.
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/directness|2.0.0
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/statistic-type|1.0.0
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/attribute-estimate-type|1.0.0
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/organization-type|2.0.0
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/synthesis-type|4.0.1
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/library-type|1.0.0
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/plan-definition-type|1.0.0
 
 # Suppressing message that a Resource StructureDefinition is experimental (as we will suggest to change it in a later version of R6 to not be experimental)
 The definition builds on 'http://hl7.org/fhir/StructureDefinition/ResearchStudy' which is experimental, but this definition is not labeled as experimental
@@ -50,27 +34,16 @@ The definition for the element 'ArtifactAssessment.content.component.information
 The definition for the element 'ActivityDefinition.versionAlgorithm[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/version-algorithm' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'ActivityDefinition.subject[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/participant-resource-types' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'ActivityDefinition.jurisdiction' binds to the value set 'http://hl7.org/fhir/ValueSet/jurisdiction' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'ActivityDefinition.topic' binds to the value set 'http://hl7.org/fhir/ValueSet/definition-topic' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'ActivityDefinition.code' binds to the value set 'http://hl7.org/fhir/ValueSet/procedure-code' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'ActivityDefinition.intent' binds to the value set 'http://hl7.org/fhir/ValueSet/request-intent|6.0.0-ballot2' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'ActivityDefinition.priority' binds to the value set 'http://hl7.org/fhir/ValueSet/request-priority|6.0.0-ballot2' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'ActivityDefinition.asNeeded[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/medication-as-needed-reason' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'ActivityDefinition.participant.function' binds to the value set 'http://hl7.org/fhir/ValueSet/action-participant-function' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'ActivityDefinition.product[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/medication-codes' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'ActivityDefinition.bodySite' binds to the value set 'http://hl7.org/fhir/ValueSet/body-site' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'ArtifactAssessment.content.type' binds to the value set 'http://hl7.org/fhir/ValueSet/certainty-type' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'ArtifactAssessment.content.classifier' binds to the value set 'http://hl7.org/fhir/ValueSet/certainty-rating' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'ArtifactAssessment.content.component.type' binds to the value set 'http://hl7.org/fhir/ValueSet/certainty-type' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'ArtifactAssessment.content.component.classifier' binds to the value set 'http://hl7.org/fhir/ValueSet/certainty-rating' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'ArtifactAssessment.workflowStatus' binds to the value set 'http://hl7.org/fhir/ValueSet/artifactassessment-workflow-status|6.0.0-ballot2' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'ArtifactAssessment.disposition' binds to the value set 'http://hl7.org/fhir/ValueSet/artifactassessment-disposition|6.0.0-ballot2' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Citation.versionAlgorithm[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/version-algorithm' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Citation.jurisdiction' binds to the value set 'http://hl7.org/fhir/ValueSet/jurisdiction' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Citation.summary.style' binds to the value set 'http://hl7.org/fhir/ValueSet/citation-summary-style' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Citation.classification.type' binds to the value set 'http://hl7.org/fhir/ValueSet/citation-classification-type' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'Citation.classification.classifier' binds to the value set 'http://hl7.org/fhir/ValueSet/citation-artifact-classifier' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'Citation.currentState' binds to the value set 'http://hl7.org/fhir/ValueSet/citation-status-type' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'Citation.statusDate.activity' binds to the value set 'http://hl7.org/fhir/ValueSet/citation-status-type' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Citation.citedArtifact.currentState' binds to the value set 'http://hl7.org/fhir/ValueSet/cited-artifact-status-type' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Citation.citedArtifact.statusDate.activity' binds to the value set 'http://hl7.org/fhir/ValueSet/cited-artifact-status-type' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Citation.citedArtifact.title.type' binds to the value set 'http://hl7.org/fhir/ValueSet/title-type' which is experimental, but this structure is not labeled as experimental
@@ -82,7 +55,6 @@ The definition for the element 'Citation.citedArtifact.publicationForm.published
 The definition for the element 'Citation.citedArtifact.publicationForm.citedMedium' binds to the value set 'http://hl7.org/fhir/ValueSet/cited-medium' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Citation.citedArtifact.webLocation.classifier' binds to the value set 'http://hl7.org/fhir/ValueSet/artifact-url-classifier' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Citation.citedArtifact.classification.type' binds to the value set 'http://hl7.org/fhir/ValueSet/cited-artifact-classification-type' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'Citation.citedArtifact.classification.classifier' binds to the value set 'http://hl7.org/fhir/ValueSet/citation-artifact-classifier' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Citation.citedArtifact.contributorship.entry.contributionType' binds to the value set 'http://hl7.org/fhir/ValueSet/artifact-contribution-type' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Citation.citedArtifact.contributorship.entry.role' binds to the value set 'http://hl7.org/fhir/ValueSet/contributor-role' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Citation.citedArtifact.contributorship.entry.contributionInstance.type' binds to the value set 'http://hl7.org/fhir/ValueSet/artifact-contribution-instance-type' which is experimental, but this structure is not labeled as experimental
@@ -90,42 +62,23 @@ The definition for the element 'Citation.citedArtifact.contributorship.summary.t
 The definition for the element 'Citation.citedArtifact.contributorship.summary.style' binds to the value set 'http://hl7.org/fhir/ValueSet/contributor-summary-style' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Citation.citedArtifact.contributorship.summary.source' binds to the value set 'http://hl7.org/fhir/ValueSet/contributor-summary-source' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'EvidenceVariable.versionAlgorithm[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/version-algorithm' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'EvidenceVariable.definition' binds to the value set 'http://hl7.org/fhir/ValueSet/evidence-variable-definition' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'EvidenceVariable.handling' binds to the value set 'http://hl7.org/fhir/ValueSet/variable-handling|6.0.0-ballot2' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Library.versionAlgorithm[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/version-algorithm' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Library.subject[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/participant-resource-types' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Library.jurisdiction' binds to the value set 'http://hl7.org/fhir/ValueSet/jurisdiction' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'Library.topic' binds to the value set 'http://hl7.org/fhir/ValueSet/definition-topic' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'List.mode' binds to the value set 'http://hl7.org/fhir/ValueSet/list-mode|6.0.0-ballot2' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'List.code' binds to the value set 'http://hl7.org/fhir/ValueSet/list-example-codes' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'List.entry.flag' binds to the value set 'http://hl7.org/fhir/ValueSet/list-item-flag' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Group.versionAlgorithm[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/version-algorithm' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Group.characteristic.code' binds to the value set 'https://fevir.net/resources/ValueSet/265087' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'Group.characteristic.method' binds to the value set 'http://hl7.org/fhir/ValueSet/definition-method' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'Group.characteristic.offset' binds to the value set 'http://hl7.org/fhir/ValueSet/characteristic-offset' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'Group.member.involvement' binds to the value set 'http://hl7.org/fhir/ValueSet/group-involvement-set' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'ResearchStudy.label.type' binds to the value set 'http://hl7.org/fhir/ValueSet/title-type' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'ResearchStudy.phase' binds to the value set 'http://hl7.org/fhir/ValueSet/research-study-phase' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'ResearchStudy.studyDesign' binds to the value set 'http://hl7.org/fhir/ValueSet/study-design' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'ResearchStudy.focus' binds to the value set 'http://hl7.org/fhir/ValueSet/research-study-focus-type' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'ResearchStudy.condition' binds to the value set 'http://hl7.org/fhir/ValueSet/condition-code' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'ResearchStudy.region' binds to the value set 'http://hl7.org/fhir/ValueSet/jurisdiction' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'ResearchStudy.classifier' binds to the value set 'http://hl7.org/fhir/ValueSet/research-study-classifiers' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'ResearchStudy.associatedParty.role' binds to the value set 'http://hl7.org/fhir/ValueSet/research-study-party-role' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'ResearchStudy.associatedParty.classifier' binds to the value set 'http://hl7.org/fhir/ValueSet/research-study-party-organization-type' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'ResearchStudy.progressStatus.state' binds to the value set 'http://hl7.org/fhir/ValueSet/research-study-status' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'ResearchStudy.whyStopped' binds to the value set 'http://hl7.org/fhir/ValueSet/research-study-reason-stopped' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'ResearchStudy.comparisonGroup.type' binds to the value set 'http://hl7.org/fhir/ValueSet/research-study-arm-type' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'Composition.category' binds to the value set 'http://hl7.org/fhir/ValueSet/referenced-item-category' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'Composition.relatesTo.classifier' binds to the value set 'http://hl7.org/fhir/ValueSet/citation-artifact-classifier' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Composition.section.code' binds to the value set 'https://fevir.net/resources/ValueSet/179431' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'Composition.section.section.code' binds to the value set 'http://hl7.org/fhir/ValueSet/doc-section-codes' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'Composition.section.section.section.code' binds to the value set 'http://hl7.org/fhir/ValueSet/doc-section-codes' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'Composition.section.section.section.section.code' binds to the value set 'http://hl7.org/fhir/ValueSet/doc-section-codes' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Evidence.versionAlgorithm[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/version-algorithm' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Evidence.variableDefinition.variableRole' binds to the value set 'http://hl7.org/fhir/ValueSet/variable-role|6.0.0-ballot2' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Evidence.variableDefinition.roleSubtype' binds to the value set 'http://hl7.org/fhir/ValueSet/variable-role-subtype' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'Evidence.relatedArtifact.classifier' binds to the value set 'http://hl7.org/fhir/ValueSet/citation-artifact-classifier' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Evidence.variableDefinition.observed.type' binds to the value set 'http://hl7.org/fhir/ValueSet/resource-types' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Evidence.studyDesign' binds to the value set 'http://hl7.org/fhir/ValueSet/study-design' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Evidence.statistic.statisticType' binds to the value set 'http://hl7.org/fhir/ValueSet/statistic-type' which is experimental, but this structure is not labeled as experimental
@@ -137,44 +90,20 @@ The definition for the element 'Evidence.certainty.rating' binds to the value se
 The definition for the element 'PlanDefinition.versionAlgorithm[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/version-algorithm' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'PlanDefinition.subject[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/participant-resource-types' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'PlanDefinition.jurisdiction' binds to the value set 'http://hl7.org/fhir/ValueSet/jurisdiction' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'PlanDefinition.topic' binds to the value set 'http://hl7.org/fhir/ValueSet/definition-topic' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'PlanDefinition.goal.category' binds to the value set 'http://hl7.org/fhir/ValueSet/goal-category' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'PlanDefinition.goal.description' binds to the value set 'http://hl7.org/fhir/ValueSet/clinical-findings' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'PlanDefinition.goal.priority' binds to the value set 'http://hl7.org/fhir/ValueSet/goal-priority' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'PlanDefinition.goal.start' binds to the value set 'http://hl7.org/fhir/ValueSet/goal-start-event' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'PlanDefinition.goal.addresses' binds to the value set 'http://hl7.org/fhir/ValueSet/condition-code' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'PlanDefinition.goal.target.measure' binds to the value set 'http://hl7.org/fhir/ValueSet/observation-codes' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'PlanDefinition.action.priority' binds to the value set 'http://hl7.org/fhir/ValueSet/request-priority|6.0.0-ballot2' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'PlanDefinition.action.code' binds to the value set 'http://hl7.org/fhir/ValueSet/action-code' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'PlanDefinition.action.reason' binds to the value set 'http://hl7.org/fhir/ValueSet/action-reason-code' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'PlanDefinition.action.subject[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/participant-resource-types' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'PlanDefinition.action.participant.function' binds to the value set 'http://hl7.org/fhir/ValueSet/action-participant-function' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'PlanDefinition.asNeeded[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/medication-as-needed-reason' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Extension.extension.value[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/statistic-type' which is experimental, but this structure is not labeled as experimental
-
-# Suppressing message that a CodeSystem in R5 is draft (unable to change R5)
-Reference to draft CodeSystem http://hl7.org/fhir/characteristic-offset|5.0.0
 
 # Suppressing message that a CodeSystem in THO is draft (the CodeSystem in THO is not derived from the IG)
 Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/synthesis-type|2.0.0
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/synthesis-type|2.0.0 from hl7.terminology.r4#6.1.0
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/synthesis-type|2.0.0 from hl7.terminology.r4#6.1.0 (from http://tx.fhir.org/r5)
 Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/research-study-phase|1.0.0
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/directness|2.0.0 from hl7.terminology.r4#6.1.0
-Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/directness|2.0.0 from hl7.terminology.r4#6.1.0 (from http://tx.fhir.org/r5)
-
-# Suppressing message that a CodeSystem in R5 is experimental (unable to change R5)
-Reference to experimental CodeSystem http://hl7.org/fhir/citation-artifact-classifier|5.0.0
 
 # Suppressing message that a CodeSystem is draft (as we will suggest to change it in a later version of R6 to be active)
 Reference to draft CodeSystem http://hl7.org/fhir/characteristic-offset|6.0.0-ballot2
 
 # Suppressing message that a CodeSystem is experimental (as we will suggest to change it in a later version of R6 to not be experimental)
 Reference to experimental CodeSystem http://hl7.org/fhir/citation-artifact-classifier|6.0.0-ballot2
-
-# Suppressing message that a CodeSystem property has a code without a URI; these properties were used in a DataDictionary Profile where these properties are not precisely terminology concepts
-This property has only a code ('Datatype') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
-This property has only a code ('Units') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
 
 # Suppressing message that a CodeSystem property has a code without a URI; these properties were used for terminology development in the CodeSystem provided for term reference and are not part of the IG we are demonstrating
 This property has only a code ('editors') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
@@ -190,9 +119,6 @@ This property has only a code ('deprecated') and not a URI, so it has no clearly
 This property has only the standard code ('comment') but not the standard URI 'http://hl7.org/fhir/concept-properties#comment', so it has no clearly defined meaning in the terminology ecosystem
 
 # Suppressing message that a slice is not found in a base Profile (but it is used in a derivative Profile) in a Resource mapped to 2 Profiles
-This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report-package|1.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
-This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-measure-report-package|1.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice) 
-This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report-package|2.0.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)
 This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report-package|1.0.0-ballot2 (this may not be a problem, but you should check that it's not intended to match a slice)
 
 # Suppressing message that a slice is not found in the ResearchStudyDataDictionary Profile because the Profile does not specify section codes for descriptive sections
