@@ -361,6 +361,8 @@ The code 'SEVCO:00371' is not valid in the system https://fevir.net/sevco versio
 The code 'SEVCO:00372' is not valid in the system https://fevir.net/sevco version 2.0 (SEVCO:00372)
 The code 'SEVCO:00373' is not valid in the system https://fevir.net/sevco version 2.0 (SEVCO:00373)
 The code 'SEVCO:00374' is not valid in the system https://fevir.net/sevco version 2.0 (SEVCO:00374)
+Unable to check whether the code is in the value set 'https://fevir.net/resources/ValueSet/181524|1.0.0-ballot2' because the code system https://fevir.net/sevco was not found
+A definition for CodeSystem 'https://fevir.net/sevco' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'https://fevir.net/resources/ValueSet/181524|1.0.0-ballot2' because the code system https://fevir.net/sevco was not found
 
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 # (And include comments like this justifying why)
