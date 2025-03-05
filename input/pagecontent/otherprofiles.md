@@ -46,6 +46,4 @@ The **[OutcomeVariablesList Profile][OutcomeVariablesList]** is used to provide 
 
 The **[ParticipantFlowVariablesList Profile][ParticipantFlowVariablesList]** is used to provide a list of EvidenceVariable Resources which represent participant flow measures. The **[ParticipantFlowVariablesList Profile][ParticipantFlowVariablesList]** is referenced in the **[ComparativeEvidenceReport Profile][ComparativeEvidenceReport]** as a way to define the set of outcomes that is reported in a **[ParticipantFlowReport][ParticipantFlowReport]**. The entry element is repeatable and limited to reference a **[ParticipantFlowEvidenceVariable Profile][ParticipantFlowEvidenceVariable]**.
 
-The **[VariablesList Profile][VariablesList]** is used to provide a list of EvidenceVariable Resources. The **[VariablesList Profile][VariablesList]** is referenced in the **[ComparativeEvidenceReport Profile][ComparativeEvidenceReport]** as a way to define the set of outcomes that is reported in a **[SummaryOfFindings][SummaryOfFindings]**. The entry element is repeatable and limited to reference an EvidenceVariable Resource.
-
 {% include link-list.md %}

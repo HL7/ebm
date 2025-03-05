@@ -62,7 +62,7 @@ The Composition.type value is set to a "Comparative Evidence Report".
 
 ..An 'Outcome Measures' section is optional. The 'Outcome Measures' section entry element is limited to reference **[OutcomeMeasureReport Profile][OutcomeMeasureReport]** or **[OutcomeVariablesList Profile][OutcomeVariablesList]**. 
 
-..A 'Summary of Findings' section is optional. The 'Summary of Findings' section entry element is limited to reference **[SummaryOfFindings Profile][SummaryOfFindings]** or **[OutcomeVariablesList Profile][OutcomeVariablesList]** or **[VariablesList Profile][VariablesList]**. 
+..A 'Summary of Findings' section is optional. The 'Summary of Findings' section entry element is limited to reference **[SummaryOfFindings Profile][SummaryOfFindings]** or **[OutcomeVariablesList Profile][OutcomeVariablesList]**. 
 
 ### ComparativeEvidenceSynthesisReport Profile of Composition Resource
 
@@ -78,7 +78,7 @@ The Composition.type value is set to a "Comparative Evidence Synthesis Report".
 
 ..A 'Research Study' section is required with entries limited to reference <b>ResearchStudy Resource</b> or <b>Citation Resource</b> or <b>Composition Resource</b>.
 
-..An 'Outcome Variables' section is optional with entries limited to reference **[VariableDefinition Profile][VariableDefinition]** or **[OutcomeVariablesList Profile][OutcomeVariablesList]** or **[VariablesList Profile][VariablesList]**.
+..An 'Outcome Variables' section is optional with entries limited to reference **[VariableDefinition Profile][VariableDefinition]** or **[OutcomeVariablesList Profile][OutcomeVariablesList]**.
 
 ..A 'Results' section is optional. The 'Results' section entry element is limited to reference **[OutcomeMeasureReport Profile][OutcomeMeasureReport]**.
 

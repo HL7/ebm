@@ -155,7 +155,6 @@ Other Resources and <b>Other Profiles</b> used in the EBMonFHIR Implementation G
   - <b>OutcomeList</b> used provide a list of outcomes. <b>OutcomeList</b> is referenced in the <b>EvidenceReportSubject Profile</b> as a way to define the set of outcomes that an <b>EvidenceReport</b> is about. The entry element is repeatable and limited to reference an <b>OutcomeDefinition Profile</b> or a <b>VariableDefinition Profile</b>.
   - <b>OutcomeVariablesList</b> is used to provide a list of <b>EvidenceVariable Resources</b> which represent outcome measures.
   - <b>ParticipantFlowVariablesList</b> is used to provide a list of <b>EvidenceVariable Resources</b> which represent participant flow measures.
-  - <b>VariablesList</b> is used to provide a list of <b>EvidenceVariable Resources</b>.
 
 ## Dependencies and Statements
 
