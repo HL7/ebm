@@ -96,6 +96,5 @@
 [VS EBMImplementationGuideProfile Value Set]: ValueSet-179430.html
 [VS Evidence Variable Role Subtype Value Set]: ValueSet-evidence-variable-role-subtype.html
 [VS EvidenceReportSectionCode Value Set]: ValueSet-179431.html
-[VS EvidenceVariableRoleSubtype Value Set]: ValueSet-179424.html
 [VS Recommendation Justification Classifier Codes Value Set]: ValueSet-recommendation-justification-classifier.html
 [VS Risk Of Bias Type Value Set]: ValueSet-181524.html

@@ -1485,12 +1485,6 @@ definition:
     name: EvidenceVariableDefinition
     reference:
       reference: StructureDefinition/evidence-variable-definition
-  - description: This value set is a temporary workspace while drafting the Evidence
-      Based Medicine Implementation Guide. It may not be stable and may not be persistent.
-    isExample: true
-    name: EvidenceVariableRoleSubtype Value Set
-    reference:
-      reference: ValueSet/179424
   - description: An example of an EndpointAnalysisPlan Profile which uses intended='true'
       and include-if extensions within Evidence.statistic.modelCharacteristic elements.
     isExample: true

@@ -180,7 +180,6 @@
 <artifact id="StructureDefinition/evidence-synthesis-evidence" key="StructureDefinition-evidence-synthesis-evidence" name="EvidenceSynthesisEvidence"/>
 <artifact id="StructureDefinition/evidence-variable-category-value-reference" key="StructureDefinition-evidence-variable-category-value-reference" name="EvidenceVariableCategoryValueReference"/>
 <artifact id="StructureDefinition/evidence-variable-definition" key="StructureDefinition-evidence-variable-definition" name="EvidenceVariableDefinition"/>
-<artifact id="ValueSet/179424" key="ValueSet-179424" name="EvidenceVariableRoleSubtype Value Set"/>
 <artifact id="Evidence/179691" key="Evidence-179691" name="Example EndpointAnalysisPlan from PHUSE Lilly Redacted Protocol - EBMonFHIR IG Version"/>
 <artifact id="StructureDefinition/exposure-definition" key="StructureDefinition-exposure-definition" name="ExposureDefinition"/>
 <artifact id="Group/179786" key="Group-179786" name="ExposureDefinition_Therapeutic_dose_anticoagulation_with_heparin"/>
