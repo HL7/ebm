@@ -5,6 +5,7 @@ Description: "Profile of ResearchStudy for Evidence Based Medicine IG. The CTISR
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
+* extension contains $ext-author named author 0..*
 * extension contains ResearchStudyResultAsComposition named resultAsComposition 0..*
 * extension contains $ext-researchStudy-studyRegistration named studyRegistration 0..*
 * comparisonGroup
