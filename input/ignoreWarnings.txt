@@ -1,5 +1,10 @@
 == Suppressed Messages ==
 
+# Suppressing warnings about using tooling from version 5.0.0 for a version 6.0.0-ballot2 because version 6.0.0 tooling not available
+This IG is version 6.0.0-ballot2, while the IG 'hl7.fhir.uv.extensions.r5' is from version 5.0.0
+This IG is version 6.0.0-ballot2, while the IG 'hl7.terminology.r5' is from version 5.0.0
+This IG is version 6.0.0-ballot2, while the IG 'hl7.fhir.uv.tools.r5' is from version 5.0.0
+
 # Suppressing the warning about adding jurisdiction element to Resources because jurisdiction element is deprecated.
 The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.ebm, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World') (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
 
@@ -365,7 +370,7 @@ Unable to check whether the code is in the value set 'https://fevir.net/resource
 A definition for CodeSystem 'https://fevir.net/sevco' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'https://fevir.net/resources/ValueSet/181524|1.0.0-ballot2' because the code system https://fevir.net/sevco was not found
 
 # Suppressing a warning about inability to validate versions of MedDRA. MedDRA is listed at terminology.hl7.org but the version at THO does not match the true business version which is important to share for actual data exchange.
-	A definition for CodeSystem 'https://www.meddra.org' version '20.1' could not be found, so the code cannot be validated. Valid versions: []
+A definition for CodeSystem 'https://www.meddra.org' version '20.1' could not be found, so the code cannot be validated. Valid versions: []
 
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 # (And include comments like this justifying why)
