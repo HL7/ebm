@@ -24,6 +24,7 @@
 [ConceptualCohortDefinition]: StructureDefinition-conceptual-cohort-definition.html
 [ConceptualComparatorDefinition]: StructureDefinition-conceptual-comparator-definition.html
 [ConceptualExposureDefinition]: StructureDefinition-conceptual-exposure-definition.html
+[CTISRecord]: StructureDefinition-ctis-record.html
 [DatabaseCitation]: StructureDefinition-database-citation.html
 [DatabaseEntryCitation]: StructureDefinition-database-entry-citation.html
 [DatasetCitation]: StructureDefinition-dataset-citation.html

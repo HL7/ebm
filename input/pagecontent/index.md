@@ -137,6 +137,7 @@ Profiles of <b>Composition Resource</b> include:
 
 Other Resources and <b>Other Profiles</b> used in the EBMonFHIR Implementation Guide include:
 - <b>ResearchStudy Resource</b>
+  - <b>CTISRecord</b> used for a scientific study record in the European Union Clinical Trial Information System (EU CTIS), a research study registry of the European Union (EU).
   - <b>M11ResearchStudy</b> used to add extensions for use with an M11 Report.
   - <b>SystematicReview</b> used for a research study that involves investigation of research studies.
 - <b>ActivityDefinition Resource</b> including a Profile of:
