@@ -15,6 +15,9 @@ Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|6.0.0
 A definition for CodeSystem 'http://spor.ema.europa.eu/v1/example-reason' could not be found, so the code cannot be validated
 A definition for CodeSystem 'http://example.org' could not be found, so the code cannot be validated
 
+# Suppressing warnings about inabiltiy to resovle an example CodeSystem that is only provided as a madeup example
+A definition for CodeSystem 'http://example.com/codelists/CL_ntprobnp_unit' could not be found, so the code cannot be validated
+
 # Suppressing warnings about unknown Code System URIs where these are commented in the Understanding the Citation Resource section
 A definition for CodeSystem 'https://meshb.nlm.nih.gov/' could not be found, so the code cannot be validated
 A definition for CodeSystem 'https://ncithesaurus.nci.nih.gov/ncitbrowser' could not be found, so the code cannot be validated
