@@ -7,6 +7,7 @@ Description: "Profile of EvidenceVariable for Evidence Based Medicine IG. The Va
 * ^extension[$ext-standards-status].valueCode = #draft
 * extension contains EvidenceVariableClassifier named classifier 0..*
 * extension contains EvidenceVariableDefinitionModifier named definitionModifier 0..*
+* extension contains EvidenceVariableHandlingDetail named handlingDetail 0..*
 * extension contains EvidenceVariableConditional named conditional 0..1
 * extension contains EvidenceVariableDataStorage named dataStorage 0..*
 * extension contains CharacteristicTiming named timing 0..1
