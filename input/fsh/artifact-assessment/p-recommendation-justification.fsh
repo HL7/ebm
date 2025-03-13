@@ -27,18 +27,18 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * artifact[x]
   * ^definition = "A reference to a resource, canonical resource, or non-FHIR resource which the Recommendation Justification is about."
   * ^short = "The recommendation that is justified"
-* content 1..5
+* content 1..*
   * ^definition = "A comment, rating, or classification of the recommendation."
   * ^short = "A comment, rating, or classification"
 * content ^slicing.discriminator.type = #value
 * content ^slicing.discriminator.path = "type"
-* content ^slicing.rules = #closed
-* content contains recommendationSpecification 1..1 MS and evidence 0..1 MS and netEffect 0..1 MS and judgments 0..1 MS and competingInterests 0..1 MS
-* content[recommendationSpecification].type = https://fevir.net/resources/CodeSystem/179423#recommendation-specification "Recommendation Specification"
-* content[recommendationSpecification]
+* content ^slicing.rules = #open
+* content contains recommendationRating 1..1 MS and evidence 0..1 MS and netEffect 0..1 MS and judgments 0..1 MS and competingInterests 0..1 MS
+* content[recommendationRating].type = https://fevir.net/resources/CodeSystem/179423#recommendation-rating "Recommendation Rating"
+* content[recommendationRating]
   * component ^slicing.discriminator.type = #value
   * component ^slicing.discriminator.path = "type"
-  * component ^slicing.rules = #closed
+  * component ^slicing.rules = #open
   * component contains ratingSystem 0..1 MS and strengthOfRecommendation 0..1 MS and directionOfRecommendation 0..1 MS and otherRatings 0..1 and discussion 0..1
   * component[ratingSystem].type = https://fevir.net/resources/CodeSystem/179423#rating-system "Rating System"
   * component[strengthOfRecommendation].type = https://fevir.net/resources/CodeSystem/179423#strength-of-recommendation "Strength of Recommendation"
@@ -49,7 +49,7 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * content[evidence]
   * component ^slicing.discriminator.type = #value
   * component ^slicing.discriminator.path = "type"
-  * component ^slicing.rules = #closed
+  * component ^slicing.rules = #open
   * component contains summaryOfFindings 0..1 MS and desirableEffects 0..1 MS and undesirableEffects 0..1 MS and discussion 0..1
   * component[summaryOfFindings].type = https://fevir.net/resources/CodeSystem/179423#summary-of-findings "Summary of Findings"
   * component[desirableEffects].type = https://fevir.net/resources/CodeSystem/179423#desirable-effects "Desirable Effects"
@@ -59,7 +59,7 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * content[netEffect]
   * component ^slicing.discriminator.type = #value
   * component ^slicing.discriminator.path = "type"
-  * component ^slicing.rules = #closed
+  * component ^slicing.rules = #open
   * component contains preferences 0..1 MS and discussion 0..1
   * component[preferences].type = https://fevir.net/resources/CodeSystem/179423#preferences "Preferences"
   * component[discussion].type = https://fevir.net/resources/CodeSystem/179423#discussion "Discussion"
@@ -67,7 +67,7 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * content[judgments]
   * component ^slicing.discriminator.type = #value
   * component ^slicing.discriminator.path = "type"
-  * component ^slicing.rules = #closed
+  * component ^slicing.rules = #open
   * component contains justification 0..1 MS and problemImportance 0..1 MS and costs 0..1 MS and costeffectiveness 0..1 MS and equity 0..1 MS and acceptability 0..1 MS and feasibility 0..1 MS
   * component[justification].type = https://fevir.net/resources/CodeSystem/179423#justification "Justification"
   * component[problemImportance].type = https://fevir.net/resources/CodeSystem/179423#problem-importance "Problem Importance"
