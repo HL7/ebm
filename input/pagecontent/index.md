@@ -171,21 +171,21 @@ This Implementation Guide was made possible by the thoughtful contributions of m
 - Biomedical Research and Regulation (BRR) Work Group
 - Structured Documents (SD) Work Group
 - Guidelines International Network Technology Working Group (GINTech)
-- Ilkka Kunnamo, MD, PhD, Duodecim Medical Publications Ltd. (Finland)
+- Muhammad Afzal, PhD, FHEA, Birmingham City University (England)
+- Rachel Couban, McMaster University (Canada)
+- Christopher M. Enright, Computable Publishing LLC (US)
+- Sophie Klopfenstein, MD, Berlin Institute of Health at Charité – Universitätsmedizin Berlin (Germany)
+- Bhagvan Kommadi, MS, Capri Global Capital Ltd. (India)
+- Ilkka Kunnamo, MD, PhD, Duodecim Publishing Company (Finland)
 - Harold Lehmann, MD, PhD, Johns Hopkins University (US)
-- Kenneth Wilkins, PhD, National Institutes of Health (NIH) (US)
 - Gregor Lichtner, PhD, Universitätsmedizin Greifswald (Germany)
-- Sophie Klopfenstein, Wissenschaftliche Mitarbeiterin (Germany)
+- Matthias Löbe, IMISE, Universität Leipzig (Germany)
 - Bryn Rhodes, Smile Digital Health (US)
 - Karen A. Robinson, PhD, Johns Hopkins University (US)
-- Rachel Couban, McMaster University (Canada)
-- Muhammad Afzal, PhD, FHEA, Birmingham City University (England)
-- Christopher M. Enright, Computable Publishing LLC (US)
-- Matthias Löbe, IMISE, Universität Leipzig (Germany)
+- Mario Tristan, IHCAI Institute (Costa Rica)
 - Janice Tufte, Hassanah Consulting (US)
 - Yunwei Wang, MITRE (US)
-- Mario Tristan, IHCAI Institute (Costa Rica)
-- Bhagvan Kommadi, MS, Capri Global Capital Ltd. (India)
+- Kenneth J. Wilkins, PhD, National Institutes of Health, National Institute of Diabetes & Digestive & Kidney Diseases (NIH/NIDDK) (US)
 
 ## Dependencies and Statements
 
