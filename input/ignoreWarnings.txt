@@ -4,6 +4,8 @@
 This IG is version 6.0.0-ballot2, while the IG 'hl7.fhir.uv.extensions.r5' is from version 5.0.0
 This IG is version 6.0.0-ballot2, while the IG 'hl7.terminology.r5' is from version 5.0.0
 This IG is version 6.0.0-ballot2, while the IG 'hl7.fhir.uv.tools.r5' is from version 5.0.0
+The ImplementationGuide is based on FHIR version 6.0.0-ballot2 but package hl7.fhir.uv.extensions.r5#5.2.0 is based on FHIR version 5.0.0. In general, this version mismatch should be avoided - some tools will try to make this work with variable degrees of success, but others will not even try
+	The ImplementationGuide is based on FHIR version 6.0.0-ballot2 but package hl7.terminology.r5#6.2.0 is based on FHIR version 5.0.0. In general, this version mismatch should be avoided - some tools will try to make this work with variable degrees of success, but others will not even try
 
 # Suppressing the warning about adding jurisdiction element to Resources because jurisdiction element is deprecated.
 The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.ebm, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World') (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
