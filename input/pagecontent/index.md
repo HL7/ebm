@@ -182,6 +182,7 @@ This Implementation Guide was made possible by the thoughtful contributions of m
 - Muhammad Afzal, PhD, FHEA, Birmingham City University (England)
 - Christopher M. Enright, Computable Publishing LLC (US)
 - Matthias Löbe, IMISE, Universität Leipzig (Germany)
+- Janice Tufte, Hassanah Consulting (US)
 - Yunwei Wang, MITRE (US)
 - Mario Tristan, IHCAI Institute (Costa Rica)
 - Bhagvan Kommadi, MS, Capri Global Capital Ltd. (India)
