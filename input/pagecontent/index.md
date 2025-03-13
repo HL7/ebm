@@ -157,6 +157,34 @@ Other Resources and <b>Other Profiles</b> used in the EBMonFHIR Implementation G
   - <b>OutcomeVariablesList</b> is used to provide a list of <b>EvidenceVariable Resources</b> which represent outcome measures.
   - <b>ParticipantFlowVariablesList</b> is used to provide a list of <b>EvidenceVariable Resources</b> which represent participant flow measures.
 
+## Acknowledgements
+
+This Implementation Guide was made possible by the thoughtful contributions of many, including but not limited to the following people and organizations:
+
+Brian S. Alper, MD, MSPH, FAAFP, FAMIA, FGIN, Computable Publishing LLC (US) - Editor
+Khalid Shahin, Computable Publishing LLC (US) - Committer
+Joanne Dehnbostel, MS, MPH, Computable Publishing LLC (US)
+Health Evidence Knowledge Accelerator (HEvKA)
+Scientific Knowledge Accelerator Foundation
+Clinical Decision Support (CDS) Work Group
+Clinical Quality Information (CQI) Work Group
+Biomedical Research and Regulation (BRR) Work Group
+Structured Documents (SD) Work Group
+Guidelines International Network Technology Working Group (GINTech)
+Ilkka Kunnamo, MD, PhD, Duodecim Medical Publications Ltd. (Finland)
+Harold Lehmann, MD, PhD, Johns Hopkins University (US)
+Kenneth Wilkins, PhD, National Institutes of Health (NIH) (US)
+Gregor Lichtner, PhD, Universitätsmedizin Greifswald (Germany)
+Sophie Klopfenstein, Wissenschaftliche Mitarbeiterin (Germany)
+Bryn Rhodes, Smile Digital Health (US)
+Karen A. Robinson, PhD, Johns Hopkins University (US)
+Rachel Couban, McMaster University (Canada)
+Muhammad Afzal, PhD, FHEA, Birmingham City University (England)
+Christopher M. Enright, Computable Publishing LLC (US)
+Yunwei Wang, MITRE (US)
+Mario Tristan, IHCAI Institute (Costa Rica)
+Bhagvan Kommadi, MS, Capri Global Capital Ltd. (India)
+
 ## Dependencies and Statements
 
 ### Dependencies
