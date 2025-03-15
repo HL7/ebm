@@ -14,6 +14,8 @@ Description: "Citation for this Resource."
 * ^context[3].expression = "ArtifactAssessment"
 * ^context[4].type = #element
 * ^context[4].expression = "Group"
+* ^context[5].type = #element
+* ^context[5].expression = "CodeSystem"
 * value[x] only markdown
 * . ^short = "Citation for this Resource"
 * . ^definition = "Display of suggested citation for this Resource."
