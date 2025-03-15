@@ -5,15 +5,21 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The NetEffectC
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
-* relatedArtifact 1..*
-* relatedArtifact ^slicing.discriminator.type = #value
-* relatedArtifact ^slicing.discriminator.path = "type"
-* relatedArtifact ^slicing.rules = #open
-* relatedArtifact contains amendedWith 1..* MS and citeAs 0..1
-* relatedArtifact[amendedWith].type = #amended-with
-* relatedArtifact[amendedWith]
-  * resourceReference only Reference(OutcomeImportance)
-* relatedArtifact[citeAs].type = #cite-as
+* extension 1..*
+* extension ^slicing.discriminator.type = #value
+* extension ^slicing.discriminator.path = "url"
+* extension ^slicing.rules = #open
+* extension contains amendedWith 1..* MS
+* extension[amendedWith].url = "http://hl7.org/fhir/uv/ebm/StructureDefinition/relates-to"
+* extension[amendedWith]
+  * extension ^slicing.discriminator.type = #value
+  * extension ^slicing.discriminator.path = "url"
+  * extension ^slicing.rules = #open
+  * extension contains type 1..1 MS and targetReference 1..1 MS
+  * extension[type].url = "type"
+  * extension[type].valueCode = #amended-with
+  * extension[targetReference].url = "targetReference"
+  * extension[targetReference].valueReference only Reference(OutcomeImportance)
 * variableDefinition ^slicing.discriminator.type = #value
 * variableDefinition ^slicing.discriminator.path = "variableRole"
 * variableDefinition ^slicing.rules = #open
