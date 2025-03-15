@@ -18,6 +18,8 @@ Description: "Resource (FHIR or non-FHIR) associated with the Resource."
 * ^context[5].expression = "ArtifactAssessment.content.component"
 * ^context[6].type = #element
 * ^context[6].expression = "ResearchStudy"
+* ^context[7].type = #element
+* ^context[7].expression = "Group"
 * value[x] 0..0
 * . ^short = "Related artifact"
 * . ^definition = "Resource (FHIR or non-FHIR) associated with the Resource."
