@@ -5,6 +5,8 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The StatisticM
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
+* extension contains CiteAs named citeAs 0..1
+* extension contains RelatesTo named relatesTo 0..*
 * statistic
   * extension contains StatisticModelExpression named modelExpression 0..1
 * statistic.modelCharacteristic

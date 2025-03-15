@@ -8,6 +8,8 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * extension contains $ext-url named url 0..1
 * extension contains $ext-description named description 0..1
 * extension contains $ext-author named author 0..*
+* extension contains CiteAs named citeAs 0..1
+* extension contains RelatesTo named relatesTo 0..*
 * identifier
   * ^definition = "A formal identifier that is used to identify this Recommendation Justification when it is represented in other formats, or referenced in a specification, model, design or an instance." 
   * ^short = "Additional identifier for the Recommendation Justification"
@@ -30,6 +32,9 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * content 1..*
   * ^definition = "A comment, rating, or classification of the recommendation."
   * ^short = "A comment, rating, or classification"
+  * extension contains RelatesTo named relatesTo 0..*
+  * component
+    * extension contains RelatesTo named relatesTo 0..*
 * content ^slicing.discriminator.type = #value
 * content ^slicing.discriminator.path = "type"
 * content ^slicing.rules = #open
