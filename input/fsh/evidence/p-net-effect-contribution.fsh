@@ -5,13 +5,13 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The NetEffectC
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
-* extension contains AmendedWithImportance named amendedWithImportance 1..1
 * variableDefinition ^slicing.discriminator.type = #value
 * variableDefinition ^slicing.discriminator.path = "variableRole"
 * variableDefinition ^slicing.rules = #open
 * variableDefinition contains covariate 1..*
 * variableDefinition[covariate]
   * variableRole = #covariate
+  * extension contains RelativeOutcomeImportance named relativeOutcomeImportance 0..1
   * roleSubtype.text = "Relative Value Multiplier"
   * observed.display = "Relative Importance Multiplier"
   * intended 0..0
