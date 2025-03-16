@@ -8,6 +8,7 @@ Description: "Profile of ResearchStudy for Evidence Based Medicine IG. The Syste
 * extension contains $ext-author named author 0..*
 * extension contains CiteAs named citeAs 0..1
 * extension contains RelatesTo named relatesTo 0..*
+* extension contains RelatesToWithQuotation named RelatesToWithQuotation 0..*
 * extension contains ResearchStudySearchStrategy named searchStrategy 0..*
 * extension contains ResearchStudySystematicReviewEligibilityCriteria named systematicReviewEligibilityCriteria 0..1
 * extension contains ResearchStudyNumberOfStudiesIdentified named numberOfStudiesIdentified 0..1

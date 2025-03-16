@@ -8,6 +8,7 @@ Description: "Profile of ResearchStudy for Evidence Based Medicine IG. The CTISR
 * extension contains $ext-author named author 0..*
 * extension contains CiteAs named citeAs 0..1
 * extension contains RelatesTo named relatesTo 0..*
+* extension contains RelatesToWithQuotation named RelatesToWithQuotation 0..*
 * extension contains ResearchStudyResultAsComposition named resultAsComposition 0..*
 * extension contains $ext-researchStudy-studyRegistration named studyRegistration 0..*
 * comparisonGroup

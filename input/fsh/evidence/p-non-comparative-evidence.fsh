@@ -7,6 +7,7 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The NonCompara
 * ^extension[$ext-standards-status].valueCode = #draft
 * extension contains CiteAs named citeAs 0..1
 * extension contains RelatesTo named relatesTo 0..*
+* extension contains RelatesToWithQuotation named RelatesToWithQuotation 0..*
 * variableDefinition 2..*
 * variableDefinition ^slicing.discriminator.type = #value
 * variableDefinition ^slicing.discriminator.path = "variableRole"

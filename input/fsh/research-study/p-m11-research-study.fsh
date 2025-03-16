@@ -7,6 +7,7 @@ Description: "Profile of ResearchStudy for Evidence Based Medicine IG. The M11Re
 * ^extension[$ext-standards-status].valueCode = #draft
 * extension contains $ext-author named author 0..*
 * extension contains RelatesTo named relatesTo 0..*
+* extension contains RelatesToWithQuotation named RelatesToWithQuotation 0..*
 * extension contains ResearchStudySponsorConfidentialityStatement named confidentialityStatement 0..1
 * extension contains ResearchStudySaeReportingMethod named saeReportingMethod 0..1
 * extension contains ResearchStudyStudyAmendment named studyAmendment 0..1
