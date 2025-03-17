@@ -180,7 +180,7 @@ The Group.member element is a BackboneElement (multiple elements per instance) a
 
 ### Profiles of Group Resource
 
-The **[GroupR6 Profile][GroupR6]** is a base for all other Group Profiles. Extensions for metadata about the Group Resource include author and relatedArtifact. An extension for characteristicExpression allows use of an Expression datatype to represent the group definition instead of using the characteristic element.
+The **[GroupR6 Profile][GroupR6]** is a base for all other Group Profiles. Extensions for metadata about the Group Resource include author, citeAs, and relatesTo. An extension for characteristicExpression allows use of an Expression datatype to represent the group definition instead of using the characteristic element.
 
 The **[CohortDefinition Profile][CohortDefinition]** is a Profile of **[GroupR6][GroupR6]** that is used to provide a definitional representation of a group. The Group.membership value is definitional, and the quantity and member elements are not used in the **[CohortDefinition Profile][CohortDefinition]**.
 The **[CohortDefinition Profile][CohortDefinition]** may be used to support characteristics that are combinations of two or more characteristics. For example, a group defined by females who are are > 20 years old or have red hair would be defined with combinationMethod = 'all-of' and 2 characteristic instances: {code sex, valueCodeableConcept female} and {code Defined by Reference, valueReference CohortDefinition: > 20y or red hair}. 
