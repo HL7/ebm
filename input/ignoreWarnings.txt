@@ -80,7 +80,6 @@ The definition for the element 'ResearchStudy.region' binds to the value set 'ht
 The definition for the element 'ResearchStudy.associatedParty.role' binds to the value set 'http://hl7.org/fhir/ValueSet/research-study-party-role' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'ResearchStudy.progressStatus.state' binds to the value set 'http://hl7.org/fhir/ValueSet/research-study-status' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'ResearchStudy.comparisonGroup.type' binds to the value set 'http://hl7.org/fhir/ValueSet/research-study-arm-type' which is experimental, but this structure is not labeled as experimental
-The definition for the element 'Composition.section.code' binds to the value set 'https://fevir.net/resources/ValueSet/179431' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Evidence.versionAlgorithm[x]' binds to the value set 'http://hl7.org/fhir/ValueSet/version-algorithm' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Evidence.variableDefinition.variableRole' binds to the value set 'http://hl7.org/fhir/ValueSet/variable-role|6.0.0-ballot2' which is experimental, but this structure is not labeled as experimental
 The definition for the element 'Evidence.variableDefinition.roleSubtype' binds to the value set 'http://hl7.org/fhir/ValueSet/variable-role-subtype' which is experimental, but this structure is not labeled as experimental
@@ -110,19 +109,6 @@ Reference to draft CodeSystem http://hl7.org/fhir/characteristic-offset|6.0.0-ba
 # Suppressing message that a CodeSystem is experimental (as we will suggest to change it in a later version of R6 to not be experimental)
 Reference to experimental CodeSystem http://hl7.org/fhir/citation-artifact-classifier|6.0.0-ballot2
 
-# Suppressing message that a CodeSystem property has a code without a URI; these properties were used for terminology development in the CodeSystem provided for term reference and are not part of the IG we are demonstrating
-This property has only a code ('editors') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
-This property has only a code ('approval') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
-This property has only a code ('negative-vote') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
-This property has only a code ('expert-comments') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
-This property has only a code ('external-definitions') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
-This property has only a code ('open-for-voting') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
-This property has only a code ('change-for-vote') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
-This property has only a code ('multiple-parents') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
-This property has only a code ('statistical-purpose') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
-This property has only a code ('deprecated') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
-This property has only the standard code ('comment') but not the standard URI 'http://hl7.org/fhir/concept-properties#comment', so it has no clearly defined meaning in the terminology ecosystem
-
 # Suppressing message that a slice is not found in a base Profile (but it is used in a derivative Profile) in a Resource mapped to 2 Profiles
 This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report-package|1.0.0-ballot2 (this may not be a problem, but you should check that it's not intended to match a slice)
 
@@ -135,14 +121,9 @@ Error from http://tx.fhir.org/r5: Unable to provide support for code system http
 
 # Suppressing a message about XML tags in markdown. This is a known issue converting structured abstract data from MEDLINE and is handled in the presentation of the data.
 The markdown contains content that appears to be an embedded HTML tag starting at '<A'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
-The markdown contains content that appears to be an embedded HTML tag starting at 'OB'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
-The markdown contains content that appears to be an embedded HTML tag starting at 'BA'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
 
 # Suppressing warning about not finding definition for a CodeSystem (for CDC Race and Ethnicity) but the official URL is used from https://terminology.hl7.org/5.1.0/CodeSystem-CDCREC.html
 A definition for CodeSystem 'urn:oid:2.16.840.1.113883.6.238' could not be found, so the code cannot be validated
-
-# Suppressing security string content warning for use of text that looks like embedded HTML tags as they are used in SEVCO CodeSystem properties for some comments
-The string value contains text that looks like embedded HTML tags. If this content is rendered to HTML without appropriate post-processing, it may be a security risk
 
 # Suppressing warnings about recognizing SEVCO as a CodeSystem - SEVCO was just approved 2025-02-24 by TSMG for listing with THO
 A definition for CodeSystem 'https://fevir.net/sevco' could not be found, so the code cannot be validated
