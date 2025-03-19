@@ -157,6 +157,14 @@ Other Resources and <b>Other Profiles</b> used in the EBMonFHIR Implementation G
   - <b>OutcomeVariablesList</b> is used to provide a list of <b>EvidenceVariable Resources</b> which represent outcome measures.
   - <b>ParticipantFlowVariablesList</b> is used to provide a list of <b>EvidenceVariable Resources</b> which represent participant flow measures.
 
+## Changes from first ballot
+
+The Implementation Guide has changed substantially by using a FHIR R6 base instead of a FHIR R5 base. 
+
+In addition, new Profiles include BaselineMeasureReport, BaselineVariablesList, ComparativeEvidenceSynthesisReport, ConceptualCohortDefinition, ConceptualComparatorDefinition, ConceptualExposureDefinition, DichotomousIntendedOutcome, EvidenceReportPackage, EvidenceTableReportPackage, M11ResearchStudy, OutcomeMeasureReport, OutcomeVariablesList, ParticipantFlowReport, ParticipantFlowVariablesList, ResearchStudyDataDictionary, SystematicReview, and VariablesList. Removed Profiles include DataDictionary, EvidenceMap, and EvidenceR6. Some Profiles were renamed, such as ParticipantFlowMeasure was renamed ParticipantFlowEvidenceVariable. 
+
+New Extensions include AdditionalLanguage, CiteAs, EvidenceVariableCLassifier, EvidenceVariableConditional, EvidenceVariableConstraint, EvidenceVariableDataCleaning, EvidenceVariableDataStorage, EvidenceVariableDefinitionModifier, EvidenceVariableHandlingDetail, EvidenceVariableMissingData, EvidenceVariablePeriod, RelatesToWithQuotation, RelatesTo, RelativeOutcomeImportance, ResearchStudyComparisonGroupEligibility, ResearchStudyExcludedStudy, ResearchStudyIncludedStudy, ResearchStudyNumberOfStudiesIdentified, ResearchStudyNumberOfStudiesIncluded, ResearchStudyOutcomeMeasure, ResearchStudyResultAsComposition, ResearchStudySaeReportingMethod, ResearchStudySearchStrategy, ResearchStudySponsorConfidentialityStatement, ResearchStudyStudyAmendment, ResearchStudySystematicReviewEligibilityCriteria, TargetAttachment, TargetCanonical, TargetMarkdown, TargetReference, and TargetUri. Many of these extensions are temporary and provided to support elements that will be available in the latest R6 build version of FHIR but are not available for the IG builder.
+
 ## Acknowledgements
 
 This Implementation Guide was made possible by the thoughtful contributions of many, including but not limited to the following people and organizations:
