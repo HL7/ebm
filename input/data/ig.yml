@@ -2784,15 +2784,6 @@ definition:
     - http://hl7.org/fhir/uv/ebm/StructureDefinition/systematic-review-included-studies
     reference:
       reference: Library/179618
-  - description: Therapeutic-dose anticoagulation with unfractionated or low-molecular-weight
-      heparin was administered according to local protocols for the treatment of acute
-      venous thromboembolism for up to 14 days or until recovery; the latter was defined
-      as hospital discharge or a discontinuation of supplemental oxygen for at least
-      24 hours.
-    isExample: true
-    name: Therapeutic-dose anticoagulation with heparin
-    reference:
-      reference: EvidenceVariable/7751
   - description: A conceptual group with 2 characteristics for study participant eligibility
       criteria that were used for a meta-analysis.
     isExample: true
