@@ -21,12 +21,15 @@ A definition for CodeSystem 'http://example.org' could not be found, so the code
 A definition for CodeSystem 'http://example.com/codelists/CL_ntprobnp_unit' could not be found, so the code cannot be validated
 
 # Suppressing warnings about unknown Code System URIs where these are commented in the Understanding the Citation Resource section
-A definition for CodeSystem 'https://meshb.nlm.nih.gov/' could not be found, so the code cannot be validated
-A definition for CodeSystem 'https://ncithesaurus.nci.nih.gov/ncitbrowser' could not be found, so the code cannot be validated
+A definition for CodeSystem 'https://www.nlm.nih.gov/mesh' could not be found, so the code cannot be validated
 A definition for CodeSystem 'https://www.nlm.nih.gov/bsd/licensee/elements_descriptions.html#issn' could not be found, so the code cannot be validated
 A definition for CodeSystem 'https://www.nlm.nih.gov/bsd/licensee/elements_descriptions.html#owner_value' could not be found, so the code cannot be validated
 A definition for CodeSystem 'https://www.nlm.nih.gov/bsd/licensee/elements_descriptions.html#citationsubset' could not be found, so the code cannot be validated
 A definition for CodeSystem 'https://www.cas.org/support/documentation/chemical-substances' could not be found, so the code cannot be validated
+
+# Suppressing warnings about use of CodeSystem 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' as requested by FMG
+Unknown Code 'C49488' in the CodeSystem 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+Unknown Code 'C49487' in the CodeSystem 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version '' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
 
 # Suppressing message that a Resource StructureDefinition is experimental (as we will suggest to change it in a later version of R6 to not be experimental)
 The definition builds on 'http://hl7.org/fhir/StructureDefinition/ResearchStudy' which is experimental, but this definition is not labeled as experimental

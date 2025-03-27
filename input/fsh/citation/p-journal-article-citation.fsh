@@ -7,6 +7,12 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The JournalArt
 * ^extension[$ext-standards-status].valueCode = #draft
 * effectivePeriod 0..0
 * citedArtifact
+  * relatesTo
+    * extension contains TargetUri named targetUri 0..1
+    * extension contains TargetCanonical named targetCanonical 0..1
+    * extension contains TargetReference named targetReference 0..1
+    * extension contains TargetAttachment named targetAttachment 0..1
+    * extension contains TargetMarkdown named targetMarkdown 0..1
   * classification 1..*
   * classification ^slicing.discriminator.type = #value
   * classification ^slicing.discriminator.path = "type.coding"
