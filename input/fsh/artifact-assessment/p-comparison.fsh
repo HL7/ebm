@@ -11,7 +11,7 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
   * ^short = "Additional identifier for the Comparison"
   * ^comment = "Typically, this is used for identifiers that can be used in systems outside of FHIR, where it is not sufficient to use the logical URI."
   * ^requirements = "Allows externally provided and/or usable business identifiers to be easily associated with the Comparison."
-* citeAs[x]
+* citeAs
   * ^definition = "Display of or reference to the bibliographic citation of the Comparison." 
   * ^short = "How to cite the Comparison"
 * date
@@ -25,7 +25,6 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * artifact[x]
   * ^definition = "A reference to a resource, canonical resource, or non-FHIR resource which the Comparison is about."
   * ^short = "The artifact that is being compared"
-* content.informationType 0..0
 * content.freeToShare
   * ^definition = "Acceptable to publicly share the Comparison content, specific to the associated content instance"
   * ^short = "Acceptable to publicly share the content"

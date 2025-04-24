@@ -13,7 +13,7 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
   * ^short = "Additional identifier for the CompositeRating"
   * ^comment = "Typically, this is used for identifiers that can be used in systems outside of FHIR, where it is not sufficient to use the logical URI."
   * ^requirements = "Allows externally provided and/or usable business identifiers to be easily associated with the Comment."
-* citeAs[x]
+* citeAs
   * ^definition = "Display of or reference to the bibliographic citation of the CompositeRating." 
   * ^short = "How to cite the CompositeRating"
 * date
@@ -27,7 +27,6 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * artifact[x]
   * ^definition = "A reference to a resource, canonical resource, or non-FHIR resource which the CompositeRating is about."
   * ^short = "The artifact that is rated or classified"
-* content.informationType 0..0
 * content 1..*
   * ^definition = "A rating or classification of the artifact."
   * ^short = "A rating or classification"

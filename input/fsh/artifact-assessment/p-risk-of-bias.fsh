@@ -14,7 +14,7 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
   * ^short = "Additional identifier for the RiskOfBias"
   * ^comment = "Typically, this is used for identifiers that can be used in systems outside of FHIR, where it is not sufficient to use the logical URI."
   * ^requirements = "Allows externally provided and/or usable business identifiers to be easily associated with the RiskOfBias."
-* citeAs[x]
+* citeAs
   * ^definition = "Display of or reference to the bibliographic citation of the RiskOfBias." 
   * ^short = "How to cite the RiskOfBias"
 * date
@@ -32,7 +32,6 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * content
   * ^definition = "A rating or classification of the artifact."
   * ^short = "A rating"
-* content.informationType 0..0
 * content.type from $ebm-risk-of-bias-type (extensible)
 * content.classifier from http://hl7.org/fhir/ValueSet/certainty-rating (extensible) //TODO - change to from risk-of-bias-classifier from $sevco when ready
 * content.freeToShare

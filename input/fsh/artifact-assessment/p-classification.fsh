@@ -13,7 +13,7 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
   * ^short = "Additional identifier for the Classification"
   * ^comment = "Typically, this is used for identifiers that can be used in systems outside of FHIR, where it is not sufficient to use the logical URI."
   * ^requirements = "Allows externally provided and/or usable business identifiers to be easily associated with the Classification."
-* citeAs[x]
+* citeAs
   * ^definition = "Display of or reference to the bibliographic citation of the Classification." 
   * ^short = "How to cite the Classification"
 * date
@@ -30,7 +30,6 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * content 1..*
   * ^definition = "A classification of the artifact."
   * ^short = "A classification"
-* content.informationType 0..0
 * content.freeToShare
   * ^definition = "Acceptable to publicly share the classification content, specific to the associated content instance"
   * ^short = "Acceptable to publicly share the classification content"

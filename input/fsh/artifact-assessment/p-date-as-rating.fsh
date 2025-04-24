@@ -7,5 +7,4 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * ^extension[$ext-standards-status].valueCode = #draft
 * content
   * extension contains ArtifactAssessmentDateAsRating named dateAsRating 0..*
-  * informationType 0..0
 

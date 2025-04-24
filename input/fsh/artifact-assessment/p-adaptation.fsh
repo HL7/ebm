@@ -13,7 +13,7 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
   * ^short = "Additional identifier for the Adaptation"
   * ^comment = "Typically, this is used for identifiers that can be used in systems outside of FHIR, where it is not sufficient to use the logical URI."
   * ^requirements = "Allows externally provided and/or usable business identifiers to be easily associated with the Adaptation."
-* citeAs[x]
+* citeAs
   * ^definition = "Display of or reference to the bibliographic citation of the Adaptation." 
   * ^short = "How to cite the Adaptation"
 * date
@@ -30,7 +30,6 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * content
   * ^definition = "A comment, rating or classification of the artifact."
   * ^short = "A comment, rating or classification"
-* content.informationType 0..0
 * content.freeToShare
   * ^definition = "Acceptable to publicly share the Adaptation content, specific to the associated content instance"
   * ^short = "Acceptable to publicly share the content"
