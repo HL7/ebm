@@ -2831,7 +2831,7 @@ definition:
     reference:
       reference: Citation/179561
 fhirVersion:
-- 6.0.0-ballot2
+- 6.0.0-ballot3
 id: hl7.fhir.uv.ebm
 jurisdiction:
 - coding:

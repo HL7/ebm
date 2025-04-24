@@ -17,7 +17,7 @@ extension:
   - url: http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm
     valueInteger: 1
 version: 1.0.0-ballot2
-fhirVersion: 6.0.0-ballot2 # https://www.hl7.org/fhir/valueset-FHIR-version.html
+fhirVersion: 6.0.0-ballot3 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: 2024+
 releaseLabel: STU 1 ballot # ci-build | draft | qa-preview | ballot | trial-use | release | update | normative+trial-use
 # license: CC0-1.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
