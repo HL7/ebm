@@ -9,12 +9,6 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The DatasetCit
   * identifier
     * ^definition = "A formal identifier that is used to identify the cited dataset when it is represented in other formats, or referenced in a specification, model, design or an instance." 
     * ^short = "Unique identifier. May include DOI, FOI, Database Accession Number, etc"
-  * relatesTo
-    * extension contains TargetUri named targetUri 0..1
-    * extension contains TargetCanonical named targetCanonical 0..1
-    * extension contains TargetReference named targetReference 0..1
-    * extension contains TargetAttachment named targetAttachment 0..1
-    * extension contains TargetMarkdown named targetMarkdown 0..1
   * publicationForm
     * publishedIn
       * type
