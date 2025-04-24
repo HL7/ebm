@@ -19,12 +19,6 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
   * ^comment = "Reference a Citation Resource, ArtifactAssessment Resource (Classification Profile), Group Resource (EvidenceReportSubject Profile), ReserchStudy Resource, or any Resource to define a subject of this EvidenceReport."
 * attester.mode from EvidenceReportContributorRole (preferred)
   * ^short = "reviewer | editor | endorser | informant | recorder"
-* relatesTo
-  * extension contains TargetUri named targetUri 0..1
-  * extension contains TargetCanonical named targetCanonical 0..1
-  * extension contains TargetReference named targetReference 0..1
-  * extension contains TargetAttachment named targetAttachment 0..1
-  * extension contains TargetMarkdown named targetMarkdown 0..1
 * relatesTo ^slicing.discriminator.type = #value
 * relatesTo ^slicing.discriminator.path = "type"
 * relatesTo ^slicing.rules = #open
