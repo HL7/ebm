@@ -287,6 +287,16 @@ The code 'SEVCO:00374' is not valid in the system https://fevir.net/sevco versio
 Unable to check whether the code is in the value set 'https://fevir.net/resources/ValueSet/181524|1.0.0-ballot2' because the code system https://fevir.net/sevco was not found
 A definition for CodeSystem 'https://fevir.net/sevco' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'https://fevir.net/resources/ValueSet/181524|1.0.0-ballot2' because the code system https://fevir.net/sevco was not found
 
+# Suppressing warnings regarding identifier.system URLs that 'do not resolve' as these URLs do resolve and related to external systems
+URL value 'https://app.magicapp.org/#/guidelines' does not resolve
+URL value 'https://fevir.net/FLI' does not resolve
+URL value 'https://doi.org' does not resolve
+URL value 'https://pubmed.ncbi.nlm.nih.gov' does not resolve
+URL value 'https://portal.issn.org' does not resolve
+URL value 'https://www.issn.org/services/online-services/access-to-the-ltwa/' does not resolve
+URL value 'https://www.issn.org/understanding-the-issn/assignment-rules/the-issn-l-for-publications-on-multiple-media/' does not resolve
+URL value 'https://www.nlm.nih.gov/tsd/cataloging/contructitleabbre.html' does not resolve
+
 # Suppressing a warning about inability to validate versions of MedDRA. MedDRA is listed at terminology.hl7.org but the version at THO does not match the true business version which is important to share for actual data exchange.
 A definition for CodeSystem 'https://www.meddra.org' version '20.1' could not be found, so the code cannot be validated. Valid versions: []
 
