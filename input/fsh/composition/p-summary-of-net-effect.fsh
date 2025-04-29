@@ -30,7 +30,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Summary
   * section[resultWithoutTreatment].code.coding 1..1
   * section[resultWithoutTreatment].code.coding = https://fevir.net/resources/CodeSystem/179423#result-with-comparator-alone "Result with comparator alone"
   * section[resultWithTreatmentObserved].code.coding 1..1
-  * section[resultWithTreatmentObserved].code.coding = http://hl7.org/fhir/evidence-report-section#Intervention-group-alone-Evidence "Evidence Results for the intervention exposure only"
+  * section[resultWithTreatmentObserved].code.coding = https://fevir.net/resources/CodeSystem/179423#result-with-intervention-alone "Result with intervention alone"
   * section[resultWithTreatmentDerived].code.coding 1..1
   * section[resultWithTreatmentDerived].code.coding = https://fevir.net/resources/CodeSystem/179423#result-with-intervention-alone-calculated "Result with intervention alone (calculated)"
   * section[effectEstimate].code.coding 1..1
@@ -67,7 +67,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Summary
     * entry 0..1 
     * entry only Reference(ComparatorOnlyEvidence)
   * section[resultWithTreatmentObserved].code.coding 1..1
-  * section[resultWithTreatmentObserved].code.coding = http://hl7.org/fhir/evidence-report-section#Intervention-group-alone-Evidence "Evidence Results for the intervention exposure only"
+  * section[resultWithTreatmentObserved].code.coding = https://fevir.net/resources/CodeSystem/179423#result-with-intervention-alone "Result with intervention alone"
   * section[resultWithTreatmentObserved]
     * entry 0..1 
     * entry only Reference(InterventionOnlyEvidence)
