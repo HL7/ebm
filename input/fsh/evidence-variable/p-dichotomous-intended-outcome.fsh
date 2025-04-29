@@ -8,6 +8,6 @@ Description: "Profile of EvidenceVariable for Evidence Based Medicine IG. The Di
 * definition.concept 1..1
 * definition.reference 0..0
 * actual = false
-* handling = #dichotomous
+* handling = #boolean
 * category 0..0
 

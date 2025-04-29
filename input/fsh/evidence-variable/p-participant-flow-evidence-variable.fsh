@@ -5,4 +5,4 @@ Description: "Profile of EvidenceVariable for Evidence Based Medicine IG. The Pa
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
-* handling = #dichotomous
+* handling = #boolean
