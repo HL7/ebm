@@ -28,8 +28,8 @@ publisher:
 
 dependencies:
   hl7.fhir.r6.core: latest
-  hl7.fhir.uv.extensions: latest
-  hl7.terminology: latest
+  hl7.fhir.uv.extensions.r6: latest
+  hl7.terminology.r6: latest
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
 # package id and the value is the version (or dev/current). For advanced
