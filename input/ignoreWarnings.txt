@@ -287,7 +287,10 @@ The code 'SEVCO:00374' is not valid in the system https://fevir.net/sevco versio
 Unable to check whether the code is in the value set 'https://fevir.net/resources/ValueSet/181524|1.0.0-ballot2' because the code system https://fevir.net/sevco was not found
 A definition for CodeSystem 'https://fevir.net/sevco' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'https://fevir.net/resources/ValueSet/181524|1.0.0-ballot2' because the code system https://fevir.net/sevco was not found
 
-# Suppressing warnings regarding identifier.system URLs that 'do not resolve' as these URLs do resolve and related to external systems
+# Suppressing warnings regarding coding.system URLs that 'do not resolve' -- these URLs will be evaluated for listing with THO
+URL value 'https://fevir.net/sevco' does not resolve
+
+# Suppressing warnings regarding identifier.system URLs that 'do not resolve' -- these URLs will be evaluated for listing with THO
 URL value 'https://app.magicapp.org/#/guidelines' does not resolve
 URL value 'https://fevir.net/FLI' does not resolve
 URL value 'https://doi.org' does not resolve
