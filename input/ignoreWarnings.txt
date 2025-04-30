@@ -289,6 +289,10 @@ A definition for CodeSystem 'https://fevir.net/sevco' could not be found, so the
 
 # Suppressing warnings regarding coding.system URLs that 'do not resolve' -- these URLs will be evaluated for listing with THO
 URL value 'https://fevir.net/sevco' does not resolve
+URL value 'https://www.nlm.nih.gov/bsd/licensee/elements_descriptions.html#owner_value' does not resolve
+URL value 'https://www.nlm.nih.gov/bsd/licensee/elements_descriptions.html#issn' does not resolve
+URL value 'https://www.cas.org/support/documentation/chemical-substances' does not resolve
+URL value 'https://www.nlm.nih.gov/bsd/licensee/elements_descriptions.html#citationsubset' does not resolve
 
 # Suppressing warnings regarding identifier.system URLs that 'do not resolve' -- these URLs will be evaluated for listing with THO
 URL value 'https://app.magicapp.org/#/guidelines' does not resolve
@@ -299,6 +303,12 @@ URL value 'https://portal.issn.org' does not resolve
 URL value 'https://www.issn.org/services/online-services/access-to-the-ltwa/' does not resolve
 URL value 'https://www.issn.org/understanding-the-issn/assignment-rules/the-issn-l-for-publications-on-multiple-media/' does not resolve
 URL value 'https://www.nlm.nih.gov/tsd/cataloging/contructitleabbre.html' does not resolve
+URL value 'https://www.ncbi.nlm.nih.gov/pmc/' does not resolve
+URL value 'https://locatorplus.gov/cgi-bin/Pwebrecon.cgi?DB=local' does not resolve
+
+# Suppressing warnings regarding webLocation.url values that do not resolve - there is no expectation that external URL links in this part of a Citation would be registered for this IG check
+URL value 'https://pubmed.ncbi.nlm.nih.gov/26502880/' does not resolve
+URL value 'https://doi.org/10.1186/s40360-015-0026-9' does not resolve
 
 # Suppressing a warning about inability to validate versions of MedDRA. MedDRA is listed at terminology.hl7.org but the version at THO does not match the true business version which is important to share for actual data exchange.
 A definition for CodeSystem 'https://www.meddra.org' version '20.1' could not be found, so the code cannot be validated. Valid versions: []
