@@ -5,15 +5,15 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
-* extension contains http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm named versionAlgorithm 0..1
-* extension contains http://hl7.org/fhir/StructureDefinition/artifact-experimental named experimental 0..1
-* extension contains http://hl7.org/fhir/StructureDefinition/artifact-description named description 0..1
-* extension contains http://hl7.org/fhir/StructureDefinition/artifact-purpose named purpose 0..1
-* extension contains http://hl7.org/fhir/StructureDefinition/artifact-copyright named copyright 0..1
-* extension contains http://hl7.org/fhir/StructureDefinition/artifact-copyrightLabel named copyrightLabel 0..1
-* extension contains http://hl7.org/fhir/StructureDefinition/artifact-approvalDate named approvalDate 0..1
-* extension contains http://hl7.org/fhir/StructureDefinition/artifact-lastReviewDate named lastReviewDate 0..1
-* extension contains http://hl7.org/fhir/StructureDefinition/artifact-effectivePeriod named effectivePeriod 0..1
+* extension contains $ext-versionAlgorithm named versionAlgorithm 0..1
+* extension contains $ext-experimental named experimental 0..1
+* extension contains $ext-descriptionn named description 0..1
+* extension contains $ext-purpose named purpose 0..1
+* extension contains $ext-copyright named copyright 0..1
+* extension contains $ext-copyrightLabel named copyrightLabel 0..1
+* extension contains http://hl7.org/fhir/StructureDefinition/artifact-approvalDate|5.2.0 named approvalDate 0..1
+* extension contains http://hl7.org/fhir/StructureDefinition/artifact-lastReviewDate|5.2.0 named lastReviewDate 0..1
+* extension contains http://hl7.org/fhir/StructureDefinition/artifact-effectivePeriod|5.2.0 named effectivePeriod 0..1
 * extension contains AdditionalLanguage named additionalLanguage 0..*
 * subject
   * ^comment = "Reference a Citation Resource, ArtifactAssessment Resource (Classification Profile), Group Resource (EvidenceReportSubject Profile), ReserchStudy Resource, or any Resource to define a subject of this EvidenceReport."
