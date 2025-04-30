@@ -7,7 +7,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
 * ^extension[$ext-standards-status].valueCode = #draft
 * extension contains $ext-versionAlgorithm named versionAlgorithm 0..1
 * extension contains $ext-experimental named experimental 0..1
-* extension contains $ext-descriptionn named description 0..1
+* extension contains $ext-description named description 0..1
 * extension contains $ext-purpose named purpose 0..1
 * extension contains $ext-copyright named copyright 0..1
 * extension contains $ext-copyrightLabel named copyrightLabel 0..1
