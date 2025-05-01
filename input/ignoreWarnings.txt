@@ -338,6 +338,10 @@ URL value 'https://www.bmj.com/content/363/bmj.k5094' does not resolve
 Constraint failed: eld-31: 'additionalBindings should have a key' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
 Constraint failed: eld-33: 'If there's more than one bindable type, it's usually an error for there to be a binding' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)
 
+# Suppressing warnings about not using a coding from a suggested value set when the code used is #defined-in-text which was created to avoid warnings when not using a code from a suggested (but not required) value set
+None of the codings provided are in the value set 'Cited Artifact Classification Type' (http://hl7.org/fhir/ValueSet/cited-artifact-classification-type|6.0.0-ballot3), and a coding is recommended to come from this value set (codes = https://fevir.net/resources/CodeSystem/179423#defined-in-text)
+None of the codings provided are in the value set 'Artifact Contribution Instance Type' (http://hl7.org/fhir/ValueSet/artifact-contribution-instance-type|6.0.0-ballot3), and a coding is recommended to come from this value set (codes = https://fevir.net/resources/CodeSystem/179423#defined-in-text)
+
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
