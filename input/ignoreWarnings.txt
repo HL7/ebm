@@ -293,6 +293,7 @@ URL value 'https://www.nlm.nih.gov/bsd/licensee/elements_descriptions.html#owner
 URL value 'https://www.nlm.nih.gov/bsd/licensee/elements_descriptions.html#issn' does not resolve
 URL value 'https://www.cas.org/support/documentation/chemical-substances' does not resolve
 URL value 'https://www.nlm.nih.gov/bsd/licensee/elements_descriptions.html#citationsubset' does not resolve
+URL value 'http://spor.ema.europa.eu/v1/example-reason' does not resolve
 
 # Suppressing warnings regarding identifier.system URLs that 'do not resolve' -- these URLs will be evaluated for listing with THO
 URL value 'https://app.magicapp.org/#/guidelines' does not resolve
@@ -305,13 +306,33 @@ URL value 'https://www.issn.org/understanding-the-issn/assignment-rules/the-issn
 URL value 'https://www.nlm.nih.gov/tsd/cataloging/contructitleabbre.html' does not resolve
 URL value 'https://www.ncbi.nlm.nih.gov/pmc/' does not resolve
 URL value 'https://locatorplus.gov/cgi-bin/Pwebrecon.cgi?DB=local' does not resolve
+URL value 'https://clinicaltrials.gov' does not resolve
 
 # Suppressing warnings regarding webLocation.url values that do not resolve - there is no expectation that external URL links in this part of a Citation would be registered for this IG check
 URL value 'https://pubmed.ncbi.nlm.nih.gov/26502880/' does not resolve
+URL value 'https://pubmed.ncbi.nlm.nih.gov/23604530/' does not resolve
+URL value 'https://pubmed.ncbi.nlm.nih.gov/18508207/' does not resolve
+URL value 'https://pubmed.ncbi.nlm.nih.gov/29694275/' does not resolve
+URL value 'https://pubmed.ncbi.nlm.nih.gov/22502942/' does not resolve
 URL value 'https://doi.org/10.1186/s40360-015-0026-9' does not resolve
+URL value 'https://doi.org/10.1007/s00280-013-2163-4' does not resolve
+URL value 'https://doi.org/10.1016/j.drugalcdep.2008.04.002' does not resolve
+URL value 'https://doi.org/10.1080/10894160.2018.1450001' does not resolve
+URL value 'https://doi.org/10.1016/j.eururo.2012.03.053' does not resolve
+
+# Suppressing warnings regarding targetAttachment.url values that do not resolve - there is no expectation that external URL links in Attachment datatype would be registered for this IG check
+URL value 'https://clinicaltrials.gov/api/v2/studies/NCT03421379?format=json' does not resolve
+URL value 'https://fevir.net/resources/Project/29885' does not resolve
+URL value 'https://www.clinicalstudydatarequest.com' does not resolve
+URL value 'https://cdn.clinicaltrials.gov/large-docs/79/NCT03421379/Prot_000.pdf' does not resolve
+URL value 'https://cdn.clinicaltrials.gov/large-docs/79/NCT03421379/SAP_001.pdf' does not resolve
+URL value 'https://www.medicines.org.uk/emc/medicine/4258#DOCREVISION' does not resolve
 
 # Suppressing a warning about inability to validate versions of MedDRA. MedDRA is listed at terminology.hl7.org but the version at THO does not match the true business version which is important to share for actual data exchange.
 A definition for CodeSystem 'https://www.meddra.org' version '20.1' could not be found, so the code cannot be validated. Valid versions: []
+
+# Suppressing warnings regarding targetAUri values that do not resolve - there is no expectation that external URL links in a uri datatype in an extension would be registered for this IG check
+URL value 'https://www.bmj.com/content/363/bmj.k5094' does not resolve
 
 # Suppressing warnings about additionalBindings constraints that do not appear to be a result of IG content
 Constraint failed: eld-31: 'additionalBindings should have a key' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
