@@ -314,11 +314,13 @@ URL value 'https://pubmed.ncbi.nlm.nih.gov/23604530/' does not resolve
 URL value 'https://pubmed.ncbi.nlm.nih.gov/18508207/' does not resolve
 URL value 'https://pubmed.ncbi.nlm.nih.gov/29694275/' does not resolve
 URL value 'https://pubmed.ncbi.nlm.nih.gov/22502942/' does not resolve
+URL value 'https://pubmed.ncbi.nlm.nih.gov/23306100/' does not resolve
 URL value 'https://doi.org/10.1186/s40360-015-0026-9' does not resolve
 URL value 'https://doi.org/10.1007/s00280-013-2163-4' does not resolve
 URL value 'https://doi.org/10.1016/j.drugalcdep.2008.04.002' does not resolve
 URL value 'https://doi.org/10.1080/10894160.2018.1450001' does not resolve
 URL value 'https://doi.org/10.1016/j.eururo.2012.03.053' does not resolve
+URL value 'https://doi.org/10.1016/S1470-2045(12)70560-0' does not resolve
 
 # Suppressing warnings regarding targetAttachment.url values that do not resolve - there is no expectation that external URL links in Attachment datatype would be registered for this IG check
 URL value 'https://clinicaltrials.gov/api/v2/studies/NCT03421379?format=json' does not resolve
