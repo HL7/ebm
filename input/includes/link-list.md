@@ -24,7 +24,6 @@
 [ConceptualCohortDefinition]: StructureDefinition-conceptual-cohort-definition.html
 [ConceptualComparatorDefinition]: StructureDefinition-conceptual-comparator-definition.html
 [ConceptualExposureDefinition]: StructureDefinition-conceptual-exposure-definition.html
-[CTISRecord]: StructureDefinition-ctis-record.html
 [DatabaseCitation]: StructureDefinition-database-citation.html
 [DatabaseEntryCitation]: StructureDefinition-database-entry-citation.html
 [DatasetCitation]: StructureDefinition-dataset-citation.html
@@ -84,6 +83,7 @@
 [StatisticModelIncludeIf]: StructureDefinition-statistic-model-include-if.html
 [StudyEligibilityCriteria]: StructureDefinition-study-eligibility-criteria.html
 [StudyGroup]: StructureDefinition-study-group.html
+[StudyRegistryRecord]: StructureDefinition-study-registry-record.html
 [SummaryOfFindings]: StructureDefinition-summary-of-findings.html
 [SummaryOfNetEffect]: StructureDefinition-summary-of-net-effect.html
 [SystematicReview]: StructureDefinition-systematic-review.html

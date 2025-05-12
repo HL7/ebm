@@ -1,6 +1,6 @@
 ### Profiles of ResearchStudy Resource
 
-The **[CTISRecord Profile][CTISRecord]** is a Profile of <b>ResearchStudy Resource</b> and is used for a scientific study record in the European Union Clinical Trial Information System (EU CTIS), a research study registry of the European Union (EU).
+The **[StudyRegistryRecord Profile][StudyRegistryRecord]** is a Profile of <b>ResearchStudy Resource</b> and is used for a scientific study record in a research study registry, such as ClinicalTrials.gov or the European Union Clinical Trial Information System (EU CTIS).
 
 The **[M11ResearchStudy Profile][M11ResearchStudy]** is a Profile of <b>ResearchStudy Resource</b> and is used to add extensions for use with an M11 Report.
 

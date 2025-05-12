@@ -102,7 +102,7 @@
 <artifact id="EvidenceVariable/346493" key="EvidenceVariable-346493" name="CTIS2024-516402-32-00 Secondary Outcome 6"/>
 <artifact id="EvidenceVariable/346494" key="EvidenceVariable-346494" name="CTIS2024-516402-32-00 Secondary Outcome 7"/>
 <artifact id="EvidenceVariable/346495" key="EvidenceVariable-346495" name="CTIS2024-516402-32-00 Secondary Outcome 8"/>
-<artifact id="StructureDefinition/ctis-record" key="StructureDefinition-ctis-record" name="CTISRecord"/>
+<artifact id="StructureDefinition/study-registry-record" key="StructureDefinition-study-registry-record" name="StudyRegistryRecord"/>
 <artifact id="ArtifactAssessment/179693" key="ArtifactAssessment-179693" name="Certainty of Evidence Rating of 14-day mortality remdesivir vs placebo meta-analysis (ACTT-1, Wang et al, WHO SOLIDARITY)"/>
 <artifact id="StructureDefinition/certainty-of-evidence" key="StructureDefinition-certainty-of-evidence" name="CertaintyOfEvidence"/>
 <artifact deprecated="true" id="StructureDefinition/characteristic-description" key="StructureDefinition-characteristic-description" name="CharacteristicDescription"/>
