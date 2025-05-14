@@ -6,11 +6,11 @@ Description: "Codes for use in the DocumentReference.type element when reference
 * ^extension[$ext-wg].valueCode = #brr
 * ^extension[$ext-standards-status].valueCode = #draft
 * ^experimental = false
-* ^concept[0]
-  * ^code = "adverse-event-monitoring-plan"
-  * ^display = "Adverse event monitoring plan"
-  * ^definition = "The detailed protocol for how unintended and undesired experiences and consequences related to a study will be identified, reported, and managed."
-* ^concept[1]
+* ^concept[0] =
+  * code = "adverse-event-monitoring-plan"
+  * display = "Adverse event monitoring plan"
+  * definition = "The detailed protocol for how unintended and undesired experiences and consequences related to a study will be identified, reported, and managed."
+* ^concept[1] = 
   * ^code = "ancillary-care-plan,"
   * ^display = "Ancillary care plan"
   * ^definition = "The detailed protocol for treatment and supportive care activities provided during and after the study."
