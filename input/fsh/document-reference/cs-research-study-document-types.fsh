@@ -6,6 +6,7 @@ Description: "Codes for use in the DocumentReference.type element when reference
 * ^extension[$ext-wg].valueCode = #brr
 * ^extension[$ext-standards-status].valueCode = #draft
 * ^experimental = false
+* ^caseSensitive = true
 * ^concept[0].code = #adverse-event-monitoring-plan
 * ^concept[0].display = "Adverse event monitoring plan"
 * ^concept[0].definition = "The detailed protocol for how unintended and undesired experiences and consequences related to a study will be identified, reported, and managed."
