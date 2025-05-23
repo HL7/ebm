@@ -16,6 +16,6 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Partici
 * section[results-flow].code.coding = https://fevir.net/resources/CodeSystem/179423#results "Results"
 * section[results-flow].code.text 1..1
 * section[results-flow].code.text = "Participant Flow Results"
-* section[results]
+* section[results-flow]
   * focus only Reference(ParticipantFlowEvidenceVariable)
   * entry only Reference(ParticipantFlowEvidence)
