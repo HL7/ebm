@@ -8,6 +8,9 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Baselin
 * type.coding 1..1
 * type.coding = https://fevir.net/resources/CodeSystem/179423#BaselineMeasureReport "BaselineMeasureReport"
 * type.text = "Baseline Measure Report"
+* section ^slicing.discriminator.type = #value
+* section ^slicing.discriminator.path = "code.coding"
+* section ^slicing.rules = #open
 * section contains results-baseline 0..* MS
 * section[results-baseline].code.coding 1..1
 * section[results-baseline].code.coding = https://fevir.net/resources/CodeSystem/179423#results "Results"

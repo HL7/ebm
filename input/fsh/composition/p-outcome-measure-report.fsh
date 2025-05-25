@@ -8,6 +8,9 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Outcome
 * type.coding 1..1
 * type.coding = https://fevir.net/resources/CodeSystem/179423#OutcomeMeasureReport "OutcomeMeasureReport"
 * type.text = "Outcome Measure Report"
+* section ^slicing.discriminator.type = #value
+* section ^slicing.discriminator.path = "code.coding"
+* section ^slicing.rules = #open
 * section contains results-outcome 0..* MS
 * section[results-outcome].code.coding 1..1
 * section[results-outcome].code.coding = https://fevir.net/resources/CodeSystem/179423#results "Results"
