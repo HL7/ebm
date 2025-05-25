@@ -14,8 +14,6 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Outcome
 * section contains results-outcome 0..* MS
 * section[results-outcome].code.coding 1..1
 * section[results-outcome].code.coding = https://fevir.net/resources/CodeSystem/179423#results "Results"
-* section[results-outcome].code.text 1..1
-* section[results-outcome].code.text = "Outcome Measure Results"
 * section[results-outcome]
   * focus only Reference(VariableDefinition)
   * entry only Reference(NonComparativeEvidence or ComparativeEvidence)

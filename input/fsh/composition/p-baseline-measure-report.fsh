@@ -14,8 +14,6 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Baselin
 * section contains results-baseline 0..* MS
 * section[results-baseline].code.coding 1..1
 * section[results-baseline].code.coding = https://fevir.net/resources/CodeSystem/179423#results "Results"
-* section[results-baseline].code.text 1..1
-* section[results-baseline].code.text = "Baseline Measure Results"
 * section[results-baseline]
   * focus only Reference(VariableDefinition)
   * entry only Reference(NonComparativeEvidence or ComparativeEvidence)
