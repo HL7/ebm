@@ -10,5 +10,5 @@ Description: "Profile of EvidenceVariable for Evidence Based Medicine IG. The Pa
 * relatesTo ^slicing.rules = #open
 * relatesTo contains supportedWith 0..*
 * relatesTo[supportedWith].type = http://hl7.org/fhir/related-artifact-type#supported-with
-* relatesTo[supportedWith].targetReference only ParticipantFlowReasonEvidenceVariable
+* relatesTo[supportedWith].targetReference only Reference(ParticipantFlowReasonEvidenceVariable)
 * handling = #boolean
