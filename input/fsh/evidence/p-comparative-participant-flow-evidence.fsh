@@ -10,5 +10,5 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The Comparativ
   * intended 0..0
   * directnessMatch 0..0
 * variableDefinition[outcome]
-  * observed only Reference(ParticipantFlowEvidenceVariable)
+  * observed only Reference(ParticipantFlowEvidenceVariable or ParticipantFlowReasonEvidenceVariable)
 

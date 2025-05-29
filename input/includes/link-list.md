@@ -61,6 +61,7 @@
 [OutcomeVariablesList]: StructureDefinition-outcome-variables-list.html
 [ParticipantFlowEvidence]: StructureDefinition-participant-flow-evidence.html
 [ParticipantFlowEvidenceVariable]: StructureDefinition-participant-flow-evidence-variable.html
+[ParticipantFlowReasonEvidenceVariable]: StructureDefinition-participant-flow-reason-evidence-variable.html
 [ParticipantFlowReport]: StructureDefinition-participant-flow-report.html
 [ParticipantFlowVariablesList]: StructureDefinition-participant-flow-variables-list.html
 [PreprintCitation]: StructureDefinition-preprint-citation.html

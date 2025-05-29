@@ -10,6 +10,6 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The Participan
   * intended 0..0
   * directnessMatch 0..0
 * variableDefinition[outcome]
-  * observed only Reference(ParticipantFlowEvidenceVariable)
+  * observed only Reference(ParticipantFlowEvidenceVariable or ParticipantFlowReasonEvidenceVariable)
 * statistic.numberAffected 0..0
 * statistic.modelCharacteristic 0..0
