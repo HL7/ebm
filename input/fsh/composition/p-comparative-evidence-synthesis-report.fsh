@@ -22,11 +22,11 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Compara
 * section[intervention].code.coding 1..1
 * section[intervention].code.coding = https://fevir.net/resources/CodeSystem/179423#intervention-description "Intervention Description"
 * section[intervention]
-  * entry only Reference(CohortDefinition or ConceptualCohortDefinition)
+  * entry only Reference(CohortDefinition or ConceptualCohortDefinition or PlanDefinition or ActivityDefinition)
 * section[comparator].code.coding 1..1
 * section[comparator].code.coding = https://fevir.net/resources/CodeSystem/179423#comparator-description "Comparator Description"
 * section[comparator]
-  * entry only Reference(CohortDefinition or ConceptualCohortDefinition)
+  * entry only Reference(CohortDefinition or ConceptualCohortDefinition or PlanDefinition or ActivityDefinition)
 * section[researchStudy].code.coding 1..1
 * section[researchStudy].code.coding = https://fevir.net/resources/CodeSystem/179423#research-study "Research Study"
 * section[researchStudy]
