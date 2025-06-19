@@ -1,13 +1,10 @@
 Profile: RiskOfBias
-Parent: ArtifactAssessment
+Parent: EvidenceAssessment
 Id: risk-of-bias
 Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The RiskOfBias Profile is used for expression of the assessment of the threats to validity (or risk of bias) of an Evidence artifact or an artifact consisting of Evidence or the plan to create Evidence." 
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
-* extension contains $ext-url named url 0..1
-* extension contains $ext-description named description 0..1
-* extension contains $ext-author named author 0..*
 * extension contains $ext-useContext named useContext 0..*
 * identifier
   * ^definition = "A formal identifier that is used to identify this RiskOfBias when it is represented in other formats, or referenced in a specification, model, design or an instance." 
@@ -29,9 +26,6 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
   * ^definition = "A reference to a resource, canonical resource, or non-FHIR resource which the RiskOfBias is about."
   * ^short = "The artifact that is rated"
 * artifactReference only Reference(Evidence or Composition or ResearchStudy or Citation)
-* content
-  * ^definition = "A rating or classification of the artifact."
-  * ^short = "A rating"
 * content.type from $ebm-risk-of-bias-type (extensible)
 * content.classifier from http://hl7.org/fhir/ValueSet/certainty-rating (extensible) //TODO - change to from risk-of-bias-classifier from $sevco when ready
 * content.freeToShare

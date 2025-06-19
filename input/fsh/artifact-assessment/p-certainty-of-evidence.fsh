@@ -1,13 +1,10 @@
 Profile: CertaintyOfEvidence
-Parent: ArtifactAssessment
+Parent: EvidenceAssessment
 Id: certainty-of-evidence
 Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The CertaintyOfEvidence Profile is used for expression of the certainty (also called quality or confidence in the estimates) of an Evidence artifact." 
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
-* extension contains $ext-url named url 0..1
-* extension contains $ext-description named description 0..1
-* extension contains $ext-author named author 0..*
 * identifier
   * ^definition = "A formal identifier that is used to identify this CertaintyOfEvidence when it is represented in other formats, or referenced in a specification, model, design or an instance." 
   * ^short = "Additional identifier for the CertaintyOfEvidence"
@@ -27,9 +24,6 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * artifact[x]
   * ^definition = "A reference to a resource, canonical resource, or non-FHIR resource which the CertaintyOfEvidence is about."
   * ^short = "The artifact that is rated"
-* content
-  * ^definition = "A rating or classification of the artifact."
-  * ^short = "A rating"
 * content.type from http://hl7.org/fhir/ValueSet/certainty-type (extensible)
 * content.classifier from http://hl7.org/fhir/ValueSet/certainty-rating (extensible)
 * content.freeToShare
