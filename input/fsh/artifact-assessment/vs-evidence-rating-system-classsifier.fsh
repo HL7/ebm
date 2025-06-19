@@ -6,4 +6,4 @@ Description: "Codes for use with the EvidenceAssessment Profile, to provide valu
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
 * ^experimental = false
-* include codes from system $recommendation-justification-classifiers
+* include codes from system EvidenceRatingSystemClassifierCodeSystem

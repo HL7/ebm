@@ -40,13 +40,17 @@ The **[Rating Profile][Rating]** is used for classifier tags that may include qu
 
 The **[DateAsRating Profile][DateAsRating]** is a Profile of **[Classification][Classification]** that is used for representing a date or dateTime as a classifier value. An extension to ArtifactAssessment.content provides the dateAsRating value with a dateTime datatype.
 
+### EvidenceAssessment Profile of ArtifactAssessment Resource
+
+The **[EvidenceAssessment Profile][EvidenceAssessment]** is used for expression of any aspect of the certainty or quality of an Evidence artifact.
+
 ### CertaintyOfEvidence Profile of ArtifactAssessment Resource
 
-The **[CertaintyOfEvidence Profile][CertaintyOfEvidence]** is used for expression of the certainty (also called quality or confidence in the estimates) of an Evidence artifact.
+The **[CertaintyOfEvidence Profile][CertaintyOfEvidence]** is a Profile of **[EvidenceAssessment][EvidenceAssessment]** that is used for expression of the certainty (also called quality or confidence in the estimates) of an Evidence artifact.
 
 ### RiskOfBias Profile of ArtifactAssessment Resource
 
-The **[RiskOfBias Profile][RiskOfBias]** is used for expression of the assessment of the threats to validity (or risk of bias) of an Evidence artifact or an artifact consisting of Evidence or the plan to create Evidence.
+The **[RiskOfBias Profile][RiskOfBias]** is a Profile of **[EvidenceAssessment][EvidenceAssessment]** that is used for expression of the assessment of the threats to validity (or risk of bias) of an Evidence artifact or an artifact consisting of Evidence or the plan to create Evidence.
 
 ### RecommendationJustification Profile of ArtifactAssessment Resource
 

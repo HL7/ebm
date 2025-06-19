@@ -1,5 +1,5 @@
 CodeSystem: EvidenceRatingSystemClassifierCodeSystem
-Id: codesystem-evidence-rating-system-classifier
+Id: evidence-rating-system-classifier-codesystem
 Title: "Evidence Rating System Classifier Code System"
 Description: "Codes for use with the EvidenceAssessment Profile, to provide values for the content.classifier element where content.type is Rating System."
 * ^extension[$ext-fmm].valueInteger = 1

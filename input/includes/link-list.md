@@ -31,6 +31,7 @@
 [DichotomousIntendedOutcome]: StructureDefinition-dichotomous-intended-outcome.html
 [EndpointAnalysisPlan]: StructureDefinition-endpoint-analysis-plan.html
 [Evidence Based Medicine on FHIR Implementation Guide Code System]: CodeSystem-179423.html
+[EvidenceAssessment]: StructureDefinition-evidence-assessment.html
 [EvidenceList]: StructureDefinition-evidence-list.html
 [EvidenceReport]: StructureDefinition-evidence-report.html
 [EvidenceReportPackage]: StructureDefinition-evidence-report-package.html
