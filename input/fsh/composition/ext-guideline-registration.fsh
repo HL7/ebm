@@ -13,6 +13,7 @@ Description: "Dates for guideline registration activities."
 * extension[activity].value[x] only CodeableConcept
   * ^short = "The specific activity"
   * ^definition = "The specific registration activity."
+* extension[activity].valueCodeableConcept from http://terminology.hl7.org/ValueSet/cited-artifact-status-type (preferred)
 * extension[actual].value[x] only boolean
   * ^short = "Actual if true, else anticipated"
   * ^definition = "Actual if true, else anticipated."
