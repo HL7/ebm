@@ -10,4 +10,4 @@ Description: "Handling of the variable that is not boolean, continuous, dichotom
 * ^context[1].expression = "Evidence.statistic.modelCharacteristic.variable"
 * value[x] only CodeableConcept
 * . ^short = "How the variable is handled"
-* . ^definition = "andling of the variable that is not boolean, continuous, dichotomous, ordinal, or polychotomous."
+* . ^definition = "Handling of the variable that is not boolean, continuous, dichotomous, ordinal, or polychotomous."
