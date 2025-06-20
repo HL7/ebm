@@ -168,6 +168,11 @@ The Composition.type value is set to a "Guideline".
 
 The **[Guideline Profile][Guideline]** will have a Recommendations section which will have entries which are constrained to reference the **[Recommendation Profile][Recommendation]**. 
 
+### GuidelineRegistryRecord Profile of Composition Resource
+
+The **[GuidelineRegistryRecord Profile][GuidelineRegistryRecord]** is a Profile of **[Guideline][Guideline]** that is used for the addition of extensions to the **[Guideline Profile][Guideline]** to support metadata regarding the record of the guideline in a registry.
+
+
 ### Recommendation Profile of Composition Resource
 
 The **[Recommendation Profile][Recommendation]** is a Profile of **[EvidenceReportPackage][EvidenceReportPackage]** and is used for the composition of a recommendation (such as that from a clinical practice guideline) and may be tightly related to a **[RecommendationPlan Profile][RecommendationPlan]** of PlanDefinition and a **[RecommendationJustification Profile][RecommendationJustification]** of ArtifactAssessment. 

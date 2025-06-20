@@ -43,6 +43,7 @@
 [GroupAssignment]: StructureDefinition-group-assignment.html
 [GroupR6]: StructureDefinition-group-r6.html
 [Guideline]: StructureDefinition-guideline.html
+[GuidelineRegistryRecord]: StructureDefinition-guideline-registry-record.html
 [InterventionOnlyEvidence]: StructureDefinition-intervention-only-evidence.html
 [JournalArticleCitation]: StructureDefinition-journal-article-citation.html
 [M11Report]: StructureDefinition-m11-report.html
