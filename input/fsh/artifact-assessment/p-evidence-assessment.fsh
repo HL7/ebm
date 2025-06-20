@@ -30,9 +30,10 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * content ^slicing.discriminator.type = #value
 * content ^slicing.discriminator.path = "type"
 * content ^slicing.rules = #open
-* content contains ratingSystem 0..1 MS
+* content contains ratingSystem 0..1 MS and ratings 0..* MS
 * content[ratingSystem].type = https://fevir.net/resources/CodeSystem/179423#rating-system "Rating System"
 * content[ratingSystem].classifier from evidence-rating-system-classifier (extensible)
+* content[ratings].type = https://fevir.net/resources/CodeSystem/179423#ratings "Ratings"
 * content.freeToShare
   * ^definition = "Acceptable to publicly share the EvidenceAssessment content, specific to the associated content instance"
   * ^short = "Acceptable to publicly share the EvidenceAssessment content"

@@ -26,8 +26,8 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
   * ^definition = "A reference to a resource, canonical resource, or non-FHIR resource which the RiskOfBias is about."
   * ^short = "The artifact that is rated"
 * artifactReference only Reference(Evidence or Composition or ResearchStudy or Citation)
-* content.type from $ebm-risk-of-bias-type (extensible)
-* content.classifier from http://hl7.org/fhir/ValueSet/certainty-rating (extensible) //TODO - change to from risk-of-bias-classifier from $sevco when ready
+* content[ratings].type from $ebm-risk-of-bias-type (extensible)
+* content[ratings].classifier from http://hl7.org/fhir/ValueSet/certainty-rating (extensible) //TODO - change to from risk-of-bias-classifier from $sevco when ready
 * content.freeToShare
   * ^definition = "Acceptable to publicly share the RiskOfBias content, specific to the associated content instance"
   * ^short = "Acceptable to publicly share the RiskOfBias content"

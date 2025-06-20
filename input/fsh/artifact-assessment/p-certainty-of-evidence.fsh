@@ -24,8 +24,8 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * artifact[x]
   * ^definition = "A reference to a resource, canonical resource, or non-FHIR resource which the CertaintyOfEvidence is about."
   * ^short = "The artifact that is rated"
-* content.type from http://hl7.org/fhir/ValueSet/certainty-type (extensible)
-* content.classifier from http://hl7.org/fhir/ValueSet/certainty-rating (extensible)
+* content[ratings].type from http://hl7.org/fhir/ValueSet/certainty-type (extensible)
+* content[ratings].classifier from http://hl7.org/fhir/ValueSet/certainty-rating (extensible)
 * content.freeToShare
   * ^definition = "Acceptable to publicly share the CertaintyOfEvidence content, specific to the associated content instance"
   * ^short = "Acceptable to publicly share the CertaintyOfEvidence content"
