@@ -112,29 +112,28 @@ One or more 'Results' sections are required. Each 'Result' section has a focus w
 
 ### BaselineMeasureReport Profile of Composition Resource
 
-The **[BaselineMeasureReport Profile][BaselineMeasureReport]** is a Profile of **[EvidenceTableReportPackage][EvidenceTableReportPackage]** and is used for an evidence report including the findings for any number of baseline measures in a research study. This is often represented as "Table 1" in a journal article reporting research study results.
+The **[BaselineMeasureReport Profile][BaselineMeasureReport]** is a Profile of **[EvidenceReport Profile][EvidenceReport]** and is used for an evidence report including the findings for any number of baseline measures in a research study. This is often represented as "Table 1" in a journal article reporting research study results.
 
 The Composition.type value is set to a "Baseline Measure Report".
 
+The section element (Results section slice) applies constraints in which section.focus references are constrained to **[VariableDefinition Profile][VariableDefinition]** and section.entry references are constrained to **[NonComparativeEvidence Profile][NonComparativeEvidence]** or **[ComparativeEvidence Profile][ComparativeEvidence]**.
 
 ### ParticipantFlowReport Profile of Composition Resource
 
-The **[ParticipantFlowReport Profile][ParticipantFlowReport]** is a Profile of **[EvidenceTableReportPackage][EvidenceTableReportPackage]** and is used for an evidence report including the counts (and proportions) for any number of participant flow measures in a research study. For example, the ParticipantFlowReport may include the data for a CONSORT Participant Flow Diagram reported with a randomized controlled trial.
+The **[ParticipantFlowReport Profile][ParticipantFlowReport]** is a Profile of **[EvidenceReport Profile][EvidenceReport]** and is used for an evidence report including the counts (and proportions) for any number of participant flow measures in a research study. For example, the ParticipantFlowReport may include the data for a CONSORT Participant Flow Diagram reported with a randomized controlled trial.
 
 The Composition.type value is set to a "Participant Flow Report".
 
-The section element (Variables slice) is limited to reference **[ParticipantFlowEvidenceVariable Profile][ParticipantFlowEvidenceVariable]** for entry values.
-
-The section element (Results section slice) applies constraints to the **[EvidenceTableReportPackage][EvidenceTableReportPackage]** in which any references to **[VariableDefinition Profile][VariableDefinition]** are further constrained to **[ParticipantFlowEvidenceVariable Profile][ParticipantFlowEvidenceVariable]**, any references to **[NonComparativeEvidence Profile][NonComparativeEvidence]** are further constrained to **[ParticipantFlowEvidence Profile][ParticipantFlowEvidence]**, and any references to **[ComparativeEvidence Profile][ComparativeEvidence]** are further constrained to **[ComparativeParticipantFlowEvidence Profile][ComparativeParticipantFlowEvidence]**.
-
+The section element (Results section slice) applies constraints in which section.focus references are constrained to **[ParticipantFlowEvidenceVariable Profile][ParticipantFlowEvidenceVariable]** and section.entry references are constrained to **[ParticipantFlowEvidence Profile][ParticipantFlowEvidence]** or **[ComparativeParticipantFlowEvidence Profile][ComparativeParticipantFlowEvidence]**.
 
 
 ### OutcomeMeasureReport Profile of Composition Resource
 
-The **[OutcomeMeasureReport Profile][OutcomeMeasureReport]** is a Profile of **[EvidenceTableReportPackage][EvidenceTableReportPackage]** and is used for an evidence report including the findings for any number of outcome measures in a research study. 
+The **[OutcomeMeasureReport Profile][OutcomeMeasureReport]** is a Profile of **[EvidenceReport Profile][EvidenceReport]** and is used for an evidence report including the findings for any number of outcome measures in a research study. 
 
 The Composition.type value is set to an "Outcome Measure Report".
 
+The section element (Results section slice) applies constraints in which section.focus references are constrained to **[VariableDefinition Profile][VariableDefinition]** and section.entry references are constrained to **[NonComparativeEvidence Profile][NonComparativeEvidence]** or **[ComparativeEvidence Profile][ComparativeEvidence]**.
 
 ### SummaryOfFindings Profile of Composition Resource
 
