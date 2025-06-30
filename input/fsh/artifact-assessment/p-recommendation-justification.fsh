@@ -1,16 +1,10 @@
 Profile: RecommendationJustification
-Parent: ArtifactAssessment
+Parent: RecommendationRating
 Id: recommendation-justification
 Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The RecommendationJustification Profile is used for expressing the rationale, evidence, and judgments supporting a recommendation, such as from a clinical practice guideline." 
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
-* extension contains $ext-url named url 0..1
-* extension contains $ext-description named description 0..1
-* extension contains $ext-author named author 0..*
-* extension contains CiteAs named citeAs 0..1
-* extension contains RelatesTo named relatesTo 0..*
-* extension contains RelatesToWithQuotation named RelatesToWithQuotation 0..*
 * identifier
   * ^definition = "A formal identifier that is used to identify this Recommendation Justification when it is represented in other formats, or referenced in a specification, model, design or an instance." 
   * ^short = "Additional identifier for the Recommendation Justification"
@@ -30,29 +24,10 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * artifact[x]
   * ^definition = "A reference to a resource, canonical resource, or non-FHIR resource which the Recommendation Justification is about."
   * ^short = "The recommendation that is justified"
-* content 1..*
-  * ^definition = "A comment, rating, or classification of the recommendation."
-  * ^short = "A comment, rating, or classification"
-  * extension contains RelatesTo named relatesTo 0..*
-  * extension contains RelatesToWithQuotation named RelatesToWithQuotation 0..*
-  * component
-    * extension contains RelatesTo named relatesTo 0..*
-    * extension contains RelatesToWithQuotation named RelatesToWithQuotation 0..*
 * content ^slicing.discriminator.type = #value
 * content ^slicing.discriminator.path = "type"
 * content ^slicing.rules = #open
-* content contains recommendationRating 1..1 MS and evidence 0..1 MS and netEffect 0..1 MS and judgments 0..1 MS and competingInterests 0..1 MS
-* content[recommendationRating].type = https://fevir.net/resources/CodeSystem/179423#recommendation-rating "Recommendation Rating"
-* content[recommendationRating]
-  * component ^slicing.discriminator.type = #value
-  * component ^slicing.discriminator.path = "type"
-  * component ^slicing.rules = #open
-  * component contains ratingSystem 0..1 MS and strengthOfRecommendation 0..1 MS and directionOfRecommendation 0..1 MS and otherRatings 0..1 and discussion 0..1
-  * component[ratingSystem].type = https://fevir.net/resources/CodeSystem/179423#rating-system "Rating System"
-  * component[strengthOfRecommendation].type = https://fevir.net/resources/CodeSystem/179423#strength-of-recommendation "Strength of Recommendation"
-  * component[directionOfRecommendation].type = https://fevir.net/resources/CodeSystem/179423#direction-of-recommendation "Direction of Recommendation"
-  * component[otherRatings].type = https://fevir.net/resources/CodeSystem/179423#ratings "Ratings"
-  * component[discussion].type = https://fevir.net/resources/CodeSystem/179423#discussion "Discussion"
+* content contains evidence 0..1 MS and netEffect 0..1 MS and judgments 0..1 MS and competingInterests 0..1 MS
 * content[evidence].type = https://fevir.net/resources/CodeSystem/179423#evidence "Evidence"
 * content[evidence]
   * component ^slicing.discriminator.type = #value
@@ -86,6 +61,4 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
   * component[feasibility].type = https://fevir.net/resources/CodeSystem/179423#feasibility "Feasibility"
 * content[competingInterests].type = https://fevir.net/resources/CodeSystem/179423#competing-interests "Competing Interests"
 * content.classifier from recommendation-justification-classifier (extensible)
-* content.freeToShare
-  * ^definition = "Acceptable to publicly share the content, specific to the associated content instance"
-  * ^short = "Acceptable to publicly share the content"
+

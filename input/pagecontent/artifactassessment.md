@@ -52,9 +52,13 @@ The **[CertaintyOfEvidence Profile][CertaintyOfEvidence]** is a Profile of **[Ev
 
 The **[RiskOfBias Profile][RiskOfBias]** is a Profile of **[EvidenceAssessment][EvidenceAssessment]** that is used for expression of the assessment of the threats to validity (or risk of bias) of an Evidence artifact or an artifact consisting of Evidence or the plan to create Evidence.
 
+### RecommendationRating Profile of ArtifactAssessment Resource
+
+The **[RecommendationRating Profile][RecommendationRating]** is a Profile of **[EvidenceAssessment][EvidenceAssessment]** that is used for expressing the classifications of a recommendation, such as from a clinical practice guideline. Common classifications include strength of recommendation, direction of recommendation, and certainty of evidence.
+
 ### RecommendationJustification Profile of ArtifactAssessment Resource
 
-The **[RecommendationJustification Profile][RecommendationJustification]** is used for expressing the rationale, evidence, and judgments supporting a recommendation, such as from a clinical practice guideline.
+The **[RecommendationJustification Profile][RecommendationJustification]** is a Profile of **[RecommendationRating][RecommendationRating]** that is used for expressing the rationale, evidence, and judgments supporting a recommendation, such as from a clinical practice guideline.
 
 ### OutcomeImportance Profile of ArtifactAssessment Resource
 

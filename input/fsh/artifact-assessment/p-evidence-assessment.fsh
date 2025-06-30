@@ -8,6 +8,8 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * extension contains $ext-url named url 0..1
 * extension contains $ext-description named description 0..1
 * extension contains $ext-author named author 0..*
+* extension contains $ext-useContext named useContext 0..*
+* extension contains RelatesToWithQuotation named RelatesToWithQuotation 0..*
 * identifier
   * ^definition = "A formal identifier that is used to identify this EvidenceAssessment when it is represented in other formats, or referenced in a specification, model, design or an instance." 
   * ^short = "Additional identifier for the EvidenceAssessment"
@@ -30,6 +32,10 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * content ^slicing.discriminator.type = #value
 * content ^slicing.discriminator.path = "type"
 * content ^slicing.rules = #open
+* content
+  * extension contains RelatesToWithQuotation named RelatesToWithQuotation 0..*
+  * component
+    * extension contains RelatesToWithQuotation named RelatesToWithQuotation 0..*
 * content contains ratingSystem 0..1 MS and ratings 0..* MS
 * content[ratingSystem].type = https://fevir.net/resources/CodeSystem/179423#rating-system "Rating System"
 * content[ratingSystem].classifier from evidence-rating-system-classifier (extensible)

@@ -5,7 +5,6 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
-* extension contains $ext-useContext named useContext 0..*
 * identifier
   * ^definition = "A formal identifier that is used to identify this RiskOfBias when it is represented in other formats, or referenced in a specification, model, design or an instance." 
   * ^short = "Additional identifier for the RiskOfBias"

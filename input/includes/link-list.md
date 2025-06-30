@@ -74,6 +74,7 @@
 [RecommendationEligibilityCriteria]: StructureDefinition-recommendation-eligibility-criteria.html
 [RecommendationJustification]: StructureDefinition-recommendation-justification.html
 [RecommendationPlan]: StructureDefinition-recommendation-plan.html
+[RecommendationRating]: StructureDefinition-recommendation-rating.html
 [ResearchStudyDataDictionary]: StructureDefinition-research-study-data-dictionary.html
 [RiskOfBias]: StructureDefinition-risk-of-bias.html
 [SearchResults]: StructureDefinition-search-results.html
