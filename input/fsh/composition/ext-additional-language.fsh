@@ -8,4 +8,4 @@ Description: "The Resource contains content in a language additional to the one 
 * ^context.expression = "Composition"
 * value[x] only code
 * . ^short = "The additional language"
-* . ^definition = "The Resource contains content in a language additional to the one in the language element.."
+* . ^definition = "The Resource contains content in a language additional to the one in the language element."
