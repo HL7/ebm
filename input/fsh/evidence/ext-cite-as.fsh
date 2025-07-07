@@ -22,6 +22,8 @@ Description: "Citation for this Resource."
 * ^context[7].expression = "ActivityDefinition"
 * ^context[8].type = #element
 * ^context[8].expression = "PlanDefinition"
+* ^context[9].type = #element
+* ^context[9].expression = "List"
 * value[x] only markdown
 * . ^short = "Citation for this Resource"
 * . ^definition = "Display of suggested citation for this Resource."
