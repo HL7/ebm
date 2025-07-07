@@ -18,6 +18,10 @@ Description: "Citation for this Resource."
 * ^context[5].expression = "CodeSystem"
 * ^context[6].type = #element
 * ^context[6].expression = "ValueSet"
+* ^context[7].type = #element
+* ^context[7].expression = "ActivityDefinition"
+* ^context[8].type = #element
+* ^context[8].expression = "PlanDefinition"
 * value[x] only markdown
 * . ^short = "Citation for this Resource"
 * . ^definition = "Display of suggested citation for this Resource."
