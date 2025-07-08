@@ -11,3 +11,4 @@ Description: "Handling of the variable that is not boolean, continuous, dichotom
 * value[x] only CodeableConcept
 * . ^short = "How the variable is handled"
 * . ^definition = "Handling of the variable that is not boolean, continuous, dichotomous, ordinal, or polychotomous."
+* valueCodeableConcept from $evidence-variable-handling-extension (preferred)
