@@ -10,24 +10,18 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Recomme
 * section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code.coding"
 * section ^slicing.rules = #open
-* section contains recommendationSpecification 1..1 MS and evidence 0..1 MS and justification 0..1 MS and considerations 0..1 MS
-* section[recommendationSpecification].code.coding 1..1
-* section[recommendationSpecification].code.coding = https://fevir.net/resources/CodeSystem/179423#recommendation-specification "Recommendation Specification"
-* section[recommendationSpecification]
-  * section ^slicing.discriminator.type = #value
-  * section ^slicing.discriminator.path = "code.coding"
-  * section ^slicing.rules = #open
-  * section contains recommendationStatement 0..1 MS and ratings 0..1 and population 0..1 and action 0..1 and oppositeAction 0..1
-  * section[recommendationStatement].code.coding 1..1
-  * section[recommendationStatement].code.coding = https://fevir.net/resources/CodeSystem/179423#recommendation-statement "Recommendation Statement"
-  * section[ratings].code.coding 1..1
-  * section[ratings].code.coding = https://fevir.net/resources/CodeSystem/179423#ratings "Ratings"
-  * section[population].code.coding 1..1
-  * section[population].code.coding = https://fevir.net/resources/CodeSystem/179423#population "Population"
-  * section[action].code.coding 1..1
-  * section[action].code.coding = https://fevir.net/resources/CodeSystem/179423#action "Action"
-  * section[oppositeAction].code.coding 1..1
-  * section[oppositeAction].code.coding = https://fevir.net/resources/CodeSystem/179423#opposite-action "Opposite Action"
+* section[summary] 0..0
+* section contains recommendationStatement 1..1 MS and ratings 0..1 and population 0..1 and action 0..1 and oppositeAction 0..1 and and evidence 0..1 MS and justification 0..1 MS and considerations 0..1 MS
+* section[recommendationStatement].code.coding 1..1
+* section[recommendationStatement].code.coding = https://fevir.net/resources/CodeSystem/179423#recommendation-statement "Recommendation Statement"
+* section[ratings].code.coding 1..1
+* section[ratings].code.coding = https://fevir.net/resources/CodeSystem/179423#ratings "Ratings"
+* section[population].code.coding 1..1
+* section[population].code.coding = https://fevir.net/resources/CodeSystem/179423#population "Population"
+* section[action].code.coding 1..1
+* section[action].code.coding = https://fevir.net/resources/CodeSystem/179423#action "Action"
+* section[oppositeAction].code.coding 1..1
+* section[oppositeAction].code.coding = https://fevir.net/resources/CodeSystem/179423#opposite-action "Opposite Action"
 * section[evidence].code.coding 1..1
 * section[evidence].code.coding = https://fevir.net/resources/CodeSystem/179423#evidence "Evidence"
 * section[justification].code.coding 1..1

@@ -178,9 +178,7 @@ The **[Recommendation Profile][Recommendation]** is a Profile of **[EvidenceRepo
 
 The Composition.type value is set to a "Recommendation".
 
-The **[Recommendation Profile][Recommendation]** will have 1 or more section element instances with any of the following section.code concepts:  Recommendation Specification (required), Evidence (optional), Justification (optional), and Considerations (optional).
-
-..The Recommendation Specification section is required and contains sections with section.code concepts for Recommendation Statement, Ratings, Population, Action, and Opposite Action.
+The **[Recommendation Profile][Recommendation]** will have 1 or more section element instances with any of the following section.code concepts:  Recommendation Statement (required), Ratings (optional), Population (optional), Action (optional), Opposite Action (optional), Evidence (optional), Justification (optional), and Considerations (optional).
 
 ..The Evidence section may contain sections for text-based summaries and may contain entries referencing other Resources.
 
