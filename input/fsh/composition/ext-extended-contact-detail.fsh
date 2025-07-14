@@ -1,5 +1,5 @@
-Extension: ExtendedContactDetail
-Id: extended-contact-detail
+Extension: CompositionExtendedContactDetail
+Id: composition-extended-contact-detail
 Description: "Specifies contact information for a specific purpose over a period of time."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
