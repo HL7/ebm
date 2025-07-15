@@ -2,7 +2,7 @@
 
 The **[StudyRegistryRecord Profile][StudyRegistryRecord]** is a Profile of <b>ResearchStudy Resource</b> and is used for a scientific study record in a research study registry, such as ClinicalTrials.gov or the European Union Clinical Trial Information System (EU CTIS).
 
-The **[M11ResearchStudy Profile][M11ResearchStudy]** is a Profile of <b>ResearchStudy Resource</b> and is used to add extensions for use with an M11 Report.
+The **[StudyDesign Profile][StudyDesign]** is a Profile of <b>ResearchStudy Resource</b> and is used to add extensions for additional expressions of study design features with the study protocol.
 
 The **[SystematicReview Profile][SystematicReview]** is a Profile of <b>ResearchStudy Resource</b> and is used for a scientific study based on a protocol that includes search and selection of eligible studies, study quality assessment, data extraction, and synthesis.
 

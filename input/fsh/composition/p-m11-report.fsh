@@ -17,7 +17,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
 * section[titlepage].title = "Title Page"
 * section[titlepage].code.text = "section0-title-page"
 * section[titlepage]
-  * entry only Reference(M11ResearchStudy)
+  * entry only Reference(StudyDesign)
 * section[summary].title = "Protocol Summary"
 * section[summary].code.text = "section1-protocol-summary"
 * section[summary]
@@ -140,7 +140,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
 * section[estimands].title = "Trial Objectives and Associated Estimands"
 * section[estimands].code.text = "section3-estimands"
 * section[estimands]
-  * entry only Reference(M11ResearchStudy)
+  * entry only Reference(StudyDesign)
 * section[design].title = "Trial Design"
 * section[design].code.text = "section4-trial-design"
 * section[design]

@@ -138,7 +138,7 @@ Profiles of <b>Composition Resource</b> include:
 Other Resources and <b>Other Profiles</b> used in the EBMonFHIR Implementation Guide include:
 - <b>ResearchStudy Resource</b>
   - <b>StudyRegistryRecord</b> used for a scientific study record in a research study registry, such as ClinicalTrials.gov or the European Union Clinical Trial Information System (EU CTIS)."
-  - <b>M11ResearchStudy</b> used to add extensions for use with an M11 Report.
+  - <b>StudyDesign</b> used to add extensions for additional expressions of study design features with the study protocol.
   - <b>SystematicReview</b> used for a research study that involves investigation of research studies.
 - <b>ActivityDefinition Resource</b> including a Profile of:
   - <b>RecommendationAction</b> used for a recommendation from a clinical practice guideline.
@@ -164,6 +164,10 @@ The Implementation Guide has changed substantially by using a FHIR R6 base inste
 In addition, new Profiles include BaselineMeasureReport, BaselineVariablesList, ComparativeEvidenceSynthesisReport, ConceptualCohortDefinition, ConceptualComparatorDefinition, ConceptualExposureDefinition, DichotomousIntendedOutcome, EvidenceReportPackage, EvidenceTableReportPackage, M11ResearchStudy, OutcomeMeasureReport, OutcomeVariablesList, ParticipantFlowReport, ParticipantFlowVariablesList, ResearchStudyDataDictionary, SystematicReview, and VariablesList. Removed Profiles include DataDictionary, EvidenceMap, and EvidenceR6. Some Profiles were renamed, such as ParticipantFlowMeasure was renamed ParticipantFlowEvidenceVariable. 
 
 New Extensions include AdditionalLanguage, CiteAs, EvidenceVariableCLassifier, EvidenceVariableConditional, EvidenceVariableConstraint, EvidenceVariableDataCleaning, EvidenceVariableDataStorage, EvidenceVariableDefinitionModifier, EvidenceVariableHandlingDetail, EvidenceVariableMissingData, EvidenceVariablePeriod, RelatesToWithQuotation, RelatesTo, RelativeOutcomeImportance, ResearchStudyComparisonGroupEligibility, ResearchStudyExcludedStudy, ResearchStudyIncludedStudy, ResearchStudyNumberOfStudiesIdentified, ResearchStudyNumberOfStudiesIncluded, ResearchStudyOutcomeMeasure, ResearchStudyResultAsComposition, ResearchStudySaeReportingMethod, ResearchStudySearchStrategy, ResearchStudySponsorConfidentialityStatement, ResearchStudyStudyAmendment, ResearchStudySystematicReviewEligibilityCriteria, TargetAttachment, TargetCanonical, TargetMarkdown, TargetReference, and TargetUri. Many of these extensions are temporary and provided to support elements that will be available in the latest R6 build version of FHIR but are not available for the IG builder.
+
+## Changes from second ballot
+
+The M11ResearchStudy Profile was renamed StudyDesign Profile to improve coordination with the Vulcan UDP IG (Pharmaceutical Research Protocol IG).
 
 ## Acknowledgements
 

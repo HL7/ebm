@@ -47,7 +47,6 @@
 [InterventionOnlyEvidence]: StructureDefinition-intervention-only-evidence.html
 [JournalArticleCitation]: StructureDefinition-journal-article-citation.html
 [M11Report]: StructureDefinition-m11-report.html
-[M11ResearchStudy]: StructureDefinition-m11-research-study.html
 [MetaanalysisEligibilityCriteria]: StructureDefinition-metaanalysis-eligibility-criteria.html
 [MetaanalysisOutcomeDefinition]: StructureDefinition-metaanalysis-outcome-definition.html
 [MetaanalysisStudyGroup]: StructureDefinition-metaanalysis-study-group.html
@@ -85,6 +84,7 @@
 [StatisticModel]: StructureDefinition-statistic-model.html
 [StatisticModelExpression]: StructureDefinition-statistic-model-expression.html
 [StatisticModelIncludeIf]: StructureDefinition-statistic-model-include-if.html
+[StudyDesign]: StructureDefinition-study-design.html
 [StudyEligibilityCriteria]: StructureDefinition-study-eligibility-criteria.html
 [StudyGroup]: StructureDefinition-study-group.html
 [StudyRegistryRecord]: StructureDefinition-study-registry-record.html

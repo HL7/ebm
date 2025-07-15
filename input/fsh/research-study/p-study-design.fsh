@@ -1,7 +1,7 @@
-Profile: M11ResearchStudy
+Profile: StudyDesign
 Parent: ResearchStudy
-Id: m11-research-study
-Description: "Profile of ResearchStudy for Evidence Based Medicine IG. The M11ResearchStudy Profile is used to add extensions for use with an M11 Report."
+Id: study-design
+Description: "Profile of ResearchStudy for Evidence Based Medicine IG. The StudyDesign Profile is used to add extensions for additional expressions of study design features with the study protocol."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
