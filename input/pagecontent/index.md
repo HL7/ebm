@@ -167,7 +167,39 @@ New Extensions include AdditionalLanguage, CiteAs, EvidenceVariableCLassifier, E
 
 ## Changes from second ballot
 
+Adjustments were made to match the current (build) version of FHIR R6 as needed by adding or removing extensions upon FHIR version 6.0.0-ballot3.
+
+Extensions added include CompositionExtendedContactDetail, GuidelineRegistration, PublicationDate, RelatesToClassifier, and ResearchStudyIsLowInterventionTrial.
+
+For Profiles of ArtifactAssessment:
+
+The EvidenceAssessment Profile of ArtifactAssessment was added to include a content slice for the rating system. The CertaintyOfEvidence and RiskOfBias Profiles were changed to use EvidenceAssessment as the base. The RecommendationRating Profile was added using a base of EvidenceAssessment. The RecommendationJusfication Profile was modified to use a base of RecommendationRating.
+
+For Profiles of Composition:
+
+The EvidenceTableReportPackage Profile was removed and the ParticipantFlowReport, BaselineMeasureReport, and OutcomeMeasureReport Profiles were simplified and based on EvidenceReport.
+
+The ComparativeEvidenceReport and ComparativeEvidenceSynthesisReport Profiles can reference PlanDefinition or ActivityDefinition in addition to CohortDefinition ConceptualCohortDefinition in sections describing interventions and exposures.
+
+The GuidelineRegistryRecord Profile was added with a base of Guideline.
+
+The Recommendation Profile was simplified to remove the Summary and Recommendation Specification sections.
+
+For Profiles of EvidenceVariable:
+
+DichotomousIntendedOutcome and ParticipantFlowEvidenceVariable Profiles of EvidenceVariable set the handling element value to 'boolean' instead of 'dichotomous'.
+
+The ParticipantFlowReasonEvidenceVariable Profile was added.
+
+For Profiles of ResearchStudy:
+
+The CTISRecord Profile was renamed StudyRegistryRecord Profile.
 The M11ResearchStudy Profile was renamed StudyDesign Profile to improve coordination with the Vulcan UDP IG (Pharmaceutical Research Protocol IG).
+
+The StudyRegistrationRecord Profile was revised to use the ResearchStudyIsLowInterventionTrial Extension and to use the translation extension in condition.text
+
+The ResearchStudySupport Profile of DocumentReference was added.
+
 
 ## Acknowledgements
 
