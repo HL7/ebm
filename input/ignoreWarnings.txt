@@ -62,7 +62,7 @@ A definition for CodeSystem 'https://fevir.net/sevco' could not be found, so the
 Error from http://tx.fhir.org/r5: Unable to provide support for code system https://fevir.net/sevco version 2.0
 The code 'SEVCO:00002' is not valid in the system https://fevir.net/sevco version 2.0 (SEVCO:00002)
 A definition for CodeSystem 'https://fevir.net/sevco' version '2.0' could not be found, so the code cannot be validated. Valid versions: []
-The code 'SEVCO:00016' is not valid in the system https://fevir.net/sevco version 2.0 (SEVCO:00016)
+%' is not valid in the system https://fevir.net/sevco version 2.0 (SEVCO:%
 The code 'SEVCO:00017' is not valid in the system https://fevir.net/sevco version 2.0 (SEVCO:00017)
 The code 'SEVCO:00019' is not valid in the system https://fevir.net/sevco version 2.0 (SEVCO:00019)
 The code 'SEVCO:00020' is not valid in the system https://fevir.net/sevco version 2.0 (SEVCO:00020)
