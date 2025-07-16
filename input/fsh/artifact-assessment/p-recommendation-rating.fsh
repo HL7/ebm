@@ -30,10 +30,11 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * content ^slicing.discriminator.type = #value
 * content ^slicing.discriminator.path = "type"
 * content ^slicing.rules = #open
-* content contains strengthOfRecommendation 0..1 MS and directionOfRecommendation 0..1 MS and certaintyOfEvidence 0..1 MS
+* content contains strengthOfRecommendation 0..1 MS and directionOfRecommendation 0..1 MS and certaintyOfEvidence 0..1 MS and ratings 0..1
 * content[strengthOfRecommendation].type = https://fevir.net/resources/CodeSystem/179423#strength-of-recommendation "Strength of Recommendation"
 * content[directionOfRecommendation].type = https://fevir.net/resources/CodeSystem/179423#direction-of-recommendation "Direction of Recommendation"
 * content[certaintyOfEvidence].type = https://fevir.net/resources/CodeSystem/179423#certainty-of-evidence "Certainty of Evidence"
+* content[ratings].type = https://fevir.net/resources/CodeSystem/179423#ratings "Ratings"
 * content.classifier from recommendation-justification-classifier (preferred)
 * content.freeToShare
   * ^definition = "Acceptable to publicly share the content, specific to the associated content instance"
