@@ -105,6 +105,8 @@ No definition could be found for URL value 'section'
 No definition could be found for URL value 'relatesTo'
 No definition could be found for URL value 'overallSummary'
 
+# Suppressing warnings about unrecognized slices in Profiles of Composition -- the examples include additional data that are not part of the Profile constraints
+This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-measure-report|1.0.0-ballot2 (this may not be a problem, but you should check that it's not intended to match a slice)
 
 # Suppressing a warning about inability to validate versions of MedDRA. MedDRA is listed at terminology.hl7.org but the version at THO does not match the true business version which is important to share for actual data exchange.
 A definition for CodeSystem 'https://www.meddra.org' version '20.1' could not be found, so the code cannot be validated. Valid versions: []
