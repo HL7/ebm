@@ -88,6 +88,21 @@ No definition could be found for URL value 'https://www.ncbi.nlm.nih.gov/project
 No definition could be found for URL value 'https://ftp.ncbi.nlm.nih.gov/dbgap/studies/phs003190/phs003190.v1.p1'
 No definition could be found for URL value 'https://osf.io/urb6f/'
 
+# Suppressing warnings regarding ArtifactAssessment.content.path values that do not resolve -- simple element path values are internally valid but not presented as external URLs
+No definition could be found for URL value 'resourceType'
+No definition could be found for URL value 'meta'
+No definition could be found for URL value 'identifier'
+No definition could be found for URL value 'status'
+No definition could be found for URL value 'type'
+No definition could be found for URL value 'category'
+No definition could be found for URL value 'author'
+No definition could be found for URL value 'title'
+No definition could be found for URL value 'custodian'
+No definition could be found for URL value 'section'
+No definition could be found for URL value 'relatesTo'
+No definition could be found for URL value 'overallSummary'
+
+
 # Suppressing a warning about inability to validate versions of MedDRA. MedDRA is listed at terminology.hl7.org but the version at THO does not match the true business version which is important to share for actual data exchange.
 A definition for CodeSystem 'https://www.meddra.org' version '20.1' could not be found, so the code cannot be validated. Valid versions: []
 
