@@ -56,6 +56,7 @@ A definition for CodeSystem 'urn:oid:2.16.840.1.113883.6.238' could not be found
 A definition for CodeSystem 'https://fevir.net/sevco' could not be found, so the code cannot be validated
 A definition for CodeSystem 'https://fevir.net/sevco' version '2.0' could not be found, so the code cannot be validated. Valid versions: []
 %' is not valid in the system https://fevir.net/sevco version 2.0 (SEVCO:%
+The definition for the Code System with URI 'https://fevir.net/sevco' doesn't provide any codes so the code cannot be validated
 
 # Suppressing warnings regarding identifier.system URLs that do not match a known definition -- these URLs will be evaluated for listing with THO
 No definition could be found for URL value 'https://doi.org'
