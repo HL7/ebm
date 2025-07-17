@@ -5,6 +5,7 @@ Description: "Codes for use with the EvidenceAssessment Profile, to provide valu
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
+* ^status = #active
 * ^experimental = false
 * ^caseSensitive = false
 * ^content = #complete
