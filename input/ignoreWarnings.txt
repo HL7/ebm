@@ -88,6 +88,8 @@ No definition could be found for URL value 'https://fevir.net/resources/%
 No definition could be found for URL value 'https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs003190.v1.p1'
 No definition could be found for URL value 'https://ftp.ncbi.nlm.nih.gov/dbgap/studies/phs003190/phs003190.v1.p1'
 No definition could be found for URL value 'https://osf.io/urb6f/'
+No definition could be found for URL value 'https://fevir.net/FLI/DocumentForComposition%
+No definition could be found for URL value 'https://fevir.net/'
 
 # Suppressing warnings regarding ArtifactAssessment.content.path values that do not resolve -- simple element path values are internally valid but not presented as external URLs
 No definition could be found for URL value 'resourceType'
