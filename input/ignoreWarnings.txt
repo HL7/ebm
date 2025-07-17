@@ -9,6 +9,9 @@ The resource should declare its jurisdiction to match the package id (hl7.fhir.u
 # Suppressing the warnings about reference to jurisdiction elements (now deprecated) becuase errors in IG Publisher if jurisdiction elements are not present.
 Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|6.0.0-ballot3
 
+# Suppressing the warnings regarding binding to Medication Ingredient Strength Codes for Medication.ingredient.strengthQuantity as this appears to be relevant to strengthCodeableConcept and an artifact of strength[x] misapplication in the generation of warnings
+The code provided (http://unitsofmeasure.org#mg) is not in the value set 'Medication Ingredient Strength Codes' (http://hl7.org/fhir/ValueSet/medication-ingredientstrength|6.0.0-ballot3), and a code is recommended to come from this value set
+
 # Suppressing warnings about reference to experimental CodeSystem - the CodeSystem is experimental in R6, perhaps an error to be corrected
 Reference to experimental CodeSystem http://hl7.org/fhir/CodeSystem/fhirpath-types|6.0.0-ballot3
 
