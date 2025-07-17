@@ -75,6 +75,7 @@ No definition could be found for URL value 'https://fevir.net/FLI'
 No definition could be found for URL value 'https://clinicaltrials.gov'
 No definition could be found for URL value 'https://app.magicapp.org/#/guidelines'
 No definition could be found for URL value 'https://www.ncbi.nlm.nih.gov/books'
+No definition could be found for URL value 'https://orcid.org/'
 
 # Suppressing warnings regarding webLocation.url values that do not resolve - there is no expectation that external URL links in this part of a Citation would be registered for this IG check
 No definition could be found for URL value 'https://pubmed.ncbi.nlm.nih.gov/%
