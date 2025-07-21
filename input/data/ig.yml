@@ -2842,6 +2842,6 @@ name: EBMIG
 packageId: hl7.fhir.uv.ebm
 publisher: HL7 International / Clinical Decision Support
 resourceType: ImplementationGuide
-status: draft
+status: active
 url: http://hl7.org/fhir/uv/ebm/ImplementationGuide/hl7.fhir.uv.ebm
 version: 1.0.0-ballot2
