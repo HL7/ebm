@@ -169,6 +169,8 @@ New Extensions include AdditionalLanguage, CiteAs, EvidenceVariableCLassifier, E
 
 Adjustments were made to match the current (build) version of FHIR R6 as needed by adding or removing extensions upon FHIR version 6.0.0-ballot3.
 
+The following terminologies were moved from an external draft code system to be defined in EBMonFHIR IG based artifacts:  EBMonFHIRProfileNameCodeSystem and SearchStrategyCharacteristicCodeSystem.
+
 Extensions added include CompositionExtendedContactDetail, GuidelineRegistration, PublicationDate, RelatesToClassifier, and ResearchStudyIsLowInterventionTrial.
 
 For Profiles of ArtifactAssessment:
