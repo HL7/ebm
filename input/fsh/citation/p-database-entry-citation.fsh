@@ -4,7 +4,7 @@ Id: database-entry-citation
 Description: "Profile of Citation for Evidence Based Medicine IG. The DatabaseEntryCitation Profile is used for citations of a record within a database."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
-* ^extension[$ext-standards-status].valueCode = #draft
+* ^extension[$ext-standards-status].valueCode = #trial-use
 * citedArtifact
   * identifier
     * ^definition = "A formal identifier that is used to identify the cited database record when it is represented in other formats, or referenced in a specification, model, design or an instance." 

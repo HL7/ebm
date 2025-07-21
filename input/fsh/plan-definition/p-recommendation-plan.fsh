@@ -4,7 +4,7 @@ Id: recommendation-plan
 Description: "Profile of PlanDefinition for Evidence Based Medicine IG. The RecommendationPlan Profile is used for the implementable representation of a recommendation (such as that from a clinical practice guideline)."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
-* ^extension[$ext-standards-status].valueCode = #draft
+* ^extension[$ext-standards-status].valueCode = #trial-use
 * url 1..1 MS
 * version 1..1 MS
 * versionAlgorithm[x] MS

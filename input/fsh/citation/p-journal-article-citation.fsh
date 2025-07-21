@@ -4,7 +4,7 @@ Id: journal-article-citation
 Description: "Profile of Citation for Evidence Based Medicine IG. The JournalArticleCitation Profile is used for citations of an article published in a periodical venue classified as a journal."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
-* ^extension[$ext-standards-status].valueCode = #draft
+* ^extension[$ext-standards-status].valueCode = #trial-use
 * effectivePeriod 0..0
 * citedArtifact
   * classification 1..*

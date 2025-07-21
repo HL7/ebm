@@ -3,7 +3,7 @@ Id: research-study-systematic-review-eligibility-criteria
 Description: "Link to criteria for inclusion of studies in the systematic review."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
-* ^extension[$ext-standards-status].valueCode = #draft
+* ^extension[$ext-standards-status].valueCode = #trial-use
 * ^context.type = #element
 * ^context.expression = "ResearchStudy"
 * value[x] only Reference(SystematicReviewEligibilityCriteria)

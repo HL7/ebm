@@ -4,7 +4,7 @@ Id: study-design
 Description: "Profile of ResearchStudy for Evidence Based Medicine IG. The StudyDesign Profile is used to add extensions for additional expressions of study design features with the study protocol."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
-* ^extension[$ext-standards-status].valueCode = #draft
+* ^extension[$ext-standards-status].valueCode = #trial-use
 * extension contains $ext-author named author 0..*
 * extension contains RelatesToWithQuotation named RelatesToWithQuotation 0..*
 * extension contains ResearchStudySponsorConfidentialityStatement named confidentialityStatement 0..1

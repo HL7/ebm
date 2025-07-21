@@ -3,7 +3,7 @@ Id: characteristic-timing
 Description: "Timing in which the characteristic is determined or action is taken."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
-* ^extension[$ext-standards-status].valueCode = #draft
+* ^extension[$ext-standards-status].valueCode = #trial-use
 * ^context[0].type = #element
 * ^context[0].expression = "PlanDefinition.action"
 * ^context[1].type = #element

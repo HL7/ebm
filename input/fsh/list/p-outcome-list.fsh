@@ -4,7 +4,7 @@ Id: outcome-list
 Description: "Profile of List for Evidence Based Medicine IG. The OutcomeList Profile is used to provide a list of outcomes. The OutcomeList Profile is referenced in the EvidenceReportSubject Profile as a way to define the set of outcomes that an EvidenceReport is about."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
-* ^extension[$ext-standards-status].valueCode = #draft
+* ^extension[$ext-standards-status].valueCode = #trial-use
 * code.coding 1..1
 * code.coding = EBMonFHIRProfileNameCodeSystem#OutcomeList "OutcomeList"
 * code.text = "Outcome List"

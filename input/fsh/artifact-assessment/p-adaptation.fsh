@@ -4,7 +4,7 @@ Id: adaptation
 Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The Adaptation Profile is used for assessments of a knowledge artifact that are used to create a new knowledge artifact through acceptance, rejection or modification of the assessed artifact."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
-* ^extension[$ext-standards-status].valueCode = #draft
+* ^extension[$ext-standards-status].valueCode = #trial-use
 * extension contains $ext-url named url 0..1
 * extension contains $ext-description named description 0..1
 * extension contains $ext-author named author 0..*

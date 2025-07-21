@@ -4,7 +4,7 @@ Id: evidence-report-subject
 Description: "Profile of Group for Evidence Based Medicine IG. The EvidenceReportSubject Profile is used to define the subject of an EvidenceReport."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
-* ^extension[$ext-standards-status].valueCode = #draft
+* ^extension[$ext-standards-status].valueCode = #trial-use
 * combinationMethod = #all-of
 * characteristic ^slicing.discriminator.type = #value
 * characteristic ^slicing.discriminator.path = "code.text"

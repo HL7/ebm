@@ -3,7 +3,7 @@ Id: guideline-registration
 Description: "Dates for guideline registration activities."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
-* ^extension[$ext-standards-status].valueCode = #draft
+* ^extension[$ext-standards-status].valueCode = #trial-use
 * ^context.type = #element
 * ^context.expression = "Composition"
 * value[x] 0..0

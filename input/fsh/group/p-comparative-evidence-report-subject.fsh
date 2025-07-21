@@ -4,7 +4,7 @@ Id: comparative-evidence-report-subject
 Description: "Profile of Group for Evidence Based Medicine IG. The ComparativeEvidenceReportSubject Profile is used to define the subject of a ComparativeEvidenceReport."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
-* ^extension[$ext-standards-status].valueCode = #draft
+* ^extension[$ext-standards-status].valueCode = #trial-use
 * characteristic[population] 1..1
 * characteristic[population].code.text = "Population"
 * characteristic[population].valueReference only Reference(StudyGroup)

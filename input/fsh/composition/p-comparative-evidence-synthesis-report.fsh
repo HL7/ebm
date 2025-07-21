@@ -4,7 +4,7 @@ Id: comparative-evidence-synthesis-report
 Description: "Profile of Composition for Evidence Based Medicine IG. The ComparativeEvidenceSynthesisReport Profile is used for an evidence report including the intended population, intended exposure, intended comparator, and findings for any number of outcomes comparing the exposure to the comparator with observed study group, observed exposure group, and observed comparator group unique for each outcome."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
-* ^extension[$ext-standards-status].valueCode = #draft
+* ^extension[$ext-standards-status].valueCode = #trial-use
 * type.coding 1..1
 * type.coding = https://fevir.net/resources/CodeSystem/179423#ComparativeEvidenceSynthesisReport "ComparativeEvidenceSynthesisReport"
 * type.text = "Comparative Evidence Synthesis Report"

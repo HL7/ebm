@@ -4,7 +4,7 @@ Id: comment
 Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The Comment Profile is used for comments about a Resource that may be created independently from Resource creators."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
-* ^extension[$ext-standards-status].valueCode = #draft
+* ^extension[$ext-standards-status].valueCode = #trial-use
 * extension contains $ext-url named url 0..1
 * extension contains $ext-description named description 0..1
 * extension contains $ext-author named author 0..*

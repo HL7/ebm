@@ -4,7 +4,7 @@ Id: recommendation-rating
 Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The RecommendationRating Profile is used for expressing the classifications of a recommendation, such as from a clinical practice guideline. Common classifications include strength of recommendation, direction of recommendation, and certainty of evidence." 
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
-* ^extension[$ext-standards-status].valueCode = #draft
+* ^extension[$ext-standards-status].valueCode = #trial-use
 * identifier
   * ^definition = "A formal identifier that is used to identify this Recommendation Rating when it is represented in other formats, or referenced in a specification, model, design or an instance." 
   * ^short = "Additional identifier for the Recommendation Rating"

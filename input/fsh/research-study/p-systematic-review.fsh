@@ -4,7 +4,7 @@ Id: systematic-review
 Description: "Profile of ResearchStudy for Evidence Based Medicine IG. The SystematicReview Profile is used for a scientific study based on a protocol that includes search and selection of eligible studies, study quality assessment, data extraction, and synthesis."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
-* ^extension[$ext-standards-status].valueCode = #draft
+* ^extension[$ext-standards-status].valueCode = #trial-use
 * extension contains $ext-author named author 0..*
 * extension contains RelatesToWithQuotation named RelatesToWithQuotation 0..*
 * extension contains ResearchStudySearchStrategy named searchStrategy 0..*

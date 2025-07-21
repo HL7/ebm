@@ -4,7 +4,7 @@ Id: evidence-assessment
 Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The EvidenceAssessment Profile is used for expression of any aspect of the certainty or quality of an Evidence artifact."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
-* ^extension[$ext-standards-status].valueCode = #draft
+* ^extension[$ext-standards-status].valueCode = #trial-use
 * extension contains $ext-url named url 0..1
 * extension contains $ext-description named description 0..1
 * extension contains $ext-author named author 0..*

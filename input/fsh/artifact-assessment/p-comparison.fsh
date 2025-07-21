@@ -4,7 +4,7 @@ Id: comparison
 Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The Comparison Profile is used for assessments of similarities and differences between knowledge artifacts."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
-* ^extension[$ext-standards-status].valueCode = #draft
+* ^extension[$ext-standards-status].valueCode = #trial-use
 * extension contains ArtifactAssessmentCompared named comparedArtifact 0..*
 * identifier
   * ^definition = "A formal identifier that is used to identify this Comparison when it is represented in other formats, or referenced in a specification, model, design or an instance." 

@@ -3,7 +3,7 @@ Id: research-study-included-study
 Description: "Link to a research study included in the systematic review."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
-* ^extension[$ext-standards-status].valueCode = #draft
+* ^extension[$ext-standards-status].valueCode = #trial-use
 * ^context.type = #element
 * ^context.expression = "ResearchStudy"
 * value[x] only Reference(Citation or Composition or ResearchStudy)

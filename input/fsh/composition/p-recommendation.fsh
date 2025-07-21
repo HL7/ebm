@@ -4,7 +4,7 @@ Id: recommendation
 Description: "Profile of Composition for Evidence Based Medicine IG. The Recommendation Profile is used for the composition of a recommendation (such as that from a clinical practice guideline) and may be tightly related to a RecommendationPlan Profile of PlanDefinition and a RecommendationJustification Profile of ArtifactAssessment."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
-* ^extension[$ext-standards-status].valueCode = #draft
+* ^extension[$ext-standards-status].valueCode = #trial-use
 * type.coding 1..1
 * type.coding = https://fevir.net/resources/CodeSystem/179423#Recommendation "Recommendation"
 * section ^slicing.discriminator.type = #value

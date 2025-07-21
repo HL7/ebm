@@ -4,7 +4,7 @@ Id: soa-plandefinition
 Description: "Profile of PlanDefinition for temporary testing for coordination with M11 use."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
-* ^extension[$ext-standards-status].valueCode = #draft
+* ^extension[$ext-standards-status].valueCode = #trial-use
 * topic 0..0
 * action
   * extension contains CharacteristicTiming named timingRelativeTime 0..1
