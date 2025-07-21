@@ -5,4 +5,4 @@ Description: "Profile of Group for Evidence Based Medicine IG. The SearchStrateg
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
-* characteristic.code from $ebm-search-strategy-characteristic-code (extensible)
+* characteristic.code from SearchStrategyCharacteristic (extensible)

@@ -194,7 +194,7 @@ Profiles of **[ConceptualCohortDefinition][ConceptualCohortDefinition]** used fo
 
 The **[ConceptualExposureDefinition][ConceptualExposureDefinition]**, **[ConceptualComparatorDefinition][ConceptualComparatorDefinition]**, **[OutcomeDefinition][OutcomeDefinition]**, and **[MetaanalysisOutcomeDefinition][MetaanalysisOutcomeDefinition]** Profiles are Profiles of **[ConceptualCohortDefinition][ConceptualCohortDefinition]** used for the definition of evidence variables. These Profiles are not currently structurally different than **[ConceptualCohortDefinition][ConceptualCohortDefinition]** but are separated for future development in case of specialized developments for variable definitions.
 
-The **[SearchStrategy Profile][SearchStrategy]** is a Profile of **[ConceptualCohortDefinition][ConceptualCohortDefinition]** used for defining a literature search. The **[SearchStrategy Profile][SearchStrategy]** provides a SearchStrategyCharacteristicCode Value Set for use with the Group.characteristc.code element.
+The **[SearchStrategy Profile][SearchStrategy]** is a Profile of **[ConceptualCohortDefinition][ConceptualCohortDefinition]** used for defining a literature search. The **[SearchStrategy Profile][SearchStrategy]** provides a SearchStrategyCharacteristic Value Set for use with the Group.characteristc.code element.
 
 The **[ExposureGroup][ExposureGroup]** and **[ComparatorGroup][ComparatorGroup]** Profiles are Profiles of **[GroupR6][GroupR6]** used to support 'enumerated' groups.
 
