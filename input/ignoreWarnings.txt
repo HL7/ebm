@@ -115,6 +115,18 @@ A definition for CodeSystem 'https://www.meddra.org' version '20.1' could not be
 Constraint failed: eld-31: 'additionalBindings should have a key' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
 Constraint failed: eld-33: 'If there's more than one bindable type, it's usually an error for there to be a binding' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)
 
+# Suppressing warnings regarding multiple choices of profiles in references from contained resources to other contained resources -- the default option used for checking from the IG publisher is not the actual profile used in the examples and the actual profile is one of the other options
+Found multiple matching profiles for #BG000 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group|1.0.0-ballot2, http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group|1.0.0-ballot2, http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group|1.0.0-ballot2
+Found multiple matching profiles for #BG001 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group|1.0.0-ballot2, http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group|1.0.0-ballot2, http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group|1.0.0-ballot2
+Found multiple matching profiles for #BG002 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group|1.0.0-ballot2, http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group|1.0.0-ballot2, http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group|1.0.0-ballot2
+Found multiple matching profiles for #FG000 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group|1.0.0-ballot2, http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group|1.0.0-ballot2, http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group|1.0.0-ballot2
+Found multiple matching profiles for #FG001 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group|1.0.0-ballot2, http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group|1.0.0-ballot2, http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group|1.0.0-ballot2
+Details for #BG000 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group|1.0.0-ballot2
+Details for #BG001 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group|1.0.0-ballot2
+Details for #BG002 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group|1.0.0-ballot2
+Details for #FG000 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group|1.0.0-ballot2
+Details for #FG001 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group|1.0.0-ballot2
+
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 # (And include comments like this justifying why)
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
