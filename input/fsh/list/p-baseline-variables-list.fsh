@@ -6,7 +6,7 @@ Description: "Profile of List for Evidence Based Medicine IG. The BaselineVariab
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
 * code.coding 1..1
-* code.coding = https://fevir.net/resources/CodeSystem/179423#BaselineVariablesList "BaselineVariablesList"
+* code.coding = EBMonFHIRProfileNameCodeSystem#BaselineVariablesList "BaselineVariablesList"
 * code.text = "Baseline Variables List"
 * encounter 0..0
 * entry

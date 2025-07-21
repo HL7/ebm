@@ -6,7 +6,7 @@ Description: "Profile of List for Evidence Based Medicine IG. The OutcomeVariabl
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
 * code.coding 1..1
-* code.coding = https://fevir.net/resources/CodeSystem/179423#OutcomeVariablesList "OutcomeVariablesList"
+* code.coding = EBMonFHIRProfileNameCodeSystem#OutcomeVariablesList "OutcomeVariablesList"
 * code.text = "Outcome Variables List"
 * encounter 0..0
 * entry

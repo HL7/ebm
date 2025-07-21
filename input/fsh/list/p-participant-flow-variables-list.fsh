@@ -6,7 +6,7 @@ Description: "Profile of List for Evidence Based Medicine IG. The ParticipantFlo
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
 * code.coding 1..1
-* code.coding = https://fevir.net/resources/CodeSystem/179423#ParticipantFlowVariablesList "ParticipantFlowVariablesList"
+* code.coding = EBMonFHIRProfileNameCodeSystem#ParticipantFlowVariablesList "ParticipantFlowVariablesList"
 * code.text = "Participant Flow Variables List"
 * encounter 0..0
 * entry

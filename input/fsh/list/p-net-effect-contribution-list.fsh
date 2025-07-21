@@ -6,7 +6,7 @@ Description: "Profile of List for Evidence Based Medicine IG. The NetEffectContr
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #draft
 * code.coding 1..1
-* code.coding = https://fevir.net/resources/CodeSystem/179423#NetEffectContributionList "NetEffectContributionList"
+* code.coding = EBMonFHIRProfileNameCodeSystem#NetEffectContributionList "NetEffectContributionList"
 * code.text = "Net Effect Contributions List"
 * encounter 0..0
 * entry
