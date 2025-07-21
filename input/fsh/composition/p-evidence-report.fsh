@@ -19,7 +19,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
 * extension contains PublicationDate named publicationDate 0..1
 * subject
   * ^comment = "Reference a Citation Resource, ArtifactAssessment Resource (Classification Profile), Group Resource (EvidenceReportSubject Profile), ReserchStudy Resource, or any Resource to define a subject of this EvidenceReport."
-* attester.mode from EvidenceReportContributorRole (preferred)
+* attester.mode from http://terminology.hl7.org/ValueSet/contributor-role (preferred)
   * ^short = "reviewer | editor | endorser | informant | recorder"
 * relatesTo
   * extension contains RelatesToClassifier named classifier 0..1

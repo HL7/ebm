@@ -173,6 +173,8 @@ The following terminologies were moved from an external draft code system to be 
 
 Extensions added include CompositionExtendedContactDetail, GuidelineRegistration, PublicationDate, RelatesToClassifier, and ResearchStudyIsLowInterventionTrial.
 
+The EvidenceReportContributorRole Value Set was removed as the EvidenceReport Profile can now directly use the Contributor Role Value Set from THO.
+
 For Profiles of ArtifactAssessment:
 
 The EvidenceAssessment Profile of ArtifactAssessment was added to include a content slice for the rating system. The CertaintyOfEvidence and RiskOfBias Profiles were changed to use EvidenceAssessment as the base. The RecommendationRating Profile was added using a base of EvidenceAssessment. The RecommendationJusfication Profile was modified to use a base of RecommendationRating.
