@@ -85,31 +85,6 @@ The Composition.type value is set to a "Comparative Evidence Synthesis Report".
 ..A 'Summary of Findings' section is optional. The 'Summary of Findings' section entry element is limited to reference **[SummaryOfFindings Profile][SummaryOfFindings]**.
 
 
-### EvidenceTableReportPackage Profile of Composition Resource
-
-The **[EvidenceTableReportPackage Profile][EvidenceTableReportPackage]** is used for a base structure to extend the **[EvidenceReport Profile][EvidenceReport]** with Results sections where each results section instance has a focus on a measured variable and a reproducible structure to represent evidence about that measured variable for different groups.
-
-One or more 'Results' sections are required. Each 'Result' section has a focus with the reference type limited to **[VariableDefinition Profile][VariableDefinition]**. Each 'Result' section contains the following optional sections:
-
---an 'Evidence for Screened Group' section which limits the reference type for its entry content to **[NonComparativeEvidence Profile][NonComparativeEvidence]**.
-
---an 'Evidence for Enrolled Group' section which limits the reference type for its entry content to **[NonComparativeEvidence Profile][NonComparativeEvidence]**.
-
---an 'Evidence for Analyzed Group' section which limits the reference type for its entry content to **[NonComparativeEvidence Profile][NonComparativeEvidence]**.
-
---an 'Evidence with intervention alone' section which limits the reference type for its entry content to **[NonComparativeEvidence Profile][NonComparativeEvidence]**.
-
---an 'Evidence with comparator alone' section which limits the reference type for its entry content to **[NonComparativeEvidence Profile][NonComparativeEvidence]**.
-
---a 'Comparative Results' section which has a focus with the reference type limited to **[GroupAssignment Profile][GroupAssignment]**, and limits the reference type for its entry content to **[ComparativeEvidence Profile][ComparativeEvidence]**.
-
---a 'Population' section which limits the reference type for its entry content to Group Resource.
-
---an 'Intervention Group' section which limits the reference type for its entry content to Group Resource.
-
---an 'Comparator Group' section which limits the reference type for its entry content to Group Resource.
-
-
 ### BaselineMeasureReport Profile of Composition Resource
 
 The **[BaselineMeasureReport Profile][BaselineMeasureReport]** is a Profile of **[EvidenceReport Profile][EvidenceReport]** and is used for an evidence report including the findings for any number of baseline measures in a research study. This is often represented as "Table 1" in a journal article reporting research study results.
@@ -137,7 +112,7 @@ The section element (Results section slice) applies constraints in which section
 
 ### SummaryOfFindings Profile of Composition Resource
 
-The **[SummaryOfFindings Profile][SummaryOfFindings]** is a Profile of **[EvidenceTableReportPackage][EvidenceTableReportPackage]** and is used for an evidence report combining <b>Evidence</b> and <b>EvidenceVariable Resources</b>, organized around **[VariableDefinition][VariableDefinition]** (Profile of EvidenceVariable), to represent the summary of findings of comparative evidence.
+The **[SummaryOfFindings Profile][SummaryOfFindings]** is a Profile of **[EvidenceReport][EvidenceReport]** and is used for an evidence report combining <b>Evidence</b> and <b>EvidenceVariable Resources</b>, organized around **[VariableDefinition][VariableDefinition]** (Profile of EvidenceVariable), to represent the summary of findings of comparative evidence.
 
 The Composition.type value is set to a "Summary of Findings".
 

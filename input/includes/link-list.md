@@ -37,7 +37,6 @@
 [EvidenceReportPackage]: StructureDefinition-evidence-report-package.html
 [EvidenceReportSubject]: StructureDefinition-evidence-report-subject.html
 [EvidenceSynthesisEvidence]: StructureDefinition-evidence-synthesis-evidence.html
-[EvidenceTableReportPackage]: StructureDefinition-evidence-table-report-package.html
 [EvidenceVariableDefinition]: StructureDefinition-evidence-variable-definition.html
 [ExposureGroup]: StructureDefinition-exposure-group.html
 [GroupAssignment]: StructureDefinition-group-assignment.html
