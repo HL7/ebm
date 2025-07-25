@@ -15,14 +15,14 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
 * extension contains http://hl7.org/fhir/StructureDefinition/artifact-lastReviewDate|5.2.0 named lastReviewDate 0..1
 * extension contains http://hl7.org/fhir/StructureDefinition/artifact-effectivePeriod|5.2.0 named effectivePeriod 0..1
 * extension contains AdditionalLanguage named additionalLanguage 0..*
-* extension contains CompositionExtendedContactDetail named extendedContactDetail 0..*
-* extension contains PublicationDate named publicationDate 0..1
+* extension contains http://hl7.org/fhir/StructureDefinition/artifact-extended-contact-detail named extendedContactDetail 0..*
+* extension contains http://hl7.org/fhir/StructureDefinition/artifact-publicationDate named publicationDate 0..1
 * subject
   * ^comment = "Reference a Citation Resource, ArtifactAssessment Resource (Classification Profile), Group Resource (EvidenceReportSubject Profile), ReserchStudy Resource, or any Resource to define a subject of this EvidenceReport."
 * attester.mode from http://terminology.hl7.org/ValueSet/contributor-role (preferred)
   * ^short = "reviewer | editor | endorser | informant | recorder"
 * relatesTo
-  * extension contains RelatesToClassifier named classifier 0..1
+  * extension contains http://hl7.org/fhir/StructureDefinition/relatesto-classifier named classifier 0..1
 * relatesTo ^slicing.discriminator.type = #value
 * relatesTo ^slicing.discriminator.path = "type"
 * relatesTo ^slicing.rules = #open
