@@ -14,7 +14,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
 * extension contains http://hl7.org/fhir/StructureDefinition/artifact-approvalDate|5.2.0 named approvalDate 0..1
 * extension contains http://hl7.org/fhir/StructureDefinition/artifact-lastReviewDate|5.2.0 named lastReviewDate 0..1
 * extension contains http://hl7.org/fhir/StructureDefinition/artifact-effectivePeriod|5.2.0 named effectivePeriod 0..1
-* extension contains AdditionalLanguage named additionalLanguage 0..*
+* extension contains http://hl7.org/fhir/StructureDefinition/additional-language named additionalLanguage 0..*
 * extension contains http://hl7.org/fhir/StructureDefinition/artifact-extended-contact-detail named extendedContactDetail 0..*
 * extension contains http://hl7.org/fhir/StructureDefinition/artifact-publicationDate named publicationDate 0..1
 * subject
