@@ -1,5 +1,5 @@
 Profile: ComparativeEvidenceReportExpanded
-Parent: ComparativeEvidenceReport2
+Parent: ComparativeEvidenceReport
 Id: comparative-evidence-report-expanded
 Description: "Profile of Composition for Evidence Based Medicine IG. The ComparativeEvidenceReportExpanded Profile is used for an evidence report including the study group, exposure, comparator, and findings for any number of outcomes comparing the exposure to the comparator in the study group, expanded to also include reports of baseline characteristics and participant flow."
 * ^extension[$ext-fmm].valueInteger = 1
