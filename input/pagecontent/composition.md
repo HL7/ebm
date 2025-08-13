@@ -48,21 +48,36 @@ The **[ComparativeEvidenceReport Profile][ComparativeEvidenceReport]** is a Prof
 
 The Composition.type value is set to a "Comparative Evidence Report".
 
-..A 'Population' section is required with entries limited to reference **[StudyGroup Profile][StudyGroup]**. The 'Population' section contains 4 optional sections: a 'Screened Group' section with entries limited to reference **[StudyGroup Profile][StudyGroup]**, an 'Enrolled Group' section with entries limited to reference **[StudyGroup Profile][StudyGroup]**, an 'Analyzed Group' section with entries limited to reference **[StudyGroup Profile][StudyGroup]**, and a 'Population Description' section with entries limited to reference **[CohortDefinition Profile][CohortDefinition]** or **[ConceptualCohortDefinition Profile][ConceptualCohortDefinition]**.
-
-..An 'Intervention' section is required with at least 2 contained sections. The 'Intervention' section may be repeated. An 'Intervention Description' section is required with entries limited to reference **[ConceptualExposureDefinition Profile][ConceptualExposureDefinition]** or PlanDefinition or ActivityDefinition. An 'Intervention Group' section is required with entries limited to reference **[ExposureGroup Profile][ExposureGroup]**.
-
-..A 'Comparator' section is required with at least 2 contained sections. A 'Comparator Description' section is required with entries limited to reference **[ConceptualComparatorDefinition Profile][ConceptualComparatorDefinition]** or **[ConceptualExposureDefinition Profile][ConceptualExposureDefinition]** or PlanDefinition or ActivityDefinition. A 'Comparator Group' section is required with entries limited to reference **[ComparatorGroup Profile][ComparatorGroup]** or **[ExposureGroup Profile][ExposureGroup]**. A 'Group Assignment' section is optional with entries limited to **[GroupAssignment Profile][GroupAssignment]**.
-
 ..A 'Research Study' section is required with entries limited to reference <b>ResearchStudy Resource</b> or <b>Citation Resource</b> or <b>Composition Resource</b>.
 
-..A 'Baseline Measures' section is optional. The 'Baseline Measures' section entry element is limited to reference **[BaselineMeasureReport Profile][BaselineMeasureReport]** or **[BaselineVariablesList Profile][BaselineVariablesList]**. 
+..A 'Study Sample' section is required with entries limited to reference **[StudyGroup Profile][StudyGroup]**. The 'Study Sample' section may contain 1 optional 'Eligibility Criteria' section with entries limited to reference **[StudyEligibilityCriteria Profile][StudyEligibilityCriteria]**.
 
-..A 'Participant Flow' section is optional. The 'Participant Flow' section entry element is limited to reference **[ParticipantFlowReport Profile][ParticipantFlowReport]** or **[ParticipantFlowVariablesList Profile][ParticipantFlowVariablesList]**. 
+..An 'Intervention Group' section is required and may be repeated. An 'Intervention Group' section may contain 1 optional 'Intervention Description' section with entries limited to reference **[ConceptualExposureDefinition Profile][ConceptualExposureDefinition]** or PlanDefinition or ActivityDefinition.
 
-..An 'Outcome Measures' section is optional. The 'Outcome Measures' section entry element is limited to reference **[OutcomeMeasureReport Profile][OutcomeMeasureReport]** or **[OutcomeVariablesList Profile][OutcomeVariablesList]**. 
+..A 'Comparator Group' section is required and may contain 2 optional sections: a 'Comparator Description' section  with entries limited to reference **[ConceptualComparatorDefinition Profile][ConceptualComparatorDefinition]** or **[ConceptualExposureDefinition Profile][ConceptualExposureDefinition]** or PlanDefinition or ActivityDefinition, and a 'Group Assignment' section with entries limited to **[GroupAssignment Profile][GroupAssignment]**.
 
-..A 'Summary of Findings' section is optional. The 'Summary of Findings' section entry element is limited to reference **[SummaryOfFindings Profile][SummaryOfFindings]** or **[OutcomeVariablesList Profile][OutcomeVariablesList]**. 
+..An 'Outcome Measures' section is optional. The 'Outcome Measures' section entry element is limited to reference **[VariableDefinition Profile][VariableDefinition]** or **[OutcomeVariablesList Profile][OutcomeVariablesList]**. 
+
+..An 'Outcome Findings' section is optional. The 'Outcome Findings' section entry element is limited to reference **[OutcomeMeasureReport Profile][OutcomeMeasureReport]**. 
+
+..A 'Summary of Findings' section is optional. The 'Summary of Findings' section entry element is limited to reference **[SummaryOfFindings Profile][SummaryOfFindings]**. 
+
+### ComparativeEvidenceReportExpanded Profile of Composition Resource
+
+The **[ComparativeEvidenceReportExpanded Profile][ComparativeEvidenceReportExpanded]** is a Profile of **[ComparativeEvidenceReport][ComparativeEvidenceReport]** and is used for an evidence report including the study group, exposure, comparator, and findings for any number of outcomes comparing the exposure to the comparator in the study group, expanded to also include reports of baseline characteristics and participant flow.
+
+..A 'Screened Group' section is optional. The 'Screened Group' section entry element is limited to reference **[StudyGroup Profile][StudyGroup]**.
+
+..An 'Excluded Group' section is optional. The 'Excluded Group' section entry element is limited to reference **[StudyGroup Profile][StudyGroup]**.
+
+..A 'Baseline Measures' section is optional. The 'Baseline Measures' section entry element is limited to reference **[VariableDefinition Profile][VariableDefinition]** or **[BaselineVariablesList Profile][BaselineVariablesList]**. 
+
+..A 'Participant Flow Measures' section is optional. The 'Participant Flow Measures' section entry element is limited to reference **[ParticipantFlowEvidenceVariable Profile][ParticipantFlowEvidenceVariable]** or **[ParticipantFlowReasonEvidenceVariable Profile][ParticipantFlowReasonEvidenceVariable]** or **[ParticipantFlowVariablesList Profile][ParticipantFlowVariablesList]**. 
+
+..A 'Baseline Characteristics' section is optional. The 'Baseline Characteristics' section entry element is limited to reference **[BaselineMeasureReport Profile][BaselineMeasureReport]**. 
+
+..A 'Participant Flow' section is optional. The 'Participant Flow' section entry element is limited to reference **[ParticipantFlowReport Profile][ParticipantFlowReport]**. 
+
 
 ### ComparativeEvidenceSynthesisReport Profile of Composition Resource
 

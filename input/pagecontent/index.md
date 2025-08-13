@@ -185,9 +185,17 @@ The EvidenceTableReportPackage Profile was removed and the ParticipantFlowReport
 
 The ComparativeEvidenceReport and ComparativeEvidenceSynthesisReport Profiles can reference PlanDefinition or ActivityDefinition in addition to CohortDefinition ConceptualCohortDefinition in sections describing interventions and exposures.
 
+The ComparativeEvidenceReport Profile was modified to include a 'Study Sample' section instead of a 'Population' section and simplify its suggested contained sections to an "Eligibility Criteria' section, simplify the 'Intervention' and 'Comparator' sections to become 'Intervention Group' and 'Compartor Group' sections, remove the 'Baseline Measures' and 'Participant Flow' sections, and separate the 'Outcome Measures' section into an 'Outcome Measures' section and an 'Outcome Findings' section.
+
+A ComparativeEvidenceReportExpanded Profile was added to use ComparativeEvidenceReport as a base and add sections for 'Screened Group', 'Excluded Group', 'Baseline Measures', 'Participant Flow Measures', 'Baseline Characteristics', and 'Participant Flow'.
+
 The GuidelineRegistryRecord Profile was added with a base of Guideline.
 
 The Recommendation Profile was simplified to remove the Summary and Recommendation Specification sections.
+
+For Profiles of Evidence:
+
+The NetEffectEstimate Profile was modified to represent the 'Group of Evidence' (NetEffectContributions Profile of Group) as an outcome instead of a population in the variableDefintion, to allow multiple confidence intervals, and to add an attribute estimate for the 'number needed to treat'.
 
 For Profiles of EvidenceVariable:
 
