@@ -1,1 +1,1 @@
-See [Understanding the Group Resource](group.html) for additional information.
+See [Understanding the Group Resource](group.html) for additional information. An example from the QUARTET USA trial will be demonstrated.
