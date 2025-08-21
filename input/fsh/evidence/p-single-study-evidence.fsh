@@ -5,5 +5,6 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The SingleStud
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #trial-use
+* extension contains ArtifactPublicationStatus named publicationStatus 0..1
 * synthesisType 1..1
 * synthesisType = $cs-synthesis-type#NotApplicable "not applicable"

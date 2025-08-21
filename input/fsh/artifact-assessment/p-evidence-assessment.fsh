@@ -10,6 +10,7 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * extension contains $ext-author named author 0..*
 * extension contains $ext-useContext named useContext 0..*
 * extension contains RelatesToWithQuotation named RelatesToWithQuotation 0..*
+* extension contains ArtifactPublicationStatus named publicationStatus 0..1
 * identifier
   * ^definition = "A formal identifier that is used to identify this EvidenceAssessment when it is represented in other formats, or referenced in a specification, model, design or an instance." 
   * ^short = "Additional identifier for the EvidenceAssessment"

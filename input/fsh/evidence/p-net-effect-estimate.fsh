@@ -5,6 +5,7 @@ Description: "Profile of Evidence for Evidence Based Medicine IG. The NetEffectE
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #trial-use
+* extension contains ArtifactPublicationStatus named publicationStatus 0..1
 * variableDefinition 3..*
 * variableDefinition ^slicing.discriminator.type = #value
 * variableDefinition ^slicing.discriminator.path = "variableRole"

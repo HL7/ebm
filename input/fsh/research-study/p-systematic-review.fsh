@@ -5,6 +5,7 @@ Description: "Profile of ResearchStudy for Evidence Based Medicine IG. The Syste
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #trial-use
+* extension contains ArtifactPublicationStatus named publicationStatus 0..1
 * extension contains $ext-author named author 0..*
 * extension contains RelatesToWithQuotation named RelatesToWithQuotation 0..*
 * extension contains ResearchStudySearchStrategy named searchStrategy 0..*

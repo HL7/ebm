@@ -5,6 +5,7 @@ Description: "Profile of Library for Evidence Based Medicine IG. The SearchResul
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #trial-use
+* extension contains ArtifactPublicationStatus named publicationStatus 0..1
 * type = http://terminology.hl7.org/CodeSystem/library-type#asset-collection "Asset Collection"
 * subjectReference only Reference(SearchStrategy)
 * topic 0..0

@@ -17,6 +17,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
 * extension contains http://hl7.org/fhir/StructureDefinition/additional-language named additionalLanguage 0..*
 * extension contains http://hl7.org/fhir/StructureDefinition/artifact-extended-contact-detail named extendedContactDetail 0..*
 * extension contains http://hl7.org/fhir/StructureDefinition/artifact-publicationDate named publicationDate 0..1
+* extension contains ArtifactPublicationStatus named publicationStatus 0..1
 * subject
   * ^comment = "Reference a Citation Resource, ArtifactAssessment Resource (Classification Profile), Group Resource (EvidenceReportSubject Profile), ReserchStudy Resource, or any Resource to define a subject of this EvidenceReport."
 * attester.mode from http://terminology.hl7.org/ValueSet/contributor-role (preferred)

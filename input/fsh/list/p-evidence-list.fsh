@@ -5,6 +5,7 @@ Description: "Profile of List for Evidence Based Medicine IG. The EvidenceList P
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #trial-use
+* extension contains ArtifactPublicationStatus named publicationStatus 0..1
 * code.coding 1..1
 * code.coding = EBMonFHIRProfileNameCodeSystem#EvidenceList "EvidenceList"
 * code.text = "Evidence List"

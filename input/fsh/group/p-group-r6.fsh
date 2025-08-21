@@ -10,6 +10,7 @@ Description: "Profile of Group for Evidence Based Medicine IG. The GroupR6 Profi
 * extension contains RelatesTo named relatesTo 0..*
 * extension contains RelatesToWithQuotation named RelatesToWithQuotation 0..*
 * extension contains $ext-characteristic-expression named characteristicExpression 0..1
+* extension contains ArtifactPublicationStatus named publicationStatus 0..1
 
   
   

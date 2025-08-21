@@ -5,6 +5,7 @@ Description: "Profile of PlanDefinition for Evidence Based Medicine IG. The Reco
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #trial-use
+* extension contains ArtifactPublicationStatus named publicationStatus 0..1
 * url 1..1 MS
 * version 1..1 MS
 * versionAlgorithm[x] MS
