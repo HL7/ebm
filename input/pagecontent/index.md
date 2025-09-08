@@ -189,8 +189,6 @@ The ComparativeEvidenceReport Profile was modified to include a 'Study Sample' s
 
 A ComparativeEvidenceReportExpanded Profile was added to use ComparativeEvidenceReport as a base and add sections for 'Screened Group', 'Excluded Group', 'Baseline Measures', 'Participant Flow Measures', 'Baseline Characteristics', and 'Participant Flow'.
 
-The GuidelineRegistryRecord Profile was added with a base of Guideline.
-
 The Recommendation Profile was simplified to remove the Summary and Recommendation Specification sections.
 
 For Profiles of Evidence:

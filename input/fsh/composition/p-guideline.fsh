@@ -5,6 +5,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Guideli
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #trial-use
+* extension contains GuidelineRegistration named registrationStatus 0..*
 * type.coding 1..1
 * type.coding = https://fevir.net/resources/CodeSystem/179423#Guideline "Guideline"
 * section ^slicing.discriminator.type = #value
