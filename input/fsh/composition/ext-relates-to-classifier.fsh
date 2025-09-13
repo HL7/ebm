@@ -10,7 +10,7 @@ Description: "A classifier of the target artifact in a relatesTo element."
 * ^context[1].type = #element
 * ^context[1].expression = "Citation.relatesTo"
 * ^context[2].type = #element
-* ^context[2].expression = "Evdence.relatesTo"
+* ^context[2].expression = "Evidence.relatesTo"
 * ^context[3].type = #element
 * ^context[3].expression = "EvidenceVariable.relatesTo"
 * ^context[4].type = #element
