@@ -11,7 +11,11 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Partici
 * section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code.coding"
 * section ^slicing.rules = #open
-* section contains results-flow 0..* MS
+* section contains groups 0..1 and results-flow 0..* MS
+* section[groups].code.coding 1..1
+* section[groups].code.coding = https://fevir.net/resources/CodeSystem/179423#groups "Groups"
+* section[groups]
+  * entry only Reference(Group or EvidenceVariable or List)
 * section[results-flow].code.coding 1..1
 * section[results-flow].code.coding = https://fevir.net/resources/CodeSystem/179423#results "Results"
 * section[results-flow]

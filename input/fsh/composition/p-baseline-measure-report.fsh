@@ -11,7 +11,11 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Baselin
 * section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code.coding"
 * section ^slicing.rules = #open
-* section contains results-baseline 0..* MS
+* section contains groups 0..1 and results-baseline 0..* MS
+* section[groups].code.coding 1..1
+* section[groups].code.coding = https://fevir.net/resources/CodeSystem/179423#groups "Groups"
+* section[groups]
+  * entry only Reference(Group or EvidenceVariable or List)
 * section[results-baseline].code.coding 1..1
 * section[results-baseline].code.coding = https://fevir.net/resources/CodeSystem/179423#results "Results"
 * section[results-baseline]
