@@ -171,7 +171,7 @@ Adjustments were made to match the current (build) version of FHIR R6 as needed 
 
 The following terminologies were moved from an external draft code system to be defined in EBMonFHIR IG based artifacts:  EBMonFHIRProfileNameCodeSystem and SearchStrategyCharacteristicCodeSystem.
 
-Extensions added include CompositionExtendedContactDetail, GuidelineRegistration, PublicationDate, RelatesToClassifier, and ResearchStudyIsLowInterventionTrial.
+Extensions added include ArtifactPublicationStatus, GuidelineRegistration, RelatesToClassifier, and ResearchStudyIsLowInterventionTrial. Extensions removed (in favor of use of the FHIR Extensions Pack) include AdditionalLanguage.
 
 The EvidenceReportContributorRole Value Set was removed as the EvidenceReport Profile can now directly use the Contributor Role Value Set from THO.
 
