@@ -18,9 +18,6 @@ The code provided (http://unitsofmeasure.org#mg) is not in the value set 'Medica
 # Suppressing warnings about reference to experimental CodeSystem - the CodeSystem is experimental in R6, perhaps an error to be corrected
 Reference to experimental CodeSystem http://hl7.org/fhir/CodeSystem/fhirpath-types|6.0.0-ballot3
 
-# Suppressing warnings about reference to experimental CodeSystem - the CodeSystem is experimental in the Extensions pack, perhaps an error to be corrected
-Reference to experimental CodeSystem http://hl7.org/fhir/research-study-registration-activity|5.2.0
-
 # Suppressing warnings about unknown Code System URIs where these are clearly labeled as examples in the URI
 A definition for CodeSystem 'http://spor.ema.europa.eu/v1/example-reason' could not be found, so the code cannot be validated
 A definition for CodeSystem 'http://example.org' could not be found, so the code cannot be validated
@@ -46,6 +43,9 @@ Reference to draft CodeSystem http://hl7.org/fhir/citation-artifact-classifier|6
 # Suppressing message that a CodeSystem is draft (as FHIR-53093 submitted to change it to trial-use)
 Reference to draft CodeSystem http://hl7.org/fhir/definition-method|6.0.0-ballot3
 
+# Suppressing message that a CodeSystem is experimental (as FHIR-53094 submitted to change it to trial-use, not experimental)
+Reference to experimental CodeSystem http://hl7.org/fhir/research-study-registration-activity|5.3.0-ballot-tc1
+
 # Suppressing message that a slice is not found in a base Profile (but it is used in a derivative Profile) in a Resource mapped to 2 Profiles
 This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report-package|1.0.0-ballot2 (this may not be a problem, but you should check that it's not intended to match a slice)
 
@@ -63,7 +63,6 @@ A definition for CodeSystem 'urn:oid:2.16.840.1.113883.6.238' could not be found
 
 # Suppressing warnings about recognizing SEVCO as a CodeSystem - SEVCO was approved 2025-02-24 by TSMG for listing with THO
 A definition for CodeSystem 'https://fevir.net/sevco' could not be found, so the code cannot be validated
-A definition for CodeSystem 'https://fevir.net/sevco' version '2.0' could not be found, so the code cannot be validated. Valid versions: []
 %' is not valid in the system https://fevir.net/sevco version 2.0 (SEVCO:%
 The definition for the Code System with URI 'https://fevir.net/sevco' doesn't provide any codes so the code cannot be validated
 
@@ -113,9 +112,6 @@ No definition could be found for URL value 'overallSummary'
 
 # Suppressing warnings about unrecognized slices in Profiles of Composition -- the examples include additional data that are not part of the Profile constraints
 This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-measure-report|1.0.0-ballot2 (this may not be a problem, but you should check that it's not intended to match a slice)
-
-# Suppressing a warning about inability to validate versions of MedDRA. MedDRA is listed at terminology.hl7.org but the version at THO does not match the true business version which is important to share for actual data exchange.
-A definition for CodeSystem 'https://www.meddra.org' version '20.1' could not be found, so the code cannot be validated. Valid versions: []
 
 # Suppressing warnings about additionalBindings constraints that do not appear to be a result of IG content
 Constraint failed: eld-31: 'additionalBindings should have a key' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
