@@ -43,6 +43,9 @@ Unknown Code 'C49487' in the CodeSystem 'http://ncicb.nci.nih.gov/xml/owl/EVS/Th
 Reference to draft CodeSystem http://hl7.org/fhir/characteristic-offset|6.0.0-ballot3
 Reference to draft CodeSystem http://hl7.org/fhir/citation-artifact-classifier|6.0.0-ballot3
 
+# Suppressing message that a CodeSystem is draft (as FHIR-53093 submitted to change it to trial-use)
+Reference to draft CodeSystem http://hl7.org/fhir/definition-method|6.0.0-ballot3
+
 # Suppressing message that a slice is not found in a base Profile (but it is used in a derivative Profile) in a Resource mapped to 2 Profiles
 This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report-package|1.0.0-ballot2 (this may not be a problem, but you should check that it's not intended to match a slice)
 
