@@ -11,7 +11,7 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The DatabaseEn
     * ^short = "Unique identifier. May include DOI, FOI, Database Accession Number, etc"
   * publicationForm
     * publishedIn
-      * type = http://hl7.org/fhir/published-in-type#D019991 "Database"
+      * type = http://terminology.hl7.org/CodeSystem/published-in-type#D019991 "Database"
       * identifier
         * ^definition = "A formal identifier that is used to identify the database when it is represented in other formats, or referenced in a specification, model, design or an instance." 
         * ^short = "Unique identifier."
@@ -33,8 +33,8 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The DatabaseEn
     * classifier[databaseEntry].coding 1..1
     * classifier[databaseEntry].coding = https://fevir.net/resources/CodeSystem/179423#classified-as-database-entry "Database Entry"
     * classifier[fhirResource].coding 1..1
-    * classifier[fhirResource].coding = http://hl7.org/fhir/citation-artifact-classifier#fhir-resource "FHIR Resource"
+    * classifier[fhirResource].coding = http://terminology.hl7.org/CodeSystem/citation-artifact-classifier#fhir-resource "FHIR Resource"
   * classification[definedInText].type.coding 1..1
   * classification[definedInText].type.coding = https://fevir.net/resources/CodeSystem/179423#defined-in-text "Defined in text"
   * classification[fhirResourceType].type.coding 1..1
-  * classification[fhirResourceType].type.coding = http://hl7.org/fhir/citation-artifact-classifier#fhir-resource "FHIR Resource"
+  * classification[fhirResourceType].type.coding = http://terminology.hl7.org/CodeSystem/citation-artifact-classifier#fhir-resource "FHIR Resource"

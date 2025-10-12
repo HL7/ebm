@@ -31,7 +31,7 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The DatabaseCi
     * classifier ^slicing.rules = #open
     * classifier contains database 1..1 MS
     * classifier[database].coding 1..1
-    * classifier[database].coding = http://hl7.org/fhir/citation-artifact-classifier#D019991 "Database"
+    * classifier[database].coding = http://terminology.hl7.org/CodeSystem/citation-artifact-classifier#D019991 "Database"
   * classification[definedInText].type.coding 1..1
   * classification[definedInText].type.coding = https://fevir.net/resources/CodeSystem/179423#defined-in-text "Defined in text"
 

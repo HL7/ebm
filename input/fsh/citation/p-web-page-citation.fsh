@@ -32,6 +32,6 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The WebPageCit
     * classifier ^slicing.rules = #open
     * classifier contains webpage 1..1 MS
     * classifier[webpage].coding 1..1
-    * classifier[webpage].coding = http://hl7.org/fhir/citation-artifact-classifier#webpage "Webpage"
+    * classifier[webpage].coding = http://terminology.hl7.org/CodeSystem/citation-artifact-classifier#webpage "Webpage"
   * classification[definedInText].type.coding 1..1
   * classification[definedInText].type.coding = https://fevir.net/resources/CodeSystem/179423#defined-in-text "Defined in text"

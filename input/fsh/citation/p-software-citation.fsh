@@ -12,7 +12,7 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The SoftwareCi
   * publicationForm
     * publishedIn
       * type
-        * ^comment = "often coded with system http://hl7.org/fhir/published-in-type, code D019991, and display Database"
+        * ^comment = "often coded with system http://terminology.hl7.org/CodeSystem/published-in-type, code D019991, and display Database"
       * identifier
         * ^definition = "A formal identifier that is used to identify the database when it is represented in other formats, or referenced in a specification, model, design or an instance." 
         * ^short = "Unique identifier."
@@ -32,7 +32,7 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The SoftwareCi
     * classifier ^slicing.rules = #open
     * classifier contains software 1..1 MS
     * classifier[software].coding 1..1
-    * classifier[software].coding = http://hl7.org/fhir/citation-artifact-classifier#executable-app "Executable app"
+    * classifier[software].coding = http://terminology.hl7.org/CodeSystem/citation-artifact-classifier#executable-app "Executable app"
   * classification[definedInText].type.coding 1..1
   * classification[definedInText].type.coding = https://fevir.net/resources/CodeSystem/179423#defined-in-text "Defined in text"
 //TODO - create support for how to handle the file type (e.g. .js or .py) for the software, e.g. citedArtifact.classification or specific extension

@@ -31,11 +31,11 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The BookCitati
     * classifier ^slicing.rules = #open
     * classifier contains book 1..1 MS
     * classifier[book].coding 1..1
-    * classifier[book].coding = http://hl7.org/fhir/citation-artifact-classifier#D001877 "Book"
+    * classifier[book].coding = http://terminology.hl7.org/CodeSystem/citation-artifact-classifier#D001877 "Book"
   * classification[publishingModel].type.coding 1..1
-  * classification[publishingModel].type.coding = http://hl7.org/fhir/cited-artifact-classification-type#publishing-model "Publishing Model"
+  * classification[publishingModel].type.coding = http://terminology.hl7.org/CodeSystem/cited-artifact-classification-type#publishing-model "Publishing Model"
   * classification[publicationType].type.coding 1..1
-  * classification[publicationType].type.coding = http://hl7.org/fhir/cited-artifact-classification-type#publication-type "Publication type"
+  * classification[publicationType].type.coding = http://terminology.hl7.org/CodeSystem/cited-artifact-classification-type#publication-type "Publication type"
   * classification[definedInText].type.coding 1..1
   * classification[definedInText].type.coding = https://fevir.net/resources/CodeSystem/179423#defined-in-text "Defined in text"
   

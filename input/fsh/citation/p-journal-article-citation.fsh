@@ -21,20 +21,20 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The JournalArt
     * classifier ^slicing.rules = #open
     * classifier contains journalArticle 1..1 MS
     * classifier[journalArticle].coding 1..1
-    * classifier[journalArticle].coding = http://hl7.org/fhir/citation-artifact-classifier#D016428 "Journal Article"
+    * classifier[journalArticle].coding = http://terminology.hl7.org/CodeSystem/citation-artifact-classifier#D016428 "Journal Article"
   * classification[publishingModel].type.coding 1..1
-  * classification[publishingModel].type.coding = http://hl7.org/fhir/cited-artifact-classification-type#publishing-model "Publishing Model"
+  * classification[publishingModel].type.coding = http://terminology.hl7.org/CodeSystem/cited-artifact-classification-type#publishing-model "Publishing Model"
   * classification[publicationType].type.coding 1..1
-  * classification[publicationType].type.coding = http://hl7.org/fhir/cited-artifact-classification-type#publication-type "Publication type"
+  * classification[publicationType].type.coding = http://terminology.hl7.org/CodeSystem/cited-artifact-classification-type#publication-type "Publication type"
   * classification[citationSubset].type.coding 1..1
-  * classification[citationSubset].type.coding = http://hl7.org/fhir/cited-artifact-classification-type#citation-subset "Citation subset" 
+  * classification[citationSubset].type.coding = http://terminology.hl7.org/CodeSystem/cited-artifact-classification-type#citation-subset "Citation subset" 
   * classification[studyDesign].type.coding 1..1
   * classification[studyDesign].type.coding = https://fevir.net/resources/CodeSystem/179423#study-design "Study Design"
   * classification[definedInText].type.coding 1..1
   * classification[definedInText].type.coding = https://fevir.net/resources/CodeSystem/179423#defined-in-text "Defined in text"
   * classification[meshHeading].type.coding 1..1
-  * classification[meshHeading].type.coding = http://hl7.org/fhir/cited-artifact-classification-type#mesh-heading "MeSH heading"
+  * classification[meshHeading].type.coding = http://terminology.hl7.org/CodeSystem/cited-artifact-classification-type#mesh-heading "MeSH heading"
   * classification[keyword].type.coding 1..1
-  * classification[keyword].type.coding = http://hl7.org/fhir/cited-artifact-classification-type#keyword "Keyword"
+  * classification[keyword].type.coding = http://terminology.hl7.org/CodeSystem/cited-artifact-classification-type#keyword "Keyword"
   * classification[chemical].type.coding 1..1
-  * classification[chemical].type.coding = http://hl7.org/fhir/cited-artifact-classification-type#chemical "Chemical"
+  * classification[chemical].type.coding = http://terminology.hl7.org/CodeSystem/cited-artifact-classification-type#chemical "Chemical"

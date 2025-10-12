@@ -12,7 +12,7 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The DatasetCit
   * publicationForm
     * publishedIn
       * type
-        * ^comment = "often coded with system http://hl7.org/fhir/published-in-type, code D019991, and display Database"
+        * ^comment = "often coded with system http://terminology.hl7.org/CodeSystem/published-in-type, code D019991, and display Database"
       * identifier
         * ^definition = "A formal identifier that is used to identify the database when it is represented in other formats, or referenced in a specification, model, design or an instance." 
         * ^short = "Unique identifier."
@@ -32,7 +32,7 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The DatasetCit
     * classifier ^slicing.rules = #open
     * classifier contains dataset 1..1 MS
     * classifier[dataset].coding 1..1
-    * classifier[dataset].coding = http://hl7.org/fhir/citation-artifact-classifier#D064886 "Dataset"
+    * classifier[dataset].coding = http://terminology.hl7.org/CodeSystem/citation-artifact-classifier#D064886 "Dataset"
   * classification[studyDesign].type.coding 1..1
   * classification[studyDesign].type.coding = https://fevir.net/resources/CodeSystem/179423#study-design "Study Design"
   * classification[definedInText].type.coding 1..1

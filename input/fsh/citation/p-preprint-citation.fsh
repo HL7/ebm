@@ -20,7 +20,7 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The PreprintCi
     * classifier ^slicing.rules = #open
     * classifier contains preprint 1..1 MS
     * classifier[preprint].coding 1..1
-    * classifier[preprint].coding = http://hl7.org/fhir/citation-artifact-classifier#D000076942 "Preprint"
+    * classifier[preprint].coding = http://terminology.hl7.org/CodeSystem/citation-artifact-classifier#D000076942 "Preprint"
   * classification[studyDesign].type.coding 1..1
   * classification[studyDesign].type.coding = https://fevir.net/resources/CodeSystem/179423#study-design "Study Design"
   * classification[definedInText].type.coding 1..1
