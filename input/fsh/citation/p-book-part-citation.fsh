@@ -11,7 +11,7 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The BookPartCi
     * ^short = "Unique identifier. May include Bookshelf ID, DOI, etc"
   * publicationForm
     * publishedIn
-      * type = http://hl7.org/fhir/published-in-type#D001877 "Book"
+      * type = http://terminology.hl7.org/CodeSystem/published-in-type#D001877 "Book"
       * identifier
         * ^definition = "A formal identifier that is used to identify the book when it is represented in other formats, or referenced in a specification, model, design or an instance." 
         * ^short = "Unique identifier. May include ISBN, Bookshelf ID, GTIN, DOI, PMID, etc"
@@ -33,9 +33,9 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The BookPartCi
     * classifier[bookPart].coding 1..1
     * classifier[bookPart].coding = https://fevir.net/resources/CodeSystem/179423#classified-as-book-part "Book Part"
   * classification[publishingModel].type.coding 1..1
-  * classification[publishingModel].type.coding = http://hl7.org/fhir/cited-artifact-classification-type#publishing-model "Publishing Model"
+  * classification[publishingModel].type.coding = http://terminology.hl7.org/CodeSystem/cited-artifact-classification-type#publishing-model "Publishing Model"
   * classification[publicationType].type.coding 1..1
-  * classification[publicationType].type.coding = http://hl7.org/fhir/cited-artifact-classification-type#publication-type "Publication type"
+  * classification[publicationType].type.coding = http://terminology.hl7.org/CodeSystem/cited-artifact-classification-type#publication-type "Publication type"
   * classification[definedInText].type.coding 1..1
   * classification[definedInText].type.coding = https://fevir.net/resources/CodeSystem/179423#defined-in-text "Defined in text"
   * contributorship.entry.role
