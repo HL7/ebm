@@ -277,6 +277,9 @@ Description: "Profile Names in the Evidence Based Medicine on FHIR (EBMonFHIR) I
 * ^concept[89].code = #WebPageCitation
 * ^concept[89].display = "WebPageCitation"
 * ^concept[89].definition = "Profile of Citation for Evidence Based Medicine IG. The WebPageCitation Profile is used for citations of a web page or website, typically when there is not another type being used to classify the cited artifact."
+* ^concept[90].code = #AbsenceOfExposureDefinition
+* ^concept[90].display = "AbsenceOfExposureDefinition"
+* ^concept[90].definition = " Profile of Group for Evidence Based Medicine IG. The AbsenceOfExposureDefinition Profile is used to constrain the ConceptualComparatorDefinition Profile to a single characteristic of not being exposed to a ConceptualExposureDefinition Profile instance."
 
 
 

@@ -77,6 +77,7 @@ Profiles of <b>Group Resource</b> include:
   - <b>ConceptualCohortDefinition</b> -- Profiles of <b>ConceptualCohortDefinition</b> include:
     - Profiles of <b>ConceptualCohortDefinition</b> used for the inclusion and exclusion criteria of specific conceptual groups include <b>SystematicReviewEligibilityCriteria</b> (for a systematic review) and <b>MetaanalysisEligibilityCriteria</b> (for a statistical meta-analysis). These Profiles are not currently structurally different than <b>ConceptualCohortDefinition</b> but are separated for future development in case of specialized developments for eligibility criteria.
     - <b>ConceptualExposureDefinition</b>, <b>ConceptualComparatorDefinition</b>, <b>OutcomeDefinition</b>, and <b>MetaanalysisOutcomeDefinition</b> are Profiles of <b>ConceptualCohortDefinition</b> used for the definition of evidence variables. These Profiles are not currently structurally different than <b>ConceptualCohortDefinition</b> but are separated for future development in case of specialized developments for variable definitions.
+      - <b>AbsenceOfExposureDefinition</b> is a Profile of <b>ConceptualComparatorDefinition</b>
     - <b>SearchStrategy</b> (for a literature search)
     - <b>EvidenceReportSubject</b> is used to define the subject of an <b>EvidenceReport</b>. A Profile of <b>EvidenceReportSubject</b> is:
       - <b>ComparativeEvidenceReportSubject</b>
@@ -209,6 +210,10 @@ The M11ResearchStudy Profile was renamed StudyDesign Profile to improve coordina
 The StudyRegistrationRecord Profile was revised to use the ResearchStudyIsLowInterventionTrial Extension and to use the translation extension in condition.text
 
 The ResearchStudySupport Profile of DocumentReference was added.
+
+For Profiles of Group:
+
+The AbsenceOfExposureDefinition Profile was added.
 
 
 ## Acknowledgements

@@ -1,3 +1,4 @@
+[AbsenceOfExposureDefinition]: StructureDefinition-absence-of-exposure-definition.html
 [Adaptation]: StructureDefinition-adaptation.html
 [ArtifactAssessmentCompared]: StructureDefinition-artifact-assessment-compared.html
 [ArtifactAssessmentDateAsRating]: StructureDefinition-artifact-assessment-date-as-rating.html
