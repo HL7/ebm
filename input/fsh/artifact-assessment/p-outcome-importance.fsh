@@ -37,7 +37,7 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * content contains desirability 0..1 MS and relativeImportance 1..1 MS and forWhom 0..1
 * content[desirability].type = https://fevir.net/resources/CodeSystem/179423#outcome-desirability "Outcome Desirability"
 * content[desirability].classifier from desirability (extensible)
-* content[relativeImportance].type = http://hl7.org/fhir/certainty-type#relative-importance "Relative Importance"
+* content[relativeImportance].type = https://fevir.net/resources/CodeSystem/179423#relative-importance "Relative Importance"
 * content[relativeImportance].quantity 0..1
   * ^short = "Percentage of importance of reference outcome" 
   * ^definition = "A quantitative rating of the relative importance of the outcome."
@@ -50,7 +50,7 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * content[relativeImportance].quantity.system = "http://unitsofmeasure.org"
 * content[relativeImportance].quantity.code 1..1
 * content[relativeImportance].quantity.code = #%
-* content[forWhom].type = http://hl7.org/fhir/certainty-type#population "Population"
+* content[forWhom].type = https://fevir.net/resources/CodeSystem/179423#population "Population"
 * content[forWhom].relatesTo.type = #supports
 * content[forWhom].relatesTo.targetReference only Reference(Group or Patient or Practitioner or PractitionerRole or RelatedPerson or CareTeam or Device or HealthcareService or Organization)
 * content.freeToShare
