@@ -51,8 +51,8 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * content[relativeImportance].quantity.code 1..1
 * content[relativeImportance].quantity.code = #%
 * content[forWhom].type = http://hl7.org/fhir/certainty-type#population "Population"
-* content[forWhom].relatesTo.type = "supports"
-* content[forWhom].relatesTo.targetReference only Reference(Group, Patient, Practitioner, PractitionerRole, RelatedPerson, CareTeam, Device, HealthcareService, Organization)
+* content[forWhom].relatesTo.type = #supports
+* content[forWhom].relatesTo.targetReference only Reference(Group or Patient or Practitioner or PractitionerRole or RelatedPerson or CareTeam or Device or HealthcareService or Organization)
 * content.freeToShare
   * ^definition = "Acceptable to publicly share the OutcomeImportance content, specific to the associated content instance"
   * ^short = "Acceptable to publicly share the OutcomeImportance content"
