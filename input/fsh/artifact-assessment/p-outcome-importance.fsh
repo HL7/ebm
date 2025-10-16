@@ -31,18 +31,28 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * content 1..*
   * ^definition = "A rating or classification of the artifact."
   * ^short = "A rating"
-* content.quantity 0..1
+* content ^slicing.discriminator.type = #value
+* content ^slicing.discriminator.path = "type"
+* content ^slicing.rules = #open
+* content contains desirability 0..1 MS and relativeImportance 1..1 MS and forWhom 0..1
+* content[desirability].type = https://fevir.net/resources/CodeSystem/179423#outcome-desirability "Outcome Desirability"
+* content[desirability].classifier from desirability (extensible)
+* content[relativeImportance].type = http://hl7.org/fhir/certainty-type#relative-importance "Relative Importance"
+* content[relativeImportance].quantity 0..1
   * ^short = "Percentage of importance of reference outcome" 
   * ^definition = "A quantitative rating of the relative importance of the outcome."
-* content.quantity.value 1..1
+* content[relativeImportance].quantity.value 1..1
   * ^comment = "The value must be 0 (no importance) or a positive decimal. The value of 100 represents the importance of the reference outcome. A value greater than 100 represents exceptionally high importance that is higher than the importance of the reference outcome."
-* content.quantity.comparator 0..0
-* content.quantity.unit 1..1
-* content.quantity.unit = "%"
-* content.quantity.system 1..1
-* content.quantity.system = "http://unitsofmeasure.org"
-* content.quantity.code 1..1
-* content.quantity.code = #%
+* content[relativeImportance].quantity.comparator 0..0
+* content[relativeImportance].quantity.unit 1..1
+* content[relativeImportance].quantity.unit = "%"
+* content[relativeImportance].quantity.system 1..1
+* content[relativeImportance].quantity.system = "http://unitsofmeasure.org"
+* content[relativeImportance].quantity.code 1..1
+* content[relativeImportance].quantity.code = #%
+* content[forWhom].type = http://hl7.org/fhir/certainty-type#population "Population"
+* content[forWhom].relatesTo.type = "supports"
+* content[forWhom].relatesTo.targetReference only Reference(Group, Patient, Practitioner, PractitionerRole, RelatedPerson, CareTeam, Device, HealthcareService, Organization)
 * content.freeToShare
   * ^definition = "Acceptable to publicly share the OutcomeImportance content, specific to the associated content instance"
   * ^short = "Acceptable to publicly share the OutcomeImportance content"
