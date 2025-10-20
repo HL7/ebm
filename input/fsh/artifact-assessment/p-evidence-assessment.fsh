@@ -37,10 +37,11 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
   * extension contains RelatesToWithQuotation named RelatesToWithQuotation 0..*
   * component
     * extension contains RelatesToWithQuotation named RelatesToWithQuotation 0..*
-* content contains ratingSystem 0..1 MS and overall 0..1 MS
+* content contains ratingSystem 0..1 MS and overall 0..1 and riskOfBias 0..1
 * content[ratingSystem].type = https://fevir.net/resources/CodeSystem/179423#rating-system "Rating System"
 * content[ratingSystem].classifier from evidence-rating-system-classifier (extensible)
-* content[overall].type = http://hl7.org/fhir/certainty-type#Overall "Overall certainty"
+* content[overall].type = http://terminology.hl7.org/CodeSystem/certainty-type#Overall "Overall certainty"
+* content[riskOfBias].type = http://terminology.hl7.org/CodeSystem/certainty-type#RiskOfBias "Risk of bias"
 * content.freeToShare
   * ^definition = "Acceptable to publicly share the EvidenceAssessment content, specific to the associated content instance"
   * ^short = "Acceptable to publicly share the EvidenceAssessment content"
