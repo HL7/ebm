@@ -9,7 +9,7 @@ Description: "Dates for guideline registration activities."
 * value[x] 0..0
 * . ^short = "Dates for a guideline registration activity"
 * . ^definition = "Starting and/or ending dates for an activity related to inclusion of a guideline in a registry."
-* extension contains activity 1..1 and actual 0..1 and period 0..1
+* extension contains activity 1..1 and actual 0..1 and period 0..1 and date 0..1
 * extension[activity].value[x] only CodeableConcept
   * ^short = "The specific activity"
   * ^definition = "The specific registration activity."
@@ -20,3 +20,6 @@ Description: "Dates for guideline registration activities."
 * extension[period].value[x] only Period
   * ^short = "Date range"
   * ^definition = "Date range."
+* extension[date].value[x] only date
+  * ^short = "Date (when not a range)"
+  * ^definition = "Date (when not a range)."
