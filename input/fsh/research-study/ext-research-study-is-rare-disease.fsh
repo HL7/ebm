@@ -5,7 +5,7 @@ Description: "Is a study with a population having a rare disease."
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #trial-use
 * ^context.type = #element
-* ^context.expression = "ResearchStudy"
+* ^context.expression = "ResearchStudy.condition"
 * value[x] only boolean
 * . ^short = "Is a rare disease"
-* . ^definition = "Is study with a population having a rare disease."
+* . ^definition = "Is a rare disease."

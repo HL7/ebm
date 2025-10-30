@@ -209,7 +209,7 @@ For Profiles of ResearchStudy:
 The CTISRecord Profile was renamed StudyRegistryRecord Profile.
 The M11ResearchStudy Profile was renamed StudyDesign Profile to improve coordination with the Vulcan UDP IG (Pharmaceutical Research Protocol IG).
 
-The StudyRegistrationRecord Profile was revised to use the ResearchStudyIsLowInterventionTrial Extension, to use the ResearchStudyIsRareDisease Extension, and to use the translation extension in condition.text
+The StudyRegistrationRecord Profile was revised to use the ResearchStudyIsLowInterventionTrial Extension, to use the translation extension in condition.text, and to use the ResearchStudyIsRareDisease Extension in ResearchStudy.condition
 
 The ResearchStudySupport Profile of DocumentReference was added.
 
