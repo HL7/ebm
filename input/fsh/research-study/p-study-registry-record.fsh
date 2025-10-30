@@ -10,5 +10,6 @@ Description: "Profile of ResearchStudy for Evidence Based Medicine IG. The Study
 * extension contains RelatesToWithQuotation named RelatesToWithQuotation 0..*
 * extension contains $ext-researchStudy-studyRegistration named studyRegistration 0..*
 * extension contains ResearchStudyIsLowInterventionTrial named isLowInterventionTrial 0..1
+* extension contains ResearchStudyIsRareDisease named isRareDisease 0..1
 * condition.text
   * extension contains http://hl7.org/fhir/StructureDefinition/translation|5.3.0-ballot-tc1 named translation 0..*

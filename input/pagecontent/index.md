@@ -172,7 +172,7 @@ Adjustments were made to match the current (build) version of FHIR R6 as needed 
 
 The following terminologies were moved from an external draft code system to be defined in EBMonFHIR IG based artifacts:  EBMonFHIRProfileNameCodeSystem and SearchStrategyCharacteristicCodeSystem.
 
-Extensions added include ArtifactPublicationStatus, GuidelineRegistration, RelatesToClassifier, and ResearchStudyIsLowInterventionTrial. Extensions removed (in favor of use of the FHIR Extensions Pack) include AdditionalLanguage.
+Extensions added include ArtifactPublicationStatus, GuidelineRegistration, RelatesToClassifier, ResearchStudyIsLowInterventionTrial, and ResearchStudyIsRareDisease. Extensions removed (in favor of use of the FHIR Extensions Pack) include AdditionalLanguage.
 
 The EvidenceReportContributorRole Value Set was removed as the EvidenceReport Profile can now directly use the Contributor Role Value Set from THO.
 
@@ -209,7 +209,7 @@ For Profiles of ResearchStudy:
 The CTISRecord Profile was renamed StudyRegistryRecord Profile.
 The M11ResearchStudy Profile was renamed StudyDesign Profile to improve coordination with the Vulcan UDP IG (Pharmaceutical Research Protocol IG).
 
-The StudyRegistrationRecord Profile was revised to use the ResearchStudyIsLowInterventionTrial Extension and to use the translation extension in condition.text
+The StudyRegistrationRecord Profile was revised to use the ResearchStudyIsLowInterventionTrial Extension, to use the ResearchStudyIsRareDisease Extension, and to use the translation extension in condition.text
 
 The ResearchStudySupport Profile of DocumentReference was added.
 
