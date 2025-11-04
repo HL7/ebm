@@ -41,9 +41,9 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * content[ratingSystem].type = https://fevir.net/resources/CodeSystem/179423#rating-system "Rating System"
 * content[ratingSystem].classifier from evidence-rating-system-classifier (extensible)
 * content[overall].type = http://terminology.hl7.org/CodeSystem/certainty-type#Overall "Overall certainty"
-* content[overall].classifier from http://terminology.hl7.org/CodeSystem/certainty-rating (extensible)
-* content[overall].component.type from http://terminology.hl7.org/CodeSystem/certainty-type (extensible)
-* content[overall].component.classifier from http://terminology.hl7.org/CodeSystem/certainty-rating (extensible)
+* content[overall].classifier from http://terminology.hl7.org/ValueSet/certainty-rating (extensible)
+* content[overall].component.type from http://terminology.hl7.org/ValueSet/certainty-type (extensible)
+* content[overall].component.classifier from http://terminology.hl7.org/ValueSet/certainty-rating (extensible)
 * content[riskOfBias].type = http://terminology.hl7.org/CodeSystem/certainty-type#RiskOfBias "Risk of bias"
 * content.freeToShare
   * ^definition = "Acceptable to publicly share the EvidenceAssessment content, specific to the associated content instance"
