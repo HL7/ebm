@@ -94,6 +94,11 @@ pages:
 parameters:
   auto-oid-root: 2.16.840.1.113883.4.642.40.44
   apply-jurisdiction: true
+#  path-resource:
+#    - input/resources/citation
+#  additional-resource:
+#    - input/resources/citation/StructureDefinition-Citation.xml
+#  special-url-base: http://hl7.org/fhir
 # parameters:
 #   excludettl: true
 #   validation: [allow-any-extensions, no-broken-links]
