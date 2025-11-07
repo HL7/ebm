@@ -252,16 +252,16 @@ This Implementation Guide was made possible by the thoughtful contributions of m
 
 ### Dependencies
 
-{% include dependency-table-short.xhtml %}
+{% lang-fragment dependency-table-short.xhtml %}
 
 ### Cross Version Analysis
 
-{% include cross-version-analysis.xhtml %}
+{% lang-fragment cross-version-analysis.xhtml %}
 
 ### Global Profiles
 
-{% include globals-table.xhtml %}
+{% lang-fragment globals-table.xhtml %}
 
 ### IP Statements
 
-{% include ip-statements.xhtml %}
+{% lang-fragment ip-statements.xhtml %}
