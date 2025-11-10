@@ -117,7 +117,7 @@ Description: "Profile Names in the Evidence Based Medicine on FHIR (EBMonFHIR) I
 * ^concept[35].definition = "Profile of Evidence for Evidence Based Medicine IG. The EvidenceSynthesisEvidence Profile is used for evidence that is combined from two or more studies, explicitly expressing the method by which evidence was synthesized."
 * ^concept[36].code = #ExposureGroup
 * ^concept[36].display = "ExposureGroup"
-* ^concept[36].definition = "Profile of Group for Evidence Based Medicine IG. The ExposureGroup Profile is used to represent a group (enumerated) used in a ComparativeEvidence."
+* ^concept[36].definition = "Profile of Group for Evidence Based Medicine IG. The ExposureGroup Profile is used to represent an enumerated group defined by exposure as used in an Evidence Resource for the variableDefinition with a variableRole of population."
 * ^concept[37].code = #GroupAssignment
 * ^concept[37].display = "GroupAssignment"
 * ^concept[37].definition = "Profile of EvidenceVariable for Evidence Based Medicine IG. The GroupAssignment Profile is used to classify an EvidenceVariable as an exposure managed as a categorical variable. The variable definitions are found in the category element instead of the definition element."
