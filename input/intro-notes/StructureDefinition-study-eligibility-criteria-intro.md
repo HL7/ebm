@@ -1,4 +1,4 @@
-See [Understanding the Group Resource](group.html) for additional information. An example from the QUARTET USA trial will be described here and can be viewed at [QUARTET_Eligibility_Criteria](Group-372778.html).
+See [Understanding the Group Resource](group.html) for additional information. An example from the QUARTET USA trial will be described here and can be viewed at [Eligibility Criteria for QUARTET USA Trial](Group-372778.html).
 
 The inclusion and exclusion criteria in the Quartet USA Trial that need to be represented in FHIR are as follows:
 
