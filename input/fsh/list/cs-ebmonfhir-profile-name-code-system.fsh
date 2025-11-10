@@ -60,7 +60,7 @@ Description: "Profile Names in the Evidence Based Medicine on FHIR (EBMonFHIR) I
 * ^concept[16].definition = "Profile of Evidence for Evidence Based Medicine IG. The ComparativeParticipantFlowEvidence Profile is used for comparisons of counts of completion and reasons for non-completion of participation in a research study."
 * ^concept[17].code = #ComparatorGroup
 * ^concept[17].display = "ComparatorGroup"
-* ^concept[17].definition = "Profile of Group for Evidence Based Medicine IG. The ComparatorGroup Profile is used to represent a group (enumerated) used as a comparator in a ComparativeEvidence."
+* ^concept[17].definition = "Profile of Group for Evidence Based Medicine IG. The ComparatorGroup Profile is used to represent an enumerated group defined by exposure and used as a comparator in an Evidence Resource for the variableDefinition with a variableRole of population."
 * ^concept[18].code = #ComparatorOnlyEvidence
 * ^concept[18].display = "ComparatorOnlyEvidence"
 * ^concept[18].definition = "Profile of Evidence for Evidence Based Medicine IG. The ComparatorOnlyEvidence Profile is used for evidence with a measured variable that is considered the outcome of an exposure or intervention, and a population that has an exposure with a categorical value that is the reference category for the exposure in a ComparativeEvidence Profile. The ComparatorOnlyEvidence describes the evidence for the comparator group."

@@ -1131,8 +1131,7 @@ definition:
     reference:
       reference: Group/179785
   - description: Profile of Group for Evidence Based Medicine IG. The ComparatorGroup
-      Profile is used to represent a group (definitional or enumerated) used as a
-      comparator in a ComparativeEvidence.
+      Profile is used to represent an enumerated group defined by exposure and used as a comparator in an Evidence Resource for the variableDefinition with a variableRole of population.
     isExample: false
     name: ComparatorGroup
     reference:
