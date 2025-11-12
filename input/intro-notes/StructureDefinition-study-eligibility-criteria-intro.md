@@ -24,15 +24,15 @@ Exclusion Criteria:
 * Inability or unwillingness to provide written informed consent.
 * Unable to complete study procedures.
 
-We will start by creating a FHIR Group Resource with a StudyEligibilityCriteria Profile. This instance of Group Resource is being used to define the criteria for group membership, therefore the membership element has a value of “definitional”. For a definitional Group, a type element is required, and the type element has a value of “person”.
+We start by creating a FHIR Group Resource with a StudyEligibilityCriteria Profile. This instance of Group Resource is being used to define the criteria for group membership, therefore the Group.membership element has a value of “definitional”. For a definitional Group, a Group.type element is required, and the Group.type element has a value of “person”.
 
 There are 6 inclusion criteria and 10 exclusion criteria in this study. 
 
-The individual must meet all of these 16 criteria in order to be included in the study. Therefore the combinationMethod element will have a value of “all-of”.
+The individual must meet all of these 16 criteria in order to be included in the study. Therefore the Group.combinationMethod element will have a value of “all-of”.
 
-The first criterion, Adults (≥18 years), can be fully represented as structured data and shows how a Group.characteristic element is used.  The Group.characteristic element has 3 required elements: code, value[x], and exclude.
+The first criterion, Adults (≥18 years), can be fully represented as structured data and shows how a Group.characteristic element is used.  The Group.characteristic element has 3 required elements: .code, .value[x], and .exclude.
 
-The code element uses a CodeableConcept datatype and represents the type of characteristic. In this first criterion, the type of characteristic is “Age” and a SNOMED-CT term is expressed as:
+The .code element uses a CodeableConcept datatype and represents the type of characteristic. In this first criterion, the type of characteristic is “Age” and a SNOMED-CT term is expressed as:
 
 “code”: {
         "coding" : [
@@ -44,7 +44,7 @@ The code element uses a CodeableConcept datatype and represents the type of char
         ]
     }
 
-The value[x] element could be expressed with a number of different datatypes: CodeableConcept, Quantity, and Range are commonly used for expression matching values of “Age”. In this example (18 years or older), the Quantity datatype is selected and the corresponding JSON is:
+The .value[x] element could be expressed with a number of different datatypes: CodeableConcept, Quantity, and Range are commonly used for expression matching values of “Age”. In this example (18 years or older), the Quantity datatype is selected and the corresponding JSON is:
 
 "valueQuantity" : {
         "value" : 18,
@@ -54,11 +54,11 @@ The value[x] element could be expressed with a number of different datatypes: Co
         "code" : "a"
       }
 
-This code/value pairing (Age >= 18 years) is an inclusion criterion (not an exclusion criterion), so the exclude element will have a value of “false”.
+This code/value pairing (Age >= 18 years) is an inclusion criterion (not an exclusion criterion), so the .exclude element will have a value of “false”.
 
-Optionally, the Group.characteristic element can have a human-readable description, so we included a description element with a value of “Adults (≥18 years)”.
+Optionally, the Group.characteristic element can have a human-readable description, so we included a .description element with a value of “Adults (≥18 years)”.
 
-Another inclusion criterion (“Previous documentation within the past 24 months of hypertension or high blood pressure (SBP 130-179 mmHg or DBP 80-109 mmHg) from general practitioner, pharmacist or health care professional (e.g., medical assistant, physician or nurse).”) shows use of unstructured text-based descriptors for expressing the Group.characteristic values instead of explicit codes from structured terminologies.   The phrase “within the past 24 months” is recognized as a timing factor and expressed within a timing element:
+Another inclusion criterion (“Previous documentation within the past 24 months of hypertension or high blood pressure (SBP 130-179 mmHg or DBP 80-109 mmHg) from general practitioner, pharmacist or health care professional (e.g., medical assistant, physician or nurse).”) shows use of unstructured text-based descriptors for expressing the Group.characteristic values instead of explicit codes from structured terminologies.   The phrase “within the past 24 months” is recognized as a timing factor and expressed within a .timing element:
 
    {
       "code" : {
@@ -76,7 +76,7 @@ Another inclusion criterion (“Previous documentation within the past 24 months
       ]
     }
 
-Another inclusion criterion (“Research grade blood pressure measurement (baseline mean) SBP>= 115 mmHg and DBP >= 60 mmHg”) was separated into 2 criteria (SBP and DBP) to facilitate expression in more structured data.  The SBP criterion (example shown below) uses a LOINC code for mean SBP as the value of the characteristic.code element and >= 115 mmHg as the characteristic.valueQuantity element value. The “baseline” phrase in the original inclusion criterion is interpreted to mean a timing “At baseline” and that is expressed in structured form as Group.characteristic.timing.offsetDuration.value = 0. Structurally, this is using a Duration datatype for the offset[x] element within the timing element, and the quantity has a value of 0 with no units because units are irrelevant with a value of 0.
+Another inclusion criterion (“Research grade blood pressure measurement (baseline mean) SBP>= 115 mmHg and DBP >= 60 mmHg”) was separated into 2 criteria (SBP and DBP) to facilitate expression in more structured data.  The SBP criterion (example shown below) uses a LOINC code for mean SBP as the value of the characteristic.code element and >= 115 mmHg as the characteristic.valueQuantity element value. The “baseline” phrase in the original inclusion criterion is interpreted to mean a timing “At baseline” and that is expressed in structured form as Group.characteristic.timing.offsetDuration.value = 0. Structurally, this is using a Duration datatype for the .offset[x] element within the .timing element, and the .offsetDuration element has a value of 0 with no units because units are irrelevant with a value of 0.
 
    {
       "code" : {
@@ -107,7 +107,7 @@ Another inclusion criterion (“Research grade blood pressure measurement (basel
       ]
     }
 
-An exclusion criterion (“No Known contraindication to candesartan, amlodipine, indapamide or bisoprolol.”) is expressed with Group.characteristic.exclude having a value of true. This example also shows use of the codeOptions extension in the valueCodeableConcept element to provide a value set (set of 2 or more codeable concepts) to provide the value[x] part of this characteristic definition.
+An exclusion criterion (“No Known contraindication to candesartan, amlodipine, indapamide or bisoprolol.”) is expressed with Group.characteristic.exclude having a value of true. This example also shows use of the codeOptions extension in the valueCodeableConcept element to provide a value set (set of 2 or more codeable concepts) to provide the .value[x] part of this characteristic definition.
 
    {
       "code" : {
