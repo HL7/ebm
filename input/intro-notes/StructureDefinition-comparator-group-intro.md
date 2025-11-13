@@ -5,8 +5,8 @@ The concepts needed to describe the comparator group for the QUARTET USA trial i
 The group is an ‘actual’ group of people.
 The group has 30 members.
 The group membership criteria is defined as meeting both of 2 characteristics:
-Being a member of the Enrolled Group for QUARTET USA Trial
-Assigned to Control group (candesartan 8 mg once daily)
+1) Being a member of the Enrolled Group for QUARTET USA Trial
+2) Assigned to Control group (candesartan 8 mg once daily)
 
 We start by creating a FHIR Group Resource with an ExposureGroup Profile. This instance of Group Resource is being used to define the actual group, either with a quantity or a list of members, therefore the Group.membership element has a value of “enumerated”. For an enumerated Group, a Group.type element is required, and the Group.type element has a value of “person”.
 
