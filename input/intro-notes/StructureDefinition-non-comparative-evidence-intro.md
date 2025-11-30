@@ -17,31 +17,32 @@ The concepts needed to describe this evidence include:
 The Evidence.variableDefinition element provides a space for reporting what the evidence is about in the form of Group and EvidenceVariable Resources. For a NonComparativeEvidence Profile, there is an expectation to report a Group Resource to represent the sample observed and an EvidenceVariable Resource to represent the outcome that was measured in the sample.  The EvidenceVariable.variableDefinition.variableRole element is a required code for each instance, using a ‘population’ and an ‘outcome’ code in this case.
 The corresponding JSON is:
 
- "variableDefinition" : [
-    {
-      "variableRole" : "population",
-      "observed" : {
-        "reference" : "Group/375175",
-        "type" : "Group",
-        "display" : "QUARTET USA Trial Quadpill group"
-      }
-    },
-    {
-      "variableRole" : "outcome",
-      "observed" : {
-        "reference" : "EvidenceVariable/375201",
-        "type" : "EvidenceVariable",
-        "display" : "Medication Adherence at 12 weeks"
-      }
-    }
-  ]
+    "variableDefinition" : [
+        {
+          "variableRole" : "population",
+          "observed" : {
+            "reference" : "Group/375175",
+            "type" : "Group",
+            "display" : "QUARTET USA Trial Quadpill group"
+          }
+        },
+        {
+          "variableRole" : "outcome",
+          "observed" : {
+            "reference" : "EvidenceVariable/375201",
+            "type" : "EvidenceVariable",
+            "display" : "Medication Adherence at 12 weeks"
+          }
+        }
+      ]
+
 The sample size can be represented with multiple elements in case there is a need to distinguish between the number in the sample, the number analyzed, and the number with known data.  In this case, the Evidence.statistic.sampleSize element looks like:
 
-  "sampleSize" : {
-        "numberOfParticipants" : 32,
-        "numberAnalyzed" : 32,
-        "knownDataCount" : 29
-      }
+    "sampleSize" : {
+          "numberOfParticipants" : 32,
+          "numberAnalyzed" : 32,
+          "knownDataCount" : 29
+        }
     
 The number affected is reported in the Evidence.statistic.numberAffected element.
 
@@ -56,7 +57,7 @@ The statistical measure of 65.6% is reported in highly structured form including
           }
         ]
       },
-      "quantity" : {
+    "quantity" : {
         "value" : 65.6,
         "unit" : "%",
         "system" : "http://unitsofmeasure.org",
