@@ -18,34 +18,32 @@ The characteristic of being a member of the Enrolled Group for QUARTET USA Trial
 
 The corresponding JSON for this characteristic is:
 
-    {
-      "code" : {
-        "text" : "Member of"
-      },
-      "valueReference" : {
-        "reference" : "Group/372797",
-        "type" : "Group",
-        "display" : "Enrolled Group for QUARTET USA Trial"
-      },
-      "exclude" : false,
-      "description" : "Enrolled in QUARTET USA Trial"
-    }
+      {
+        "code" : {
+          "text" : "Member of"
+        },
+        "valueReference" : {
+          "reference" : "Group/372797",
+          "type" : "Group",
+          "display" : "Enrolled Group for QUARTET USA Trial"
+        },
+        "exclude" : false,
+        "description" : "Enrolled in QUARTET USA Trial"
+      }
 
 The characteristic of being assigned to candesartan 8 mg once daily can be described with a .code element representing “assigned to” and a .value[x] element representing “candesartan 8 mg once daily”. Because the candesartan intervention is represented with a Dosage datatype, an ActivityDefinition Resource was selected for its expression.
 
 The corresponding JSON for this characteristic is:
 
-    {
-      "code" : {
-        "text" : "Assigned to"
-      },
-      "valueReference" : {
-        "reference" : "ActivityDefinition/375181",
-        "type" : "ActivityDefinition",
-        "display" : "Candesartan 8 mg once daily"
-      },
-      "exclude" : false,
-      "description" : "Assigned to Control group (candesartan 8 mg once daily)"
-    }
-
-
+      {
+        "code" : {
+          "text" : "Assigned to"
+        },
+        "valueReference" : {
+          "reference" : "ActivityDefinition/375181",
+          "type" : "ActivityDefinition",
+          "display" : "Candesartan 8 mg once daily"
+        },
+        "exclude" : false,
+        "description" : "Assigned to Control group (candesartan 8 mg once daily)"
+      }

@@ -34,25 +34,25 @@ The first criterion, Adults (≥18 years), can be fully represented as structure
 
 The .code element uses a CodeableConcept datatype and represents the type of characteristic. In this first criterion, the type of characteristic is “Age” and a SNOMED-CT term is expressed as:
 
-“code”: {
-        "coding" : [
-          {
-            "system" : "http://snomed.info/sct",
-            "code" : "397669002",
-            "display" : "Age"
-          }
-        ]
-    }
+    “code”: {
+            "coding" : [
+              {
+                "system" : "http://snomed.info/sct",
+                "code" : "397669002",
+                "display" : "Age"
+              }
+            ]
+        }
 
 The .value[x] element could be expressed with a number of different datatypes: CodeableConcept, Quantity, and Range are commonly used for expression matching values of “Age”. In this example (18 years or older), the Quantity datatype is selected and the corresponding JSON is:
 
-"valueQuantity" : {
-        "value" : 18,
-        "comparator" : ">=",
-        "unit" : "years",
-        "system" : "http://unitsofmeasure.org",
-        "code" : "a"
-      }
+    "valueQuantity" : {
+            "value" : 18,
+            "comparator" : ">=",
+            "unit" : "years",
+            "system" : "http://unitsofmeasure.org",
+            "code" : "a"
+          }
 
 This code/value pairing (Age >= 18 years) is an inclusion criterion (not an exclusion criterion), so the .exclude element will have a value of “false”.
 
@@ -60,74 +60,74 @@ Optionally, the Group.characteristic element can have a human-readable descripti
 
 Another inclusion criterion (“Previous documentation within the past 24 months of hypertension or high blood pressure (SBP 130-179 mmHg or DBP 80-109 mmHg) from general practitioner, pharmacist or health care professional (e.g., medical assistant, physician or nurse).”) shows use of unstructured text-based descriptors for expressing the Group.characteristic values instead of explicit codes from structured terminologies.   The phrase “within the past 24 months” is recognized as a timing factor and expressed within a .timing element:
 
-   {
-      "code" : {
-        "text" : "Defined by CodeableConcept"
-      },
-      "valueCodeableConcept" : {
-        "text" : "Previous documentation of hypertension or high blood pressure (SBP 130-179 mmHg or DBP 80-109 mmHg) from general practitioner, pharmacist or health care professional (e.g., medical assistant, physician or nurse)."
-      },
-      "exclude" : false,
-      "description" : "Previous documentation within the past 24 months of hypertension or high blood pressure (SBP 130-179 mmHg or DBP 80-109 mmHg) from general practitioner, pharmacist or health care professional (e.g., medical assistant, physician or nurse).",
-      "timing" : [
-        {
-          "text" : "within the past 24 months"
-        }
-      ]
-    }
+    {
+        "code" : {
+          "text" : "Defined by CodeableConcept"
+        },
+        "valueCodeableConcept" : {
+          "text" : "Previous documentation of hypertension or high blood pressure (SBP 130-179 mmHg or DBP 80-109 mmHg) from general practitioner, pharmacist or health care professional (e.g., medical assistant, physician or nurse)."
+        },
+        "exclude" : false,
+        "description" : "Previous documentation within the past 24 months of hypertension or high blood pressure (SBP 130-179 mmHg or DBP 80-109 mmHg) from general practitioner, pharmacist or health care professional (e.g., medical assistant, physician or nurse).",
+        "timing" : [
+          {
+            "text" : "within the past 24 months"
+          }
+        ]
+      }
 
 Another inclusion criterion (“Research grade blood pressure measurement (baseline mean) SBP>= 115 mmHg and DBP >= 60 mmHg”) was separated into 2 criteria (SBP and DBP) to facilitate expression in more structured data.  The SBP criterion (example shown below) uses a LOINC code for mean SBP as the value of the characteristic.code element and >= 115 mmHg as the characteristic.valueQuantity element value. The “baseline” phrase in the original inclusion criterion is interpreted to mean a timing “At baseline” and that is expressed in structured form as Group.characteristic.timing.offsetDuration.value = 0. Structurally, this is using a Duration datatype for the .offset[x] element within the .timing element, and the .offsetDuration element has a value of 0 with no units because units are irrelevant with a value of 0.
 
-   {
-      "code" : {
-        "coding" : [
+    {
+        "code" : {
+          "coding" : [
+            {
+              "system" : "http://loinc.org",
+              "code" : "96608-5",
+              "display" : "Systolic blood pressure mean"
+            }
+          ]
+        },
+        "valueQuantity" : {
+          "value" : 115,
+          "comparator" : ">=",
+          "unit" : "millimeters of mercury (mm Hg)",
+          "system" : "http://unitsofmeasure.org",
+          "code" : "mm[Hg]"
+        },
+        "exclude" : false,
+        "description" : "Research grade blood pressure measurement (baseline mean) SBP>= 115 mmHg",
+        "timing" : [
           {
-            "system" : "http://loinc.org",
-            "code" : "96608-5",
-            "display" : "Systolic blood pressure mean"
+            "offsetDuration" : {
+              "value" : 0
+            },
+            "text" : "At Baseline"
           }
         ]
-      },
-      "valueQuantity" : {
-        "value" : 115,
-        "comparator" : ">=",
-        "unit" : "millimeters of mercury (mm Hg)",
-        "system" : "http://unitsofmeasure.org",
-        "code" : "mm[Hg]"
-      },
-      "exclude" : false,
-      "description" : "Research grade blood pressure measurement (baseline mean) SBP>= 115 mmHg",
-      "timing" : [
-        {
-          "offsetDuration" : {
-            "value" : 0
-          },
-          "text" : "At Baseline"
-        }
-      ]
-    }
+      }
 
 An exclusion criterion (“No Known contraindication to candesartan, amlodipine, indapamide or bisoprolol.”) is expressed with Group.characteristic.exclude having a value of true. This example also shows use of the codeOptions extension in the valueCodeableConcept element to provide a value set (set of 2 or more codeable concepts) to provide the .value[x] part of this characteristic definition.
 
-   {
-      "code" : {
-        "coding" : [
-          {
-            "system" : "http://loinc.org",
-            "code" : "64100-1",
-            "display" : "Contraindication"
-          }
-        ]
-      },
-      "valueCodeableConcept" : {
-        "extension" : [
-          {
-            "url" : "http://hl7.org/fhir/StructureDefinition/codeOptions",
-            "valueCanonical" : "https://fevir.net/resources/ValueSet/383203"
-          }
-        ],
-        "text" : "candesartan, amlodipine, indapamide or bisoprolol"
-      },
-      "exclude" : true,
-      "description" : "Known contraindication to candesartan, amlodipine, indapamide or bisoprolol."
-    }
+    {
+        "code" : {
+          "coding" : [
+            {
+              "system" : "http://loinc.org",
+              "code" : "64100-1",
+              "display" : "Contraindication"
+            }
+          ]
+        },
+        "valueCodeableConcept" : {
+          "extension" : [
+            {
+              "url" : "http://hl7.org/fhir/StructureDefinition/codeOptions",
+              "valueCanonical" : "https://fevir.net/resources/ValueSet/383203"
+            }
+          ],
+          "text" : "candesartan, amlodipine, indapamide or bisoprolol"
+        },
+        "exclude" : true,
+        "description" : "Known contraindication to candesartan, amlodipine, indapamide or bisoprolol."
+      }

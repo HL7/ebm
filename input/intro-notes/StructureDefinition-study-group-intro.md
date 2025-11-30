@@ -12,19 +12,19 @@ The Group.quantity element has an unsignedInt datatype (allowing integer values 
 
 The definition of group membership is described in a single characteristic, so there is no Group.combinationMethod element. Because this single characteristic is defined fully in a different Group Resource, we use the Group.characteristic.valueReference element to reference it, and the Group.characteristic.code element describes its role as the value of the “Eligibility Criteria”.
 
-  "characteristic" : [
-    {
-      "code" : {
-        "text" : "Eligibility Criteria"
-      },
-      "valueReference" : {
-        "reference" : "Group/372778",
-        "type" : "Group",
-        "display" : "Eligibility Criteria for QUARTET USA Trial"
-      },
-      "exclude" : false
-    }
-  ]
+    "characteristic" : [
+      {
+        "code" : {
+          "text" : "Eligibility Criteria"
+        },
+        "valueReference" : {
+          "reference" : "Group/372778",
+          "type" : "Group",
+          "display" : "Eligibility Criteria for QUARTET USA Trial"
+        },
+        "exclude" : false
+      }
+    ]
 
 
 

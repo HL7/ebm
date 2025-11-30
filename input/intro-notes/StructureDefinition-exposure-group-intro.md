@@ -20,32 +20,32 @@ The characteristic of being a member of the Enrolled Group for QUARTET USA Trial
 
 The corresponding JSON for this characteristic is:
 
-    {
-      "code" : {
-        "text" : "Member of"
-      },
-      "valueReference" : {
-        "reference" : "Group/372797",
-        "type" : "Group",
-        "display" : "Enrolled Group for QUARTET USA Trial"
-      },
-      "exclude" : false,
-      "description" : "Enrolled in QUARTET USA Trial"
-    }
+      {
+        "code" : {
+          "text" : "Member of"
+        },
+        "valueReference" : {
+          "reference" : "Group/372797",
+          "type" : "Group",
+          "display" : "Enrolled Group for QUARTET USA Trial"
+        },
+        "exclude" : false,
+        "description" : "Enrolled in QUARTET USA Trial"
+      }
 
 The characteristic of being assigned to Quadpill intervention can be described with a .code element representing “assigned to” and a .value[x] element representing “Quadpill intervention”. Because the Quadpill intervention is represented with a Dosage datatype, an ActivityDefinition Resource was selected for its expression.
 
 The corresponding JSON for this characteristic is:
 
-    {
-      "code" : {
-        "text" : "Assigned to"
-      },
-      "valueReference" : {
-        "reference" : "ActivityDefinition/375159",
-        "type" : "ActivityDefinition",
-        "display" : "Quadpill once daily"
-      },
-      "exclude" : false,
-      "description" : "Assigned to Quadpill Intervention"
-    }
+      {
+        "code" : {
+          "text" : "Assigned to"
+        },
+        "valueReference" : {
+          "reference" : "ActivityDefinition/375159",
+          "type" : "ActivityDefinition",
+          "display" : "Quadpill once daily"
+        },
+        "exclude" : false,
+        "description" : "Assigned to Quadpill Intervention"
+      }
