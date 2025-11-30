@@ -9,9 +9,6 @@ The resource should declare its jurisdiction to match the package id (hl7.fhir.u
 # Suppressing the warnings about reference to jurisdiction elements (now deprecated) becuase errors in IG Publisher if jurisdiction elements are not present.
 Reference to deprecated ValueSet http://hl7.org/fhir/ValueSet/jurisdiction|6.0.0-ballot3
 
-# Suppressing warnings about unrecognized identifier - 'https://fevir.net/FOI' approved by THA on 2025-08-05 for inclusion as an external identifier system https://confluence.hl7.org/spaces/TA/pages/358263167/FEvIR+Object+Identifier+FOI
-No definition could be found for URL value 'https://fevir.net/FOI'
-
 # Suppressing the warnings regarding binding to Medication Ingredient Strength Codes for Medication.ingredient.strengthQuantity as this appears to be relevant to strengthCodeableConcept and an artifact of strength[x] misapplication in the generation of warnings
 The code provided (http://unitsofmeasure.org#mg) is not in the value set 'Medication Ingredient Strength Codes' (http://hl7.org/fhir/ValueSet/medication-ingredientstrength|6.0.0-ballot3), and a code is recommended to come from this value set
 
@@ -43,9 +40,6 @@ Reference to draft CodeSystem http://hl7.org/fhir/citation-artifact-classifier|6
 # Suppressing message that a CodeSystem is draft (as FHIR-53093 submitted to change it to trial-use)
 Reference to draft CodeSystem http://hl7.org/fhir/definition-method|6.0.0-ballot3
 
-# Suppressing message that a CodeSystem is experimental (as FHIR-53094 submitted to change it to trial-use, not experimental)
-Reference to experimental CodeSystem http://hl7.org/fhir/research-study-registration-activity|5.3.0-ballot-tc1
-
 # Suppressing message that a slice is not found in a base Profile (but it is used in a derivative Profile) in a Resource mapped to 2 Profiles
 This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report-package|1.0.0-ballot2 (this may not be a problem, but you should check that it's not intended to match a slice)
 
@@ -60,11 +54,6 @@ The markdown contains content that appears to be an embedded HTML tag starting a
 
 # Suppressing warning about not finding definition for a CodeSystem (for CDC Race and Ethnicity) but the official URL is used from https://terminology.hl7.org/5.1.0/CodeSystem-CDCREC.html
 A definition for CodeSystem 'urn:oid:2.16.840.1.113883.6.238' could not be found, so the code cannot be validated
-
-# Suppressing warnings about recognizing SEVCO as a CodeSystem - SEVCO was approved 2025-02-24 by TSMG for listing with THO
-A definition for CodeSystem 'https://fevir.net/sevco' could not be found, so the code cannot be validated
-%' is not valid in the system https://fevir.net/sevco version 2.0 (SEVCO:%
-The definition for the Code System with URI 'https://fevir.net/sevco' doesn't provide any codes so the code cannot be validated
 
 # Suppressing warnings regarding identifier.system URLs that do not match a known definition -- these URLs will be evaluated for listing with THO
 No definition could be found for URL value 'https://doi.org'
