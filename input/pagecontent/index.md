@@ -6,6 +6,32 @@ The FHIR Resources for Evidence Based Medicine Knowledge Assets ('EBMonFHIR') Im
 
 This implementation guide covers the broad scope of representation of scientific knowledge, including (1) citations to represent identification, location, classification, and attribution for knowledge artifacts; (2) components of research study design including study eligibility criteria (cohort definitions) and endpoint analysis plans; (3) research results including the statistic findings, definition of variables for which those findings apply, and the certainty of these findings; (4) assessments of research results; (5) aggregation and synthesis of research results; (6) judgments regarding evidence syntheses and contextual factors related to recommendations; (7) recommendations; and (8) compositions of combinations of these types of knowledge. The types of interoperability covered include syntactic (Resource StructureDefinitions) and semantic (value sets).
 
+## Example Demonstrated with QUARTET USA Trial
+
+This EBMonFHIR Implementation Guide contains many hundreds of example Resources to show the use of nearly 100 Profiles and Extensions. Selected Profiles of Group, EvidenceVariable, and Evidence are explained using the QUARTET USA Trial. These include:
+
+**[StudyEligibilityCriteria Profile Profile][StudyEligibilityCriteria]** of Group
+**[StudyGroup Profile][StudyGroup]** of Group
+**[ExposureGroup Profile][ExposureGroup]** of Group
+**[ComparatorGroup Profile][ComparatorGroup]** of Group
+**[VariableDefinition Profile][VariableDefinition]** of EvidenceVariable
+**[GroupAssignment Profile][GroupAssignment]** of EvidenceVariable
+**[NonComparativeEvidence Profile][NonComparativeEvidence]** of Evidence
+**[ComparativeEvidence Profile][ComparativeEvidence]** of Evidence
+
+A fuller representation of the QUARTET USA Trial can be found in the following examples:
+
+Citation at [38584159 Efficacy and safety of a four-drug, quarter-dose treatment for hypertension: the QUARTET USA randomized trial.](Citation-367878.html)
+
+Compositions for different reports including:
+[Comparative Evidence Report for QUARTET Trial](Composition-372776.html)
+[Baseline Characteristics Report for QUARTET Trial](Composition-370510.html)
+[Participant Flow Report for QUARTET Trial](Composition-370512.html)
+[Outcome Measure Report for QUARTET Trial](Composition-375280.html)
+[Summary of Findings - QUARTET USA Trial](Composition-397488.html)
+
+
+
 ## To Learn About FHIR
 
 This implementation guide is based on the Continuous Integration Build of the HL7 [FHIR](https://build.fhir.org/index.html) standard. It uses terminology, notations and design principles that are specific to FHIR. Before reading this implementation guide, it's important to be familiar with some of the basic principles of FHIR as well as general guidance on how to read FHIR specifications. Readers who are unfamiliar with FHIR are encouraged to review the following R5-based links prior to reading the rest of this implementation guide. For changes that are in development for the next version of FHIR (R6), use the Continuous Integration Build of [FHIR](https://build.fhir.org/index.html) to find related content.
