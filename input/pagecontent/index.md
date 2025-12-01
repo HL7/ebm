@@ -10,25 +10,25 @@ This implementation guide covers the broad scope of representation of scientific
 
 This EBMonFHIR Implementation Guide contains many hundreds of example Resources to show the use of nearly 100 Profiles and Extensions. Selected Profiles of Group, EvidenceVariable, and Evidence are explained using the QUARTET USA Trial. These include:
 
-**[StudyEligibilityCriteria Profile Profile][StudyEligibilityCriteria]** of Group
-**[StudyGroup Profile][StudyGroup]** of Group
-**[ExposureGroup Profile][ExposureGroup]** of Group
-**[ComparatorGroup Profile][ComparatorGroup]** of Group
-**[VariableDefinition Profile][VariableDefinition]** of EvidenceVariable
-**[GroupAssignment Profile][GroupAssignment]** of EvidenceVariable
-**[NonComparativeEvidence Profile][NonComparativeEvidence]** of Evidence
-**[ComparativeEvidence Profile][ComparativeEvidence]** of Evidence
+1. [StudyEligibilityCriteria Profile Profile](StructureDefinition-study-eligibility-criteria.html)* of Group
+2. [StudyGroup Profile](StructureDefinition-study-group.html) of Group
+3. [ExposureGroup Profile](StructureDefinition-exposure-group.html) of Group
+4. [ComparatorGroup Profile](StructureDefinition-comparator-group.html) of Group
+5. [VariableDefinition Profile](StructureDefinition-variable-definition.html) of EvidenceVariable
+6. [GroupAssignment Profile](StructureDefinition-group-assignment.html) of EvidenceVariable
+7. [NonComparativeEvidence Profile](StructureDefinition-non-comparative-evidence.html) of Evidence
+8. [ComparativeEvidence Profile](StructureDefinition-comparative-evidence.html) of Evidence
 
 A fuller representation of the QUARTET USA Trial can be found in the following examples:
 
 Citation at [38584159 Efficacy and safety of a four-drug, quarter-dose treatment for hypertension: the QUARTET USA randomized trial.](Citation-367878.html)
 
 Compositions for different reports including:
-[Comparative Evidence Report for QUARTET Trial](Composition-372776.html)
-[Baseline Characteristics Report for QUARTET Trial](Composition-370510.html)
-[Participant Flow Report for QUARTET Trial](Composition-370512.html)
-[Outcome Measure Report for QUARTET Trial](Composition-375280.html)
-[Summary of Findings - QUARTET USA Trial](Composition-397488.html)
+1. [Comparative Evidence Report for QUARTET Trial](Composition-372776.html)
+2. [Baseline Characteristics Report for QUARTET Trial](Composition-370510.html)
+3. [Participant Flow Report for QUARTET Trial](Composition-370512.html)
+4. [Outcome Measure Report for QUARTET Trial](Composition-375280.html)
+5. [Summary of Findings - QUARTET USA Trial](Composition-397488.html)
 
 
 
