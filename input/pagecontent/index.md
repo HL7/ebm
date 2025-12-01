@@ -10,7 +10,7 @@ This implementation guide covers the broad scope of representation of scientific
 
 This EBMonFHIR Implementation Guide contains many hundreds of example Resources to show the use of nearly 100 Profiles and Extensions. Selected Profiles of Group, EvidenceVariable, and Evidence are explained using the QUARTET USA Trial. These include:
 
-1. [StudyEligibilityCriteria Profile Profile](StructureDefinition-study-eligibility-criteria.html)* of Group
+1. [StudyEligibilityCriteria Profile](StructureDefinition-study-eligibility-criteria.html) of Group
 2. [StudyGroup Profile](StructureDefinition-study-group.html) of Group
 3. [ExposureGroup Profile](StructureDefinition-exposure-group.html) of Group
 4. [ComparatorGroup Profile](StructureDefinition-comparator-group.html) of Group
