@@ -84,6 +84,7 @@
 [StatisticModel]: StructureDefinition-statistic-model.html
 [StatisticModelExpression]: StructureDefinition-statistic-model-expression.html
 [StatisticModelIncludeIf]: StructureDefinition-statistic-model-include-if.html
+[StudyComponent]: StructureDefinition-study-component.html
 [StudyDesign]: StructureDefinition-study-design.html
 [StudyEligibilityCriteria]: StructureDefinition-study-eligibility-criteria.html
 [StudyGroup]: StructureDefinition-study-group.html

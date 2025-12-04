@@ -4,6 +4,8 @@ The **[StudyRegistryRecord Profile][StudyRegistryRecord]** is a Profile of <b>Re
 
 The **[StudyDesign Profile][StudyDesign]** is a Profile of <b>ResearchStudy Resource</b> and is used to add extensions for additional expressions of study design features with the study protocol.
 
+The **[StudyComponent Profile][StudyComponent]** is a Profile of <b>StudyDesign</b> and is used to report a part of a study that is conducted in multiple parts.
+
 The **[SystematicReview Profile][SystematicReview]** is a Profile of <b>ResearchStudy Resource</b> and is used for a scientific study based on a protocol that includes search and selection of eligible studies, study quality assessment, data extraction, and synthesis.
 
 Extensions are provided for searchStrategy, systematicReviewEligibilityCriteria, numberOfStudiesIdentified, numberOfStudiesIncluded, includedStudy, excludedStudy, and resultAsComposition.

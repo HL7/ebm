@@ -166,6 +166,7 @@ Other Resources and <b>Other Profiles</b> used in the EBMonFHIR Implementation G
 - <b>ResearchStudy Resource</b>
   - <b>StudyRegistryRecord</b> used for a scientific study record in a research study registry, such as ClinicalTrials.gov or the European Union Clinical Trial Information System (EU CTIS)."
   - <b>StudyDesign</b> used to add extensions for additional expressions of study design features with the study protocol.
+  - <b>StudyComponent</b> used to report a part of a study that is conducted in multiple parts.
   - <b>SystematicReview</b> used for a research study that involves investigation of research studies.
 - <b>ActivityDefinition Resource</b> including a Profile of:
   - <b>RecommendationAction</b> used for a recommendation from a clinical practice guideline.
@@ -236,6 +237,8 @@ The CTISRecord Profile was renamed StudyRegistryRecord Profile.
 The M11ResearchStudy Profile was renamed StudyDesign Profile to improve coordination with the Vulcan UDP IG (Pharmaceutical Research Protocol IG).
 
 The StudyRegistrationRecord Profile was revised to use the ResearchStudyIsLowInterventionTrial Extension, to use the translation extension in condition.text, and to use the ResearchStudyIsRareDisease Extension in ResearchStudy.condition
+
+The StudyComponent Profile was added to report a part of a study that is conducted in multiple parts.
 
 The ResearchStudySupport Profile of DocumentReference was added.
 
