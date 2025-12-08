@@ -41,10 +41,10 @@ Reference to draft CodeSystem http://hl7.org/fhir/citation-artifact-classifier|6
 Reference to draft CodeSystem http://hl7.org/fhir/definition-method|6.0.0-ballot3
 
 # Suppressing message that a slice is not found in a base Profile (but it is used in a derivative Profile) in a Resource mapped to 2 Profiles
-This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report-package|1.0.0-ballot2 (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report-package|1.0.0-ballot3 (this may not be a problem, but you should check that it's not intended to match a slice)
 
 # Suppressing message that a slice is not found in the ResearchStudyDataDictionary Profile because the Profile does not specify section codes for descriptive sections
-This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/research-study-data-dictionary|1.0.0-ballot2 (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/research-study-data-dictionary|1.0.0-ballot3 (this may not be a problem, but you should check that it's not intended to match a slice)
 
 # Suppressing warnings about the content of an actual ValueSet used for example purposes, as this was based on a real ValueSet that we are not able to revise
 No definition can be found for the system http://fhir.de/CodeSystem/bfarm/icd-10-gm, and the property 'child' is not a generally known property, so the property might not be valid, or understood by the terminology ecosystem. In case it's useful, the list of generally known properties for all systems is concept,code,status,inactive,effectiveDate,deprecationDate,retirementDate,notSelectable,synonym,comment,itemWeight
@@ -100,23 +100,23 @@ No definition could be found for URL value 'relatesTo'
 No definition could be found for URL value 'overallSummary'
 
 # Suppressing warnings about unrecognized slices in Profiles of Composition -- the examples include additional data that are not part of the Profile constraints
-This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-measure-report|1.0.0-ballot2 (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-measure-report|1.0.0-ballot3 (this may not be a problem, but you should check that it's not intended to match a slice)
 
 # Suppressing warnings about additionalBindings constraints that do not appear to be a result of IG content
 Constraint failed: eld-31: 'additionalBindings should have a key' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
 Constraint failed: eld-33: 'If there's more than one bindable type, it's usually an error for there to be a binding' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)
 
 # Suppressing warnings regarding multiple choices of profiles in references from contained resources to other contained resources -- the default option used for checking from the IG publisher is not the actual profile used in the examples and the actual profile is one of the other options
-Found multiple matching profiles for #BG000 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group|1.0.0-ballot2, http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group|1.0.0-ballot2, http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group|1.0.0-ballot2
-Found multiple matching profiles for #BG001 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group|1.0.0-ballot2, http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group|1.0.0-ballot2, http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group|1.0.0-ballot2
-Found multiple matching profiles for #BG002 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group|1.0.0-ballot2, http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group|1.0.0-ballot2, http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group|1.0.0-ballot2
-Found multiple matching profiles for #FG000 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group|1.0.0-ballot2, http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group|1.0.0-ballot2, http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group|1.0.0-ballot2
-Found multiple matching profiles for #FG001 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group|1.0.0-ballot2, http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group|1.0.0-ballot2, http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group|1.0.0-ballot2
-Details for #BG000 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group|1.0.0-ballot2
-Details for #BG001 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group|1.0.0-ballot2
-Details for #BG002 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group|1.0.0-ballot2
-Details for #FG000 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group|1.0.0-ballot2
-Details for #FG001 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group|1.0.0-ballot2
+Found multiple matching profiles for #BG000 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group|1.0.0-ballot3, http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group|1.0.0-ballot3, http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group|1.0.0-ballot3
+Found multiple matching profiles for #BG001 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group|1.0.0-ballot3, http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group|1.0.0-ballot3, http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group|1.0.0-ballot3
+Found multiple matching profiles for #BG002 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group|1.0.0-ballot3, http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group|1.0.0-ballot3, http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group|1.0.0-ballot3
+Found multiple matching profiles for #FG000 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group|1.0.0-ballot3, http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group|1.0.0-ballot3, http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group|1.0.0-ballot3
+Found multiple matching profiles for #FG001 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group|1.0.0-ballot3, http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group|1.0.0-ballot3, http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group|1.0.0-ballot3
+Details for #BG000 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group|1.0.0-ballot3
+Details for #BG001 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group|1.0.0-ballot3
+Details for #BG002 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group|1.0.0-ballot3
+Details for #FG000 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group|1.0.0-ballot3
+Details for #FG001 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group|1.0.0-ballot3
 
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 # (And include comments like this justifying why)
