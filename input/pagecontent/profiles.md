@@ -1,1 +1,1 @@
-{% include table-profiles.xhtml %}
+{% lang-fragment table-profiles.xhtml %}

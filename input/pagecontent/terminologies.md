@@ -20,8 +20,8 @@ or use the [FEvIR API](https://fevir.net/apidoc).
 
 ### Code Systems
 
-{% include table-codesystems.xhtml %}
+{% lang-fragment table-codesystems.xhtml %}
 
 ### Value Sets
 
-{% include table-valuesets.xhtml %}
+{% lang-fragment table-valuesets.xhtml %}

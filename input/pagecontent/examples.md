@@ -1,1 +1,1 @@
-{% include example-list-generator.md %}
+{& lang-fragment example-list-generator.md %}

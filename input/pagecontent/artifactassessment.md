@@ -76,4 +76,4 @@ The **[Adaptation Profile][Adaptation]** is used for assessments of a knowledge 
 
 The **[Comparison Profile][Comparison]** is a Profile of **[Adaptation][Adaptation]** that is used for assessments of similarities and differences between knowledge artifacts.
 
-{% include link-list.md %}
+{& lang-fragment link-list.md %}

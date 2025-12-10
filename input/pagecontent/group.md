@@ -212,4 +212,4 @@ The **[EvidenceReportSubject Profile][EvidenceReportSubject]** is a Profile of *
 
 The **[ComparativeEvidenceReportSubject Profile][ComparativeEvidenceReportSubject]** is a Profile of **[EvidenceReportSubject][EvidenceReportSubject]** which requires the use of Population (constrained to reference **[StudyGroup][StudyGroup]**), Intervention or Exposure (constrained to reference **[VariableDefinition][VariableDefinition]** or **[ConceptualExposureDefinition][ConceptualExposureDefinition]**), Comparator (constrained to reference **[VariableDefinition][VariableDefinition]** or **[ConceptualExposureDefinition][ConceptualExposureDefinition]** or **[ConceptualComparatorDefinition][ConceptualComparatorDefinition]**), and Outcomes (constrained to reference **[OutcomeList][OutcomeList]**).
 
-{% include link-list.md %}
+{& lang-fragment link-list.md %}
