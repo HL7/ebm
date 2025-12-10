@@ -1,1 +1,1 @@
-{% include table-extensions.xhtml %}
+{% lang-fragment table-extensions.xhtml %}
