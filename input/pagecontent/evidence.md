@@ -56,4 +56,4 @@ The **[NetEffectEstimate Profile][NetEffectEstimate]** is used for the result of
 
 The **[NetEffectContribution Profile][NetEffectContribution]** is a Profile of **[ComparativeEvidence][ComparativeEvidence]** which is specialized for an effect estimate (risk difference) multiplied by a relative importance rating of the outcome. The value of the relative importance rating of the outcome is expressed in an **[OutcomeImportance Profile][OutcomeImportance]** of ArtifactAssessment. Because the FHIR model does not support direct referencing of an <b>ArtifactAssessment</b> from the variableDefinition, the **[NetEffectContribution Profile][NetEffectContribution]** uses a variableDefinition with the role of 'covariate' explicitly labeled as a 'Relative Importance Multiplier' and the **[OutcomeImportance Profile][OutcomeImportance]** is referenced from a relativeOutcomeImportance extension. The statistic reported for the net effect contribution is set to use a statistic type of 'Risk Difference', an attribute estimate type of 'Confidence interval', and a model characteristic of 'Net effect contribution analysis'.
 
-{& include link-list.md %}
+{% include link-list.md %}

@@ -211,6 +211,10 @@ The OutcomeImportance Profile was modified to have 3 slices for content. The Art
 
 For Profiles of Composition:
 
+The EvidenceReport Profile added a similarTo slice to Composition.relatesTo
+
+The EvidenceReportPackage Profile added an Attachments slice to Composition.section with Reference options limited to DocumentReference.
+
 The EvidenceTableReportPackage Profile was removed and the ParticipantFlowReport, BaselineMeasureReport, and OutcomeMeasureReport Profiles were simplified and based on EvidenceReport.
 
 The ComparativeEvidenceReport and ComparativeEvidenceSynthesisReport Profiles can reference PlanDefinition or ActivityDefinition in addition to CohortDefinition ConceptualCohortDefinition in sections describing interventions and exposures.

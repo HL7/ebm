@@ -40,7 +40,7 @@ The **[ResearchStudyDataDictionary Profile][ResearchStudyDataDictionary]** is a 
 
 ### EvidenceReportPackage Profile of Composition Resource
 
-The **[EvidenceReportPackage Profile][EvidenceReportPackage]** is used for a base structure to extend the **[EvidenceReport Profile][EvidenceReport]** with optional sections for Summary, Introduction, Discussion, Methods, References, Competing Interests, Acknowledgements, and Appendices.
+The **[EvidenceReportPackage Profile][EvidenceReportPackage]** is used for a base structure to extend the **[EvidenceReport Profile][EvidenceReport]** with optional sections for Summary, Introduction, Discussion, Methods, References, Competing Interests, Acknowledgements, Appendices, and Attachments.
 
 ### ComparativeEvidenceReport Profile of Composition Resource
 
@@ -207,4 +207,4 @@ The Composition.type value is set to a "Clinical Trial Protocol" and "CeSHarP Re
 
 The **[M11Report Profile][M11Report]** contains 15 sections with highly detailed instructions and is shared in the EBMonFHIR Implementation Guide for initial development and coordination with the base structures in the EBMonFHIR Implementation Guide. There will likely be a future 'M11 Report' Implementation Guide developed by a different but coordinated group. 
 
-{& include link-list.md %}
+{% include link-list.md %}

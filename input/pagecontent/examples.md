@@ -1,1 +1,1 @@
-{& include example-list-generator.md %}
+{% include example-list-generator.md %}

@@ -34,4 +34,4 @@ The **[ParticipantFlowReasonEvidenceVariable Profile][ParticipantFlowReasonEvide
 
 The **[DichotomousIntendedOutcome Profile][DichotomousIntendedOutcome]** is a Profile of **[VariableDefinition][VariableDefinition]** used to provide a common variable definition for the 'intended' variable in the role of 'outcome' in <b>Evidence Resources</b>, to allow mapping evidence with different observed variables that relate to the same intended outcome.
 
-{& include link-list.md %}
+{% include link-list.md %}
