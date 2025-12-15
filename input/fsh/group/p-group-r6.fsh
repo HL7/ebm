@@ -6,6 +6,7 @@ Description: "Profile of Group for Evidence Based Medicine IG. The GroupR6 Profi
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #trial-use
 * extension contains $ext-author named author 0..*
+* extension contains ArtifactRecorder named recorder 0..*
 * extension contains CiteAs named citeAs 0..1
 * extension contains RelatesTo named relatesTo 0..*
 * extension contains RelatesToWithQuotation named RelatesToWithQuotation 0..*
