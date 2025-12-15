@@ -13,7 +13,9 @@ Copy the JSON content from
 * [Scientific Evidence Code System (SEVCO)](https://fevir.net/sevco)
 * [Recommendation Justification Code System](https://fevir.net/resources/CodeSystem/27834#json)
 * [Evidence Based Medicine on FHIR Implementation Guide Code System](https://fevir.net/resources/CodeSystem/179423#json)
+* [ResearchStudy Classifier Code System](https://fevir.net/resources/CodeSystem/419455#json)
 * [EvidenceReportSectionCode Value Set](https://fevir.net/resources/ValueSet/179431#json)
+* [ResearchStudy Classifier Value Set](https://fevir.net/resources/ValueSet/419456#json)
 
 or use the [FEvIR API](https://fevir.net/apidoc).
 

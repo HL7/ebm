@@ -74,6 +74,7 @@
 [RecommendationJustification]: StructureDefinition-recommendation-justification.html
 [RecommendationPlan]: StructureDefinition-recommendation-plan.html
 [RecommendationRating]: StructureDefinition-recommendation-rating.html
+[ResearchStudy Classifier Code System]: CodeSystem-419455.html
 [ResearchStudyDataDictionary]: StructureDefinition-research-study-data-dictionary.html
 [RiskOfBias]: StructureDefinition-risk-of-bias.html
 [SearchResults]: StructureDefinition-search-results.html
@@ -102,4 +103,5 @@
 [VS Evidence Variable Role Subtype Value Set]: ValueSet-evidence-variable-role-subtype.html
 [VS EvidenceReportSectionCode Value Set]: ValueSet-179431.html
 [VS Recommendation Justification Classifier Codes Value Set]: ValueSet-recommendation-justification-classifier.html
+[VS ResearchStudy Classifier Value Set]: ValueSet-419456.html
 [VS Risk Of Bias Type Value Set]: ValueSet-181524.html
