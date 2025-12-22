@@ -1,5 +1,7 @@
 ### Profiles of ResearchStudy Resource
 
+The **[ResearchStudySite Profile][ResearchStudySite]** is a Profile of <b>ResearchStudy Resource</b> and is used to express site-specific data for a research study.
+
 The **[StudyRegistryRecord Profile][StudyRegistryRecord]** is a Profile of <b>ResearchStudy Resource</b> and is used for a scientific study record in a research study registry, such as ClinicalTrials.gov or the European Union Clinical Trial Information System (EU CTIS).
 
 The **[StudyDesign Profile][StudyDesign]** is a Profile of <b>ResearchStudy Resource</b> and is used to add extensions for additional expressions of study design features with the study protocol.

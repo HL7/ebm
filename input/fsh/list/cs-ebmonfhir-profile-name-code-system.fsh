@@ -283,6 +283,9 @@ Description: "Profile Names in the Evidence Based Medicine on FHIR (EBMonFHIR) I
 * ^concept[91].code = #AbsenceOfExposureDefinition
 * ^concept[91].display = "AbsenceOfExposureDefinition"
 * ^concept[91].definition = "Profile of Group for Evidence Based Medicine IG. The AbsenceOfExposureDefinition Profile is used to constrain the ConceptualComparatorDefinition Profile to a single characteristic of not being exposed to a ConceptualExposureDefinition Profile instance."
+* ^concept[91].code = #ResearchStudySite
+* ^concept[91].display = "ResearchStudySite"
+* ^concept[91].definition = "Profile of ResearchStudy for Evidence Based Medicine IG. The ResearchStudySite Profile is used to express site-specific data for a research study."
 
 
 

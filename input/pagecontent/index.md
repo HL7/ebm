@@ -164,7 +164,8 @@ Profiles of <b>Composition Resource</b> include:
 
 Other Resources and <b>Other Profiles</b> used in the EBMonFHIR Implementation Guide include:
 - <b>ResearchStudy Resource</b>
-  - <b>StudyRegistryRecord</b> used for a scientific study record in a research study registry, such as ClinicalTrials.gov or the European Union Clinical Trial Information System (EU CTIS)."
+  - <b>ResearchStudySite</b> used to express site-specific data for a research study.
+  - <b>StudyRegistryRecord</b> used for a scientific study record in a research study registry, such as ClinicalTrials.gov or the European Union Clinical Trial Information System (EU CTIS).
   - <b>StudyDesign</b> used to add extensions for additional expressions of study design features with the study protocol.
   - <b>StudyComponent</b> used to report a part of a study that is conducted in multiple parts.
   - <b>SystematicReview</b> used for a research study that involves investigation of research studies.
@@ -239,6 +240,8 @@ For Profiles of ResearchStudy:
 
 The CTISRecord Profile was renamed StudyRegistryRecord Profile.
 The M11ResearchStudy Profile was renamed StudyDesign Profile to improve coordination with the Vulcan UDP IG (Pharmaceutical Research Protocol IG).
+
+The ResearchStudySite Profile was added express site-specific data for a research study.
 
 The StudyRegistrationRecord Profile was revised to use the ResearchStudyIsLowInterventionTrial Extension, to use the translation extension in condition.text, and to use the ResearchStudyIsRareDisease Extension in ResearchStudy.condition
 
