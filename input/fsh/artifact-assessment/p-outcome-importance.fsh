@@ -34,7 +34,7 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * content ^slicing.discriminator.type = #value
 * content ^slicing.discriminator.path = "type"
 * content ^slicing.rules = #open
-* content contains desirability 0..1 MS and relativeImportance 1..1 MS and forWhom 0..1
+* content contains desirability 0..1 MS and relativeImportance 1..1 MS and forWhom 0..1 and justification 0..1
 * content[desirability].type = https://fevir.net/resources/CodeSystem/179423#outcome-desirability "Outcome Desirability"
 * content[desirability].classifier from desirability (extensible)
 * content[relativeImportance].type = https://fevir.net/resources/CodeSystem/179423#relative-importance "Relative Importance"
@@ -53,6 +53,7 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * content[forWhom].type = https://fevir.net/resources/CodeSystem/179423#population "Population"
 * content[forWhom].relatesTo.type = #supports
 * content[forWhom].relatesTo.targetReference only Reference(Group or Patient or Practitioner or PractitionerRole or RelatedPerson or CareTeam or Device or HealthcareService or Organization)
+* content[justification].type = https://fevir.net/resources/CodeSystem/179423#justification "Justification"
 * content.freeToShare
   * ^definition = "Acceptable to publicly share the OutcomeImportance content, specific to the associated content instance"
   * ^short = "Acceptable to publicly share the OutcomeImportance content"

@@ -208,7 +208,7 @@ For Profiles of ArtifactAssessment:
 
 The EvidenceAssessment Profile was added to include a content slice for the rating system. The CertaintyOfEvidence and RiskOfBias Profiles were changed to use EvidenceAssessment as the base. The RecommendationRating Profile was added using a base of EvidenceAssessment. The RecommendationJusfication Profile was modified to use a base of RecommendationRating.
 
-The OutcomeImportance Profile was modified to have 3 slices for content. The ArtifactAssessment.content may be used for Outcome Desirability (with a classifier of Desirable or Undesirable), for Relative Importance (in which case the ArtifactAssessment.content.quantity.value element is described with "The value must be 0 (no importance) or a positive decimal. The value of 100 represents the importance of the reference outcome. A value greater than 100 represents exceptionally high importance that is higher than the importance of the reference outcome." and the ArtifactAssessment.content.quantity.unit element is set to "%"), or for ForWhom (in which case the ArtifactAssessment.content.relatesTo.targetReference may reference the group or person that this OutcomeImportance supports).
+The OutcomeImportance Profile was modified to have 4 slices for content. The ArtifactAssessment.content may be used for Outcome Desirability (with a classifier of Desirable or Undesirable), for Relative Importance (in which case the ArtifactAssessment.content.quantity.value element is described with "The value must be 0 (no importance) or a positive decimal. The value of 100 represents the importance of the reference outcome. A value greater than 100 represents exceptionally high importance that is higher than the importance of the reference outcome." and the ArtifactAssessment.content.quantity.unit element is set to "%"), for ForWhom (in which case the ArtifactAssessment.content.relatesTo.targetReference may reference the group or person that this OutcomeImportance supports), or for Justification (in which case the classifier and/or relatesTo elements may be used to report the evidence or rationale for the relative importance rating).
 
 For Profiles of Composition:
 
@@ -225,6 +225,8 @@ The ComparativeEvidenceReport Profile was modified to include a 'Study Sample' s
 A ComparativeEvidenceReportExpanded Profile was added to use ComparativeEvidenceReport as a base and add sections for 'Screened Group', 'Excluded Group', 'Baseline Measures', 'Participant Flow Measures', 'Baseline Characteristics', and 'Participant Flow'.
 
 The Recommendation Profile was simplified to remove the Summary and Recommendation Specification sections.
+
+The SummaryOfNetEffect Profile was modified to include the section slices for each outcome in a SummaryOfFindings section slice, similar to the SummaryOfFindings Profile.
 
 For Profiles of Evidence:
 
