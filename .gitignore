@@ -6,3 +6,10 @@ Thumbs.db
 /template
 notebooks/
 /fsh-generated/
+*.sh
+*.sh
+_genonce.sh
+_build.bat
+_updatePublisher.sh
+FHIR-ebm.xml
+oids.ini

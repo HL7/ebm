@@ -89,7 +89,7 @@ echo ---------------------------------------------------------------
 echo.
 
 echo Please select an option:
-echo 1. Download or upload publisher
+echo 1. Download or update publisher
 echo 2. Build IG
 echo 3. Build IG - no sushi
 echo 4. Build IG - force no TX server
@@ -304,10 +304,6 @@ goto end
 start copy /y "_build.new.bat" "_build.bat" ^&^& del "_build.new.bat" ^&^& exit
 
 
-IF NOT "%skipPrompts%"=="true" (
-  PAUSE
-)
-
 GOTO end
 
 
@@ -381,3 +377,10 @@ GOTO end
 
 
 :end
+
+:: Pausing at the end
+
+
+IF NOT "%skipPrompts%"=="true" (
+  PAUSE
+)

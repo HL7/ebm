@@ -61,6 +61,7 @@
 <artifact id="Group/265093" key="Group-265093" name="Adults with diabetes mellitus type 2"/>
 <artifact id="Group/236947" key="Group-236947" name="Adults with type 2 diabetes and CVD and CKD"/>
 <artifact id="Group/236533" key="Group-236533" name="Adults with type 2 diabetes and established CVD (but no CKD)"/>
+<artifact id="Composition/399874" key="Composition-399874" name="Adverse Events Report for NCT03421379"/>
 <artifact id="Composition/370505" key="Composition-370505" name="Adverse Events Report for NCT03640312"/>
 <artifact id="Group/375279" key="Group-375279" name="Adverse event free and hypertension control"/>
 <artifact id="EvidenceVariable/375278" key="EvidenceVariable-375278" name="Adverse event free and hypertension control at 12 weeks"/>
@@ -84,6 +85,8 @@
 <artifact deprecated="true" id="StructureDefinition/artifact-effectivePeriod" key="StructureDefinition-artifact-effectivePeriod" name="ArtifactEffectivePeriod"/>
 <artifact deprecated="true" id="StructureDefinition/artifact-lastReviewDate" key="StructureDefinition-artifact-lastReviewDate" name="ArtifactLastReviewDate"/>
 <artifact id="StructureDefinition/artifact-publication-status" key="StructureDefinition-artifact-publication-status" name="ArtifactPublicationStatus"/>
+<artifact id="StructureDefinition/artifact-recorder" key="StructureDefinition-artifact-recorder" name="ArtifactRecorder"/>
+<artifact id="Composition/399872" key="Composition-399872" name="Baseline Characteristics Report for NCT03421379"/>
 <artifact id="Composition/370503" key="Composition-370503" name="Baseline Characteristics Report for NCT03640312"/>
 <artifact id="Composition/370510" key="Composition-370510" name="Baseline Characteristics Report for QUARTET Trial"/>
 <artifact id="Composition/312203" key="Composition-312203" name="Baseline Measure Report: Association of Bariatric Surgery vs Medical Obesity Treatment With Long-term Medical Complications and Obesity-Related Comorbidities (2018 Norwegian Cohort)"/>
@@ -225,8 +228,8 @@
 <artifact id="Group/279340" key="Group-279340" name="ConceptualCohortDefinition: Meet either T1DM-specific eligibility criteria or T2DM-specific eligibility criteria"/>
 <artifact id="Group/173249" key="Group-173249" name="ConceptualCohortDefinition: Nonfatal myocardial infarction"/>
 <artifact id="Group/173250" key="Group-173250" name="ConceptualCohortDefinition: Nonfatal stroke"/>
-<artifact id="Group/179898" key="Group-179898" name="ConceptualCohortDefinition: Oxygen saturation &lt; 96% on Boots Finger Pulse Oximeter"/>
-<artifact id="Group/179900" key="Group-179900" name="ConceptualCohortDefinition: Oxygen saturation &lt; 96% on Boots Finger Pulse Oximeter with Ranges"/>
+<artifact id="Group/179898" key="Group-179898" name="ConceptualCohortDefinition: Oxygen saturation below 96% on Boots Finger Pulse Oximeter"/>
+<artifact id="Group/179900" key="Group-179900" name="ConceptualCohortDefinition: Oxygen saturation below 96% on Boots Finger Pulse Oximeter with Ranges"/>
 <artifact id="Group/179507" key="Group-179507" name="ConceptualCohortDefinition: Proxy criteria for surgical candidates"/>
 <artifact id="Group/179375" key="Group-179375" name="ConceptualCohortDefinition: Severe obesity"/>
 <artifact id="Group/270503" key="Group-270503" name="ConceptualCohortDefinition: T1DM or T2DM"/>
@@ -241,6 +244,7 @@
 <artifact id="Group/172423" key="Group-172423" name="ConceptualExposureDefinition: Bariatric Surgery (RYGB, VSG, LAGB, BPD)"/>
 <artifact id="Group/179786" key="Group-179786" name="ConceptualExposureDefinition: Therapeutic-dose anticoagulation with heparin"/>
 <artifact id="Evidence/7637" key="Evidence-7637" name="Critically appraised summary of primary outcome of multi-platform RCT of anticoagulation for non-critically ill patients with COVID-19"/>
+<artifact id="EvidenceVariable/348560" key="EvidenceVariable-348560" name="DIO: Mortality"/>
 <artifact deprecated="true" id="StructureDefinition/data-dictionary" key="StructureDefinition-data-dictionary" name="DataDictionary"/>
 <artifact deprecated="true" id="CodeSystem/181451" key="CodeSystem-181451" name="DataDictionary: Measuring the Rate of Scientific Knowledge Transfer"/>
 <artifact deprecated="true" id="CodeSystem/179650" key="CodeSystem-179650" name="DataDictionary: phs003190"/>
@@ -262,7 +266,12 @@
 <artifact id="Group/265092" key="Group-265092" name="Diabetes treatment medication"/>
 <artifact id="EvidenceVariable/375186" key="EvidenceVariable-375186" name="Diastolic blood pressure at 12 weeks"/>
 <artifact id="StructureDefinition/dichotomous-intended-outcome" key="StructureDefinition-dichotomous-intended-outcome" name="DichotomousIntendedOutcome"/>
+<artifact id="EvidenceVariable/423308" key="EvidenceVariable-423308" name="DichotomousIntendedOutcome: Additional gastrointestinal surgical procedure"/>
 <artifact id="EvidenceVariable/298615" key="EvidenceVariable-298615" name="DichotomousIntendedOutcome: Death or Major Traumatic Injury within 30 days"/>
+<artifact id="EvidenceVariable/423306" key="EvidenceVariable-423306" name="DichotomousIntendedOutcome: New onset depression"/>
+<artifact id="EvidenceVariable/423303" key="EvidenceVariable-423303" name="DichotomousIntendedOutcome: Nonfatal myocardial infarction or stroke"/>
+<artifact id="EvidenceVariable/423305" key="EvidenceVariable-423305" name="DichotomousIntendedOutcome: Remission of diabetes"/>
+<artifact id="EvidenceVariable/423307" key="EvidenceVariable-423307" name="DichotomousIntendedOutcome: Treatment with opioids"/>
 <artifact deprecated="true" id="ValueSet/179430" key="ValueSet-179430" name="EBMImplementationGuideProfile Value Set"/>
 <artifact id="CodeSystem/ebmonfhir-profile-name-code-system" key="CodeSystem-ebmonfhir-profile-name-code-system" name="EBMonFHIR Profile Name Code System"/>
 <artifact id="ValueSet/ebmonfhir-profile-name" key="ValueSet-ebmonfhir-profile-name" name="EBMonFHIR Profile Name Value Set"/>
@@ -274,7 +283,6 @@
 <artifact id="StructureDefinition/endpoint-analysis-plan" key="StructureDefinition-endpoint-analysis-plan" name="EndpointAnalysisPlan"/>
 <artifact id="Group/306657" key="Group-306657" name="Enrolled Group PARACHUTE Trial"/>
 <artifact id="Group/372797" key="Group-372797" name="Enrolled Group for QUARTET USA Trial"/>
-<artifact id="Composition/404876" key="Composition-404876" name="Epidemiologie, Diagnostik und Therapie erwachsener Patienten mit nosokomialer Pneumonie"/>
 <artifact id="EvidenceVariable/297729" key="EvidenceVariable-297729" name="Ethnic Group"/>
 <artifact id="Evidence/303337" key="Evidence-303337" name="Ethnic Group with comparator"/>
 <artifact id="Evidence/303336" key="Evidence-303336" name="Ethnic Group with intervention"/>
@@ -572,17 +580,18 @@
 <artifact id="EvidenceVariable/282898" key="EvidenceVariable-282898" name="NHANES WTSAF2YR: Fasting Subsample 2 Year MEC Weight"/>
 <artifact id="Composition/342828" key="Composition-342828" name="NT-proBNP Study Data Dictionary"/>
 <artifact id="StructureDefinition/net-effect-contribution" key="StructureDefinition-net-effect-contribution" name="NetEffectContribution"/>
-<artifact id="Evidence/179591" key="Evidence-179591" name="NetEffectContribution: Additional GI surgical procedure for Example for GIN 2022"/>
-<artifact id="Evidence/179586" key="Evidence-179586" name="NetEffectContribution: All-cause mortality for Example for GIN 2022"/>
-<artifact id="Evidence/179589" key="Evidence-179589" name="NetEffectContribution: New onset depression for Example for GIN 2022"/>
-<artifact id="Evidence/179587" key="Evidence-179587" name="NetEffectContribution: Nonfatal myocardial infarction or stroke for Example for GIN 2022"/>
-<artifact id="Evidence/179588" key="Evidence-179588" name="NetEffectContribution: Remission of diabetes for Example for GIN 2022"/>
-<artifact id="Evidence/179590" key="Evidence-179590" name="NetEffectContribution: Treatment with opioids for Example for GIN 2022"/>
+<artifact id="Evidence/179586" key="Evidence-179586" name="NetEffectContribution for ComparativeEvidence: All-cause mortality effect of bariatric surgery in 2022 meta-analysis"/>
+<artifact id="Evidence/179591" key="Evidence-179591" name="NetEffectContribution for ComparativeEvidence: Bypass surgery effects on Additional GI surgical procedure in JAMA 2018 Norwegian cohort study"/>
+<artifact id="Evidence/179587" key="Evidence-179587" name="NetEffectContribution for ComparativeEvidence: Bypass surgery effects on Myocardial infarction or stroke in Swedish Obese Subjects (SOS) study"/>
+<artifact id="Evidence/179589" key="Evidence-179589" name="NetEffectContribution for ComparativeEvidence: Bypass surgery effects on New onset depression in JAMA 2018 Norwegian cohort study"/>
+<artifact id="Evidence/179588" key="Evidence-179588" name="NetEffectContribution for ComparativeEvidence: Bypass surgery effects on Remission of diabetes in JAMA 2018 Norwegian cohort study"/>
+<artifact id="Evidence/179590" key="Evidence-179590" name="NetEffectContribution for ComparativeEvidence: Bypass surgery effects on Treatment with opioids in JAMA 2018 Norwegian cohort study"/>
 <artifact id="StructureDefinition/net-effect-contribution-list" key="StructureDefinition-net-effect-contribution-list" name="NetEffectContributionList"/>
 <artifact id="List/179585" key="List-179585" name="NetEffectContributionList: Bariatric Surgery Example for GIN 2022"/>
 <artifact id="StructureDefinition/net-effect-contributions" key="StructureDefinition-net-effect-contributions" name="NetEffectContributions"/>
 <artifact id="Group/179584" key="Group-179584" name="NetEffectContributions: Bariatric Surgery Example for GIN 2022"/>
 <artifact id="StructureDefinition/net-effect-estimate" key="StructureDefinition-net-effect-estimate" name="NetEffectEstimate"/>
+<artifact id="Evidence/423311" key="Evidence-423311" name="NetEffectEstimate for SummaryOfNetEffect: Bariatric Surgery Summary of Net Effect Contributions Example for GIN 2022"/>
 <artifact id="Evidence/179583" key="Evidence-179583" name="NetEffectEstimate: Bariatric Surgery Example for GIN 2022"/>
 <artifact id="StructureDefinition/non-comparative-evidence" key="StructureDefinition-non-comparative-evidence" name="NonComparativeEvidence"/>
 <artifact id="ResearchStudy/208285" key="ResearchStudy-208285" name="Norwegian Cohort Study Comparing Bariatric Surgery vs Medical Obesity Treatment for Long-term Medical Complications and Obesity-Related Comorbidities"/>
@@ -598,9 +607,16 @@
 <artifact id="ArtifactAssessment/104193" key="ArtifactAssessment-104193" name="Outcome Importance Rating 5 of Remission of diabetes"/>
 <artifact id="ArtifactAssessment/104195" key="ArtifactAssessment-104195" name="Outcome Importance Rating 5 of Treatment with opioids"/>
 <artifact id="ArtifactAssessment/104196" key="ArtifactAssessment-104196" name="Outcome Importance Rating 8 of Additional GI surgical procedure"/>
+<artifact id="ArtifactAssessment/423309" key="ArtifactAssessment-423309" name="Outcome Importance Rating of DIO: Mortality for StudyEligibilityCriteria: Eligibility Criteria for Bariatric Surgery Randomized Trial (Diabetes Surgery Study)"/>
+<artifact id="ArtifactAssessment/423315" key="ArtifactAssessment-423315" name="Outcome Importance Rating of DichotomousIntendedOutcome: Additional gastrointestinal surgical procedure for StudyEligibilityCriteria: Eligibility Criteria for Bariatric Surgery Randomized Trial (Diabetes Surgery Study)"/>
+<artifact id="ArtifactAssessment/423313" key="ArtifactAssessment-423313" name="Outcome Importance Rating of DichotomousIntendedOutcome: New onset depression for StudyEligibilityCriteria: Eligibility Criteria for Bariatric Surgery Randomized Trial (Diabetes Surgery Study)"/>
+<artifact id="ArtifactAssessment/423310" key="ArtifactAssessment-423310" name="Outcome Importance Rating of DichotomousIntendedOutcome: Nonfatal myocardial infarction or stroke for StudyEligibilityCriteria: Eligibility Criteria for Bariatric Surgery Randomized Trial (Diabetes Surgery Study)"/>
+<artifact id="ArtifactAssessment/423312" key="ArtifactAssessment-423312" name="Outcome Importance Rating of DichotomousIntendedOutcome: Remission of diabetes for StudyEligibilityCriteria: Eligibility Criteria for Bariatric Surgery Randomized Trial (Diabetes Surgery Study)"/>
+<artifact id="ArtifactAssessment/423314" key="ArtifactAssessment-423314" name="Outcome Importance Rating of DichotomousIntendedOutcome: Treatment with opioids for StudyEligibilityCriteria: Eligibility Criteria for Bariatric Surgery Randomized Trial (Diabetes Surgery Study)"/>
 <artifact id="List/375184" key="List-375184" name="Outcome Measure List for QUARTET USA Trial"/>
 <artifact id="Composition/375280" key="Composition-375280" name="Outcome Measure Report for QUARTET USA Trial"/>
 <artifact id="Composition/318262" key="Composition-318262" name="Outcome Measure Report: Association of Bariatric Surgery vs Medical Obesity Treatment With Long-term Medical Complications and Obesity-Related Comorbidities (2018 Norwegian Cohort)"/>
+<artifact id="Composition/399873" key="Composition-399873" name="Outcome Measures Report for NCT03421379"/>
 <artifact id="Composition/370504" key="Composition-370504" name="Outcome Measures Report for NCT03640312"/>
 <artifact id="List/307247" key="List-307247" name="Outcome Variables List for PARACHUTE Trial"/>
 <artifact id="EvidenceVariable/297745" key="EvidenceVariable-297745" name="Outcome: Death or Major Traumatic Injury 30 days after Impact"/>
@@ -687,10 +703,17 @@
 <artifact id="Composition/307248" key="Composition-307248" name="PARACHUTE trial participant flow report"/>
 <artifact id="Group/297487" key="Group-297487" name="PARACHUTE trial participants assigned parachute"/>
 <artifact id="EvidenceVariable/267228" key="EvidenceVariable-267228" name="PD: Time to Maximal Concentration (Tmax) of Glucagon Nasal Powder and Glucagon Hydrochloride IM (NCT03421379)"/>
+<artifact id="Evidence/267237" key="Evidence-267237" name="PD: Time to Maximal Concentration (Tmax) of Glucagon Nasal Powder and Glucagon Hydrochloride IM at Pre-dose, 5, 10, 15, 20, 25, 30, 40, 50, 60, 90, 120, 240 minutes after each glucagon administration for Glucagon Hydrochloride Solution in NCT03421379"/>
+<artifact id="Evidence/267236" key="Evidence-267236" name="PD: Time to Maximal Concentration (Tmax) of Glucagon Nasal Powder and Glucagon Hydrochloride IM at Pre-dose, 5, 10, 15, 20, 25, 30, 40, 50, 60, 90, 120, 240 minutes after each glucagon administration for Glucagon Nasal Powder in NCT03421379"/>
 <artifact id="EvidenceVariable/267230" key="EvidenceVariable-267230" name="PK: Change From Baseline in Maximal Concentration (Cmax) of Glucagon Nasal Powder and Glucagon Hydrochloride IM (NCT03421379)"/>
+<artifact id="Evidence/267241" key="Evidence-267241" name="PK: Change From Baseline in Maximal Concentration (Cmax) of Glucagon Nasal Powder and Glucagon Hydrochloride IM at Pre-dose, 5, 10, 15, 20, 25, 30, 40, 50, 60, 90, 120, 240 minutes after each glucagon administration for Glucagon Hydrochloride Solution in NCT03421379"/>
+<artifact id="Evidence/267240" key="Evidence-267240" name="PK: Change From Baseline in Maximal Concentration (Cmax) of Glucagon Nasal Powder and Glucagon Hydrochloride IM at Pre-dose, 5, 10, 15, 20, 25, 30, 40, 50, 60, 90, 120, 240 minutes after each glucagon administration for Glucagon Nasal Powder in NCT03421379"/>
 <artifact id="EvidenceVariable/267231" key="EvidenceVariable-267231" name="PK: Change From Baseline in Tmax of Glucagon Nasal Powder and Glucagon Hydrochloride IM (NCT03421379)"/>
+<artifact id="Evidence/267243" key="Evidence-267243" name="PK: Change From Baseline in Tmax of Glucagon Nasal Powder and Glucagon Hydrochloride IM at Pre-dose, 5, 10, 15, 20, 25, 30, 40, 50, 60, 90, 120, 240 minutes after each glucagon administration for Glucagon Hydrochloride Solution in NCT03421379"/>
+<artifact id="Evidence/267242" key="Evidence-267242" name="PK: Change From Baseline in Tmax of Glucagon Nasal Powder and Glucagon Hydrochloride IM at Pre-dose, 5, 10, 15, 20, 25, 30, 40, 50, 60, 90, 120, 240 minutes after each glucagon administration for Glucagon Nasal Powder in NCT03421379"/>
 <artifact id="Composition/292951" key="Composition-292951" name="Parachute use to prevent death and major trauma when jumping from aircraft: randomized controlled trial."/>
 <artifact id="EvidenceVariable/306661" key="EvidenceVariable-306661" name="Parachute vs Empty Backpack in PARACHUTE Trial"/>
+<artifact id="Composition/399871" key="Composition-399871" name="Participant Flow Report for NCT03421379"/>
 <artifact id="Composition/370502" key="Composition-370502" name="Participant Flow Report for NCT03640312"/>
 <artifact id="Composition/370512" key="Composition-370512" name="Participant Flow Report for QUARTET USA Trial"/>
 <artifact id="List/307246" key="List-307246" name="Participant Flow Variables List for PARACHUTE Trial"/>
@@ -712,6 +735,9 @@
 <artifact id="Group/7750" key="Group-7750" name="Participants_in_Anticoagulation_for_COVID_19_Combined_ATTACC_ACTIV_4a_and_REMAP_CAP_RCT_hospitalized_not_critically_ill"/>
 <artifact id="Group/7749" key="Group-7749" name="Patients_who_are_hospitalized_for_COVID_19_and_who_are_not_critically_ill"/>
 <artifact id="EvidenceVariable/267226" key="EvidenceVariable-267226" name="Percentage of Participants Achieving Treatment Success During Controlled Insulin-Induced Hypoglycemia (NCT03421379)"/>
+<artifact id="Evidence/267244" key="Evidence-267244" name="Percentage of Participants Achieving Treatment Success During Controlled Insulin-Induced Hypoglycemia at Pre-dose up to 30 minutes post each glucagon administration Statistical Analysis for Glucagon Nasal Powder vs Glucagon Hydrochloride Solution in NCT03421379"/>
+<artifact id="Evidence/267233" key="Evidence-267233" name="Percentage of Participants Achieving Treatment Success During Controlled Insulin-Induced Hypoglycemia at Pre-dose up to 30 minutes post each glucagon administration for Glucagon Hydrochloride Solution in NCT03421379"/>
+<artifact id="Evidence/267232" key="Evidence-267232" name="Percentage of Participants Achieving Treatment Success During Controlled Insulin-Induced Hypoglycemia at Pre-dose up to 30 minutes post each glucagon administration for Glucagon Nasal Powder in NCT03421379"/>
 <artifact id="EvidenceVariable/367897" key="EvidenceVariable-367897" name="Percentage of Participants With Potentially Related Adverse Events (NCT03640312)"/>
 <artifact id="Evidence/367953" key="Evidence-367953" name="Percentage of Participants With Potentially Related Adverse Events at 12 weeks Statistical Analysis for QUARTET LDQT vs Candesartan in NCT03640312"/>
 <artifact id="Evidence/367930" key="Evidence-367930" name="Percentage of Participants With Potentially Related Adverse Events at 12 weeks for Candesartan in NCT03640312"/>
@@ -721,7 +747,11 @@
 <artifact id="Evidence/367928" key="Evidence-367928" name="Percentage of Participants With Serious Adverse Events (SAEs) at 12 weeks for Candesartan in NCT03640312"/>
 <artifact id="Evidence/367927" key="Evidence-367927" name="Percentage of Participants With Serious Adverse Events (SAEs) at 12 weeks for QUARTET LDQT in NCT03640312"/>
 <artifact id="EvidenceVariable/267227" key="EvidenceVariable-267227" name="Pharmacodynamics (PD): Change From Baseline in Maximal Blood Glucose (BGmax) of Glucagon Nasal Powder and Glucagon Hydrochloride Intramuscular (IM) (NCT03421379)"/>
+<artifact id="Evidence/267235" key="Evidence-267235" name="Pharmacodynamics (PD): Change From Baseline in Maximal Blood Glucose (BGmax) of Glucagon Nasal Powder and Glucagon Hydrochloride Intramuscular (IM) at Pre-dose, 5, 10, 15, 20, 25, 30, 40, 50, 60, 90, 120, 240 minutes after each glucagon administration for Glucagon Hydrochloride Solution in NCT03421379"/>
+<artifact id="Evidence/267234" key="Evidence-267234" name="Pharmacodynamics (PD): Change From Baseline in Maximal Blood Glucose (BGmax) of Glucagon Nasal Powder and Glucagon Hydrochloride Intramuscular (IM) at Pre-dose, 5, 10, 15, 20, 25, 30, 40, 50, 60, 90, 120, 240 minutes after each glucagon administration for Glucagon Nasal Powder in NCT03421379"/>
 <artifact id="EvidenceVariable/267229" key="EvidenceVariable-267229" name="Pharmacokinetics (PK): Change From Baseline in Area Under the Concentration Versus Time Curve From Zero to Time t (AUC [0-tLast]) of Glucagon Nasal Powder and Glucagon Hydrochloride IM (NCT03421379)"/>
+<artifact id="Evidence/267239" key="Evidence-267239" name="Pharmacokinetics (PK): Change From Baseline in Area Under the Concentration Versus Time Curve From Zero to Time t (AUC [0-tLast]) of Glucagon Nasal Powder and Glucagon Hydrochloride IM at Pre-dose, 5, 10, 15, 20, 25, 30, 40, 50, 60, 90, 120, 240 minutes after each glucagon administration for Glucagon Hydrochloride Solution in NCT03421379"/>
+<artifact id="Evidence/267238" key="Evidence-267238" name="Pharmacokinetics (PK): Change From Baseline in Area Under the Concentration Versus Time Curve From Zero to Time t (AUC [0-tLast]) of Glucagon Nasal Powder and Glucagon Hydrochloride IM at Pre-dose, 5, 10, 15, 20, 25, 30, 40, 50, 60, 90, 120, 240 minutes after each glucagon administration for Glucagon Nasal Powder in NCT03421379"/>
 <artifact id="EvidenceVariable/12718" key="EvidenceVariable-12718" name="Placebo"/>
 <artifact id="PlanDefinition/179468" key="PlanDefinition-179468" name="PlanDefinition for Recommendation: ADA Obesity Management Recommendation 8.16"/>
 <artifact id="PlanDefinition/179554" key="PlanDefinition-179554" name="PlanDefinition for Recommendation: ADA Obesity Management Recommendation 8.17"/>
@@ -772,6 +802,8 @@
 <artifact id="Group/179783" key="Group-179783" name="Remdesivir IV 200 mg once then 100 mg once daily for 9 days"/>
 <artifact id="CodeSystem/research-study-document-types-code-system" key="CodeSystem-research-study-document-types-code-system" name="Research Study Document Types Code System"/>
 <artifact id="ValueSet/research-study-document-types" key="ValueSet-research-study-document-types" name="Research Study Document Types Value Set"/>
+<artifact id="CodeSystem/419455" key="CodeSystem-419455" name="ResearchStudy Classifier Code System"/>
+<artifact id="ValueSet/research-study-classifier" key="ValueSet-research-study-classifier" name="ResearchStudy Classifier Value Set"/>
 <artifact deprecated="true" id="StructureDefinition/research-study-comparison-group-eligibility" key="StructureDefinition-research-study-comparison-group-eligibility" name="ResearchStudyComparisonGroupEligibility"/>
 <artifact id="StructureDefinition/research-study-data-dictionary" key="StructureDefinition-research-study-data-dictionary" name="ResearchStudyDataDictionary"/>
 <artifact id="StructureDefinition/research-study-excluded-study" key="StructureDefinition-research-study-excluded-study" name="ResearchStudyExcludedStudy"/>
@@ -784,6 +816,7 @@
 <artifact deprecated="true" id="StructureDefinition/research-study-result-as-composition" key="StructureDefinition-research-study-result-as-composition" name="ResearchStudyResultAsComposition"/>
 <artifact id="StructureDefinition/research-study-sae-reporting-method" key="StructureDefinition-research-study-sae-reporting-method" name="ResearchStudySaeReportingMethod"/>
 <artifact id="StructureDefinition/research-study-search-strategy" key="StructureDefinition-research-study-search-strategy" name="ResearchStudySearchStrategy"/>
+<artifact id="StructureDefinition/research-study-site" key="StructureDefinition-research-study-site" name="ResearchStudySite"/>
 <artifact id="StructureDefinition/research-study-sponsor-confidentiality-statement" key="StructureDefinition-research-study-sponsor-confidentiality-statement" name="ResearchStudySponsorConfidentialityStatement"/>
 <artifact id="StructureDefinition/research-study-study-amendment" key="StructureDefinition-research-study-study-amendment" name="ResearchStudyStudyAmendment"/>
 <artifact id="StructureDefinition/research-study-support" key="StructureDefinition-research-study-support" name="ResearchStudySupport"/>
@@ -825,6 +858,7 @@
 <artifact deprecated="true" id="StructureDefinition/statistic-model-value-quantity" key="StructureDefinition-statistic-model-value-quantity" name="StatisticModelValueQuantity"/>
 <artifact deprecated="true" id="StructureDefinition/statistic-model-value-range" key="StructureDefinition-statistic-model-value-range" name="StatisticModelValueRange"/>
 <artifact id="Citation/33400" key="Citation-33400" name="StudyCitation: 2022 Systematic Review of bariatric surgery mortality effect 35243488"/>
+<artifact id="StructureDefinition/study-component" key="StructureDefinition-study-component" name="StudyComponent"/>
 <artifact id="StructureDefinition/study-design" key="StructureDefinition-study-design" name="StudyDesign"/>
 <artifact id="StructureDefinition/study-eligibility-criteria" key="StructureDefinition-study-eligibility-criteria" name="StudyEligibilityCriteria"/>
 <artifact id="Group/172461" key="Group-172461" name="StudyEligibilityCriteria: Eligibility Criteria for DIBASY Trial"/>
