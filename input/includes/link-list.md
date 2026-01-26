@@ -77,6 +77,7 @@
 [ResearchStudy Classifier Code System]: CodeSystem-419455.html
 [ResearchStudyDataDictionary]: StructureDefinition-research-study-data-dictionary.html
 [ResearchStudySite]: StructureDefinition-research-study-site.html
+[ResearchStudySupport]: StructureDefinition-research-study-support.html
 [RiskOfBias]: StructureDefinition-risk-of-bias.html
 [SearchResults]: StructureDefinition-search-results.html
 [SearchStrategy]: StructureDefinition-search-strategy.html

@@ -12,6 +12,10 @@ The **[SystematicReview Profile][SystematicReview]** is a Profile of <b>Research
 
 Extensions are provided for searchStrategy, systematicReviewEligibilityCriteria, numberOfStudiesIdentified, numberOfStudiesIncluded, includedStudy, excludedStudy, and resultAsComposition.
 
+### ResearchStudySupport Profile of DocumentReference Resource
+
+The **[ResearchStudySupport Profile][ResearchStudySupport]** is a Profile of <b>DocumentReference Resource</b> and is used to classify the type of document used to support a research study.
+
 ### RecommendationAction Profile of ActivityDefinition Resource
 
 The **[RecommendationAction Profile][RecommendationAction]** is a Profile of <b>ActivityDefinition Resource</b> and is used for a recommendation from a clinical practice guideline.
