@@ -7,9 +7,10 @@ Description: "Profile of ResearchStudy for Evidence Based Medicine IG. The Study
 * ^extension[$ext-standards-status].valueCode = #trial-use
 * extension contains ArtifactPublicationStatus named publicationStatus 0..1
 * extension contains $ext-author named author 0..*
-* extension contains RelatesToWithQuotation named RelatesToWithQuotation 0..*
 * extension contains $ext-researchStudy-studyRegistration named studyRegistration 0..*
 * extension contains ResearchStudyIsLowInterventionTrial named isLowInterventionTrial 0..1
+* relatesTo
+  * extension contains RelatesToWithQuotation named quotation 0..1
 * condition
   * extension contains ResearchStudyIsRareDisease named isRareDisease 0..1
 * condition.text

@@ -9,7 +9,6 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * extension contains $ext-description named description 0..1
 * extension contains $ext-author named author 0..*
 * extension contains $ext-useContext named useContext 0..*
-* extension contains RelatesToWithQuotation named RelatesToWithQuotation 0..*
 * extension contains ArtifactPublicationStatus named publicationStatus 0..1
 * identifier
   * ^definition = "A formal identifier that is used to identify this EvidenceAssessment when it is represented in other formats, or referenced in a specification, model, design or an instance." 
@@ -30,13 +29,17 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * artifact[x]
   * ^definition = "A reference to a resource, canonical resource, or non-FHIR resource which the EvidenceAssessment is about."
   * ^short = "The artifact that is rated"
+* relatesTo
+  * extension contains RelatesToWithQuotation named quotation 0..1
 * content ^slicing.discriminator.type = #value
 * content ^slicing.discriminator.path = "type"
 * content ^slicing.rules = #open
 * content
-  * extension contains RelatesToWithQuotation named RelatesToWithQuotation 0..*
+  * relatesTo
+    * extension contains RelatesToWithQuotation named quotation 0..1
   * component
-    * extension contains RelatesToWithQuotation named RelatesToWithQuotation 0..*
+    * relatesTo
+      * extension contains RelatesToWithQuotation named quotation 0..1
 * content contains ratingSystem 0..1 MS and overall 0..1 and riskOfBias 0..1
 * content[ratingSystem].type = https://fevir.net/resources/CodeSystem/179423#rating-system "Rating System"
 * content[ratingSystem].classifier from evidence-rating-system-classifier (extensible)

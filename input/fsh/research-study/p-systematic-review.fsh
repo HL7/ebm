@@ -7,7 +7,6 @@ Description: "Profile of ResearchStudy for Evidence Based Medicine IG. The Syste
 * ^extension[$ext-standards-status].valueCode = #trial-use
 * extension contains ArtifactPublicationStatus named publicationStatus 0..1
 * extension contains $ext-author named author 0..*
-* extension contains RelatesToWithQuotation named RelatesToWithQuotation 0..*
 * extension contains ResearchStudySearchStrategy named searchStrategy 0..*
 * extension contains ResearchStudySystematicReviewEligibilityCriteria named systematicReviewEligibilityCriteria 0..1
 * extension contains ResearchStudyNumberOfStudiesIdentified named numberOfStudiesIdentified 0..1
@@ -15,5 +14,7 @@ Description: "Profile of ResearchStudy for Evidence Based Medicine IG. The Syste
 * extension contains ResearchStudyIncludedStudy named includedStudy 0..*
 * extension contains ResearchStudyExcludedStudy named excludedStudy 0..*
 * extension contains $ext-researchStudy-studyRegistration named studyRegistration 0..*
+* relatesTo
+  * extension contains RelatesToWithQuotation named quotation 0..1
 * phase 0..0
 * recruitment 0..0

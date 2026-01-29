@@ -7,10 +7,11 @@ Description: "Profile of ResearchStudy for Evidence Based Medicine IG. The Resea
 * ^extension[$ext-standards-status].valueCode = #trial-use
 * extension contains ArtifactPublicationStatus named publicationStatus 0..1
 * extension contains $ext-author named author 0..*
-* extension contains RelatesToWithQuotation named RelatesToWithQuotation 0..*
 * extension contains ResearchStudySponsorConfidentialityStatement named confidentialityStatement 0..1
 * extension contains ResearchStudySaeReportingMethod named saeReportingMethod 0..1
 * extension contains ResearchStudyStudyAmendment named studyAmendment 0..1
 * title ^comment = "The title should include the title of the parent ResearchStudy plus the name of the site represented."
 * partOf 1..*
+* relatesTo
+  * extension contains RelatesToWithQuotation named quotation 0..1
 * classifier from research-study-classifier (preferred)
