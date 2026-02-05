@@ -84,3 +84,5 @@ Extensions added include ArtifactPublicationStatus, ArtifactRecorder, GuidelineR
 
 Extensions removed (in favor of use of the FHIR Extensions Pack) include AdditionalLanguage.
 
+Extensions to Composition using artifact-approvalDate, artifact-lastReviewDate, and artifact-effectivePeriod were changed to resource-approvalDate, resource-lastReviewDate, and resource-effectivePeriod as the former set will be deprecated in the FHIR Extensions Pack.
+
