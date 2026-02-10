@@ -86,3 +86,4 @@ Extensions removed (in favor of use of the FHIR Extensions Pack) include Additio
 
 Extensions to Composition using artifact-approvalDate, artifact-lastReviewDate, and artifact-effectivePeriod were changed to resource-approvalDate, resource-lastReviewDate, and resource-effectivePeriod as the former set will be deprecated in the FHIR Extensions Pack.
 
+The RelatesToWithQuotation extension was simplified to use valueMarkdown and apply to relatesTo elements in Evidence, EvidenceVariable, Citation, ArtifactAssessment, and ResearchStudy Resources.
