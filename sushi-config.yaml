@@ -98,8 +98,8 @@ parameters:
   apply-jurisdiction: true
 #  path-resource:
 #    - input/resources/citation
-#  additional-resource:
-#    - input/resources/citation/StructureDefinition-Citation.xml
+  additional-resource:
+    - input/resources/citation/StructureDefinition-Citation.xml
 #  special-url-base: http://hl7.org/fhir
 # parameters:
 #   excludettl: true
