@@ -99,7 +99,7 @@ parameters:
 #  path-resource:
 #    - input/resources/citation
   additional-resource:
-    - input/resources/citation/StructureDefinition-Citation.xml
+    - http://hl7.org/fhir/uv/ebm-incubator/StructureDefinition/Citation
 #  special-url-base: http://hl7.org/fhir
 # parameters:
 #   excludettl: true
