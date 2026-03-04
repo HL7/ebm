@@ -97,7 +97,7 @@ parameters:
   auto-oid-root: 2.16.840.1.113883.4.642.40.44
   apply-jurisdiction: true
 #  path-resource:
-#    - input/resources/citation
+#    - input/resources/citation 
   additional-resource:
     - http://hl7.org/fhir/uv/ebm-incubator/StructureDefinition/Citation
 #  special-url-base: http://hl7.org/fhir
