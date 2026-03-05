@@ -11,6 +11,8 @@ Description: "Profile of Group for Evidence Based Medicine IG. The GroupR6 Profi
 * extension contains $ext-relatedArtifact named relatedArtifact 0..*
 * extension contains $ext-characteristic-expression named characteristicExpression 0..1
 * extension contains ArtifactPublicationStatus named publicationStatus 0..1
+* characteristic
+  * extension contains RelevantForAutomatedMatching named relevantForAutomatedMatching 0..1
 
   
   
