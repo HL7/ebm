@@ -286,6 +286,9 @@ Description: "Profile Names in the Evidence Based Medicine on FHIR (EBMonFHIR) I
 * ^concept[91].code = #ResearchStudySite
 * ^concept[91].display = "ResearchStudySite"
 * ^concept[91].definition = "Profile of ResearchStudy for Evidence Based Medicine IG. The ResearchStudySite Profile is used to express site-specific data for a research study."
+* ^concept[92].code = #PICOSpecification
+* ^concept[92].display = "PICOSpecification"
+* ^concept[92].definition = "Profile of Group for Evidence Based Medicine IG. The PICOSpecification Profile is used to represent a clinical question defined with Population, Intervention, Comparator, and Outcome components."
 
 
 
