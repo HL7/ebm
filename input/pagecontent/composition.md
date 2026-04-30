@@ -42,6 +42,10 @@ The **[ResearchStudyDataDictionary Profile][ResearchStudyDataDictionary]** is a 
 
 The **[EvidenceReportPackage Profile][EvidenceReportPackage]** is used for a base structure to extend the **[EvidenceReport Profile][EvidenceReport]** with optional sections for Summary, Introduction, Discussion, Methods, References, Competing Interests, Acknowledgements, Appendices, and Attachments.
 
+### PICOTaggedComposition Profile of Composition Resource
+
+The **[PICOTaggedComposition Profile][PICOTaggedComposition]** extends the **[EvidenceReport Profile][EvidenceReport]** and is used to classify the Composition with respect to a clinical question defined with Population, Intervention, Comparator, and Outcome components.
+
 ### ComparativeEvidenceReport Profile of Composition Resource
 
 The **[ComparativeEvidenceReport Profile][ComparativeEvidenceReport]** is a Profile of **[EvidenceReportPackage][EvidenceReportPackage]** and is used for an evidence report including the study group, exposure, comparator, and findings for any number of outcomes comparing the exposure to the comparator in the study group. 

@@ -38,9 +38,13 @@ The Recommendation Profile was simplified to remove the Summary and Recommendati
 
 The SummaryOfNetEffect Profile was modified to include a SummaryOfFindings section slice which contains outcomeEntry section slices for each outcome, similar to the SummaryOfFindings Profile.
 
+The PICOTaggedComposition Profile was added to classify the Composition with respect to a clinical question defined with Population, Intervention, Comparator, and Outcome components.
+
 ### Changes to Profiles of Evidence
 
 The NetEffectEstimate Profile was modified to represent the 'Group of Evidence' (NetEffectContributions Profile of Group) as an outcome instead of a population in the variableDefintion, to allow multiple confidence intervals, and to add an attribute estimate for the 'number needed to treat'.
+
+The PICOTaggedEvidence Profile was added to classify the Evidence with respect to a clinical question defined with Population, Intervention, Comparator, and Outcome components.
 
 ### Changes to Profiles of EvidenceVariable
 

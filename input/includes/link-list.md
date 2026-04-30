@@ -66,6 +66,8 @@
 [ParticipantFlowReport]: StructureDefinition-participant-flow-report.html
 [ParticipantFlowVariablesList]: StructureDefinition-participant-flow-variables-list.html
 [PICOSpecification]: StructureDefinition-pico-specification.html
+[PICOTaggedComposition]: StructureDefinition-pico-tagged-composition.html
+[PICOTaggedEvidence]: StructureDefinition-pico-tagged-evidence.html
 [PreprintCitation]: StructureDefinition-preprint-citation.html
 [Rating]: StructureDefinition-rating.html
 [Recommendation]: StructureDefinition-recommendation.html

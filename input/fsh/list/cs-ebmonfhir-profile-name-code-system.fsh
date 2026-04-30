@@ -289,6 +289,12 @@ Description: "Profile Names in the Evidence Based Medicine on FHIR (EBMonFHIR) I
 * ^concept[92].code = #PICOSpecification
 * ^concept[92].display = "PICOSpecification"
 * ^concept[92].definition = "Profile of Group for Evidence Based Medicine IG. The PICOSpecification Profile is used to represent a clinical question defined with Population, Intervention, Comparator, and Outcome components."
+* ^concept[93].code = #PICOTaggedComposition
+* ^concept[93].display = "PICOTaggedComposition"
+* ^concept[93].definition = "Profile of Composition for Evidence Based Medicine IG. The PICOTaggedComposition Profile is used to classify the Composition with respect to a clinical question defined with Population, Intervention, Comparator, and Outcome components."
+* ^concept[94].code = #PICOTaggedEvidence
+* ^concept[94].display = "PICOTaggedEvidence"
+* ^concept[94].definition = "Profile of Evidence for Evidence Based Medicine IG. The PICOTaggedEvidence Profile is used to classify the Evidence with respect to a clinical question defined with Population, Intervention, Comparator, and Outcome components."
 
 
 
