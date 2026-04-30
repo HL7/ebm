@@ -62,6 +62,8 @@ The StudyComponent Profile was added to report a part of a study that is conduct
 
 The AbsenceOfExposureDefinition Profile of Group was added.
 
+The PICOSpecification Profile of Group was added.
+
 The ResearchStudySupport Profile of DocumentReference was added.
 
 ### Changes for Citation Resource
@@ -74,7 +76,7 @@ The following terminologies were moved from an external draft code system to be 
 
 The EvidenceReportContributorRole Value Set was removed as the EvidenceReport Profile can now directly use the Contributor Role Value Set from THO.
 
-New terminologies (CodeSystem and ValueSet pairs) were created for EvidenceRatingSystemClassifier, ResearchStudyDocumentTypes, and ResearchStudyClassifier.
+New terminologies (CodeSystem and ValueSet pairs) were created for EvidenceRatingSystemClassifier, PICOClassification, ResearchStudyDocumentTypes, and ResearchStudyClassifier.
 
 ### Changes to Extensions
 

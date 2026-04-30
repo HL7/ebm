@@ -65,6 +65,7 @@
 [ParticipantFlowReasonEvidenceVariable]: StructureDefinition-participant-flow-reason-evidence-variable.html
 [ParticipantFlowReport]: StructureDefinition-participant-flow-report.html
 [ParticipantFlowVariablesList]: StructureDefinition-participant-flow-variables-list.html
+[PICOSpecification]: StructureDefinition-pico-specification.html
 [PreprintCitation]: StructureDefinition-preprint-citation.html
 [Rating]: StructureDefinition-rating.html
 [Recommendation]: StructureDefinition-recommendation.html

@@ -212,4 +212,6 @@ The **[EvidenceReportSubject Profile][EvidenceReportSubject]** is a Profile of *
 
 The **[ComparativeEvidenceReportSubject Profile][ComparativeEvidenceReportSubject]** is a Profile of **[EvidenceReportSubject][EvidenceReportSubject]** which requires the use of Population (constrained to reference **[StudyGroup][StudyGroup]**), Intervention or Exposure (constrained to reference **[VariableDefinition][VariableDefinition]** or **[ConceptualExposureDefinition][ConceptualExposureDefinition]**), Comparator (constrained to reference **[VariableDefinition][VariableDefinition]** or **[ConceptualExposureDefinition][ConceptualExposureDefinition]** or **[ConceptualComparatorDefinition][ConceptualComparatorDefinition]**), and Outcomes (constrained to reference **[OutcomeList][OutcomeList]**).
 
+The **[PICOSpecification Profile][PICOSpecification]** is a Profile of **[ConceptualCohortDefinition][ConceptualCohortDefinition]** used to represent a clinical question defined with Population, Intervention, Comparator, and Outcome components. The characteristic.code uses the PICO Classification Value Set with extensible binding.
+
 {% include link-list.md %}
