@@ -80,7 +80,7 @@ The following terminologies were moved from an external draft code system to be 
 
 The EvidenceReportContributorRole Value Set was removed as the EvidenceReport Profile can now directly use the Contributor Role Value Set from THO.
 
-New terminologies (CodeSystem and ValueSet pairs) were created for EvidenceRatingSystemClassifier, PICOClassification, ResearchStudyDocumentTypes, and ResearchStudyClassifier.
+New terminologies (CodeSystem and ValueSet pairs) were created for EvidenceRatingSystemClassifier, ResearchStudyDocumentTypes, and ResearchStudyClassifier; and a PICOClassification ValueSet was created.
 
 ### Changes to Extensions
 
