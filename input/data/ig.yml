@@ -334,11 +334,6 @@ definition:
     name: Anticoagulation for COVID-19 Combined RCTs in NEJM
     reference:
       reference: Citation/7636
-  - description: When the resource was approved by publisher.
-    isExample: false
-    name: ArtifactApprovalDate
-    reference:
-      reference: StructureDefinition/artifact-approvalDate
   - description: The artifact being compared to the referenced artifact.
     isExample: false
     name: ArtifactAssessmentCompared
@@ -349,17 +344,6 @@ definition:
     name: ArtifactAssessmentDateAsRating
     reference:
       reference: StructureDefinition/artifact-assessment-date-as-rating
-  - description: The period during which the resource content was or is planned to
-      be in active use.
-    isExample: false
-    name: ArtifactEffectivePeriod
-    reference:
-      reference: StructureDefinition/artifact-effectivePeriod
-  - description: When the resource was approved by publisher.
-    isExample: false
-    name: ArtifactLastReviewDate
-    reference:
-      reference: StructureDefinition/artifact-lastReviewDate
   - description: "Inclusion Criteria: [[1]] Adults. [[2]] Diagnosed with type 2 diabetes.\
       \ [[3]] Body Mass Index (BMI) \u2265 40.0 kg/m2 (BMI \u2265 37.5 kg/m2 in Asian\
       \ Americans), or BMI \u2265 35.0 kg/m2 and \u2264 39.9 kg/m2 (BMI 32.5-37.4\
