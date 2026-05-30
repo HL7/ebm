@@ -40,6 +40,8 @@ The SummaryOfNetEffect Profile was modified to include a SummaryOfFindings secti
 
 The PICOTaggedComposition Profile was added to classify the Composition with respect to a clinical question defined with Population, Intervention, Comparator, and Outcome components.
 
+The M11Report Profile was separated into M11ReportContainer, M11ReportSection01, M11ReportSection02, M11ReportSection03, M11ReportSection04, M11ReportSection05, M11ReportSection06, M11ReportSection07, M11ReportSection08, M11ReportSection09, M11ReportSection10, M11ReportSection11, M11ReportSection12, M11ReportSection13, and M11ReportSection14 Profiles.
+
 ### Changes to Profiles of Evidence
 
 The NetEffectEstimate Profile was modified to represent the 'Group of Evidence' (NetEffectContributions Profile of Group) as an outcome instead of a population in the variableDefintion, to allow multiple confidence intervals, and to add an attribute estimate for the 'number needed to treat'.

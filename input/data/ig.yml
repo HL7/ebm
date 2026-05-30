@@ -1819,14 +1819,126 @@ definition:
     - http://hl7.org/fhir/uv/ebm/StructureDefinition/m11-report
     reference:
       reference: Composition/343018
-  - description: Profile of Composition for Evidence Based Medicine IG. The M11Report
-      Profile is used for the International Council for Harmonisation of Technical
+  - description: Profile of Composition for Evidence Based Medicine IG. The M11ReportContainer
+      Profile is used for a complete report for the International Council for Harmonisation of Technical
       Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured
       Harmonised Protocol (CeSHarP) M11 Technical Specification.
     isExample: false
-    name: M11Report
+    name: M11ReportContainer
     reference:
-      reference: StructureDefinition/m11-report
+      reference: StructureDefinition/m11-report-container
+  - description: Profile of Composition for Evidence Based Medicine IG. The M11ReportSection01
+      Profile is used for section 1 (Protocol Summary) for the International Council for Harmonisation of Technical
+      Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured
+      Harmonised Protocol (CeSHarP) M11 Technical Specification.
+    isExample: false
+    name: M11ReportSection01
+    reference:
+      reference: StructureDefinition/m11-report-section-01
+  - description: Profile of Composition for Evidence Based Medicine IG. The M11ReportSection02
+      Profile is used for section 2 (Introduction) for the International Council for Harmonisation of Technical
+      Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured
+      Harmonised Protocol (CeSHarP) M11 Technical Specification.
+    isExample: false
+    name: M11ReportSection02
+    reference:
+      reference: StructureDefinition/m11-report-section-02
+  - description: Profile of Composition for Evidence Based Medicine IG. The M11ReportSection03
+      Profile is used for section 3 (Trial Objectives and Associated Estimands) for the International Council for Harmonisation of Technical
+      Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured
+      Harmonised Protocol (CeSHarP) M11 Technical Specification.
+    isExample: false
+    name: M11ReportSection03
+    reference:
+      reference: StructureDefinition/m11-report-section-03
+  - description: Profile of Composition for Evidence Based Medicine IG. The M11ReportSection04
+      Profile is used for section 4 (Trial Design) for the International Council for Harmonisation of Technical
+      Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured
+      Harmonised Protocol (CeSHarP) M11 Technical Specification.
+    isExample: false
+    name: M11ReportSection04
+    reference:
+      reference: StructureDefinition/m11-report-section-04
+  - description: Profile of Composition for Evidence Based Medicine IG. The M11ReportSection05
+      Profile is used for section 5 (Trial Population) for the International Council for Harmonisation of Technical
+      Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured
+      Harmonised Protocol (CeSHarP) M11 Technical Specification.
+    isExample: false
+    name: M11ReportSection05
+    reference:
+      reference: StructureDefinition/m11-report-section-05
+  - description: Profile of Composition for Evidence Based Medicine IG. The M11ReportSection06
+      Profile is used for section 6 (Trial Intervention) for the International Council for Harmonisation of Technical
+      Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured
+      Harmonised Protocol (CeSHarP) M11 Technical Specification.
+    isExample: false
+    name: M11ReportSection06
+    reference:
+      reference: StructureDefinition/m11-report-section-06
+  - description: Profile of Composition for Evidence Based Medicine IG. The M11ReportSection07
+      Profile is used for section 7 (Participant Discontinuation) for the International Council for Harmonisation of Technical
+      Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured
+      Harmonised Protocol (CeSHarP) M11 Technical Specification.
+    isExample: false
+    name: M11ReportSection07
+    reference:
+      reference: StructureDefinition/m11-report-section-07
+  - description: Profile of Composition for Evidence Based Medicine IG. The M11ReportSection08
+      Profile is used for section 8 (Trial Assessments) for the International Council for Harmonisation of Technical
+      Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured
+      Harmonised Protocol (CeSHarP) M11 Technical Specification.
+    isExample: false
+    name: M11ReportSection08
+    reference:
+      reference: StructureDefinition/m11-report-section-08
+  - description: Profile of Composition for Evidence Based Medicine IG. The M11ReportSection09
+      Profile is used for section 9 (Adverse Events) for the International Council for Harmonisation of Technical
+      Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured
+      Harmonised Protocol (CeSHarP) M11 Technical Specification.
+    isExample: false
+    name: M11ReportSection09
+    reference:
+      reference: StructureDefinition/m11-report-section-09
+  - description: Profile of Composition for Evidence Based Medicine IG. The M11ReportSection10
+      Profile is used for section 10 (Statistical Considerations) for the International Council for Harmonisation of Technical
+      Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured
+      Harmonised Protocol (CeSHarP) M11 Technical Specification.
+    isExample: false
+    name: M11ReportSection10
+    reference:
+      reference: StructureDefinition/m11-report-section-10
+  - description: Profile of Composition for Evidence Based Medicine IG. The M11ReportSection11
+      Profile is used for section 11 (Oversight) for the International Council for Harmonisation of Technical
+      Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured
+      Harmonised Protocol (CeSHarP) M11 Technical Specification.
+    isExample: false
+    name: M11ReportSection11
+    reference:
+      reference: StructureDefinition/m11-report-section-11
+  - description: Profile of Composition for Evidence Based Medicine IG. The M11ReportSection12
+      Profile is used for section 12 (Supporting Details) for the International Council for Harmonisation of Technical
+      Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured
+      Harmonised Protocol (CeSHarP) M11 Technical Specification.
+    isExample: false
+    name: M11ReportSection12
+    reference:
+      reference: StructureDefinition/m11-report-section-12
+  - description: Profile of Composition for Evidence Based Medicine IG. The M11ReportSection13
+      Profile is used for section 13 (Glossary) for the International Council for Harmonisation of Technical
+      Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured
+      Harmonised Protocol (CeSHarP) M11 Technical Specification.
+    isExample: false
+    name: M11ReportSection13
+    reference:
+      reference: StructureDefinition/m11-report-section-13
+  - description: Profile of Composition for Evidence Based Medicine IG. The M11ReportSection14
+      Profile is used for section 14 (References) for the International Council for Harmonisation of Technical
+      Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured
+      Harmonised Protocol (CeSHarP) M11 Technical Specification.
+    isExample: false
+    name: M11ReportSection14
+    reference:
+      reference: StructureDefinition/m11-report-section-14
   - description: Profile of Group for Evidence Based Medicine IG. The MetaanalysisEligibilityCriteria
       Profile is used to describe inclusion and exclusion criteria for a meta-analysis.
     isExample: false

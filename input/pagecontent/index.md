@@ -150,7 +150,7 @@ The <b>Composition Resource</b> is a structure for grouping information for purp
 Profiles of <b>Composition Resource</b> include:
 - <b>EvidenceReport</b> is used for a base structure (canonical resource management) for a report combining any number of <b>Citation</b>, <b>Evidence</b>, <b>EvidenceVariable</b>, <b>EvidenceReport</b>, and related Resources. Profiles of <b>EvidenceReport</b> include:
   - <b>ResearchStudyDataDictionary</b> is used for a code key for variable names in a dataset containing the observations collected in a research study.
-  - <b>M11Report</b> is used for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification.
+  - <b>M11ReportContainer</b> is used for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification. It references <b>M11ReportSection01</b> through <b>M11ReportSection14</b>.
   - <b>EvidenceReportPackage</b> is used for a base structure to extend the <b>EvidenceReport Profile</b> with optional sections for Summary, Introduction, Discussion, Methods, References, Competing Interests, Acknowledgements, and Appendices. Profiles of <b>EvidenceReportPackage</b> include:
     - <b>ComparativeEvidenceReport</b> is used for an evidence report including the study group, exposure, comparator, and findings for any number of outcomes comparing the exposure to the comparator in the study group.
     - <b>ComparativeEvidenceSynthesisReport</b> is used for an evidence report including the intended population, intended exposure, intended comparator, and findings for any number of outcomes comparing the exposure to the comparator with observed study group, observed exposure group, and observed comparator group unique for each outcome.
@@ -178,7 +178,7 @@ Other Resources and <b>Other Profiles</b> used in the EBMonFHIR Implementation G
   - <b>RecommendationAction</b> used for a recommendation from a clinical practice guideline.
 - <b>PlanDefinition Resource</b> including Profiles of:
   - <b>RecommendationPlan</b> used for the implementable representation of a recommendation (such as that from a clinical practice guideline). <b>RecommendationPlan</b> is developed to match the CPGonFHIR related Implementation Guidance.
-  - <b>SoaPlanDefinition</b> used for the representation of a schedule of activities that is often includes with a research study protocol. <b>SoaPlanDefinition</b> is in development related to efforts to support the <b>M11Report Profile</b>.
+  - <b>SoaPlanDefinition</b> used for the representation of a schedule of activities that is often includes with a research study protocol. <b>SoaPlanDefinition</b> is in development related to efforts to support the <b>M11ReportSection01 Profile</b>.
 - <b>Library Resource</b> including Profiles of:
   - <b>SearchResults</b> used to represent search results, such as for a systematic review. The subjectReference element is limited to reference a <b>SearchStrategy Profile</b>.
   - <b>SystematicReviewIncludedStudies</b> used to represent the subset of search results of a systematic review which meet the inclusion criteria. The subjectReference element is limited to reference a <b>SystematicReviewEligibilityCriteria Profile</b>.

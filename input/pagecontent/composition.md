@@ -203,12 +203,12 @@ The **[SummaryOfNetEffect Profile][SummaryOfNetEffect]** has 1 'Column Headers' 
 The 'Net Effect Estimate' section, if used, is limited to a single entry which references a **[NetEffectEstimate Profile][NetEffectEstimate]**.
 
  
-### M11Report Profile of Composition Resource
+### M11Report Profiles of Composition Resource
 
-The **[M11Report Profile][M11Report]** is a Profile of **[EvidenceReport][EvidenceReport]** and is used for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification.
+The **[M11ReportContainer Profile][M11ReportContainer]** is a Profile of **[EvidenceReport][EvidenceReport]** and is used for a complete report for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification.
 
 The Composition.type value is set to a "Clinical Trial Protocol" and "CeSHarP Report".
 
-The **[M11Report Profile][M11Report]** contains 15 sections with highly detailed instructions and is shared in the EBMonFHIR Implementation Guide for initial development and coordination with the base structures in the EBMonFHIR Implementation Guide. There will likely be a future 'M11 Report' Implementation Guide developed by a different but coordinated group. 
+The **[M11ReportContainer Profile][M11ReportContainer]** contains 2 sections: a Title Page section and a Sections 1-14 section.  The Sections 1-14 section references 14 Profiles with detailed instructions:  **[M11ReportSection01 Profile][M11ReportSection01]**, **[M11ReportSection02 Profile][M11ReportSection02]**, **[M11ReportSection03 Profile][M11ReportSection03]**, **[M11ReportSection04 Profile][M11ReportSection04]**, **[M11ReportSection05 Profile][M11ReportSection05]**, **[M11ReportSection06 Profile][M11ReportSection06]**, **[M11ReportSection07 Profile][M11ReportSection07]**, **[M11ReportSection08 Profile][M11ReportSection08]**, **[M11ReportSection09 Profile][M11ReportSection09]**, **[M11ReportSection10 Profile][M11ReportSection10]**, **[M11ReportSection11 Profile][M11ReportSection11]**, **[M11ReportSection12 Profile][M11ReportSection12]**, **[M11ReportSection13 Profile][M11ReportSection13]**, **[M11ReportSection14 Profile][M11ReportSection14]**.
 
 {% include link-list.md %}

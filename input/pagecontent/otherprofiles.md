@@ -30,7 +30,7 @@ A CharacteristicTiming extension named timingRelativeTime is available for the P
 
 ### SoaPlanDefinition Profile of PlanDefinition Resource
 
-The **[SoaPlanDefinition Profile][SoaPlanDefinition]** is a Profile of <b>PlanDefinition Resource</b> and is used for the representation of a schedule of activities that is often includes with a research study protocol. The **[SoaPlanDefinition Profile][SoaPlanDefinition]** is in development related to efforts to support the **[M11Report Profile][M11Report]**.
+The **[SoaPlanDefinition Profile][SoaPlanDefinition]** is a Profile of <b>PlanDefinition Resource</b> and is used for the representation of a schedule of activities that is often includes with a research study protocol. The **[SoaPlanDefinition Profile][SoaPlanDefinition]** is in development related to efforts to support the **[M11ReportSection01 Profile][M11ReportSection01]**.
 
 A CharacteristicTiming extension named timingRelativeTime is available for the PlanDefinition.action element to provide support for the RelativeTime datatype in FHIR version R6 to be used in FHIR version R5.
 
