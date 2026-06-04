@@ -48,6 +48,10 @@ No definition can be found for the system http://fhir.de/CodeSystem/bfarm/icd-10
 # Suppressing a message about XML tags in markdown. This is a known issue converting structured abstract data from MEDLINE and is handled in the presentation of the data.
 The markdown contains content that appears to be an embedded HTML tag starting at '<A'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
 
+# Suppressing warnings about additionalBindings constraints that do not appear to be a result of IG content
+Constraint failed: eld-31: 'additionalBindings should have a key (key.exists())' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
+Constraint failed: eld-33: 'If there's more than one bindable type, it's usually an error for there to be a binding (type.where(code in 'code' | 'Coding' | 'CodeableConcept' | 'CodeableReference' | 'uri' | 'string' | 'Quantity').count() > 1 implies binding.empty())' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition)
+
 # Suppressing warnings regarding identifier.system URLs that do not match a known definition -- these URLs will be evaluated for listing with THO
 No definition could be found for URL value 'https://doi.org'
 No definition could be found for URL value 'https://pubmed.ncbi.nlm.nih.gov'
