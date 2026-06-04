@@ -71,6 +71,10 @@ definition:
       code: path-history
       system: http://hl7.org/fhir/tools/CodeSystem/ig-parameters
     value: http://hl7.org/fhir/uv/ebm/history.html
+  - code:
+      code: pin-canonicals
+      system: http://hl7.org/fhir/tools/CodeSystem/ig-parameters
+    value: pin-multiples
   resource:
   - description: 'COVID-19 pneumonia remdesivir vs. placebo 14-day mortality (779
       events among 6,744 participants, 3 randomized trials)
