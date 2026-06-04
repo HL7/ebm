@@ -25,7 +25,6 @@ jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World" # https
 publisher:
   name: HL7 International / Clinical Decision Support
   url: http://www.hl7.org/Special/committees/dss
-pin-canonicals: pin-multiples
 
 dependencies:
 #  hl7.fhir.r6.core: latest
@@ -97,6 +96,7 @@ pages:
 parameters:
   auto-oid-root: 2.16.840.1.113883.4.642.40.44
   apply-jurisdiction: true
+  pin-canonicals: pin-multiples
 #  path-resource:
 #    - input/resources/citation 
 #  additional-resource:
