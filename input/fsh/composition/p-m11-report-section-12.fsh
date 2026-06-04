@@ -21,7 +21,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
 * section ^slicing.discriminator.path = "code.text"
 * section ^slicing.rules = #open
 * section contains definitions 1..1 MS
-* section[definitions].title = "Appendix: Supporting Details"
+* section[definitions].title = "12 APPENDIX: SUPPORTING DETAILS"
 * section[definitions].code.coding 1..1
 * section[definitions].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218666 "ICH M11 Protocol Section 12 APPENDIX: SUPPORTING DETAILS"
 * section[definitions].code.text = "section12-supporting-details"
@@ -31,21 +31,21 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * section ^slicing.discriminator.path = "code.text"
   * section ^slicing.rules = #open
   * section contains clinicalLaboratoryTests 1..1 MS and regional 1..1 MS and priorAmendments 1..1 MS
-  * section[clinicalLaboratoryTests].title = "Clinical Laboratory Tests"
+  * section[clinicalLaboratoryTests].title = "12.1 Clinical Laboratory Tests"
   * section[clinicalLaboratoryTests].code.coding 1..1
   * section[clinicalLaboratoryTests].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218667 "ICH M11 Protocol Section 12.1 Clinical Laboratory Tests"
   * section[clinicalLaboratoryTests].code.text = "section12.1-clinical-laboratory-tests"
   * section[clinicalLaboratoryTests]
     * text 1..1
     * text ^comment = "Specify which laboratory parameters should be included in each clinical laboratory assessment panel (for example, for haematology, chemistry, urinalysis). A tabular presentation for such information is common. If applicable, include equations and references for locally calculated laboratory results. If not applicable, retain header and enter Not Applicable."
-  * section[regional].title = "Country/Region-Specific Differences"
+  * section[regional].title = "12.2 Country/Region-Specific Differences"
   * section[regional].code.coding 1..1
   * section[regional].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218668 "ICH M11 Protocol Section 12.2 Country/Region-Specific Differences"
   * section[regional].code.text = "section12.2-country-specific-differences"
   * section[regional]
     * text 1..1
     * text ^comment = "Although global clinical trial practices are increasingly harmonised, some country/ region-specific differences in requirements do exist (for example, document retention periods, contraception requirements).  Where differences in requirements cannot be reconciled, sponsors should explain how they will document and communicate country/region-specific differences (for example, by country/region-specific amendments or addenda). An alternative to country/region-specific amendments is to list the specific differences by country or countries in this section, including a reference to the relevant section of the protocol where the differing requirement applies. If not applicable, retain header and enter Not Applicable."
-  * section[priorAmendments].title = "Prior Protocol Amendment(s)"
+  * section[priorAmendments].title = "12.3 Prior Protocol Amendment(s)"
   * section[priorAmendments].code.coding 1..1
   * section[priorAmendments].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218669 "ICH M11 Protocol Section 12.3 Prior Protocol Amendment(s)"
   * section[priorAmendments].code.text = "section12.3-prior-protocol-amendments"

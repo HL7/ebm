@@ -21,7 +21,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
 * section ^slicing.discriminator.path = "code.text"
 * section ^slicing.rules = #open
 * section contains references 1..1 MS
-* section[references].title = "Appendix: References"
+* section[references].title = "14 APPENDIX: REFERENCES"
 * section[references].code.coding 1..1
 * section[references].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218671 "ICH M11 Protocol Section 14 APPENDIX: REFERENCES"
 * section[references].code.text = "section14-references"

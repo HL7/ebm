@@ -21,7 +21,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
 * section ^slicing.discriminator.path = "code.text"
 * section ^slicing.rules = #open
 * section contains introduction 1..1 MS
-* section[introduction].title = "Introduction"
+* section[introduction].title = "2 INTRODUCTION"
 * section[introduction].code.coding 1..1
 * section[introduction].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218520 "ICH M11 Protocol Section 2 INTRODUCTION"
 * section[introduction].code.text = "section2-introduction"
@@ -32,14 +32,14 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * section ^slicing.discriminator.path = "code.text"
   * section ^slicing.rules = #open
   * section contains purposeOfTrial 1..1 MS and benefitsAndRisks 1..1 MS
-  * section[purposeOfTrial].title = "Purpose of Trial"
+  * section[purposeOfTrial].title = "2.1 Purpose of Trial"
   * section[purposeOfTrial].code.coding 1..1
   * section[purposeOfTrial].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218521 "ICH M11 Protocol Section 2.1 Purpose of Trial"
   * section[purposeOfTrial].code.text = "section2.1-trial-purpose"
   * section[purposeOfTrial]
     * text 1..1
     * text ^comment = "Explain why the trial is needed, and why the research questions being asked are important. Do not restate the objectives or estimands. Do not restate the IB; rather, cross reference to the IB as applicable to the description."
-  * section[benefitsAndRisks].title = "Assessment of Risks and Benefits"
+  * section[benefitsAndRisks].title = "2.2 Assessment of Risks and Benefits"
   * section[benefitsAndRisks].code.coding 1..1
   * section[benefitsAndRisks].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218522 "ICH M11 Protocol Section 2.2 Assessment of Risks and Benefits"
   * section[benefitsAndRisks].code.text = "section2.2-benefits-risks"
@@ -52,7 +52,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
     * section contains riskSummary 1..1 and benefitSummary 1..1 MS and overallBenefitRisk 1..1
-    * section[riskSummary].title = "Risk Summary and Mitigation Strategy"
+    * section[riskSummary].title = "2.2.1 Risk Summary and Mitigation Strategy"
     * section[riskSummary].code.coding 1..1
     * section[riskSummary].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218523 "ICH M11 Protocol Section 2.2.1 Risk Summary and Mitigation Strategy"
     * section[riskSummary].code.text = "section2.2.1-risk-summary"
@@ -79,14 +79,14 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
       * section[otherRisk]
         * text 1..1
         * text ^comment = "Other - Consider risks associated with other items (for example, comparators, challenge agents, imaging agents, medical devices). This could include discussion of risk mitigation for special populations, if not described elsewhere. Insert a line for each, as needed."
-    * section[benefitSummary].title = "Benefit Summary"
+    * section[benefitSummary].title = "2.2.2 Benefit Summary"
     * section[benefitSummary].code.coding 1..1
     * section[benefitSummary].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218524 "ICH M11 Protocol Section 2.2.2 Benefit Summary"
     * section[benefitSummary].code.text = "section2.2.2-benefit-summary"
     * section[benefitSummary]
       * text 1..1
       * text ^comment = "The benefit summary should describe any physical, psychological, social, or any other potential benefits to individual participants as a result of participating in the trial, addressing immediate potential benefits and/or long-range potential benefits. Clearly state if no benefits to an individual participant can be anticipated, or if potential benefits are unknown. For early clinical trials such as Phase 1 or trials in healthy participants, benefits for an individual participant (other than those of altruism) are expected to be minimal. Benefits to society in general may also be included but should be described separately from the individual participant perspective."
-    * section[overallBenefitRisk].title = "Overall Risk-Benefit Assessment"
+    * section[overallBenefitRisk].title = "2.2.3 Overall Risk-Benefit Assessment"
     * section[overallBenefitRisk].code.coding 1..1
     * section[overallBenefitRisk].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218525 "ICH M11 Protocol Section 2.2.3 Overall Risk-Benefit Assessment"
     * section[overallBenefitRisk].code.text = "section2.2.3-overall-benefit-risk-conclusion"

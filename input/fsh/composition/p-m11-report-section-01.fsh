@@ -21,7 +21,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
 * section ^slicing.discriminator.path = "code.text"
 * section ^slicing.rules = #open
 * section contains summary 1..1 MS
-* section[summary].title = "Protocol Summary"
+* section[summary].title = "1 PROTOCOL SUMMARY"
 * section[summary].code.coding 1..1
 * section[summary].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218514 "ICH M11 Protocol Section 1 PROTOCOL SUMMARY"
 * section[summary].code.text = "section1-protocol-summary"
@@ -32,7 +32,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * section ^slicing.discriminator.path = "code.text"
   * section ^slicing.rules = #open
   * section contains protocolSynopsis 1..1 MS and trialSchema 1..1 MS and scheduleOfActivities 1..1 MS
-  * section[protocolSynopsis].title = "Protocol Synopsis"
+  * section[protocolSynopsis].title = "1.1 Protocol Synopsis"
   * section[protocolSynopsis].code.coding 1..1
   * section[protocolSynopsis].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218515 "ICH M11 Protocol Section 1.1 Protocol Synopsis"
   * section[protocolSynopsis].code.text = "section1.1-protocol-synopsis"
@@ -43,7 +43,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
     * section contains objectivesEndpoints 1..1 MS and overallDesign 1..1 and numberOfArms 1..1 and blinding 1..1 and blindedRoles 1..1 and numberOfParticipants 1..1 and duration 0..1 and committees 1..1
-    * section[objectivesEndpoints].title = "Primary and Secondary Objectives and Estimands"
+    * section[objectivesEndpoints].title = "1.1.1 Primary and Secondary Objectives and Estimands"
     * section[objectivesEndpoints].code.coding 1..1
     * section[objectivesEndpoints].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218516 "ICH M11 Protocol Section 1.1.1 Primary and Secondary Objectives and Estimands"
     * section[objectivesEndpoints].code.text = "section1.1.1-objectives-estimands"
@@ -51,7 +51,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
       * text 1..1
       * text ^comment = "Summarise the primary and secondary objectives and any associated estimands in natural, nontechnical (layperson) language. For trials intended to estimate a treatment effect or test a hypothesis related to a treatment effect, include the primary and secondary objectives and any associated estimands using a nontechnical summary describing the objective and treatment effect of interest (estimand). For other types of trials not intended to estimate a treatment effect or test a hypothesis related to a treatment effect, define trial objectives and describe additional information relevant to the clinical question(s) of interest (e.g., the endpoint(s) associated with each objective). For trials with numerous objectives in which the description of objectives will exceed half a page, consider including the most important objectives and estimands in the synopsis and refer to Section 3 Trial Objectives and Associated Estimands, which covers the objectives and estimands in technical detail. For considerations on estimands, refer to ICH E9(R1)."
       * entry only Reference(Composition)
-    * section[overallDesign].title = "Overall Design"
+    * section[overallDesign].title = "1.1.2 Overall Design"
     * section[overallDesign].code.coding 1..1
     * section[overallDesign].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218517 "ICH M11 Protocol Section 1.1.2 Overall Design"
     * section[overallDesign].code.text = "section1.1.2-overall-design"
@@ -83,7 +83,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * section[committees]
       * text 1..1
       * text ^comment = "Indicate whether any committee(s) will be reviewing data while the trial is ongoing, and the type of committee. Common examples include Data Monitoring Committee, Dose Escalation Committee, or Endpoint Adjudication Committee; describe others, if applicable. List independent committees in the space indicated. Other committees may be included at the Sponsor’s discretion in the separate space provided. Committees listed here should be fully described in Section 11.4 Committees."
-  * section[trialSchema].title = "Trial Schema"
+  * section[trialSchema].title = "1.2 Trial Schema"
   * section[trialSchema].code.coding 1..1
   * section[trialSchema].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218518 "ICH M11 Protocol Section 1.2 Trial Schema"
   * section[trialSchema].code.text = "section1.2-trial-schema"
@@ -91,7 +91,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * text 1..1
     * text ^comment = "The purpose of this section is to provide a visual depiction of the trial design, orienting users of the protocol to the key features of the design. The schema depicts the trial arms, the flow of individual participant through the progression of trial period(s)/epochs (such as screening, washout/run-in, intervention, and key milestones [e.g., randomisation, cross-over, end of treatment, end of study, post-treatment follow-up]). For complex trials, additional schemas may be added to describe activities or trial periods in greater detail. Entries should Reference SoaPlanDefinition Profile of PlanDefinition Resource."
     * entry only Reference(SoaPlanDefinition)
-  * section[scheduleOfActivities].title = "Schedule of Activities"
+  * section[scheduleOfActivities].title = "1.3 Schedule of Activities"
   * section[scheduleOfActivities].code.coding 1..1
   * section[scheduleOfActivities].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218519 "ICH M11 Protocol Section 1.3 Schedule of Activities"
   * section[scheduleOfActivities].code.text = "section1.3-schedule-of-activities"

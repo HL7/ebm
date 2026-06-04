@@ -21,7 +21,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
 * section ^slicing.discriminator.path = "code.text"
 * section ^slicing.rules = #open
 * section contains glossary 1..1 MS
-* section[glossary].title = "Appendix: Glossary of Terms and Abbreviations"
+* section[glossary].title = "13 APPENDIX: GLOSSARY OF TERMS AND ABBREVIATIONS"
 * section[glossary].code.coding 1..1
 * section[glossary].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218670 "ICH M11 Protocol Section 13 APPENDIX: GLOSSARY OF TERMS AND ABBREVIATIONS"
 * section[glossary].code.text = "section13-glossary"

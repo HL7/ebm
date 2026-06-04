@@ -21,7 +21,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
 * section ^slicing.discriminator.path = "code.text"
 * section ^slicing.rules = #open
 * section contains estimands 1..1 MS
-* section[estimands].title = "Trial Objectives and Associated Estimands"
+* section[estimands].title = "3 TRIAL OBJECTIVES AND ASSOCIATED ESTIMANDS"
 * section[estimands].code.coding 1..1
 * section[estimands].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218526 "ICH M11 Protocol Section 3 TRIAL OBJECTIVES AND ASSOCIATED ESTIMANDS"
 * section[estimands].code.text = "section3-estimands"
