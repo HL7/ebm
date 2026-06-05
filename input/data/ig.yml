@@ -316,6 +316,13 @@ definition:
       Woman.'
     reference:
       reference: Citation/179604
+  - description: An example of a StudyRegistryRecord Profile that is used to support an example of an M11 report.
+    isExample: true
+    name: A Study of Nasal Glucagon (LY900018) in Japanese Participants With Diabetes Mellitus
+    profile:
+    - http://hl7.org/fhir/uv/ebm/StructureDefinition/study-registry-record
+    reference:
+      reference: ResearchStudy/267223
   - description: Profile of ArtifactAssessment for Evidence Based Medicine IG. The
       Adaptation Profile is used for assessments of a knowledge artifact that are
       used to create a new knowledge artifact through acceptance, rejection or modification
