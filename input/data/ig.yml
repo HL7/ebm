@@ -316,7 +316,7 @@ definition:
       Woman.'
     reference:
       reference: Citation/179604
-  - description: An example of a StudyRegistryRecord Profile that is used to support an example of an M11 report.
+  - description: 'An example of a StudyRegistryRecord Profile that is used to support an example of an M11 report.'
     isExample: true
     name: 'A Study of Nasal Glucagon (LY900018) in Japanese Participants With Diabetes Mellitus'
     profile:
