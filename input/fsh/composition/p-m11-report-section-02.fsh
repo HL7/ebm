@@ -89,7 +89,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * section[overallBenefitRisk].title = "2.2.3 Overall Risk-Benefit Assessment"
     * section[overallBenefitRisk].code.coding 1..1
     * section[overallBenefitRisk].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218525 "ICH M11 Protocol Section 2.2.3 Overall Risk-Benefit Assessment"
-    * section[overallBenefitRisk].code.text = "section2.2.3-overall-benefit-risk-conclusion"
+    * section[overallBenefitRisk].code.text = "section2.2.3-overall-risk-benefit-assessment"
     * section[overallBenefitRisk]
       * text 1..1
       * text ^comment = "Provide a succinct, concluding statement on the perceived balance between risks that have been identified from cumulative safety data, protocol procedures, and anticipated efficacy/benefits within the context of the proposed trial."
