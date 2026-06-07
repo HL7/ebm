@@ -93,7 +93,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * section[rescreening]
       * text 1..1
       * text ^comment = "If participants can be rescreened as described in Section 5.6, state whether the participant needs to complete a new consent. Screen failure and rescreening should be clearly defined in the protocol, with cross reference to those definitions."
-    * section[remainingSamples].title = "11.3.2 Informed Consent for Remaining Samples in Exploratory Research"
+    * section[remainingSamples].title = "11.3.2 Informed Consent for Use of Remaining Samples in Exploratory Research"
     * section[remainingSamples].code.coding 1..1
     * section[remainingSamples].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218656 "ICH M11 Protocol Section 11.3.2 Informed Consent for Use of Remaining Samples in Exploratory Research"
     * section[remainingSamples].code.text = "section11.3.2-remaining-samples"

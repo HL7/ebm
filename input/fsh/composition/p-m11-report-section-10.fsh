@@ -56,7 +56,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * text ^comment = "Describe the summary statistics that will be used to characterize the distribution of demographic and other relevant variables at baseline. Specify when the variables are measured (e.g., at trial inclusion, prior to randomisation, or at the time of randomisation). Relevant variables include but are not limited to: stratification variables specified in Section 6.7 Investigational Trial Intervention Assignment, Randomisation and Blinding, covariates for the statistical models specified in Section 10.4 Analyses Associated with the Primary Objective(s), other suspected predictive or prognostic variables, and variables used for planned subgroup analyses."
   * section[analysisPrimaryObjective].title = "10.4 Analyses Associated with the Primary Objective(s)"
   * section[analysisPrimaryObjective].code.coding 1..1
-  * section[analysisPrimaryObjective].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218629 "section10.4-analysis-primary-objective"
+  * section[analysisPrimaryObjective].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218629 "ICH M11 Protocol Section 10.4 Analyses Associated with the Primary Objective(s)"
   * section[analysisPrimaryObjective].code.text = "section10.4-analysis-primary-objective"
   * section[analysisPrimaryObjective]
     * text 0..1

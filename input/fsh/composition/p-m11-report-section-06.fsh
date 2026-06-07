@@ -150,7 +150,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * section[adherence]
     * text 1..1
     * text ^comment = "Describe the measures to monitor and document participants’ adherence with investigational trial intervention (e.g., trial intervention accountability records, diary cards, or investigational trial intervention concentration measurements). List what documents are mandatory to complete (e.g., participant drug log) and what source data/records will be used to document investigational trial intervention adherence."
-  * section[noninvestigationalTherapy].title = "6.9 Non-Investigational Trial Intervention"
+  * section[noninvestigationalTherapy].title = "6.9 Description of Noninvestigational Trial Intervention"
   * section[noninvestigationalTherapy].code.coding 1..1
   * section[noninvestigationalTherapy].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218576 "ICH M11 Protocol Section 6.9 Description of Noninvestigational Trial Intervention"
   * section[noninvestigationalTherapy].code.text = "section6.9-noninvestigational-interventions"

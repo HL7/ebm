@@ -178,14 +178,14 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * section[pregnant]
       * text 1..1
       * text ^comment = "Specify: • the assessments to be performed • type and duration of monitoring • whether participants who become pregnant during the trial may continue with trial intervention or must be discontinued from trial intervention (refer to Section 7 Participant Discontinuation of Trial Intervention and Discontinuation or Withdrawal from Trial as applicable) • any trial modifications that need to be made for participants who become pregnant • what information will be collected about a participant who becomes pregnant during the trial (e.g., recording and reporting to the Sponsor, postpartum follow-up, trial intervention discontinuation or continuation, or trial withdrawal). For postpartum follow-up, include the time period (e.g., initial child development) with the justification. If exposure to trial intervention during breastfeeding is applicable, specify: • the assessments to be performed • type and duration of monitoring • what information will be collected for both the participant and child"
-    * section[pregnantPartner].title = "9.3.2 Participants Whose Partners Become Pregnant"
+    * section[pregnantPartner].title = "9.3.2 Participants Whose Partners Become Pregnant During the Trial"
     * section[pregnantPartner].code.coding 1..1
     * section[pregnantPartner].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218623 "ICH M11 Protocol Section 9.3.2 Participants Whose Partners Become Pregnant During the Trial"
     * section[pregnantPartner].code.text = "section9.3.2-pregnant-partner"
     * section[pregnantPartner]
       * text 1..1
       * text ^comment = "Specify: • whether the investigator will attempt to collect pregnancy information about a participant’s partner who becomes pregnant during the specified period in the trial • whether the participant whose partner becomes pregnant should be discontinued from trial intervention (refer to Section 7 Participant Discontinuation of Trial Intervention and Discontinuation or Withdrawal from Trial as applicable) • the assessments to be performed, type and duration of monitoring, and the information to be collected"
-  * section[special].title = "9.4Special Safety Situations"
+  * section[special].title = "9.4 Special Safety Situations"
   * section[special].code.coding 1..1
   * section[special].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218624 "ICH M11 Protocol Section 9.4 Special Safety Situations"
   * section[special].code.text = "section9.4-special-safety-situations"

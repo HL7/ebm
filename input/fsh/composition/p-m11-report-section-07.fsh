@@ -64,7 +64,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * section[rechallenge]
       * text 1..1
       * text ^comment = "Describe the criteria for rechallenge/restarting trial intervention, how and when to perform rechallenge, number of rechallenges allowed during the trial, and whether all, or specify which, assessments will be performed for the stated duration of the trial. If rechallenge is not allowed, state this."
-  * section[withdrawal].title = "7.2 Discontinuation or Withdrawal from the Trial"
+  * section[withdrawal].title = "7.2 Participant Discontinuation or Withdrawal from the Trial"
   * section[withdrawal].code.coding 1..1
   * section[withdrawal].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218588 "ICH M11 Protocol Section 7.2 Participant Discontinuation or Withdrawal from the Trial"
   * section[withdrawal].code.text = "section7.2-participant-withdrawal"

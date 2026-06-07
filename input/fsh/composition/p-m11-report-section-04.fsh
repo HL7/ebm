@@ -83,7 +83,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * section[comparator]
       * text 1..1
       * text ^comment = "If applicable, provide a rationale for the type and choice of control selected for the trial (e.g., placebo, active drug, combination, external). Describe any known or potential problems associated with the control group selected in light of the specific disease and intervention(s) being studied. If comparators will differ by region, describe. The rationale for dose/dose regimen is explained in Section 6.2 Rationale for Investigational Trial Intervention Dose and Regimen."  
-    * section[duration].title = "4.2.4 Rationale for Duration"
+    * section[duration].title = "4.2.4 Rationale for Trial Duration"
     * section[duration].code.coding 1..1
     * section[duration].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218540 "ICH M11 Protocol Section 4.2.4 Rationale for Trial Duration"
     * section[duration].code.text = "section4.2.4-rationale-duration"

@@ -125,7 +125,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
     * section contains genetics 1..1 MS and pharmacodynamics 1..1 MS and other 0..1 MS
-    * section[genetics].title = "8.6.1 Genetics and Pharmacogenomics"
+    * section[genetics].title = "8.6.1 Genetics, Genomics, Pharmacogenetics and Pharmacogenomics"
     * section[genetics].code.coding 1..1
     * section[genetics].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218603 "ICH M11 Protocol Section 8.6.1 Genetics, Genomics, Pharmacogenetics and Pharmacogenomics"
     * section[genetics].code.text = "section8.6.1-genetics-pharmacogenomics"
