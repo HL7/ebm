@@ -31,7 +31,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code.text"
   * section ^slicing.rules = #open
-  * section contains description 1..1 MS and rationale 1..1 MS and dosingAdministration 1..1 MS and doseModification 0..1 MS and treatmentOfOverdose 1..1 MS and preparation 1..1 MS and assignmentAndBlinding 1..1 MS and adherence 1..1 MS and noninvestigationalTherapy 0..1 MS and concomitantTherapy 1..1 MS
+  * section contains description 1..1 MS and rationale 1..1 MS and dosingAdministration 1..1 MS and doseModification 1..1 MS and treatmentOfOverdose 1..1 MS and preparation 1..1 MS and assignmentAndBlinding 1..1 MS and adherence 1..1 MS and noninvestigationalTherapy 1..1 MS and concomitantTherapy 1..1 MS
   * section[description].title = "6.1 Description of Investigational Trial Intervention"
   * section[description].code.coding 1..1
   * section[description].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218561 "ICH M11 Protocol Section 6.1 Description of Investigational Trial Intervention"
@@ -114,7 +114,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
-    * section contains assignment 1..1 MS and randomisation 1..1 MS and blinding 1..1 MS and unblinding 1..1 MS
+    * section contains assignment 1..1 MS and randomisation 0..1 MS and blinding 0..1 MS and unblinding 0..1 MS
     * section[assignment].title = "6.7.1 Participant Assignment to Investigational Trial Intervention"
     * section[assignment].code.coding 1..1
     * section[assignment].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218571 "ICH M11 Protocol Section 6.7.1 Participant Assignment to Investigational Trial Intervention"
