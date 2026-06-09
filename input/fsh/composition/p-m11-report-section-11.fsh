@@ -49,7 +49,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
-    * section contains investigatorResponsibilities 1..1 MS and sponsorResponsibilities 1..1 MS
+    * section contains investigatorResponsibilities 0..1 MS and sponsorResponsibilities 0..1 MS
     * section[investigatorResponsibilities].title = "11.2.1 Investigator Responsibilities"
     * section[investigatorResponsibilities].code.coding 1..1
     * section[investigatorResponsibilities].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218652 "ICH M11 Protocol Section 11.2.1 Investigator Responsibilities"
@@ -158,7 +158,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
-    * section contains decisionRights 1..1 MS and criteria 1..1 MS and responsibilities 1..1 MS
+    * section contains decisionRights 0..1 and criteria 0..1 and responsibilities 0..1
     * section[decisionRights].title = "Decision Rights for Site Closure"
     * section[decisionRights].code.text = "section11.11-early-site-closure#decisionRights"
     * section[decisionRights]
