@@ -41,7 +41,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
-    * section contains adverseEventsDefinitions 1..1 MS and seriousAdverseEventsDefinitions 1..1 MS and productComplaintsDefinitions 0..1 MS
+    * section contains adverseEventsDefinitions 1..1 MS and seriousAdverseEventsDefinitions 1..1 MS and productComplaintsDefinitions 1..1 MS
     * section[adverseEventsDefinitions].title = "9.1.1 Definitions of Adverse Events"
     * section[adverseEventsDefinitions].code.coding 1..1
     * section[adverseEventsDefinitions].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218610 "ICH M11 Protocol Section 9.1.1 Definitions of Adverse Events"
