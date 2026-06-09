@@ -32,7 +32,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code.text"
   * section ^slicing.rules = #open
-  * section contains considerations 1..1 MS and analysisSets 1..1 MS and analysisBaseline 1..1 MS and analysisPrimaryObjective 1..* MS and secondaryAnalysis 0..* MS and exploratoryAnalysis 0..1 MS and safetyAnalyses 0..1 MS and otherAnalyses 0..1 MS and multiplicity 1..1 MS and interimAnalyses 0..1 MS and sampleSize 1..1 MS
+  * section contains considerations 1..1 MS and analysisSets 1..1 MS and analysisBaseline 1..1 MS and analysisPrimaryObjective 1..1 MS and secondaryAnalysis 1..1 MS and exploratoryAnalysis 1..1 MS and safetyAnalyses 1..1 MS and otherAnalyses 1..1 MS and multiplicity 1..1 MS and interimAnalyses 1..1 MS and sampleSize 1..1 MS
   * section[considerations].title = "10.1 General Considerations"
   * section[considerations].code.coding 1..1
   * section[considerations].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218626 "ICH M11 Protocol Section 10.1 General Considerations"
@@ -76,7 +76,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
       * section ^slicing.discriminator.type = #value
       * section ^slicing.discriminator.path = "code.text"
       * section ^slicing.rules = #open
-      * section contains statisticalModel 1..1 MS and intercurrentEventHandling 0..1 MS and missingData 1..1 MS and sensitvityAnalysis 1..1 MS and supplementaryAnalysis 0..1 MS
+      * section contains statisticalModel 1..1 MS and intercurrentEventHandling 1..1 MS and missingData 1..1 MS and sensitvityAnalysis 0..1 MS and supplementaryAnalysis 0..1 MS
       * section[statisticalModel].title = "10.4.1.1 Statistical Analysis Method"
       * section[statisticalModel].code.coding 1..1
       * section[statisticalModel].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218631 "ICH M11 Protocol Section 10.4.1.1 Statistical Analysis Method"
@@ -136,7 +136,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
       * section ^slicing.discriminator.type = #value
       * section ^slicing.discriminator.path = "code.text"
       * section ^slicing.rules = #open
-      * section contains statisticalModel 0..1 MS and intercurrentEventHandling 0..1 MS and missingData 0..1 MS and sensitvityAnalysis 0..1 MS and supplementaryAnalysis 0..1 MS
+      * section contains statisticalModel 1..1 MS and intercurrentEventHandling 0..1 MS and missingData 0..1 MS and sensitvityAnalysis 0..1 MS and supplementaryAnalysis 0..1 MS
       * section[statisticalModel].title = "10.5.1.1 Statistical Analysis Method"
       * section[statisticalModel].code.coding 1..1
       * section[statisticalModel].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218638 "ICH M11 Protocol Section 10.5.1.1 Statistical Analysis Method"
