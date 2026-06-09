@@ -31,7 +31,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code.text"
   * section ^slicing.rules = #open
-  * section contains considerations 0..1 MS and screeningBaseline 1..1 MS and efficacy 1..1 MS and safety 1..1 MS and pharmacokinetics 1..1 MS and biomarkers 1..1 MS and immunogenicity 1..1 MS and economics 0..1 MS
+  * section contains considerations 1..1 MS and screeningBaseline 1..1 MS and efficacy 1..1 MS and safety 1..1 MS and pharmacokinetics 1..1 MS and biomarkers 1..1 MS and immunogenicity 1..1 MS and economics 1..1 MS
   * section[considerations].title = "8.1 Trial Assessments and Procedures Considerations"
   * section[considerations].code.coding 1..1
   * section[considerations].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218591 "ICH M11 Protocol Section 8.1 Trial Assessments and Procedures Considerations"
