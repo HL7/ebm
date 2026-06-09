@@ -31,7 +31,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * section ^slicing.discriminator.type = #value
   * section ^slicing.discriminator.path = "code.text"
   * section ^slicing.rules = #open
-  * section contains description 1..1 MS and inclusionCriteria 1..1 MS and exclusionCriteria 1..1 MS and contraception 1..1 MS and lifestyle 0..1 MS and screenFailures 0..1 MS
+  * section contains description 1..1 MS and inclusionCriteria 1..1 MS and exclusionCriteria 1..1 MS and contraception 1..1 MS and lifestyle 1..1 MS and screenFailures 1..1 MS
   * section[description].title = "5.1 Description of Trial Population and Rationale"
   * section[description].code.coding 1..1
   * section[description].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218548 "ICH M11 Protocol Section 5.1 Description of Trial Population and Rationale"
