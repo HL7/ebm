@@ -42,7 +42,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
-    * section contains objectivesEndpoints 1..1 MS and overallDesign 1..1 and numberOfArms 1..1 and blinding 1..1 and blindedRoles 1..1 and numberOfParticipants 1..1 and duration 0..1 and committees 1..1
+    * section contains objectivesEndpoints 1..1 MS and overallDesign 1..1 and numberOfArms 1..1 and blinding 1..1 and blindedRoles 1..1 and numberOfParticipants 1..1 and duration 1..1 and committees 1..1
     * section[objectivesEndpoints].title = "1.1.1 Primary and Secondary Objectives and Estimands"
     * section[objectivesEndpoints].code.coding 1..1
     * section[objectivesEndpoints].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218516 "ICH M11 Protocol Section 1.1.1 Primary and Secondary Objectives and Estimands"

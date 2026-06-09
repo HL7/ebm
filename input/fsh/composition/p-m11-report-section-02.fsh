@@ -51,7 +51,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
-    * section contains riskSummary 1..1 and benefitSummary 1..1 MS and overallBenefitRisk 1..1
+    * section contains riskSummary 0..1 and benefitSummary 0..1 MS and overallBenefitRisk 0..1
     * section[riskSummary].title = "2.2.1 Risk Summary and Mitigation Strategy"
     * section[riskSummary].code.coding 1..1
     * section[riskSummary].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218523 "ICH M11 Protocol Section 2.2.1 Risk Summary and Mitigation Strategy"
