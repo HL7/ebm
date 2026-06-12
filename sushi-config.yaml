@@ -96,7 +96,7 @@ pages:
 parameters:
   auto-oid-root: 2.16.840.1.113883.4.642.40.44
   apply-jurisdiction: true
-  pin-canonicals: pin-multiple
+  pin-canonicals: pin-multiples
 #  path-resource:
 #    - input/resources/citation 
 #  additional-resource:
