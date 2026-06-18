@@ -1,6 +1,6 @@
 See [Understanding the EvidenceVariable Resource](evidencevariable.html) for additional information. 
 
-An example from the QUARTET USA trial will be described here and can be viewed at [GroupAssignment: Quadpill vs. Candesartan](Group-375183.html).
+An example from the QUARTET USA trial will be described here and can be viewed at [GroupAssignment: Quadpill vs. Candesartan](EvidenceVariable-375183.html).
 
 The concepts needed to describe the group assignment for the QUARTET USA trial include:
 

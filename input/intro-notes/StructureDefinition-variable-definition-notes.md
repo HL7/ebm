@@ -1,7 +1,7 @@
 See [Understanding the EvidenceVariable Resource](evidencevariable.html) for additional information. 
 
-Examples from the QUARTET USA trial will be described here and can be viewed at [Medication Adherence at 12 weeks](Group-375201.html) and [Adverse event free and hypertension control at 12 weeks
-](Group-375278.html).
+Examples from the QUARTET USA trial will be described here and can be viewed at [Medication Adherence at 12 weeks](EvidenceVariable-375201.html) and [Adverse event free and hypertension control at 12 weeks
+](EvidenceVariable-375278.html).
 
 These 2 VariableDefinition examples are outcome measures that were used in the QUARTET USA trial.
 

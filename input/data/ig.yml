@@ -1824,12 +1824,6 @@ definition:
     - http://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-justification
     reference:
       reference: ArtifactAssessment/179515
-  - isExample: true
-    name: M11 Report Template Instructions
-    profile:
-    - http://hl7.org/fhir/uv/ebm/StructureDefinition/m11-report
-    reference:
-      reference: Composition/343018
   - description: Profile of Composition for Evidence Based Medicine IG. The M11ReportContainer
       Profile is used for a complete report for the International Council for Harmonisation of Technical
       Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured
@@ -2100,13 +2094,6 @@ definition:
     name: NetEffectEstimate
     reference:
       reference: StructureDefinition/net-effect-estimate
-  - description: Net Effect Estimate = 3.55 (2.38 to 4.73)
-    isExample: true
-    name: 'NetEffectEstimate: Bariatric Surgery Example for GIN 2022'
-    profile:
-    - http://hl7.org/fhir/uv/ebm/StructureDefinition/net-effect-estimate
-    reference:
-      reference: Evidence/179583
   - description: Profile of Evidence for Evidence Based Medicine IG. The NonComparativeEvidence
       Profile is used for evidence about a single group with no comparisons between
       groups.
