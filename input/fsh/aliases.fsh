@@ -15,7 +15,7 @@ Alias: $ext-fmm = http://hl7.org/fhir/StructureDefinition/structuredefinition-fm
 Alias: $ext-wg = http://hl7.org/fhir/StructureDefinition/structuredefinition-wg
 Alias: $ext-standards-status = http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status
 
-Alias: $ext-characteristic-expression = http://hl7.org/fhir/StructureDefinition/characteristicExpression
+Alias: $ext-characteristic-expression = http://hl7.org/fhir/StructureDefinition/characteristicExpression|5.3.0
 
 Alias: $ext-url = http://hl7.org/fhir/StructureDefinition/artifact-url|5.2.0
 Alias: $ext-description = http://hl7.org/fhir/StructureDefinition/artifact-description|5.2.0
@@ -35,4 +35,4 @@ Alias: $ext-author = http://hl7.org/fhir/StructureDefinition/artifact-author|5.2
 Alias: $ext-relatedArtifact = http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact|5.2.0
 
 Alias: $ext-characteristic-method = http://hl7.org/fhir/6.0/StructureDefinition/extension-Group.characteristic.method
-Alias: $ext-researchStudy-studyRegistration = http://hl7.org/fhir/StructureDefinition/researchStudy-studyRegistration
+Alias: $ext-researchStudy-studyRegistration = http://hl7.org/fhir/StructureDefinition/researchStudy-studyRegistration|5.3.0
