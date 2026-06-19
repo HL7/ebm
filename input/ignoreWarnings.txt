@@ -96,6 +96,10 @@ No definition could be found for URL value 'section'
 No definition could be found for URL value 'relatesTo'
 No definition could be found for URL value 'overallSummary'
 
+# Suppressing warnings about recognizing Yes and No codes from CodeSystem 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl'
+Unknown Code 'C49487' in the CodeSystem 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version 'null' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+Unknown Code 'C49488' in the CodeSystem 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version 'null' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+
 # Suppressing warnings about unrecognized slices in Profiles of Composition -- the examples include additional data that are not part of the Profile constraints
 This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-measure-report|1.0.0-ballot3 (this may not be a problem, but you should check that it's not intended to match a slice)
 
