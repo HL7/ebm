@@ -153,9 +153,9 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
     * section[specialInterest]
       * text 1..1
       * text ^comment = "Specify any AESI: • any event (serious or nonserious) of scientific and medical concern relative to the trial intervention, for which ongoing monitoring and rapid communication by the investigator to the sponsor can be appropriate • other events that merit reporting to the Sponsor, trial leadership, IRB, and regulatory agencies. Include the following for each AESI: • the definition • the approach for ascertaining information • if applicable, any approach to confirm or adjudicate the occurrence"
-    * section[diseaseRelatedEvents].title = "9.2.5 Disease-related Events or Outcomes Not Qualifying as AEs or SAEs"
+    * section[diseaseRelatedEvents].title = "9.2.5 Disease-Related Events or Outcomes Not Qualifying as AEs or SAEs"
     * section[diseaseRelatedEvents].code.coding 1..1
-    * section[diseaseRelatedEvents].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218620 "ICH M11 Protocol Section 9.2.5 Disease-related Events or Outcomes Not Qualifying as AEs or SAEs"
+    * section[diseaseRelatedEvents].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218620 "ICH M11 Protocol Section 9.2.5 Disease-Related Events or Outcomes Not Qualifying as AEs or SAEs"
     * section[diseaseRelatedEvents].code.text = "section9.2.5-disease-related-events"
     * section[diseaseRelatedEvents]
       * text 1..1
