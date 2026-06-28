@@ -119,5 +119,5 @@ Details for #FG000 matching against profile http://hl7.org/fhir/uv/ebm/Structure
 Details for #FG001 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group|1.0.0-ballot3
 
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
-# (And include comments like this justifying why)
+# (And include comments like this justifying why) 
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
