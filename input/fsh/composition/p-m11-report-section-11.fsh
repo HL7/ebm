@@ -70,22 +70,12 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
   * section[informedConsent].code.text = "section11.3-informed-consent-process"
   * section[informedConsent]
     * text 1..1
-    * text ^comment = "Specify the key elements of the informed consent process, including any special needs and how these are addressed (for example, assent, capacity, legally acceptable representative, adolescents who may reach age of majority during the trial, pregnant participants and pregnant partners of participants)"
+    * text ^comment = "Specify the key elements of the informed consent process, including any special needs and how these are addressed (for example, assent, capacity, legally acceptable representative, adolescents who may reach age of majority during the trial, pregnant participants and pregnant partners of participants). If enrollment in the trial may occur during an emergency in which the participant or their legally acceptable representative is not able or available to give consent, describe the consent process."
     * section 0..*
     * section ^slicing.discriminator.type = #value
     * section ^slicing.discriminator.path = "code.text"
     * section ^slicing.rules = #open
-    * section contains assentProcess 0..1 MS and emergency 0..1 MS and rescreening 0..1 MS and remainingSamples 0..1 MS
-    * section[assentProcess].title = "Assent Process"
-    * section[assentProcess].code.text = "section11.3.0-assent-process"
-    * section[assentProcess]
-      * text 1..1
-      * text ^comment = "Enter Description of Assent Process."
-    * section[emergency].title = "Emergency Consent Process"
-    * section[emergency].code.text = "section11.3.0-emergency-consent-process"
-    * section[emergency]
-      * text 1..1
-      * text ^comment = "If enrollment in the trial may occur during an emergency in which the participant or their legally acceptable representative is not able or available to give consent, describe the consent process."
+    * section contains rescreening 0..1 MS and remainingSamples 0..1 MS
     * section[rescreening].title = "11.3.1 Informed Consent for Rescreening"
     * section[rescreening].code.coding 1..1
     * section[rescreening].code.coding = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C218655 "ICH M11 Protocol Section 11.3.1 Informed Consent for Rescreening"
