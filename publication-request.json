@@ -1,10 +1,10 @@
 {
     "package-id" : "hl7.fhir.uv.ebm",
-    "version" : "1.0.0-ballot2",
-    "path" : "http://hl7.org/fhir/uv/ebm/2025May",
+    "version" : "1.0.0-ballot3",
+    "path" : "http://hl7.org/fhir/uv/ebm/1.0.0-202609-ballot3",
     "mode" : "working",
     "status" : "ballot",
     "sequence" : "STU1",
-    "desc" : "This is the second ballot of the EBMonFHIR Implementation Guide for May 2025.",
+    "desc" : "This is the third ballot of the EBMonFHIR Implementation Guide for September 2026.",
     "first" : false
     }
