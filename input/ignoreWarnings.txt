@@ -126,6 +126,15 @@ This IG is for FHIR version 6.0.0-ballot3, while the package 'hl7.terminology.r5
 # Suppressing warning that most code systems will need to move to THO, as we are aware and this is a low-maturity IG for now
 Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 
+# Suppressing warning about regex extension as this is not coming from the IG content
+The extension http://hl7.org/fhir/StructureDefinition/regex|5.3.0 is deprecated with the note: 'This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex'
+
+# Suppressing warning of no definition found for URL value for many instances in which the URL is an external website and the data element (e.g. relatesTo.targetUri or webLocation.url) does not expect a listed and verified value
+No definition could be found for URL value '%
+
+# Suppressing warning that Composition.type coding value is not coming from the 'Preferred' value set as this is specific to the IG and not the FHIR-defined value set
+None of the codings provided are in the value set 'FHIR Document Type Codes' (http://hl7.org/fhir/ValueSet/doc-typecodes|6.0.0-ballot3), and a coding is recommended to come from this value set (codes = https://fevir.net/resources/CodeSystem/179423#%
+
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 #  (And include comments like this justifying why) 
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
