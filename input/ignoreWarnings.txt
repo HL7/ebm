@@ -118,6 +118,14 @@ Details for #BG002 matching against profile http://hl7.org/fhir/uv/ebm/Structure
 Details for #FG000 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group|1.0.0-ballot3
 Details for #FG001 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group|1.0.0-ballot3
 
+# Suppressing n/a errors for IG setup per discussion with FMG QA review
+This IG is version 6.0.0-ballot3, while the IG 'hl7.fhir.uv.extensions.r5' is from version 5.0.0
+This IG is version 6.0.0-ballot3, while the IG 'hl7.terminology' is from version 5.0.0
+This IG is for FHIR version 6.0.0-ballot3, while the package 'hl7.terminology.r5#7.1.0' is for FHIR version 5.0.0
+
+# Suppressing warning that most code systems will need to move to THO, as we are aware and this is a low-maturity IG for now
+Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
+
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 #  (And include comments like this justifying why) 
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
