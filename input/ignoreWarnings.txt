@@ -139,9 +139,6 @@ None of the codings provided are in the value set 'FHIR Document Type Codes' (ht
 # Suppressing warning that text data includes HTML tags where the example is representing XHTML datatype values in a field with a string datatype, appropriate in the context of data to view Comparisons of Resource content
 The markdown contains content that appears to be an embedded HTML tag starting at '<p'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
 
-# Suppressing warning about missing description on List examples -- added Zulip thread on 'Missing description element or extension on List'
-Unable to find ImplementationGuide.definition.resource.description for the resource List/%
-
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 #  (And include comments like this justifying why) 
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
