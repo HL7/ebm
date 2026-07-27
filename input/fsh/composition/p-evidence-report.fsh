@@ -11,12 +11,12 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
 * extension contains $ext-purpose named purpose 0..1
 * extension contains $ext-copyright named copyright 0..1
 * extension contains $ext-copyrightLabel named copyrightLabel 0..1
-* extension contains http://hl7.org/fhir/StructureDefinition/artifact-approvalDate|5.2.0 named approvalDate 0..1
-* extension contains http://hl7.org/fhir/StructureDefinition/artifact-lastReviewDate|5.2.0 named lastReviewDate 0..1
-* extension contains http://hl7.org/fhir/StructureDefinition/artifact-effectivePeriod|5.2.0 named effectivePeriod 0..1
-* extension contains http://hl7.org/fhir/StructureDefinition/additional-language|5.3.0 named additionalLanguage 0..*
-* extension contains http://hl7.org/fhir/StructureDefinition/artifact-extended-contact-detail|5.3.0 named extendedContactDetail 0..*
-* extension contains http://hl7.org/fhir/StructureDefinition/artifact-publicationDate|5.3.0 named publicationDate 0..1
+* extension contains http://hl7.org/fhir/StructureDefinition/artifact-approvalDate named approvalDate 0..1
+* extension contains http://hl7.org/fhir/StructureDefinition/artifact-lastReviewDate named lastReviewDate 0..1
+* extension contains http://hl7.org/fhir/StructureDefinition/artifact-effectivePeriod named effectivePeriod 0..1
+* extension contains http://hl7.org/fhir/StructureDefinition/additional-language named additionalLanguage 0..*
+* extension contains http://hl7.org/fhir/StructureDefinition/artifact-extended-contact-detail named extendedContactDetail 0..*
+* extension contains http://hl7.org/fhir/StructureDefinition/artifact-publicationDate named publicationDate 0..1
 * extension contains ArtifactPublicationStatus named publicationStatus 0..1
 * subject
   * ^comment = "Reference a Citation Resource, ArtifactAssessment Resource (Classification Profile), Group Resource (EvidenceReportSubject Profile), ReserchStudy Resource, or any Resource to define a subject of this EvidenceReport."
