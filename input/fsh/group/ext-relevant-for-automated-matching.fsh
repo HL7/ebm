@@ -1,5 +1,5 @@
 Extension: RelevantForAutomatedMatching
-Id: relevantForAutomatedMatching
+Id: relevant-for-automated-matching
 Description: "This characteristic is relevant for automated matching."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
