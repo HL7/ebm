@@ -11,6 +11,7 @@ Description: "Profile of ResearchStudy for Evidence Based Medicine IG. The Study
 * extension contains ResearchStudyIsLowInterventionTrial named isLowInterventionTrial 0..1
 * relatesTo
   * extension contains RelatesToWithQuotation named quotation 0..1
+  * extension contains http://hl7.org/fhir/StructureDefinition/relatesto-classifier named classifier 0..1
 * condition
   * extension contains ResearchStudyIsRareDisease named isRareDisease 0..1
 * condition.text

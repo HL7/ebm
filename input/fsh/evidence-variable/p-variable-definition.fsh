@@ -9,4 +9,5 @@ Description: "Profile of EvidenceVariable for Evidence Based Medicine IG. The Va
 * extension contains EvidenceVariableHandlingDetail named handlingDetail 0..*
 * relatesTo
   * extension contains RelatesToWithQuotation named quotation 0..1
+  * extension contains http://hl7.org/fhir/StructureDefinition/relatesto-classifier named classifier 0..1
 * handling 1..1

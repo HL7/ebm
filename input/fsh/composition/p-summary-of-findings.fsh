@@ -12,7 +12,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Summary
 * section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code.coding"
 * section ^slicing.rules = #open
-* section contains columnHeaders 1..1 MS and summaryOfFindings 1..1 MS
+* section contains columnHeaders 1..1 MS and summaryOfFindings 1..1 MS and groups 0..1 and variables 0..1
 * section[columnHeaders].code.coding 1..1
 * section[columnHeaders].code.coding = https://fevir.net/resources/CodeSystem/179423#column-headers "Column Headers"
 * section[columnHeaders]
@@ -89,5 +89,12 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Summary
     * section[assertion]
       * entry 0..1
       * entry only Reference(ComparativeEvidence)
-
+* section[groups].code.coding 1..1
+* section[groups].code.coding = https://fevir.net/resources/CodeSystem/179423#groups "Groups"
+* section[groups]
+  * entry only Reference(Group or EvidenceVariable or List)
+* section[variables].code.coding 1..1
+* section[variables].code.coding = https://fevir.net/resources/CodeSystem/179423#variables "Variables"
+* section[variables]
+  * entry only Reference(Group or EvidenceVariable or List)
   

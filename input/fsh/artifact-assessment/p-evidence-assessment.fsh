@@ -31,15 +31,18 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
   * ^short = "The artifact that is rated"
 * relatesTo
   * extension contains RelatesToWithQuotation named quotation 0..1
+  * extension contains http://hl7.org/fhir/StructureDefinition/relatesto-classifier named classifier 0..1
 * content ^slicing.discriminator.type = #value
 * content ^slicing.discriminator.path = "type"
 * content ^slicing.rules = #open
 * content
   * relatesTo
     * extension contains RelatesToWithQuotation named quotation 0..1
+    * extension contains http://hl7.org/fhir/StructureDefinition/relatesto-classifier named classifier 0..1
   * component
     * relatesTo
       * extension contains RelatesToWithQuotation named quotation 0..1
+      * extension contains http://hl7.org/fhir/StructureDefinition/relatesto-classifier named classifier 0..1
 * content contains ratingSystem 0..1 MS and overall 0..1 and riskOfBias 0..1
 * content[ratingSystem].type = https://fevir.net/resources/CodeSystem/179423#rating-system "Rating System"
 * content[ratingSystem].classifier from evidence-rating-system-classifier (extensible)

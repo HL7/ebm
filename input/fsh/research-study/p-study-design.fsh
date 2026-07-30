@@ -13,4 +13,5 @@ Description: "Profile of ResearchStudy for Evidence Based Medicine IG. The Study
 * title ^comment = "The protocol should have a descriptive title that identifies the scientific aspects of the trial sufficiently to ensure it is immediately evident what the trial is investigating and on whom, and to allow retrieval from literature or internet searches."
 * relatesTo
   * extension contains RelatesToWithQuotation named quotation 0..1
+  * extension contains http://hl7.org/fhir/StructureDefinition/relatesto-classifier named classifier 0..1
 * classifier from research-study-classifier (preferred)

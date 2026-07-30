@@ -16,5 +16,6 @@ Description: "Profile of ResearchStudy for Evidence Based Medicine IG. The Syste
 * extension contains $ext-researchStudy-studyRegistration named studyRegistration 0..*
 * relatesTo
   * extension contains RelatesToWithQuotation named quotation 0..1
+  * extension contains http://hl7.org/fhir/StructureDefinition/relatesto-classifier named classifier 0..1
 * phase 0..0
 * recruitment 0..0
