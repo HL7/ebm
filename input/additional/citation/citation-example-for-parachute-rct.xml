@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Citation xmlns="http://hl7.org/fhir">
+<PublicationRecord xmlns="http://hl7.org/fhir">
   <id value="example-for-parachute-rct"/>
   <meta>
     <versionId value="2"/>
@@ -117,7 +117,7 @@
       <id value="meshHeading0"/>
       <artifactReference>
         <reference value="#"/>
-        <type value="Citation"/>
+        <type value="PublicationRecord"/>
       </artifactReference>
       <content>
         <type>
@@ -560,7 +560,7 @@
       </content>
     </ArtifactAssessment>
   </contained>
-  <url value="http://hl7.org/fhir/Citation/example-for-parachute-rct"/>
+  <url value="http://hl7.org/fhir/PublicationRecord/example-for-parachute-rct"/>
   <identifier>
     <type>
       <text value="FEvIR Object Identifier"/>
@@ -610,7 +610,7 @@
       <coding>
         <system value="http://terminology.hl7.org/CodeSystem/citation-classification-type"/>
         <code value="citation-source"/>
-        <display value="Citation Source"/>
+        <display value="PublicationRecord Source"/>
       </coding>
     </type>
     <classifier>
@@ -622,7 +622,7 @@
       <coding>
         <system value="http://terminology.hl7.org/CodeSystem/citation-classification-type"/>
         <code value="medline-owner"/>
-        <display value="MEDLINE Citation Owner"/>
+        <display value="MEDLINE PublicationRecord Owner"/>
       </coding>
     </type>
     <classifier>
@@ -638,7 +638,7 @@
     <coding>
       <system value="http://hl7.org/fhir/citation-status-type"/>
       <code value="medline-medline"/>
-      <display value="Medline Citation Status of Medline"/>
+      <display value="Medline PublicationRecord Status of Medline"/>
     </coding>
   </currentState>
   <currentState>
@@ -718,7 +718,7 @@
         </coding>
       </type>
 			<language value="en"/>
-      <text value="PARACHUTE Trial Citation Parachute use to prevent death and major trauma when jumping from aircraft: randomized controlled trial."/>
+      <text value="PARACHUTE Trial PublicationRecord Parachute use to prevent death and major trauma when jumping from aircraft: randomized controlled trial."/>
     </title>
     <abstract>
       <text value="&lt;AbstractText Label=&quot;OBJECTIVE&quot; NlmCategory=&quot;OBJECTIVE&quot;&gt;To determine if using a parachute prevents death or major traumatic injury when jumping from an aircraft.&lt;/AbstractText&gt;&lt;AbstractText Label=&quot;DESIGN&quot; NlmCategory=&quot;METHODS&quot;&gt;Randomized controlled trial.&lt;/AbstractText&gt;&lt;AbstractText Label=&quot;SETTING&quot; NlmCategory=&quot;METHODS&quot;&gt;Private or commercial aircraft between September 2017 and August 2018.&lt;/AbstractText&gt;&lt;AbstractText Label=&quot;PARTICIPANTS&quot; NlmCategory=&quot;METHODS&quot;&gt;92 aircraft passengers aged 18 and over were screened for participation. 23 agreed to be enrolled and were randomized.&lt;/AbstractText&gt;&lt;AbstractText Label=&quot;INTERVENTION&quot; NlmCategory=&quot;METHODS&quot;&gt;Jumping from an aircraft (airplane or helicopter) with a parachute versus an empty backpack (unblinded).&lt;/AbstractText&gt;&lt;AbstractText Label=&quot;MAIN OUTCOME MEASURES&quot; NlmCategory=&quot;METHODS&quot;&gt;Composite of death or major traumatic injury (defined by an Injury Severity Score over 15) upon impact with the ground measured immediately after landing.&lt;/AbstractText&gt;&lt;AbstractText Label=&quot;RESULTS&quot; NlmCategory=&quot;RESULTS&quot;&gt;Parachute use did not significantly reduce death or major injury (0% for parachute &lt;i&gt;v&lt;/i&gt; 0% for control; P&gt;0.9). This finding was consistent across multiple subgroups. Compared with individuals screened but not enrolled, participants included in the study were on aircraft at significantly lower altitude (mean of 0.6 m for participants &lt;i&gt;v&lt;/i&gt; mean of 9146 m for non-participants; P&lt;0.001) and lower velocity (mean of 0 km/h &lt;i&gt;v&lt;/i&gt; mean of 800 km/h; P&lt;0.001).&lt;/AbstractText&gt;&lt;AbstractText Label=&quot;CONCLUSIONS&quot; NlmCategory=&quot;CONCLUSIONS&quot;&gt;Parachute use did not reduce death or major traumatic injury when jumping from aircraft in the first randomized evaluation of this intervention. However, the trial was only able to enroll participants on small stationary aircraft on the ground, suggesting cautious extrapolation to high altitude jumps. When beliefs regarding the effectiveness of an intervention exist in the community, randomized trials might selectively enroll individuals with a lower perceived likelihood of benefit, thus diminishing the applicability of the results to clinical practice.&lt;/AbstractText&gt;"/>
@@ -1406,7 +1406,7 @@
         <coding>
           <system value="http://terminology.hl7.org/CodeSystem/cited-artifact-classification-type"/>
           <code value="citation-subset"/>
-          <display value="Citation subset"/>
+          <display value="PublicationRecord subset"/>
           <userSelected value="false"/>
         </coding>
       </type>
@@ -1551,4 +1551,4 @@
       </entry>
     </contributorship>
   </citedArtifact>
-</Citation>
+</PublicationRecord>

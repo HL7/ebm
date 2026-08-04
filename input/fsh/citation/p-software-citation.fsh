@@ -1,7 +1,7 @@
 Profile: SoftwareCitation
-Parent: Citation
+Parent: PublicationRecord
 Id: software-citation
-Description: "Profile of Citation for Evidence Based Medicine IG. The SoftwareCitation Profile is used for citations of executable code."
+Description: "Profile of PublicationRecord for Evidence Based Medicine IG. The SoftwareCitation Profile is used for citations of executable code."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #trial-use

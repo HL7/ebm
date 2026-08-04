@@ -1,7 +1,7 @@
 Profile: DatabaseEntryCitation
-Parent: Citation
+Parent: PublicationRecord
 Id: database-entry-citation
-Description: "Profile of Citation for Evidence Based Medicine IG. The DatabaseEntryCitation Profile is used for citations of a record within a database."
+Description: "Profile of PublicationRecord for Evidence Based Medicine IG. The DatabaseEntryCitation Profile is used for citations of a record within a database."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #trial-use

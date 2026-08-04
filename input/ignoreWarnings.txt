@@ -22,7 +22,7 @@ A definition for CodeSystem 'http://example.org' could not be found, so the code
 # Suppressing warnings about inabiltiy to resovle an example CodeSystem that is only provided as a madeup example
 A definition for CodeSystem 'http://example.com/codelists/CL_ntprobnp_unit' could not be found, so the code cannot be validated
 
-# Suppressing warnings about unknown Code System URIs where these are commented in the Understanding the Citation Resource section
+# Suppressing warnings about unknown Code System URIs where these are commented in the Understanding the PublicationRecord Resource section
 A definition for CodeSystem 'https://www.nlm.nih.gov/mesh' could not be found, so the code cannot be validated
 A definition for CodeSystem 'https://www.nlm.nih.gov/bsd/licensee/elements_descriptions.html#issn' could not be found, so the code cannot be validated
 A definition for CodeSystem 'https://www.nlm.nih.gov/bsd/licensee/elements_descriptions.html#owner_value' could not be found, so the code cannot be validated
@@ -68,7 +68,7 @@ No definition could be found for URL value 'https://app.magicapp.org/#/guideline
 No definition could be found for URL value 'https://www.ncbi.nlm.nih.gov/books'
 No definition could be found for URL value 'https://orcid.org/'
 
-# Suppressing warnings regarding webLocation.url values that do not resolve -- there is no expectation that external URL links in this part of a Citation would be registered for this IG check
+# Suppressing warnings regarding webLocation.url values that do not resolve -- there is no expectation that external URL links in this part of a PublicationRecord would be registered for this IG check
 No definition could be found for URL value 'https://pubmed.ncbi.nlm.nih.gov/%
 No definition could be found for URL value 'https://doi.org/%
 No definition could be found for URL value 'https://fevir.net/ctgovconvert'

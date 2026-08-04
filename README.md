@@ -1,7 +1,7 @@
 # ebm
 **Evidence Based Medicine FHIR implementation guide repository**
 
-Implementation guidance for base usage of FHIR Resources (and base Profiles) for representation of scientific knowledge, including Citation, Evidence, EvidenceVariable, and ArtifactAssessment Resources (developed by the EBMonFHIR project) as well as ResearchStudy, Composition, and other FHIR Resources.
+Implementation guidance for base usage of FHIR Resources (and base Profiles) for representation of scientific knowledge, including PublicationRecord, Evidence, EvidenceVariable, and ArtifactAssessment Resources (developed by the EBMonFHIR project) as well as ResearchStudy, Composition, and other FHIR Resources.
 This implementation guide defines profiles and value sets for the representation of scientific knowledge. This implementation guide is intended for developers of systems using FHIR for data exchange of scientific knowledge and for authors of more specialized implementation guides in this domain.
 
 **Description:**

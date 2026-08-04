@@ -1,7 +1,7 @@
 Profile: EvidenceReport
 Parent: Composition
 Id: evidence-report
-Description: "Profile of Composition for Evidence Based Medicine IG. The EvidenceReport Profile is used for a base structure (canonical resource management) for a report combining any number of Citation, Evidence, EvidenceVariable, EvidenceReport, and related Resources."
+Description: "Profile of Composition for Evidence Based Medicine IG. The EvidenceReport Profile is used for a base structure (canonical resource management) for a report combining any number of PublicationRecord, Evidence, EvidenceVariable, EvidenceReport, and related Resources."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #trial-use
@@ -19,7 +19,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
 * extension contains http://hl7.org/fhir/StructureDefinition/artifact-publicationDate named publicationDate 0..1
 * extension contains ArtifactPublicationStatus named publicationStatus 0..1
 * subject
-  * ^comment = "Reference a Citation Resource, ArtifactAssessment Resource (Classification Profile), Group Resource (EvidenceReportSubject Profile), ReserchStudy Resource, or any Resource to define a subject of this EvidenceReport."
+  * ^comment = "Reference a PublicationRecord Resource, ArtifactAssessment Resource (Classification Profile), Group Resource (EvidenceReportSubject Profile), ReserchStudy Resource, or any Resource to define a subject of this EvidenceReport."
 * attester.mode from http://terminology.hl7.org/ValueSet/contributor-role (preferred)
   * ^short = "reviewer | editor | endorser | informant | recorder"
 * relatesTo

@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <List xmlns="http://hl7.org/fhir">
-  <id value="Citation-examples"/>
+  <id value="PublicationRecord-examples"/>
   <status value="current"/>
   <mode value="working"/>
   <entry>
     <extension url="http://hl7.org/fhir/build/StructureDefinition/description">
-      <valueString value="NInFEA Citation"/>
+      <valueString value="NInFEA PublicationRecord"/>
     </extension>
     <extension url="http://hl7.org/fhir/build/StructureDefinition/title">
       <valueString value="citation-example-research-doi"/>
     </extension>
     <item>
-      <reference value="Citation/citation-example-research-doi"/>
-      <display value="NInFEA Citation"/>
+      <reference value="PublicationRecord/citation-example-research-doi"/>
+      <display value="NInFEA PublicationRecord"/>
     </item>
   </entry>
   <entry>
     <extension url="http://hl7.org/fhir/build/StructureDefinition/description">
-      <valueString value="Citation for PARACHUTE RCT"/>
+      <valueString value="PublicationRecord for PARACHUTE RCT"/>
     </extension>
     <extension url="http://hl7.org/fhir/build/StructureDefinition/title">
       <valueString value="citation-example-for-parachute-rct"/>
     </extension>
     <item>
-      <reference value="Citation/example-for-parachute-rct"/>
-      <display value="Citation for PARACHUTE RCT"/>
+      <reference value="PublicationRecord/example-for-parachute-rct"/>
+      <display value="PublicationRecord for PARACHUTE RCT"/>
     </item>
   </entry>
   <entry>
@@ -36,7 +36,7 @@
       <valueString value="citation-example-dataset-citation"/>
     </extension>
     <item>
-      <reference value="Citation/example-dataset-citation"/>
+      <reference value="PublicationRecord/example-dataset-citation"/>
       <display value="DatasetCitation Profile Example"/>
     </item>
   </entry>

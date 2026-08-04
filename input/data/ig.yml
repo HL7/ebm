@@ -27,7 +27,7 @@ definition:
     - generation: markdown
       name: citation.html
       sourceUrl: citation.html
-      title: Citation Profiles
+      title: PublicationRecord Profiles
     - generation: markdown
       name: artifactassessment.html
       sourceUrl: artifactassessment.html
@@ -87,7 +87,7 @@ definition:
       WHO SOLIDARITY)
     reference:
       reference: Evidence/55
-  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+  - description: This PublicationRecord Resource is referenced in an example for the EBMonFHIR
       Implementation Guide.
     isExample: true
     name: '14706014 Chemohormonal therapy as primary treatment for metastatic prostate
@@ -95,7 +95,7 @@ definition:
       hormone agonist versus flutamide plus luteinizing hormone-releasing hormone
       agonist.'
     reference:
-      reference: Citation/179628
+      reference: PublicationRecord/179628
   - description: This is an example describing the Boots Finger Pulse Oximeter for
       use in an example of Group.characteristic.determinedByReference and does not
       contain substantial detail as the focus is not the expression of device definition
@@ -104,183 +104,183 @@ definition:
     name: '179899'
     reference:
       reference: DeviceDefinition/179899
-  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+  - description: This PublicationRecord Resource is referenced in an example for the EBMonFHIR
       Implementation Guide.
     isExample: true
     name: 18160893 Wonder woman. Like my childhood heroine, Mrs. Betty also had amazing
       powers.
     reference:
-      reference: Citation/179602
-  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      reference: PublicationRecord/179602
+  - description: This PublicationRecord Resource is referenced in an example for the EBMonFHIR
       Implementation Guide.
     isExample: true
     name: 18508207 A Phase 3 placebo-controlled, double-blind, multi-site trial of
       the alpha-2-adrenergic agonist, lofexidine, for opioid withdrawal.
     reference:
-      reference: Citation/179637
-  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      reference: PublicationRecord/179637
+  - description: This PublicationRecord Resource is referenced in an example for the EBMonFHIR
       Implementation Guide.
     isExample: true
     name: 19029421 Phase III trial of androgen ablation with or without three cycles
       of systemic chemotherapy for advanced prostate cancer.
     reference:
-      reference: Citation/179631
-  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      reference: PublicationRecord/179631
+  - description: This PublicationRecord Resource is referenced in an example for the EBMonFHIR
       Implementation Guide.
     isExample: true
     name: '19091394 Endocrine treatment, with or without radiotherapy, in locally
       advanced prostate cancer (SPCG-7/SFUO-3): an open randomised phase III trial.'
     reference:
-      reference: Citation/179627
-  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      reference: PublicationRecord/179627
+  - description: This PublicationRecord Resource is referenced in an example for the EBMonFHIR
       Implementation Guide.
     isExample: true
     name: 19967827 Wonder woman was Argentine and her real name was Evita.
     reference:
-      reference: Citation/179603
-  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      reference: PublicationRecord/179603
+  - description: This PublicationRecord Resource is referenced in an example for the EBMonFHIR
       Implementation Guide.
     isExample: true
     name: '22056152 Combined androgen deprivation therapy and radiation therapy for
       locally advanced prostate cancer: a randomised, phase 3 trial.'
     reference:
-      reference: Citation/179626
-  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      reference: PublicationRecord/179626
+  - description: This PublicationRecord Resource is referenced in an example for the EBMonFHIR
       Implementation Guide.
     isExample: true
     name: '22502942 Addition of radiotherapy to long-term androgen deprivation in
       locally advanced prostate cancer: an open randomised phase 3 trial.'
     reference:
-      reference: Citation/179625
-  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      reference: PublicationRecord/179625
+  - description: This PublicationRecord Resource is referenced in an example for the EBMonFHIR
       Implementation Guide.
     isExample: true
     name: '23306100 Androgen-deprivation therapy alone or with docetaxel in non-castrate
       metastatic prostate cancer (GETUG-AFU 15): a randomised, open-label, phase 3
       trial.'
     reference:
-      reference: Citation/179615
-  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      reference: PublicationRecord/179615
+  - description: This PublicationRecord Resource is referenced in an example for the EBMonFHIR
       Implementation Guide.
     isExample: true
     name: 23452809 Long-term follow-up of a phase II trial of chemotherapy plus hormone
       therapy for biochemical relapse after definitive local therapy for prostate
       cancer.
     reference:
-      reference: Citation/179623
-  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      reference: PublicationRecord/179623
+  - description: This PublicationRecord Resource is referenced in an example for the EBMonFHIR
       Implementation Guide.
     isExample: true
     name: 23604530 A phase II trial of androgen deprivation therapy (ADT) plus chemotherapy
       as initial treatment for local failures or advanced prostate cancer.
     reference:
-      reference: Citation/179629
-  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      reference: PublicationRecord/179629
+  - description: This PublicationRecord Resource is referenced in an example for the EBMonFHIR
       Implementation Guide.
     isExample: true
     name: 24598155 Long-term results of a phase II study with neoadjuvant docetaxel
       chemotherapy and complete androgen blockade in locally advanced and high-risk
       prostate cancer.
     reference:
-      reference: Citation/179624
-  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      reference: PublicationRecord/179624
+  - description: This PublicationRecord Resource is referenced in an example for the EBMonFHIR
       Implementation Guide.
     isExample: true
     name: '25301760 Survival with Newly Diagnosed Metastatic Prostate Cancer in the
       "Docetaxel Era": Data from 917 Patients in the Control Arm of the STAMPEDE Trial
       (MRC PR08, CRUK/06/019).'
     reference:
-      reference: Citation/179617
-  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      reference: PublicationRecord/179617
+  - description: This PublicationRecord Resource is referenced in an example for the EBMonFHIR
       Implementation Guide.
     isExample: true
     name: 26002607 Should docetaxel be standard of care for patients with metastatic
       hormone-sensitive prostate cancer? Pro and contra.
     reference:
-      reference: Citation/179622
-  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      reference: PublicationRecord/179622
+  - description: This PublicationRecord Resource is referenced in an example for the EBMonFHIR
       Implementation Guide.
     isExample: true
     name: '26028518 Androgen deprivation therapy plus docetaxel and estramustine versus
       androgen deprivation therapy alone for high-risk localised prostate cancer (GETUG
       12): a phase 3 randomised controlled trial.'
     reference:
-      reference: Citation/179621
-  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      reference: PublicationRecord/179621
+  - description: This PublicationRecord Resource is referenced in an example for the EBMonFHIR
       Implementation Guide.
     isExample: true
     name: 26092557 Feasibility study of a randomized controlled trial comparing docetaxel
       chemotherapy and androgen deprivation therapy with sequential prostatic biopsies
       from patients with advanced non-castration-resistant prostate cancer.
     reference:
-      reference: Citation/179630
-  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      reference: PublicationRecord/179630
+  - description: This PublicationRecord Resource is referenced in an example for the EBMonFHIR
       Implementation Guide.
     isExample: true
     name: 26244877 Chemohormonal Therapy in Metastatic Hormone-Sensitive Prostate
       Cancer.
     reference:
-      reference: Citation/179616
-  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      reference: PublicationRecord/179616
+  - description: This PublicationRecord Resource is referenced in an example for the EBMonFHIR
       Implementation Guide.
     isExample: true
     name: '27222544 Metabolic Surgery in the Treatment Algorithm for Type 2 Diabetes:
       A Joint Statement by International Diabetes Organizations.'
     reference:
-      reference: Citation/33089
-  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      reference: PublicationRecord/33089
+  - description: This PublicationRecord Resource is referenced in an example for the EBMonFHIR
       Implementation Guide.
     isExample: true
     name: '27308831 Efficacy and Safety of Combined Androgen Deprivation Therapy (ADT)
       and Docetaxel Compared with ADT Alone for Metastatic Hormone-Naive Prostate
       Cancer: A Systematic Review and Meta-Analysis.'
     reference:
-      reference: Citation/179613
-  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      reference: PublicationRecord/179613
+  - description: This PublicationRecord Resource is referenced in an example for the EBMonFHIR
       Implementation Guide.
     isExample: true
     name: 29114761 Web Exclusives. Annals Story Slam - How Wonder Woman Became My
       Alter Ego.
     reference:
-      reference: Citation/179601
-  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      reference: PublicationRecord/179601
+  - description: This PublicationRecord Resource is referenced in an example for the EBMonFHIR
       Implementation Guide.
     isExample: true
     name: 29114762 Web Exclusives. Annals Story Slam - Wonder Woman Is a Cartoon Character.
     reference:
-      reference: Citation/179600
-  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      reference: PublicationRecord/179600
+  - description: This PublicationRecord Resource is referenced in an example for the EBMonFHIR
       Implementation Guide.
     isExample: true
     name: '29202628 "I Kinda Feel Like Wonder Woman": An Interpretative Phenomenological
       Analysis of Pole Fitness and Positive Body Image.'
     reference:
-      reference: Citation/179599
-  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      reference: PublicationRecord/179599
+  - description: This PublicationRecord Resource is referenced in an example for the EBMonFHIR
       Implementation Guide.
     isExample: true
     name: 29357271 Using Hawkeye from the Avengers to communicate on the eye.
     reference:
-      reference: Citation/179598
-  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      reference: PublicationRecord/179598
+  - description: This PublicationRecord Resource is referenced in an example for the EBMonFHIR
       Implementation Guide.
     isExample: true
     name: '29694275 A regressive formula of perversity: Wertham and the women of comics.'
     reference:
-      reference: Citation/179597
-  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      reference: PublicationRecord/179597
+  - description: This PublicationRecord Resource is referenced in an example for the EBMonFHIR
       Implementation Guide.
     isExample: true
     name: '29694302 Introduction: "Suffering Sappho!": Lesbian content and queer female
       characters in comics.'
     reference:
-      reference: Citation/179596
-  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      reference: PublicationRecord/179596
+  - description: This PublicationRecord Resource is referenced in an example for the EBMonFHIR
       Implementation Guide.
     isExample: true
     name: 30467172 Finding my inner Wonder Woman.
     reference:
-      reference: Citation/179595
+      reference: PublicationRecord/179595
   - description: Study results (Evidence Resources) included in Mean difference in
       HbA1c effect of bariatric surgery in 2016 meta-analysis
     isExample: true
@@ -289,33 +289,33 @@ definition:
     - http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group
     reference:
       reference: Group/33395
-  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+  - description: This PublicationRecord Resource is referenced in an example for the EBMonFHIR
       Implementation Guide.
     isExample: true
     name: 34871555 What Can Wonder Woman Teach Radiologists?
     reference:
-      reference: Citation/179594
-  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      reference: PublicationRecord/179594
+  - description: This PublicationRecord Resource is referenced in an example for the EBMonFHIR
       Implementation Guide.
     isExample: true
     name: '35243488 Bariatric surgery and cardiovascular disease: a systematic review
       and meta-analysis.'
     reference:
-      reference: Citation/33399
-  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      reference: PublicationRecord/33399
+  - description: This PublicationRecord Resource is referenced in an example for the EBMonFHIR
       Implementation Guide.
     isExample: true
     name: '36491989 Another Georgia Wonder Woman: She Does More Astounding Tricks
       Than Did Lula Hurst.'
     reference:
-      reference: Citation/179605
-  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      reference: PublicationRecord/179605
+  - description: This PublicationRecord Resource is referenced in an example for the EBMonFHIR
       Implementation Guide.
     isExample: true
     name: '6907780 Career guide: to change what needs changing...doesn''t take Wonder
       Woman.'
     reference:
-      reference: Citation/179604
+      reference: PublicationRecord/179604
   - description: 'An example of a StudyRegistryRecord Profile that is used to support an example of an M11 report.'
     isExample: true
     name: 'A Study of Nasal Glucagon (LY900018) in Japanese Participants With Diabetes Mellitus'
@@ -344,7 +344,7 @@ definition:
     isExample: true
     name: Anticoagulation for COVID-19 Combined RCTs in NEJM
     reference:
-      reference: Citation/7636
+      reference: PublicationRecord/7636
   - description: The artifact being compared to the referenced artifact.
     isExample: false
     name: ArtifactAssessmentCompared
@@ -423,7 +423,7 @@ definition:
     - http://hl7.org/fhir/uv/ebm/StructureDefinition/baseline-measure-evidence
     reference:
       reference: Evidence/179457
-  - description: Profile of Citation for Evidence Based Medicine IG. The BookCitation
+  - description: Profile of PublicationRecord for Evidence Based Medicine IG. The BookCitation
       Profile is used for citations of a book.
     isExample: false
     name: BookCitation
@@ -436,14 +436,14 @@ definition:
     profile:
     - http://hl7.org/fhir/uv/ebm/StructureDefinition/book-citation
     reference:
-      reference: Citation/121719
-  - description: Profile of Citation for Evidence Based Medicine IG. The BookPartCitation
+      reference: PublicationRecord/121719
+  - description: Profile of PublicationRecord for Evidence Based Medicine IG. The BookPartCitation
       Profile is used for citations of a part of a book.
     isExample: false
     name: BookPartCitation
     reference:
       reference: StructureDefinition/book-part-citation
-  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+  - description: This PublicationRecord Resource is referenced in an example for the EBMonFHIR
       Implementation Guide.
     isExample: true
     name: 'BookPartCitation: Chapter 3 of Crossing the Quality Chasm: A New Health
@@ -451,7 +451,7 @@ definition:
     profile:
     - http://hl7.org/fhir/uv/ebm/StructureDefinition/book-part-citation
     reference:
-      reference: Citation/139859
+      reference: PublicationRecord/139859
   - description: An example to map the BookCitation Profile
     isExample: true
     name: 'BookPartCitation: Chapter 3 of Crossing the Quality Chasm: A New Health
@@ -459,7 +459,7 @@ definition:
     profile:
     - http://hl7.org/fhir/uv/ebm/StructureDefinition/book-part-citation
     reference:
-      reference: Citation/139860
+      reference: PublicationRecord/139860
   - isExample: true
     name: Certainty of Evidence Rating of 14-day mortality remdesivir vs placebo meta-analysis
       (ACTT-1, Wang et al, WHO SOLIDARITY)
@@ -545,19 +545,19 @@ definition:
     - http://hl7.org/fhir/uv/ebm/StructureDefinition/endpoint-analysis-plan
     reference:
       reference: Evidence/179690
-  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+  - description: This PublicationRecord Resource is referenced in an example for the EBMonFHIR
       Implementation Guide.
     isExample: true
-    name: 'Citation for FEvIR Evidence 55: 14-day mortality remdesivir vs placebo
+    name: 'PublicationRecord for FEvIR Evidence 55: 14-day mortality remdesivir vs placebo
       meta-analysis (ACTT-1, Wang et al, WHO SOLIDARITY)'
     reference:
-      reference: Citation/58
+      reference: PublicationRecord/58
   - description: A Evidence Resource to demonstrate complex evidence reporting
     isExample: true
-    name: 'Citation for FEvIR Evidence 7637: Critically appraised summary of primary
+    name: 'PublicationRecord for FEvIR Evidence 7637: Critically appraised summary of primary
       outcome of multi-platform RCT of anticoagulation for non-critically ill COVID-19'
     reference:
-      reference: Citation/7638
+      reference: PublicationRecord/7638
   - description: Profile of ArtifactAssessment for Evidence Based Medicine IG. The
       Classification Profile is used for classifier tags that may be created independently
       from Resource creators and may be used for search indexes.
@@ -1282,21 +1282,21 @@ definition:
       anticoagulation for non-critically ill patients with COVID-19
     reference:
       reference: Evidence/7637
-  - description: Profile of Citation for Evidence Based Medicine IG. The DatabaseCitation
+  - description: Profile of PublicationRecord for Evidence Based Medicine IG. The DatabaseCitation
       Profile is used for citations of a database.
     isExample: false
     name: DatabaseCitation
     reference:
       reference: StructureDefinition/database-citation
-  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+  - description: This PublicationRecord Resource is referenced in an example for the EBMonFHIR
       Implementation Guide.
     isExample: true
-    name: 'DatabaseCitation: Citation for FEvIR Platform'
+    name: 'DatabaseCitation: PublicationRecord for FEvIR Platform'
     profile:
     - http://hl7.org/fhir/uv/ebm/StructureDefinition/database-citation
     reference:
-      reference: Citation/29812
-  - description: Profile of Citation for Evidence Based Medicine IG. The DatabaseEntryCitation
+      reference: PublicationRecord/29812
+  - description: Profile of PublicationRecord for Evidence Based Medicine IG. The DatabaseEntryCitation
       Profile is used for citations of a record within a database.
     isExample: false
     name: DatabaseEntryCitation
@@ -1310,7 +1310,7 @@ definition:
     profile:
     - http://hl7.org/fhir/uv/ebm/StructureDefinition/database-entry-citation
     reference:
-      reference: Citation/179558
+      reference: PublicationRecord/179558
   - description: Profile of CodeSystem for Evidence Based Medicine IG. The DataDictionary
       Profile is used for a code key for variable names in a dataset.
     isExample: false
@@ -1333,13 +1333,13 @@ definition:
     - http://hl7.org/fhir/uv/ebm/StructureDefinition/data-dictionary
     reference:
       reference: CodeSystem/179650
-  - description: Profile of Citation for Evidence Based Medicine IG. The DatasetCitation
+  - description: Profile of PublicationRecord for Evidence Based Medicine IG. The DatasetCitation
       Profile is used for citations of a dataset.
     isExample: false
     name: DatasetCitation
     reference:
       reference: StructureDefinition/dataset-citation
-  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+  - description: This PublicationRecord Resource is referenced in an example for the EBMonFHIR
       Implementation Guide.
     isExample: true
     name: 'DatasetCitation: Extrachromosomal DNA Amplification Contributes to Small
@@ -1347,7 +1347,7 @@ definition:
     profile:
     - http://hl7.org/fhir/uv/ebm/StructureDefinition/dataset-citation
     reference:
-      reference: Citation/179559
+      reference: PublicationRecord/179559
   - description: Profile of ArtifactAssessment for Evidence Based Medicine IG. The
       DateAsRating Profile is used for representing a date or dateTime as a classifier
       value.
@@ -1361,12 +1361,12 @@ definition:
     - http://hl7.org/fhir/uv/ebm/StructureDefinition/classification
     reference:
       reference: ArtifactAssessment/181452
-  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+  - description: This PublicationRecord Resource is referenced in an example for the EBMonFHIR
       Implementation Guide.
     isExample: true
     name: Delany-Moretlwe 2022 clinical trial
     reference:
-      reference: Citation/153881
+      reference: PublicationRecord/153881
   - description: This value set is a temporary workspace while drafting the Evidence
       Based Medicine Implementation Guide. It may not be stable and may not be persistent.
     isExample: true
@@ -1434,7 +1434,7 @@ definition:
       reference: List/179470
   - description: Profile of Composition for Evidence Based Medicine IG. The EvidenceReport
       Profile is used for a base structure (canonical resource management) for a report
-      combining any number of Citation, Evidence, EvidenceVariable, EvidenceReport,
+      combining any number of PublicationRecord, Evidence, EvidenceVariable, EvidenceReport,
       and related Resources.
     isExample: false
     name: EvidenceReport
@@ -1785,14 +1785,14 @@ definition:
     - http://hl7.org/fhir/uv/ebm/StructureDefinition/adaptation
     reference:
       reference: ArtifactAssessment/179698
-  - description: Profile of Citation for Evidence Based Medicine IG. The JournalArticleCitation
+  - description: Profile of PublicationRecord for Evidence Based Medicine IG. The JournalArticleCitation
       Profile is used for citations of an article published in a periodical venue
       classified as a journal.
     isExample: false
     name: JournalArticleCitation
     reference:
       reference: StructureDefinition/journal-article-citation
-  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+  - description: This PublicationRecord Resource is referenced in an example for the EBMonFHIR
       Implementation Guide.
     isExample: true
     name: 'JournalArticleCitation: ADA 2021 Standards of Medical Care 8. Obesity Management
@@ -1800,8 +1800,8 @@ definition:
     profile:
     - http://hl7.org/fhir/uv/ebm/StructureDefinition/journal-article-citation
     reference:
-      reference: Citation/32137
-  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+      reference: PublicationRecord/32137
+  - description: This PublicationRecord Resource is referenced in an example for the EBMonFHIR
       Implementation Guide.
     isExample: true
     name: 'JournalArticleCitation: Association of Bariatric Surgery with Complications
@@ -1809,7 +1809,7 @@ definition:
     profile:
     - http://hl7.org/fhir/uv/ebm/StructureDefinition/journal-article-citation
     reference:
-      reference: Citation/104116
+      reference: PublicationRecord/104116
   - isExample: true
     name: 'Justification for Recommendation: ADA Obesity Management Recommendation
       8.16'
@@ -2454,7 +2454,7 @@ definition:
     - http://hl7.org/fhir/uv/ebm/StructureDefinition/recommendation-plan
     reference:
       reference: PlanDefinition/179554
-  - description: Profile of Citation for Evidence Based Medicine IG. The PreprintCitation
+  - description: Profile of PublicationRecord for Evidence Based Medicine IG. The PreprintCitation
       Profile is used for citations of an article published in a form prior to peer-reviewed
       publication in a journal, book, or other permanent record.
     isExample: false
@@ -2468,7 +2468,7 @@ definition:
     profile:
     - http://hl7.org/fhir/uv/ebm/StructureDefinition/preprint-citation
     reference:
-      reference: Citation/5296
+      reference: PublicationRecord/5296
   - description: Profile of ArtifactAssessment for Evidence Based Medicine IG. The
       Rating Profile is used for classifier tags that may include quantitative ratings
       and may be created independently from Resource creators.
@@ -2673,13 +2673,13 @@ definition:
     - http://hl7.org/fhir/uv/ebm/StructureDefinition/soa-plandefinition
     reference:
       reference: PlanDefinition/181450
-  - description: Profile of Citation for Evidence Based Medicine IG. The SoftwareCitation
+  - description: Profile of PublicationRecord for Evidence Based Medicine IG. The SoftwareCitation
       Profile is used for citations of executable code.
     isExample: false
     name: SoftwareCitation
     reference:
       reference: StructureDefinition/software-citation
-  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+  - description: This PublicationRecord Resource is referenced in an example for the EBMonFHIR
       Implementation Guide.
     isExample: true
     name: "SoftwareCitation: Computable Publishing\xAE: ClinicalTrials.gov-to-FEvIR\
@@ -2687,7 +2687,7 @@ definition:
     profile:
     - http://hl7.org/fhir/uv/ebm/StructureDefinition/software-citation
     reference:
-      reference: Citation/179560
+      reference: PublicationRecord/179560
   - description: The analysis that was applied.
     isExample: false
     name: StatisticModelApplied
@@ -2724,13 +2724,13 @@ definition:
     name: StatisticModelValueRange
     reference:
       reference: StructureDefinition/statistic-model-value-range
-  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+  - description: This PublicationRecord Resource is referenced in an example for the EBMonFHIR
       Implementation Guide.
     isExample: true
     name: 'StudyCitation: 2022 Systematic Review of bariatric surgery mortality effect
       35243488'
     reference:
-      reference: Citation/33400
+      reference: PublicationRecord/33400
   - description: Profile of Group for Evidence Based Medicine IG. The StudyEligibilityCriteria
       Profile is used to describe inclusion and exclusion criteria for a clinical
       trial or other research study.
@@ -2908,21 +2908,21 @@ definition:
     name: VariableDefinitionVariableRoleCode
     reference:
       reference: StructureDefinition/variable-definition-variable-role-code
-  - description: Profile of Citation for Evidence Based Medicine IG. The WebPageCitation
+  - description: Profile of PublicationRecord for Evidence Based Medicine IG. The WebPageCitation
       Profile is used for citations of a web page or website, typically when there
       is not another type being used to classify the cited artifact.
     isExample: false
     name: WebPageCitation
     reference:
       reference: StructureDefinition/web-page-citation
-  - description: This Citation Resource is referenced in an example for the EBMonFHIR
+  - description: This PublicationRecord Resource is referenced in an example for the EBMonFHIR
       Implementation Guide.
     isExample: true
     name: 'WebPageCitation: A HEvKA Update Summary'
     profile:
     - http://hl7.org/fhir/uv/ebm/StructureDefinition/web-page-citation
     reference:
-      reference: Citation/179561
+      reference: PublicationRecord/179561
 fhirVersion:
 - 6.0.0-ballot3
 id: hl7.fhir.uv.ebm

@@ -21,10 +21,10 @@ Description: "Profile Names in the Evidence Based Medicine on FHIR (EBMonFHIR) I
 * ^concept[3].definition = "Profile of List for Evidence Based Medicine IG. The BaselineVariablesList Profile is used to provide a list of EvidenceVariable Resources which represent baseline measures."
 * ^concept[4].code = #BookCitation
 * ^concept[4].display = "BookCitation"
-* ^concept[4].definition = "Profile of Citation for Evidence Based Medicine IG. The BookCitation Profile is used for citations of a book."
+* ^concept[4].definition = "Profile of PublicationRecord for Evidence Based Medicine IG. The BookCitation Profile is used for citations of a book."
 * ^concept[5].code = #BookPartCitation
 * ^concept[5].display = "BookPartCitation"
-* ^concept[5].definition = "Profile of Citation for Evidence Based Medicine IG. The BookPartCitation Profile is used for citations of a part of a book."
+* ^concept[5].definition = "Profile of PublicationRecord for Evidence Based Medicine IG. The BookPartCitation Profile is used for citations of a part of a book."
 * ^concept[6].code = #CertaintyOfEvidence
 * ^concept[6].display = "CertaintyOfEvidence"
 * ^concept[6].definition = "Profile of ArtifactAssessment for Evidence Based Medicine IG. The CertaintyOfEvidence Profile is used for expression of the certainty (also called quality or confidence in the estimates) of an Evidence artifact."
@@ -81,13 +81,13 @@ Description: "Profile Names in the Evidence Based Medicine on FHIR (EBMonFHIR) I
 * ^concept[23].definition = "Profile of Group for Evidence Based Medicine IG. The ConceptualExposureDefinition Profile is used to express the criteria defining an evidence variable (or categorical value for a variable) in the role of exposure, where the type of Group is conceptual."
 * ^concept[24].code = #DatabaseCitation
 * ^concept[24].display = "DatabaseCitation"
-* ^concept[24].definition = "Profile of Citation for Evidence Based Medicine IG. The DatabaseCitation Profile is used for citations of a database."
+* ^concept[24].definition = "Profile of PublicationRecord for Evidence Based Medicine IG. The DatabaseCitation Profile is used for citations of a database."
 * ^concept[25].code = #DatabaseEntryCitation
 * ^concept[25].display = "DatabaseEntryCitation"
-* ^concept[25].definition = "Profile of Citation for Evidence Based Medicine IG. The DatabaseEntryCitation Profile is used for citations of a record within a database."
+* ^concept[25].definition = "Profile of PublicationRecord for Evidence Based Medicine IG. The DatabaseEntryCitation Profile is used for citations of a record within a database."
 * ^concept[26].code = #DatasetCitation
 * ^concept[26].display = "DatasetCitation"
-* ^concept[26].definition = "Profile of Citation for Evidence Based Medicine IG. The DatasetCitation Profile is used for citations of a dataset."
+* ^concept[26].definition = "Profile of PublicationRecord for Evidence Based Medicine IG. The DatasetCitation Profile is used for citations of a dataset."
 * ^concept[27].code = #DateAsRating
 * ^concept[27].display = "DateAsRating"
 * ^concept[27].definition = "Profile of ArtifactAssessment for Evidence Based Medicine IG. The DateAsRating Profile is used for representing a date or dateTime as a classifier value."
@@ -105,7 +105,7 @@ Description: "Profile Names in the Evidence Based Medicine on FHIR (EBMonFHIR) I
 * ^concept[31].definition = "Profile of List for Evidence Based Medicine IG. The EvidenceList Profile is used to provide a list of Evidence Resources. The EvidenceList Profile is used to represent a Group of Evidence for the population for an EvidenceSynthesisEvidence using a summary data meta-analysis approach and is referenced from a MetaanalysisStudyGroup."
 * ^concept[32].code = #EvidenceReport
 * ^concept[32].display = "EvidenceReport"
-* ^concept[32].definition = "Profile of Composition for Evidence Based Medicine IG. The EvidenceReport Profile is used for a base structure (canonical resource management) for a report combining any number of Citation, Evidence, EvidenceVariable, EvidenceReport, and related Resources."
+* ^concept[32].definition = "Profile of Composition for Evidence Based Medicine IG. The EvidenceReport Profile is used for a base structure (canonical resource management) for a report combining any number of PublicationRecord, Evidence, EvidenceVariable, EvidenceReport, and related Resources."
 * ^concept[33].code = #EvidenceReportPackage
 * ^concept[33].display = "EvidenceReportPackage"
 * ^concept[33].definition = "Profile of Composition for Evidence Based Medicine IG. The EvidenceReportPackage Profile is used for a base structure to extend the EvidenceReport Profile with optional sections for Summary, Introduction, Discussion, Methods, References, Competing Interests, Acknowledgements, and Appendices."
@@ -132,7 +132,7 @@ Description: "Profile Names in the Evidence Based Medicine on FHIR (EBMonFHIR) I
 * ^concept[40].definition = "Profile of Evidence for Evidence Based Medicine IG. The InterventionOnlyEvidence Profile is used for evidence with a measured variable that is considered the outcome of an exposure or intervention. The InterventionOnlyEvidence describes the evidence for the intervention group."
 * ^concept[41].code = #JournalArticleCitation
 * ^concept[41].display = "JournalArticleCitation"
-* ^concept[41].definition = "Profile of Citation for Evidence Based Medicine IG. The JournalArticleCitation Profile is used for citations of an article published in a periodical venue classified as a journal."
+* ^concept[41].definition = "Profile of PublicationRecord for Evidence Based Medicine IG. The JournalArticleCitation Profile is used for citations of an article published in a periodical venue classified as a journal."
 * ^concept[42].code = #M11ReportContainer
 * ^concept[42].display = "M11ReportContainer"
 * ^concept[42].definition = "Profile of Composition for Evidence Based Medicine IG. The M11ReportContainer Profile is used for a complete report for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification."
@@ -192,7 +192,7 @@ Description: "Profile Names in the Evidence Based Medicine on FHIR (EBMonFHIR) I
 * ^concept[60].definition = "Profile of List for Evidence Based Medicine IG. The ParticipantFlowVariablesList Profile is used to provide a list of EvidenceVariable Resources which represent participant flow measures."
 * ^concept[61].code = #PreprintCitation
 * ^concept[61].display = "PreprintCitation"
-* ^concept[61].definition = "Profile of Citation for Evidence Based Medicine IG. The PreprintCitation Profile is used for citations of an article published in a form prior to peer-reviewed publication in a journal, book, or other permanent record."
+* ^concept[61].definition = "Profile of PublicationRecord for Evidence Based Medicine IG. The PreprintCitation Profile is used for citations of an article published in a form prior to peer-reviewed publication in a journal, book, or other permanent record."
 * ^concept[62].code = #Rating
 * ^concept[62].display = "Rating"
 * ^concept[62].definition = "Profile of ArtifactAssessment for Evidence Based Medicine IG. The Rating Profile is used for classifier tags that may include quantitative ratings and may be created independently from Resource creators."
@@ -237,7 +237,7 @@ Description: "Profile Names in the Evidence Based Medicine on FHIR (EBMonFHIR) I
 * ^concept[75].definition = "Profile of PlanDefinition for temporary testing for coordination with M11 use."
 * ^concept[76].code = #SoftwareCitation
 * ^concept[76].display = "SoftwareCitation"
-* ^concept[76].definition = "Profile of Citation for Evidence Based Medicine IG. The SoftwareCitation Profile is used for citations of executable code."
+* ^concept[76].definition = "Profile of PublicationRecord for Evidence Based Medicine IG. The SoftwareCitation Profile is used for citations of executable code."
 * ^concept[77].code = #StatisticModel
 * ^concept[77].display = "StatisticModel"
 * ^concept[77].definition = "Profile of Evidence for Evidence Based Medicine IG. The StatisticModel Profile is used to add extensions to Evidence for complex expressions for the statistical model or endpoint analysis plan."
@@ -279,7 +279,7 @@ Description: "Profile Names in the Evidence Based Medicine on FHIR (EBMonFHIR) I
 * ^concept[89].definition = "Profile of EvidenceVariable for Evidence Based Medicine IG. The VariableDefinition Profile uses a CodeableReference Datatype to provide a concept (e.g. coding in a code system) and/or a reference to a Group Resource for structured data to define the variable."
 * ^concept[90].code = #WebPageCitation
 * ^concept[90].display = "WebPageCitation"
-* ^concept[90].definition = "Profile of Citation for Evidence Based Medicine IG. The WebPageCitation Profile is used for citations of a web page or website, typically when there is not another type being used to classify the cited artifact."
+* ^concept[90].definition = "Profile of PublicationRecord for Evidence Based Medicine IG. The WebPageCitation Profile is used for citations of a web page or website, typically when there is not another type being used to classify the cited artifact."
 * ^concept[91].code = #AbsenceOfExposureDefinition
 * ^concept[91].display = "AbsenceOfExposureDefinition"
 * ^concept[91].definition = "Profile of Group for Evidence Based Medicine IG. The AbsenceOfExposureDefinition Profile is used to constrain the ConceptualComparatorDefinition Profile to a single characteristic of not being exposed to a ConceptualExposureDefinition Profile instance."

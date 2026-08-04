@@ -6,6 +6,6 @@ Description: "Link to a research study included in the systematic review."
 * ^extension[$ext-standards-status].valueCode = #trial-use
 * ^context.type = #element
 * ^context.expression = "ResearchStudy"
-* value[x] only Reference(Citation or Composition or ResearchStudy)
+* value[x] only Reference(PublicationRecord or Composition or ResearchStudy)
 * . ^short = "Link to a research study included in the systematic review."
 * . ^definition = "Link to a research study included in the systematic review."

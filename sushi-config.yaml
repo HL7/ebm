@@ -65,7 +65,7 @@ pages:
   group.md:
     title: Group Profiles
   citation.md:
-    title: Citation Profiles
+    title: PublicationRecord Profiles
   artifactassessment.md:
     title: ArtifactAssessment Profiles
   composition.md:
@@ -100,7 +100,7 @@ parameters:
 #  path-resource: 
 #    - input/resources/citation 
 #  additional-resource:
-#    - http://hl7.org/fhir/uv/ebm-incubator/StructureDefinition/Citation
+#    - http://hl7.org/fhir/uv/ebm-incubator/StructureDefinition/PublicationRecord
 #  special-url-base: http://hl7.org/fhir
 # parameters:
 #   excludettl: true
@@ -120,7 +120,7 @@ menu:
     Evidence: evidence.html
     EvidenceVariable: evidencevariable.html
     Group: group.html
-    Citation: citation.html
+    PublicationRecord: citation.html
     ArtifactAssessment: artifactassessment.html
     Composition: composition.html
     Other: otherprofiles.html

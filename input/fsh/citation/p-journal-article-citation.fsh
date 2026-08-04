@@ -1,7 +1,7 @@
 Profile: JournalArticleCitation
-Parent: Citation
+Parent: PublicationRecord
 Id: journal-article-citation
-Description: "Profile of Citation for Evidence Based Medicine IG. The JournalArticleCitation Profile is used for citations of an article published in a periodical venue classified as a journal."
+Description: "Profile of PublicationRecord for Evidence Based Medicine IG. The JournalArticleCitation Profile is used for citations of an article published in a periodical venue classified as a journal."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #trial-use
@@ -27,7 +27,7 @@ Description: "Profile of Citation for Evidence Based Medicine IG. The JournalArt
   * classification[publicationType].type.coding 1..1
   * classification[publicationType].type.coding = http://terminology.hl7.org/CodeSystem/cited-artifact-classification-type#publication-type "Publication type"
   * classification[citationSubset].type.coding 1..1
-  * classification[citationSubset].type.coding = http://terminology.hl7.org/CodeSystem/cited-artifact-classification-type#citation-subset "Citation subset" 
+  * classification[citationSubset].type.coding = http://terminology.hl7.org/CodeSystem/cited-artifact-classification-type#citation-subset "PublicationRecord subset" 
   * classification[studyDesign].type.coding 1..1
   * classification[studyDesign].type.coding = https://fevir.net/resources/CodeSystem/179423#study-design "Study Design"
   * classification[definedInText].type.coding 1..1

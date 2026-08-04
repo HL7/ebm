@@ -1,7 +1,7 @@
 Profile: WebPageCitation
-Parent: Citation
+Parent: PublicationRecord
 Id: web-page-citation
-Description: "Profile of Citation for Evidence Based Medicine IG. The WebPageCitation Profile is used for citations of a web page or website, typically when there is not another type being used to classify the cited artifact."
+Description: "Profile of PublicationRecord for Evidence Based Medicine IG. The WebPageCitation Profile is used for citations of a web page or website, typically when there is not another type being used to classify the cited artifact."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #trial-use

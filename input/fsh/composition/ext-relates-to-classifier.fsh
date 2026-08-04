@@ -8,7 +8,7 @@ Description: "A classifier of the target artifact in a relatesTo element."
 * ^context[0].type = #element
 * ^context[0].expression = "Composition.relatesTo"
 * ^context[1].type = #element
-* ^context[1].expression = "Citation.relatesTo"
+* ^context[1].expression = "PublicationRecord.relatesTo"
 * ^context[2].type = #element
 * ^context[2].expression = "Evidence.relatesTo"
 * ^context[3].type = #element

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Citation xmlns="http://hl7.org/fhir">
+<PublicationRecord xmlns="http://hl7.org/fhir">
   <id value="example-dataset-citation"/>
   <meta>
     <versionId value="5"/>
@@ -12,7 +12,7 @@
     <div xmlns="http://www.w3.org/1999/xhtml">
 		
       <p class="res-header-id">
-        <b>Generated Narrative: Citation 179559</b>
+        <b>Generated Narrative: PublicationRecord 179559</b>
       </p>
       <a name="179559"> </a>
       <a name="hc179559"> </a>
@@ -25,7 +25,7 @@
       </div>
       <p>
         <b>url</b>: 
-        <a href="Citation-179559.html">Citation DatasetCitation: Extrachromosomal DNA Amplification Contributes to Small Cell Lung Cancer Heterogeneity and is Associated with Worse Outcomes</a>
+        <a href="PublicationRecord-179559.html">PublicationRecord DatasetCitation: Extrachromosomal DNA Amplification Contributes to Small Cell Lung Cancer Heterogeneity and is Associated with Worse Outcomes</a>
       </p>
       <p>
         <b>identifier</b>: FEvIR Object Identifier/179559
@@ -53,7 +53,7 @@
         <b>description</b>: 
       </p>
       <div>
-        <p>This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide.</p>
+        <p>This PublicationRecord Resource is referenced in an example for the EBMonFHIR Implementation Guide.</p>
 		
       </div>
       <p>
@@ -465,7 +465,7 @@
       </name>
     </Practitioner>
   </contained>
-  <url value="http://hl7.org/fhir/Citation/example-dataset-citation"/>
+  <url value="http://hl7.org/fhir/PublicationRecord/example-dataset-citation"/>
   <identifier>
     <type>
       <coding>
@@ -496,7 +496,7 @@
       <value value="http://www.hl7.org/Special/committees/dss"/>
     </telecom>
   </contact>
-  <description value="This Citation Resource is referenced in an example for the EBMonFHIR Implementation Guide."/>
+  <description value="This PublicationRecord Resource is referenced in an example for the EBMonFHIR Implementation Guide."/>
   <copyright value="https://creativecommons.org/licenses/by-nc-sa/4.0/"/>
   <summary>
     <style>
@@ -762,4 +762,4 @@
       </entry>
     </contributorship>
   </citedArtifact>
-</Citation>
+</PublicationRecord>

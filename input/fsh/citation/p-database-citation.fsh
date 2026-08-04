@@ -1,7 +1,7 @@
 Profile: DatabaseCitation
-Parent: Citation
+Parent: PublicationRecord
 Id: database-citation
-Description: "Profile of Citation for Evidence Based Medicine IG. The DatabaseCitation Profile is used for citations of a database." 
+Description: "Profile of PublicationRecord for Evidence Based Medicine IG. The DatabaseCitation Profile is used for citations of a database." 
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #trial-use

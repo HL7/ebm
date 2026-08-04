@@ -1,1 +1,1 @@
-See [Understanding the Citation Resource](citation.html) for additional information.
+See [Understanding the PublicationRecord Resource](citation.html) for additional information.

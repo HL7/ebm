@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<Citation xmlns="http://hl7.org/fhir">
+<PublicationRecord xmlns="http://hl7.org/fhir">
   <id value="citation-example-research-doi"/>
   <identifier>
     <type>
@@ -17,7 +17,7 @@
     <value value="urn:oid:2.16.840.1.113883.4.642.8.6"/>
   </identifier>
   <name value="NInFEACitation"/>
-  <title value="NInFEA Citation"/>
+  <title value="NInFEA PublicationRecord"/>
   <status value="active"/>
   <date value="2021-09-24T10:41:01.740Z"/>
   <publisher value="Computable Publishing LLC"/>
@@ -388,4 +388,4 @@
       </summary>
     </contributorship>
   </citedArtifact>
-</Citation>
+</PublicationRecord>

@@ -9,7 +9,7 @@ Description: "Specification of a portion quoted from the related artifact."
 * ^context[1].type = #element
 * ^context[1].expression = "EvidenceVariable.relatesTo"
 * ^context[2].type = #element
-* ^context[2].expression = "Citation.relatesTo"
+* ^context[2].expression = "PublicationRecord.relatesTo"
 * ^context[3].type = #element
 * ^context[3].expression = "ArtifactAssessment.relatesTo"
 * ^context[4].type = #element

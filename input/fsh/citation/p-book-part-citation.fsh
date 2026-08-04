@@ -1,7 +1,7 @@
 Profile: BookPartCitation
-Parent: Citation
+Parent: PublicationRecord
 Id: book-part-citation
-Description: "Profile of Citation for Evidence Based Medicine IG. The BookPartCitation Profile is used for citations of a part of a book." 
+Description: "Profile of PublicationRecord for Evidence Based Medicine IG. The BookPartCitation Profile is used for citations of a part of a book." 
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #trial-use

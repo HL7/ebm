@@ -32,7 +32,7 @@ section.text is a Narrative datatype used for a text summary of the section. A N
 
 ### EvidenceReport Profile of Composition Resource
 
-The **[EvidenceReport Profile][EvidenceReport]** is used for a base structure (canonical resource management) for a report combining any number of <b>Citation</b>, <b>Evidence</b>, <b>EvidenceVariable</b>, <b>Composition</b>, and related Resources. The **[EvidenceReport Profile][EvidenceReport]** adds a number of extensions for metadata (versionAlgorithm, experimental, description, purpose, copyright, copyrightLabel, approvalDate, lastReviewDate, and effectivePeriod). The Composition.attester.mode element uses a CodeableConcept datatype and a Contributor Role Value Set is provided with preferred binding to include concepts for reviewer, editor, endorser, informant, recorder, and funder. The Composition.relatesTo element includes extensions (targetUri, targetCanonical, targetReference, targetAttachment, targetMarkdown) until these elements are included in the base FHIR R6 specification used for this implementation guide. An EvidenceReport Section Code Value Set is provided with extensible binding for the section.code elements.
+The **[EvidenceReport Profile][EvidenceReport]** is used for a base structure (canonical resource management) for a report combining any number of <b>PublicationRecord</b>, <b>Evidence</b>, <b>EvidenceVariable</b>, <b>Composition</b>, and related Resources. The **[EvidenceReport Profile][EvidenceReport]** adds a number of extensions for metadata (versionAlgorithm, experimental, description, purpose, copyright, copyrightLabel, approvalDate, lastReviewDate, and effectivePeriod). The Composition.attester.mode element uses a CodeableConcept datatype and a Contributor Role Value Set is provided with preferred binding to include concepts for reviewer, editor, endorser, informant, recorder, and funder. The Composition.relatesTo element includes extensions (targetUri, targetCanonical, targetReference, targetAttachment, targetMarkdown) until these elements are included in the base FHIR R6 specification used for this implementation guide. An EvidenceReport Section Code Value Set is provided with extensible binding for the section.code elements.
 
 ### ResearchStudyDataDictionary Profile of Composition Resource
 
@@ -52,7 +52,7 @@ The **[ComparativeEvidenceReport Profile][ComparativeEvidenceReport]** is a Prof
 
 The Composition.type value is set to a "Comparative Evidence Report".
 
-..A 'Research Study' section is required with entries limited to reference <b>ResearchStudy Resource</b> or <b>Citation Resource</b> or <b>Composition Resource</b>.
+..A 'Research Study' section is required with entries limited to reference <b>ResearchStudy Resource</b> or <b>PublicationRecord Resource</b> or <b>Composition Resource</b>.
 
 ..A 'Study Sample' section is required with entries limited to reference **[StudyGroup Profile][StudyGroup]**. The 'Study Sample' section may contain 1 optional 'Eligibility Criteria' section with entries limited to reference **[StudyEligibilityCriteria Profile][StudyEligibilityCriteria]**.
 
@@ -95,7 +95,7 @@ The Composition.type value is set to a "Comparative Evidence Synthesis Report".
 
 ..A 'Comparator' section is required with entries limited to reference **[CohortDefinition Profile][CohortDefinition]** or **[ConceptualCohortDefinition Profile][ConceptualCohortDefinition]** or PlanDefinition or ActivityDefinition.
 
-..A 'Research Study' section is required with entries limited to reference <b>ResearchStudy Resource</b> or <b>Citation Resource</b> or <b>Composition Resource</b>.
+..A 'Research Study' section is required with entries limited to reference <b>ResearchStudy Resource</b> or <b>PublicationRecord Resource</b> or <b>Composition Resource</b>.
 
 ..An 'Outcome Variables' section is optional with entries limited to reference **[VariableDefinition Profile][VariableDefinition]** or **[OutcomeVariablesList Profile][OutcomeVariablesList]**.
 

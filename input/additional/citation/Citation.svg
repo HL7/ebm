@@ -65,7 +65,7 @@
   <g
      id="n1646">
     <rect
-       id="Citation"
+       id="PublicationRecord"
        x="388.61811"
        y="26.680394000000007"
        rx="4"
@@ -86,7 +86,7 @@
        x="525.01811"
        y="46.68039400000001"
        fill="black"
-       class="diagram-class-title  diagram-class-resource">Citation<tspan
+       class="diagram-class-title  diagram-class-resource">PublicationRecord<tspan
    class="diagram-class-title-link"
    id="tspan62784"> (<a
    id="n1649"
@@ -104,7 +104,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1652"
-   xlink:href="citation-definitions.html#Citation.url"><title
+   xlink:href="citation-definitions.html#PublicationRecord.url"><title
    id="title62787">An absolute URI that is used to identify this citation record when it is referenced in a specification, model, design or an instance; also called its canonical identifier. This SHOULD be globally unique and SHOULD be a literal address at which an authoritative instance of this summary is (or will be) published. This URL can be the target of a canonical reference. It SHALL remain the same when the summary is stored on different servers</title>url</a> : <a
    id="n1653"
    xlink:href="datatypes.html#uri">uri</a> [0..1]</text>
@@ -115,7 +115,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1658"
-   xlink:href="citation-definitions.html#Citation.identifier"><title
+   xlink:href="citation-definitions.html#PublicationRecord.identifier"><title
    id="title62792">A formal identifier that is used to identify this citation record when it is represented in other formats, or referenced in a specification, model, design or an instance</title>identifier</a> : <a
    id="n1659"
    xlink:href="datatypes.html#Identifier">Identifier</a> [0..*]</text>
@@ -126,7 +126,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1664"
-   xlink:href="citation-definitions.html#Citation.version"><title
+   xlink:href="citation-definitions.html#PublicationRecord.version"><title
    id="title62797">The identifier that is used to identify this version of the citation record when it is referenced in a specification, model, design or instance. This is an arbitrary value managed by the citation record author and is not expected to be globally unique. For example, it might be a timestamp (e.g. yyyymmdd) if a managed version is not available. There is also no expectation that versions can be placed in a lexicographical sequence</title>version</a> : <a
    id="n1665"
    xlink:href="datatypes.html#string">string</a> [0..1]</text>
@@ -137,7 +137,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1670"
-   xlink:href="citation-definitions.html#Citation.versionAlgorithm_x_"><title
+   xlink:href="citation-definitions.html#PublicationRecord.versionAlgorithm_x_"><title
    id="title62802">Indicates the mechanism used to compare versions to determine which is more current</title>versionAlgorithm[x]</a> : <a
    id="n1671"
    xlink:href="types.html#DataType">DataType</a> [0..1] « <a
@@ -163,7 +163,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1688"
-   xlink:href="citation-definitions.html#Citation.name"><title
+   xlink:href="citation-definitions.html#PublicationRecord.name"><title
    id="title62813">A natural language name identifying the citation record. This name should be usable as an identifier for the module by machine processing applications such as code generation</title>name</a> : <a
    id="n1689"
    xlink:href="datatypes.html#string">string</a> [0..1] « <a
@@ -178,7 +178,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1698"
-   xlink:href="citation-definitions.html#Citation.title"><title
+   xlink:href="citation-definitions.html#PublicationRecord.title"><title
    id="title62820">A short, descriptive, user-friendly title for the citation record</title>title</a> : <a
    id="n1699"
    xlink:href="datatypes.html#string">string</a> [0..1]</text>
@@ -189,7 +189,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1704"
-   xlink:href="citation-definitions.html#Citation.status"><title
+   xlink:href="citation-definitions.html#PublicationRecord.status"><title
    id="title62825">The status of this summary. Enables tracking the life-cycle of the content (this element modifies the meaning of other elements)</title>status</a> : <a
    id="n1705"
    xlink:href="datatypes.html#code">code</a> [1..1] « <a
@@ -203,7 +203,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1714"
-   xlink:href="citation-definitions.html#Citation.experimental"><title
+   xlink:href="citation-definitions.html#PublicationRecord.experimental"><title
    id="title62832">A Boolean value to indicate that this citation record is authored for testing purposes (or education/evaluation/marketing) and is not intended to be used for genuine usage</title>experimental</a> : <a
    id="n1715"
    xlink:href="datatypes.html#boolean">boolean</a> [0..1]</text>
@@ -214,7 +214,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1720"
-   xlink:href="citation-definitions.html#Citation.date"><title
+   xlink:href="citation-definitions.html#PublicationRecord.date"><title
    id="title62837">The date (and optionally time) when the citation record was last significantly changed. The date must change when the business version changes and it must change if the status code changes. In addition, it should change when the substantive content of the citation record changes</title>date</a> : <a
    id="n1721"
    xlink:href="datatypes.html#dateTime">dateTime</a> [0..1]</text>
@@ -225,7 +225,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1726"
-   xlink:href="citation-definitions.html#Citation.publisher"><title
+   xlink:href="citation-definitions.html#PublicationRecord.publisher"><title
    id="title62842">The name of the organization or individual that published the citation record</title>publisher</a> : <a
    id="n1727"
    xlink:href="datatypes.html#string">string</a> [0..1]</text>
@@ -236,7 +236,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1732"
-   xlink:href="citation-definitions.html#Citation.contact"><title
+   xlink:href="citation-definitions.html#PublicationRecord.contact"><title
    id="title62847">Contact details to assist a user in finding and communicating with the publisher</title>contact</a> : <a
    id="n1733"
    xlink:href="metadatatypes.html#ContactDetail">ContactDetail</a> [0..*]</text>
@@ -247,7 +247,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1738"
-   xlink:href="citation-definitions.html#Citation.description"><title
+   xlink:href="citation-definitions.html#PublicationRecord.description"><title
    id="title62852">A free text natural language description of the citation from a consumer's perspective</title>description</a> : <a
    id="n1739"
    xlink:href="datatypes.html#markdown">markdown</a> [0..1]</text>
@@ -258,7 +258,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1744"
-   xlink:href="citation-definitions.html#Citation.useContext"><title
+   xlink:href="citation-definitions.html#PublicationRecord.useContext"><title
    id="title62857">The content was developed with a focus and intent of supporting the contexts that are listed. These contexts may be general categories (gender, age, ...) or may be references to specific programs (insurance plans, studies, ...) and may be used to assist with indexing and searching for appropriate citation record instances</title>useContext</a> : <a
    id="n1745"
    xlink:href="metadatatypes.html#UsageContext">UsageContext</a> [0..*]</text>
@@ -269,7 +269,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1750"
-   xlink:href="citation-definitions.html#Citation.jurisdiction"><title
+   xlink:href="citation-definitions.html#PublicationRecord.jurisdiction"><title
    id="title62862">A legal or geographic region in which the citation record is intended to be used</title>jurisdiction</a> : <a
    id="n1751"
    xlink:href="datatypes.html#CodeableConcept">CodeableConcept</a> [0..*] « <a
@@ -283,7 +283,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1760"
-   xlink:href="citation-definitions.html#Citation.purpose"><title
+   xlink:href="citation-definitions.html#PublicationRecord.purpose"><title
    id="title62869">Explanation of why this citation is needed and why it has been designed as it has</title>purpose</a> : <a
    id="n1761"
    xlink:href="datatypes.html#markdown">markdown</a> [0..1]</text>
@@ -294,7 +294,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1766"
-   xlink:href="citation-definitions.html#Citation.copyright"><title
+   xlink:href="citation-definitions.html#PublicationRecord.copyright"><title
    id="title62874">Use and/or publishing restrictions for the citation record, not for the cited artifact</title>copyright</a> : <a
    id="n1767"
    xlink:href="datatypes.html#markdown">markdown</a> [0..1]</text>
@@ -305,7 +305,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1772"
-   xlink:href="citation-definitions.html#Citation.copyrightLabel"><title
+   xlink:href="citation-definitions.html#PublicationRecord.copyrightLabel"><title
    id="title62879">A short string (&lt;50 characters), suitable for inclusion in a page footer that identifies the copyright holder, effective period, and optionally whether rights are resctricted. (e.g. 'All rights reserved', 'Some rights reserved')</title>copyrightLabel</a> : <a
    id="n1773"
    xlink:href="datatypes.html#string">string</a> [0..1]</text>
@@ -316,7 +316,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1778"
-   xlink:href="citation-definitions.html#Citation.approvalDate"><title
+   xlink:href="citation-definitions.html#PublicationRecord.approvalDate"><title
    id="title62884">The date on which the resource content was approved by the publisher. Approval happens once when the content is officially approved for usage</title>approvalDate</a> : <a
    id="n1779"
    xlink:href="datatypes.html#date">date</a> [0..1]</text>
@@ -327,7 +327,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1784"
-   xlink:href="citation-definitions.html#Citation.lastReviewDate"><title
+   xlink:href="citation-definitions.html#PublicationRecord.lastReviewDate"><title
    id="title62889">The date on which the resource content was last reviewed. Review happens periodically after approval but does not change the original approval date</title>lastReviewDate</a> : <a
    id="n1785"
    xlink:href="datatypes.html#date">date</a> [0..1]</text>
@@ -338,7 +338,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1790"
-   xlink:href="citation-definitions.html#Citation.effectivePeriod"><title
+   xlink:href="citation-definitions.html#PublicationRecord.effectivePeriod"><title
    id="title62894">The period during which the citation record content was or is planned to be in active use</title>effectivePeriod</a> : <a
    id="n1791"
    xlink:href="datatypes.html#Period">Period</a> [0..1]</text>
@@ -349,7 +349,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1796"
-   xlink:href="citation-definitions.html#Citation.author"><title
+   xlink:href="citation-definitions.html#PublicationRecord.author"><title
    id="title62899">Who authored or created the citation record</title>author</a> : <a
    id="n1797"
    xlink:href="metadatatypes.html#ContactDetail">ContactDetail</a> [0..*]</text>
@@ -360,7 +360,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1802"
-   xlink:href="citation-definitions.html#Citation.editor"><title
+   xlink:href="citation-definitions.html#PublicationRecord.editor"><title
    id="title62904">Who edited or revised the citation record</title>editor</a> : <a
    id="n1803"
    xlink:href="metadatatypes.html#ContactDetail">ContactDetail</a> [0..*]</text>
@@ -371,7 +371,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1808"
-   xlink:href="citation-definitions.html#Citation.reviewer"><title
+   xlink:href="citation-definitions.html#PublicationRecord.reviewer"><title
    id="title62909">Who reviewed the citation record</title>reviewer</a> : <a
    id="n1809"
    xlink:href="metadatatypes.html#ContactDetail">ContactDetail</a> [0..*]</text>
@@ -382,7 +382,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1814"
-   xlink:href="citation-definitions.html#Citation.endorser"><title
+   xlink:href="citation-definitions.html#PublicationRecord.endorser"><title
    id="title62914">Who endorsed the citation record</title>endorser</a> : <a
    id="n1815"
    xlink:href="metadatatypes.html#ContactDetail">ContactDetail</a> [0..*]</text>
@@ -393,7 +393,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1820"
-   xlink:href="citation-definitions.html#Citation.note"><title
+   xlink:href="citation-definitions.html#PublicationRecord.note"><title
    id="title62919">Used for general notes and annotations not coded elsewhere</title>note</a> : <a
    id="n1821"
    xlink:href="datatypes.html#Annotation">Annotation</a> [0..*]</text>
@@ -404,7 +404,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1826"
-   xlink:href="citation-definitions.html#Citation.currentState"><title
+   xlink:href="citation-definitions.html#PublicationRecord.currentState"><title
    id="title62924">The status of the citation record</title>currentState</a> : <a
    id="n1827"
    xlink:href="datatypes.html#CodeableConcept">CodeableConcept</a> [0..*] « <a
@@ -418,7 +418,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1836"
-   xlink:href="citation-definitions.html#Citation.relatedArtifact"><title
+   xlink:href="citation-definitions.html#PublicationRecord.relatedArtifact"><title
    id="title62931">Artifact related to the citation record</title>relatedArtifact</a> : <a
    id="n1837"
    xlink:href="metadatatypes.html#RelatedArtifact">RelatedArtifact</a> [0..*]</text>
@@ -427,7 +427,7 @@
      id="n1841"
      transform="translate(-45.985152,-10.510892)">
     <rect
-       id="Citation.summary"
+       id="PublicationRecord.summary"
        x="72.084778"
        y="16.620014"
        rx="4"
@@ -456,7 +456,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n1845"
-   xlink:href="citation-definitions.html#Citation.summary.style"><title
+   xlink:href="citation-definitions.html#PublicationRecord.summary.style"><title
    id="title62940">Format for display of the citation summary</title>style</a> : <a
    id="n1846"
    xlink:href="datatypes.html#CodeableConcept">CodeableConcept</a> [0..1] « <a
@@ -470,7 +470,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n1855"
-   xlink:href="citation-definitions.html#Citation.summary.text"><title
+   xlink:href="citation-definitions.html#PublicationRecord.summary.text"><title
    id="title62947">The human-readable display of the citation summary</title>text</a> : <a
    id="n1856"
    xlink:href="datatypes.html#markdown">markdown</a> [1..1]</text>
@@ -478,7 +478,7 @@
   <g
      id="n1860">
     <rect
-       id="Citation.classification"
+       id="PublicationRecord.classification"
        x="703.710057"
        y="27.700025"
        rx="4"
@@ -507,7 +507,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1864"
-   xlink:href="citation-definitions.html#Citation.classification.type"><title
+   xlink:href="citation-definitions.html#PublicationRecord.classification.type"><title
    id="title62956">The kind of classifier (e.g. publication type, keyword)</title>type</a> : <a
    id="n1865"
    xlink:href="datatypes.html#CodeableConcept">CodeableConcept</a> [0..1] « <a
@@ -521,7 +521,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n1874"
-   xlink:href="citation-definitions.html#Citation.classification.classifier"><title
+   xlink:href="citation-definitions.html#PublicationRecord.classification.classifier"><title
    id="title62963">The specific classification value</title>classifier</a> : <a
    id="n1875"
    xlink:href="datatypes.html#CodeableConcept">CodeableConcept</a> [0..*] « <a
@@ -533,7 +533,7 @@
      id="n1883"
      transform="translate(-43.357429,-17.080199)">
     <rect
-       id="Citation.statusDate"
+       id="PublicationRecord.statusDate"
        x="60.904819"
        y="120.46098"
        rx="4"
@@ -562,7 +562,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n1887"
-   xlink:href="citation-definitions.html#Citation.statusDate.activity"><title
+   xlink:href="citation-definitions.html#PublicationRecord.statusDate.activity"><title
    id="title62974">The state or status of the citation record (that will be paired with the period)</title>activity</a> : <a
    id="n1888"
    xlink:href="datatypes.html#CodeableConcept">CodeableConcept</a> [1..1] « <a
@@ -576,7 +576,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n1897"
-   xlink:href="citation-definitions.html#Citation.statusDate.actual"><title
+   xlink:href="citation-definitions.html#PublicationRecord.statusDate.actual"><title
    id="title62981">Whether the status date is actual (has occurred) or expected (estimated or anticipated)</title>actual</a> : <a
    id="n1898"
    xlink:href="datatypes.html#boolean">boolean</a> [0..1]</text>
@@ -587,7 +587,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n1903"
-   xlink:href="citation-definitions.html#Citation.statusDate.period"><title
+   xlink:href="citation-definitions.html#PublicationRecord.statusDate.period"><title
    id="title62986">When the status started and/or ended</title>period</a> : <a
    id="n1904"
    xlink:href="datatypes.html#Period">Period</a> [1..1]</text>
@@ -596,7 +596,7 @@
      id="n1908"
      transform="translate(-2.6277229,64.379213)">
     <rect
-       id="Citation.citedArtifact"
+       id="PublicationRecord.citedArtifact"
        x="396.10022"
        y="518.42578"
        rx="4"
@@ -625,7 +625,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n1912"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.identifier"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.identifier"><title
    id="title62995">A formal identifier that is used to identify the cited artifact when it is represented in other formats, or referenced in a specification, model, design or an instance</title>identifier</a> : <a
    id="n1913"
    xlink:href="datatypes.html#Identifier">Identifier</a> [0..*]</text>
@@ -636,7 +636,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n1918"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.relatedIdentifier"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.relatedIdentifier"><title
    id="title63000">A formal identifier that is used to identify things closely related to the cited artifact</title>relatedIdentifier</a> : <a
    id="n1919"
    xlink:href="datatypes.html#Identifier">Identifier</a> [0..*]</text>
@@ -647,7 +647,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n1924"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.dateAccessed"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.dateAccessed"><title
    id="title63005">When the cited artifact was accessed</title>dateAccessed</a> : <a
    id="n1925"
    xlink:href="datatypes.html#dateTime">dateTime</a> [0..1]</text>
@@ -658,7 +658,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n1930"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.currentState"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.currentState"><title
    id="title63010">The status of the cited artifact</title>currentState</a> : <a
    id="n1931"
    xlink:href="datatypes.html#CodeableConcept">CodeableConcept</a> [0..*] « <a
@@ -672,7 +672,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n1940"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.note"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.note"><title
    id="title63017">Any additional information or content for the article or artifact</title>note</a> : <a
    id="n1941"
    xlink:href="datatypes.html#Annotation">Annotation</a> [0..*]</text>
@@ -681,7 +681,7 @@
      id="n1945"
      transform="translate(-42.043568,45.985152)">
     <rect
-       id="Citation.citedArtifact.version"
+       id="PublicationRecord.citedArtifact.version"
        x="85.849113"
        y="671.03369"
        rx="4"
@@ -710,7 +710,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n1949"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.version.value"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.version.value"><title
    id="title63026">The version number or other version identifier</title>value</a> : <a
    id="n1950"
    xlink:href="datatypes.html#string">string</a> [1..1]</text>
@@ -721,18 +721,18 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n1955"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.version.baseCitation"><title
-   id="title63031">Citation for the main version of the cited artifact</title>baseCitation</a> : <a
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.version.baseCitation"><title
+   id="title63031">PublicationRecord for the main version of the cited artifact</title>baseCitation</a> : <a
    id="n1956"
    xlink:href="references.html#Reference">Reference</a> [0..1] « <a
    id="n1957"
-   xlink:href="citation.html#Citation">Citation</a> »</text>
+   xlink:href="citation.html#PublicationRecord">PublicationRecord</a> »</text>
   </g>
   <g
      id="n1962"
      transform="translate(-23.649506,-13.138615)">
     <rect
-       id="Citation.citedArtifact.statusDate"
+       id="PublicationRecord.citedArtifact.statusDate"
        x="544.38019"
        y="783.02637"
        rx="4"
@@ -761,7 +761,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n1966"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.statusDate.activity"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.statusDate.activity"><title
    id="title63041">A definition of the status associated with a date or period</title>activity</a> : <a
    id="n1967"
    xlink:href="datatypes.html#CodeableConcept">CodeableConcept</a> [1..1] « <a
@@ -775,7 +775,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n1976"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.statusDate.actual"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.statusDate.actual"><title
    id="title63048">Either occurred or expected</title>actual</a> : <a
    id="n1977"
    xlink:href="datatypes.html#boolean">boolean</a> [0..1]</text>
@@ -786,7 +786,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n1982"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.statusDate.period"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.statusDate.period"><title
    id="title63053">When the status started and/or ended</title>period</a> : <a
    id="n1983"
    xlink:href="datatypes.html#Period">Period</a> [1..1]</text>
@@ -795,7 +795,7 @@
      id="n1987"
      transform="translate(-32.846537,40.729706)">
     <rect
-       id="Citation.citedArtifact.title"
+       id="PublicationRecord.citedArtifact.title"
        x="61.028271"
        y="761.83624"
        rx="4"
@@ -824,7 +824,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n1991"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.title.type"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.title.type"><title
    id="title63062">Used to express the reason for or classification of the title</title>type</a> : <a
    id="n1992"
    xlink:href="datatypes.html#CodeableConcept">CodeableConcept</a> [0..*] « <a
@@ -838,7 +838,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2001"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.title.language"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.title.language"><title
    id="title63069">Used to express the specific language of the title</title>language</a> : <a
    id="n2002"
    xlink:href="datatypes.html#CodeableConcept">CodeableConcept</a> [0..1] « <a
@@ -852,7 +852,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2009"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.title.text"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.title.text"><title
    id="title63077">The title of the article or artifact</title>text</a> : <a
    id="n2010"
    xlink:href="datatypes.html#markdown">markdown</a> [1..1]</text>
@@ -861,7 +861,7 @@
      id="n2014"
      transform="translate(-34.160399,35.47426)">
     <rect
-       id="Citation.citedArtifact.abstract"
+       id="PublicationRecord.citedArtifact.abstract"
        x="52.991066"
        y="872.44696"
        rx="4"
@@ -890,7 +890,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2018"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.abstract.type"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.abstract.type"><title
    id="title63086">Used to express the reason for or classification of the abstract</title>type</a> : <a
    id="n2019"
    xlink:href="datatypes.html#CodeableConcept">CodeableConcept</a> [0..1] « <a
@@ -904,7 +904,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2028"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.abstract.language"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.abstract.language"><title
    id="title63093">Used to express the specific language of the abstract</title>language</a> : <a
    id="n2029"
    xlink:href="datatypes.html#CodeableConcept">CodeableConcept</a> [0..1] « <a
@@ -918,7 +918,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2036"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.abstract.text"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.abstract.text"><title
    id="title63101">Abstract content</title>text</a> : <a
    id="n2037"
    xlink:href="datatypes.html#markdown">markdown</a> [1..1]</text>
@@ -929,7 +929,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2042"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.abstract.copyright"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.abstract.copyright"><title
    id="title63106">Copyright notice for the abstract</title>copyright</a> : <a
    id="n2043"
    xlink:href="datatypes.html#markdown">markdown</a> [0..1]</text>
@@ -938,7 +938,7 @@
      id="n2047"
      transform="translate(-21.021784,-5.2554459)">
     <rect
-       id="Citation.citedArtifact.part"
+       id="PublicationRecord.citedArtifact.part"
        x="361.66891"
        y="884.03204"
        rx="4"
@@ -967,7 +967,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2051"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.part.type"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.part.type"><title
    id="title63115">The kind of component</title>type</a> : <a
    id="n2052"
    xlink:href="datatypes.html#CodeableConcept">CodeableConcept</a> [0..1] « <a
@@ -981,7 +981,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2061"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.part.value"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.part.value"><title
    id="title63122">The specification of the component</title>value</a> : <a
    id="n2062"
    xlink:href="datatypes.html#string">string</a> [0..1]</text>
@@ -992,17 +992,17 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2067"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.part.baseCitation"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.part.baseCitation"><title
    id="title63127">The citation for the full article or artifact</title>baseCitation</a> : <a
    id="n2068"
    xlink:href="references.html#Reference">Reference</a> [0..1] « <a
    id="n2069"
-   xlink:href="citation.html#Citation">Citation</a> »</text>
+   xlink:href="citation.html#PublicationRecord">PublicationRecord</a> »</text>
   </g>
   <g
      id="n2074">
     <rect
-       id="Citation.citedArtifact.relatesTo"
+       id="PublicationRecord.citedArtifact.relatesTo"
        x="714.90632"
        y="141.3283287"
        rx="4"
@@ -1031,7 +1031,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2078"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.relatesTo.type"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.relatesTo.type"><title
    id="title63137">The type of relationship to the related artifact</title>type</a> : <a
    id="n2079"
    xlink:href="datatypes.html#code">code</a> [1..1] « <a
@@ -1045,7 +1045,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2088"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.relatesTo.classifier"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.relatesTo.classifier"><title
    id="title63144">Provides additional classifiers of the related artifact</title>classifier</a> : <a
    id="n2089"
    xlink:href="datatypes.html#CodeableConcept">CodeableConcept</a> [0..*] « <a
@@ -1059,7 +1059,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2098"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.relatesTo.label"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.relatesTo.label"><title
    id="title63151">A short label that can be used to reference the related artifact from elsewhere in the containing artifact, such as a footnote index</title>label</a> : <a
    id="n2099"
    xlink:href="datatypes.html#string">string</a> [0..1]</text>
@@ -1070,7 +1070,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2104"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.relatesTo.display"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.relatesTo.display"><title
    id="title63156">A brief description of the document or knowledge resource being referenced, suitable for display to a consumer</title>display</a> : <a
    id="n2105"
    xlink:href="datatypes.html#string">string</a> [0..1]</text>
@@ -1081,7 +1081,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2110"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.relatesTo.citation"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.relatesTo.citation"><title
    id="title63161">A bibliographic citation for the related artifact. This text SHOULD be formatted according to an accepted citation format</title>citation</a> : <a
    id="n2111"
    xlink:href="datatypes.html#markdown">markdown</a> [0..1]</text>
@@ -1092,7 +1092,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2116"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.relatesTo.document"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.relatesTo.document"><title
    id="title63166">The document being referenced, represented as an attachment. Do not use this element if using the resource element to provide the canonical to the related artifact</title>document</a> : <a
    id="n2117"
    xlink:href="datatypes.html#Attachment">Attachment</a> [0..1]</text>
@@ -1103,7 +1103,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2122"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.relatesTo.resource"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.relatesTo.resource"><title
    id="title63171">The related artifact, such as a library, value set, profile, or other knowledge resource</title>resource</a> : <a
    id="n2123"
    xlink:href="datatypes.html#canonical">canonical</a> [0..1] «  »</text>
@@ -1114,7 +1114,7 @@
        fill="black"
        class="diagram-class-detail"><a
    id="n2128"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.relatesTo.resourceReference"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.relatesTo.resourceReference"><title
    id="title63176">The related artifact, if the artifact is not a canonical resource, or a resource reference to a canonical resource</title>resourceReference</a> : <a
    id="n2129"
    xlink:href="references.html#Reference">Reference</a> [0..1] «  »</text>
@@ -1123,7 +1123,7 @@
      id="n2133"
      transform="translate(-47.299013,-69.634659)">
     <rect
-       id="Citation.citedArtifact.publicationForm"
+       id="PublicationRecord.citedArtifact.publicationForm"
        x="73.832748"
        y="409.13043"
        rx="4"
@@ -1152,7 +1152,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2137"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.publicationForm.citedMedium"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.publicationForm.citedMedium"><title
    id="title63185">Describes the form of the medium cited. Common codes are &quot;Internet&quot; or &quot;Print&quot;. The CitedMedium value set has 6 codes. The codes internet, print, and offline-digital-storage are the common codes for a typical publication form, though internet and print are more common for study citations. Three additional codes (each appending one of the primary codes with &quot;-without-issue&quot; are used for situations when a study is published both within an issue (of a periodical release as commonly done for journals) AND is published separately from the issue (as commonly done with early online publication), to represent specific identification of the publication form not associated with the issue</title>citedMedium</a> : <a
    id="n2138"
    xlink:href="datatypes.html#CodeableConcept">CodeableConcept</a> [0..1] « <a
@@ -1166,7 +1166,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2147"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.publicationForm.volume"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.publicationForm.volume"><title
    id="title63192">Volume number of journal or other collection in which the article is published</title>volume</a> : <a
    id="n2148"
    xlink:href="datatypes.html#string">string</a> [0..1]</text>
@@ -1177,7 +1177,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2153"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.publicationForm.issue"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.publicationForm.issue"><title
    id="title63197">Issue, part or supplement of journal or other collection in which the article is published</title>issue</a> : <a
    id="n2154"
    xlink:href="datatypes.html#string">string</a> [0..1]</text>
@@ -1188,7 +1188,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2159"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.publicationForm.articleDate"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.publicationForm.articleDate"><title
    id="title63202">The date the article was added to the database, or the date the article was released</title>articleDate</a> : <a
    id="n2160"
    xlink:href="datatypes.html#dateTime">dateTime</a> [0..1]</text>
@@ -1199,7 +1199,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2165"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.publicationForm.publicationDateText"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.publicationForm.publicationDateText"><title
    id="title63207">Text representation of the date on which the issue of the cited artifact was published</title>publicationDateText</a> : <a
    id="n2166"
    xlink:href="datatypes.html#string">string</a> [0..1]</text>
@@ -1210,7 +1210,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2171"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.publicationForm.publicationDateSeason"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.publicationForm.publicationDateSeason"><title
    id="title63212">Spring, Summer, Fall/Autumn, Winter</title>publicationDateSeason</a> : <a
    id="n2172"
    xlink:href="datatypes.html#string">string</a> [0..1]</text>
@@ -1221,7 +1221,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2177"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.publicationForm.lastRevisionDate"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.publicationForm.lastRevisionDate"><title
    id="title63217">The date the article was last revised or updated in the database</title>lastRevisionDate</a> : <a
    id="n2178"
    xlink:href="datatypes.html#dateTime">dateTime</a> [0..1]</text>
@@ -1232,7 +1232,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2183"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.publicationForm.language"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.publicationForm.language"><title
    id="title63222">The language or languages in which this form of the article is published</title>language</a> : <a
    id="n2184"
    xlink:href="datatypes.html#CodeableConcept">CodeableConcept</a> [0..*] « <a
@@ -1246,7 +1246,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2191"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.publicationForm.accessionNumber"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.publicationForm.accessionNumber"><title
    id="title63230">Entry number or identifier for inclusion in a database</title>accessionNumber</a> : <a
    id="n2192"
    xlink:href="datatypes.html#string">string</a> [0..1]</text>
@@ -1257,7 +1257,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2197"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.publicationForm.pageString"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.publicationForm.pageString"><title
    id="title63235">Used for full display of pagination</title>pageString</a> : <a
    id="n2198"
    xlink:href="datatypes.html#string">string</a> [0..1]</text>
@@ -1268,7 +1268,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2203"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.publicationForm.firstPage"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.publicationForm.firstPage"><title
    id="title63240">Used for isolated representation of first page</title>firstPage</a> : <a
    id="n2204"
    xlink:href="datatypes.html#string">string</a> [0..1]</text>
@@ -1279,7 +1279,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2209"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.publicationForm.lastPage"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.publicationForm.lastPage"><title
    id="title63245">Used for isolated representation of last page</title>lastPage</a> : <a
    id="n2210"
    xlink:href="datatypes.html#string">string</a> [0..1]</text>
@@ -1290,7 +1290,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2215"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.publicationForm.pageCount"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.publicationForm.pageCount"><title
    id="title63250">Actual or approximate number of pages or screens. Distinct from reporting the page numbers</title>pageCount</a> : <a
    id="n2216"
    xlink:href="datatypes.html#string">string</a> [0..1]</text>
@@ -1301,7 +1301,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2221"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.publicationForm.copyright"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.publicationForm.copyright"><title
    id="title63255">Copyright notice for the full article or artifact</title>copyright</a> : <a
    id="n2222"
    xlink:href="datatypes.html#markdown">markdown</a> [0..1]</text>
@@ -1310,7 +1310,7 @@
      id="n2226"
      transform="translate(-48.612875,-56.496044)">
     <rect
-       id="Citation.citedArtifact.publicationForm.publishedIn"
+       id="PublicationRecord.citedArtifact.publicationForm.publishedIn"
        x="70.343895"
        y="258.76236"
        rx="4"
@@ -1339,7 +1339,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2230"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.publicationForm.publishedIn.type"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.publicationForm.publishedIn.type"><title
    id="title63264">Kind of container (e.g. Periodical, database, or book)</title>type</a> : <a
    id="n2231"
    xlink:href="datatypes.html#CodeableConcept">CodeableConcept</a> [0..1] « <a
@@ -1353,7 +1353,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2240"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.publicationForm.publishedIn.identifier"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.publicationForm.publishedIn.identifier"><title
    id="title63271">Journal identifiers include ISSN, ISO Abbreviation and NLMuniqueID; Book identifiers include ISBN</title>identifier</a> : <a
    id="n2241"
    xlink:href="datatypes.html#Identifier">Identifier</a> [0..*]</text>
@@ -1364,7 +1364,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2246"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.publicationForm.publishedIn.title"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.publicationForm.publishedIn.title"><title
    id="title63276">Name of the database or title of the book or journal</title>title</a> : <a
    id="n2247"
    xlink:href="datatypes.html#string">string</a> [0..1]</text>
@@ -1375,7 +1375,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2252"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.publicationForm.publishedIn.publisher"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.publicationForm.publishedIn.publisher"><title
    id="title63281">Name of or resource describing the publisher</title>publisher</a> : <a
    id="n2253"
    xlink:href="references.html#Reference">Reference</a> [0..1] « <a
@@ -1388,7 +1388,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2260"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.publicationForm.publishedIn.publisherLocation"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.publicationForm.publishedIn.publisherLocation"><title
    id="title63287">Geographic location of the publisher</title>publisherLocation</a> : <a
    id="n2261"
    xlink:href="datatypes.html#string">string</a> [0..1]</text>
@@ -1397,7 +1397,7 @@
      id="n2265"
      transform="translate(-392.84458,-89.342581)">
     <rect
-       id="Citation.citedArtifact.webLocation"
+       id="PublicationRecord.citedArtifact.webLocation"
        x="424.28528"
        y="688.45447"
        rx="4"
@@ -1426,7 +1426,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2269"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.webLocation.classifier"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.webLocation.classifier"><title
    id="title63296">A characterization of the object expected at the web location</title>classifier</a> : <a
    id="n2270"
    xlink:href="datatypes.html#CodeableConcept">CodeableConcept</a> [0..*] « <a
@@ -1440,7 +1440,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2279"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.webLocation.url"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.webLocation.url"><title
    id="title63303">The specific URL</title>url</a> : <a
    id="n2280"
    xlink:href="datatypes.html#uri">uri</a> [0..1]</text>
@@ -1449,7 +1449,7 @@
      id="n2284"
      transform="translate(-1.3138615,3.9415845)">
     <rect
-       id="Citation.citedArtifact.classification"
+       id="PublicationRecord.citedArtifact.classification"
        x="766.76959"
        y="323.51709"
        rx="4"
@@ -1478,7 +1478,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2288"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.classification.type"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.classification.type"><title
    id="title63312">The kind of classifier (e.g. publication type, keyword)</title>type</a> : <a
    id="n2289"
    xlink:href="datatypes.html#CodeableConcept">CodeableConcept</a> [0..1] « <a
@@ -1492,7 +1492,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2298"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.classification.classifier"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.classification.classifier"><title
    id="title63319">The specific classification value</title>classifier</a> : <a
    id="n2299"
    xlink:href="datatypes.html#CodeableConcept">CodeableConcept</a> [0..*] « <a
@@ -1506,7 +1506,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2308"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.classification.artifactAssessment"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.classification.artifactAssessment"><title
    id="title63326">Complex or externally created classification</title>artifactAssessment</a> : <a
    id="n2309"
    xlink:href="references.html#Reference">Reference</a> [0..*] « <a
@@ -1517,7 +1517,7 @@
      id="n2315"
      transform="translate(-47.299014,-31.532675)">
     <rect
-       id="Citation.citedArtifact.contributorship"
+       id="PublicationRecord.citedArtifact.contributorship"
        x="912.92303"
        y="591.20508"
        rx="4"
@@ -1546,7 +1546,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2319"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.contributorship.complete"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.contributorship.complete"><title
    id="title63336">Indicates if the list includes all authors and/or contributors</title>complete</a> : <a
    id="n2320"
    xlink:href="datatypes.html#boolean">boolean</a> [0..1]</text>
@@ -1555,7 +1555,7 @@
      id="n2324"
      transform="translate(-26.27723,-13.138615)">
     <rect
-       id="Citation.citedArtifact.contributorship.entry"
+       id="PublicationRecord.citedArtifact.contributorship.entry"
        x="840.89264"
        y="679.40839"
        rx="4"
@@ -1584,7 +1584,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2328"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.contributorship.entry.contributor"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.contributorship.entry.contributor"><title
    id="title63345">The identity of the individual contributor</title>contributor</a> : <a
    id="n2329"
    xlink:href="references.html#Reference">Reference</a> [1..1] « <a
@@ -1599,7 +1599,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2338"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.contributorship.entry.forenameInitials"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.contributorship.entry.forenameInitials"><title
    id="title63352">Initials for forename</title>forenameInitials</a> : <a
    id="n2339"
    xlink:href="datatypes.html#string">string</a> [0..1]</text>
@@ -1610,7 +1610,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2344"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.contributorship.entry.affiliation"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.contributorship.entry.affiliation"><title
    id="title63357">Organization affiliated with the contributor</title>affiliation</a> : <a
    id="n2345"
    xlink:href="references.html#Reference">Reference</a> [0..*] « <a
@@ -1625,7 +1625,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2354"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.contributorship.entry.contributionType"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.contributorship.entry.contributionType"><title
    id="title63364">This element identifies the specific nature of an individual’s contribution with respect to the cited work</title>contributionType</a> : <a
    id="n2355"
    xlink:href="datatypes.html#CodeableConcept">CodeableConcept</a> [0..*] « <a
@@ -1639,7 +1639,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2364"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.contributorship.entry.role"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.contributorship.entry.role"><title
    id="title63371">The role of the contributor (e.g. author, editor, reviewer, funder)</title>role</a> : <a
    id="n2365"
    xlink:href="datatypes.html#CodeableConcept">CodeableConcept</a> [0..1] « <a
@@ -1653,7 +1653,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2374"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.contributorship.entry.correspondingContact"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.contributorship.entry.correspondingContact"><title
    id="title63378">Whether the contributor is the corresponding contributor for the role</title>correspondingContact</a> : <a
    id="n2375"
    xlink:href="datatypes.html#boolean">boolean</a> [0..1]</text>
@@ -1664,7 +1664,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2380"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.contributorship.entry.rankingOrder"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.contributorship.entry.rankingOrder"><title
    id="title63383">Provides a numerical ranking to represent the degree of contributorship relative to other contributors, such as 1 for first author and 2 for second author</title>rankingOrder</a> : <a
    id="n2381"
    xlink:href="datatypes.html#positiveInt">positiveInt</a> [0..1]</text>
@@ -1673,7 +1673,7 @@
      id="n2385"
      transform="translate(-32.846537,-2.6277233)">
     <rect
-       id="Citation.citedArtifact.contributorship.entry.contributionInstance"
+       id="PublicationRecord.citedArtifact.contributorship.entry.contributionInstance"
        x="846.67145"
        y="869.69904"
        rx="4"
@@ -1702,7 +1702,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2389"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.contributorship.entry.contributionInstance.type"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.contributorship.entry.contributionInstance.type"><title
    id="title63392">The specific contribution</title>type</a> : <a
    id="n2390"
    xlink:href="datatypes.html#CodeableConcept">CodeableConcept</a> [1..1] « <a
@@ -1716,7 +1716,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2399"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.contributorship.entry.contributionInstance.time"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.contributorship.entry.contributionInstance.time"><title
    id="title63399">The time that the contribution was made</title>time</a> : <a
    id="n2400"
    xlink:href="datatypes.html#dateTime">dateTime</a> [0..1]</text>
@@ -1725,7 +1725,7 @@
      id="n2404"
      transform="translate(-3.9415848,-35.47426)">
     <rect
-       id="Citation.citedArtifact.contributorship.summary"
+       id="PublicationRecord.citedArtifact.contributorship.summary"
        x="839.2511"
        y="458.78891"
        rx="4"
@@ -1754,7 +1754,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2408"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.contributorship.summary.type"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.contributorship.summary.type"><title
    id="title63408">Used most commonly to express an author list or a contributorship statement</title>type</a> : <a
    id="n2409"
    xlink:href="datatypes.html#CodeableConcept">CodeableConcept</a> [0..1] « <a
@@ -1768,7 +1768,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2418"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.contributorship.summary.style"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.contributorship.summary.style"><title
    id="title63415">The format for the display string, such as author last name with first letter capitalized followed by forename initials</title>style</a> : <a
    id="n2419"
    xlink:href="datatypes.html#CodeableConcept">CodeableConcept</a> [0..1] « <a
@@ -1782,7 +1782,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2428"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.contributorship.summary.source"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.contributorship.summary.source"><title
    id="title63422">Used to code the producer or rule for creating the display string</title>source</a> : <a
    id="n2429"
    xlink:href="datatypes.html#CodeableConcept">CodeableConcept</a> [0..1] « <a
@@ -1796,7 +1796,7 @@
        fill="#000000"
        class="diagram-class-detail"><a
    id="n2438"
-   xlink:href="citation-definitions.html#Citation.citedArtifact.contributorship.summary.value"><title
+   xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.contributorship.summary.value"><title
    id="title63429">The display string for the author list, contributor list, or contributorship statement</title>value</a> : <a
    id="n2439"
    xlink:href="datatypes.html#markdown">markdown</a> [1..1]</text>
@@ -1827,7 +1827,7 @@
      fill="black"
      class="diagram-class-linkage"><a
        id="n2447"
-       xlink:href="citation-definitions.html#Citation.summary"><title
+       xlink:href="citation-definitions.html#PublicationRecord.summary"><title
    id="title63438">A human-readable display of key concepts to represent the citation</title>summary</a></text>
   <text
      id="n2448"
@@ -1861,7 +1861,7 @@
      fill="black"
      class="diagram-class-linkage"><a
        id="n2453"
-       xlink:href="citation-definitions.html#Citation.classification"><title
+       xlink:href="citation-definitions.html#PublicationRecord.classification"><title
    id="title63446">The assignment to an organizing scheme</title>classification</a></text>
   <text
      id="n2454"
@@ -1895,7 +1895,7 @@
      fill="black"
      class="diagram-class-linkage"><a
        id="n2459"
-       xlink:href="citation-definitions.html#Citation.statusDate"><title
+       xlink:href="citation-definitions.html#PublicationRecord.statusDate"><title
    id="title63454">The state or status of the citation record paired with an effective date or period for that state</title>statusDate</a></text>
   <text
      id="n2460"
@@ -1929,7 +1929,7 @@
      fill="black"
      class="diagram-class-linkage"><a
        id="n2465"
-       xlink:href="citation-definitions.html#Citation.citedArtifact.version"><title
+       xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.version"><title
    id="title63462">The defined version of the cited artifact</title>version</a></text>
   <text
      id="n2466"
@@ -1963,7 +1963,7 @@
      fill="black"
      class="diagram-class-linkage"><a
        id="n2471"
-       xlink:href="citation-definitions.html#Citation.citedArtifact.statusDate"><title
+       xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.statusDate"><title
    id="title63470">An effective date or period, historical or future, actual or expected, for a status of the cited artifact</title>statusDate</a></text>
   <text
      id="n2472"
@@ -1997,7 +1997,7 @@
      fill="black"
      class="diagram-class-linkage"><a
        id="n2477"
-       xlink:href="citation-definitions.html#Citation.citedArtifact.title"><title
+       xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.title"><title
    id="title63478">The title details of the article or artifact</title>title</a></text>
   <text
      id="n2478"
@@ -2031,7 +2031,7 @@
      fill="black"
      class="diagram-class-linkage"><a
        id="n2483"
-       xlink:href="citation-definitions.html#Citation.citedArtifact.abstract"><title
+       xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.abstract"><title
    id="title63486">The abstract may be used to convey article-contained abstracts, externally-created abstracts, or other descriptive summaries</title>abstract</a></text>
   <text
      id="n2484"
@@ -2065,7 +2065,7 @@
      fill="black"
      class="diagram-class-linkage"><a
        id="n2489"
-       xlink:href="citation-definitions.html#Citation.citedArtifact.part"><title
+       xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.part"><title
    id="title63494">The component of the article or artifact</title>part</a></text>
   <text
      id="n2490"
@@ -2099,7 +2099,7 @@
      fill="black"
      class="diagram-class-linkage"><a
        id="n2495"
-       xlink:href="citation-definitions.html#Citation.citedArtifact.relatesTo"><title
+       xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.relatesTo"><title
    id="title63502">The artifact related to the cited artifact</title>relatesTo</a></text>
   <text
      id="n2496"
@@ -2133,7 +2133,7 @@
      fill="black"
      class="diagram-class-linkage"><a
        id="n2501"
-       xlink:href="citation-definitions.html#Citation.citedArtifact.publicationForm.publishedIn"><title
+       xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.publicationForm.publishedIn"><title
    id="title63510">The collection the cited article or artifact is published in</title>publishedIn</a></text>
   <text
      id="n2502"
@@ -2167,7 +2167,7 @@
      fill="black"
      class="diagram-class-linkage"><a
        id="n2507"
-       xlink:href="citation-definitions.html#Citation.citedArtifact.publicationForm"><title
+       xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.publicationForm"><title
    id="title63518">If multiple, used to represent alternative forms of the article that are not separate citations</title>publicationForm</a></text>
   <text
      id="n2508"
@@ -2201,7 +2201,7 @@
      fill="black"
      class="diagram-class-linkage"><a
        id="n2513"
-       xlink:href="citation-definitions.html#Citation.citedArtifact.webLocation"><title
+       xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.webLocation"><title
    id="title63526">Used for any URL for the article or artifact cited</title>webLocation</a></text>
   <text
      id="n2514"
@@ -2235,7 +2235,7 @@
      fill="black"
      class="diagram-class-linkage"><a
        id="n2519"
-       xlink:href="citation-definitions.html#Citation.citedArtifact.classification"><title
+       xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.classification"><title
    id="title63534">The assignment to an organizing scheme</title>classification</a></text>
   <text
      id="n2520"
@@ -2269,7 +2269,7 @@
      fill="black"
      class="diagram-class-linkage"><a
        id="n2525"
-       xlink:href="citation-definitions.html#Citation.citedArtifact.contributorship.entry.contributionInstance"><title
+       xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.contributorship.entry.contributionInstance"><title
    id="title63542">Contributions with accounting for time or number</title>contributionInstance</a></text>
   <text
      id="n2526"
@@ -2303,7 +2303,7 @@
      fill="black"
      class="diagram-class-linkage"><a
        id="n2531"
-       xlink:href="citation-definitions.html#Citation.citedArtifact.contributorship.entry"><title
+       xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.contributorship.entry"><title
    id="title63550">An individual entity named as a contributor, for example in the author list or contributor list</title>entry</a></text>
   <text
      id="n2532"
@@ -2337,7 +2337,7 @@
      fill="black"
      class="diagram-class-linkage"><a
        id="n2537"
-       xlink:href="citation-definitions.html#Citation.citedArtifact.contributorship.summary"><title
+       xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.contributorship.summary"><title
    id="title63558">Used to record a display of the author/contributor list without separate data element for each list member</title>summary</a></text>
   <text
      id="n2538"
@@ -2371,7 +2371,7 @@
      fill="black"
      class="diagram-class-linkage"><a
        id="n2543"
-       xlink:href="citation-definitions.html#Citation.citedArtifact.contributorship"><title
+       xlink:href="citation-definitions.html#PublicationRecord.citedArtifact.contributorship"><title
    id="title63566">This element is used to list authors and other contributors, their contact information, specific contributions, and summary statements</title>contributorship</a></text>
   <text
      id="n2544"
@@ -2405,7 +2405,7 @@
      fill="black"
      class="diagram-class-linkage"><a
        id="n2549"
-       xlink:href="citation-definitions.html#Citation.citedArtifact"><title
+       xlink:href="citation-definitions.html#PublicationRecord.citedArtifact"><title
    id="title63574">The article or artifact being described</title>citedArtifact</a></text>
   <text
      id="n2550"

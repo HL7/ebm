@@ -21,7 +21,7 @@ This EBMonFHIR Implementation Guide contains many hundreds of example Resources 
 
 A fuller representation of the QUARTET USA Trial can be found in the following examples:
 
-Citation at [38584159 Efficacy and safety of a four-drug, quarter-dose treatment for hypertension: the QUARTET USA randomized trial.](Citation-367878.html)
+PublicationRecord at [38584159 Efficacy and safety of a four-drug, quarter-dose treatment for hypertension: the QUARTET USA randomized trial.](PublicationRecord-367878.html)
 
 Compositions for different reports including:
 1. [Comparative Evidence Report for QUARTET Trial](Composition-372776.html)
@@ -109,11 +109,11 @@ Profiles of <b>Group Resource</b> include:
     - <b>EvidenceReportSubject</b> is used to define the subject of an <b>EvidenceReport</b>. A Profile of <b>EvidenceReportSubject</b> is:
       - <b>ComparativeEvidenceReportSubject</b>
 
-### Citation Resource
+### PublicationRecord Resource
 
-The <b>Citation Resource</b> enables reference to any knowledge artifact for purposes of identification and attribution. The <b>Citation Resource</b> supports existing reference structures and developing publication practices such as versioning, expressing complex contributorship roles, and referencing computable resources.
+The <b>PublicationRecord Resource</b> enables reference to any knowledge artifact for purposes of identification and attribution. The <b>PublicationRecord Resource</b> supports existing reference structures and developing publication practices such as versioning, expressing complex contributorship roles, and referencing computable resources.
 
-Profiles of <b>Citation Resource</b> include:
+Profiles of <b>PublicationRecord Resource</b> include:
 - <b>JournalArticleCitation</b>
 - <b>BookCitation</b>
 - <b>BookPartCitation</b>
@@ -148,7 +148,7 @@ Profiles of <b>ArtifactAssessment Resource</b> include:
 The <b>Composition Resource</b> is a structure for grouping information for purposes of persistence and attestability. The <b>Composition Resource</b> provides the basic structure for a FHIR document. The full content of the document is expressed using a <b>Bundle Resource</b> containing the Composition and its entries (which are references to other FHIR Resources).
 
 Profiles of <b>Composition Resource</b> include:
-- <b>EvidenceReport</b> is used for a base structure (canonical resource management) for a report combining any number of <b>Citation</b>, <b>Evidence</b>, <b>EvidenceVariable</b>, <b>EvidenceReport</b>, and related Resources. Profiles of <b>EvidenceReport</b> include:
+- <b>EvidenceReport</b> is used for a base structure (canonical resource management) for a report combining any number of <b>PublicationRecord</b>, <b>Evidence</b>, <b>EvidenceVariable</b>, <b>EvidenceReport</b>, and related Resources. Profiles of <b>EvidenceReport</b> include:
   - <b>ResearchStudyDataDictionary</b> is used for a code key for variable names in a dataset containing the observations collected in a research study.
   - <b>M11ReportContainer</b> is used for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification. It references <b>M11ReportSection01</b> through <b>M11ReportSection14</b>.
   - <b>EvidenceReportPackage</b> is used for a base structure to extend the <b>EvidenceReport Profile</b> with optional sections for Summary, Introduction, Discussion, Methods, References, Competing Interests, Acknowledgements, and Appendices. Profiles of <b>EvidenceReportPackage</b> include:

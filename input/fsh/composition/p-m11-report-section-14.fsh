@@ -28,4 +28,4 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The M11Repo
 * section[references]
   * text 1..1
   * text ^comment = "References should be listed in a common format that includes all relevant information to identify the source and date published.  If not published, this should be clearly indicated."
-  * entry only Reference(Citation or DocumentReference)
+  * entry only Reference(PublicationRecord or DocumentReference)

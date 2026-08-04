@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="Citation-search-params"/>
+  <id value="PublicationRecord-search-params"/>
   <entry>
     <resource>
       <SearchParameter>
-        <id value="Citation-context"/>
+        <id value="PublicationRecord-context"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
         <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
           <valueString value="{{name}}.useContext.valueCodeableConcept"/>
         </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/Citation-context"/>
+        <url value="http://hl7.org/fhir/build/SearchParameter/PublicationRecord-context"/>
         <description value="A use context assigned to the citation"/>
         <code value="context"/>
         <type value="token"/>
-        <expression value="(Citation.useContext.value.ofType(CodeableConcept))"/>
+        <expression value="(PublicationRecord.useContext.value.ofType(CodeableConcept))"/>
         <processingMode value="normal"/>
       </SearchParameter>
     </resource>
@@ -24,18 +24,18 @@
   <entry>
     <resource>
       <SearchParameter>
-        <id value="Citation-context-quantity"/>
+        <id value="PublicationRecord-context-quantity"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
         <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
           <valueString value="{{name}}.useContext.valueQuantity,{{name}}.useContext.valueRange"/>
         </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/Citation-context-quantity"/>
+        <url value="http://hl7.org/fhir/build/SearchParameter/PublicationRecord-context-quantity"/>
         <description value="A quantity- or range-valued use context assigned to the citation"/>
         <code value="context-quantity"/>
         <type value="quantity"/>
-        <expression value="(Citation.useContext.value.ofType(Quantity)) | (Citation.useContext.value.ofType(Range))"/>
+        <expression value="(PublicationRecord.useContext.value.ofType(Quantity)) | (PublicationRecord.useContext.value.ofType(Range))"/>
         <processingMode value="normal"/>
       </SearchParameter>
     </resource>
@@ -43,18 +43,18 @@
   <entry>
     <resource>
       <SearchParameter>
-        <id value="Citation-context-type"/>
+        <id value="PublicationRecord-context-type"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
         <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
           <valueString value="{{name}}.useContext.code"/>
         </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/Citation-context-type"/>
+        <url value="http://hl7.org/fhir/build/SearchParameter/PublicationRecord-context-type"/>
         <description value="A type of use context assigned to the citation"/>
         <code value="context-type"/>
         <type value="token"/>
-        <expression value="Citation.useContext.code"/>
+        <expression value="PublicationRecord.useContext.code"/>
         <processingMode value="normal"/>
       </SearchParameter>
     </resource>
@@ -62,15 +62,15 @@
   <entry>
     <resource>
       <SearchParameter>
-        <id value="Citation-context-type-quantity"/>
+        <id value="PublicationRecord-context-type-quantity"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/Citation-context-type-quantity"/>
+        <url value="http://hl7.org/fhir/build/SearchParameter/PublicationRecord-context-type-quantity"/>
         <description value="A use context type and quantity- or range-based value assigned to the citation"/>
         <code value="context-type-quantity"/>
         <type value="composite"/>
-        <expression value="Citation.useContext"/>
+        <expression value="PublicationRecord.useContext"/>
         <processingMode value="normal"/>
         <component>
           <definition value="context-type"/>
@@ -86,15 +86,15 @@
   <entry>
     <resource>
       <SearchParameter>
-        <id value="Citation-context-type-value"/>
+        <id value="PublicationRecord-context-type-value"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/Citation-context-type-value"/>
+        <url value="http://hl7.org/fhir/build/SearchParameter/PublicationRecord-context-type-value"/>
         <description value="A use context type and value assigned to the citation"/>
         <code value="context-type-value"/>
         <type value="composite"/>
-        <expression value="Citation.useContext"/>
+        <expression value="PublicationRecord.useContext"/>
         <processingMode value="normal"/>
         <component>
           <definition value="context-type"/>
@@ -110,18 +110,18 @@
   <entry>
     <resource>
       <SearchParameter>
-        <id value="Citation-date"/>
+        <id value="PublicationRecord-date"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
         <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
           <valueString value="{{name}}.date"/>
         </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/Citation-date"/>
+        <url value="http://hl7.org/fhir/build/SearchParameter/PublicationRecord-date"/>
         <description value="The citation publication date"/>
         <code value="date"/>
         <type value="date"/>
-        <expression value="Citation.date"/>
+        <expression value="PublicationRecord.date"/>
         <processingMode value="normal"/>
       </SearchParameter>
     </resource>
@@ -129,18 +129,18 @@
   <entry>
     <resource>
       <SearchParameter>
-        <id value="Citation-description"/>
+        <id value="PublicationRecord-description"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
         <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
           <valueString value="{{name}}.description"/>
         </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/Citation-description"/>
+        <url value="http://hl7.org/fhir/build/SearchParameter/PublicationRecord-description"/>
         <description value="The description of the citation"/>
         <code value="description"/>
         <type value="string"/>
-        <expression value="Citation.description"/>
+        <expression value="PublicationRecord.description"/>
         <processingMode value="normal"/>
       </SearchParameter>
     </resource>
@@ -148,18 +148,18 @@
   <entry>
     <resource>
       <SearchParameter>
-        <id value="Citation-effective"/>
+        <id value="PublicationRecord-effective"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
         <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
           <valueString value="{{name}}.effectivePeriod"/>
         </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/Citation-effective"/>
+        <url value="http://hl7.org/fhir/build/SearchParameter/PublicationRecord-effective"/>
         <description value="The time during which the citation is intended to be in use"/>
         <code value="effective"/>
         <type value="date"/>
-        <expression value="Citation.effectivePeriod"/>
+        <expression value="PublicationRecord.effectivePeriod"/>
         <processingMode value="normal"/>
       </SearchParameter>
     </resource>
@@ -167,18 +167,18 @@
   <entry>
     <resource>
       <SearchParameter>
-        <id value="Citation-identifier"/>
+        <id value="PublicationRecord-identifier"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
         <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
           <valueString value="{{name}}.identifier"/>
         </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/Citation-identifier"/>
+        <url value="http://hl7.org/fhir/build/SearchParameter/PublicationRecord-identifier"/>
         <description value="External identifier for the citation"/>
         <code value="identifier"/>
         <type value="token"/>
-        <expression value="Citation.identifier"/>
+        <expression value="PublicationRecord.identifier"/>
         <processingMode value="normal"/>
       </SearchParameter>
     </resource>
@@ -186,18 +186,18 @@
   <entry>
     <resource>
       <SearchParameter>
-        <id value="Citation-jurisdiction"/>
+        <id value="PublicationRecord-jurisdiction"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
         <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
           <valueString value="{{name}}.jurisdiction"/>
         </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/Citation-jurisdiction"/>
+        <url value="http://hl7.org/fhir/build/SearchParameter/PublicationRecord-jurisdiction"/>
         <description value="Jurisdiction of the authority that maintains the the citation"/>
         <code value="jurisdiction"/>
         <type value="token"/>
-        <expression value="Citation.jurisdiction"/>
+        <expression value="PublicationRecord.jurisdiction"/>
         <processingMode value="normal"/>
       </SearchParameter>
     </resource>
@@ -205,18 +205,18 @@
   <entry>
     <resource>
       <SearchParameter>
-        <id value="Citation-name"/>
+        <id value="PublicationRecord-name"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
         <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
           <valueString value="{{name}}.name"/>
         </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/Citation-name"/>
+        <url value="http://hl7.org/fhir/build/SearchParameter/PublicationRecord-name"/>
         <description value="Computationally friendly name of the citation"/>
         <code value="name"/>
         <type value="string"/>
-        <expression value="Citation.name"/>
+        <expression value="PublicationRecord.name"/>
         <processingMode value="normal"/>
       </SearchParameter>
     </resource>
@@ -224,18 +224,18 @@
   <entry>
     <resource>
       <SearchParameter>
-        <id value="Citation-publisher"/>
+        <id value="PublicationRecord-publisher"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
         <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
           <valueString value="{{name}}.publisher"/>
         </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/Citation-publisher"/>
+        <url value="http://hl7.org/fhir/build/SearchParameter/PublicationRecord-publisher"/>
         <description value="Name of the publisher of the citation"/>
         <code value="publisher"/>
         <type value="string"/>
-        <expression value="Citation.publisher"/>
+        <expression value="PublicationRecord.publisher"/>
         <processingMode value="normal"/>
       </SearchParameter>
     </resource>
@@ -243,18 +243,18 @@
   <entry>
     <resource>
       <SearchParameter>
-        <id value="Citation-status"/>
+        <id value="PublicationRecord-status"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
         <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
           <valueString value="{{name}}.status"/>
         </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/Citation-status"/>
+        <url value="http://hl7.org/fhir/build/SearchParameter/PublicationRecord-status"/>
         <description value="The current status of the citation"/>
         <code value="status"/>
         <type value="token"/>
-        <expression value="Citation.status"/>
+        <expression value="PublicationRecord.status"/>
         <processingMode value="normal"/>
       </SearchParameter>
     </resource>
@@ -262,18 +262,18 @@
   <entry>
     <resource>
       <SearchParameter>
-        <id value="Citation-title"/>
+        <id value="PublicationRecord-title"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
         <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
           <valueString value="{{name}}.title"/>
         </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/Citation-title"/>
+        <url value="http://hl7.org/fhir/build/SearchParameter/PublicationRecord-title"/>
         <description value="The human-friendly name of the citation"/>
         <code value="title"/>
         <type value="string"/>
-        <expression value="Citation.title"/>
+        <expression value="PublicationRecord.title"/>
         <processingMode value="normal"/>
       </SearchParameter>
     </resource>
@@ -281,18 +281,18 @@
   <entry>
     <resource>
       <SearchParameter>
-        <id value="Citation-url"/>
+        <id value="PublicationRecord-url"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
         <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
           <valueString value="{{name}}.url"/>
         </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/Citation-url"/>
+        <url value="http://hl7.org/fhir/build/SearchParameter/PublicationRecord-url"/>
         <description value="The uri that identifies the citation"/>
         <code value="url"/>
         <type value="uri"/>
-        <expression value="Citation.url"/>
+        <expression value="PublicationRecord.url"/>
         <processingMode value="normal"/>
       </SearchParameter>
     </resource>
@@ -300,18 +300,18 @@
   <entry>
     <resource>
       <SearchParameter>
-        <id value="Citation-version"/>
+        <id value="PublicationRecord-version"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
         <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
           <valueString value="{{name}}.version"/>
         </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/Citation-version"/>
+        <url value="http://hl7.org/fhir/build/SearchParameter/PublicationRecord-version"/>
         <description value="The business version of the citation"/>
         <code value="version"/>
         <type value="token"/>
-        <expression value="Citation.version"/>
+        <expression value="PublicationRecord.version"/>
         <processingMode value="normal"/>
       </SearchParameter>
     </resource>
@@ -319,18 +319,18 @@
   <entry>
     <resource>
       <SearchParameter>
-        <id value="Citation-classifier"/>
+        <id value="PublicationRecord-classifier"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
         <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
           <valueString value="{{name}}.classification.classifier"/>
         </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/Citation-classifier"/>
+        <url value="http://hl7.org/fhir/build/SearchParameter/PublicationRecord-classifier"/>
         <description value="A classifier assigned to the citation"/>
         <code value="classifier"/>
         <type value="token"/>
-        <expression value="(Citation.classification.classifier)"/>
+        <expression value="(PublicationRecord.classification.classifier)"/>
         <processingMode value="normal"/>
       </SearchParameter>
     </resource>
@@ -338,18 +338,18 @@
   <entry>
     <resource>
       <SearchParameter>
-        <id value="Citation-classification-type"/>
+        <id value="PublicationRecord-classification-type"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
         <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
           <valueString value="{{name}}.classification.type"/>
         </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/Citation-classification-type"/>
+        <url value="http://hl7.org/fhir/build/SearchParameter/PublicationRecord-classification-type"/>
         <description value="A type of classification assigned to the citation"/>
         <code value="classification-type"/>
         <type value="token"/>
-        <expression value="(Citation.classification.type)"/>
+        <expression value="(PublicationRecord.classification.type)"/>
         <processingMode value="normal"/>
       </SearchParameter>
     </resource>
@@ -357,15 +357,15 @@
   <entry>
     <resource>
       <SearchParameter>
-        <id value="Citation-classification"/>
+        <id value="PublicationRecord-classification"/>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="trial-use"/>
         </extension>
-        <url value="http://hl7.org/fhir/build/SearchParameter/Citation-classification"/>
+        <url value="http://hl7.org/fhir/build/SearchParameter/PublicationRecord-classification"/>
         <description value="A classification type and value assigned to the citation"/>
         <code value="classification"/>
         <type value="composite"/>
-        <expression value="Citation.classification"/>
+        <expression value="PublicationRecord.classification"/>
         <processingMode value="normal"/>
         <component>
           <definition value="classification-type"/>
@@ -382,15 +382,15 @@
     <resource>
       <SearchParameter>
         <extension url="http://hl7.org/fhir/build/StructureDefinition/path">
-          <valueString value="Citation.experimental"/>
+          <valueString value="PublicationRecord.experimental"/>
         </extension>
         <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status">
           <valueCode value="normative"/>
         </extension>
-        <description value="Whether the Citation is experimental"/>
+        <description value="Whether the PublicationRecord is experimental"/>
         <code value="experimental"/>
         <type value="token"/>
-        <expression value="Citation.experimental"/>
+        <expression value="PublicationRecord.experimental"/>
         <processingMode value="normal"/>
       </SearchParameter>
     </resource>

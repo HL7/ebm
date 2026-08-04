@@ -1,6 +1,6 @@
 Extension: CiteAs
 Id: cite-as
-Description: "Citation for this Resource."
+Description: "PublicationRecord for this Resource."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #trial-use
@@ -25,5 +25,5 @@ Description: "Citation for this Resource."
 * ^context[9].type = #element
 * ^context[9].expression = "List"
 * value[x] only markdown
-* . ^short = "Citation for this Resource"
+* . ^short = "PublicationRecord for this Resource"
 * . ^definition = "Display of suggested citation for this Resource."

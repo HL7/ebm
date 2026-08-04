@@ -20,7 +20,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
 * section[references].code.coding 1..1
 * section[references].code.coding = https://fevir.net/resources/CodeSystem/179423#references "References"
 * section[references]
-  * entry only Reference(Citation)
+  * entry only Reference(PublicationRecord)
 * section[competingInterests].code.coding 1..1
 * section[competingInterests].code.coding = https://fevir.net/resources/CodeSystem/179423#competing-interests "Competing Interests"
 * section[acknowledgements].code.coding 1..1
