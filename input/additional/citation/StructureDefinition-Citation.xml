@@ -1527,7 +1527,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or
           <valueString value="CitationSummaryStyle"/> 
         </extension> 
         <strength value="preferred"/> 
-        <valueSet value="http://hl7.org/fhir/ValueSet/citation-summary-style"/> 
+        <valueSet value="http://terminology.hl7.org/ValueSet/citation-summary-style"/> 
       </binding> 
     </element> 
     <element id="PublicationRecord.summary.text">
@@ -1730,7 +1730,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or
           <valueString value="CitationClassificationType"/> 
         </extension> 
         <strength value="preferred"/> 
-        <valueSet value="http://hl7.org/fhir/ValueSet/citation-classification-type"/> 
+        <valueSet value="http://terminology.hl7.org/ValueSet/citation-classification-type"/> 
       </binding> 
     </element> 
     <element id="PublicationRecord.classification.classifier">
@@ -1762,7 +1762,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or
           <valueString value="CitationArtifactClassifier"/> 
         </extension> 
         <strength value="example"/> 
-        <valueSet value="http://hl7.org/fhir/ValueSet/citation-artifact-classifier"/> 
+        <valueSet value="http://terminology.hl7.org/ValueSet/citation-artifact-classifier"/> 
       </binding> 
     </element> 
     <element id="PublicationRecord.note">
@@ -3765,7 +3765,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or
           <valueString value="CitationArtifactClassifier"/> 
         </extension> 
         <strength value="extensible"/> 
-        <valueSet value="http://hl7.org/fhir/ValueSet/citation-artifact-classifier"/> 
+        <valueSet value="http://terminology.hl7.org/ValueSet/citation-artifact-classifier"/> 
       </binding> 
     </element> 
     <element id="PublicationRecord.citedArtifact.relatesTo.label">
@@ -5120,7 +5120,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or
           <valueString value="CitationArtifactClassifier"/> 
         </extension> 
         <strength value="example"/> 
-        <valueSet value="http://hl7.org/fhir/ValueSet/citation-artifact-classifier"/> 
+        <valueSet value="http://terminology.hl7.org/ValueSet/citation-artifact-classifier"/> 
       </binding> 
     </element> 
     <element id="PublicationRecord.citedArtifact.classification.artifactAssessment">

@@ -636,14 +636,14 @@
   </classification>
   <currentState>
     <coding>
-      <system value="http://hl7.org/fhir/citation-status-type"/>
+      <system value="http://hl7.org/fhir/uv/ebm-incubator/CodeSystem/publicationrecord-status-type"/>
       <code value="medline-medline"/>
       <display value="Medline PublicationRecord Status of Medline"/>
     </coding>
   </currentState>
   <currentState>
     <coding>
-      <system value="http://hl7.org/fhir/citation-status-type"/>
+      <system value="http://hl7.org/fhir/uv/ebm-incubator/CodeSystem/publicationrecord-status-type"/>
       <code value="pubmed-publication-status-epublish"/>
       <display value="PubMed PublicationStatus of epublish"/>
     </coding>
@@ -651,7 +651,7 @@
   <statusDate>
     <activity>
       <coding>
-        <system value="http://hl7.org/fhir/citation-status-type"/>
+        <system value="http://hl7.org/fhir/uv/ebm-incubator/CodeSystem/publicationrecord-status-type"/>
         <code value="pubmed-pubstatus-entrez"/>
         <display value="PubMed Pubstatus of Entrez"/>
       </coding>
@@ -663,7 +663,7 @@
   <statusDate>
     <activity>
       <coding>
-        <system value="http://hl7.org/fhir/citation-status-type"/>
+        <system value="http://hl7.org/fhir/uv/ebm-incubator/CodeSystem/publicationrecord-status-type"/>
         <code value="pubmed-pubstatus-pubmed"/>
         <display value="PubMed Pubstatus of Pubmed"/>
       </coding>
@@ -675,7 +675,7 @@
   <statusDate>
     <activity>
       <coding>
-        <system value="http://hl7.org/fhir/citation-status-type"/>
+        <system value="http://hl7.org/fhir/uv/ebm-incubator/CodeSystem/publicationrecord-status-type"/>
         <code value="pubmed-pubstatus-medline"/>
         <display value="PubMed Pubstatus of Medline"/>
       </coding>
@@ -687,7 +687,7 @@
   <statusDate>
     <activity>
       <coding>
-        <system value="http://hl7.org/fhir/citation-status-type"/>
+        <system value="http://hl7.org/fhir/uv/ebm-incubator/CodeSystem/publicationrecord-status-type"/>
         <code value="pubmed-pubstatus-pmc-release"/>
         <display value="PubMed Pubstatus of PMC release"/>
       </coding>
