@@ -9,6 +9,11 @@ Invalid Resource target type. Found PublicationRecord, but expected one of ([Com
 # Suppressing warnings about using tooling from version 5.0.0 for a version 6.0.0-ballot3 because version 6.0.0 tooling not available
 This IG is version 6.0.0-ballot3, while the IG 'hl7.fhir.uv.tools.r5' is from version 5.0.0
 
+# Suppressing warnings that are referring to the outdated FHIR R6 ballot structure
+Unrecognized property 'name'
+Unrecognized property 'description'
+Unrecognized property 'purposeType'
+
 # Supressing errors about SEVCO 2.0 which will become 3.0 on tx.fhir.org on the next terminology server ResearchStudyDataDictionary
 Unknown code 'STATO:0000090' in the CodeSystem 'https://fevir.net/sevco' version '2.0'
 Unknown code 'STATO:0000724' in the CodeSystem 'https://fevir.net/sevco' version '2.0'
@@ -79,7 +84,7 @@ No definition could be found for URL value 'https://app.magicapp.org/#/guideline
 No definition could be found for URL value 'https://www.ncbi.nlm.nih.gov/books'
 No definition could be found for URL value 'https://orcid.org/'
 
-#Supressing warnings for a specific version of a code system
+# Supressing warnings for a specific version of a code system
 A definition for CodeSystem 'https://www.meddra.org' version '20.1' could not be found, so the code cannot be validated. No versions of this code system are known
 
 # Suppressing warnings regarding webLocation.url values that do not resolve -- there is no expectation that external URL links in this part of a PublicationRecord would be registered for this IG check
