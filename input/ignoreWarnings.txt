@@ -1,7 +1,13 @@
 == Suppressed Messages ==
 
+# Errors About PublicationRecord Resource from the EBM Incubator
+The type PublicationRecord is not legal because it is not defined in the FHIR specification. Other types must have a namespace on them
+
 # Suppressing warnings about using tooling from version 5.0.0 for a version 6.0.0-ballot3 because version 6.0.0 tooling not available
 This IG is version 6.0.0-ballot3, while the IG 'hl7.fhir.uv.tools.r5' is from version 5.0.0
+
+# Supressing errors about SEVCO 2.0 which will become 3.0 on tx.fhir.org on the next terminology server ResearchStudyDataDictionary
+Unknown code 'STATO:0000090' in the CodeSystem 'https://fevir.net/sevco' version '2.0'
 
 # Suppressing the warning about adding jurisdiction element to Resources because jurisdiction element is deprecated.
 The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.ebm, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World') (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
@@ -81,6 +87,9 @@ No definition could be found for URL value 'https://ftp.ncbi.nlm.nih.gov/dbgap/s
 No definition could be found for URL value 'https://osf.io/urb6f/'
 No definition could be found for URL value 'https://fevir.net/FLI/DocumentForComposition%
 No definition could be found for URL value 'https://fevir.net/'
+
+# Supressing warnings regarding Canonical URLs
+A definition could not be found for Canonical URL 'https://www.nejm.org/doi/full/10.1056/NEJMe2111151'
 
 # Suppressing warnings regarding ArtifactAssessment.content.path values that do not resolve -- simple element path values are internally valid but not presented as external URLs
 No definition could be found for URL value 'resourceType'
