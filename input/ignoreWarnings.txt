@@ -10,9 +10,12 @@ Invalid Resource target type. Found PublicationRecord, but expected one of ([Com
 This IG is version 6.0.0-ballot3, while the IG 'hl7.fhir.uv.tools.r5' is from version 5.0.0
 
 # Suppressing warnings that are referring to the outdated FHIR R6 ballot structure
+This property must be a simple value, not an Object (type at ArtifactAssessment.content[2].relatesTo[0].type)
 Unrecognized property 'name'
 Unrecognized property 'description'
 Unrecognized property 'purposeType'
+The System URI could not be determined for the code 'STATO:0000724' in the ValueSet 'http://hl7.org/fhir/ValueSet/variable-handling|6.0.0-ballot3'
+The value provided ('STATO:0000724') was not found in the value set 'Evidence Variable Handling' (http://hl7.org/fhir/ValueSet/variable-handling|6.0.0-ballot3), and a code is required from this value set (error message = The System URI could not be determined for the code 'STATO:0000724' in the ValueSet 'http://hl7.org/fhir/ValueSet/variable-handling|6.0.0-ballot3'; The provided code '#STATO:0000724' was not found in the value set 'http://hl7.org/fhir/ValueSet/variable-handling|6.0.0-ballot3')
 
 # Supressing errors about SEVCO 2.0 which will become 3.0 on tx.fhir.org on the next terminology server ResearchStudyDataDictionary
 Unknown code 'STATO:0000090' in the CodeSystem 'https://fevir.net/sevco' version '2.0'
