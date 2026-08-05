@@ -28,15 +28,15 @@ Because the definition of this variable is literally described in the EvidenceVa
 
 The handling of a group assignment variable may be coded as dichotomous if there are 2 possible assignments or polychotomous if there are 3 or more possible assignments.  In this example with 2 possible assignments, the EvidenceVariable.handling element looks like:
 
-      "handling": {
-        "coding": [
-          {
-            "system": "http://hl7.org/fhir/variable-handling",
-            "code": "dichotomous",
-            "display": "dichotomous variable"
-          }
-        ]
-      }
+    "handling": {
+      "coding": [
+        {
+          "system": "https://fevir.net/sevco",
+          "code": "STATO:0000090",
+          "display": "dichotomous variable"
+        }
+      ]
+    }
 
 In prior versions of FHIR, the EvidenceVariable.handling element used a code datatype instead of a CodeableConcept datatype so looked like:
 

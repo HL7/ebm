@@ -56,8 +56,8 @@ The variable will be handled as either met or not met when recording the data, s
     "handling": {
       "coding": [
         {
-          "system": "http://hl7.org/fhir/variable-handling",
-          "code": "boolean",
+          "system": "https://fevir.net/sevco",
+          "code": "STATO:0000724",
           "display": "boolean variable"
         }
       ]
