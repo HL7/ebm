@@ -12,6 +12,7 @@ This IG is version 6.0.0-ballot3, while the IG 'hl7.fhir.uv.tools.r5' is from ve
 # Suppressing warnings that are referring to the outdated FHIR R6ballot3 structure, we're building for the current FHIR R6 build
 This property must be a simple value, not an Object (type at ArtifactAssessment.content[2].relatesTo[0].type)
 This property must be a simple value, not an Object (handling at EvidenceVariable.handling)
+This property must be a simple value, not an Object (handling at Composition.contained[%
 EvidenceVariable.handling: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3)
 Unrecognized property 'name'
 Unrecognized property 'description'
