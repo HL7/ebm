@@ -130,7 +130,7 @@
         </type>
         <classifier>
           <coding>
-            <system value="https://meshb.nlm.nih.gov/"/>
+            <system value="https://www.nlm.nih.gov/mesh"/>
             <code value="D000060"/>
             <display value="Accidents, Aviation"/>
             <userSelected value="false"/>
@@ -151,7 +151,7 @@
           </type>
           <classifier>
             <coding>
-              <system value="https://meshb.nlm.nih.gov/"/>
+              <system value="https://www.nlm.nih.gov/mesh"/>
               <code value="Q000517"/>
               <display value="prevention &amp; control"/>
             </coding>
@@ -179,7 +179,7 @@
         </type>
         <classifier>
           <coding>
-            <system value="https://meshb.nlm.nih.gov/"/>
+            <system value="https://www.nlm.nih.gov/mesh"/>
             <code value="D000328"/>
             <display value="Adult"/>
             <userSelected value="false"/>
@@ -206,7 +206,7 @@
         </type>
         <classifier>
           <coding>
-            <system value="https://meshb.nlm.nih.gov/"/>
+            <system value="https://www.nlm.nih.gov/mesh"/>
             <code value="D000337"/>
             <display value="Aerospace Medicine"/>
             <userSelected value="false"/>
@@ -227,7 +227,7 @@
           </type>
           <classifier>
             <coding>
-              <system value="https://meshb.nlm.nih.gov/"/>
+              <system value="https://www.nlm.nih.gov/mesh"/>
               <code value="Q000379"/>
               <display value="methods"/>
             </coding>
@@ -255,7 +255,7 @@
         </type>
         <classifier>
           <coding>
-            <system value="https://meshb.nlm.nih.gov/"/>
+            <system value="https://www.nlm.nih.gov/mesh"/>
             <code value="D000401"/>
             <display value="Aircraft"/>
             <userSelected value="false"/>
@@ -282,7 +282,7 @@
         </type>
         <classifier>
           <coding>
-            <system value="https://meshb.nlm.nih.gov/"/>
+            <system value="https://www.nlm.nih.gov/mesh"/>
             <code value="D003645"/>
             <display value="Death, Sudden"/>
             <userSelected value="false"/>
@@ -303,7 +303,7 @@
           </type>
           <classifier>
             <coding>
-              <system value="https://meshb.nlm.nih.gov/"/>
+              <system value="https://www.nlm.nih.gov/mesh"/>
               <code value="Q000517"/>
               <display value="prevention &amp; control"/>
             </coding>
@@ -331,7 +331,7 @@
         </type>
         <classifier>
           <coding>
-            <system value="https://meshb.nlm.nih.gov/"/>
+            <system value="https://www.nlm.nih.gov/mesh"/>
             <code value="D005260"/>
             <display value="Female"/>
             <userSelected value="false"/>
@@ -358,7 +358,7 @@
         </type>
         <classifier>
           <coding>
-            <system value="https://meshb.nlm.nih.gov/"/>
+            <system value="https://www.nlm.nih.gov/mesh"/>
             <code value="D006801"/>
             <display value="Humans"/>
             <userSelected value="false"/>
@@ -385,7 +385,7 @@
         </type>
         <classifier>
           <coding>
-            <system value="https://meshb.nlm.nih.gov/"/>
+            <system value="https://www.nlm.nih.gov/mesh"/>
             <code value="D015601"/>
             <display value="Injury Severity Score"/>
             <userSelected value="false"/>
@@ -412,7 +412,7 @@
         </type>
         <classifier>
           <coding>
-            <system value="https://meshb.nlm.nih.gov/"/>
+            <system value="https://www.nlm.nih.gov/mesh"/>
             <code value="D008297"/>
             <display value="Male"/>
             <userSelected value="false"/>
@@ -439,7 +439,7 @@
         </type>
         <classifier>
           <coding>
-            <system value="https://meshb.nlm.nih.gov/"/>
+            <system value="https://www.nlm.nih.gov/mesh"/>
             <code value="D008875"/>
             <display value="Middle Aged"/>
             <userSelected value="false"/>
@@ -466,7 +466,7 @@
         </type>
         <classifier>
           <coding>
-            <system value="https://meshb.nlm.nih.gov/"/>
+            <system value="https://www.nlm.nih.gov/mesh"/>
             <code value="D011482"/>
             <display value="Protective Devices"/>
             <userSelected value="false"/>
@@ -493,7 +493,7 @@
         </type>
         <classifier>
           <coding>
-            <system value="https://meshb.nlm.nih.gov/"/>
+            <system value="https://www.nlm.nih.gov/mesh"/>
             <code value="D014925"/>
             <display value="Wit and Humor as Topic"/>
             <userSelected value="false"/>
@@ -520,7 +520,7 @@
         </type>
         <classifier>
           <coding>
-            <system value="https://meshb.nlm.nih.gov/"/>
+            <system value="https://www.nlm.nih.gov/mesh"/>
             <code value="D014947"/>
             <display value="Wounds and Injuries"/>
             <userSelected value="false"/>
@@ -541,7 +541,7 @@
           </type>
           <classifier>
             <coding>
-              <system value="https://meshb.nlm.nih.gov/"/>
+              <system value="https://www.nlm.nih.gov/mesh"/>
               <code value="Q000517"/>
               <display value="prevention &amp; control"/>
             </coding>
@@ -1151,7 +1151,7 @@
       </type>
       <classifier>
         <coding>
-          <system value="https://meshb.nlm.nih.gov/"/>
+          <system value="https://www.nlm.nih.gov/mesh"/>
           <code value="D016425"/>
           <display value="Published Erratum"/>
           <userSelected value="false"/>
@@ -1181,7 +1181,7 @@
       </type>
       <classifier>
         <coding>
-          <system value="https://meshb.nlm.nih.gov/"/>
+          <system value="https://www.nlm.nih.gov/mesh"/>
           <code value="D016420"/>
           <display value="Comment"/>
           <userSelected value="false"/>
@@ -1211,7 +1211,7 @@
       </type>
       <classifier>
         <coding>
-          <system value="https://meshb.nlm.nih.gov/"/>
+          <system value="https://www.nlm.nih.gov/mesh"/>
           <code value="D016420"/>
           <display value="Comment"/>
           <userSelected value="false"/>
@@ -1365,7 +1365,7 @@
       </type>
       <classifier>
         <coding>
-          <system value="https://meshb.nlm.nih.gov/"/>
+          <system value="https://www.nlm.nih.gov/mesh"/>
           <code value="D016428"/>
           <display value="Journal Article"/>
           <userSelected value="false"/>
@@ -1373,7 +1373,7 @@
       </classifier>
       <classifier>
         <coding>
-          <system value="https://meshb.nlm.nih.gov/"/>
+          <system value="https://www.nlm.nih.gov/mesh"/>
           <code value="D016449"/>
           <display value="Randomized Controlled Trial"/>
           <userSelected value="false"/>
