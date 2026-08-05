@@ -27,7 +27,7 @@ Description: "Profile of PublicationRecord for Evidence Based Medicine IG. The J
   * classification[publicationType].type.coding 1..1
   * classification[publicationType].type.coding = http://terminology.hl7.org/CodeSystem/cited-artifact-classification-type#publication-type "Publication type"
   * classification[citationSubset].type.coding 1..1
-  * classification[citationSubset].type.coding = http://terminology.hl7.org/CodeSystem/cited-artifact-classification-type#citation-subset "PublicationRecord subset" 
+  * classification[citationSubset].type.coding = http://terminology.hl7.org/CodeSystem/cited-artifact-classification-type#citation-subset "Citation subset" 
   * classification[studyDesign].type.coding 1..1
   * classification[studyDesign].type.coding = https://fevir.net/resources/CodeSystem/179423#study-design "Study Design"
   * classification[definedInText].type.coding 1..1
