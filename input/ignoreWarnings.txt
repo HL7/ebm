@@ -65,7 +65,6 @@ No definition can be found for the system http://fhir.de/CodeSystem/bfarm/icd-10
 
 # Suppressing a message about XML tags in markdown. This is a known issue converting structured abstract data from MEDLINE and is handled in the presentation of the data.
 The markdown contains content that appears to be an embedded HTML tag starting at '<A'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
-Constraint failed: txt-1: 'The narrative SHALL contain only the basic html formatting elements and attributes described in chapters 7-11 (except section 4 of chapter 9) and 15 of the HTML 4.0 standard, <a> elements (either name or href), images and internally contained style attributes, and SHALL contain some non-whitespace characters (htmlChecks())' (defined in http://hl7.org/fhir/StructureDefinition/Narrative)
 
 # Suppressing warnings about additionalBindings constraints that do not appear to be a result of IG content
 Constraint failed: eld-31: 'additionalBindings should have a key (key.exists())' (defined in http://hl7.org/fhir/StructureDefinition/ElementDefinition) (Best Practice Recommendation)
