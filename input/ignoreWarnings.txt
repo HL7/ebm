@@ -2,6 +2,9 @@
 
 # Errors About PublicationRecord Resource from the EBM Incubator
 The type PublicationRecord is not legal because it is not defined in the FHIR specification. Other types must have a namespace on them
+The type 'PublicationRecord' is not a valid Target for this element (must be one of [CanonicalType[http://hl7.org/fhir/StructureDefinition/Citation|6.0.0-ballot3], CanonicalType[http://hl7.org/fhir/StructureDefinition/Composition|6.0.0-ballot3], CanonicalType[http://hl7.org/fhir/StructureDefinition/DiagnosticReport|6.0.0-ballot3], CanonicalType[http://hl7.org/fhir/StructureDefinition/Evidence|6.0.0-ballot3]])
+Unable to find a profile match for PublicationRecord/264329 (by type) among choices: ; [http://hl7.org/fhir/StructureDefinition/Citation|6.0.0-ballot3, http://hl7.org/fhir/StructureDefinition/Composition|6.0.0-ballot3, http://hl7.org/fhir/StructureDefinition/DiagnosticReport|6.0.0-ballot3, http://hl7.org/fhir/StructureDefinition/Evidence|6.0.0-ballot3]
+Invalid Resource target type. Found PublicationRecord, but expected one of ([Composition, DiagnosticReport, Evidence, Citation])
 
 # Suppressing warnings about using tooling from version 5.0.0 for a version 6.0.0-ballot3 because version 6.0.0 tooling not available
 This IG is version 6.0.0-ballot3, while the IG 'hl7.fhir.uv.tools.r5' is from version 5.0.0
