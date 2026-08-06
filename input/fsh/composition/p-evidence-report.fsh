@@ -23,7 +23,7 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
 * attester.mode from http://terminology.hl7.org/ValueSet/contributor-role (preferred)
   * ^short = "reviewer | editor | endorser | informant | recorder"
 * relatesTo
-  * extension contains http://hl7.org/fhir/StructureDefinition/relatesto-classifier named classifier 0..1
+  * extension contains RelatesToClassifier named classifier 0..1
 * relatesTo ^slicing.discriminator.type = #value
 * relatesTo ^slicing.discriminator.path = "type"
 * relatesTo ^slicing.rules = #open

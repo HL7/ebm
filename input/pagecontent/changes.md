@@ -22,7 +22,7 @@ The OutcomeImportance Profile was modified to have 4 slices for content. The Art
 
 ### Changes to Profiles of Composition
 
-The EvidenceReport Profile added a similarTo slice to Composition.relatesTo; and added extendedContactDetail, publicationDate, and relatesToClassifier extensions from the Extensions Pack.
+The EvidenceReport Profile added a similarTo slice to Composition.relatesTo; and added extendedContactDetail and publicationDate extensions from the Extensions Pack.
 
 The EvidenceReportPackage Profile added an Attachments slice to Composition.section with Reference options limited to DocumentReference.
 
