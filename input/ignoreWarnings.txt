@@ -145,6 +145,9 @@ Details for #BG002 matching against profile http://hl7.org/fhir/uv/ebm/Structure
 Details for #FG000 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group|1.0.0-ballot3
 Details for #FG001 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group|1.0.0-ballot3
 
+# Suppressing warnings about unknown Profile where we reference a Profile from the Vulcan UDP IG which is not yet published
+Profile reference 'http://hl7.org/fhir/uv/pharmaceutical-research-protocol/StructureDefinition/m11-research-study-profile' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
+
 # Suppressing n/a errors for IG setup per discussion with FMG QA review 
 This IG is version 6.0.0-ballot3, while the IG 'hl7.fhir.uv.extensions.r5' is from version 5.0.0
 This IG is version 6.0.0-ballot3, while the IG 'hl7.terminology' is from version 5.0.0
