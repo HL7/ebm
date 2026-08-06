@@ -1,10 +1,20 @@
 == Suppressed Messages ==
 
-# Errors About PublicationRecord Resource from the EBM Incubator
+# Errors about PublicationRecord Resource from the EBM Incubator
 The type PublicationRecord is not legal because it is not defined in the FHIR specification. Other types must have a namespace on them
 The type 'PublicationRecord' is not a valid Target for this element (must be one of [CanonicalType[http://hl7.org/fhir/StructureDefinition/Citation|6.0.0-ballot3], CanonicalType[http://hl7.org/fhir/StructureDefinition/Composition|6.0.0-ballot3], CanonicalType[http://hl7.org/fhir/StructureDefinition/DiagnosticReport|6.0.0-ballot3], CanonicalType[http://hl7.org/fhir/StructureDefinition/Evidence|6.0.0-ballot3]])
+Unable to find a profile match for PublicationRecord/104116 (by type) among choices: ; [http://hl7.org/fhir/StructureDefinition/Citation|6.0.0-ballot3, http://hl7.org/fhir/StructureDefinition/Composition|6.0.0-ballot3, http://hl7.org/fhir/StructureDefinition/DiagnosticReport|6.0.0-ballot3, http://hl7.org/fhir/StructureDefinition/Evidence|6.0.0-ballot3]
+Unable to find a profile match for PublicationRecord/247416 (by type) among choices: ; [http://hl7.org/fhir/StructureDefinition/Citation|6.0.0-ballot3, http://hl7.org/fhir/StructureDefinition/Composition|6.0.0-ballot3, http://hl7.org/fhir/StructureDefinition/DiagnosticReport|6.0.0-ballot3, http://hl7.org/fhir/StructureDefinition/Evidence|6.0.0-ballot3]
 Unable to find a profile match for PublicationRecord/264329 (by type) among choices: ; [http://hl7.org/fhir/StructureDefinition/Citation|6.0.0-ballot3, http://hl7.org/fhir/StructureDefinition/Composition|6.0.0-ballot3, http://hl7.org/fhir/StructureDefinition/DiagnosticReport|6.0.0-ballot3, http://hl7.org/fhir/StructureDefinition/Evidence|6.0.0-ballot3]
 Invalid Resource target type. Found PublicationRecord, but expected one of ([Composition, DiagnosticReport, Evidence, Citation])
+
+# Errors about a Profile that's based on PublicationRecord Additional Resource
+#The value for resourceDefinition of 'http://hl7.org/fhir/StructureDefinition/PublicationRecord|1.0.0-ballot' does not match the required value of 'http://hl7.org/fhir/uv/ebm/StructureDefinition/journal-article-citation|1.0.0-ballot3'. In addition, this is not an additional resource, and shouldn't have a resourceDefinition at all
+#The value for resourceDefinition of 'http://hl7.org/fhir/StructureDefinition/PublicationRecord|1.0.0-ballot' does not match the required value of 'http://hl7.org/fhir/uv/ebm/StructureDefinition/database-entry-citation|1.0.0-ballot3'. In addition, this is not an additional resource, and shouldn't have a resourceDefinition at all
+#The value for resourceDefinition of 'http://hl7.org/fhir/StructureDefinition/PublicationRecord|1.0.0-ballot' does not match the required value of 'http://hl7.org/fhir/uv/ebm/StructureDefinition/dataset-citation|1.0.0-ballot3'. In addition, this is not an additional resource, and shouldn't have a resourceDefinition at all
+#The value for resourceDefinition of 'http://hl7.org/fhir/StructureDefinition/PublicationRecord|1.0.0-ballot' does not match the required value of 'http://hl7.org/fhir/uv/ebm/StructureDefinition/book-citation|1.0.0-ballot3'. In addition, this is not an additional resource, and shouldn't have a resourceDefinition at all
+#The value for resourceDefinition of 'http://hl7.org/fhir/StructureDefinition/PublicationRecord|1.0.0-ballot' does not match the required value of 'http://hl7.org/fhir/uv/ebm/StructureDefinition/book-part-citation|1.0.0-ballot3'. In addition, this is not an additional resource, and shouldn't have a resourceDefinition at all
+#The value for resourceDefinition of 'http://hl7.org/fhir/StructureDefinition/PublicationRecord|1.0.0-ballot' does not match the required value of 'http://hl7.org/fhir/uv/ebm/StructureDefinition/web-page-citation|1.0.0-ballot3'. In addition, this is not an additional resource, and shouldn't have a resourceDefinition at all
 
 # Suppressing warnings about using tooling from version 5.0.0 for a version 6.0.0-ballot3 because version 6.0.0 tooling not available
 This IG is version 6.0.0-ballot3, while the IG 'hl7.fhir.uv.tools.r5' is from version 5.0.0
@@ -117,6 +127,7 @@ Unknown Code 'C49488' in the CodeSystem 'http://ncicb.nci.nih.gov/xml/owl/EVS/Th
 
 # Suppressing warnings about unrecognized slices in Profiles of Composition -- the examples include additional data that are not part of the Profile constraints
 This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-measure-report|1.0.0-ballot3 (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/dataset-citation|1.0.0-ballot3 (this may not be a problem, but you should check that it's not intended to match a slice)
 
 # Suppressing warnings regarding multiple choices of profiles in references from contained resources to other contained resources -- the default option used for checking from the IG publisher is not the actual profile used in the examples and the actual profile is one of the other options
 Found multiple matching profiles for #BG000 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group|1.0.0-ballot3, http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group|1.0.0-ballot3, http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group|1.0.0-ballot3
@@ -166,19 +177,29 @@ None of the codings provided are in the value set 'FHIR Document Type Codes' (ht
 None of the codings provided are in the value set 'EvidenceVariable Handling Extension Value Set' (https://fevir.net/resources/ValueSet/383075|1.0.0-ballot3), and a coding is recommended to come from this value set (codes = https://fevir.net/sevco#STATO:0000090)
 None of the codings provided are in the value set 'EvidenceVariable Handling Extension Value Set' (https://fevir.net/resources/ValueSet/383075|1.0.0-ballot3), and a coding is recommended to come from this value set (codes = https://fevir.net/sevco#STATO:0000251)
 None of the codings provided are in the value set 'EvidenceVariable Handling Extension Value Set' (https://fevir.net/resources/ValueSet/383075|1.0.0-ballot3), and a coding is recommended to come from this value set (codes = https://fevir.net/sevco#STATO:0000724)
-Unknown code 'STATO:0000090' in the CodeSystem 'https://fevir.net/sevco' version '2.0'
-Unknown code 'STATO:0000251' in the CodeSystem 'https://fevir.net/sevco' version '2.0'
-Unknown code 'STATO:0000724' in the CodeSystem 'https://fevir.net/sevco' version '2.0'
 The System URI could not be determined for the code 'STATO:0000090' in the ValueSet 'http://hl7.org/fhir/ValueSet/variable-handling|6.0.0-ballot3'
 The System URI could not be determined for the code 'STATO:0000251' in the ValueSet 'http://hl7.org/fhir/ValueSet/variable-handling|6.0.0-ballot3'
 The System URI could not be determined for the code 'STATO:0000724' in the ValueSet 'http://hl7.org/fhir/ValueSet/variable-handling|6.0.0-ballot3'
 The value provided ('STATO:0000090') was not found in the value set 'Evidence Variable Handling'%
 The value provided ('STATO:0000251') was not found in the value set 'Evidence Variable Handling'%
 The value provided ('STATO:0000724') was not found in the value set 'Evidence Variable Handling'%
+Unknown code 'STATO:0000090' in the CodeSystem 'https://fevir.net/sevco' version '2.0'
+Unknown code 'STATO:0000251' in the CodeSystem 'https://fevir.net/sevco' version '2.0'
+Unknown code 'STATO:0000724' in the CodeSystem 'https://fevir.net/sevco' version '2.0'
 
 # Suppressing warnings that are referring to FHIR changes since the outdated FHIR R6ballot3 structure, we're building for the current FHIR R6 build
-The property type must be an Object, not a Primitive property (at PublicationRecord.relatesTo[0].type)
 This property must be a simple value, not an Object (type at ArtifactAssessment.content[2].relatesTo[0].type)
+The property type must be an Object, not a Primitive property (at PublicationRecord.relatesTo[0].type)
+PublicationRecord.relatesTo.type: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/PublicationRecord|1.0.0-ballot)
+PublicationRecord.relatesTo.type: minimum required = 1, but only found 0%
+ArtifactAssessment.content:forWhom.relatesTo.type: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-importance|1.0.0-ballot3)
+ArtifactAssessment.content:forWhom.relatesTo.type: minimum required = 1, but only found 0%
+ArtifactAssessment.relatesTo.type: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-importance|1.0.0-ballot3)
+ArtifactAssessment.relatesTo.type: minimum required = 1, but only found 0%
+ResearchStudy.relatesTo.type: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/ebm/StructureDefinition/study-registry-record|1.0.0-ballot3)
+ResearchStudy.relatesTo.type: minimum required = 1, but only found 0%
+This property must be a simple value, not an Object (handling at ResearchStudy.contained[0].handling)
+This property must be a simple value, not an Object (handling at ResearchStudy.contained[1].handling)
 This property must be a simple value, not an Object (handling at EvidenceVariable.handling)
 This property must be a simple value, not an Object (handling at Composition.contained[%
 EvidenceVariable.handling: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3)
@@ -190,7 +211,19 @@ Unrecognized property 'description'
 Unrecognized property 'purposeType'
 Unrecognized property 'language'
 
+# Suppressing information messages about not using a http://hl7.org/fhir/ValueSet/ when instead of http://terminology.hl7.org/ValueSet/ because that binding changed in R6ballot5
+None of the codings provided are in the value set 'Research Study Trial Phase' (http://hl7.org/fhir/ValueSet/research-study-trial-phase|6.0.0-ballot3), and a coding is recommended to come from this value set (codes = http://terminology.hl7.org/CodeSystem/research-study-phase#%
+None of the codings provided are in the value set 'Study Design' (http://hl7.org/fhir/ValueSet/study-design|6.0.0-ballot3), and a coding is recommended to come from this value set (codes = https://fevir.net/sevco#%
+None of the codings provided are in the value set 'Research Study Objective Type' (http://hl7.org/fhir/ValueSet/research-study-objective-type|6.0.0-ballot3), and a coding is recommended to come from this value set (codes = http://terminology.hl7.org/CodeSystem/research-study-objective-type#%
+
+# Suppressing information messages about not using the preferred binding
+None of the codings provided are in the value set 'Study Design' (http://hl7.org/fhir/ValueSet/study-design|6.0.0-ballot3), and a coding is recommended to come from this value set (codes = http://terminology.hl7.org/CodeSystem/synthesis-type#combined-NMA)
+None of the codings provided are in the value set 'Contact entity type' (http://terminology.hl7.org/ValueSet/contactentity-type|2.0.0), and a coding is recommended to come from this value set (codes = http://terminology.hl7.org/CodeSystem/research-study-party-role#general-contact)
+None of the codings provided are in the value set 'Contact entity type' (http://terminology.hl7.org/ValueSet/contactentity-type|2.0.0), and a coding is recommended to come from this value set (codes = http://terminology.hl7.org/CodeSystem/research-study-party-role#primary-investigator)
+
 # Suppressing errors and information messages from contained resources due to them using the new R6ballot5 .handling element structure
+Details for #NCT03640312-BaselineMeasure-%
+Unable to find a profile match for #NCT03640312-BaselineMeasure-%
 Details for #NCT03640312-AllCauseMortality matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-AllCauseMortality among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
 Details for #NCT03640312-AllCauseMortality matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
