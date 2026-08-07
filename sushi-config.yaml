@@ -27,7 +27,7 @@ publisher:
   url: http://www.hl7.org/Special/committees/dss
 
 dependencies:
-  hl7.fhir.r6.core: 6.0.0-ballot4
+ # hl7.fhir.r6.core: latest
   hl7.fhir.uv.extensions: 5.3.0
   hl7.terminology: latest
   hl7.fhir.uv.ebm-incubator: dev
