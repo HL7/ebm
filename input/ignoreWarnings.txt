@@ -10,6 +10,8 @@ Invalid Resource target type. Found PublicationRecord, but expected one of ([Com
 
 # Suppressing warnings about using tooling from version 5.0.0 for a version 6.0.0-ballot3 because version 6.0.0 tooling not available
 This IG is version 6.0.0-ballot3, while the IG 'hl7.fhir.uv.tools.r5' is from version 5.0.0
+The ImplementationGuide is based on FHIR version 6.0.0-ballot3 but package hl7.fhir.uv.extensions#5.3.0 is based on FHIR version 5.0.0. Use the package hl7.fhir.uv.extensions.r6 instead
+The ImplementationGuide is based on FHIR version 6.0.0-ballot3 but package hl7.terminology#7.3.0 is based on FHIR version 5.0.0. Use the package hl7.terminology.r6 instead
 
 # Errors about a Profile that's based on PublicationRecord Additional Resource
 The value for resourceDefinition of 'http://hl7.org/fhir/StructureDefinition/PublicationRecord|1.0.0-ballot' does not match the required value of 'http://hl7.org/fhir/uv/ebm/StructureDefinition/journal-article-citation|1.0.0-ballot3'. In addition, this is not an additional resource, and shouldn't have a resourceDefinition at all
