@@ -172,6 +172,9 @@ Most code systems defined in HL7 IGs will need to move to THO later during the p
 # Suppressing warning about regex extension as this is not coming from the IG content
 The extension http://hl7.org/fhir/StructureDefinition/regex|5.3.0 is deprecated with the note: 'This was deprecated in favor of using a constraint on the element using FHIRPath, since constraints allow for the provision of a human readable message associated with the regex'
 
+# Suppressing an error about Regex evaluation even though the content hasn't changed and it didn't show that error before and there isn't anything wrong with the string
+Exception evaluating regex '^[\s\S]+$' on type string: Regex evaluation timed out after
+
 # Suppressing warning that text data includes HTML tags where the example is representing XHTML datatype values in a field with a string datatype, appropriate in the context of data to view Comparisons of Resource content
 The markdown contains content that appears to be an embedded HTML tag starting at '<p'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
 The markdown contains content that appears to be an embedded HTML tag starting at '<s'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
