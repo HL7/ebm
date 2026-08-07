@@ -1,6 +1,6 @@
 == Suppressed Messages ==
 
-# Errors about PublicationRecord Resource from the EBM Incubator
+# Errors about PublicationRecord Additional Resource from the EBM Incubator because tooling doesn't support upcoming Additional Resource PublicationRecord from the EBM Incubator
 The type PublicationRecord is not legal because it is not defined in the FHIR specification. Other types must have a namespace on them
 The type 'PublicationRecord' is not a valid Target for this element (must be one of [CanonicalType[http://hl7.org/fhir/StructureDefinition/Citation|6.0.0-ballot3], CanonicalType[http://hl7.org/fhir/StructureDefinition/Composition|6.0.0-ballot3], CanonicalType[http://hl7.org/fhir/StructureDefinition/DiagnosticReport|6.0.0-ballot3], CanonicalType[http://hl7.org/fhir/StructureDefinition/Evidence|6.0.0-ballot3]])
 Unable to find a profile match for PublicationRecord/104116 (by type) among choices: ; [http://hl7.org/fhir/StructureDefinition/Citation|6.0.0-ballot3, http://hl7.org/fhir/StructureDefinition/Composition|6.0.0-ballot3, http://hl7.org/fhir/StructureDefinition/DiagnosticReport|6.0.0-ballot3, http://hl7.org/fhir/StructureDefinition/Evidence|6.0.0-ballot3]
@@ -139,6 +139,10 @@ Unknown Code 'C49488' in the CodeSystem 'http://ncicb.nci.nih.gov/xml/owl/EVS/Th
 
 # Suppressing warnings about recognizing C codes from CodeSystem 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' which is used extensively for M11 Reports
 %' in the CodeSystem 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version 'null' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment
+
+# Suppressing warnings regarding an example ValueSet after the content was confirmed to be accurate
+This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/shareablevalueset|6.0.0-ballot3 (this may not be a problem, but you should check that it's not intended to match a slice)
+Error from https://tx.fhir.org/r5: Error: A definition for CodeSystem 'http://fhir.de/CodeSystem/bfarm/icd-10-gm' version '2025' could not be found, so the value set cannot be expanded. No versions of this code system are known
 
 # Suppressing warnings about unrecognized slices in Profiles of Composition -- the examples include additional data that are not part of the Profile constraints
 This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-measure-report|1.0.0-ballot3 (this may not be a problem, but you should check that it's not intended to match a slice)
