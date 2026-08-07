@@ -20,6 +20,7 @@ The value for resourceDefinition of 'http://hl7.org/fhir/StructureDefinition/Pub
 The value for resourceDefinition of 'http://hl7.org/fhir/StructureDefinition/PublicationRecord|1.0.0-ballot' does not match the required value of 'http://hl7.org/fhir/uv/ebm/StructureDefinition/book-part-citation|1.0.0-ballot3'. In addition, this is not an additional resource, and shouldn't have a resourceDefinition at all
 The value for resourceDefinition of 'http://hl7.org/fhir/StructureDefinition/PublicationRecord|1.0.0-ballot' does not match the required value of 'http://hl7.org/fhir/uv/ebm/StructureDefinition/web-page-citation|1.0.0-ballot3'. In addition, this is not an additional resource, and shouldn't have a resourceDefinition at all
 The value for resourceDefinition of 'http://hl7.org/fhir/StructureDefinition/PublicationRecord|1.0.0-ballot' does not match the required value of 'http://hl7.org/fhir/uv/ebm/StructureDefinition/preprint-citation|1.0.0-ballot3'. In addition, this is not an additional resource, and shouldn't have a resourceDefinition at all
+The value for resourceDefinition of 'http://hl7.org/fhir/StructureDefinition/PublicationRecord|1.0.0-ballot' does not match the required value of 'http://hl7.org/fhir/uv/ebm/StructureDefinition/software-citation|1.0.0-ballot3'. In addition, this is not an additional resource, and shouldn't have a resourceDefinition at all
 
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 #  (And include comments like this justifying why) 
