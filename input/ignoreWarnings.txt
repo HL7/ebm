@@ -28,6 +28,7 @@ The value for resourceDefinition of 'http://hl7.org/fhir/StructureDefinition/Pub
 # Suppressing warning that text data hyperlinking to an unresolvable web location that we got from Jira, it may be resolvable after ballotting
 No definition could be found for URL value 'http://hl7.org/fhir/uv/ebm/1.0.0-202609-ballot3'
 Hyperlink 'http://hl7.org/fhir/uv/ebm/1.0.0-202609-ballot3' at 'div/blockquote/blockquote/p/a' for 'http://hl7.org/fhir/uv/ebm/1.0.0-202609-ballot3' does not resolve
+The link 'http://hl7.org/fhir/uv/ebm/1.0.0-202609-ballot3' for "http://hl7.org/fhir/uv/ebm/1.0.0-202609-ballot3" cannot be resolved
 
 # Suppressing warning of no definition found for URL value for many instances in which the URL is an external website and the data element (e.g. relatesTo.targetUri or webLocation.url) does not expect a listed and verified value
 No definition could be found for URL value '%
@@ -141,7 +142,8 @@ Unknown Code 'C49488' in the CodeSystem 'http://ncicb.nci.nih.gov/xml/owl/EVS/Th
 # Suppressing warnings about unrecognized slices in Profiles of Composition -- the examples include additional data that are not part of the Profile constraints
 This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-measure-report|1.0.0-ballot3 (this may not be a problem, but you should check that it's not intended to match a slice)
 This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/dataset-citation|1.0.0-ballot3 (this may not be a problem, but you should check that it's not intended to match a slice)
-This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/preprint-citation|1.0.0-ballot3 (this may not be a problem, but you should check that it's not intended to match a slice) 
+This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/database-entry-citation|1.0.0-ballot3 (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/preprint-citation|1.0.0-ballot3 (this may not be a problem, but you should check that it's not intended to match a slice)
 
 # Suppressing warnings regarding multiple choices of profiles in references from contained resources to other contained resources -- the default option used for checking from the IG publisher is not the actual profile used in the examples and the actual profile is one of the other options
 Found multiple matching profiles for #BG000 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group|1.0.0-ballot3, http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group|1.0.0-ballot3, http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group|1.0.0-ballot3
@@ -207,6 +209,9 @@ ResearchStudy.relatesTo.type: minimum required = 1, but only found 0 (from http:
 ResearchStudy.relatesTo.type: minimum required = 1, but only found 0%
 This property must be a simple value, not an Object (handling at ResearchStudy.contained[0].handling)
 This property must be a simple value, not an Object (handling at ResearchStudy.contained[1].handling)
+This property must be a simple value, not an Object (handling at ResearchStudy.contained[2].handling)
+This property must be a simple value, not an Object (handling at ResearchStudy.contained[3].handling)
+This property must be a simple value, not an Object (handling at ResearchStudy.contained[4].handling)
 This property must be a simple value, not an Object (handling at EvidenceVariable.handling)
 This property must be a simple value, not an Object (handling at Composition.contained[%
 EvidenceVariable.handling: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3)
@@ -224,6 +229,7 @@ None of the codings provided are in the value set 'Study Design' (http://hl7.org
 None of the codings provided are in the value set 'Research Study Objective Type' (http://hl7.org/fhir/ValueSet/research-study-objective-type|6.0.0-ballot3), and a coding is recommended to come from this value set (codes = http://terminology.hl7.org/CodeSystem/research-study-objective-type#%
 
 # Suppressing information messages about not using the preferred binding
+None of the codings provided are in the value set 'Research Study Trial Phase' (http://hl7.org/fhir/ValueSet/research-study-trial-phase|6.0.0-ballot3), and a coding is recommended to come from this value set (codes = https://fevir.net/sevco%
 None of the codings provided are in the value set 'Study Design' (http://hl7.org/fhir/ValueSet/study-design|6.0.0-ballot3), and a coding is recommended to come from this value set (codes = http://terminology.hl7.org/CodeSystem/synthesis-type#combined-NMA)
 None of the codings provided are in the value set 'Contact entity type' (http://terminology.hl7.org/ValueSet/contactentity-type|2.0.0), and a coding is recommended to come from this value set (codes = http://terminology.hl7.org/CodeSystem/research-study-party-role#general-contact)
 None of the codings provided are in the value set 'Contact entity type' (http://terminology.hl7.org/ValueSet/contactentity-type|2.0.0), and a coding is recommended to come from this value set (codes = http://terminology.hl7.org/CodeSystem/research-study-party-role#primary-investigator)
@@ -238,6 +244,8 @@ Details for #NCT03421379-OtherAdverseEvent%
 Unable to find a profile match for #NCT03421379-OtherAdverseEvent%
 Details for #NCT03421379-AllCauseMortality%
 Unable to find a profile match for #NCT03421379-AllCauseMortality%
+Details for #NCT03421379-SeriousAdverseEvent%
+Unable to find a profile match for #NCT03421379-SeriousAdverseEvent%
 Details for #NCT03421379-SeriousAdverseEvents%
 Unable to find a profile match for #NCT03421379-SeriousAdverseEvents%
 Details for #NCT03421379-OtherAdverseEvents%
