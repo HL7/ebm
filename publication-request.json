@@ -1,10 +1,10 @@
 {
     "package-id" : "hl7.fhir.uv.ebm",
-    "version" : "1.0.0-ballot3",
-    "path" : "http://hl7.org/fhir/uv/ebm/1.0.0-202609-ballot3",
+    "version" : "1.0.0-snapshot",
+    "path" : "http://hl7.org/fhir/uv/ebm/1.0.0-202609-snapshot",
     "mode" : "working",
-    "status" : "ballot",
+    "status" : "snapshot",
     "sequence" : "STU1",
-    "desc" : "This is the third ballot of the EBMonFHIR Implementation Guide for September 2026.",
+    "desc" : "This is a snapshot of the EBMonFHIR Implementation Guide to support community review and testing.",
     "first" : false
     }

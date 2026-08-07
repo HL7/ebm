@@ -17,15 +17,15 @@ The ImplementationGuide is based on FHIR version 6.0.0-ballot3 but package hl7.f
 The ImplementationGuide is based on FHIR version 6.0.0-ballot3 but package hl7.terminology#7.3.0 is based on FHIR version 5.0.0. Use the package hl7.terminology.r6 instead
 
 # Errors about a Profile that's based on PublicationRecord Additional Resource
-The value for resourceDefinition of 'http://hl7.org/fhir/StructureDefinition/PublicationRecord|1.0.0-ballot' does not match the required value of 'http://hl7.org/fhir/uv/ebm/StructureDefinition/journal-article-citation|1.0.0-ballot3'. In addition, this is not an additional resource, and shouldn't have a resourceDefinition at all
-The value for resourceDefinition of 'http://hl7.org/fhir/StructureDefinition/PublicationRecord|1.0.0-ballot' does not match the required value of 'http://hl7.org/fhir/uv/ebm/StructureDefinition/database-entry-citation|1.0.0-ballot3'. In addition, this is not an additional resource, and shouldn't have a resourceDefinition at all
-The value for resourceDefinition of 'http://hl7.org/fhir/StructureDefinition/PublicationRecord|1.0.0-ballot' does not match the required value of 'http://hl7.org/fhir/uv/ebm/StructureDefinition/database-citation|1.0.0-ballot3'. In addition, this is not an additional resource, and shouldn't have a resourceDefinition at all
-The value for resourceDefinition of 'http://hl7.org/fhir/StructureDefinition/PublicationRecord|1.0.0-ballot' does not match the required value of 'http://hl7.org/fhir/uv/ebm/StructureDefinition/dataset-citation|1.0.0-ballot3'. In addition, this is not an additional resource, and shouldn't have a resourceDefinition at all
-The value for resourceDefinition of 'http://hl7.org/fhir/StructureDefinition/PublicationRecord|1.0.0-ballot' does not match the required value of 'http://hl7.org/fhir/uv/ebm/StructureDefinition/book-citation|1.0.0-ballot3'. In addition, this is not an additional resource, and shouldn't have a resourceDefinition at all
-The value for resourceDefinition of 'http://hl7.org/fhir/StructureDefinition/PublicationRecord|1.0.0-ballot' does not match the required value of 'http://hl7.org/fhir/uv/ebm/StructureDefinition/book-part-citation|1.0.0-ballot3'. In addition, this is not an additional resource, and shouldn't have a resourceDefinition at all
-The value for resourceDefinition of 'http://hl7.org/fhir/StructureDefinition/PublicationRecord|1.0.0-ballot' does not match the required value of 'http://hl7.org/fhir/uv/ebm/StructureDefinition/web-page-citation|1.0.0-ballot3'. In addition, this is not an additional resource, and shouldn't have a resourceDefinition at all
-The value for resourceDefinition of 'http://hl7.org/fhir/StructureDefinition/PublicationRecord|1.0.0-ballot' does not match the required value of 'http://hl7.org/fhir/uv/ebm/StructureDefinition/preprint-citation|1.0.0-ballot3'. In addition, this is not an additional resource, and shouldn't have a resourceDefinition at all
-The value for resourceDefinition of 'http://hl7.org/fhir/StructureDefinition/PublicationRecord|1.0.0-ballot' does not match the required value of 'http://hl7.org/fhir/uv/ebm/StructureDefinition/software-citation|1.0.0-ballot3'. In addition, this is not an additional resource, and shouldn't have a resourceDefinition at all
+The value for resourceDefinition of 'http://hl7.org/fhir/StructureDefinition/PublicationRecord|1.0.0-ballot' does not match the required value of 'http://hl7.org/fhir/uv/ebm/StructureDefinition/journal-article-citation|1.0.0-snapshot'. In addition, this is not an additional resource, and shouldn't have a resourceDefinition at all
+The value for resourceDefinition of 'http://hl7.org/fhir/StructureDefinition/PublicationRecord|1.0.0-ballot' does not match the required value of 'http://hl7.org/fhir/uv/ebm/StructureDefinition/database-entry-citation|1.0.0-snapshot'. In addition, this is not an additional resource, and shouldn't have a resourceDefinition at all
+The value for resourceDefinition of 'http://hl7.org/fhir/StructureDefinition/PublicationRecord|1.0.0-ballot' does not match the required value of 'http://hl7.org/fhir/uv/ebm/StructureDefinition/database-citation|1.0.0-snapshot'. In addition, this is not an additional resource, and shouldn't have a resourceDefinition at all
+The value for resourceDefinition of 'http://hl7.org/fhir/StructureDefinition/PublicationRecord|1.0.0-ballot' does not match the required value of 'http://hl7.org/fhir/uv/ebm/StructureDefinition/dataset-citation|1.0.0-snapshot'. In addition, this is not an additional resource, and shouldn't have a resourceDefinition at all
+The value for resourceDefinition of 'http://hl7.org/fhir/StructureDefinition/PublicationRecord|1.0.0-ballot' does not match the required value of 'http://hl7.org/fhir/uv/ebm/StructureDefinition/book-citation|1.0.0-snapshot'. In addition, this is not an additional resource, and shouldn't have a resourceDefinition at all
+The value for resourceDefinition of 'http://hl7.org/fhir/StructureDefinition/PublicationRecord|1.0.0-ballot' does not match the required value of 'http://hl7.org/fhir/uv/ebm/StructureDefinition/book-part-citation|1.0.0-snapshot'. In addition, this is not an additional resource, and shouldn't have a resourceDefinition at all
+The value for resourceDefinition of 'http://hl7.org/fhir/StructureDefinition/PublicationRecord|1.0.0-ballot' does not match the required value of 'http://hl7.org/fhir/uv/ebm/StructureDefinition/web-page-citation|1.0.0-snapshot'. In addition, this is not an additional resource, and shouldn't have a resourceDefinition at all
+The value for resourceDefinition of 'http://hl7.org/fhir/StructureDefinition/PublicationRecord|1.0.0-ballot' does not match the required value of 'http://hl7.org/fhir/uv/ebm/StructureDefinition/preprint-citation|1.0.0-snapshot'. In addition, this is not an additional resource, and shouldn't have a resourceDefinition at all
+The value for resourceDefinition of 'http://hl7.org/fhir/StructureDefinition/PublicationRecord|1.0.0-ballot' does not match the required value of 'http://hl7.org/fhir/uv/ebm/StructureDefinition/software-citation|1.0.0-snapshot'. In addition, this is not an additional resource, and shouldn't have a resourceDefinition at all
 
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 #  (And include comments like this justifying why) 
@@ -73,10 +73,10 @@ Reference to draft CodeSystem http://hl7.org/fhir/citation-artifact-classifier|6
 Reference to draft CodeSystem http://hl7.org/fhir/definition-method|6.0.0-ballot3
 
 # Suppressing message that a slice is not found in a base Profile (but it is used in a derivative Profile) in a Resource mapped to 2 Profiles
-This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report-package|1.0.0-ballot3 (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report-package|1.0.0-snapshot (this may not be a problem, but you should check that it's not intended to match a slice)
 
 # Suppressing message that a slice is not found in the ResearchStudyDataDictionary Profile because the Profile does not specify section codes for descriptive sections
-This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/research-study-data-dictionary|1.0.0-ballot3 (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/research-study-data-dictionary|1.0.0-snapshot (this may not be a problem, but you should check that it's not intended to match a slice)
 
 # Suppressing warnings about the content of an actual ValueSet used for example purposes, as this was based on a real ValueSet that we are not able to revise
 No definition can be found for the system http://fhir.de/CodeSystem/bfarm/icd-10-gm, and the property 'child' is not a generally known property, so the property might not be valid, or understood by the terminology ecosystem. In case it's useful, the list of generally known properties for all systems is concept,code,status,inactive,effectiveDate,deprecationDate,retirementDate,notSelectable,synonym,comment,itemWeight
@@ -150,22 +150,22 @@ This element does not match any known slice defined in the profile http://hl7.or
 Error from https://tx.fhir.org/r5: Error: A definition for CodeSystem 'http://fhir.de/CodeSystem/bfarm/icd-10-gm' version '2025' could not be found, so the value set cannot be expanded. No versions of this code system are known
 
 # Suppressing warnings about unrecognized slices in Profiles of Composition -- the examples include additional data that are not part of the Profile constraints
-This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-measure-report|1.0.0-ballot3 (this may not be a problem, but you should check that it's not intended to match a slice)
-This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/dataset-citation|1.0.0-ballot3 (this may not be a problem, but you should check that it's not intended to match a slice)
-This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/database-entry-citation|1.0.0-ballot3 (this may not be a problem, but you should check that it's not intended to match a slice)
-This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/preprint-citation|1.0.0-ballot3 (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-measure-report|1.0.0-snapshot (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/dataset-citation|1.0.0-snapshot (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/database-entry-citation|1.0.0-snapshot (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/preprint-citation|1.0.0-snapshot (this may not be a problem, but you should check that it's not intended to match a slice)
 
 # Suppressing warnings regarding multiple choices of profiles in references from contained resources to other contained resources -- the default option used for checking from the IG publisher is not the actual profile used in the examples and the actual profile is one of the other options
-Found multiple matching profiles for #BG000 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group|1.0.0-ballot3, http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group|1.0.0-ballot3, http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group|1.0.0-ballot3
-Found multiple matching profiles for #BG001 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group|1.0.0-ballot3, http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group|1.0.0-ballot3, http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group|1.0.0-ballot3
-Found multiple matching profiles for #BG002 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group|1.0.0-ballot3, http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group|1.0.0-ballot3, http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group|1.0.0-ballot3
-Found multiple matching profiles for #FG000 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group|1.0.0-ballot3, http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group|1.0.0-ballot3, http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group|1.0.0-ballot3
-Found multiple matching profiles for #FG001 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group|1.0.0-ballot3, http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group|1.0.0-ballot3, http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group|1.0.0-ballot3
-Details for #BG000 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group|1.0.0-ballot3
-Details for #BG001 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group|1.0.0-ballot3
-Details for #BG002 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group|1.0.0-ballot3
-Details for #FG000 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group|1.0.0-ballot3
-Details for #FG001 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group|1.0.0-ballot3
+Found multiple matching profiles for #BG000 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group|1.0.0-snapshot, http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group|1.0.0-snapshot, http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group|1.0.0-snapshot
+Found multiple matching profiles for #BG001 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group|1.0.0-snapshot, http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group|1.0.0-snapshot, http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group|1.0.0-snapshot
+Found multiple matching profiles for #BG002 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group|1.0.0-snapshot, http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group|1.0.0-snapshot, http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group|1.0.0-snapshot
+Found multiple matching profiles for #FG000 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group|1.0.0-snapshot, http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group|1.0.0-snapshot, http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group|1.0.0-snapshot
+Found multiple matching profiles for #FG001 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group|1.0.0-snapshot, http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group|1.0.0-snapshot, http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group|1.0.0-snapshot
+Details for #BG000 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group|1.0.0-snapshot
+Details for #BG001 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group|1.0.0-snapshot
+Details for #BG002 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group|1.0.0-snapshot
+Details for #FG000 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group|1.0.0-snapshot
+Details for #FG001 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group|1.0.0-snapshot
 
 # Suppressing warnings about unknown Profile where we reference a Profile from the Vulcan UDP IG which is not yet published
 Profile reference 'http://hl7.org/fhir/uv/pharmaceutical-research-protocol/StructureDefinition/m11-research-study-profile' has not been checked because it could not be found, and the validator is set to not fetch unknown profiles
@@ -196,9 +196,9 @@ None of the codings provided are in the value set 'FHIR Document Type Codes' (ht
 None of the codings provided are in the value set 'FHIR Document Type Codes' (http://hl7.org/fhir/ValueSet/doc-typecodes|6.0.0-ballot3), and a coding is recommended to come from this value set (codes = http://loinc.org#35528-9)
 
 # Suppressing errors and information messages because tx.fhir.org is using SEVCO 2.0 and not 3.0, and that will be fixed once it updates
-None of the codings provided are in the value set 'EvidenceVariable Handling Extension Value Set' (https://fevir.net/resources/ValueSet/383075|1.0.0-ballot3), and a coding is recommended to come from this value set (codes = https://fevir.net/sevco#STATO:0000090)
-None of the codings provided are in the value set 'EvidenceVariable Handling Extension Value Set' (https://fevir.net/resources/ValueSet/383075|1.0.0-ballot3), and a coding is recommended to come from this value set (codes = https://fevir.net/sevco#STATO:0000251)
-None of the codings provided are in the value set 'EvidenceVariable Handling Extension Value Set' (https://fevir.net/resources/ValueSet/383075|1.0.0-ballot3), and a coding is recommended to come from this value set (codes = https://fevir.net/sevco#STATO:0000724)
+None of the codings provided are in the value set 'EvidenceVariable Handling Extension Value Set' (https://fevir.net/resources/ValueSet/383075|1.0.0-snapshot), and a coding is recommended to come from this value set (codes = https://fevir.net/sevco#STATO:0000090)
+None of the codings provided are in the value set 'EvidenceVariable Handling Extension Value Set' (https://fevir.net/resources/ValueSet/383075|1.0.0-snapshot), and a coding is recommended to come from this value set (codes = https://fevir.net/sevco#STATO:0000251)
+None of the codings provided are in the value set 'EvidenceVariable Handling Extension Value Set' (https://fevir.net/resources/ValueSet/383075|1.0.0-snapshot), and a coding is recommended to come from this value set (codes = https://fevir.net/sevco#STATO:0000724)
 The System URI could not be determined for the code 'STATO:0000090' in the ValueSet 'http://hl7.org/fhir/ValueSet/variable-handling|6.0.0-ballot3'
 The System URI could not be determined for the code 'STATO:0000251' in the ValueSet 'http://hl7.org/fhir/ValueSet/variable-handling|6.0.0-ballot3'
 The System URI could not be determined for the code 'STATO:0000724' in the ValueSet 'http://hl7.org/fhir/ValueSet/variable-handling|6.0.0-ballot3'
@@ -214,11 +214,11 @@ This property must be a simple value, not an Object (type at ArtifactAssessment.
 The property type must be an Object, not a Primitive property (at PublicationRecord.relatesTo[0].type)
 PublicationRecord.relatesTo.type: minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/PublicationRecord|1.0.0-ballot)
 PublicationRecord.relatesTo.type: minimum required = 1, but only found 0%
-ArtifactAssessment.content:forWhom.relatesTo.type: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-importance|1.0.0-ballot3)
+ArtifactAssessment.content:forWhom.relatesTo.type: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-importance|1.0.0-snapshot)
 ArtifactAssessment.content:forWhom.relatesTo.type: minimum required = 1, but only found 0%
-ArtifactAssessment.relatesTo.type: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-importance|1.0.0-ballot3)
+ArtifactAssessment.relatesTo.type: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/ebm/StructureDefinition/outcome-importance|1.0.0-snapshot)
 ArtifactAssessment.relatesTo.type: minimum required = 1, but only found 0%
-ResearchStudy.relatesTo.type: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/ebm/StructureDefinition/study-registry-record|1.0.0-ballot3)
+ResearchStudy.relatesTo.type: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/ebm/StructureDefinition/study-registry-record|1.0.0-snapshot)
 ResearchStudy.relatesTo.type: minimum required = 1, but only found 0%
 This property must be a simple value, not an Object (handling at ResearchStudy.contained[0].handling)
 This property must be a simple value, not an Object (handling at ResearchStudy.contained[1].handling)
@@ -227,7 +227,7 @@ This property must be a simple value, not an Object (handling at ResearchStudy.c
 This property must be a simple value, not an Object (handling at ResearchStudy.contained[4].handling)
 This property must be a simple value, not an Object (handling at EvidenceVariable.handling)
 This property must be a simple value, not an Object (handling at Composition.contained[%
-EvidenceVariable.handling: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3)
+EvidenceVariable.handling: minimum required = 1, but only found 0 (from http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot)
 EvidenceVariable.handling: minimum required = 1, but only found 0%
 Unrecognized property 'relativeTime'
 Unrecognized property 'determiner'
@@ -268,161 +268,161 @@ Details for #NCT03421379-BaselineMeasure%
 Unable to find a profile match for #NCT03421379-BaselineMeasure%
 Details for #NCT03640312-AllCauseMortality matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-AllCauseMortality among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
-Details for #NCT03640312-AllCauseMortality matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
+Details for #NCT03640312-AllCauseMortality matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot
 Details for #NCT03640312-SeriousAdverseEvents matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-SeriousAdverseEvents among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
-Details for #NCT03640312-SeriousAdverseEvents matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
+Details for #NCT03640312-SeriousAdverseEvents matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot
 Details for #NCT03640312-OtherAdverseEvents matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-OtherAdverseEvents among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
-Details for #NCT03640312-OtherAdverseEvents matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvents matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot
 Details for #NCT03640312-SeriousAdverseEvent-0 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-SeriousAdverseEvent-0 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
-Details for #NCT03640312-SeriousAdverseEvent-0 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
+Details for #NCT03640312-SeriousAdverseEvent-0 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot
 Details for #NCT03640312-SeriousAdverseEvent-1 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-SeriousAdverseEvent-1 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
-Details for #NCT03640312-SeriousAdverseEvent-1 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
+Details for #NCT03640312-SeriousAdverseEvent-1 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot
 Details for #NCT03640312-OtherAdverseEvent-0 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-OtherAdverseEvent-0 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
-Details for #NCT03640312-OtherAdverseEvent-0 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-0 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot
 Details for #NCT03640312-OtherAdverseEvent-1 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-OtherAdverseEvent-1 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
-Details for #NCT03640312-OtherAdverseEvent-1 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-1 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot
 Details for #NCT03640312-OtherAdverseEvent-2 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-OtherAdverseEvent-2 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
-Details for #NCT03640312-OtherAdverseEvent-2 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-2 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot
 Details for #NCT03640312-OtherAdverseEvent-3 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-OtherAdverseEvent-3 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
-Details for #NCT03640312-OtherAdverseEvent-3 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-3 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot
 Details for #NCT03640312-OtherAdverseEvent-4 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-OtherAdverseEvent-4 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
-Details for #NCT03640312-OtherAdverseEvent-4 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-4 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot
 Details for #NCT03640312-OtherAdverseEvent-5 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-OtherAdverseEvent-5 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
-Details for #NCT03640312-OtherAdverseEvent-5 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-5 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot
 Details for #NCT03640312-OtherAdverseEvent-6 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-OtherAdverseEvent-6 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
-Details for #NCT03640312-OtherAdverseEvent-6 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-6 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot
 Details for #NCT03640312-OtherAdverseEvent-7 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-OtherAdverseEvent-7 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
-Details for #NCT03640312-OtherAdverseEvent-7 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-7 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot
 Details for #NCT03640312-OtherAdverseEvent-8 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-OtherAdverseEvent-8 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
-Details for #NCT03640312-OtherAdverseEvent-8 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-8 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot
 Details for #NCT03640312-OtherAdverseEvent-9 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-OtherAdverseEvent-9 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
-Details for #NCT03640312-OtherAdverseEvent-9 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-9 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot
 Details for #NCT03640312-OtherAdverseEvent-10 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-OtherAdverseEvent-10 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
-Details for #NCT03640312-OtherAdverseEvent-10 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-10 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot
 Details for #NCT03640312-OtherAdverseEvent-11 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-OtherAdverseEvent-11 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
-Details for #NCT03640312-OtherAdverseEvent-11 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-11 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot
 Details for #NCT03640312-OtherAdverseEvent-12 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-OtherAdverseEvent-12 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
-Details for #NCT03640312-OtherAdverseEvent-12 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-12 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot
 Details for #NCT03640312-OtherAdverseEvent-13 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-OtherAdverseEvent-13 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
-Details for #NCT03640312-OtherAdverseEvent-13 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
-Details for #NCT03640312-OtherAdverseEvent-13 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3Details for #NCT03640312-OtherAdverseEvent-14 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-13 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot
+Details for #NCT03640312-OtherAdverseEvent-13 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshotDetails for #NCT03640312-OtherAdverseEvent-14 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-OtherAdverseEvent-14 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
-Details for #NCT03640312-OtherAdverseEvent-14 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-14 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot
 Details for #NCT03640312-OtherAdverseEvent-14 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
-Details for #NCT03640312-OtherAdverseEvent-14 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3Details for #NCT03640312-OtherAdverseEvent-15 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-14 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshotDetails for #NCT03640312-OtherAdverseEvent-15 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-OtherAdverseEvent-15 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
-Details for #NCT03640312-OtherAdverseEvent-15 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-15 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot
 Details for #NCT03640312-OtherAdverseEvent-15 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
-Details for #NCT03640312-OtherAdverseEvent-15 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3Details for #NCT03640312-OtherAdverseEvent-16 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-15 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshotDetails for #NCT03640312-OtherAdverseEvent-16 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-OtherAdverseEvent-16 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
-Details for #NCT03640312-OtherAdverseEvent-16 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-16 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot
 Details for #NCT03640312-OtherAdverseEvent-16 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
-Details for #NCT03640312-OtherAdverseEvent-16 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3Details for #NCT03640312-OtherAdverseEvent-17 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-16 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshotDetails for #NCT03640312-OtherAdverseEvent-17 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-OtherAdverseEvent-17 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
-Details for #NCT03640312-OtherAdverseEvent-17 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-17 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot
 Details for #NCT03640312-OtherAdverseEvent-17 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
-Details for #NCT03640312-OtherAdverseEvent-17 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3Details for #NCT03640312-OtherAdverseEvent-18 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-17 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshotDetails for #NCT03640312-OtherAdverseEvent-18 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-OtherAdverseEvent-18 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
-Details for #NCT03640312-OtherAdverseEvent-18 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-18 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot
 Details for #NCT03640312-OtherAdverseEvent-18 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
-Details for #NCT03640312-OtherAdverseEvent-18 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3Details for #NCT03640312-OtherAdverseEvent-19 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-18 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshotDetails for #NCT03640312-OtherAdverseEvent-19 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-OtherAdverseEvent-19 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
-Details for #NCT03640312-OtherAdverseEvent-19 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-19 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot
 Details for #NCT03640312-OtherAdverseEvent-19 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
-Details for #NCT03640312-OtherAdverseEvent-19 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3Details for #NCT03640312-OtherAdverseEvent-20 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-19 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshotDetails for #NCT03640312-OtherAdverseEvent-20 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-OtherAdverseEvent-20 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
-Details for #NCT03640312-OtherAdverseEvent-20 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-20 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot
 Details for #NCT03640312-OtherAdverseEvent-20 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
-Details for #NCT03640312-OtherAdverseEvent-20 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3Details for #NCT03640312-OtherAdverseEvent-21 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-20 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshotDetails for #NCT03640312-OtherAdverseEvent-21 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-OtherAdverseEvent-21 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
-Details for #NCT03640312-OtherAdverseEvent-21 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-21 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot
 Details for #NCT03640312-OtherAdverseEvent-21 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
-Details for #NCT03640312-OtherAdverseEvent-21 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3Details for #NCT03640312-OtherAdverseEvent-22 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-21 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshotDetails for #NCT03640312-OtherAdverseEvent-22 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-OtherAdverseEvent-22 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
-Details for #NCT03640312-OtherAdverseEvent-22 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-22 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot
 Details for #NCT03640312-OtherAdverseEvent-22 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
-Details for #NCT03640312-OtherAdverseEvent-22 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3Details for #NCT03640312-OtherAdverseEvent-23 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-22 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshotDetails for #NCT03640312-OtherAdverseEvent-23 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-OtherAdverseEvent-23 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
-Details for #NCT03640312-OtherAdverseEvent-23 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-23 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot
 Details for #NCT03640312-OtherAdverseEvent-23 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
-Details for #NCT03640312-OtherAdverseEvent-23 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3Details for #NCT03640312-OtherAdverseEvent-24 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-23 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshotDetails for #NCT03640312-OtherAdverseEvent-24 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-OtherAdverseEvent-24 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
-Details for #NCT03640312-OtherAdverseEvent-24 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-24 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot
 Details for #NCT03640312-OtherAdverseEvent-24 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
-Details for #NCT03640312-OtherAdverseEvent-24 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3Details for #NCT03640312-OtherAdverseEvent-25 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-24 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshotDetails for #NCT03640312-OtherAdverseEvent-25 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-OtherAdverseEvent-25 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
-Details for #NCT03640312-OtherAdverseEvent-25 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-25 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot
 Details for #NCT03640312-OtherAdverseEvent-25 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
-Details for #NCT03640312-OtherAdverseEvent-25 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3Details for #NCT03640312-OtherAdverseEvent-26 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-25 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshotDetails for #NCT03640312-OtherAdverseEvent-26 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-OtherAdverseEvent-26 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
-Details for #NCT03640312-OtherAdverseEvent-26 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-26 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot
 Details for #NCT03640312-OtherAdverseEvent-26 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
-Details for #NCT03640312-OtherAdverseEvent-26 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3Details for #NCT03640312-OtherAdverseEvent-27 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-26 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshotDetails for #NCT03640312-OtherAdverseEvent-27 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-OtherAdverseEvent-27 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
-Details for #NCT03640312-OtherAdverseEvent-27 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-27 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot
 Details for #NCT03640312-OtherAdverseEvent-27 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
-Details for #NCT03640312-OtherAdverseEvent-27 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3Details for #NCT03640312-OtherAdverseEvent-28 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-27 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshotDetails for #NCT03640312-OtherAdverseEvent-28 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-OtherAdverseEvent-28 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
-Details for #NCT03640312-OtherAdverseEvent-28 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-28 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot
 Details for #NCT03640312-OtherAdverseEvent-28 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
-Details for #NCT03640312-OtherAdverseEvent-28 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3Details for #NCT03640312-OtherAdverseEvent-29 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-28 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshotDetails for #NCT03640312-OtherAdverseEvent-29 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-OtherAdverseEvent-29 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
-Details for #NCT03640312-OtherAdverseEvent-29 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-29 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot
 Details for #NCT03640312-OtherAdverseEvent-29 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
-Details for #NCT03640312-OtherAdverseEvent-29 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3Details for #NCT03640312-OtherAdverseEvent-30 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-29 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshotDetails for #NCT03640312-OtherAdverseEvent-30 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-OtherAdverseEvent-30 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
-Details for #NCT03640312-OtherAdverseEvent-30 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-30 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot
 Details for #NCT03640312-OtherAdverseEvent-30 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
-Details for #NCT03640312-OtherAdverseEvent-30 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3Details for #NCT03640312-OtherAdverseEvent-31 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-30 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshotDetails for #NCT03640312-OtherAdverseEvent-31 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-OtherAdverseEvent-31 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
-Details for #NCT03640312-OtherAdverseEvent-31 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-31 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot
 Details for #NCT03640312-OtherAdverseEvent-31 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
-Details for #NCT03640312-OtherAdverseEvent-31 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3Details for #NCT03640312-OtherAdverseEvent-32 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-31 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshotDetails for #NCT03640312-OtherAdverseEvent-32 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-OtherAdverseEvent-32 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
-Details for #NCT03640312-OtherAdverseEvent-32 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-32 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot
 Details for #NCT03640312-OtherAdverseEvent-32 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
-Details for #NCT03640312-OtherAdverseEvent-32 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3Details for #NCT03640312-OtherAdverseEvent-33 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-32 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshotDetails for #NCT03640312-OtherAdverseEvent-33 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-OtherAdverseEvent-33 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
-Details for #NCT03640312-OtherAdverseEvent-33 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-33 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot
 Details for #NCT03640312-OtherAdverseEvent-33 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
-Details for #NCT03640312-OtherAdverseEvent-33 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3Details for #NCT03640312-OtherAdverseEvent-34 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-33 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshotDetails for #NCT03640312-OtherAdverseEvent-34 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
 Unable to find a profile match for #NCT03640312-OtherAdverseEvent-34 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
-Details for #NCT03640312-OtherAdverseEvent-34 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvent-34 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshot
 Details for #NCT03640312-OtherAdverseEvent-34 matching against profile http://hl7.org/fhir/StructureDefinition/EvidenceVariable|6.0.0-ballot3
-Details for #NCT03640312-OtherAdverseEvent-34 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-ballot3Unable to find a profile match for #NCT03640312-AllCauseMortality among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
+Details for #NCT03640312-OtherAdverseEvent-34 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition|1.0.0-snapshotUnable to find a profile match for #NCT03640312-AllCauseMortality among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/variable-definition
 Unable to find a profile match for #NCT03640312-AllCauseMortality-EG000 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence, http://hl7.org/fhir/uv/ebm/StructureDefinition/non-comparative-evidence
-Details for #NCT03640312-AllCauseMortality-EG000 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence|1.0.0-ballot3
-Details for #NCT03640312-AllCauseMortality-EG000 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/non-comparative-evidence|1.0.0-ballot3
+Details for #NCT03640312-AllCauseMortality-EG000 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence|1.0.0-snapshot
+Details for #NCT03640312-AllCauseMortality-EG000 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/non-comparative-evidence|1.0.0-snapshot
 Unable to find a profile match for #NCT03640312-AllCauseMortality-EG001 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence, http://hl7.org/fhir/uv/ebm/StructureDefinition/non-comparative-evidence
-Details for #NCT03640312-AllCauseMortality-EG001 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence|1.0.0-ballot3
-Details for #NCT03640312-AllCauseMortality-EG001 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/non-comparative-evidence|1.0.0-ballot3
+Details for #NCT03640312-AllCauseMortality-EG001 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence|1.0.0-snapshot
+Details for #NCT03640312-AllCauseMortality-EG001 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/non-comparative-evidence|1.0.0-snapshot
 Unable to find a profile match for #NCT03640312-SeriousAdverseEvents-EG000 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence, http://hl7.org/fhir/uv/ebm/StructureDefinition/non-comparative-evidence
-Details for #NCT03640312-SeriousAdverseEvents-EG000 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence|1.0.0-ballot3
-Details for #NCT03640312-SeriousAdverseEvents-EG000 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/non-comparative-evidence|1.0.0-ballot3
+Details for #NCT03640312-SeriousAdverseEvents-EG000 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence|1.0.0-snapshot
+Details for #NCT03640312-SeriousAdverseEvents-EG000 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/non-comparative-evidence|1.0.0-snapshot
 Unable to find a profile match for #NCT03640312-SeriousAdverseEvents-EG001 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence, http://hl7.org/fhir/uv/ebm/StructureDefinition/non-comparative-evidence
-Details for #NCT03640312-SeriousAdverseEvents-EG001 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence|1.0.0-ballot3
-Details for #NCT03640312-SeriousAdverseEvents-EG001 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/non-comparative-evidence|1.0.0-ballot3
+Details for #NCT03640312-SeriousAdverseEvents-EG001 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence|1.0.0-snapshot
+Details for #NCT03640312-SeriousAdverseEvents-EG001 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/non-comparative-evidence|1.0.0-snapshot
 Unable to find a profile match for #NCT03640312-OtherAdverseEvents-EG000 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence, http://hl7.org/fhir/uv/ebm/StructureDefinition/non-comparative-evidence
-Details for #NCT03640312-OtherAdverseEvents-EG000 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence|1.0.0-ballot3
-Details for #NCT03640312-OtherAdverseEvents-EG000 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/non-comparative-evidence|1.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvents-EG000 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence|1.0.0-snapshot
+Details for #NCT03640312-OtherAdverseEvents-EG000 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/non-comparative-evidence|1.0.0-snapshot
 Unable to find a profile match for #NCT03640312-OtherAdverseEvents-EG001 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence, http://hl7.org/fhir/uv/ebm/StructureDefinition/non-comparative-evidence
-Details for #NCT03640312-OtherAdverseEvents-EG001 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence|1.0.0-ballot3
-Details for #NCT03640312-OtherAdverseEvents-EG001 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/non-comparative-evidence|1.0.0-ballot3
+Details for #NCT03640312-OtherAdverseEvents-EG001 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence|1.0.0-snapshot
+Details for #NCT03640312-OtherAdverseEvents-EG001 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/non-comparative-evidence|1.0.0-snapshot
