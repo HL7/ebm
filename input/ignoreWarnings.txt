@@ -239,7 +239,7 @@ None of the codings provided are in the value set 'Contact entity type' (http://
 None of the codings provided are in the value set 'Cited Artifact Classification Type' (http://terminology.hl7.org/ValueSet/cited-artifact-classification-type|1.0.0), and a coding is recommended to come from this value set (codes = https://fevir.net/sevco#SEVCO:01000)
 
 # Suppressing errors and information messages from contained resources due to them using the new R6ballot5 .handling element structure
-Details for # matching against profile http://hl7.org/fhir/StructureDefinition/ResearchStudy
+Details for # matching against profile http://hl7.org/fhir/StructureDefinition/ResearchStudy%
 Details for #NCT03640312-BaselineMeasure%
 Unable to find a profile match for #NCT03640312-BaselineMeasure%
 Details for #NCT03421379-OtherAdverseEvent%
