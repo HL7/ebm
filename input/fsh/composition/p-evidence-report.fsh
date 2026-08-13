@@ -28,11 +28,11 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Evidenc
 * relatesTo ^slicing.discriminator.path = "type"
 * relatesTo ^slicing.rules = #open
 * relatesTo contains citeAs 0..1 and partOf 0..* and derivedFrom 0..* and specificationOf 0..* and dependsOn 0..* and supportedWith 0..* and similarTo 0..*
-* relatesTo[citeAs].type = http://hl7.org/fhir/related-artifact-type#cite-as //TODO convert URL to http://terminology.hl7.org/CodeSystem/artifact-relationship-type
-* relatesTo[partOf].type = http://hl7.org/fhir/related-artifact-type#part-of
-* relatesTo[derivedFrom].type = http://hl7.org/fhir/related-artifact-type#derived-from
-* relatesTo[specificationOf].type = http://hl7.org/fhir/related-artifact-type#specification-of
-* relatesTo[dependsOn].type = http://hl7.org/fhir/related-artifact-type#depends-on
-* relatesTo[supportedWith].type = http://hl7.org/fhir/related-artifact-type#supported-with
-* relatesTo[similarTo].type = http://hl7.org/fhir/related-artifact-type#similar-to
+* relatesTo[citeAs].type = http://terminology.hl7.org/CodeSystem/artifact-relationship-type#cite-as //TODO convert URL to http://terminology.hl7.org/CodeSystem/artifact-relationship-type
+* relatesTo[partOf].type = http://terminology.hl7.org/CodeSystem/artifact-relationship-type#part-of
+* relatesTo[derivedFrom].type = http://terminology.hl7.org/CodeSystem/artifact-relationship-type#derived-from
+* relatesTo[specificationOf].type = http://terminology.hl7.org/CodeSystem/artifact-relationship-type#specification-of
+* relatesTo[dependsOn].type = http://terminology.hl7.org/CodeSystem/artifact-relationship-type#depends-on
+* relatesTo[supportedWith].type = http://terminology.hl7.org/CodeSystem/artifact-relationship-type#supported-with
+* relatesTo[similarTo].type = http://terminology.hl7.org/CodeSystem/artifact-relationship-type#similar-to
 * section.code from $ebm-evidence-report-section-code (extensible)
