@@ -11,4 +11,4 @@ Description: "Profile of EvidenceVariable for Evidence Based Medicine IG.  The P
 * relatesTo contains supportedWith 0..*
 * relatesTo[supportedWith].type = http://terminology.hl7.org/CodeSystem/artifact-relationship-type#supported-with
 * relatesTo[supportedWith].targetReference only Reference(ParticipantFlowReasonEvidenceVariable)
-* handling = #boolean
+* handling = https://fevir.net/sevco#STATO:0000724 "boolean variable"
