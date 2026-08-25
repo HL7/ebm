@@ -152,6 +152,9 @@ Profile reference 'http://hl7.org/fhir/uv/pharmaceutical-research-protocol/Struc
 # Suppressing n/a errors for IG setup per discussion with FMG QA review 
 This IG is version 6.0.0-ballot5, while the IG 'hl7.fhir.uv.ebm-incubator' is from version 6.0.0-ballot3
 
+# Suppressing information on draft CodeSystem with comment posted to Zulip https://chat.fhir.org/#narrow/channel/179252-IG-creation/topic/QA.20warn.20draft.20CodeSystem.20from.20ImplementationGuide.2Elicense/with/617682808
+Reference to draft CodeSystem http://hl7.org/fhir/spdx-license|84728b7
+
 # Suppressing warning that most code systems will need to move to THO, as we are aware and this is a low-maturity IG for now
 Most code systems defined in HL7 IGs will need to move to THO later during the process. Consider giving this code system a THO URL now (See https://confluence.hl7.org/display/TSMG/Terminology+Play+Book, and/or talk to TSMG)
 
