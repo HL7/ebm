@@ -51,7 +51,7 @@ Description: "Profile of ArtifactAssessment for Evidence Based Medicine IG. The 
 * content[relativeImportance].quantity.code 1..1
 * content[relativeImportance].quantity.code = #%
 * content[forWhom].type = https://fevir.net/resources/CodeSystem/179423#population "Population"
-* content[forWhom].relatesTo.type = #supports
+* content[forWhom].relatesTo.type = http://terminology.hl7.org/CodeSystem/artifact-relationship-type#supports "Supports"
 * content[forWhom].relatesTo.targetReference only Reference(Group or Patient or Practitioner or PractitionerRole or RelatedPerson or CareTeam or Device or HealthcareService or Organization)
 * content[justification].type = https://fevir.net/resources/CodeSystem/179423#justification "Justification"
 * content.freeToShare
