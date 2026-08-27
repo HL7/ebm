@@ -7,4 +7,5 @@ Description: "Profile of ActivityDefinition for Evidence Based Medicine IG. The 
 * ^extension[$ext-standards-status].valueCode = #trial-use
 * extension contains CharacteristicTiming named timingRelativeTime 0..1
 * extension contains ArtifactPublicationStatus named publicationStatus 0..1
+* extension contains CiteAs named citeAs 0..1
 * topic 0..0
