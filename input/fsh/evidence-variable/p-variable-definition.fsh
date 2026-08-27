@@ -6,7 +6,6 @@ Description: "Profile of EvidenceVariable for Evidence Based Medicine IG. The Va
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #trial-use
 * extension contains ArtifactPublicationStatus named publicationStatus 0..1
-* extension contains EvidenceVariableHandlingDetail named handlingDetail 0..*
 * relatesTo
   * extension contains RelatesToWithQuotation named quotation 0..1
   * extension contains RelatesToClassifier named classifier 0..1

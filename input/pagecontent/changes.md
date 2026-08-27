@@ -86,7 +86,7 @@ New terminologies (CodeSystem and ValueSet pairs) were created for EvidenceRatin
 
 ### Changes to Extensions
 
-Adjustments were made to match the current (build) version of FHIR R6 as needed by adding or removing extensions upon FHIR version 6.0.0-ballot3.
+Adjustments were made to match the current (build) version of FHIR R6 as needed by adding or removing extensions upon FHIR version 6.0.0-ballot3. EvidenceVariableHandlingDetail extension was removed as it is no longer needed in FHIR version 6.0.0-ballot5.
 
 Extensions added include ArtifactPublicationStatus, ArtifactRecorder, GuidelineRegistration, RelatesToClassifier, ResearchStudyIsLowInterventionTrial, and ResearchStudyIsRareDisease. 
 
