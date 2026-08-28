@@ -368,3 +368,11 @@ Details for #NCT03640312-OtherAdverseEvents-EG000 matching against profile http:
 Unable to find a profile match for #NCT03640312-OtherAdverseEvents-EG001 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence, http://hl7.org/fhir/uv/ebm/StructureDefinition/non-comparative-evidence
 Details for #NCT03640312-OtherAdverseEvents-EG001 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/comparative-evidence|1.0.0-snapshot
 Details for #NCT03640312-OtherAdverseEvents-EG001 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/non-comparative-evidence|1.0.0-snapshot
+
+# Suppressing warning about multiple matching profiles - in Compositions with contained resources of Evidence and Group, the references from Evidence to Group have multiple options for matching profiles (some of which match the referenced Group) - the data appears correct
+Found multiple matching profiles for #BG000 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group|1.0.0-ballot3, http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group|1.0.0-ballot3, http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group|1.0.0-ballot3
+Details for #BG000 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group|1.0.0-ballot3
+Found multiple matching profiles for #BG001 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group|1.0.0-ballot3, http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group|1.0.0-ballot3, http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group|1.0.0-ballot3
+Details for #BG001 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group|1.0.0-ballot3
+Found multiple matching profiles for #BG002 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group|1.0.0-ballot3, http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group|1.0.0-ballot3, http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group|1.0.0-ballot3
+Details for #BG002 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group|1.0.0-ballot3
