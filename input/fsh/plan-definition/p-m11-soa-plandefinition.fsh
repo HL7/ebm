@@ -6,6 +6,7 @@ Description: "Profile of PlanDefinition for temporary testing for coordination w
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #trial-use
 * extension contains ArtifactPublicationStatus named publicationStatus 0..1
+* extension contains CiteAs named citeAs 0..1
 * topic 0..0
 * action
   * extension contains CharacteristicTiming named timingRelativeTime 0..1
