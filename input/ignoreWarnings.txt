@@ -7,6 +7,10 @@ The ImplementationGuide is based on FHIR version 6.0.0-ballot5 but package hl7.t
 #  (And include comments like this justifying why) 
 # See https://github.com/FHIR/sample-ig/blob/master/input/ignoreWarnings.txt for examples
 
+# Suppressing warnings about slice not recognized in EvidenceReportPackage Profile - it is found in the child Guideline Profile
+This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report-package|1.0.0-ballot3 (this may not be a problem, but you should check that it's not intended to match a slice)
+This element does not match any known slice defined in the profile http://hl7.org/fhir/uv/ebm/StructureDefinition/evidence-report-package|1.0.0-ballot3 (this may not be a problem, but you should check that it's not intended to match a slice)
+
 # Suppressing warning that text data hyperlinking to an unresolvable web location that we got from Jira, it may be resolvable after ballotting
 No definition could be found for URL value 'http://hl7.org/fhir/uv/ebm/1.0.0-202609-ballot3'
 Hyperlink 'http://hl7.org/fhir/uv/ebm/1.0.0-202609-ballot3' at 'div/blockquote/blockquote/p/a' for 'http://hl7.org/fhir/uv/ebm/1.0.0-202609-ballot3' does not resolve
