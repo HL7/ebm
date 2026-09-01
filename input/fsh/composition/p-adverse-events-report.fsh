@@ -5,9 +5,6 @@ Description: "Profile of Composition for Evidence Based Medicine IG. The Adverse
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #trial-use
-* type.coding 1..1
-* type.coding = https://fevir.net/resources/CodeSystem/179423#AdverseEventsReport "AdverseEventsReport"
-* type.text = "Adverse Events Report"
 * section ^slicing.discriminator.type = #value
 * section ^slicing.discriminator.path = "code.coding"
 * section ^slicing.rules = #open
