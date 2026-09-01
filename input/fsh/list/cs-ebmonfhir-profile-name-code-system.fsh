@@ -337,6 +337,10 @@ Description: "Profile Names in the Evidence Based Medicine on FHIR (EBMonFHIR) I
 * ^concept[108].code = #M11ReportSection14
 * ^concept[108].display = "M11ReportSection14"
 * ^concept[108].definition = "Profile of Composition for Evidence Based Medicine IG. The M11ReportSection14 Profile is used for section 14 (References) for the International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Clinical Electronic Structured Harmonised Protocol (CeSHarP) M11 Technical Specification."
+* ^concept[109].code = #AdverseEventsReport
+* ^concept[109].display = "AdverseEventsReport"
+* ^concept[109].definition = "Profile of Composition for Evidence Based Medicine IG. The AdverseEventsReport Profile is used for an evidence report including the findings for any number of outcome measures representing adverse events in a research study."
+
 
 
 

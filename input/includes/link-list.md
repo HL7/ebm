@@ -1,5 +1,6 @@
 [AbsenceOfExposureDefinition]: StructureDefinition-absence-of-exposure-definition.html
 [Adaptation]: StructureDefinition-adaptation.html
+[AdverseEventsReport]: StructureDefinition-adverse-events-report.html
 [ArtifactAssessmentCompared]: StructureDefinition-artifact-assessment-compared.html
 [ArtifactAssessmentDateAsRating]: StructureDefinition-artifact-assessment-date-as-rating.html
 [BaselineMeasureEvidence]: StructureDefinition-baseline-measure-evidence.html

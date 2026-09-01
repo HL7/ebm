@@ -160,7 +160,8 @@ Profiles of <b>Composition Resource</b> include:
   - Profiles of <b>EvidenceReport</b> with Results sections where each results section instance has a focus on a measured variable and entry instances to represent evidence about that measured variable for different groups include:
     - <b>BaselineMeasureReport</b> is used for an evidence report including the findings for any number of baseline measures in a research study.
     - <b>ParticipantFlowReport</b> is used for an evidence report including the counts (and proportions) for any number of participant flow measures in a research study.
-    - <b>OutcomeMeasureReport</b> is used for an evidence report including the findings for any number of outcome measures in a research study.
+    - <b>OutcomeMeasureReport</b> is used for an evidence report including the findings for any number of outcome measures in a research study. 
+    - <b>AdverseEventsReport</b> which is a Profile of <b>OutcomeMeasureReport</b> where the outcome measures are adverse events.
     - <b>SummaryOfFindings</b> is used for an evidence report combining <b>Evidence</b> and <b>EvidenceVariable Resources</b>, organized around <b>VariableDefinition</b> (Profile of EvidenceVariable), to represent the summary of findings of comparative evidence. 
 
 ### Other Resources

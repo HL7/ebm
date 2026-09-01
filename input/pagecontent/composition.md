@@ -129,6 +129,14 @@ The Composition.type value is set to an "Outcome Measure Report".
 
 The section element (Results section slice) applies constraints in which section.focus references are constrained to **[VariableDefinition Profile][VariableDefinition]** and section.entry references are constrained to **[NonComparativeEvidence Profile][NonComparativeEvidence]** or **[ComparativeEvidence Profile][ComparativeEvidence]**.
 
+### AdverseEventsReport Profile of Composition Resource
+
+The **[AdverseEventsReport Profile][AdverseEventsReport]** is a Profile of **[OutcomeMeasureReport Profile][OutcomeMeasureReport]** and is used for outcome measures representing adverse events.
+
+The Composition.type value is set to an "Adverse Events Report".
+
+Additional section slices include a 'Serious Events' and 'Other Events' slice that contains a Results section slice.
+
 ### SummaryOfFindings Profile of Composition Resource
 
 The **[SummaryOfFindings Profile][SummaryOfFindings]** is a Profile of **[EvidenceReport][EvidenceReport]** and is used for an evidence report combining <b>Evidence</b> and <b>EvidenceVariable Resources</b>, organized around **[VariableDefinition][VariableDefinition]** (Profile of EvidenceVariable), to represent the summary of findings of comparative evidence.

@@ -34,6 +34,8 @@ The ComparativeEvidenceReport Profile was modified to include a 'Study Sample' s
 
 A ComparativeEvidenceReportExpanded Profile was added to use ComparativeEvidenceReport as a base and add sections for 'Screened Group', 'Excluded Group', 'Baseline Measures', 'Participant Flow Measures', 'Baseline Characteristics', and 'Participant Flow'.
 
+An AdverseEventsReport Profile was added to use OutcomeMeasureReport as a base and add sections for 'Events Frequency Threshold', 'Events Time Frame', 'Events Description', 'Serious Events', and 'Other Events'.
+
 The Recommendation Profile was simplified to remove the Summary and Recommendation Specification sections.
 
 The SummaryOfNetEffect Profile was modified to include a SummaryOfFindings section slice which contains outcomeEntry section slices for each outcome, similar to the SummaryOfFindings Profile.
