@@ -133,8 +133,6 @@ The section element (Results section slice) applies constraints in which section
 
 The **[AdverseEventsReport Profile][AdverseEventsReport]** is a Profile of **[OutcomeMeasureReport Profile][OutcomeMeasureReport]** and is used for outcome measures representing adverse events.
 
-The Composition.type value is set to an "Adverse Events Report".
-
 Additional section slices include a 'Serious Events' and 'Other Events' slice that contains a Results section slice.
 
 ### SummaryOfFindings Profile of Composition Resource
