@@ -5,4 +5,13 @@ Description: "Profile of ResearchStudy for Evidence Based Medicine IG. The M11Re
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #trial-use
+* identifier.type from udp-identifier-type (extensible)
+* phase from ich-m11-trial-phase (required)
+* focus
+  * ^comment = "Expect MedicinalProductDefinition.name.type.code to be one of C71898 Proprietary name or C97054 Non-proprietary name"
+* classifier ^slicing.discriminator.type = #value
+* classifier ^slicing.discriminator.path = "code"
+* classifier ^slicing.rules = #open
+* classifier contains amendmentDetailsStatement 0..1
+* classifier[amendmentDetailsStatement] from ich-m11-amendment-details-statement (required)
 * associatedParty.role from udp-party-role-type (extensible)
