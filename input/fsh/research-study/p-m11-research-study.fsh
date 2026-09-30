@@ -5,6 +5,8 @@ Description: "Profile of ResearchStudy for Evidence Based Medicine IG. The M11Re
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #trial-use
+* extension contains ResearchStudyVersionDate named versionDate 0..1
+* extension contains ResearchStudyM11Approval named approval 0..1
 * identifier.type from udp-identifier-type (extensible)
 * phase from ich-m11-trial-phase (required)
 * focus
