@@ -11,9 +11,7 @@ Description: "Profile of ResearchStudy for Evidence Based Medicine IG. The M11Re
 * phase from ich-m11-trial-phase (required)
 * focus
   * ^comment = "Expect MedicinalProductDefinition.name.type.code to be one of C71898 Proprietary name or C97054 Non-proprietary name"
-* classifier ^slicing.discriminator.type = #value
-* classifier ^slicing.discriminator.path = "code"
-* classifier ^slicing.rules = #open
-* classifier contains amendmentDetailsStatement 0..1
-* classifier[amendmentDetailsStatement] from ich-m11-amendment-details-statement (required)
+* classifier ^binding[1].strength = #extensible
+* classifier ^binding[1].valueSet = ICHM11AmendmentDetailsStatement
+* classifier ^binding[1].description = "An additional binding for fixed values for the amendment details statement for the M11 report"
 * associatedParty.role from udp-party-role-type (extensible)
