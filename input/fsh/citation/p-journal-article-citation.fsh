@@ -21,7 +21,7 @@ Description: "Profile of PublicationRecord for Evidence Based Medicine IG. The J
     * classifier ^slicing.rules = #open
     * classifier contains journalArticle 1..1 MS
     * classifier[journalArticle].coding 1..1
-    * classifier[journalArticle].coding = http://terminology.hl7.org/CodeSystem/citation-artifact-classifier#D016428 "Journal Article"
+    * classifier[journalArticle].coding = https://www.nlm.nih.gov/mesh#D016428 "Journal Article"
   * classification[publishingModel].type.coding 1..1
   * classification[publishingModel].type.coding = http://terminology.hl7.org/CodeSystem/cited-artifact-classification-type#publishing-model "Publishing Model"
   * classification[publicationType].type.coding 1..1

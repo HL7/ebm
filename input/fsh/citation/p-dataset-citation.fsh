@@ -32,7 +32,7 @@ Description: "Profile of PublicationRecord for Evidence Based Medicine IG. The D
     * classifier ^slicing.rules = #open
     * classifier contains dataset 1..1 MS
     * classifier[dataset].coding 1..1
-    * classifier[dataset].coding = http://terminology.hl7.org/CodeSystem/citation-artifact-classifier#D064886 "Dataset"
+    * classifier[dataset].coding = https://www.nlm.nih.gov/mesh#D064886 "Dataset"
   * classification[studyDesign].type.coding 1..1
   * classification[studyDesign].type.coding = https://fevir.net/resources/CodeSystem/179423#study-design "Study Design"
   * classification[definedInText].type.coding 1..1

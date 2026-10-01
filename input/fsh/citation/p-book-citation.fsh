@@ -31,7 +31,7 @@ Description: "Profile of PublicationRecord for Evidence Based Medicine IG. The B
     * classifier ^slicing.rules = #open
     * classifier contains book 1..1 MS
     * classifier[book].coding 1..1
-    * classifier[book].coding = http://terminology.hl7.org/CodeSystem/citation-artifact-classifier#D001877 "Book"
+    * classifier[book].coding = https://www.nlm.nih.gov/mesh#D001877 "Book"
   * classification[publishingModel].type.coding 1..1
   * classification[publishingModel].type.coding = http://terminology.hl7.org/CodeSystem/cited-artifact-classification-type#publishing-model "Publishing Model"
   * classification[publicationType].type.coding 1..1

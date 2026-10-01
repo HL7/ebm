@@ -31,7 +31,7 @@ Description: "Profile of PublicationRecord for Evidence Based Medicine IG. The D
     * classifier ^slicing.rules = #open
     * classifier contains database 1..1 MS
     * classifier[database].coding 1..1
-    * classifier[database].coding = http://terminology.hl7.org/CodeSystem/citation-artifact-classifier#D019991 "Database"
+    * classifier[database].coding = https://www.nlm.nih.gov/mesh#D019991 "Database"
   * classification[definedInText].type.coding 1..1
   * classification[definedInText].type.coding = https://fevir.net/resources/CodeSystem/179423#defined-in-text "Defined in text"
 
