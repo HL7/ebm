@@ -36,3 +36,4 @@ Alias: $ext-relatedArtifact = http://hl7.org/fhir/StructureDefinition/artifact-r
 
 Alias: $ext-characteristic-method = http://hl7.org/fhir/6.0/StructureDefinition/extension-Group.characteristic.method
 Alias: $ext-researchStudy-studyRegistration = http://hl7.org/fhir/StructureDefinition/researchStudy-studyRegistration
+Alias: $NCIt = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
