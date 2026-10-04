@@ -16,4 +16,4 @@ Description: "These codes represent the types of role ResearchStudy.associatedPa
 * expansion.contains[4] = $NCIt#C215669 "Study Co-Sponsor"
 * expansion.contains[5] = $NCIt#C93478 "Study Legal Sponsor"
 * expansion.contains[6] = $NCIt#C156625 "Device Manufacturer"
-* expansion.contains[7] = $NCIt#C51876 "Sponsor Medical Expert"
+* expansion.contains[7] = $NCIt#C51876 "Sponsor Medical Expert" 
