@@ -1,5 +1,5 @@
-Extension: ResearchStudyM11AmendmentDetail
-Id: research-study-m11-amendment-detail
+Extension: M11AmendmentDetail
+Id: m11-amendment-detail
 Description: "Provides detail of a single change within an amendment."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds

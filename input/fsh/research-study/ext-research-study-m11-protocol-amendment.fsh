@@ -9,7 +9,7 @@ Description: "An amendment to a study protocol matching M11 template."
 * value[x] 0..0
 * . ^short = "An amendment to a study protocol"
 * . ^definition = "An amendment to a study protocol."
-* extension contains identifier 1..1 and previous 0..1 and scope 1..1 and country 0..* and region 0..* and site 0..* and approvalDate 0..1 and signature 0..1 and signatureUrl 0..1 and signatureMethod 0..1 and ResearchStudyM11AmendmentScopeImpact named scopeImpact 0..3 and primaryReason 0..1 and secondaryReason 0..* and summary 0..1 and substantialImpactSafety 0..1 and substantialImpactSafetyComment 0..1 and substantialImpactReliability 0..1 and substantialImpactReliabilityComment 0..1 and ResearchStudyM11AmendmentDetail named details 0..* and rationale 0..1 and description 0..1
+* extension contains identifier 1..1 and previous 0..1 and scope 1..1 and country 0..* and region 0..* and site 0..* and approvalDate 0..1 and signature 0..1 and signatureUrl 0..1 and signatureMethod 0..1 and M11AmendmentScopeImpact named scopeImpact 0..3 and primaryReason 0..1 and secondaryReason 0..* and summary 0..1 and substantialImpactSafety 0..1 and substantialImpactSafetyComment 0..1 and substantialImpactReliability 0..1 and substantialImpactReliabilityComment 0..1 and M11AmendmentDetail named details 0..* and rationale 0..1 and description 0..1
 * extension[identifier].value[x] only Identifier
   * ^short = "Amendment identifier"
   * ^definition = "Amendment identifier."

@@ -1,5 +1,5 @@
-Extension: ResearchStudyM11AmendmentScopeImpact
-Id: research-study-m11-amendment-scope-impact
+Extension: M11AmendmentScopeImpact
+Id: m11-amendment-scope-impact
 Description: "Provides number or percentage of each group affected by a single amendment."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
