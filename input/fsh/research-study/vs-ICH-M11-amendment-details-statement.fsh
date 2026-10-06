@@ -11,8 +11,9 @@ Description: "Terminology associated with whether or not a protocol has been ame
 * include $NCIt#C218486 "First Protocol Amendment"
 * include $NCIt#C218487 "Protocol Previously Amended, Details Presented"
 * include $NCIt#C218488 "Protocol Previously Amended See Summary of Changes Before the Table of Contents"
-* ^expansion.identifier = "urn:uuid:example-expansion-id"
 * ^expansion.timestamp = "2026-10-02T00:00:00Z"
+* ^expansion.parameter[0].name = "used-codesystem"
+* ^expansion.parameter[0].valueUri = $NCIt
 * ^expansion.contains[0].system = $NCIt
 * ^expansion.contains[0].code = #C218485
 * ^expansion.contains[0].display = "Protocol Not Amended"
