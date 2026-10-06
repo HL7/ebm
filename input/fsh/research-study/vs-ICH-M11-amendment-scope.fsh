@@ -10,3 +10,18 @@ Description: "Terminology associated with the amendment scope value set codelist
 * include $NCIt#C68846 "Global"
 * include $NCIt#C217026 "Not Global"
 * include $NCIt#C48660 "Not Applicable"
+* ^expansion.identifier = "set-by-m11-technical-specification"
+* ^expansion.timestamp = "2026-10-02T00:00:00Z"
+* ^expansion.parameter[0].name = "version"
+* ^expansion.parameter[0].valueUri = "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|26.09d"
+* ^expansion.parameter[1].name = "used-codesystem"
+* ^expansion.parameter[1].valueUri = "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|26.09d"
+* ^expansion.contains[0].system = $NCIt
+* ^expansion.contains[0].code = #C68846
+* ^expansion.contains[0].display = "Global"
+* ^expansion.contains[1].system = $NCIt
+* ^expansion.contains[1].code = #C217026
+* ^expansion.contains[1].display = "Not Global"
+* ^expansion.contains[2].system = $NCIt
+* ^expansion.contains[2].code = #C48660
+* ^expansion.contains[2].display = "Not Applicable
