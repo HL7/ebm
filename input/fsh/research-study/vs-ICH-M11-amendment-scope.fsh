@@ -24,4 +24,4 @@ Description: "Terminology associated with the amendment scope value set codelist
 * ^expansion.contains[1].display = "Not Global"
 * ^expansion.contains[2].system = $NCIt
 * ^expansion.contains[2].code = #C48660
-* ^expansion.contains[2].display = "Not Applicable
+* ^expansion.contains[2].display = "Not Applicable"
