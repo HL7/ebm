@@ -4,7 +4,7 @@ Description: "Provides number or percentage of each group affected by a single a
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #trial-use
-* ^context.type = #element
+* ^context.type = #extension
 * ^context.expression = "ResearchStudyM11ProtocolAmendment"
 * value[x] 0..0
 * . ^short = "Provides number or percentage of each group affected by a single amendment"

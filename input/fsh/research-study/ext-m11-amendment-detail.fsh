@@ -4,7 +4,7 @@ Description: "Provides detail of a single change within an amendment."
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #trial-use
-* ^context.type = #element
+* ^context.type = #extension
 * ^context.expression = "ResearchStudyM11ProtocolAmendment"
 * value[x] 0..0
 * . ^short = "Provides detail of a single change within an amendment"
