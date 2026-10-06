@@ -1,7 +1,7 @@
 == Suppressed Messages ==
 
-# Suppressing warnings about using tooling from version 5.0.0 for a version 6.0.0-ballot5 because version 6.0.0 tooling not available
-The ImplementationGuide is based on FHIR version 6.0.0-ballot5 but package hl7.terminology#7.3.0 is based on FHIR version 5.0.0. Use the package hl7.terminology.r6 instead
+# Suppressing warnings about using tooling from version 5.0.0 for a version 6.0.0-snapshot1 because version 6.0.0 tooling not available
+The ImplementationGuide is based on FHIR version 6.0.0-snapshot1 but package hl7.terminology#7.3.0 is based on FHIR version 5.0.0. Use the package hl7.terminology.r6 instead
 
 # Add warning and/or information messages here after you've confirmed that they aren't really a problem
 #  (And include comments like this justifying why) 
@@ -22,10 +22,10 @@ No definition could be found for URL value '%
 The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.ebm, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001: 'World') (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
 
 # Suppressing the warnings regarding binding to Medication Ingredient Strength Codes for Medication.ingredient.strengthQuantity as this appears to be relevant to strengthCodeableConcept and an artifact of strength[x] misapplication in the generation of warnings
-The code provided (http://unitsofmeasure.org#mg) is not in the value set 'Medication Ingredient Strength Codes' (http://hl7.org/fhir/ValueSet/medication-ingredientstrength|6.0.0-ballot5), and a code is recommended to come from this value set
+The code provided (http://unitsofmeasure.org#mg) is not in the value set 'Medication Ingredient Strength Codes' (http://hl7.org/fhir/ValueSet/medication-ingredientstrength|6.0.0-snapshot1), and a code is recommended to come from this value set
 
 # Suppressing warnings about reference to experimental CodeSystem - the CodeSystem is experimental in R6, perhaps an error to be corrected
-Reference to experimental CodeSystem http://hl7.org/fhir/CodeSystem/fhirpath-types|6.0.0-ballot5
+Reference to experimental CodeSystem http://hl7.org/fhir/CodeSystem/fhirpath-types|6.0.0-snapshot1
 
 # Suppressing warnings about unknown Code System URIs where these are clearly labeled as examples in the URI
 A definition for CodeSystem 'http://spor.ema.europa.eu/v1/example-reason' could not be found, so the code cannot be validated
@@ -86,8 +86,8 @@ The markdown contains content that appears to be an embedded HTML tag starting a
 There are no valid display names found for the code http://unstats.un.org/unsd/methods/m49/m49.htm#001 for language(s) 'de'. The display is 'World' which is a valid display for the default language
 
 # Suppressing warning that Composition.type coding value is not coming from the 'Preferred' value set as this is specific to the IG and not the FHIR-defined value set
-None of the codings provided are in the value set 'FHIR Document Type Codes' (http://hl7.org/fhir/ValueSet/doc-typecodes|6.0.0-ballot5), and a coding is recommended to come from this value set (codes = https://fevir.net/resources/CodeSystem/179423#%
-None of the codings provided are in the value set 'FHIR Document Type Codes' (http://hl7.org/fhir/ValueSet/doc-typecodes|6.0.0-ballot5), and a coding is recommended to come from this value set (codes = http://loinc.org#35528-9)
+None of the codings provided are in the value set 'FHIR Document Type Codes' (http://hl7.org/fhir/ValueSet/doc-typecodes|6.0.0-snapshot1), and a coding is recommended to come from this value set (codes = https://fevir.net/resources/CodeSystem/179423#%
+None of the codings provided are in the value set 'FHIR Document Type Codes' (http://hl7.org/fhir/ValueSet/doc-typecodes|6.0.0-snapshot1), and a coding is recommended to come from this value set (codes = http://loinc.org#35528-9)
 
 # Suppressing information messages about not using the preferred binding
 None of the codings provided are in the value set 'Contact entity type' (http://terminology.hl7.org/ValueSet/contactentity-type|2.0.0), and a coding is recommended to come from this value set (codes = http://terminology.hl7.org/CodeSystem/research-study-party-role#general-contact)
