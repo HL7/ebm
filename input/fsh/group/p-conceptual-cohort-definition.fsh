@@ -5,6 +5,7 @@ Description: "Profile of Group for Evidence Based Medicine IG. The ConceptualCoh
 * ^extension[$ext-fmm].valueInteger = 1
 * ^extension[$ext-wg].valueCode = #cds
 * ^extension[$ext-standards-status].valueCode = #trial-use
+* membership 1..1
 * membership = #conceptual
 * quantity 0..0
 * member 0..0 
