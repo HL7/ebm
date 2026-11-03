@@ -32,14 +32,19 @@ The individual must meet all of these 16 criteria in order to be included in the
 
 The first criterion, Adults (≥18 years), can be fully represented as structured data and shows how a Group.characteristic element is used.  The Group.characteristic element has 3 required elements: .code, .value[x], and .exclude.
 
-The .code element uses a CodeableConcept datatype and represents the type of characteristic. In this first criterion, the type of characteristic is “Age” and a SNOMED-CT term is expressed as:
+The .code element uses a CodeableConcept datatype and represents the type of characteristic. In this first criterion, the type of characteristic is “Age” and values selected from SNOMED-CT and LOINC are expressed as:
 
     “code”: {
             "coding" : [
               {
                 "system" : "http://snomed.info/sct",
-                "code" : "397669002",
-                "display" : "Age"
+                "code": "424144002",
+                "display": "Current chronological age"
+              },
+              {
+                "system": "http://loinc.org", 
+                "code": "30525-0", 
+                "display": "Age" 
               }
             ]
         }

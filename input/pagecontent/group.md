@@ -103,8 +103,8 @@ For a characteristic of "age > 18 years” the attribute is “age” and the at
         "coding": [
           {
             "system": "http://snomed.info/sct",
-            "code": "397669002",
-            "display": "Age"
+            "code": "424144002",
+            "display": "Current chronological age"
           }
         ]
       }
