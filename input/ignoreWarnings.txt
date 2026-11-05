@@ -96,6 +96,9 @@ None of the codings provided are in the value set 'Contact entity type' (http://
 # Suppressing information messages about not using the example binding
 None of the codings provided are in the value set 'Cited Artifact Classification Type' (http://terminology.hl7.org/ValueSet/cited-artifact-classification-type|1.0.0), and a coding is recommended to come from this value set (codes = https://fevir.net/sevco#SEVCO:01000)
 
+# Suppressing warnings about not having Resource.jurisdiction content. This is typically not expected in research results reporting.
+The resource should declare its jurisdiction to match the package id (hl7.fhir.uv.ebm, jurisdiction = http://unstats.un.org/unsd/methods/m49/m49.htm#001 ('World')) (for Sushi users: in sushi-config.yaml, 'jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"')
+
 # Suppressing warning about multiple matching profiles - in Compositions with contained resources of Evidence and Group, the references from Evidence to Group have multiple options for matching profiles (some of which match the referenced Group) - the data appears correct -- the default option used for checking from the IG publisher is not the actual profile used in the examples and the actual profile is one of the other options
 Found multiple matching profiles for #BG000 among choices: http://hl7.org/fhir/uv/ebm/StructureDefinition/comparator-group|1.0.0-ballot3, http://hl7.org/fhir/uv/ebm/StructureDefinition/exposure-group|1.0.0-ballot3, http://hl7.org/fhir/uv/ebm/StructureDefinition/study-group|1.0.0-ballot3
 Details for #BG000 matching against profile http://hl7.org/fhir/uv/ebm/StructureDefinition/metaanalysis-study-group|1.0.0-ballot3
